@@ -1,21 +1,21 @@
 ---
 CreateTime: 2026-04-26 22:09:27
-LastUpdate: 2026-04-27 12:59:46
+LastUpdate: 2026-05-15 14:57:37
 ---
 
 
 
 ## IGO 因CGP3爬坡速度影响，2026财年下调指引，对天齐锂业和雅保ALB各有什么影响
 
-先校正一下口径：截至2026年4月24日，IGO下调的是 `Greenbushes` 的 FY26 指引，不只是“CGP3爬坡慢”一个原因。官方把锂精矿产量指引从 `150-165万吨` 下调到 `137.5-142.5万吨`，单位现金成本从 `A$310-360/t` 上调到 `A$380-420/t`；原因包括年初至今整体表现、对6月季度CGP3爬坡预期，以及品位、回收率、检修停机和安全停工。IGO同时又说，CGP3到3月底总体仍是大体按计划爬坡，所以更像是 `Greenbushes整体运营问题`，不是单点失效。  
+先校正一下口径：截至2026年4月24日，IGO下调的是 `Greenbushes` 的 FY26 指引，不只是“CGP3爬坡慢”一个原因。官方把锂精矿产量指引从 `150-165万吨` 下调到 `137.5-142.5万吨`，单位现金成本从 `A$310-360/t` 上调到 `A$380-420/t`；原因包括年初至今整体表现、对6月季度CGP3爬坡预期，以及品位、回收率、检修停机和安全停工。IGO同时又说，CGP3到3月底总体仍是大体按计划爬坡，所以更像是 `Greenbushes整体运营问题`，不是单点失效。
 
-对天齐锂业，影响偏负面，而且传导更直接。天齐在2025年一季报里写得很清楚：它通过 `TLEA` 控制 `Windfield/Talison`，间接持有 `26.01%` 权益，而格林布什化学级锂精矿又是集团锂化工的主要原料。所以这次下调，会同时压缩上游矿端利润、降低内部原料保障和产业链协同弹性。  
+对天齐锂业，影响偏负面，而且传导更直接。天齐在2025年一季报里写得很清楚：它通过 `TLEA` 控制 `Windfield/Talison`，间接持有 `26.01%` 权益，而格林布什化学级锂精矿又是集团锂化工的主要原料。所以这次下调，会同时压缩上游矿端利润、降低内部原料保障和产业链协同弹性。
 但我不会把它看成大利空。IGO同季披露 Greenbushes 平均实现价已升到 `US$1,668/t`，`EBITDA margin 75%`，而且 `Kwinana FY26` 指引没有下调，所以更像是 volume/cost 逆风，不是资产质量反转。按产量指引中值粗算，这次少掉的 17.5 万吨产量，折到天齐 `权益口径` 大概是 `4.6万吨` 左右，这个数字是我按股权结构测算的，不是公司原文披露。
 
-对雅保 `ALB`，如果只看 `Greenbushes单矿权益`，它受影响其实更大，因为 ALB 持有 `49%` 的 Windfield 权益，而且公司自己披露拥有 Greenbushes `50% offtake rights`；按中值粗算，对应大概少 `8.6万吨` 权益产量暴露。  
+对雅保 `ALB`，如果只看 `Greenbushes单矿权益`，它受影响其实更大，因为 ALB 持有 `49%` 的 Windfield 权益，而且公司自己披露拥有 Greenbushes `50% offtake rights`；按中值粗算，对应大概少 `8.6万吨` 权益产量暴露。
 但放到 `ALB整家公司` 里，冲击通常比天齐更容易被对冲。原因是 Greenbushes 在 ALB 账上主要体现为 JV/联营投资收益，ALB 的锂原料还来自 `Wodgina、Atacama、Silver Peak` 等；并且 ALB 在 `2026年2月11日` 宣布把 Kemerton 剩余产线转入维护时明确说过，`对2026 projected volumes没有影响`，客户需求会由其他渠道满足。所以这次更像压低 ALB 的 JV equity income，而不一定马上改写 ALB 全年出货。
 
-一句话总结：  
+一句话总结：
 按 `矿山权益口径` 看，ALB 受影响更大；按 `公司经营穿透和市场敏感度` 看，天齐更直接、更敏感。但两家都被当前锂精矿价格回升部分对冲，所以我会把这件事定义成 `边际利空`，不是 `趋势反转`。
 
 来源：[IGO 2026-04-24 季报演示](https://www.igo.com.au/site/pdf/d0035901-ad7b-4748-be4e-88a63da8c9fe/March-2026-Quarterly-Presentation.pdf?Platform=ListPage) | [IGO 2026-04-24 季报](https://www.igo.com.au/site/pdf/dc4f0f43-c5fc-4422-a75f-9c84dc120b6c/March-2026-Quarterly-Activities-Report.pdf?Platform=ListPage) | [IGO Lithium JV 结构](https://www.igo.com.au/site/operations/lithium-holdco-joint-venture) | [天齐锂业2025Q1报告](https://static.cninfo.com.cn/finalpage/2025-04-30/1223412003.PDF) | [天齐锂业2025年报摘要](https://static.cninfo.com.cn/finalpage/2026-03-28/1225044816.PDF) | [ALB 2025 10-K](https://www.sec.gov/Archives/edgar/data/915913/000091591326000018/alb-20251231.htm) | [ALB Kemerton公告](https://investors.albemarle.com/news-and-events/news/news-details/2026/Albemarle-Announces-Plans-to-Idle-its-Kemerton-Lithium-Hydroxide-Processing-Plant/default.aspx)
