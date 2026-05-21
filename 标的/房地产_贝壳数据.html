@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>贝壳GTV、门店扩张与单店效率图表</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --panel: #ffffff;
+      --ink: #212121;
+      --muted: #6c6b66;
+      --grid: #dedbd2;
+      --resale: #216c5b;
+      --newhome: #cb6b32;
+      --other: #8b8f3a;
+      --total: #252525;
+      --store: #2c5f9f;
+      --accent: #a33f37;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    header {
+      padding: 36px clamp(18px, 4vw, 56px) 18px;
+      border-bottom: 1px solid #e5e1d8;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .subhead {
+      max-width: 980px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .wrap {
+      padding: 24px clamp(18px, 4vw, 56px) 42px;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid #e8e4dc;
+      border-radius: 8px;
+      padding: 15px 16px;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .kpi .value {
+      margin-top: 4px;
+      font-size: 24px;
+      font-weight: 750;
+      line-height: 1.15;
+    }
+
+    .kpi .note {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid #e8e4dc;
+      border-radius: 8px;
+      padding: 18px;
+      min-width: 0;
+    }
+
+    .panel.wide {
+      grid-column: 1 / -1;
+    }
+
+    .chart {
+      width: 100%;
+      min-height: 320px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+
+    .axis text,
+    .legend,
+    .tick {
+      fill: var(--muted);
+      font-size: 12px;
+    }
+
+    .gridline {
+      stroke: var(--grid);
+      stroke-width: 1;
+    }
+
+    .axis-line {
+      stroke: #bfbab0;
+      stroke-width: 1;
+    }
+
+    .legend-wrap {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .callouts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .callout {
+      border-left: 3px solid var(--accent);
+      background: #fbfaf7;
+      padding: 10px 12px;
+      color: #3f3d38;
+      min-height: 76px;
+    }
+
+    .callout strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .note-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .formula {
+      background: #f2efe7;
+      border: 1px solid #e0dbcf;
+      border-radius: 8px;
+      padding: 14px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+      color: #272520;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      padding: 8px 9px;
+      border-bottom: 1px solid #eee9df;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 650;
+      background: #fbfaf7;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .note-panel,
+      .kpis,
+      .callouts {
+        grid-template-columns: 1fr;
+      }
+
+      .chart {
+        min-height: 260px;
+      }
+
+      .panel {
+        padding: 14px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>贝壳GTV趋势、门店扩张与单店效率</h1>
+    <p class="subhead">单位：亿元人民币；同比=YoY，环比=QoQ。2021 年各季度同比取自财报披露值，基期为 2020 年。门店采用期末 number of stores 口径。2023Q2 门店数为约数，单店GTV按“季度总GTV / 期末门店数”估算。</p>
+  </header>
+
+  <main class="wrap">
+    <section class="kpis" aria-label="关键指标">
+      <div class="kpi">
+        <div class="label">2025 总GTV</div>
+        <div class="value">31,833 亿</div>
+        <div class="note">同比 -5.0%</div>
+      </div>
+      <div class="kpi">
+        <div class="label">2025 存量房占比</div>
+        <div class="value">67.6%</div>
+        <div class="note">2021 年为 53.4%</div>
+      </div>
+      <div class="kpi">
+        <div class="label">2025Q4 门店数</div>
+        <div class="value">61,139</div>
+        <div class="note">同比 +18.5%</div>
+      </div>
+      <div class="kpi">
+        <div class="label">2025 平均单店GTV</div>
+        <div class="value">5,307 万</div>
+        <div class="note">按四季度平均期末门店数</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>年度GTV结构</h2>
+        <div class="legend-wrap">
+          <span class="legend-item"><span class="swatch" style="background:var(--resale)"></span>存量房</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--newhome)"></span>新房</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--other)"></span>其他差额</span>
+        </div>
+        <div id="annualStack" class="chart"></div>
+        <p class="small">存量房占比持续上升，新房占比持续下行。</p>
+      </article>
+
+      <article class="panel">
+        <h2>年度结构占比</h2>
+        <div class="legend-wrap">
+          <span class="legend-item"><span class="swatch" style="background:var(--resale)"></span>存量房</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--newhome)"></span>新房</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--other)"></span>其他GTV差额</span>
+        </div>
+        <div id="shareStack" class="chart"></div>
+        <p class="small">按GTV差额口径，2025 年其他占比为 4.4%。若讨论约 41%，需确认是否为收入或利润口径。</p>
+      </article>
+
+      <article class="panel wide">
+        <h2>季度GTV趋势</h2>
+        <div class="legend-wrap">
+          <span class="legend-item"><span class="swatch" style="background:var(--total)"></span>总GTV</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--resale)"></span>存量房GTV</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--newhome)"></span>新房GTV</span>
+        </div>
+        <div id="quarterLine" class="chart"></div>
+        <div class="callouts">
+          <div class="callout"><strong>2022 低谷</strong>总GTV全年同比 -32.3%，门店也收缩至 2022Q4 的 40,516 家。</div>
+          <div class="callout"><strong>2024Q4 政策弹性</strong>总GTV同比 +55.5%，环比 +55.2%，成为后续高基数。</div>
+          <div class="callout"><strong>2025Q4 高基数</strong>同比 -36.7%，但环比仅 -1.7%，同比读数受基数影响明显。</div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>门店数与GTV同比</h2>
+        <div class="legend-wrap">
+          <span class="legend-item"><span class="swatch" style="background:var(--store)"></span>门店数</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--accent)"></span>总GTV同比</span>
+        </div>
+        <div id="storesAndYoy" class="chart"></div>
+        <p class="small">2025 年门店同比保持高增长，但总GTV未同步增长，体现抢份额与效率摊薄并存。</p>
+      </article>
+
+      <article class="panel">
+        <h2>单店GTV</h2>
+        <div class="legend-wrap">
+          <span class="legend-item"><span class="swatch" style="background:var(--accent)"></span>季度单店GTV</span>
+        </div>
+        <div id="storeProductivity" class="chart"></div>
+        <p class="small">单位：万元/店。2025Q4 约 1,184 万元/店，低于 2024Q4 的 2,218 万元/店。</p>
+      </article>
+
+      <article class="panel wide">
+        <h2>量价拆分与房价信号</h2>
+        <div class="note-panel">
+          <div>
+            <p class="formula">GTV = 成交量 × 平均成交价
+= 成交套数或成交面积 × ASP</p>
+            <p class="small">现有数据没有成交套数、成交面积或均价，因此不能严格拆出“量贡献”和“价贡献”。目前可用的是结构变化、同比/环比、门店生产率和政策高基数信号。</p>
+          </div>
+          <table aria-label="量价信号表">
+            <thead>
+              <tr><th>观察</th><th>信号</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>存量占比上升</td><td>交易盘更偏存量房</td></tr>
+              <tr><td>2024Q4 同环比大增</td><td>政策刺激下成交释放</td></tr>
+              <tr><td>2025Q4 同比大降</td><td>高基数压制同比</td></tr>
+              <tr><td>2025 单店GTV下降</td><td>扩店速度快于GTV增长</td></tr>
+              <tr><td>新房GTV持续偏弱</td><td>需求或价格承压的间接信号</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel wide">
+        <h2>季度数据表</h2>
+        <div id="quarterTable"></div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const annual = [
+      { year: "2021", resale: 20582, newhome: 16086, total: 38535, yoy: 10.1 },
+      { year: "2022", resale: 15765, newhome: 9405, total: 26096, yoy: -32.3 },
+      { year: "2023", resale: 20280, newhome: 10030, total: 31429, yoy: 20.4 },
+      { year: "2024", resale: 22465, newhome: 9700, total: 33494, yoy: 6.6 },
+      { year: "2025", resale: 21515, newhome: 8909, total: 31833, yoy: -5.0 }
+    ].map(d => ({ ...d, other: d.total - d.resale - d.newhome }));
+
+    const quarters = [
+      { q: "2021Q1", resale: 6734, resaleYoy: 244.2, resaleQoq: null, newhome: 3434, newYoy: 194.9, newQoq: null, total: 10696, totalYoy: 224.2, totalQoq: null, stores: 48717, storeYoy: 25.4 },
+      { q: "2021Q2", resale: 6520, resaleYoy: 11.7, resaleQoq: -3.2, newhome: 4983, newYoy: 32.3, newQoq: 45.1, total: 12208, totalYoy: 22.2, totalQoq: 14.1, stores: 52868, storeYoy: 25.1 },
+      { q: "2021Q3", resale: 3782, resaleYoy: -34.3, resaleQoq: -42.0, newhome: 4101, newYoy: -2.5, newQoq: -17.7, total: 8307, totalYoy: -20.9, totalQoq: -32.0, stores: 53946, storeYoy: 20.2 },
+      { q: "2021Q4", resale: 3546, resaleYoy: -39.4, resaleQoq: -6.2, newhome: 3568, newYoy: -24.0, newQoq: -13.0, total: 7324, totalYoy: -34.6, totalQoq: -11.8, stores: 51038, storeYoy: 8.7 },
+      { q: "2022Q1", resale: 3741, resaleYoy: -44.4, resaleQoq: 5.5, newhome: 1927, newYoy: -43.9, newQoq: -46.0, total: 5860, totalYoy: -45.2, totalQoq: -20.0, stores: 45777, storeYoy: -6.0 },
+      { q: "2022Q2", resale: 3935, resaleYoy: -39.6, resaleQoq: 5.2, newhome: 2227, newYoy: -55.3, newQoq: 15.6, total: 6395, totalYoy: -47.6, totalQoq: 9.1, stores: 42831, storeYoy: -19.0 },
+      { q: "2022Q3", resale: 4490, resaleYoy: 18.7, resaleQoq: 14.1, newhome: 2615, newYoy: -36.2, newQoq: 17.4, total: 7371, totalYoy: -11.3, totalQoq: 15.3, stores: 41398, storeYoy: -23.3 },
+      { q: "2022Q4", resale: 3599, resaleYoy: 1.5, resaleQoq: -19.8, newhome: 2635, newYoy: -26.1, newQoq: 0.8, total: 6470, totalYoy: -11.7, totalQoq: -12.2, stores: 40516, storeYoy: -20.6 },
+      { q: "2023Q1", resale: 6643, resaleYoy: 77.6, resaleQoq: 84.6, newhome: 2779, newYoy: 44.2, newQoq: 5.5, total: 9715, totalYoy: 65.8, totalQoq: 50.2, stores: 41275, storeYoy: -9.8 },
+      { q: "2023Q2", resale: 4565, resaleYoy: 16.0, resaleQoq: -31.3, newhome: 2950, newYoy: 32.5, newQoq: 6.2, total: 7806, totalYoy: 22.1, totalQoq: -19.7, stores: 43000, storeYoy: 0.4, approxStore: true },
+      { q: "2023Q3", resale: 4390, resaleYoy: -2.2, resaleQoq: -3.8, newhome: 1921, newYoy: -26.5, newQoq: -34.9, total: 6552, totalYoy: -11.1, totalQoq: -16.1, stores: 43013, storeYoy: 3.9 },
+      { q: "2023Q4", resale: 4681, resaleYoy: 30.1, resaleQoq: 6.6, newhome: 2380, newYoy: -9.7, newQoq: 23.9, total: 7356, totalYoy: 13.7, totalQoq: 12.3, stores: 43817, storeYoy: 8.1 },
+      { q: "2024Q1", resale: 4532, resaleYoy: -31.8, resaleQoq: -3.2, newhome: 1518, newYoy: -45.4, newQoq: -36.2, total: 6299, totalYoy: -35.2, totalQoq: -14.4, stores: 44216, storeYoy: 7.1 },
+      { q: "2024Q2", resale: 5707, resaleYoy: 25.0, resaleQoq: 25.9, newhome: 2353, newYoy: -20.2, newQoq: 55.0, total: 8390, totalYoy: 7.5, totalQoq: 33.2, stores: 45948, storeYoy: 6.9 },
+      { q: "2024Q3", resale: 4778, resaleYoy: 8.8, resaleQoq: -16.3, newhome: 2276, newYoy: 18.5, newQoq: -3.3, total: 7368, totalYoy: 12.5, totalQoq: -12.2, stores: 48230, storeYoy: 12.1 },
+      { q: "2024Q4", resale: 7448, resaleYoy: 59.1, resaleQoq: 55.9, newhome: 3553, newYoy: 49.3, newQoq: 56.1, total: 11438, totalYoy: 55.5, totalQoq: 55.2, stores: 51573, storeYoy: 17.7 },
+      { q: "2025Q1", resale: 5803, resaleYoy: 28.0, resaleQoq: -22.1, newhome: 2322, newYoy: 53.0, newQoq: -34.6, total: 8437, totalYoy: 33.9, totalQoq: -26.2, stores: 56849, storeYoy: 28.6 },
+      { q: "2025Q2", resale: 5835, resaleYoy: 2.2, resaleQoq: 0.6, newhome: 2554, newYoy: 8.5, newQoq: 10.0, total: 8787, totalYoy: 4.7, totalQoq: 4.1, stores: 60546, storeYoy: 31.8 },
+      { q: "2025Q3", resale: 5056, resaleYoy: 5.8, resaleQoq: -13.4, newhome: 1963, newYoy: -13.8, newQoq: -23.1, total: 7367, totalYoy: 0.0, totalQoq: -16.2, stores: 61393, storeYoy: 27.3 },
+      { q: "2025Q4", resale: 4820, resaleYoy: -35.3, resaleQoq: -4.7, newhome: 2070, newYoy: -41.7, newQoq: 5.5, total: 7241, totalYoy: -36.7, totalQoq: -1.7, stores: 61139, storeYoy: 18.5 }
+    ].map(d => ({
+      ...d,
+      other: d.total - d.resale - d.newhome,
+      singleStore: d.total * 10000 / d.stores,
+      resaleShare: d.resale / d.total * 100,
+      newShare: d.newhome / d.total * 100,
+      otherShare: (d.total - d.resale - d.newhome) / d.total * 100
+    }));
+
+    const colors = {
+      resale: getCss("--resale"),
+      newhome: getCss("--newhome"),
+      other: getCss("--other"),
+      total: getCss("--total"),
+      store: getCss("--store"),
+      accent: getCss("--accent")
+    };
+
+    function getCss(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    function fmtNumber(v) {
+      return Math.round(v).toLocaleString("zh-CN");
+    }
+
+    function fmtPct(v) {
+      if (v === null || Number.isNaN(v)) return "—";
+      const sign = v > 0 ? "+" : "";
+      return sign + v.toFixed(1) + "%";
+    }
+
+    function makeSvg(width, height) {
+      return `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="chart" preserveAspectRatio="xMidYMid meet">`;
+    }
+
+    function gridAndAxis({ left, top, width, height, min, max, ticks = 5, suffix = "" }) {
+      let out = "";
+      for (let i = 0; i <= ticks; i++) {
+        const value = min + (max - min) * i / ticks;
+        const y = top + height - (value - min) / (max - min) * height;
+        out += `<line class="gridline" x1="${left}" x2="${left + width}" y1="${y}" y2="${y}"></line>`;
+        out += `<text class="tick" x="${left - 8}" y="${y + 4}" text-anchor="end">${fmtNumber(value)}${suffix}</text>`;
+      }
+      out += `<line class="axis-line" x1="${left}" x2="${left + width}" y1="${top + height}" y2="${top + height}"></line>`;
+      out += `<line class="axis-line" x1="${left}" x2="${left}" y1="${top}" y2="${top + height}"></line>`;
+      return out;
+    }
+
+    function niceMax(value) {
+      const magnitude = Math.pow(10, Math.floor(Math.log10(value)));
+      return Math.ceil(value / magnitude * 2) / 2 * magnitude;
+    }
+
+    function renderStackedBars(target, data, config) {
+      const w = 860;
+      const h = 330;
+      const pad = { left: 72, right: 18, top: 18, bottom: 48 };
+      const cw = w - pad.left - pad.right;
+      const ch = h - pad.top - pad.bottom;
+      const keys = config.keys;
+      const max = config.percent ? 100 : niceMax(Math.max(...data.map(d => keys.reduce((s, k) => s + d[k], 0))));
+      const barGap = 26;
+      const barW = Math.max(34, (cw - barGap * (data.length - 1)) / data.length);
+      let out = makeSvg(w, h);
+      out += gridAndAxis({ left: pad.left, top: pad.top, width: cw, height: ch, min: 0, max, ticks: 5, suffix: config.percent ? "%" : "" });
+      data.forEach((d, i) => {
+        const x = pad.left + i * (barW + barGap);
+        let yCursor = pad.top + ch;
+        keys.forEach(k => {
+          const raw = config.percent ? d[k] / d.total * 100 : d[k];
+          const bh = raw / max * ch;
+          yCursor -= bh;
+          out += `<rect x="${x}" y="${yCursor}" width="${barW}" height="${bh}" fill="${config.colors[k]}">`;
+          out += `<title>${d.year} ${config.labels[k]}：${config.percent ? raw.toFixed(1) + "%" : fmtNumber(d[k]) + "亿元"}</title></rect>`;
+        });
+        out += `<text class="tick" x="${x + barW / 2}" y="${pad.top + ch + 25}" text-anchor="middle">${d.year}</text>`;
+        const label = config.percent ? "100%" : fmtNumber(d.total);
+        out += `<text class="tick" x="${x + barW / 2}" y="${Math.max(14, yCursor - 7)}" text-anchor="middle">${label}</text>`;
+      });
+      out += "</svg>";
+      document.getElementById(target).innerHTML = out;
+    }
+
+    function renderLineChart(target, data, series, options = {}) {
+      const w = 1120;
+      const h = options.height || 340;
+      const pad = { left: 72, right: 28, top: 22, bottom: 62 };
+      const cw = w - pad.left - pad.right;
+      const ch = h - pad.top - pad.bottom;
+      const all = series.flatMap(s => data.map(d => d[s.key]));
+      const min = options.min ?? Math.min(0, Math.floor(Math.min(...all) / 10) * 10);
+      const max = options.max ?? niceMax(Math.max(...all));
+      const x = i => pad.left + i * cw / (data.length - 1);
+      const y = v => pad.top + ch - (v - min) / (max - min) * ch;
+      let out = makeSvg(w, h);
+      out += gridAndAxis({ left: pad.left, top: pad.top, width: cw, height: ch, min, max, ticks: 5, suffix: options.suffix || "" });
+      data.forEach((d, i) => {
+        if (i % 2 === 0 || data.length <= 8) {
+          out += `<text class="tick" x="${x(i)}" y="${pad.top + ch + 26}" text-anchor="middle">${d.q || d.year}</text>`;
+        }
+      });
+      series.forEach(s => {
+        const points = data.map((d, i) => `${x(i)},${y(d[s.key])}`).join(" ");
+        out += `<polyline points="${points}" fill="none" stroke="${s.color}" stroke-width="${s.width || 2.5}" stroke-linejoin="round" stroke-linecap="round"></polyline>`;
+        data.forEach((d, i) => {
+          out += `<circle cx="${x(i)}" cy="${y(d[s.key])}" r="${s.radius || 3}" fill="${s.color}"><title>${d.q || d.year} ${s.name}：${fmtNumber(d[s.key])}${options.unit || ""}</title></circle>`;
+        });
+      });
+      out += "</svg>";
+      document.getElementById(target).innerHTML = out;
+    }
+
+    function renderDualAxis(target) {
+      const data = quarters;
+      const w = 860;
+      const h = 340;
+      const pad = { left: 72, right: 58, top: 22, bottom: 60 };
+      const cw = w - pad.left - pad.right;
+      const ch = h - pad.top - pad.bottom;
+      const storeMin = 36000;
+      const storeMax = 64000;
+      const yoyMin = -60;
+      const yoyMax = 240;
+      const x = i => pad.left + i * cw / (data.length - 1);
+      const yStore = v => pad.top + ch - (v - storeMin) / (storeMax - storeMin) * ch;
+      const yYoy = v => pad.top + ch - (v - yoyMin) / (yoyMax - yoyMin) * ch;
+      let out = makeSvg(w, h);
+      out += gridAndAxis({ left: pad.left, top: pad.top, width: cw, height: ch, min: storeMin, max: storeMax, ticks: 4 });
+      for (let i = 0; i <= 4; i++) {
+        const value = yoyMin + (yoyMax - yoyMin) * i / 4;
+        const y = yYoy(value);
+        out += `<text class="tick" x="${pad.left + cw + 8}" y="${y + 4}">${fmtPct(value)}</text>`;
+      }
+      data.forEach((d, i) => {
+        const barW = Math.max(10, cw / data.length * 0.48);
+        const x0 = x(i) - barW / 2;
+        const bh = pad.top + ch - yStore(d.stores);
+        out += `<rect x="${x0}" y="${yStore(d.stores)}" width="${barW}" height="${bh}" fill="${colors.store}" opacity="0.72"><title>${d.q} 门店数：${fmtNumber(d.stores)}家</title></rect>`;
+        if (i % 2 === 0) out += `<text class="tick" x="${x(i)}" y="${pad.top + ch + 26}" text-anchor="middle">${d.q}</text>`;
+      });
+      const points = data.map((d, i) => `${x(i)},${yYoy(d.totalYoy)}`).join(" ");
+      out += `<polyline points="${points}" fill="none" stroke="${colors.accent}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></polyline>`;
+      data.forEach((d, i) => {
+        out += `<circle cx="${x(i)}" cy="${yYoy(d.totalYoy)}" r="3" fill="${colors.accent}"><title>${d.q} 总GTV同比：${fmtPct(d.totalYoy)}</title></circle>`;
+      });
+      out += `<text class="tick" x="${pad.left}" y="${h - 12}">左轴：门店数</text>`;
+      out += `<text class="tick" x="${pad.left + cw}" y="${h - 12}" text-anchor="end">右轴：总GTV同比</text>`;
+      out += "</svg>";
+      document.getElementById(target).innerHTML = out;
+    }
+
+    function renderTable() {
+      const rows = quarters.map(d => `
+        <tr>
+          <td>${d.q}</td>
+          <td>${fmtNumber(d.total)}</td>
+          <td>${fmtPct(d.totalYoy)}</td>
+          <td>${fmtPct(d.totalQoq)}</td>
+          <td>${d.approxStore ? "~" : ""}${fmtNumber(d.stores)}</td>
+          <td>${fmtPct(d.storeYoy)}</td>
+          <td>${fmtNumber(d.singleStore)} 万元/店</td>
+          <td>${d.resaleShare.toFixed(1)}%</td>
+          <td>${d.newShare.toFixed(1)}%</td>
+          <td>${d.otherShare.toFixed(1)}%</td>
+        </tr>
+      `).join("");
+      document.getElementById("quarterTable").innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>季度</th><th>总GTV</th><th>总GTV同比</th><th>总GTV环比</th><th>门店总数</th><th>门店同比</th><th>单店GTV</th><th>存量占比</th><th>新房占比</th><th>其他占比</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      `;
+    }
+
+    renderStackedBars("annualStack", annual, {
+      keys: ["resale", "newhome", "other"],
+      labels: { resale: "存量房", newhome: "新房", other: "其他差额" },
+      colors: { resale: colors.resale, newhome: colors.newhome, other: colors.other },
+      percent: false
+    });
+
+    renderStackedBars("shareStack", annual, {
+      keys: ["resale", "newhome", "other"],
+      labels: { resale: "存量房", newhome: "新房", other: "其他GTV差额" },
+      colors: { resale: colors.resale, newhome: colors.newhome, other: colors.other },
+      percent: true
+    });
+
+    renderLineChart("quarterLine", quarters, [
+      { key: "total", name: "总GTV", color: colors.total, width: 3.4, radius: 3.5 },
+      { key: "resale", name: "存量房GTV", color: colors.resale, width: 2.4 },
+      { key: "newhome", name: "新房GTV", color: colors.newhome, width: 2.4 }
+    ], { unit: "亿元" });
+
+    renderDualAxis("storesAndYoy");
+
+    renderLineChart("storeProductivity", quarters, [
+      { key: "singleStore", name: "单店GTV", color: colors.accent, width: 3, radius: 3 }
+    ], { unit: "万元/店", max: 2600, height: 340 });
+
+    renderTable();
+  </script>
+</body>
+</html>
