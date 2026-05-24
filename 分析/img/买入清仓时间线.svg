@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520">
+<rect width="100%" height="100%" fill="#fbfbf8"/>
+<style>text{font-family:"Arial Unicode MS","PingFang SC","Microsoft YaHei",Arial,sans-serif;}</style>
+<text x="55" y="58" font-size="28" font-weight="700" fill="#252525" text-anchor="start" opacity="1">买入到清仓时间线</text>
+<text x="55" y="88" font-size="15" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">蓝点＝第一笔买入；橙点＝清仓；灰线＝传奇生物未清仓，截至 2026-05-24 仍已回本。</text>
+<line x1="170.0" y1="115" x2="170.0" y2="450" stroke="#ddd7ce" stroke-width="1" opacity="0.65" stroke-dasharray="3 5"/>
+<text x="170.0" y="475" font-size="13" font-weight="400" fill="#626a73" text-anchor="middle" opacity="1">2023</text>
+<line x1="495.79425113464447" y1="115" x2="495.79425113464447" y2="450" stroke="#ddd7ce" stroke-width="1" opacity="0.65" stroke-dasharray="3 5"/>
+<text x="495.79425113464447" y="475" font-size="13" font-weight="400" fill="#626a73" text-anchor="middle" opacity="1">2024</text>
+<line x1="822.481089258699" y1="115" x2="822.481089258699" y2="450" stroke="#ddd7ce" stroke-width="1" opacity="0.65" stroke-dasharray="3 5"/>
+<text x="822.481089258699" y="475" font-size="13" font-weight="400" fill="#626a73" text-anchor="middle" opacity="1">2025</text>
+<line x1="1148.2753403933434" y1="115" x2="1148.2753403933434" y2="450" stroke="#ddd7ce" stroke-width="1" opacity="0.65" stroke-dasharray="3 5"/>
+<text x="1148.2753403933434" y="475" font-size="13" font-weight="400" fill="#626a73" text-anchor="middle" opacity="1">2026</text>
+<text x="55" y="140" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">美团</text>
+<line x1="211.9515885022693" y1="135" x2="643.0711043872919" y2="135" stroke="#2f9e67" stroke-width="9" opacity="0.9"/>
+<circle cx="211.9515885022693" cy="135" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<circle cx="643.0711043872919" cy="135" r="8" fill="#d67b2c" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="661.0711043872919" y="140" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">1.32年｜利润5.1万｜年化28%</text>
+<text x="55" y="195" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">牧原股份</text>
+<line x1="280.68078668683813" y1="190" x2="748.3963691376703" y2="190" stroke="#2f9e67" stroke-width="9" opacity="0.9"/>
+<circle cx="280.68078668683813" cy="190" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<circle cx="748.3963691376703" cy="190" r="8" fill="#d67b2c" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="766.3963691376703" y="195" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">1.44年｜利润1.5万｜年化3%</text>
+<text x="55" y="250" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">中矿资源</text>
+<line x1="598.4417549167927" y1="245" x2="1261.6338880484116" y2="245" stroke="#2f9e67" stroke-width="9" opacity="0.9"/>
+<circle cx="598.4417549167927" cy="245" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<circle cx="1261.6338880484116" cy="245" r="8" fill="#d67b2c" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="1260" y="250" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">2.04年｜利润112.1万｜年化64%</text>
+<text x="55" y="305" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">药明生物</text>
+<line x1="641.285930408472" y1="300" x2="909.0620272314675" y2="300" stroke="#2f9e67" stroke-width="9" opacity="0.9"/>
+<circle cx="641.285930408472" cy="300" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<circle cx="909.0620272314675" cy="300" r="8" fill="#d67b2c" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="927.0620272314675" y="305" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">0.82年｜利润8.6万｜年化104%</text>
+<text x="55" y="360" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">传奇生物</text>
+<line x1="959.9394856278366" y1="355" x2="1275.9152798789712" y2="355" stroke="#8b9096" stroke-width="9" opacity="0.9"/>
+<circle cx="959.9394856278366" cy="355" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<polygon points="1275.9152798789712,347 1268.3152798789713,361.0 1283.5152798789711,361.0" fill="#8b9096" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="1260" y="360" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">未清仓｜已回本｜仓位25%</text>
+<text x="55" y="415" font-size="16" font-weight="700" fill="#252525" text-anchor="start" opacity="1">天齐锂业AH</text>
+<line x1="1210.7564296520422" y1="410" x2="1270.5597579425114" y2="410" stroke="#2f9e67" stroke-width="9" opacity="0.9"/>
+<circle cx="1210.7564296520422" cy="410" r="8" fill="#3976af" opacity="1" stroke="#fff" stroke-width="2"/>
+<circle cx="1270.5597579425114" cy="410" r="8" fill="#d67b2c" opacity="1" stroke="#fff" stroke-width="2"/>
+<text x="1260" y="415" font-size="14" font-weight="400" fill="#626a73" text-anchor="start" opacity="1">0.18年｜利润22.2万｜年化134%</text>
+</svg>
