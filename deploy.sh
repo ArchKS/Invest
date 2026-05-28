@@ -73,12 +73,14 @@ find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
     echo "$ts|$dir|$name|$path" >> "$tmp"
 done
 
+echo "✅ 文件信息收集完成，开始生成目录结构…"
+
 # ✅ 正确正序排序（字符串时间）
 sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
     [ -z "$ts" ] && continue
     show_date=${ts:0:10}
     relpath=${path#./}
-
+    echo "$relpath  $path"
     if [ "$dir" = "." ]; then
         echo "$show_date  [$name]($relpath)" >> "$README_FILE"
         echo "" >> "$README_FILE"
