@@ -82,7 +82,7 @@ sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
     relpath=${path#./}
     # echo "$relpath  $path"
     if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
-        echo "匹配成功"
+        :  # 匹配到则跳过，不处理
     else
         # echo "匹配失败"
         if [ "$dir" = "." ]; then
