@@ -73,22 +73,30 @@ find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
     echo "$ts|$dir|$name|$path" >> "$tmp"
 done
 
+echo "✅ 文件信息收集完成，开始生成目录结构…"
+
 # ✅ 正确正序排序（字符串时间）
 sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
     [ -z "$ts" ] && continue
     show_date=${ts:0:10}
     relpath=${path#./}
-
-    if [ "$dir" = "." ]; then
-        echo "$show_date  [$name]($relpath)" >> "$README_FILE"
-        echo "" >> "$README_FILE"
+    # echo "$relpath  $path"
+    if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
+        :  # 匹配到则跳过，不处理
     else
-        if [ "$last_dir" != "$dir" ]; then
-            echo -e "\n## $dir\n" >> "$README_FILE"
-            last_dir="$dir"
+        # echo "匹配失败"
+        if [ "$dir" = "." ]; then
+            echo "$show_date  [$name]($relpath)" >> "$README_FILE"
+            echo "" >> "$README_FILE"
+        else
+            if [ "$last_dir" != "$dir" ]; then
+                echo -e "\n## $dir\n" >> "$README_FILE"
+                last_dir="$dir"
+            fi
+            echo "- $show_date  [$name]($relpath)" >> "$README_FILE"
         fi
-        echo "- $show_date  [$name]($relpath)" >> "$README_FILE"
     fi
+    
 done
 
 rm -f "$tmp"
