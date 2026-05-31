@@ -3,7 +3,7 @@
 
 > 仓库地址： https://github.com/ArchKS/invest
 > Typora插件： https://github.com/obgnail/typora_plugin
-2026-05-30  [QA.md](QA.md)
+2026-05-31  [QA.md](QA.md)
 
 2026-05-15  [structure.md](structure.md)
 
@@ -115,5 +115,7 @@
 
 ## 问答
 
+- 2026-05-31  [觉知和思绪对睡眠的作用.md](问答/觉知和思绪对睡眠的作用.md)
+- 2026-05-31  [闭眼和睡眠对眼疲劳的缓解差异.md](问答/闭眼和睡眠对眼疲劳的缓解差异.md)
 - 2026-05-21  [觉知与思维.md](问答/觉知与思维.md)
 - 2026-05-15  [多产品低效率鉴别.md](问答/多产品低效率鉴别.md)
