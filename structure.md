@@ -41,6 +41,3 @@ LastUpdate: 2026-06-01 20:46:10
 
 
 剔除雪球股票链接：[康方生物](https://xueqiu.com/S/09926?from=status_stock_match)替换为康方生物
-vscode：
-(?<!!)\[([^\]]+)\]\([^)]+\) 
-$1
