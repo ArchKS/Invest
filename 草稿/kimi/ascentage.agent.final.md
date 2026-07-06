@@ -1,3 +1,8 @@
+---
+CreateTime: 2026-07-07 07:59:51
+LastUpdate: 2026-07-07 07:59:51
+---
+
 # 亚盛医药（Ascentage Pharma）深度研究报告
 
 > **股票代码**: 06855.HK / AAPG.NASDAQ
