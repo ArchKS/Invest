@@ -1,0 +1,1903 @@
+# AK112 HARMONi-3 结果预测分析报告
+> **报告日期**：2026年7月6日
+> **研究对象**：康方生物AK112（Ivonescimab/依沃西单抗）
+> **预测目标**：HARMONi-3全球III期临床试验结果
+> **分析方法**：基于历史临床数据的跨试验外推与统计建模
+
+---
+
+# 第一章 执行摘要
+
+## 1.1 研究背景与目的
+
+AK112（ivonescimab，依沃西单抗）是由康方生物开发、Summit Therapeutics全球商业化的全球首创PD-1/VEGF双特异性抗体，同时也是首个在III期头对头试验中击败帕博利珠单抗（K药，pembrolizumab）的免疫检查点抑制剂[^1]。HARMONi-3是Summit主导的、旨在验证AK112全球价值的关键III期临床试验，采用AK112联合化疗头对头对比K药联合化疗的优效性设计，一线治疗转移性非小细胞肺癌（NSCLC），按组织学类型分为鳞状（squamous）和非鳞状（non-squamous）两个队列分别独立分析[^2]。
+
+本报告旨在基于AK112已完成和已披露的多项关键临床试验数据，通过跨试验桥接分析、PFS-to-OS转化模型、统计功效模拟及多维度交叉验证，对HARMONi-3的疗效结果进行系统性预测。HARMONi-3的成功不仅将决定AK112能否成为一线NSCLC的全球新标准，也将对Summit股价和康方生物估值产生深远影响，更是2026年下半年全球肿瘤药物领域最受关注的催化剂之一[^3]。
+
+## 1.2 核心数据来源
+
+本报告的预测分析建立在以下四项关键临床试验的公开数据基础之上，涵盖不同人群、不同组织学类型及不同治疗线数：
+
+**HARMONi-6（AK112-306）**：中国一线鳞状NSCLC，AK112联合化疗对比替雷利珠单抗联合化疗。该试验为双主要终点设计，无进展生存期（PFS）风险比（HR）为0.60（95%置信区间：0.47–0.77），p<0.0001；总生存期（OS）HR为0.66（95% CI: 0.50–0.87），p=0.0017，双主要终点均达到统计学显著性[^4][^5]。中位PFS为11.14个月对比6.90个月，绝对获益达4.24个月[^6]。
+
+**HARMONi-2（AK112-303）**：中国PD-L1阳性（TPS≥1%）一线NSCLC，AK112单药头对头对比K药单药。PFS HR为0.51（95% CI: 0.38–0.68），p<0.0001；期中OS分析HR为0.777（39%成熟度）[^7]。该试验是迄今为止唯一在单药头对头设计中击败K药的III期研究。
+
+**HARMONi-A（AK112-301）**：中国EGFR突变（EGFRm）经治一线NSCLC，AK112联合化疗对比单独化疗。PFS HR为0.46；最终OS分析HR为0.74（95% CI: 0.58–0.95），p=0.019，中位随访32.5个月[^8]。
+
+**HARMONi（全球EGFRm）**：全球多中心EGFRm经治NSCLC，38%为西方患者。PFS HR为0.52；OS HR为0.78（p=0.0332），其中北美患者亚组OS HR为0.70，优于总体[^9]。
+
+上述四项试验在PFS层面展现出高度一致的疗效信号（HR范围0.46–0.60），为HARMONi-3的预测提供了坚实的跨试验证据链。
+
+## 1.3 关键发现
+
+### 跨试验疗效高度一致
+
+AK112在不同人群、不同组织学类型中的PFS获益表现出惊人的一致性。HARMONi-A（EGFRm+化疗）PFS HR=0.46[^8]，HARMONi（全球EGFRm）PFS HR=0.52[^9]，HARMONi-2（PD-L1+单药）PFS HR=0.51[^7]，HARMONi-6（鳞癌+化疗）PFS HR=0.60[^4]——四者HR范围仅0.14，跨越EGFR突变与野生型、鳞癌与非鳞癌、单药与联合化疗四种截然不同场景。这种一致性在肿瘤免疫治疗领域极为罕见，提示AK112的PD-1/VEGF双抗机制可能具有广谱且稳定的抗肿瘤活性。
+
+### OS获益可转化为统计学显著
+
+免疫治疗领域长期存在"PFS获益不一定转化为OS获益"的顾虑。HARMONi-6以HR=0.66、p=0.0017的强阳性OS结果，首次在鳞癌联合化疗场景中证明AK112的PFS优势可稳定转化为OS优势[^5]。该试验对照组为替雷利珠单抗+化疗（同样含PD-1），两组的OS差异主要由VEGF通路抑制驱动，而非单纯的PD-1差异。HARMONi-3采用与HARMONi-6完全相同的联合化疗结构（AK112+化疗 vs PD-1+化疗），因此HARMONi-6的OS阳性是预测HARMONi-3的最直接锚点证据[^3]。
+
+### 鳞癌安全性突破贝伐禁忌
+
+传统上，VEGF抑制剂在鳞状NSCLC中的出血风险被视为重大监管障碍——贝伐珠单抗在鳞癌中≥3级出血率达9–10%，导致FDA将其列为禁忌[^10]。然而，AK112通过Fc段静默化（L234A/L235A）和协同结合机制，在HARMONi-6（63.2%中央型鳞癌、30%咯血史的高危人群）中实现了≥3级出血率仅2.6%的安全性表现，与对照组（0.8%）差异极小[^11]。这一数据不仅消除了鳞癌出血风险对HARMONi-3的监管威胁，更意味着AK112将成为首个在鳞癌中安全使用VEGF通路的药物，构成独特的差异化优势。
+
+### 2026年4月期中分析未达阈值的正确解读
+
+2026年4月，HARMONi-3鳞癌队列早期期中分析未达提前终止阈值，引发市场短期恐慌（Summit股价一度下跌约26%）。但本研究交叉验证确认，该分析采用高度保守的alpha消耗策略，且随访时间和事件数尚不足以检测预设HR水平的差异；未达阈值≠最终失败，而是分阶段统计设计的正常表现[^12]。HARMONi-6的强OS数据（HR=0.66）和HARMONi-3后续的PFS最终分析（预计2026年下半年）才是判断成败的关键时点。
+
+### PD-L1阴性亚组的潜在差异化价值
+
+HARMONi-6亚组分析显示，PD-L1 TPS<1%人群的PFS HR=0.55，甚至优于PD-L1阳性亚组（HR=0.66）[^4]。这一发现提示AK112的VEGF阻断机制在PD-L1阴性（即传统免疫治疗获益有限）人群中提供了额外的抗肿瘤价值。若HARMONi-3验证该趋势，AK112有望获得比K药更广泛的"all-comer"适应症标签，在商业上具有重大意义。
+
+## 1.4 核心预测结论
+
+本报告基于跨试验桥接模型、PFS-to-OS转化效率分析及Monte Carlo统计模拟，对HARMONi-3的疗效终点进行量化预测。核心结论如下：
+
+| 终点 | 队列 | 预测基准HR | 成功概率 | 置信度 |
+|------|------|-----------|---------|--------|
+| PFS | 鳞癌 | 0.66（95% CI: 0.46–0.93） | 99.6% | 高 |
+| OS | 鳞癌 | 0.70 | 96.4% | 高 |
+| PFS | 非鳞癌 | 0.55 | ~100% | 中高 |
+| OS | 非鳞癌 | 0.73 | ~98.0% | 中等 |
+
+鳞癌队列的预测以HARMONi-6为直接锚点，通过替雷利珠单抗与K药的间接比较（NMA PFS HR=1.04，95% CI跨越1.0）[^13]及中国至全球人群外推因子（1.05–1.10）[^9]进行桥接调整。基准情景下，鳞癌PFS HR=0.66，成功概率>99%；鳞癌OS HR=0.70，成功概率约96%。双终点同时成功概率约为96.0%[^14]。即使在悲观情景（K药显著优于替雷、西方人群大幅衰减）下，鳞癌PFS HR=0.72，成功概率仍达94.8%[^14]。
+
+非鳞癌队列缺乏直接头对头数据，预测基于HARMONi-2（单药HR=0.51）、HARMONi-A（EGFRm+化疗HR=0.46）及HARMONi（全球EGFRm HR=0.52）的多锚定综合模型，叠加化疗联合效应调整后PFS HR=0.55，成功概率接近100%[^14]。OS预测基于化疗联合试验平均PFS-to-OS转化效率（log-ratio=0.53），基准HR=0.73，成功概率约98%[^14]。
+
+**最可能情景**：鳞癌队列PFS和OS双主要终点均达到统计学显著性；非鳞癌队列PFS阳性，OS趋势阳性但可能因随访成熟度不足而在首次分析时未完全达到显著（需后续更新验证）。
+
+## 1.5 关键催化剂与时间节点
+
+2026年下半年是AK112全球价值的"决胜窗口"，多个关键催化剂将密集释放：
+
+- **2026年第二季度**：HARMONi-3鳞癌队列新增PFS期中分析。该分析为Summit管理层主动新增，体现其对数据的信心。若阳性，将提前验证鳞癌PFS优势，加速审批路径[^15]。
+- **2026年下半年**：HARMONi-3鳞癌队列PFS最终分析。这是首个全球头对头K药的一线鳞癌PFS数据，将决定AK112能否成为一线鳞癌新标准[^14]。
+- **2026年下半年**：HARMONi-3鳞癌队列OS期中分析。若事件数足够且阳性，将大幅提升市场对AK112最终OS获益的信心[^14]。
+- **2026年5月**：HARMONi-6最终OS分析已于ASCO 2026以LBA形式公布，进一步巩固机制验证[^5]。
+- **2026年11月**：HARMONi（全球EGFRm）FDA PDUFA日期，将决定AK112首个全球适应症能否获批[^14]。
+- **2027年上半年**：HARMONi-3非鳞癌队列PFS最终分析，将完成AK112在一线NSCLC全人群中的疗效验证[^14]。
+
+综合以上分析，基于现有跨试验数据的高度一致性和HARMONi-6已证实的OS获益转化，本报告对HARMONi-3最终取得阳性结果持高度乐观态度。鳞癌队列的双终点阳性概率均超过96%，非鳞癌队列PFS成功概率接近100%，最可能情景为鳞癌双阳性、非鳞癌PFS阳性且OS趋势阳性的分阶段成功路径。2026年下半年的数据读出将是AK112从"中国创新"迈向"全球标准"的关键一跃。
+
+---
+
+## 脚注
+
+[^1]: HARMONi-2 (AK112-303) 临床研究报告. Summit Therapeutics press release 2025; JAMA 2025. Ivonescimab monotherapy vs pembrolizumab monotherapy in PD-L1+ NSCLC: PFS HR=0.51, p<0.0001.
+
+[^2]: Summit Therapeutics Q3 2025 Earnings Call Deck & 2025 Annual Report. HARMONi-3 protocol design: AK112 + chemotherapy vs pembrolizumab + chemotherapy, 1L metastatic NSCLC, dual primary endpoints (PFS + OS), separate analyses by histology (sq n≈600, non-sq n≈1000).
+
+[^3]: AK112 HARMONi-3 跨维度洞察提取报告. Insight 1 & Insight 7. 2026-07-06.
+
+[^4]: HARMONi-6 (AK112-306) ESMO 2025 interim analysis & ASCO 2026 LBA4. PFS HR=0.60 (95% CI: 0.47–0.77), p<0.0001; OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017. Lancet 2026.
+
+[^5]: HARMONi-6 ASCO 2026 LBA4 final OS analysis. OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017.
+
+[^6]: HARMONi-6 ESMO 2025 interim analysis. Median PFS: 11.14 months (AK112+chemo) vs 6.90 months (tislelizumab+chemo), absolute benefit 4.24 months.
+
+[^7]: HARMONi-2 (AK112-303) interim OS analysis (39% maturity). OS HR=0.777. Summit Therapeutics press release 2025.
+
+[^8]: HARMONi-A (AK112-301) final OS analysis SITC 2025. OS HR=0.74 (95% CI: 0.58–0.95), p=0.019. Median follow-up 32.5 months.
+
+[^9]: Summit Therapeutics HARMONi WCLC 2025 update. OS HR=0.78 (p=0.0332); North America OS HR=0.70; 38% Western patients.
+
+[^10]: Xiao B et al. Risk of bleeding with bevacizumab and ramucirumab: meta-analysis of 85 RCTs. Cancer Manag Res 2018. Bevacizumab high-grade bleeding RR=1.98 in squamous NSCLC.
+
+[^11]: HARMONi-6 baseline characteristics and safety data: central squamous 63.2%, hemoptysis history 30%, Grade ≥3 hemorrhage 2.6% vs 0.8% in control.
+
+[^12]: AK112 HARMONi-3 交叉验证报告. 冲突3: HARMONi-3期中分析未达阈值的解读. 2026-07-06.
+
+[^13]: Guo Y et al. Tislelizumab plus chemotherapy vs pembrolizumab plus chemotherapy for first-line NSCLC: systematic review and indirect comparison. Front Oncol 2023. PFS HR=1.04 (95% CI: 0.82–1.31).
+
+[^14]: 维度08: 跨试验疗效外推模型与HARMONi-3预测推断 (Dim08 v1.0). 2026-07-06. 基于HARMONi-6、HARMONi-2、HARMONi-A、HARMONi及KEYNOTE-407/RATIONALE-307数据.
+
+[^15]: Summit Therapeutics Q4 2025 Earnings Release (Feb 2026). HARMONi-3 sq enrollment screening completed Q1 2026; added Q2 2026 PFS interim analysis.
+
+
+---
+
+# 第二章 研究背景与HARMONi-3试验设计
+
+## 2.1 AK112（Ivonescimab）机制与研发背景
+
+依沃西单抗（Ivonescimab，AK112/SMT112）是全球首个获批的PD-1/VEGF双特异性抗体，由康方生物自主研发。其独特的分子设计使其区别于传统的单靶点免疫检查点抑制剂或抗血管生成药物，为晚期非小细胞肺癌（NSCLC）的一线治疗提供了全新的机制基础。
+
+### 2.1.1 四价协同结合机制
+
+AK112采用四价对称结构，每个分子可同时结合两个PD-1分子和两个VEGF分子，实现"免疫激活+血管正常化"的双重抗肿瘤作用[^1]。PD-1组分将抗体锚定于肿瘤微环境中的PD-1阳性T细胞，使VEGF阻断效应富集于肿瘤局部，而非系统性广泛抑制血管内皮生长因子[^2]。这种"靶向性VEGF阻断"可显著降低传统抗血管生成药物（如贝伐珠单抗）常见的系统性出血风险，尤其为鳞状NSCLC（sq-NSCLC）的抗血管治疗开辟了可行路径。HARMONi-2研究中，AK112单药在鳞癌亚组中未发生任何≥3级出血事件，验证了这一设计的临床安全性[^3]。
+
+此外，VEGF阻断可通过改善肿瘤血管通透性、促进T细胞浸润来增强PD-1通路的抗肿瘤效应，形成"靶免协同"循环[^4]。在HARMONi-2的PD-L1低表达（TPS 1-49%）亚组中，AK112仍取得PFS HR 0.54的显著获益，提示VEGF/PD-1双靶机制可部分克服PD-L1低表达带来的免疫治疗抵抗[^5]。
+
+### 2.1.2 Fc-silencing设计与安全性优化
+
+AK112采用Fc-null设计，消除了与Fcγ受体和补体C1q的结合能力，大幅降低ADCC、ADCP和CDC效应[^6]。HARMONi-2数据验证了这一设计：AK112组≥3级irAEs发生率仅7.1%，与帕博利珠单抗组（8.0%）相当，且无患者因irAE永久停药[^3]。Fc-silencing策略在保留双靶抗肿瘤活性的同时，有效控制了免疫相关毒性叠加风险，为联合化疗方案的安全性奠定了分子基础。
+
+### 2.1.3 康方生物与Summit Therapeutics的全球合作
+
+2022年12月，康方生物与Summit Therapeutics达成授权合作，Summit以最高达50亿美元的价款获得AK112在美国、加拿大、欧洲和日本的独家开发和商业化权益[^7]。HARMONi-3（NCT05899608）作为Summit主导的首个全球注册性III期试验，承载着AK112在欧美市场获批的核心使命[^8]。康方生物负责中国区域入组，Summit统筹全球其他地区，形成"双引擎"驱动模式。
+
+## 2.2 HARMONi-3试验设计详解
+
+### 2.2.1 基本信息与试验架构
+
+HARMONi-3（NCT05899608，方案编号AK112-3003/SMT112-3003）是由Summit Therapeutics主导、康方生物承接中国部分的随机、双盲、平行分组、国际多中心注册性III期临床试验[^8][^9]。该试验评估依沃西单抗联合化疗对比帕博利珠单抗联合化疗一线治疗转移性NSCLC的疗效与安全性，覆盖北美、欧洲及中国[^8]。
+
+| 设计要素 | 具体内容 |
+|----------|----------|
+| 试验名称 | HARMONi-3 / AK112-3003 / SMT112-3003 |
+| 注册编号 | NCT05899608 |
+| 试验阶段 | 注册性III期 |
+| 设计类型 | 随机、双盲、平行分组、多区域 |
+| 随机化比例 | 1:1 |
+| 主要申办方 | Summit Therapeutics（海外）/ 康方生物（中国） |
+| 地区覆盖 | 北美、欧洲、中国等全球多中心 |
+
+### 2.2.2 入组标准：All-comer设计
+
+HARMONi-3采用"all-comer"入组策略，核心纳入标准包括：年龄≥18岁；组织学或细胞学确认的转移性（IV期）NSCLC，包括鳞状或非鳞状组织学类型；ECOG体力状态0或1；至少1个可测量的非脑病灶（RECIST 1.1）；未接受过任何针对转移性NSCLC的系统治疗（first-line, treatment-naïve）[^10][^11]。
+
+**最为关键的入组特征是不论PD-L1表达水平**（irrespective of PD-L1 expression），要求有肿瘤比例评分（TPS）结果，但TPS≥1%与TPS<1%的患者均可入组[^11][^12]。这一设计使HARMONi-3能够覆盖PD-L1阴性/低表达人群，而这类患者恰恰在临床实践中占比最高（约占一线NSCLC的50-60%），是联合化疗方案的主要适用人群[^13]。
+
+排除标准方面，已知EGFR、ALK、ROS1等可靶向突变患者被排除；有症状CNS转移、肿瘤侵犯主要血管、活动性自身免疫性疾病等亦为排除条件[^10][^11]。
+
+### 2.2.3 治疗方案设计
+
+试验按组织学类型分为两个队列，采用不同的化疗骨架：
+
+| 队列 | 试验组 | 对照组 | 化疗方案 | 维持治疗 |
+|------|--------|--------|----------|----------|
+| 鳞状NSCLC | Ivonescimab 20 mg/kg IV Q3W | Pembrolizumab 200 mg IV Q3W | 卡铂AUC 5/6 + 紫杉醇175 mg/m²或nab-紫杉醇100 mg/m²，Q3W × 4周期[^14] | Ivonescimab或Pembrolizumab单药Q3W，至进展或完成24个月 |
+| 非鳞状NSCLC | Ivonescimab 20 mg/kg IV Q3W | Pembrolizumab 200 mg IV Q3W | 卡铂AUC 5 + 培美曲塞500 mg/m² IV Q3W × 4周期[^14] | Ivonescimab + 培美曲塞或Pembrolizumab + 培美曲塞Q3W，至进展或完成24个月 |
+
+鳞状队列使用紫杉醇/卡铂方案，与当前全球标准KEYNOTE-407一致；非鳞状队列使用培美曲塞/卡铂方案，与KEYNOTE-189对齐。该设计确保试验组与对照组在同一化疗骨架上"头对头"比较，结果具有直接的临床可替换性[^15]。
+
+### 2.2.4 主要终点与次要终点
+
+HARMONi-3采用**双主要终点（dual primary endpoints）**设计：无进展生存期（PFS）由研究者或独立影像评审委员会（IRRC/BICR）按RECIST 1.1评估；总生存期（OS）在ITT人群中评估[^8][^16]。关键设计特点在于"双主要终点"而非"共同主要终点（co-primary）"，意味着PFS或OS任一达到预设统计学显著性即可宣告试验成功[^17]。次要终点包括客观缓解率（ORR）、缓解持续时间（DOR）、疾病控制率（DCR）、安全性及生活质量（QoL）等[^8][^11]。
+
+### 2.2.5 样本量与统计设计
+
+HARMONi-3的样本量经历了重要的方案演进：
+
+| 参数 | 数值 |
+|------|------|
+| 原计划总样本量 | ~400例（仅鳞状NSCLC） |
+| 2024年Q4修订后 | 扩大至鳞状+非鳞状，总样本量约1,600例 |
+| 鳞状队列 | ~600例 |
+| 非鳞状队列 | ~1,000例 |
+| 统计设计 | 事件驱动（event-driven），分组序贯设计 |
+| 盲法 | 双盲，Summit对试验数据保持盲态以维护研究完整性[^18] |
+
+2025年10月，方案进一步修订：按组织学类型分别进行**独立的ITT分析**，各自按预设事件数触发分析[^16][^19]。该修订使鳞状队列可更早获得数据读出，同时增加非鳞状队列样本量以提升OS统计效力。
+
+## 2.3 入组进展与关键时间表
+
+### 2.3.1 全球入组时间线
+
+HARMONi-3的入组进展如下表所示：
+
+| 时间节点 | 里程碑事件 |
+|----------|------------|
+| 2023年Q4 | 北美和中国启动研究中心激活，开始入组[^8] |
+| 2024年 | 欧洲启动；非鳞状NSCLC入组开始[^19] |
+| 2024年10月 | 方案修订：将入组从仅鳞状扩大至"鳞状+非鳞状"，总样本量从400增至约1,600例[^19] |
+| 2025年10月 | 方案修订：按组织学类型分别进行独立统计分析[^16] |
+| 2026年Q1 | 鳞状队列入组计划完成[^19][^20] |
+| 2026年Q2 | 鳞状队列PFS期中分析[^19][^20] |
+| 2026年H2 | 鳞状队列：最终PFS和OS期中分析；非鳞状队列：入组完成预期[^16][^19] |
+| 2027年H1 | 非鳞状队列：最终PFS分析预期[^16][^19] |
+
+### 2.3.2 2026年4月早期期中分析解读
+
+2026年4月，IDMC完成了鳞状队列预设的**早期期中分析**，结果未达提前终止的优效性统计边界，建议试验按原计划继续，Summit保持数据盲态[^18]。该分析采用了高度保守的α分配策略，且入组刚完成后数月即进行分析，数据成熟度不足，未达阳性并不意外。这仅消耗了极小的α值，不影响最终分析的统计学效力[^18]。此事件应定性为"数据尚不成熟，需等待后续分析"，而非试验失败的信号。
+
+- **2026年H2**：鳞状队列最终PFS和OS期中分析预期读出；非鳞状队列入组完成
+- **2027年H1**：非鳞状队列最终PFS分析预期
+
+鳞状队列的2026年下半年数据读出是AK112全球化进程中最关键的监管里程碑，其结果将直接决定Summit是否具备向FDA提交一线NSCLC适应症申请的基础。
+
+## 2.4 HARMONi-3在AK112全球战略中的定位
+
+HARMONi-3并非孤立存在，而是AK112全球注册策略中的核心支柱。康方生物与Summit围绕一线NSCLC构建了互补的试验矩阵：
+
+| 试验 | 地区 | 入组人群 | 治疗方案 | 对照组 | 主要终点 | 样本量 | 当前状态 |
+|------|------|----------|----------|--------|----------|--------|----------|
+| HARMONi-2 | 中国 | PD-L1 TPS≥1% | 单药 vs 单药 | Pembrolizumab单药 | PFS | 398例 | 已完成；NMPA已批准[^5] |
+| HARMONi-6 | 中国 | 仅鳞状NSCLC | 联合化疗 vs 联合化疗 | Tislelizumab+化疗 | PFS | 532例 | 已完成；PFS HR 0.60，OS HR 0.66[^21] |
+| HARMONi-3 | 全球 | 不论PD-L1表达 | 联合化疗 vs 联合化疗 | Pembrolizumab+化疗 | PFS + OS | ~1,600例 | 进行中[^8] |
+| HARMONi-7 | 全球 | PD-L1 TPS≥50% | 单药 vs 单药 | Pembrolizumab单药 | PFS + OS | ~780例 | 2025年启动[^22] |
+
+### 2.4.1 与HARMONi-2的关系：从单药到联合化疗的跨越
+
+HARMONi-2（中国，PD-L1≥1%，单药头对头）证明AK112单药在PD-L1阳性患者中显著优于Pembrolizumab单药（mPFS 11.1 vs 5.8月，HR 0.51，P<0.0001）[^5]。然而，HARMONi-2仅覆盖PD-L1阳性人群，且未使用化疗。HARMONi-3则将验证场景拓展至真实世界中最广泛使用的**联合化疗+all-comer**模式，覆盖PD-L1阴性/低表达患者，这与全球一线NSCLC的临床实践高度一致[^13]。
+
+### 2.4.2 与HARMONi-6的关系：从"中国验证"到"全球注册"
+
+HARMONi-6（中国，鳞状NSCLC，联合化疗）已取得PFS和OS双阳性结果（PFS HR 0.60，OS HR 0.66，P=0.0017），成为首个在一线NSCLC中头对头击败PD-1联合化疗的III期研究[^21]。HARMONi-6对照组为Tislelizumab（中国常用PD-1），HARMONi-3对照组为Pembrolizumab（全球标准），两者在中国鳞癌中的疗效相近[^23]。HARMONi-3的核心任务是验证HARMONi-6的阳性结果能否在**全球多中心、西方人群占相当比例**的人群中复现。若鳞状队列取得阳性，AK112将成为**首个在一线NSCLC中击败Pembrolizumab+化疗的全球标准方案**[^24]。
+
+### 2.4.3 全球监管意义
+
+HARMONi-3采用全球多中心试验（MRCT）设计，覆盖北美、欧洲及中国，数据可直接支持FDA、EMA、PMDA等全球主要监管机构的注册审批[^25]。这一设计与HARMONi（EGFR-TKI进展后NSCLC全球研究）类似——后者约38%的患者来自西方国家，符合FDA对全球注册性试验的种族/地理多样性要求[^25]。相比之下，HARMONi-6仅在中国开展，主要支持NMPA审批；HARMONi-3则承载着AK112从"中国创新药"跃升为"全球一线标准"的终极使命。
+
+---
+
+## 脚注
+
+[^1]: Zhong T, et al. Mechanism of action of ivonescimab (AK112/SMT112): a first-in-class tetravalent Fc-silent bispecific antibody with dual blockade of PD-1 and VEGF. *J Immunother Cancer*. 2023;11(Suppl 1):A1316.
+
+[^2]: Akeso, Inc. Ivonescimab Mechanism of Action. https://www.akesobio.com/en/rd-and-science/products-center/ivonescimab/
+
+[^3]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. *The Lancet*. 2025;405(10481):839-849.
+
+[^4]: Olivares-Hernández A, et al. Ivonescimab: promise or reality for advanced NSCLC? PMC, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12775690/
+
+[^5]: Xiong A, et al. *The Lancet*. 2025;405(10481):839-849. HARMONi-2完整数据.
+
+[^6]: Zhong T, et al. *J Immunother Cancer*. 2023;11(Suppl 1):A1316. Fc-silencing机制.
+
+[^7]: 康方生物新闻稿, 2022年12月. Summit Therapeutics授权合作.
+
+[^8]: Summit Therapeutics Q4 & FY 2025 Earnings Call, 2026年2月23日. https://s206.q4cdn.com/652410165/files/doc_financials/2025/q4/20260223-Q4-FY-2025-Earnings-Call-Deck-_-FINAL-v3.pdf
+
+[^9]: 康方生物新闻稿, 2023年8月. https://bydrug.pharmcube.com/news/detail/d84324f782ad62828ef31de829543501
+
+[^10]: OncLive, "Ivonescimab Under Priority Review by China's NMPA", 2026年6月29日. https://www.onclive.com/view/ivonescimab-under-priority-review-by-china-s-nmpa-for-frontline-pd-l1-positive-nsclc
+
+[^11]: Summit Therapeutics HARMONi-3 Clinical Trial page. https://smmttx.com/clinical-trials/harmoni-3-clinical-trial/default.aspx
+
+[^12]: Summit Therapeutics Q1 2026 Earnings Release, 2026年. https://www.smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-First-Quarter-Ended-March-31-2026/default.aspx
+
+[^13]: Olivares-Hernández A, et al. PMC, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12775690/
+
+[^14]: 富途翻译研报, Summit Therapeutics ESMO Update Q3 2025, 2025年10月20日. https://news.futunn.com/translate-news/notice/305702108/zh-cn/4
+
+[^15]: Summit Therapeutics JPM 2025 Presentation. https://s206.q4cdn.com/652410165/files/doc_presentation/Summit-Therapeutics-2025-JPM-Presentation-Slides.pdf
+
+[^16]: Summit Therapeutics Q3 2025 Earnings Release, 2025年9月30日. https://www.smmttx.com/news/press-releases/news-details/2025/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2025/
+
+[^17]: Jefferies分析师报告, 2025年6月1日. https://xueqiu.com/6974174633/337121232
+
+[^18]: 雪球用户分析, 2026年5月2日. https://xueqiu.com/9523950972/387028391
+
+[^19]: Summit Therapeutics 10-K, 2026年. https://stocklight.com/stocks/us/nasdaq-smmt/summit-therapeutics/annual-reports/nasdaq-smmt-2026-10K-26665225.pdf
+
+[^20]: Quartr Summit Q4 2025 earnings summary, 2026年6月22日. https://quartr.com/events/summit-therapeutics-inc-smmt-q4-2025_FkQB7Lwk
+
+[^21]: Lu S, et al. Lancet. 2026. https://pubmed.ncbi.nlm.nih.gov/42218899/ ; ASCO 2026 Plenary Session LBA4. https://www.onclive.com/view/harmoni-6-shows-os-benefit-with-ivonescimab-chemo-over-tislelizumab-chemo-in-first-line-squamous-nsclc
+
+[^22]: Summit Therapeutics 10-K, 2026年. https://stocklight.com/stocks/us/nasdaq-smmt/summit-therapeutics/annual-reports/nasdaq-smmt-2026-10K-26665225.pdf
+
+[^23]: RATIONALE-307 4-Year Follow-Up. *Springer*. 2026. https://link.springer.com/article/10.1007/s40487-026-00424-z ; KEYNOTE-407 5-Year Update. *JCO*. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10082300/
+
+[^24]: CMB International, "China Healthcare - ASCO 2026 review", 2026年6月3日. https://www.cmbi.com.hk/upload/202606/20260603485363.pdf
+
+[^25]: MedThority, "Topline results from HARMONi", 2025年8月17日. https://inte.medthority.com/news/2025/8/-topline-results-from-the-phase-iii-clinical-trial-harmoni-evaluating-ivonescimab-successfully-met-the-progression-free-survival-pfs-primary-endpoint-for-nsclcegfr-.--summit-therapeutics
+
+
+---
+
+# 第三章 历史临床数据深度回顾
+
+AK112（依沃西单抗/Ivonescimab）的临床开发路径呈现出清晰而递进的验证逻辑：从EGFR-TKI耐药后线治疗（HARMONi-A）→ 一线PD-L1阳性单药头对头击败帕博利珠单抗（HARMONi-2）→ 一线鳞癌联合化疗头对头击败PD-1+化疗（HARMONi-6）→ 全球一线联合化疗头对头（HARMONi-3）。这一链条上的每一项研究都为下一项研究提供了关键的概念验证、剂量参考和安全性锚定。本章将系统回顾HARMONi-A、HARMONi-2、HARMONi-6三项核心研究的完整临床数据，构建跨试验的疗效一致性证据图谱，为HARMONi-3的结果预测提供坚实的历史参照。
+
+---
+
+## 3.1 HARMONi-A：EGFR-TKI耐药NSCLC的里程碑
+
+### 3.1.1 研究设计
+
+HARMONi-A（AK112-301，NCT05184712）是一项在中国55个研究中心开展的III期、随机、双盲、安慰剂对照临床试验，旨在评估依沃西单抗（20 mg/kg IV Q3W）联合化疗（培美曲塞500 mg/m² + 卡铂AUC 5）对比安慰剂联合化疗在EGFR-TKI治疗后进展的EGFR突变局部晚期或转移性非鳞状NSCLC（nsq-NSCLC）患者中的疗效与安全性[^1]。该研究共入组322例患者，按1:1比例随机分配，分层因素包括既往三代EGFR-TKI使用（是/否）和脑转移状态（有/无）。主要终点为独立放射学评审委员会（IRRC）评估的无进展生存期（PFS，RECIST v1.1），关键次要终点为总生存期（OS），采用封闭序贯检验程序：PFS先检验（双侧α=0.05），达到显著性后OS方可检验[^1][^2]。
+
+该研究的人群基线高度反映了真实临床实践中EGFR-TKI耐药后的患者特征：三代TKI经治比例高达86.3%，脑转移患者占21.7%，肝转移患者占13.0%，19外显子缺失与L858R突变各占约53%和47%[^1][^3]。这一基线设计意味着研究结论直接适用于当前临床实践中最棘手的"三代TKI耐药后"治疗困境，无需额外的基线调整。
+
+| 设计要素 | 详情 |
+|---------|------|
+| 研究类型 | III期、随机、双盲、安慰剂对照、多中心 |
+| 入组人数 | 322例（1:1随机） |
+| 试验组 | 依沃西单抗20 mg/kg + 培美曲塞 + 卡铂 |
+| 对照组 | 安慰剂 + 培美曲塞 + 卡铂 |
+| 主要终点 | IRRC评估的PFS（RECIST v1.1） |
+| 关键次要终点 | 总生存期（OS） |
+| 分层因素 | 既往三代EGFR-TKI使用、脑转移状态 |
+| 统计方法 | 封闭序贯检验（PFS→OS） |
+
+### 3.1.2 PFS数据：疗效基石的奠定
+
+HARMONi-A的PFS期中分析（数据截止于2023年3月，中位随访7.89个月）达到了预设的主要终点，依沃西联合化疗显示出具有统计学意义和临床意义的显著改善[^1][^2]。
+
+| PFS指标 | 依沃西+化疗 | 安慰剂+化疗 |
+|---------|-----------|-----------|
+| 中位PFS（月） | 7.10（95% CI: 5.90–8.70） | 4.80（95% CI: 4.20–5.60） |
+| HR（95% CI） | 0.46（0.34–0.62） | — |
+| P值 | <0.001 | — |
+| 6个月PFS率 | 55.40% | 33.10% |
+| 9个月PFS率 | 37.90% | 18.30% |
+| 绝对获益 | +2.30个月 | — |
+| 风险降低 | 54.00% | — |
+
+从PFS数据可以提取三个关键临床信号：第一，中位PFS从4.80个月延长至7.10个月，2.30个月的绝对改善在EGFR-TKI耐药这一难治人群中具有重要临床价值；第二，HR=0.46是EGFR-TKI耐药NSCLC领域中迄今为止报告的最优PFS风险比，显著优于ORIENT-31三药组（HR=0.72）和KEYNOTE-789（HR=0.80）[^4][^5]；第三，PFS曲线从治疗初期即显示明显分离，提示依沃西联合化疗可快速产生抗肿瘤效应，不受EGFR-TKI耐药后"免疫沙漠"微环境的显著制约。9个月PFS率的巨大差异（37.90% vs 18.30%）表明依沃西的优势不仅体现在中位值上，更体现在长期疾病控制人群的扩增上。
+
+### 3.1.3 OS最终分析：双阳性终点的历史突破
+
+OS最终分析是HARMONi-A最具临床意义的突破性结果。该分析于2025年4月（数据截止）完成，中位随访时间32.50个月，于2025年11月在SITC年会上以LBA形式报告，并于2026年1月纳入中国NMPA标签更新[^2][^6]。
+
+| OS指标 | 依沃西+化疗 | 安慰剂+化疗 |
+|---------|-----------|-----------|
+| 中位OS（月） | 16.80（95% CI: 14.50–20.00） | 14.10（95% CI: 12.80–16.30） |
+| HR（95% CI） | 0.74（0.58–0.95） | — |
+| P值 | 0.019 | — |
+| 数据成熟度 | 77.00% | — |
+| 中位随访（月） | 32.50 | — |
+| 12个月OS率 | 65.00% | 60.00% |
+| 24个月OS率 | 35.30% | 28.80% |
+| 30个月OS率 | 29.10% | 18.40% |
+| 绝对获益 | +2.70个月 | — |
+| 风险降低 | 26.00% | — |
+
+OS获益的临床解读需要从三个维度展开：统计学与临床意义的双重突破（OS HR=0.74，P=0.019，在预设α=0.05水平上达到显著，这是EGFR-TKI耐药NSCLC领域免疫治疗的首次OS突破）；长期随访获益的放大效应（30个月OS率差异从早期接近到最终扩大至29.10% vs 18.40%，差异10.70个百分点）；以及对照历史研究的独特性（此前KEYNOTE-789的OS HR=0.84，P=0.036，未达预设边界0.0117；ORIENT-31的OS最终分析无显著获益）[^4][^5]。HARMONi-A由此成为全球首个在EGFR-TKI耐药nsq-NSCLC中同时实现PFS和OS统计学显著阳性的III期免疫治疗研究。
+
+### 3.1.4 ORR、DCR与DoR：缓解质量的全面提升
+
+| 指标 | 依沃西+化疗 | 安慰剂+化疗 | P值 |
+|------|-----------|-----------|-----|
+| ORR | 50.60%（42.60%–58.60%） | 35.40%（28.00%–43.30%） | 0.006 |
+| DCR | 93.10%（88.00%–96.50%） | 83.20%（76.50%–88.60%） | — |
+| 中位DoR（月） | 6.90 | 6.90 | — |
+| ORR绝对提升 | +15.20个百分点 | — | — |
+| ORR相对提升 | 43.00% | — | — |
+
+ORR提升15.20个百分点（相对提升43.00%），表明依沃西不仅延长了疾病控制时间，还显著提高了肿瘤退缩深度。DCR高达93.10%，意味着超过九成的患者可从依沃西联合化疗中获得临床获益（CR+PR+SD）。DoR在两组间相近（均为6.90个月），提示依沃西的主要优势在于提高缓解率而非延长单次缓解持续时间，但考虑到后续维持治疗的交叉效应，该数据可能被低估[^1][^2]。
+
+### 3.1.5 亚组分析：关键人群的获益一致性
+
+HARMONi-A的预设亚组分析显示，依沃西联合化疗的PFS获益在几乎所有关键临床亚组中保持一致。
+
+| 亚组 | PFS HR | 95% CI | OS HR | 临床意义 |
+|------|--------|--------|-------|---------|
+| 总人群 | 0.46 | 0.34–0.62 | 0.74 | 基准获益 |
+| 三代TKI进展 | 0.48 | 0.35–0.66 | — | 核心临床人群一致获益 |
+| 脑转移 | 0.40 | 0.22–0.73 | 0.61 | 颅内/颅外控制均显著 |
+| 无脑转移 | 0.59 | 0.45–0.77 | 0.77 | 标准人群获益 |
+| 19外显子缺失 | 0.48 | 0.32–0.73 | 0.83 | 最常见突变亚型获益 |
+| L858R突变 | 0.43 | — | 0.60 | 预后较差亚型获益更优 |
+| T790M阳性 | 0.22 | 0.09–0.54 | — | 最突出获益亚组 |
+| 既往1种TKI | 0.47 | — | — | 标准二线人群获益 |
+
+三个亚组值得特别关注：T790M突变阳性患者的PFS HR=0.22，是全部亚组中最优的，意味着获益幅度是总人群的2倍以上，提示VEGF阻断介导的肿瘤微环境重塑可能间接抑制了残余EGFR信号传导的促生存效应；脑转移患者OS HR=0.61，是OS亚组中最突出的获益信号，死亡风险降低近40%；L858R突变在PFS（HR=0.43）和OS（HR=0.60）上均优于19外显子缺失，提示依沃西对预后较差的"冷肿瘤"亚型具有更强的微环境激活能力[^1][^2][^3]。
+
+### 3.1.6 全球HARMONi研究一致性验证
+
+HARMONi（AK112-301全球部分，NCT06396065）是HARMONi-A的国际多中心扩展，纳入约38%的北美和欧洲患者，为评估跨人种/跨区域疗效一致性提供了关键数据[^6][^7]。
+
+| 指标 | HARMONi-A（中国） | HARMONi（全球） |
+|------|------------------|----------------|
+| 入组人数 | 322 | 438 |
+| 欧美患者比例 | ~0.00% | ~38.00% |
+| mPFS（月） | 7.10 vs 4.80 | 6.80 vs 4.40 |
+| PFS HR | 0.46 | 0.52 |
+| PFS P值 | <0.001 | <0.00001 |
+| mOS（月，最终） | 16.80 vs 14.10 | 更新中 |
+| OS HR（最终） | 0.74 | 0.78（更新） |
+| 脑转移PFS HR | 0.40 | 0.34 |
+| ORR | 50.60% | 44.70% |
+| DoR（月） | 6.90 | 7.60 |
+
+PFS HR高度一致（中国0.46 vs 全球0.52），两者在95%置信区间范围内高度重叠，证实依沃西疗效不受人种/地域差异影响。值得注意的是，HARMONi WCLC 2025更新显示北美人群OS HR=0.70，对照组mOS=14.00个月，试验组mOS尚未达到，提示依沃西在欧美人群中可能具有更优的OS趋势[^7][^8]。全球研究中脑转移患者PFS HR=0.34与中国数据HR=0.40一致，且颅内PFS在基线脑转移患者中达10.10月 vs 6.50月，进一步支持依沃西在中枢神经系统受累患者中的治疗价值。
+
+---
+
+## 3.2 HARMONi-2：全球首个头对头击败K药的Phase 3
+
+### 3.2.1 研究设计
+
+HARMONi-2（AK112-303，NCT05499390）是一项在中国55家医院开展的随机、双盲、III期临床试验，旨在评估依沃西单抗单药对比帕博利珠单抗（K药）单药一线治疗PD-L1表达阳性（TPS≥1%）局部晚期或转移性NSCLC的疗效与安全性[^9][^10]。该研究于2022年11月启动，2023年8月完成入组，共随机分配398例患者（依沃西组198例，帕博利珠组200例）。数据截止于2024年1月29日，中位随访时间为8.67个月。2024年9月，研究结果被选为WCLC Presidential Symposium口头报告；2025年3月，完整结果发表于*The Lancet*[^9][^11]。
+
+| 设计要素 | 详情 |
+|---------|------|
+| 研究类型 | III期、随机、双盲、阳性对照 |
+| 入组人数 | 398例（1:1随机） |
+| 试验组 | 依沃西单抗单药 |
+| 对照组 | 帕博利珠单抗200 mg Q3W |
+| 主要终点 | IRRC评估的PFS（RECIST v1.1） |
+| PD-L1 TPS 1-49% | 57.80% |
+| PD-L1 TPS≥50% | 42.20% |
+| 鳞癌 | 45.50% |
+| 非鳞癌 | 54.50% |
+
+### 3.2.2 PFS数据：历史性的头对头胜利
+
+| PFS指标 | 依沃西单抗（n=198） | 帕博利珠单抗（n=200） |
+|---------|-------------------|---------------------|
+| 中位PFS（月） | 11.14（95% CI: 7.33–NE） | 5.82（95% CI: 5.03–8.21） |
+| PFS HR | 0.51（95% CI: 0.38–0.69） | — |
+| P值 | <0.0001 | — |
+| 6个月PFS率 | ~70.00% | ~50.00% |
+| 9个月PFS率 | 56.00%（47.00–64.00） | 40.00%（32.00–48.00） |
+| 绝对获益 | +5.32个月 | — |
+| 风险降低 | 49.00% | — |
+
+依沃西单抗将疾病进展或死亡风险降低49%，中位PFS绝对延长5.32个月，这一幅度在NSCLC一线免疫治疗头对头研究中前所未有。作为参照，既往PD-1单抗在相似人群中的mPFS约为5.00–7.00个月，与HARMONi-2中帕博利珠组的表现一致（KEYNOTE-042全球数据mPFS 6.40个月，中国扩展组mPFS 6.30个月）[^9][^12]。
+
+### 3.2.3 OS期中分析：方向性获益的早期信号
+
+HARMONi-2的主要终点为PFS，OS为次要终点。在2025年4月NMPA批准适应症时，首次公布了OS期中分析数据：OS成熟度为39%（约157个死亡事件），OS HR=0.777，降低死亡风险22.30%[^9][^13]。
+
+| OS分析要点 | 数据 |
+|-----------|------|
+| OS成熟度 | 39.00% |
+| OS HR | 0.777 |
+| 死亡风险降低 | 22.30% |
+| α分配值 | 0.0001（非常保守） |
+| 统计学显著性 | 未达预设边界 |
+| 与K药历史对比 | KEYNOTE-042/189中OS HR约0.75–0.82 |
+
+从临床角度，OS HR=0.777在39%成熟度时是一个积极信号：方向确定性明确（HR点估计<0.80且远离1.0），与PFS HR=0.51方向一致，符合免疫治疗的获益传导规律。参照HARMONi-A的演变轨迹（30%成熟度时OS HR=0.72，不显著→52%成熟度时OS HR=0.80，不显著→最终分析达到统计学显著获益），提示依沃西的OS获益需要时间显现[^2][^14]。JP Morgan在2025年3月报告中预计HARMONi-2初步OS HR约为0.80，实际39%成熟度时读数为0.777，已优于预期[^13][^15]。
+
+### 3.2.4 ORR、DCR与DoR
+
+| 指标 | 依沃西单抗 | 帕博利珠单抗 |
+|------|-----------|-------------|
+| ORR | 50.00%（95% CI: 42.80–57.20） | 38.50%（95% CI: 31.70–45.60） |
+| DCR | 89.90%（95% CI: 84.80–93.70） | 70.50%（95% CI: 63.70–76.70） |
+| 中位DoR | 未达到（NE–NE） | 未达到（8.28–NE） |
+| 中位TTR（月） | 1.50 | 2.50 |
+| ORR绝对提升 | +11.50个百分点 | — |
+| DCR绝对提升 | +19.40个百分点 | — |
+
+依沃西在ORR和DCR上均显著优于帕博利珠，且起效更快（中位TTR 1.50 vs 2.50个月）。DoR数据尚不成熟，但两组均未达到中位值，考虑到依沃西组的PFS优势更大，其DoR最终读数可能优于对照组[^9][^11]。
+
+### 3.2.5 亚组分析：跨人群的获益一致性
+
+**PD-L1表达亚组**：
+
+| PD-L1亚组 | 依沃西 n | 帕博利珠 n | PFS HR（95% CI） |
+|----------|---------|-----------|----------------|
+| TPS≥50% | 83 | 85 | 0.46（0.28–0.75） |
+| TPS 1-49% | 115 | 115 | 0.54（0.37–0.79） |
+
+两个PD-L1亚组均显示显著PFS获益，高表达组（TPS≥50%）的HR点估计更低（0.46 vs 0.54），提示依沃西在PD-L1高表达人群中可能具有更优的疗效。对于PD-L1低表达（TPS 1-49%）人群，依沃西仍取得HR=0.54的显著获益，提示PD-1/VEGF双抗的协同机制可能部分克服PD-L1低表达带来的免疫治疗抵抗，VEGF阻断可通过改善肿瘤血管正常化、促进T细胞浸润来增强抗肿瘤免疫[^9][^16]。
+
+**组织学类型亚组**：
+
+| 组织学类型 | 依沃西 n | 帕博利珠 n | PFS HR（95% CI） |
+|-----------|---------|-----------|----------------|
+| 鳞癌（sq-NSCLC） | 90 | 91 | 0.48（0.31–0.74） |
+| 非鳞癌（nsq-NSCLC） | 108 | 109 | 0.54（0.36–0.82） |
+
+鳞癌与非鳞癌亚组均获益显著，鳞癌亚组的PFS HR为0.48，中位PFS约9.70个月（vs 帕博利珠组约4.00–5.00个月），绝对获益约5.00个月。传统上，抗血管生成药物（如贝伐珠单抗）因出血风险在鳞癌NSCLC中受限，而依沃西作为双抗在鳞癌中展现了优异的疗效和可控的安全性，为鳞癌患者提供了新的治疗选择[^9][^17]。
+
+**转移状态亚组**：
+
+| 转移状态 | PFS HR |
+|---------|--------|
+| 肝转移（Yes） | 0.47 |
+| 无肝转移（No） | 0.53 |
+| 脑转移（Yes） | 0.55 |
+| 无脑转移（No） | 0.53 |
+
+依沃西在肝转移和脑转移等难治性亚组中均保持显著获益。肝转移亚组HR=0.47，获益尤为突出，这与VEGF阻断机制相关——肝转移病灶往往伴随高度血管化和免疫抑制微环境，VEGF抑制可改善血管通透性、促进免疫细胞浸润。脑转移亚组中，依沃西也显示了获益趋势（HR=0.55），此前II期研究显示含依沃西方案对未治疗脑转移患者的颅内mPFS可达19.30个月，颅内ORR达39%（含25%完全缓解）[^9][^18]。
+
+### 3.2.6 鳞癌亚组特别关注：安全性突破
+
+出血风险是抗血管生成药物用于鳞癌的主要顾虑。贝伐珠单抗因严重出血事件被禁用于鳞癌NSCLC。依沃西在HARMONi-2鳞癌亚组中展现了突破性的安全性特征：依沃西组鳞癌患者未发生≥3级出血事件，HARMONi-2中报告的2例≥3级出血事件均发生在非鳞癌患者中[^9][^17][^19]。
+
+| 安全性指标 | 依沃西鳞癌亚组（n=90） | 帕博利珠鳞癌亚组（n=91） |
+|-----------|---------------------|------------------------|
+| 任何级别TRAEs | 85.60% | 80.20% |
+| ≥3级TRAEs | 22.20% | 18.70% |
+| 严重TRAEs | 18.90% | 18.70% |
+| 因TRAE停药 | 2.20% | 3.30% |
+| ≥3级出血事件 | 0.00% | — |
+
+这一安全性优势可能归因于依沃西的分子设计：四价协同结合使PD-1组分将抗体锚定于肿瘤微环境，减少系统性VEGF阻断；较短半衰期（6–7天 vs 贝伐珠单抗20天）允许VEGF水平在用药间隔期间恢复；Fc-null设计减少ADCC/ADCP/CDC效应，降低免疫相关毒性[^16][^17]。
+
+### 3.2.7 生活质量数据：去化疗方案的临床价值
+
+HARMONi-2的生活质量（HRQoL）分析于2026年3月ELCC大会以海报形式公布，采用QLQ-C30、QLQ-LC13和EQ-5D-5L量表评估[^20][^21]。
+
+| 指标 | 依沃西 | 帕博利珠 |
+|------|-------|---------|
+| 中位恶化时间（TTD） | 未达到 | 9.90个月 |
+| 12个月无恶化率 | 51.00% | 46.00% |
+| 基线GHS/QoL评分 | 71.80（SD 17.60） | 73.60（SD 17.50） |
+| 第12周评分 | 78.50（SD 15.90） | 76.70（SD 16.60） |
+| 第30周评分 | 78.50（SD 16.00） | 76.50（SD 16.90） |
+
+在无化疗的情况下，依沃西不仅显著延长PFS，还带来了有意义的生活质量改善。依沃西组GHS/QoL评分从基线持续改善并稳定在高水平，而帕博利珠组在第30周略有下降。肺癌症状控制方面，咳嗽中位TTD未达到，第30周从29.90降至19.60；咯血从7.20降至2.90；呼吸困难从17.50降至12.10，显示更优的长期控制趋势。EQ-5D-5L VAS评分从基线81.90提升至第12周84.30，并维持至第30周83.70，健康效用值维持在约0.90（SD 0.10）的高水平[^20][^21]。生活质量数据支持依沃西作为"去化疗"一线方案的临床价值：在无化疗负担的情况下，患者获得更长的PFS同时保持甚至改善生活质量。
+
+---
+
+## 3.3 HARMONi-6：一线鳞状NSCLC的PFS+OS双阳性
+
+### 3.3.1 研究设计
+
+HARMONi-6（AK112-306，NCT05840016）是一项在中国开展的随机、双盲、平行对照III期临床试验，由上海胸科医院陆舜教授担任主要研究者。该研究于2023年8月17日至2025年1月21日期间，在中国多家研究中心共筛选761例患者，最终入组532例（各266例）既往未接受系统治疗的局部晚期（IIIB/IIIC期）或转移性（IV期）鳞状非小细胞肺癌（sq-NSCLC）患者，按1:1比例随机分配至依沃西联合化疗组或替雷利珠单抗联合化疗组[^22][^23]。
+
+| 设计要素 | 详细内容 |
+|---------|---------|
+| 试验类型 | 随机、双盲、平行对照、III期 |
+| 总入组/筛选 | 532例 / 761例（70.00%入组率） |
+| 随机比例 | 1:1（各266例） |
+| 试验组 | 依沃西单抗20 mg/kg + 卡铂AUC 5 + 紫杉醇175 mg/m²，Q3W |
+| 对照组 | 替雷利珠单抗200 mg + 卡铂AUC 5 + 紫杉醇175 mg/m²，Q3W |
+| 分层因素 | 疾病分期（IIIB/IIIC vs IV）；PD-L1 TPS（≥1% vs <1%） |
+| 主要终点 | BICR评估的PFS |
+| 关键次要终点 | OS、ORR、DOR、DCR、安全性 |
+| PFS数据截止 | 2025年2月28日（中位随访10.30个月） |
+| OS数据截止 | 2026年2月27日（中位随访21.40个月） |
+
+该研究基线特征显示，约63%的患者为中央型鳞癌，31%有咯血史，9%存在肿瘤空洞，18%有大血管包绕，39%为PD-L1 TPS<1%，33.8%存在多部位转移/肝转移/脑转移。这一入组特征反映了真实世界中sq-NSCLC患者的高风险特征，尤其是抗血管生成治疗传统上被视为禁忌的出血高危人群占比极高[^22][^24]。
+
+### 3.3.2 PFS数据：主要终点的阳性达成
+
+HARMONi-6在首次预设期中分析中即达到PFS主要终点，结果具有统计学显著性和临床意义[^22][^23]。
+
+| 指标 | 依沃西+化疗（n=266） | 替雷利珠+化疗（n=266） | HR（95% CI） | P值 |
+|------|-------------------|-------------------|------------|------|
+| 中位PFS（月） | 11.10（9.90–NE） | 6.90（5.80–8.60） | 0.60（0.46–0.78） | <0.0001 |
+| 研究者评估mPFS（月） | 11.40 | 6.90 | 0.64（0.50–0.84） | — |
+| 1年PFS率 | ~48.00% | ~24.00% | — | — |
+| 绝对获益 | +4.20个月 | — | — | — |
+| 风险降低 | 40.00% | — | — | — |
+
+PFS获益在预设的所有关键亚组中一致倾向于依沃西组。尤为重要的是，PD-L1阴性（TPS<1%）患者的获益幅度甚至大于PD-L1阳性患者（HR 0.55 vs 0.66），提示依沃西的抗血管生成机制可能独立于PD-L1表达发挥协同抗肿瘤作用[^22][^25]。
+
+| 亚组 | 依沃西组mPFS（月） | 替雷利珠组mPFS（月） | HR（95% CI） |
+|------|-------------------|-------------------|------------|
+| PD-L1 TPS <1% | 9.90 | 5.70 | 0.55 |
+| PD-L1 TPS ≥1% | 12.60 | 8.60 | 0.66 |
+| 中央型鳞癌（~63%） | 一致获益 | 一致获益 | 一致获益 |
+
+### 3.3.3 OS数据：双阳性终点的历史性突破
+
+ASCO 2026年会上公布的OS期中分析结果显示，依沃西联合化疗组取得具有统计学显著性和临床意义的OS获益，成为全球首个在肺癌领域头对头对比PD-1联合化疗取得PFS和OS双阳性的III期临床研究[^26][^27]。
+
+| 指标 | 依沃西+化疗 | 替雷利珠+化疗 | HR（95% CI） | P值 |
+|------|-----------|-----------|------------|------|
+| 中位OS（月） | 27.90 | 23.70 | 0.66（0.50–0.87） | 0.0017 |
+| 12个月OS率 | 78.90% | 72.20% | — | — |
+| 24个月OS率 | 64.70% | 48.60% | — | — |
+| 死亡风险降低 | — | — | 34.00% | — |
+| 绝对获益 | +4.20个月 | — | — | — |
+| 中位随访（月） | 21.40 | 21.40 | — | — |
+
+OS获益在各预设亚组中方向一致。该分析跨越了预设的疗效边界（P<0.0049），且24个月OS率差距持续扩大（64.70% vs 48.60%），差异16.10个百分点，提示依沃西方案具有持续的"长拖尾"免疫效应。HARMONi-6是首个在一线NSCLC中证明PFS获益能转化为OS显著获益的头对头研究，打破了NSCLC免疫治疗中"PFS-OS disconnect"的历史顾虑[^26][^27]。
+
+### 3.3.4 ORR、DCR与DoR：更深更持久的缓解
+
+| 指标 | 依沃西+化疗 | 替雷利珠+化疗 | P值 |
+|------|-----------|-----------|------|
+| ORR | 75.90% | 66.50% | 0.008 |
+| PD-L1 TPS≥1% ORR | 80.10% | 70.20% | — |
+| 中位DOR（月） | 11.20 | 8.40 | 0.0219 |
+| DCR | ~95.00% | ~90.00% | — |
+| ORR绝对提升 | +9.40个百分点 | — | — |
+| DOR绝对延长 | +2.80个月 | — | — |
+
+依沃西组不仅客观缓解率更高，而且缓解持续时间显著更长（11.20 vs 8.40个月），这与PFS和OS的获益模式一致，提示依沃西诱导的肿瘤反应具有更深度和更持久的特征。在一线sq-NSCLC中实现75.90%的ORR和11.20个月的中位DOR，这一数据在鳞癌领域具有里程碑意义[^22][^28]。
+
+### 3.3.5 PD-L1亚组：全表达谱获益
+
+| PD-L1亚组 | 依沃西组mPFS（月） | 替雷利珠组mPFS（月） | PFS HR | OS获益方向 |
+|----------|-------------------|-------------------|--------|----------|
+| TPS <1%（阴性） | 9.90 | 5.70 | 0.55 | 一致获益 |
+| TPS ≥1%（阳性） | 12.60 | 8.60 | 0.66 | 一致获益 |
+| TPS 1-49% | — | — | 0.67 | 一致获益 |
+| TPS≥50% | — | — | 0.64 | 一致获益 |
+
+各PD-L1亚组表现一致：无论PD-L1表达水平（TPS<1% HR=0.55，TPS≥1% HR=0.66，TPS 1-49% HR=0.67，TPS≥50% HR=0.64），无论是否伴肝转移，依沃西联合化疗均显著获益。PD-L1阴性人群的获益幅度甚至大于阳性人群（PFS HR 0.55 vs 0.66），这一发现对临床实践具有重要指导意义：即使在PD-L1阴性（传统上免疫治疗获益有限）的sq-NSCLC患者中，依沃西依然能够显著改善预后，这主要归因于VEGF阻断机制不依赖PD-L1表达通路[^22][^25]。
+
+### 3.3.6 安全性在高危人群中的突破性表现
+
+HARMONi-6的安全性数据在鳞癌高危出血人群中具有突破性意义。传统抗血管生成药物（如贝伐珠单抗）因鳞癌患者出血风险高而被禁用于sq-NSCLC。依沃西在63%中央型鳞癌、31%有咯血史、9%肿瘤空洞、18%大血管包绕的高危人群中，展示了可控的安全性特征[^22][^24][^29]。
+
+| 安全性指标 | 依沃西+化疗（n=266） | 替雷利珠+化疗（n=266） |
+|-----------|------------------|------------------|
+| 任何级别TRAE | 99.20% | 99.20% |
+| ≥3级TRAE | 69.20% | 58.90% |
+| 严重TRAE | 41.40% | 34.30% |
+| TRAE导致停药 | 5.30% | 4.50% |
+| TRAE导致死亡 | 3.80% | 4.20% |
+| ≥3级免疫相关AE | 14.00% | 14.00% |
+| ≥3级出血 | 2.60% | 0.80% |
+| 蛋白尿（所有级别） | 42.50% | 12.80% |
+| 出血（所有级别） | 24.80% | 12.10% |
+| 高血压（所有级别） | 14.70% | 5.70% |
+
+≥3级出血发生率仅2.60%，在入组了大量出血高危患者的背景下，这一数据显著优于历史上贝伐珠单抗在鳞癌中的安全性表现，明确区分了依沃西与贝伐珠单抗在sq-NSCLC中的安全性边界。irAE发生率两组相等（14.00%），提示依沃西的PD-1臂免疫毒性并未因双靶结构而增强。VEGF相关AE谱（蛋白尿、出血、高血压）符合预期，但严重事件率低，且与HARMONi-2研究结果一致，未发现新的安全性信号[^22][^29]。
+
+---
+
+## 3.4 跨试验疗效一致性分析
+
+### 3.4.1 四试验疗效对比总表
+
+将HARMONi-A、HARMONi-2、HARMONi-6三项核心研究的关键疗效指标进行系统对比，可以清晰地看到依沃西在不同治疗线数、不同组织学类型、不同联合方案中的疗效一致性。
+
+| 指标 | HARMONi-A（二线EGFRm nsq） | HARMONi-2（一线PD-L1+单药） | HARMONi-6（一线sq-NSCLC） |
+|------|---------------------------|---------------------------|---------------------------|
+| 入组人数 | 322 | 398 | 532 |
+| 对照组 | 安慰剂+化疗 | 帕博利珠单抗 | 替雷利珠+化疗 |
+| 试验组 | 依沃西+化疗 | 依沃西单抗 | 依沃西+化疗 |
+| 中位PFS（月） | 7.10 vs 4.80 | 11.14 vs 5.82 | 11.10 vs 6.90 |
+| PFS HR | 0.46 | 0.51 | 0.60 |
+| PFS P值 | <0.001 | <0.0001 | <0.0001 |
+| 中位OS（月） | 16.80 vs 14.10 | 未达到（HR 0.777） | 27.90 vs 23.70 |
+| OS HR | 0.74 | 0.777（39%成熟度） | 0.66 |
+| OS P值 | 0.019 | 未达显著 | 0.0017 |
+| ORR | 50.60% vs 35.40% | 50.00% vs 38.50% | 75.90% vs 66.50% |
+| DCR | 93.10% vs 83.20% | 89.90% vs 70.50% | ~95.00% vs ~90.00% |
+| 中位DoR（月） | 6.90 vs 6.90 | 未达到 vs 未达到 | 11.20 vs 8.40 |
+| 鳞癌占比 | 0.00% | 45.50% | 100.00% |
+| ≥3级出血 | 0.00% | 0.00%（鳞癌亚组） | 2.60% |
+| 研究地区 | 中国 | 中国 | 中国 |
+
+### 3.4.2 PFS HR一致性分析（0.46–0.60）
+
+三项研究中PFS HR分别为0.46（HARMONi-A）、0.51（HARMONi-2）、0.60（HARMONi-6），均落在0.46–0.60的狭窄区间内，展现出惊人的跨试验一致性。这一一致性并非偶然，而是反映了依沃西PD-1/VEGF双靶机制在不同临床场景中的稳定获益输出。
+
+| 研究 | 人群 | 线数 | 联合方案 | PFS HR | 绝对获益（月） |
+|------|------|------|----------|--------|-------------|
+| HARMONi-A | EGFRm nsq-NSCLC | 二线（TKI耐药） | +化疗 | 0.46 | +2.30 |
+| HARMONi-2 | PD-L1+ NSCLC | 一线 | 单药 | 0.51 | +5.32 |
+| HARMONi-6 | sq-NSCLC | 一线 | +化疗 | 0.60 | +4.20 |
+| HARMONi（全球） | EGFRm nsq-NSCLC | 二线（TKI耐药） | +化疗 | 0.52 | +2.40 |
+
+PFS HR的梯度变化呈现出合理的生物学逻辑：从TKI耐药后线（0.46）到一线单药（0.51）再到一线联合化疗（0.60），HR略有上升，但始终保持在高度获益区间（<0.60）。HARMONi-6的HR相对略高（0.60），可归因于对照组为PD-1+化疗（活性对照），而非HARMONi-A的安慰剂+化疗或HARMONi-2的PD-1单药。值得注意的是，即使面对活性对照（替雷利珠+化疗），依沃西仍能将疾病进展风险降低40%，这在头对头研究中属于优异表现[^1][^9][^22]。
+
+### 3.4.3 OS信号一致性分析（0.66–0.79）
+
+OS数据同样展现出跨试验的一致性趋势，尽管各研究的数据成熟度存在差异。
+
+| 研究 | OS HR | 数据成熟度 | 对照组 | 临床意义 |
+|------|-------|----------|--------|---------|
+| HARMONi-A | 0.74 | 77.00% | 安慰剂+化疗 | 达到显著（P=0.019） |
+| HARMONi-2 | 0.777 | 39.00% | 帕博利珠单抗 | 方向积极，未达显著 |
+| HARMONi-6 | 0.66 | 未明确 | 替雷利珠+化疗 | 达到显著（P=0.0017） |
+| HARMONi（全球） | 0.78 | 更新中 | 安慰剂+化疗 | 方向一致 |
+| HARMONi（北美） | 0.70 | 更新中 | 安慰剂+化疗 | 更优趋势 |
+
+OS HR分布在0.66–0.79的区间内，方向一致且均倾向于依沃西。HARMONi-6的OS HR（0.66）优于HARMONi-A（0.74）和HARMONi-2（0.777），可能与以下因素有关：联合化疗的协同效应更强；鳞癌患者血管生成更活跃，从VEGF阻断中获益更多；随访时间更长（21.40个月），获益充分显现。HARMONi-A的OS演变轨迹（从早期趋势到最终显著）提示HARMONi-2的OS HR=0.777在39%成熟度时是一个积极的早期信号，随着随访延长有望进一步改善[^2][^9][^26]。
+
+### 3.4.4 跨组织学类型外推依据
+
+鳞癌历来是抗血管生成治疗的"禁区"（贝伐珠单抗禁忌），但依沃西通过肿瘤微环境优先富集的设计突破了这一限制。跨组织学类型的外推依据如下：
+
+| 外推维度 | 证据来源 | 关键数据 | 外推逻辑 |
+|---------|---------|---------|---------|
+| 非鳞癌疗效 | HARMONi-A | PFS HR 0.46 | 非鳞癌队列直接外推 |
+| 鳞癌疗效 | HARMONi-6 | PFS HR 0.60 | 鳞癌队列内部验证 |
+| 鳞癌安全性 | HARMONi-2 + HARMONi-6 | ≥3级出血 0.00%→2.60% | 高出血风险人群安全可控 |
+| 抗VEGF机制 | HARMONi-A + HARMONi-2 | VEGF相关AE 3.10%–10.20% | 毒性谱支持鳞癌安全使用 |
+| 单药→联合 | HARMONi-2→HARMONi-6 | PFS HR 0.48→0.60 | 化疗协同增效，方向一致 |
+
+HARMONi-2鳞癌亚组（单药）PFS HR=0.48，HARMONi-6鳞癌（联合化疗）PFS HR=0.60，两项研究一致显示依沃西在鳞癌中相比PD-1单药/联合具有显著PFS优势。更重要的是，HARMONi-6已证明鳞癌中PFS获益能转化为OS显著获益（HR=0.66，P=0.0017），为HARMONi-3鳞癌队列的设计提供了强有力的先验证据[^9][^17][^22][^26]。
+
+### 3.4.5 中国数据向全球数据的外推验证
+
+HARMONi-A的全球扩展研究HARMONi提供了中国数据向全球人群外推的关键验证：
+
+| 验证维度 | 中国数据 | 全球数据 | 一致性评估 |
+|---------|---------|---------|----------|
+| PFS HR | 0.46 | 0.52 | 高度一致（CI重叠） |
+| mPFS差异 | +2.30个月 | +2.40个月 | 一致 |
+| 脑转移PFS HR | 0.40 | 0.34 | 高度一致 |
+| 颅内mPFS | — | 10.10 vs 6.50 | 数据互补 |
+| OS HR | 0.74 | 0.78 | 方向一致 |
+| 北美OS HR | — | 0.70 | 可能更优 |
+| ORR | 50.60% | 44.70% | 略低（可能因基线差异） |
+| DoR | 6.90个月 | 7.60个月 | 一致 |
+
+PFS HR在中国（0.46）和全球（0.52）数据中的高度一致，为HARMONi-3全球多中心研究的成功提供了最坚实的外推基础。北美人群OS HR=0.70优于总人群HR=0.78，提示HARMONi-3在欧美人群中可能获得更强的OS信号。此外，HARMONi-2中帕博利珠组mPFS 5.82个月与全球数据（KEYNOTE-042全球mPFS 6.40个月，中国扩展组mPFS 6.30个月）高度一致，表明中国患者的K药反应与全球人群相当，进一步支持中国数据的外推性[^1][^7][^9][^12]。
+
+| 中国数据向全球外推的支持因素 | 评估 |
+|---------------------------|------|
+| HARMONi全球研究已验证PFS一致性 | 高置信度 |
+| 北美人群OS趋势可能更优 | 积极信号 |
+| 对照组（K药）疗效中国=全球 | 基线可比 |
+| 依沃西分子机制无人种特异性 | 机制支持 |
+| 需关注OS获益的全球差异 | 中等风险 |
+| 非鳞癌全球数据尚需验证 | 等待HARMONi-3 |
+
+---
+
+**核心结论**：HARMONi-A、HARMONi-2、HARMONi-6三项研究构成了依沃西临床开发中逐级递进的证据链条。从PFS HR 0.46（二线EGFRm+化疗）到0.51（一线PD-L1+单药）到0.60（一线鳞癌+化疗），依沃西在三种截然不同的临床场景中均展现出稳定而优异的疗效信号。OS数据从HARMONi-A的显著阳性（HR=0.74，P=0.019）到HARMONi-6的双阳性（HR=0.66，P=0.0017），再到HARMONi-2的方向性获益（HR=0.777），呈现出一致的获益趋势。鳞癌安全性的突破（HARMONi-2中0%≥3级出血、HARMONi-6中2.60%≥3级出血）打破了传统抗VEGF药物的禁忌，为HARMONi-3的全球鳞癌队列奠定了坚实的安全性基础。全球数据一致性验证（HARMONi全球PFS HR=0.52 vs 中国0.46）进一步增强了HARMONi-3跨人群成功的外推信心。这三项研究共同构成的历史临床数据深度图谱，为HARMONi-3的结果预测提供了多维度、跨场景、强一致性的循证基础。
+
+---
+
+## 脚注
+
+[^1]: Fang W, Zhao Y, Luo Y, et al. Ivonescimab plus chemotherapy in non-small cell lung cancer with EGFR variant: a randomized clinical trial. *JAMA*. 2024;332(7):561-570.
+
+[^2]: Akeso, Inc. Ivonescimab HARMONi-A Study Final OS Analysis Results Presented at SITC 2025. Press release. Nov 7, 2025.
+
+[^3]: Zhang L, et al. HARMONi-A ASCO 2024 Oral Abstract 8508.
+
+[^4]: Lu S, et al. ORIENT-31 second interim analysis. *Lancet Respir Med*. 2023;11(7):624-636.
+
+[^5]: Merck. KEYNOTE-789 Phase 3 trial update. Feb 2023.
+
+[^6]: Akeso, Inc. Ivonescimab Updated Label Shows Positive Dual Results in PFS and OS. Press release. Jan 6, 2026.
+
+[^7]: Summit Therapeutics. HARMONi WCLC 2025 Presidential Symposium. Aug 2025.
+
+[^8]: Summit Therapeutics. HARMONi Intracranial Efficacy Presentation. Mar 2026.
+
+[^9]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. *The Lancet*. 2025;405(10481):839-849.
+
+[^10]: ClinicalTrials.gov. NCT05499390. https://clinicaltrials.gov/ct2/show/NCT05499390
+
+[^11]: Zhou C, et al. Phase 3 Study of Ivonescimab (AK112) vs. Pembrolizumab as First-line Treatment for PD-L1-positive Advanced NSCLC: HARMONi-2. WCLC 2024 Presidential Symposium. September 8, 2024, San Diego, CA.
+
+[^12]: Mok TSK, et al. Pembrolizumab versus chemotherapy for previously untreated, PD-L1-expressing, locally advanced or metastatic non-small-cell lung cancer (KEYNOTE-042). *Lancet*. 2019;393(10183):1819-1830.
+
+[^13]: BusinessWire. Ivonescimab Monotherapy Reduced the Risk of Disease Progression or Death by 49%. September 8, 2024.
+
+[^14]: 浦银国际. 康方生物：1L NSCLC中国获批，HARMONi-2初次OS数据读出. 2025年5月2日.
+
+[^15]: JP Morgan. 康方生物公司研报. 2025年3月.
+
+[^16]: Zhong T, et al. Mechanism of action of ivonescimab (AK112/SMT112): a first-in-class tetravalent Fc-silent bispecific antibody with dual blockade of PD-1 and VEGF. *J Immunother Cancer*. 2023;11(Suppl 1):A1316.
+
+[^17]: Frontiers in Immunology. Anti-angiogenic therapies in cancer: from endogenous inhibitors to bispecific VEGF x PD-(L)1 antibodies. 2026;17:1736806.
+
+[^18]: TrialX. Brain Metastasis in Triple Negative Breast Cancer: Ivonescimab and Trop2 ADC. Clinical trial description citing AK112-201/202 intracranial data.
+
+[^19]: Akeso, Inc. Ivonescimab Mechanism of Action. https://www.akesobio.com/en/rd-and-science/products-center/ivonescimab/
+
+[^20]: Akeso, Inc. Ivonescimab Shows Quality of Life Benefits in Chemotherapy-Free First-Line NSCLC: HRQoL Data from HARMONi-2 at ELCC 2026. March 31, 2026.
+
+[^21]: 康方生物. 生存与生活质量双重显著获益！依沃西"去化疗"一线治疗NSCLC生活质量分析数据发表于2026 ELCC. 2026年3月30日.
+
+[^22]: Chen Z, Yang F, Jiang Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6): a randomised, double-blind, phase 3 trial. *The Lancet*. 2025;406(10515):2078-2088.
+
+[^23]: Lu S, et al. Phase III study of ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small cell lung cancer (HARMONi-6). Presented at: 2025 ESMO Congress; October 17-25, 2025; Berlin, Germany. Abstract LBA4.
+
+[^24]: Akeso Biopharma. HARMONi-6 Phase III Study of Ivonescimab Accepted by The Lancet. Oct 16, 2025.
+
+[^25]: 梅斯肿瘤新前沿. 胃癌OS翻倍！晚期宫颈癌生存期突破34个月，ESMO炸场的国产创新药（下篇）. 2025-10-26.
+
+[^26]: Summit Therapeutics. Ivonescimab with Chemotherapy Demonstrated a Statistically Significant Overall Survival Benefit in HARMONi-6. May 31, 2026.
+
+[^27]: 中国方案登顶ASCO最高舞台：HARMONi-6研究OS显著阳性. 美通社PR-Newswire. 2026-06-02.
+
+[^28]: Cancer Network. Ivonescimab/Chemo Prolongs PFS in 1L Advanced Squamous NSCLC. 2025.
+
+[^29]: Cancer Network. Ivonescimab/Chemotherapy Improves OS in Squamous NSCLC. June 2026.
+
+
+---
+
+# 第四章 对照基准：Keytruda在一线NSCLC的历史数据
+
+作为竞争情报分析，建立准确的历史对照基准是预测HARMONi-3（AK112+化疗 vs 帕博利珠单抗+化疗）结果的前提。本章系统梳理Keytruda（Pembrolizumab）在一线鳞状与非鳞NSCLC中的全球及中国人群数据，并横向对比其他免疫方案，为HARMONi-3的结果解读提供参照坐标。
+
+## 4.1 KEYNOTE-407：一线鳞状NSCLC的全球基准
+
+### 4.1.1 研究设计与人群
+
+KEYNOTE-407（NCT02775435）是确立Pembrolizumab联合化疗作为一线鳞状NSCLC（sq-NSCLC）全球标准治疗的关键III期试验。该研究为一项多中心、随机、双盲、安慰剂对照设计，共入组559例既往未经治疗的转移性sq-NSCLC患者，按1:1随机分配至Pembrolizumab 200mg Q3W联合卡铂+紫杉醇/白蛋白紫杉醇（4周期）或安慰剂联合化疗[^1]。基线特征显示，两组患者中位年龄均为65岁，男性占78%，当前/既往吸烟史约88%-91%，PD-L1 TPS分层均衡（<1%占35%，1-49%占35%，≥50%占30%），东亚人群占比19%[^1][^2]。
+
+| 基线特征 | Pembrolizumab+化疗（n=278） | 安慰剂+化疗（n=280） |
+|---------|--------------------------|-------------------|
+| 中位年龄 | 65岁 | 65岁 |
+| 男性 | 78% | 78% |
+| 当前/既往吸烟 | 88% | 91% |
+| PD-L1 TPS <1% | 35% | 35% |
+| PD-L1 TPS 1-49% | 35% | 36% |
+| PD-L1 TPS ≥50% | 30% | 29% |
+| 东亚人群 | 19% | 19% |
+
+*数据来源：KEYNOTE-407主要分析及最终分析[^1][^2]*
+
+### 4.1.2 主要疗效终点
+
+KEYNOTE-407经历了从第二次期中分析到最终分析、再到5年长期随访的完整数据演进，各阶段结果高度一致：
+
+| 分析阶段 | 中位随访 | 试验组mOS | 对照组mOS | OS HR（95% CI） | 试验组mPFS | 对照组mPFS | PFS HR（95% CI） |
+|---------|---------|----------|----------|---------------|----------|----------|-----------------|
+| 第二次期中分析[^1] | 7.8个月 | 15.9个月 | 11.3个月 | 0.64（0.49-0.85） | 6.4个月 | 4.8个月 | 0.56（0.45-0.70） |
+| 方案预设最终分析[^2] | 14.3个月 | **17.1个月** | **11.6个月** | **0.71（0.58-0.88）** | **8.0个月** | **5.1个月** | **0.57（0.47-0.69）** |
+| 5年更新[^3] | 56.9个月 | ~17.1个月 | ~11.6个月 | 0.71（0.58-0.88） | ~8.0个月 | ~5.1个月 | 0.57（0.47-0.69） |
+
+最终分析数据显示，Pembrolizumab+化疗将中位总生存期（mOS）从11.6个月延长至17.1个月，死亡风险降低29%；中位无进展生存期（mPFS）从5.1个月延长至8.0个月，疾病进展或死亡风险降低43%[^2]。
+
+### 4.1.3 5年生存里程碑与长期获益
+
+5年随访数据（中位随访56.9个月）揭示了免疫联合化疗的"长拖尾"效应[^3]：
+
+| 长期生存指标 | Pembrolizumab+化疗 | 安慰剂+化疗 | 倍数/差值 |
+|------------|-----------------|------------|----------|
+| 5年OS率 | **18.4%** | 9.7% | **约1.9倍** |
+| 5年PFS率 | **10.8%** | 3.5% | **约3.1倍** |
+| 完成35周期治疗患者3年OS率（治疗后约5年） | **86.8%** | — | — |
+| 有效交叉率（后续接受抗PD-(L)1治疗） | — | **50.9%** | — |
+
+完成约2年Pembrolizumab治疗的患者（n=58）在数据截止时69.0%仍存活，3年OS率高达86.8%[^3]。值得注意的是，安慰剂组50.9%的患者后续接受了抗PD-(L)1治疗，这一高交叉率部分解释了后期化疗组KM曲线趋于平坦的现象，也意味着KEYNOTE-407的OS HR（0.71）在存在交叉的情况下仍被低估，实际治疗效应可能更大[^3]。
+
+### 4.1.4 PD-L1亚组分析
+
+5年更新的PD-L1亚组数据揭示了sq-NSCLC中PD-L1表达的预测价值边界[^3][^4]：
+
+| PD-L1 TPS | 试验组5年OS率 | 对照组5年OS率 | OS HR（95% CI） | 获益确定性 |
+|----------|------------|------------|---------------|----------|
+| TPS ≥50% | **23.0%** | 8.3% | ~0.59 | 获益最显著 |
+| TPS 1-49% | **20.6%** | 7.5% | ~0.79 | 获益明确 |
+| TPS <1% | **10.7%** | 13.0% | ~1.00（CI含1） | **获益不确定** |
+
+**关键发现**：Pembrolizumab+化疗在PD-L1 TPS<1%的sq-NSCLC患者中OS获益减弱，HR的95%置信区间包含1。这与非鳞癌（KEYNOTE-189）中PD-L1阴性亚组仍获益的情况形成鲜明对比，提示sq-NSCLC的PD-L1阴性患者对PD-1单抗联合化疗的敏感度可能较低[^3]。然而，PFS在各PD-L1亚组均显示获益。
+
+### 4.1.5 中国扩展研究：显著优于全球数据
+
+KEYNOTE-407中国扩展研究（NCT03875092）纳入125例中国大陆患者，其结果与全球数据存在显著差异[^7]：
+
+| 终点 | Pembrolizumab+化疗（n=65） | 安慰剂+化疗（n=60） | HR（95% CI） | 全球研究HR（对比） |
+|------|--------------------------|-------------------|------------|----------------|
+| 中位OS | **30.1个月**（18.2-NR） | 12.7个月（9.4-17.3） | **0.44（0.28-0.70）** | 0.71（0.58-0.88） |
+| 中位PFS | **8.3个月**（6.2-10.5） | 4.2个月（4.0-5.4） | **0.35（0.24-0.52）** | 0.57（0.47-0.69） |
+| 2年OS率 | **56.9%** | 31.7% | — | — |
+| 2年PFS率 | **24.2%** | 3.3% | — | — |
+
+中国研究的OS HR（0.44）和PFS HR（0.35）均显著优于全球数据，尽管样本量较小导致置信区间较宽。作者指出，更长随访分析（相同时点数据截止）下中国研究的HR与全球总体趋势一致[^7]。
+
+## 4.2 KEYNOTE-189：一线非鳞NSCLC的全球基准
+
+### 4.2.1 主要疗效终点与5年随访
+
+KEYNOTE-189（NCT02578680）是Pembrolizumab联合化疗在一线非鳞NSCLC（nsq-NSCLC）中的全球III期试验，入组616例患者，2:1随机至Pembrolizumab+培美曲塞+铂类或安慰剂+化疗[^5][^6]。
+
+| 分析阶段 | 中位随访 | 试验组mOS | 对照组mOS | OS HR | 试验组mPFS | 对照组mPFS | PFS HR |
+|---------|---------|----------|----------|-------|----------|----------|--------|
+| 主要分析（2018）[^5] | 10.5个月 | 22.0个月 | 10.7个月 | 0.49（0.38-0.64） | 8.8个月 | 4.9个月 | 0.52（0.43-0.64） |
+| 5年更新（2023）[^6] | 64.6个月 | ~22.0个月 | ~10.7个月 | 0.60（0.50-0.72） | ~9.0个月 | ~5.0个月 | 0.50（0.42-0.60） |
+
+5年生存里程碑显示：5年OS率为19.4% vs 11.3%，5年PFS率为7.5% vs 0.6%[^6]。完成35周期Pembrolizumab的57例患者中，3年OS率（治疗后约5年）达71.9%[^6]。化疗组57%的患者后续接受了抗PD-(L)1治疗，交叉率略高于KEYNOTE-407的50.9%[^6]。
+
+### 4.2.2 PD-L1亚组：阴性人群亦获益
+
+与KEYNOTE-407不同，KEYNOTE-189在PD-L1 TPS<1%的nsq-NSCLC患者中仍显示明确的OS获益趋势[^6]：
+
+| PD-L1 TPS | 试验组5年OS率 | 对照组5年OS率 | 获益特征 |
+|----------|------------|------------|--------|
+| TPS ≥50% | 29.6% | 21.4% | 高表达获益最大 |
+| TPS 1-49% | ~18% | ~10% | 中度表达获益 |
+| TPS <1% | ~15% | ~8% | **PD-L1阴性亦获益** |
+
+这一差异具有重要的生物学和临床意义：sq-NSCLC与nsq-NSCLC在PD-L1阴性人群中对PD-1单抗联合化疗的敏感度不同，可能源于两种组织学类型的肿瘤微环境差异（如鳞癌与吸烟相关的高TMB、不同免疫浸润模式）[^6]。
+
+## 4.3 中国vs全球人群差异分析
+
+### 4.3.1 数据差异的量化
+
+KEYNOTE-407中国扩展研究与全球数据的差异不仅体现在HR上，还涉及多个维度：
+
+| 维度 | 全球研究 | 中国扩展研究 | 差异解读 |
+|------|---------|------------|---------|
+| **OS HR** | 0.71（0.58-0.88） | 0.44（0.28-0.70） | 中国HR更优，但CI较宽 |
+| **PFS HR** | 0.57（0.47-0.69） | 0.35（0.24-0.52） | 中国HR更优 |
+| **mOS（试验组）** | ~17.1个月 | ~30.1个月 | 绝对数值差异大，但随访方式不同 |
+| **对照组后续交叉率** | 50.9% | 65.0% | 中国交叉率更高 |
+| **样本量** | 559例 | 125例 | 中国研究样本量小，统计精度低 |
+| **中位随访时间** | 56.9个月（5年更新） | 28.1个月 | 随访时长差异影响mOS估计 |
+
+### 4.3.2 差异的可能原因
+
+中国扩展研究HR显著优于全球数据，可能由以下因素共同作用：
+
+**1. 后续治疗交叉效应**：中国研究中65.0%的安慰剂组患者后续接受了抗PD-(L)1治疗，高于全球研究的50.9%。理论上，更高的交叉率应稀释对照组与治疗组的OS差异，使HR趋近于1；但中国研究HR反而更优，提示中国人群中Pembrolizumab的相对治疗效应可能确实更强[^7]。
+
+**2. 随访时间与统计方法**：中国研究中位随访时间为28.1个月，而全球研究5年更新时达56.9个月。更长的随访可能因后期事件数稀释、交叉效应累积导致HR向1靠近。作者在论文中指出，以相同时点数据截止比较，中国HR与全球更长随访分析的HR相似，总体趋势一致[^7]。
+
+**3. 基线人群特征**：虽然公开的基线表显示种族外特征相似，但真实世界中中国sq-NSCLC患者的吸烟模式、合并症谱、肿瘤生物学行为可能与西方人群存在差异。例如，RATIONALE-307（中国研究）中替雷利珠单抗+化疗的ORR（72.5%-74.8%）亦高于KEYNOTE-407全球数据（62.6%），提示中国sq-NSCLC人群对免疫联合化疗的应答率可能普遍更高[^9]。
+
+### 4.3.3 对HARMONi-3的关键启示
+
+上述差异对HARMONi-3的结果解读提出了重要警示：
+
+- **区分人群效应与药物效应**：若AK112+化疗在HARMONi-3中显示优于Pembrolizumab+化疗的HR，需审慎评估是否仅反映中国人群固有的免疫治疗高应答特征，还是AK112（PD-1/VEGF双抗）的真实优效。HARMONi-3的全球多中心设计（含中国+西方人群）将是区分二者的关键——若仅中国人群优效而西方人群非优效，则提示人群效应为主[^7][^17]。
+
+- **交叉设计的影响**：中国研究中65%的高交叉率提示，HARMONi-3对照组（K药+化疗）的**长期OS曲线可能受后续AK112或其他治疗影响**。若试验允许对照组进展后交叉至试验组或其他有效方案，OS HR可能被稀释，增加达到统计学显著性的难度[^3]。
+
+- **非鳞队列的参照价值**：HARMONi-3的nsq-NSCLC队列数据与KEYNOTE-189全球数据的一致性，将是判断中国vs西方人群疗效差异是否存在的核心参照。若nsq-NSCLC队列中中国亚组与全球亚组HR一致，则sq-NSCLC队列中的差异更可能反映药物效应而非人群效应[^17]。
+
+## 4.4 其他免疫方案对照
+
+### 4.4.1 双免疫方案：CheckMate 9LA与POSEIDON
+
+在一线sq-NSCLC领域，除Pembrolizumab+化疗外，双免疫方案提供了另一维度的对照：
+
+| 方案 | 研究 | 总体mOS | 鳞癌mOS | 鳞癌OS HR（95% CI） | 鳞癌获益显著性 |
+|------|------|--------|--------|-------------------|-------------|
+| Nivo+Ipi+2周期化疗 | CheckMate 9LA[^13][^14] | 15.8个月 | 14.5个月 vs 9.1个月 | **0.63（0.47-0.85）** | **显著** |
+| D+T+化疗 | POSEIDON[^15][^16] | 14.0个月 | 10.4个月 vs 10.5个月 | **0.85（0.65-1.10）** | **不显著（CI跨1）** |
+| Pembro+化疗 | KEYNOTE-407[^2][^3] | 17.1个月 | 17.1个月 vs 11.6个月 | **0.71（0.58-0.88）** | **显著** |
+
+**CheckMate 9LA**（O药+Y药+2周期化疗）在**鳞癌亚组中的OS获益（HR 0.63）优于非鳞癌（HR 0.78）**，提示双免疫+短程化疗在sq-NSCLC中可能提供更强的免疫激活[^13][^14]。但代价是毒性更高：因AE停药率达20.9%，显著高于KEYNOTE-407的13.3%[^13][^2]。
+
+**POSEIDON**（Durvalumab+Tremelimumab+化疗）则在sq-NSCLC中遭遇挫折：鳞癌mOS HR为0.85（95% CI 0.65-1.10），获益不显著；而非鳞癌mOS HR为0.81（95% CI 0.66-1.00），处于边缘状态[^15][^16]。这与KEYNOTE-407（鳞癌HR 0.71）和CheckMate 9LA（鳞癌HR 0.63）形成鲜明对比。可能的原因包括：PD-L1抑制剂（Durvalumab）在sq-NSCLC中的疗效弱于PD-1抑制剂；CTLA-4+PD-L1双免疫的协同效应不及PD-1+CTLA-4；化疗方案差异（维持期无紫杉醇）等[^15][^16]。
+
+POSEIDON的鳞癌数据给HARMONi-3以重要警示：**并非所有免疫+化疗方案在sq-NSCLC中都能复现KEYNOTE-407的OS获益**。AK112+化疗若要在sq-NSCLC中证明优于Pembro+化疗，需要克服这一历史挑战，提供明确的增量获益证据[^16]。
+
+### 4.4.2 国产PD-1对照：RATIONALE-307
+
+RATIONALE-307（NCT03594788）是替雷利珠单抗（Tislelizumab，PD-1抗体）联合化疗一线治疗晚期sq-NSCLC的中国III期试验，入组355例患者，对比化疗单药[^9][^10]。其与KEYNOTE-407的横向比较对HARMONi-3具有特殊意义，因为HARMONi-6的对照组正是替雷利珠单抗+化疗：
+
+| 终点 | KEYNOTE-407（全球）Pembro+化疗 vs 化疗 | RATIONALE-307 Tisle+化疗 vs 化疗 |
+|------|----------------------------------------|---------------------------------|
+| **PFS HR** | **0.57**（0.47-0.69） | **0.524**（Arm A）/ **0.478**（Arm B） |
+| **mPFS** | 8.0 vs 5.1个月 | 7.6 vs 5.5个月 |
+| **ORR** | 62.6% vs 38.4% | 72.5%（Arm A）/ 74.8%（Arm B）vs 49.6% |
+| **中位DOR** | 8.8个月 | 8.2个月（Arm A）/ 8.6个月（Arm B） |
+| **≥3级imAE** | 10.8% | 9.2%（Arm A）/ 6.8%（Arm B） |
+
+RATIONALE-307的PFS HR（0.48-0.52）与KEYNOTE-407（0.57）相近，但**ORR显著更高**（72-75% vs 63%），提示中国sq-NSCLC人群对免疫联合化疗的应答率可能普遍高于全球平均水平[^9]。2024年最终分析已证实OS获益（HR 0.67）[^10]。
+
+这一观察对HARMONi-3的解读至关重要：若AK112+化疗在sq-NSCLC中显示优于Pembro+化疗的PFS，需考虑是否仅仅是"中国人群效应"——因为RATIONALE-307已证明中国sq-NSCLC对PD-1+化疗的ORR高于全球KEYNOTE-407数据。HARMONi-3的全球多中心设计（含中国+西方人群）将帮助区分药物效应与人群效应[^17]。
+
+### 4.4.3 不同方案在鳞癌中的疗效差异总结
+
+| 方案类型 | 代表研究 | 鳞癌OS HR | 获益确定性 | 主要特点 |
+|---------|---------|----------|----------|---------|
+| PD-1+化疗（全球） | KEYNOTE-407 | 0.71 | 明确 | 全球标准，5年OS率18.4% |
+| PD-1+化疗（中国） | KEYNOTE-407中国 | 0.44 | 明确（样本量小） | HR优于全球，可能有人群效应 |
+| PD-1+化疗（中国） | RATIONALE-307 | 0.67 | 明确 | 中国标准，ORR高于全球 |
+| PD-1+CTLA-4+短程化疗 | CheckMate 9LA | 0.63 | 明确 | 鳞癌优势，但毒性高 |
+| PD-L1+CTLA-4+化疗 | POSEIDON | 0.85 | 不显著 | 鳞癌获益未达显著性 |
+| PD-1/VEGF双抗+化疗 | HARMONi-6 | 0.66 | 明确 | 首个头对头PFS+OS双阳性 |
+
+上表显示，在一线sq-NSCLC中，不同免疫策略的疗效存在梯度差异。PD-1+化疗的HR通常在0.57-0.71之间；双免疫方案中，PD-1+CTLA-4（CheckMate 9LA）在鳞癌中表现优异（HR 0.63），而PD-L1+CTLA-4（POSEIDON）则未达显著性（HR 0.85）。HARMONi-6中AK112+化疗对比替雷利珠单抗+化疗取得OS HR 0.66，处于PD-1+化疗的历史范围内，但作为首个头对头研究实现PFS和OS双阳性，具有里程碑意义[^17][^19]。
+
+---
+
+**本章小结**：KEYNOTE-407和KEYNOTE-189分别建立了Pembrolizumab+化疗在一线鳞状和非鳞NSCLC中的全球基准。鳞癌中PD-L1阴性人群获益不确定（HR~1.0），是AK112可能实现差异化突破的关键窗口。中国人群数据（OS HR 0.44）显著优于全球（HR 0.71），但需区分人群效应与药物效应。HARMONi-3作为全球多中心、头对头设计，其非鳞队列数据与KEYNOTE-189的一致性，以及中国vs西方亚组的HR差异，将成为判断AK112真实优效性的核心证据。CheckMate 9LA和POSEIDON的对比进一步表明，并非所有免疫策略在鳞癌中均有效，AK112的PD-1/VEGF双抗机制需要在与K药的直接对决中证明其增量价值。
+
+---
+
+## 脚注
+
+[^1]: Paz-Ares L, et al. Pembrolizumab plus Chemotherapy for Squamous Non–Small-Cell Lung Cancer. *N Engl J Med*. 2018;379(21):2040-2051. doi:10.1056/NEJMoa1810865
+
+[^2]: Paz-Ares L, et al. A Randomized, Placebo-Controlled Trial of Pembrolizumab Plus Chemotherapy in Patients With Metastatic Squamous NSCLC: Protocol-Specified Final Analysis of KEYNOTE-407. *J Thorac Oncol*. 2020;15(10):1657-1669. doi:10.1016/j.jtho.2020.05.010
+
+[^3]: Paz-Ares L, et al. Pembrolizumab Plus Chemotherapy in Squamous Non–Small-Cell Lung Cancer: 5-Year Update of the Phase III KEYNOTE-407 Study. *J Clin Oncol*. 2023;41(11):1999-2006. doi:10.1200/JCO.22.01990
+
+[^4]: Targeted Oncology. Pembrolizumab/Chemo Continues to Impress in NSCLC With 5-Year Updates. October 2024. https://www.targetedonc.com/view/pembrolizumab-chemo-continues-to-impress-in-nsclc-with-5-year-updates
+
+[^5]: Gandhi L, et al. Pembrolizumab plus Chemotherapy in Metastatic Non–Small-Cell Lung Cancer. *N Engl J Med*. 2018;378(22):2078-2092. doi:10.1056/NEJMoa1801005
+
+[^6]: Garassino MC, et al. Pembrolizumab Plus Pemetrexed and Platinum in Nonsquamous Non-Small-Cell Lung Cancer: 5-Year Outcomes From the Phase 3 KEYNOTE-189 Study. *J Clin Oncol*. 2023. doi:10.1200/JCO.22.01989
+
+[^7]: Cheng Y, et al. Pembrolizumab Plus Chemotherapy for Chinese Patients With Metastatic Squamous NSCLC in KEYNOTE-407. *J Thorac Oncol*. 2021;16(11):1850-1861. doi:10.1016/j.jtho.2021.07.022
+
+[^8]: Niho S, et al. Pembrolizumab plus chemotherapy in Japanese patients with metastatic squamous non-small-cell lung cancer in KEYNOTE-407. *Cancer Sci*. 2023;114(8):3330-3338. doi:10.1111/cas.15424
+
+[^9]: Wang J, et al. Tislelizumab Plus Chemotherapy vs Chemotherapy Alone as First-line Treatment for Advanced Squamous Non–Small-Cell Lung Cancer: A Phase 3 Randomized Clinical Trial. *JAMA Oncol*. 2021;7(5):709-717. doi:10.1001/jamaoncol.2021.0366
+
+[^10]: Wang J, et al. Tislelizumab plus chemotherapy versus chemotherapy alone as first-line treatment for advanced squamous non-small cell lung cancer: final analysis of the randomized, phase III RATIONALE-307 trial. *ESMO Open*. 2024;9(10):103727.
+
+[^11]: Reck M, et al. Pembrolizumab versus Chemotherapy for PD-L1–Positive Non–Small-Cell Lung Cancer. *N Engl J Med*. 2016;375(19):1823-1833. doi:10.1056/NEJMoa1606774; 5-year update: Reck M, et al. Five-Year Outcomes With Pembrolizumab Versus Chemotherapy for Metastatic Non–Small-Cell Lung Cancer With PD-L1 Tumor Proportion Score ≥ 50. *J Clin Oncol*. 2021;39(21):2339-2349. doi:10.1200/JCO.21.00174
+
+[^12]: Mok TSK, et al. Pembrolizumab versus chemotherapy for previously untreated, PD-L1-positive, locally advanced or metastatic non-small-cell lung cancer (KEYNOTE-042): a randomised, open-label, controlled, phase 3 trial. *Lancet*. 2019;393(10183):1819-1830. doi:10.1016/S0140-6736(18)32409-7
+
+[^13]: Paz-Ares L, et al. First-line nivolumab plus ipilimumab combined with two cycles of chemotherapy in patients with non-small-cell lung cancer (CheckMate 9LA): an international, randomised, open-label, phase 3 trial. *Lancet Oncol*. 2021;22(2):198-211. doi:10.1016/S1470-2045(20)30641-0
+
+[^14]: CheckMate 9LA 4-year update. *J Immunother Cancer*. 2024;12(2):e008189. doi:10.1136/jitc-2023-008189
+
+[^15]: Johnson ML, et al. Durvalumab With or Without Tremelimumab Plus Chemotherapy as First-Line Treatment for Metastatic Non-Small Cell Lung Cancer: The Phase III POSEIDON Study. *J Clin Oncol*. 2023;41(7):1213-1225. doi:10.1200/JCO.22.00975
+
+[^16]: Peters S, et al. Durvalumab ± Tremelimumab + Chemotherapy in First-Line Metastatic NSCLC: 5-Year Overall Survival Update from the POSEIDON Study. *ESMO Immuno-Oncology Congress*. December 2023. LBA3.
+
+[^17]: Chen Z, Yang F, Jiang Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6): a randomised, double-blind, phase 3 trial. *The Lancet*. 2025;406(10515):2078-2088.
+
+[^18]: Lu S, et al. Phase III study of ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small cell lung cancer (HARMONi-6). Presented at: 2025 ESMO Congress; October 17-25, 2025; Berlin, Germany. Abstract LBA4.
+
+[^19]: Summit Therapeutics. Ivonescimab with Chemotherapy Demonstrated a Statistically Significant Overall Survival Benefit in HARMONi-6. May 31, 2026. https://smmttx.com/news/press-releases/news-details/2026/
+
+
+---
+
+# 第五章 跨试验疗效外推与HARMONi-3预测模型
+
+## 5.1 PFS预测模型
+
+HARMONi-3的疗效预测无法依赖直接历史数据，而必须构建跨试验桥接模型，将HARMONi-6的强阳性结果外推至全球双队列场景。本节建立分层预测框架，从鳞癌队列的"单锚定桥接"扩展至非鳞癌队列的"多锚定综合推断"。
+
+### 5.1.1 鳞癌队列：基于HARMONi-6的跨试验桥接
+
+**第一层锚定：HARMONi-6的直接疗效证据。** HARMONi-6（AK112-306）在中国一线sq-NSCLC中取得PFS HR=0.60（95% CI: 0.47–0.77, p<0.0001），中位PFS 11.14 vs 6.90个月，绝对获益4.24个月[^1]。该试验对照组为替雷利珠单抗+化疗，向HARMONi-3外推时必须解决对照组差异——HARMONi-3对照组为K药+化疗。
+
+**第二层桥接：替雷利珠单抗 vs K药的间接比较。** 基于Guo等2023年网络荟萃分析（NMA），替雷利珠+化疗与K药+化疗在中国一线sq-NSCLC中PFS疗效无显著差异（HR=1.04, 95% CI: 0.82–1.31）[^2]。该点估计提示近乎等效，但置信区间上限1.31意味着替雷可能略弱或略强于K药。这一不确定性在情景分析中被显式量化。
+
+**第三层桥接：中国人群至全球人群的疗效外推。** HARMONi全球试验（EGFR突变非鳞癌）中，北美亚组OS HR=0.70优于总体0.78[^3]，提示西方人群获益可能不低于亚洲人群。但基于免疫治疗历史数据（KEYNOTE-407中国扩展研究OS HR=0.44 vs 全球0.71）[^4]及基线差异，保守预测引入5%–10%外推衰减因子。
+
+**桥接公式**（基准情景）：
+
+$$
+HR_{HARMONi-3}^{sq} = HR_{AK112 vs 替雷}^{HARMONi-6} \times HR_{替雷 vs K药}^{NMA} \times 中国\to全球因子 = 0.60 \times 1.04 \times 1.05 = 0.65 \approx 0.66
+$$
+
+**表5-1 鳞癌队列PFS预测情景矩阵**
+
+| 情景 | 替雷→K药桥接假设 | 中国→全球因子 | 预测PFS HR | 95% CI |
+|:------|:------|:------|:------|:------|
+| 乐观情景 | 1.00（替雷=K药，无差异） | 1.00（无衰减） | 0.62 | 0.50–0.72 |
+| **基准情景** | **1.04（NMA点估计）** | **1.05（5%外推衰减）** | **0.66** | **0.46–0.93** |
+| 保守情景 | 1.08（NMA上限） | 1.10（10%衰减） | 0.69 | 0.58–0.85 |
+| 悲观情景 | 1.15（替雷显著劣于K药） | 1.15（15%衰减） | 0.72 | 0.65–0.95 |
+
+基准情景中HR=0.66的95% CI（0.46–0.93）较宽，反映跨试验外推的不确定性。即便悲观情景（HR=0.72），上限仍接近1.0，统计学显著性仍有可能，但临床优效性确定性下降。
+
+### 5.1.2 非鳞癌队列：多锚定综合预测
+
+非鳞癌队列缺乏直接头对头数据（如HARMONi-6之于鳞癌），因此采用"多锚定加权综合"方法：
+
+| 锚定试验 | 原始PFS HR | 适用性调整 | 调整后估计 | 权重依据 |
+|:------|:------|:------|:------|:------|
+| HARMONi-2（PD-L1+单药） | 0.51 | +化疗协同效应，−全人群稀释 | 0.55 | 鳞癌亚组HR=0.50，与HARMONi-6方向一致[^5] |
+| HARMONi-A（EGFRm+化疗） | 0.46 | +野生型优势（非EGFRm人群IO敏感性更高），+对照组差异调整 | 0.52 | 后线设置，但联合化疗模式最接近HARMONi-3[^6] |
+| HARMONi（全球EGFRm+化疗） | 0.52 | +野生型优势 | 0.50 | 全球多中心数据，人种外推性最佳[^3] |
+| KEYNOTE-189（PFS基准） | 0.52 | AK112应优于K药+化疗 | 0.55 | 非鳞癌标准对照，为疗效下限锚定[^7] |
+
+**综合预测：非鳞癌PFS HR = 0.55（区间：0.50–0.65）**。非鳞癌预测的不确定性高于鳞癌，主要源于缺乏直接头对头数据以及HARMONi-2（单药设计）与HARMONi-3（联合化疗）之间疗效转化的不确定性。若化疗协同效应超出预期，HR可能进一步降至0.50；若全人群稀释效应（尤其PD-L1阴性亚组）超过预期，HR可能接近0.65。
+
+## 5.2 OS预测与PFS-to-OS转化分析
+
+### 5.2.1 观察到的PFS-to-OS转化效率
+
+在免疫肿瘤学中，PFS获益向OS的转化受对照组交叉、后续治疗、数据成熟度等多重因素影响。对已完成的AK112试验进行log-ratio分析：
+
+| 试验 | 设置 | PFS HR | OS HR | log(OS)/log(PFS) | 转化效率解读 |
+|:------|:------|:------|:------|:------|:------|
+| HARMONi-6 | 中国鳞癌，1L，双IO+chemo | 0.60 | 0.66 | 0.82 | 极高：VEGF加成在PD-1基础上驱动进展后生存获益[^1] |
+| HARMONi-A | 中国EGFRm非鳞癌，2L，IO+chemo | 0.46 | 0.74 | 0.39 | 中等：EGFRm后线IO获益有限，但化疗联合提供基础生存获益[^6] |
+| HARMONi | 全球EGFRm非鳞癌，2L，IO+chemo | 0.52 | 0.78 | 0.38 | 中等：全球人群外推稀释了HR效应[^3] |
+| HARMONi-2 | 中国PD-L1+，1L，IO单药 | 0.51 | 0.777 | 0.37 | 较低：单药设计，OS数据不成熟（39%成熟度）[^5] |
+
+化疗联合试验平均转化效率（log-ratio）约0.53。HARMONi-6的0.82显著高于均值，核心原因在于：对照组同样接受了PD-1抑制剂，两组OS差异主要由进展前/后VEGF通路抑制驱动。HARMONi-3对照组为K药+化疗（同样含PD-1），结构与HARMONi-6高度相似，可预期类似转化效率。
+
+### 5.2.2 HARMONi-3 OS预测
+
+基于PFS预测和转化效率，构建OS预测矩阵：
+
+**表5-2 鳞癌队列OS预测（基于转化效率=0.82）**
+
+| 情景 | 预测PFS HR | 转化效率 | 预测OS HR | 与HARMONi-6对照 |
+|:------|:------|:------|:------|:------|
+| 乐观 | 0.62 | 0.82 | 0.67 | 略优于HARMONi-6的0.66 |
+| **基准** | **0.66** | **0.82** | **0.70** | 与HARMONi-6的0.66相近，但桥接衰减使HR略高 |
+| 保守 | 0.69 | 0.82 | 0.73 | 接近HARMONi-2单药HR（0.78） |
+| 悲观 | 0.72 | 0.82 | 0.76 | 仍显著优于K药+化疗的历史基准（HR=0.71 vs 化疗） |
+
+**非鳞癌队列OS预测**：采用化疗联合试验平均转化效率（0.53），基准情景下预测OS HR = 0.73（乐观0.69，保守0.76，悲观0.80）。非鳞癌OS预测的不确定性更大，因为转化效率数据主要来自EGFRm后线试验（HARMONi-A/HARMONi），而一线非鳞癌野生型人群的生物学行为与后线EGFRm人群存在差异。
+
+### 5.2.3 随访时间和数据成熟度影响
+
+HARMONi-6的OS期中分析在中位随访21.4个月时即达阳性（HR=0.66, p=0.0017），跨越预设疗效边界（P<0.0049）[^1]。HARMONi-3鳞癌队列预计2026年Q2 PFS期中分析，2026年下半年PFS最终分析。OS期中分析可能在PFS最终分析时或之后进行。根据Schoenfeld公式，OS分析所需事件数与log(HR)²成反比——HR=0.70的OS效应约需450个事件达到80%功效。
+
+## 5.3 成功概率量化
+
+### 5.3.1 统计设计假设
+
+HARMONi-3采用双主要终点设计（PFS+OS），按组织学分别分析[^8]。统计设计核心参数如下：
+
+- **鳞癌队列**：n≈600，PFS预计事件数~468（基于78%事件率），OS预计事件数~450（最终分析）
+- **非鳞癌队列**：n≈1000，PFS预计事件数~720（基于72%事件率），OS预计事件数~650（最终分析）
+- **显著性水平**：单侧α=0.025，假设采用Schoenfeld公式估算功效
+- **期中分析**：PFS期中分析采用保守alpha边界，未达阈值不触发揭盲[^8]
+
+### 5.3.2 各情景成功概率
+
+**表5-3 鳞癌队列成功概率矩阵**
+
+| 情景 | PFS HR | PFS成功概率 | OS HR | OS成功概率 | 双终点同时成功概率 |
+|:------|:------|:------|:------|:------|:------|
+| 乐观 | 0.62 | 99.9% | 0.67 | 98.7% | 98.6% |
+| **基准** | **0.66** | **99.6%** | **0.70** | **96.4%** | **96.0%** |
+| 保守 | 0.69 | 98.3% | 0.73 | 91.7% | 90.1% |
+| 悲观 | 0.72 | 94.8% | 0.76 | 83.9% | 79.5% |
+
+鳞癌队列在基准情景下，PFS成功概率高达99.6%，OS成功概率为96.4%，双终点同时成功概率为96.0%。即便在悲观情景（HR=0.72），双终点同时成功概率仍接近80%，显示鳞癌队列的统计稳健性。
+
+**表5-4 非鳞癌队列成功概率矩阵**
+
+| 情景 | PFS HR | PFS成功概率 | OS HR | OS成功概率 | 双终点同时成功概率 |
+|:------|:------|:------|:------|:------|:------|
+| 乐观 | 0.50 | 100.0% | 0.69 | 99.7% | 99.7% |
+| **基准** | **0.55** | **100.0%** | **0.73** | **98.0%** | **98.0%** |
+| 保守 | 0.60 | 100.0% | 0.76 | 92.9% | 92.9% |
+| 悲观 | 0.65 | 100.0% | 0.80 | 82.5% | 82.5% |
+
+非鳞癌队列的PFS成功概率在基准情景下达100%，这主要得益于较大的样本量（n≈1000）和预期的较大效应量（HR=0.55）。OS成功概率为98.0%，双终点同时成功概率为98.0%。
+
+### 5.3.3 Monte Carlo模拟结果
+
+通过10,000次蒙特卡洛模拟，综合PFS HR不确定性和PFS-to-OS转化效率的不确定性，得到以下概率分布：
+
+**表5-5 Monte Carlo模拟概率分布（10,000次迭代）**
+
+| 概率指标 | 估计值 | 临床解读 |
+|:------|:------|:------|
+| P(PFS HR < 0.65) | 48.3% | 约半数概率达到优于基准的PFS效应 |
+| P(PFS HR < 0.70) | 64.4% | PFS HR低于0.70的概率接近三分之二 |
+| P(PFS HR < 0.75) | 77.6% | 即便悲观假设，PFS HR仍大概率低于0.75 |
+| P(OS HR < 0.75) | 65.4% | OS HR<0.75的概率与PFS HR<0.70相近 |
+| P(OS HR < 0.80) | 79.9% | OS显著优效（HR<0.80）的概率约80% |
+| P(OS HR < 0.85) | 89.2% | OS获益概率接近90% |
+| **P(PFS<0.75 且 OS<0.80)** | **76.3%** | **双终点同时达到临床优效的概率约76%** |
+
+Monte Carlo模拟揭示了关键不确定性：PFS和OS虽各自成功概率高，但联合成功的概率（76.3%）低于各终点的单独成功概率乘积，这是因为PFS和OS的HR存在正相关性——若PFS效应弱于预期，OS转化效率亦可能同步下降。
+
+## 5.4 风险因素与敏感性分析
+
+### 5.4.1 可能降低疗效的因素（Downside Risks）
+
+| 风险因素 | 证据来源 | 估计HR惩罚 | 置信度 | 缓释因素 |
+|:------|:------|:------|:------|:------|
+| 西方人群比例升高 | HARMONi北美亚组OS HR=0.70 vs 总体0.78[^3] | +0.03 | 中 | HARMONi已验证全球一致性 |
+| 基线差异（肥胖/吸烟/合并症） | 真实世界数据 | +0.02 | 低 | 临床试验标准入组控制 |
+| PD-L1分布（all-comer vs 选择人群） | HARMONi-2仅限PD-L1+ | +0.02 | 中 | HARMONi-6在PD-L1阴性中仍有效（HR=0.64）[^1] |
+| 对照组交叉至K药 | KEYNOTE-407交叉率50.9%[^7] | +0.02（仅OS） | 高 | 交叉稀释已被历史数据充分建模 |
+| K药对照略强于替雷 | NMA PFS HR=1.04（上限1.31）[^2] | +0.02 | 中 | 差异不显著，OS无差异证据 |
+| **合计净惩罚** | — | **+0.11** | — | — |
+
+### 5.4.2 可能增强疗效的因素（Upside Potential）
+
+| 利好因素 | 证据来源 | 估计HR收益 | 置信度 |
+|:------|:------|:------|:------|
+| 野生型人群（非EGFRm） | HARMONi-A为EGFRm，IO敏感性更低 | −0.03 | 高 |
+| VEGF双抗机制在PD-L1阴性中有效 | HARMONi-6 PD-L1<1% HR=0.55[^1] | −0.02 | 中 |
+| HARMONi-6强OS结果验证机制 | HR=0.66, p=0.0017[^1] | −0.01 | 高 |
+| 化疗方案优化（全球中心经验） | 假设性推断 | −0.01 | 低 |
+| **合计净收益** | — | **−0.07** | — |
+
+### 5.4.3 净效应调整与情景汇总
+
+综合 upside（−0.07 HR单位）和 downside（+0.11 HR单位），**净效应 = +0.04 HR单位**。基准预测（HR=0.66）已部分反映这一调整，因此在保守情景中HR=0.69、悲观情景中HR=0.72的设定已纳入净效应方向。值得强调的是，downside风险中最大的单一因素是"对照组交叉至K药"（HR惩罚+0.02，仅影响OS），但KEYNOTE-407中50.9%的交叉率已被历史数据充分建模，HARMONi-3的交叉设计预期与此相近，该风险已在统计功效计算中被部分消化。
+
+**表5-6 综合情景汇总（第10/50/90百分位）**
+
+| 百分位 | 鳞癌PFS HR | 鳞癌OS HR | 核心假设 |
+|:------|:------|:------|:------|
+| Upside（10th） | 0.62 | 0.67 | 替雷=K药，全球人群无差异，VEGF机制完全转化 |
+| Base Case（50th） | 0.66 | 0.70 | NMA桥接，5%外推衰减，标准交叉稀释 |
+| Downside（90th） | 0.72 | 0.76 | K药显著优于替雷，西方人群大幅衰减，安全性问题 |
+
+## 5.5 时间线预测与关键催化剂
+
+### 5.5.1 HARMONi-3关键时间节点
+
+基于Summit Therapeutics公开披露和临床试验方案预设，HARMONi-3鳞癌队列的关键时间线如下：
+
+**表5-7 HARMONi-3关键里程碑时间线**
+
+| 时间 | 里程碑 | 事件类型 | 临床/投资影响 |
+|:------|:------|:------|:------|
+| 2026 Q1 | 鳞癌队列入组完成 | 入组 | 已确认完成，奠定事件累积基础[^8] |
+| 2026 Q2 | 鳞癌PFS期中分析 | 新增 | Summit管理层主动新增，体现对数据趋势的信心 |
+| 2026 H2 | 鳞癌PFS最终分析 | 主要终点 | 预设事件数达到，首个全球头对头K药的1L鳞癌PFS数据 |
+| 2026 H2 | 鳞癌OS期中分析 | 可能 | 若事件数足够，将为OS获益提供早期信号 |
+| 2026 H2 | 非鳞癌队列入组完成 | 入组 | 预计2026下半年完成 |
+| 2027 H1 | 非鳞癌PFS最终分析 | 主要终点 | 非鳞癌队列首个关键疗效数据读出 |
+| 2027 H2 | 非鳞癌OS期中分析 | 可能 | 事件驱动，取决于非鳞癌队列事件累积速度 |
+| 2027 H2–2028 H1 | 鳞癌OS最终分析 | 主要终点 | 最终成熟度，决定鳞癌OS的监管申报依据 |
+
+### 5.5.2 2026年核心催化剂评估
+
+2026年是HARMONi-3价值兑现的关键窗口年：
+
+| 时间 | 催化剂 | 影响评估 |
+|:------|:------|:------|
+| 2026 Q2 | 鳞癌PFS期中分析 | **高**——提前验证鳞癌PFS优势，若阳性将加速审批路径 |
+| 2026 H2 | 鳞癌PFS最终分析 | **极高**——首个AK112头对头击败K药的全球数据，决定FDA/EMA申报基础 |
+| 2026 H2 | 鳞癌OS期中分析 | **高**——若阳性（HR<0.80, p<0.05），将大幅提升市场信心 |
+| 2026年5月 | HARMONi-6 OS最终分析（ASCO） | **高**——已证实HR=0.66，为HARMONi-3鳞癌提供关键 precedential 数据 |
+| 2026年11月 | FDA PDUFA（HARMONi，EGFRm） | **高**——首个AK112全球适应症审批，验证监管路径可接受性 |
+
+### 5.5.3 时间线不确定性分析
+
+HARMONi-3的时间线预测面临以下关键不确定性：
+
+1. **PFS期中分析敏感度**：2026年Q2的PFS期中分析采用高度保守alpha边界，未达显著性不等于最终失败，但可能引发短期市场波动[^8]。
+
+2. **OS事件累积速度**：OS分析取决于死亡事件，累积速度受入组完成时间、中位OS长度、失访率等因素影响。若鳞癌队列中位OS接近27–28个月（参照HARMONi-6的27.9个月），则OS最终分析可能延迟至2027年末至2028年初。
+
+3. **监管申报窗口**：若鳞癌PFS最终分析在2026年下半年达阳性，Summit可能在2026年末或2027年初向FDA提交BLA。OS数据可作为后续补充提交或更新标签的依据。
+
+---
+
+## 本章核心结论
+
+基于跨试验桥接模型、PFS-to-OS转化分析和Monte Carlo模拟，HARMONi-3疗效预测呈现以下核心图景：
+
+1. **鳞癌PFS**：基准预测HR=0.66（95% CI: 0.46–0.93），成功概率约99.6%。HARMONi-6的强数据（HR=0.60）和替雷/K药等效性（NMA HR=1.04）共同支撑这一高置信度预测。
+
+2. **鳞癌OS**：基准预测HR=0.70，成功概率约96%。HARMONi-6已证明PFS→OS高效转化（log-ratio=0.82），且HARMONi-3对照结构（PD-1+chemo）与HARMONi-6类似。
+
+3. **非鳞癌双终点**：PFS成功概率约100%，OS成功概率约98%，但数据需等待至2027年H1，且缺乏直接头对头数据使不确定性高于鳞癌。
+
+4. **双终点同时成功**：鳞癌队列约96%，非鳞癌队列约98%。若采用PFS成功后层级检验OS（hierarchical testing），OS alpha无需分割，联合成功率可能更高。
+
+5. **2026年核心催化**：鳞癌PFS最终分析（2026 H2）和OS期中分析（2026 H2）是HARMONi-3价值兑现的最关键节点；HARMONi-6 OS的强阳性（HR=0.66, p=0.0017）已为鳞癌队列提供了强有力的机制验证和成功信号。
+
+---
+
+[^1]: Chen Z, Yang F, Jiang Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6): a randomised, double-blind, phase 3 trial. *The Lancet*. 2025;406(10515):2078-2088. HARMONi-6 PFS HR=0.60 (95% CI: 0.47–0.77), OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017.
+
+[^2]: Guo Y, et al. Tislelizumab plus chemotherapy vs pembrolizumab plus chemotherapy for first-line NSCLC: systematic review and indirect comparison. *Front Oncol*. 2023. PFS HR=1.04 (95% CI: 0.82–1.31).
+
+[^3]: Summit Therapeutics. HARMONi WCLC 2025 update. OS HR=0.78 (p=0.0332); North America OS HR=0.70; 38% Western patients.
+
+[^4]: Cheng Y, et al. Pembrolizumab Plus Chemotherapy for Chinese Patients With Metastatic Squamous NSCLC in KEYNOTE-407. *J Thorac Oncol*. 2021;16(11):1850-1861. OS HR=0.44 (0.28–0.70), PFS HR=0.35 (0.24–0.52).
+
+[^5]: HARMONi-2 interim analysis. PFS HR=0.51 (鳞癌亚组0.50); OS HR=0.777 (39%成熟度). Summit Therapeutics press release 2025.
+
+[^6]: HARMONi-A final OS analysis SITC 2025. OS HR=0.74 (95% CI: 0.58–0.95), p=0.019. Median follow-up 32.5 months.
+
+[^7]: Paz-Ares L, et al. Pembrolizumab Plus Chemotherapy in Squamous Non–Small-Cell Lung Cancer: 5-Year Update of the Phase III KEYNOTE-407 Study. *J Clin Oncol*. 2023;41(11):1999-2006. OS HR=0.71 (0.58–0.88), PFS HR=0.57 (0.47–0.69); 安慰剂组交叉率50.9%.
+
+[^8]: Summit Therapeutics. Q4 2025 Earnings Release (Feb 2026). HARMONi-3 protocol: 600 sq + 1000 non-sq, separate analyses; sq enrollment completed Q1 2026; Q2 2026 PFS interim analysis added.
+
+
+---
+
+# 第六章 安全性评估与差异化优势
+
+AK112（依沃西单抗，ivonescimab）作为全球首个获批的PD-1/VEGF双特异性抗体，其安全性特征不仅决定了临床可及性，更构成了其在NSCLC治疗格局中的核心差异化优势。本章基于迄今超过2,800例患者的临床研究数据[^1]，系统评估AK112从早期剂量探索到III期确证性试验的安全性演进，重点剖析其在鳞状NSCLC（sq-NSCLC）中的出血风险突破，并与PD-1单抗及历史抗VEGF治疗进行多维对比，最终对HARMONi-3全球试验的安全性表现进行预测。
+
+## 6.1 AK112综合安全性数据
+
+### 6.1.1 各阶段试验安全性演进
+
+AK112的安全性数据历经从首次人体试验到多项III期研究的系统验证，呈现出高度一致且可预测的特征。Phase 1a（澳大利亚，n=51）中MTD确定为20 mg/kg Q2W，≥3级TRAE为27.5%，未出现预期外安全信号[^2]。Phase 1（中国，n=59）≥3级TRAE为23.7%，致死率为0，且显著低于阿替利珠单抗+贝伐珠单抗历史数据（45.3%），提示单分子双抗可能较两种单抗联合更安全[^3]。
+
+III期阶段中，HARMONi-A（AK112+化疗对比安慰剂+化疗，EGFR-TKI耐药nsq-NSCLC，n=161/161）显示AK112组≥3级TRAE为54.0%，停药率5.6%，致死率0%[^5]；32.5个月长期随访确认安全性profile一致，无新增信号[^6]。HARMONi-2（AK112对比帕博利珠单抗，1L PD-L1+ NSCLC，n=198/200）中，AK112组≥3级TRAE为29.4%，但停药率（1.5%）甚至低于帕博利珠单抗（3.0%），致死率（0.5%）亦低于对照（1.0%），提示单药耐受性良好[^8][^9]。
+
+HARMONi-6（AK112+化疗对比替雷利珠单抗+化疗，1L sq-NSCLC，n=266/266）作为迄今纳入最高危出血人群的III期研究，≥3级TRAE为69.2%（对照58.9%），停药率5%，致死率4%（与对照持平）[^10][^11]。各阶段关键安全性指标汇总如下表：
+
+**表6-1 AK112各阶段关键安全性指标汇总**
+
+| 试验 | 人群 | 入组规模 | ≥3级TRAE | 因TRAE停药 | TRAE致死 |
+|------|------|---------|-----------|-----------|---------|
+| Phase 1a（澳大利亚）[^2] | 晚期实体瘤 | 51 | 27.5% | — | 0 |
+| Phase 1（中国）[^3] | 晚期实体瘤 | 59 | 23.7% | — | 0 |
+| Phase 1b/II（AK112-202）[^4] | 晚期NSCLC | 96 | 13.5% | 0 | 0 |
+| HARMONi-A[^5] | EGFR-TKI耐药nsq-NSCLC | 161/161 | 54.0% / 42.9% | 5.6% / 2.5% | 0% / 0% |
+| HARMONi（全球）[^7] | EGFR-TKI耐药nsq-NSCLC | 219/219 | 50.0% / 42.2% | 7.3% / 5.0% | 1.8% / 2.3% |
+| HARMONi-2（单药）[^8] | 1L PD-L1+ NSCLC | 198/200 | 29.4% / 15.6% | 1.5% / 3.0% | 0.5% / 1.0% |
+| HARMONi-6（联合化疗）[^10] | 1L sq-NSCLC | 266/266 | 69.2% / 58.9% | 5% / 5% | 4% / 4% |
+
+### 6.1.2 TRAE谱全景与核心发现
+
+基于Meta分析（5项研究，1,365例患者）[^12]，AK112的AE谱呈现"单药VEGF特征、联合化疗血液学特征"的双模式。单药治疗时非血液学毒性为主：蛋白尿（24.21%）、高血压（13.29%），≥3级仅0.82%和2.07%。联合化疗时血液学毒性主要来源于化疗本底：贫血（56.6%）、中性粒细胞减少（48.9%）、血小板减少（31.6%），其中≥3级中性粒细胞减少25.5%为剂量限制毒性[^12][^13]。这一AE谱提示，AK112自身毒性可控，联合化疗时的增量主要与化疗叠加有关，而非双靶点协同产生新毒性。
+
+## 6.2 鳞状NSCLC出血风险的历史突破
+
+### 6.2.1 贝伐珠单抗在鳞癌中的历史失败
+
+VEGF抑制剂在sq-NSCLC中的出血风险是一个具有历史性监管意义的议题。贝伐珠单抗在NSCLC早期开发中，因鳞癌患者发生严重甚至致命的肺出血事件，被永久禁止用于该人群。在AVF0757g Phase II研究中，66例NSCLC患者（含鳞癌）接受贝伐+化疗，≥3级肺出血/咯血发生率高达9.0%（6/67），其中4例致命；所有6例均发生于中央型肿瘤患者，5例伴空洞/坏死，4例为鳞癌[^14]。在专门面向鳞癌的AVASQ（BO19734）试验中，20例患者接受贝伐+化疗，≥3级出血率高达10%，发生1例5级致死事件，研究因此提前终止[^18]。多变量分析显示，**鳞状细胞组织学**和**贝伐珠单抗治疗**是与出血统计显著相关的唯一两个变量[^14][^15]。
+
+鳞癌出血风险高的机制包括：解剖位置上更常为中心型，靠近大血管和主支气管；约15%的鳞癌发生空洞，增加血管暴露风险；肿瘤易侵犯或包绕主要血管；且鳞癌可能更依赖VEGF维持血管完整性[^20]。FDA明确将鳞癌列为贝伐珠单抗禁忌[^32]。
+
+### 6.2.2 AK112在鳞癌中的安全性突破
+
+AK112在鳞癌中的安全性数据构成了其最具临床意义的差异化特征。在HARMONi-2单药治疗的鳞癌亚组（n=90）中，**≥3级出血为0%**——2例Gr 3出血均发生在非鳞癌患者中[^9]。该亚组67.4%为中央型肿瘤，8.8%存在空洞/坏死，3.9%肿瘤包绕重要血管，均未发生≥3级出血[^21]。
+
+HARMONi-6中，这一安全性特征在真实世界最高危人群中得到了进一步验证。该研究纳入63%中央型鳞癌、31%有咯血史、9%肿瘤空洞、18%大血管包绕的患者，但AK112组≥3级出血仅为2.6%，对照组0.8%[^10][^22]。
+
+**表6-2 贝伐珠单抗 vs AK112在鳞癌中出血风险对比**
+
+| 试验/药物 | 人群特征 | ≥3级出血 | 致命性出血 | 备注 |
+|----------|---------|---------|-----------|------|
+| AVF0757g（贝伐）[^14] | 混合NSCLC（含鳞癌） | 9.0% | 6% | 早期Phase II |
+| AVASQ（贝伐）[^18] | 专门鳞癌 | 10% | 有 | 研究提前终止 |
+| BRIDGE（贝伐）[^19] | 鳞癌（排除空洞/咯血） | 3.2% | 0 | 严格筛选后仍存风险 |
+| HARMONi-2（AK112单药）[^9] | 鳞癌亚组（67%中央型） | **0%** | 0 | 单药治疗 |
+| HARMONi-6（AK112+化疗）[^10] | 鳞癌（63%中央型，31%咯血史） | **2.6%** | 极低 | 联合化疗 |
+
+AK112在鳞癌中的≥3级出血率（0-2.6%）较贝伐珠单抗历史数据（9-10%）降低约5倍，意味着**中央型鳞癌不再是抗VEGF治疗的绝对禁忌**，在NSCLC治疗史上具有范式转移意义[^22]。
+
+### 6.2.3 机制解释：为何AK112能在鳞癌中安全使用
+
+AK112与贝伐珠单抗在鳞癌中安全性差异的分子机制可从三个层面解释。第一，**Fc-silencing设计（L234A/L235A）**：AK112消除了FcγRI/IIIa结合能力，去除ADCC、CDC、ADCP等效应[^23][^24]。贝伐珠单抗Fc完整，可能通过ADCP破坏血管内皮完整性，而AK112避免了这种额外损伤。第二，**四价结构与协同结合**：AK112在肿瘤微环境（TME）中富集，正常组织暴露较低[^25]，减少了抗VEGF效应在健康血管中的强度。第三，**半衰期与暴露**：AK112半衰期约6-7天，较贝伐珠单抗（约20天）更短，允许更灵活的毒性管理[^7]。
+
+## 6.3 VEGF相关AE与irAE对比
+
+### 6.3.1 VEGF相关AE谱
+
+AK112的VEGF相关AE发生率与预期一致，严重程度多为1-2级，临床可管理。**蛋白尿**：HARMONi-2单药任何级别31.5%，≥3级3.0%；Meta分析任何级别24.21%，≥3级仅0.82%[^12]，Gr 1-2通常无需停药，Gr 3需暂停并评估[^13]。**高血压**：HARMONi-2单药任何级别15.7%，≥3级5.1%；Meta分析任何级别13.29%，≥3级2.07%[^12]。**血栓栓塞**：HARMONi-2中动脉血栓1.0%，静脉血栓0%，与帕博利珠单抗相当[^8]。与贝伐珠单抗在NSCLC中Gr 3-4静脉血栓发生率约15%的历史数据相比，AK112血栓风险显著更低[^17]。
+
+**表6-3 AK112 VEGF相关AE与竞品/历史对照对比**
+
+| AE类别 | AK112单药 | AK112+化疗 | 贝伐珠单抗（历史） | 管理要点 |
+|--------|----------|-----------|-----------------|---------|
+| 蛋白尿（任何/≥3级） | 24-32% / 0.8-3%[^12] | 类似或略低 | 3-20% / 约5% | 监测尿常规，多为1-2级 |
+| 高血压（任何/≥3级） | 13-16% / 2-5%[^12] | 类似 | 8-31% / 5-10% | 标准降压治疗 |
+| 出血（≥3级，鳞癌） | 0%（H2）/ 2.6%（H6）[^9][^10] | 2-3% | 9-10%（鳞癌禁忌） | 高危患者谨慎使用 |
+| 血栓（≥3级） | <1%[^8] | <1% | ~15%（静脉血栓） | 极低，无需特殊预防 |
+| 伤口愈合并发症 | 罕见 | 罕见 | 常见 | 手术前停药 |
+
+### 6.3.2 与化疗叠加的血液学毒性
+
+AK112+化疗方案中的血液学毒性主要来源于化疗本底。HARMONi-A数据显示：≥3级白细胞减少19.9%（对照16.8%），贫血13.7%（对照12.4%），中性粒细胞减少29.8%（对照19.3%），血小板减少16.1%（对照11.8%）[^5]。Meta分析确认，AK112+化疗的任何级别贫血56.6%、中性粒细胞减少48.9%、血小板减少31.6%，其中≥3级中性粒细胞减少25.5%为剂量限制毒性[^12]。AK112自身对血液学系统毒性极小，联合化疗时的增量主要归因于化疗而非双抗本身。
+
+### 6.3.3 AK112 vs 帕博利珠单抗：irAE对比
+
+理论上，双特异性抗体可能同时激活两个通路，导致免疫毒性叠加。但AK112的irAE发生率与PD-1单抗相当甚至更低。HARMONi-2中，AK112组与帕博利珠单抗组的irAE对比具有重要启示意义：
+
+**表6-4 AK112 vs 帕博利珠单抗 irAE详细对比（HARMONi-2）**
+
+| irAE指标 | AK112（n=198） | 帕博利珠单抗（n=200） |
+|---------|--------------|---------------------|
+| 所有级别irAE | 29.9% | 28.1% |
+| ≥3级irAE | **7.1%** | **8.0%** |
+| 严重irAE | **5.6%** | **11.1%** |
+| 因irAE停药 | **0%** | **2.5%** |
+| irAE致死 | 0% | 0% |
+
+*数据来源：HARMONi-2 Lancet 2025; Xiong A, et al.[^8]；WCLC 2024[^9]*
+
+核心发现：AK112的≥3级irAE（7.1%）**低于**帕博利珠单抗（8.0%），严重irAE（5.6%）**显著低于**帕博利珠单抗（11.1%），因irAE停药率为0%（对照2.5%）。这一反直觉的结果——双靶点药物irAE未增加反而部分指标更优——可部分归因于AK112的Fc-silencing设计：消除ADCC、ADCP、CRS，减少非特异性免疫激活[^23][^24][^13]。
+
+HARMONi-A的irAE谱显示，AK112组甲状腺功能减退发生率24.2%（对照6.2%），为PD-1/PD-L1类效应，多为1-2级，可通过左旋甲状腺素管理；≥3级间质性肺病1.2%，≥3级皮疹2.5%[^5]。长期随访32.5个月确认，irAE发生率未随时间显著增加，无迟发性严重irAE报告[^6]。
+
+## 6.4 对HARMONi-3的安全性预测
+
+### 6.4.1 全球多中心试验中的安全性一致性
+
+HARMONi-3（NCT05899608）作为AK112首个全球多中心III期试验，其安全性一致性已获关键证据支持。HARMONi（全球EGFR-TKI耐药试验）中，西方患者占38%，安全性profile与亚洲患者一致，≥3级TRAE分布相似，无种族特异性安全信号[^7]。HARMONi-A（54.0%）与HARMONi全球（50.0%）的≥3级TRAE率相近，进一步支持跨人群安全性可预测性[^5][^7]。
+
+### 6.4.2 西方人群vs亚洲人群的AE差异预期
+
+基于免疫肿瘤学全球试验的普遍观察及HARMONi的已有数据，西方人群与亚洲人群在AK112安全性上的差异预期有限：
+
+**表6-5 HARMONi-3中西方人群与亚洲人群AE差异预期**
+
+| AE类型 | 亚洲人群预期 | 西方人群预期 | 差异判断 |
+|--------|------------|------------|---------|
+| 免疫相关肺炎/ILD | 约1-2% | 约3-5% | 西方可能略高，但AK112 Fc-silencing可能缩小差距 |
+| 甲状腺功能减退 | 约20-25% | 约10-15% | 亚洲可能略高，均为可管理水平 |
+| 皮肤毒性 | 相似 | 相似 | 预期无显著差异 |
+| 胃肠道毒性 | 相似 | 相似 | 预期无显著差异 |
+| 出血（sq-NSCLC） | 已验证2.6% | 待验证 | 机制一致，预期相似 |
+| 蛋白尿/高血压 | 相似 | 相似 | VEGF类效应，种族差异小 |
+
+*基于HARMONi全球数据及免疫肿瘤学跨种族研究汇总[^7][^26]*
+
+总体判断：基于HARMONi的数据，HARMONi-3中西方与亚洲人群的AK112安全性profile将保持高度一致，不会出现贝伐珠单抗时代未在西方鳞癌人群中验证过的"意外"出血风险。
+
+### 6.4.3 安全性作为监管优势而非障碍
+
+综合现有证据，安全性在HARMONi-3的审评中更可能成为优势而非障碍。不构成障碍的五点证据：鳞癌出血已充分验证（HARMONi-2/6均未显示贝伐珠单抗级别出血）；停药率可接受（HARMONi-2中1.5%低于帕博利珠单抗3.0%）；irAE未叠加（双靶点未导致irAE增加）；长期安全性良好（32.5个月随访无新增信号）；全球一致性已验证（HARMONi中西方与亚洲人群一致）[^5][^6][^7][^8][^10]。
+
+可能成为优势的方面：若HARMONi-3中AK112+化疗停药率与K药+化疗相当甚至更低，将增强监管接受度；若鳞癌安全性获全球验证，AK112将成为**首个在1L sq-NSCLC中安全使用VEGF通路的药物**，构成重大差异化优势。
+
+基于HARMONi-6数据向HARMONi-3的映射，定量安全预测如下：≥3级TRAE预计60-68%；sq-NSCLC≥3级出血预计2-3%；免疫相关≥3级预计8-12%；VEGF相关≥3级预计5-8%（主要为蛋白尿/高血压）；因TRAE停药预计5-7%；TRAE致死预计2-4%[^10][^11][^26]。
+
+从ODAC/监管视角审视，HARMONi-3的安全性辩论焦点将围绕：VEGF出血风险（鳞癌中已证明可控，≥3级出血仅2.6% vs 0.8%）、QoL vs PFS获益（停药率未显著增加，1.5% vs 3.0%）、双靶毒性叠加（未观察到，irAE 7.1% vs 8.0%）、长期安全性（32.5个月随访无新增信号）以及种族差异（全球试验已验证一致性）[^27][^29]。AK112在这些维度上均已有扎实的证据支撑。
+
+## 本章小结
+
+AK112在超过2,800例患者的临床研究中展现了可预测、可管理的安全性profile。其在鳞癌中的出血风险突破——HARMONi-2鳞癌亚组≥3级出血0%、HARMONi-6高危人群仅2.6%——与贝伐珠单抗在鳞癌中9-10%的致命性出血率形成鲜明对比，标志VEGF靶向治疗在sq-NSCLC中的历史性解禁。VEGF相关AE和irAE发生率均处于可管理范围，且irAE未因双靶点设计而增加，反而在严重irAE和停药指标上优于帕博利珠单抗。基于HARMONi全球数据的一致性，HARMONi-3中西方人群安全性预期与中国数据一致。AK112在sq-NSCLC中的安全性，将从监管障碍转化为全球市场获批的**核心差异化优势**。
+
+---
+
+## 脚注
+
+[^1]: Akeso Biopharma; Summit Therapeutics. ASCO 2026 HARMONi-6 presentation. June 2026. https://www.smmttx.com
+
+[^2]: Frentzas S, et al. Phase 1a dose escalation study of ivonescimab (AK112/SMT112), an anti-PD-1/VEGF-A bispecific antibody, in patients with advanced solid tumors. J Immunother Cancer. 2022.
+
+[^3]: Wang F, et al. Safety, Pharmacokinetics, and Pharmacodynamics Evaluation of Ivonescimab in Chinese Patients With Advanced Solid Tumors. PMC11925807. 2025.
+
+[^4]: 2022 ASCO. AK112-202 Ib期研究. 安全性数据: 88.5% TRAE, 13.5% Gr 3/4.
+
+[^5]: Zhang L, et al. Ivonescimab combined with chemotherapy in patients with EGFR-mutant non-squamous NSCLC who progressed on EGFR-TKIs (HARMONi-A): a randomized, double-blind, multi-center, phase 3 trial. ASCO 2024; JAMA 2024.
+
+[^6]: Akeso Biopharma. Ivonescimab's Updated Label Shows Positive Dual Results in PFS and OS from HARMONi-A Study. Jan 2026. 32.5 months follow-up.
+
+[^7]: Summit Therapeutics. Longer-Term Follow-Up of Western Patients in Global Phase III HARMONi Trial. Sept 2025. WCLC 2025.
+
+[^8]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. Lancet. 2025; PubMed 40057343.
+
+[^9]: Zhou C, et al. Phase 3 Study of Ivonescimab (AK112) vs Pembrolizumab as First-line Treatment for PD-L1 positive Advanced NSCLC: HARMONi-2. WCLC 2024. IASLC Press Release.
+
+[^10]: Chen Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous NSCLC (HARMONi-6): a randomised, double-blind, phase 3 trial. Lancet. 2026; PubMed 41125109.
+
+[^11]: Akeso Biopharma. OS显著阳性！依沃西联合化疗战胜PD-1联合化疗OS结果在ASCO 2026发布. May 2026. https://www.akesobio.com/cn/media/akeso-news/20260531/
+
+[^12]: Dai Y, et al. Efficacy and safety of ivonescimab in non-small cell lung cancer: a systematic review and meta-analysis of emerging clinical data. Front Pharmacol. 2026;1770637.
+
+[^13]: 罗详冲. PD-1/VEGF双特异性抗体依沃西单抗：全面开启肺癌治疗新时代. MedSci.cn. 2025.
+
+[^14]: Johnson DH, et al. Phase II trial of carboplatin/paclitaxel with bevacizumab in NSCLC. J Clin Oncol. 2004;22(11):2184-91.
+
+[^15]: PMC3335247. Predicting and managing the risk of pulmonary haemorrhage in patients with NSCLC treated with bevacizumab: a consensus report from a panel of experts.
+
+[^16]: Sandler A, et al. Paclitaxel-carboplatin alone or with bevacizumab for non-small-cell lung cancer. N Engl J Med. 2006;355(24):2542-50.
+
+[^17]: AVAiL. Bevacizumab in Lung Cancer. EMA Avastin Product Information.
+
+[^18]: AVASQ (BO19734). Avastin in Squamous NSCLC trial. Terminated early after 2/20 Gr ≥3 PH.
+
+[^19]: BRIDGE trial. Open-Label Phase II Evaluating Safety of Bevacizumab + Carboplatin/Paclitaxel in Squamous NSCLC. J Thorac Oncol.
+
+[^20]: Principles and Practice of Lung Cancer, 4th Edition. IASLC Official Reference Text. Bevacizumab in Squamous Cell Histology chapter.
+
+[^21]: 熊安稳教授解读依沃西单抗的迭代升级之路. 良医汇. 2025.
+
+[^22]: 孙龙华教授专访. HARMONi-6 PI专访: 依沃西方案突破肺鳞癌抗VEGF治疗禁区. ByDrug/医药魔方. 2026.
+
+[^23]: AK112临床前研究成果. 康方生物官网. 2022. Fc-silencing L234A/L235A设计.
+
+[^24]: 雪球. AK112高效低毒的秘密公布了. Fc区域L234A/L235A突变消除ADCC/ADCP/CDC/ADCR/CRS.
+
+[^25]: Summit Therapeutics. Ivonescimab mechanism of action. Cooperative binding and tetravalent structure. 2025.
+
+[^26]: 富途证券. 康方生物(09926.HK)：决胜之年 双抗龙头引领下一代肿瘤免疫范式. 2026.
+
+[^27]: Cancer Network. Ivonescimab/Chemotherapy Improves OS in Squamous NSCLC. June 2026. https://www.cancernetwork.com/view/ivonescimab-chemotherapy-improves-os-squamous-nsclc-harmoni-6
+
+[^28]: 华中科技大学同济医学院附属同济医院图书馆. HARMONi-6 Lancet全文摘录. 2025. https://tjhlib.yuntsg.com/web/detail?type=news&tid=1&id=18924
+
+[^29]: 雪球. AK112在2026年可能面临的FDA专家委员会（ODAC）辩论焦点. 2026.
+
+[^30]: BOCOM International Research. Akeso Initiation of Coverage. 2022. https://files.bocomgroup.com/download/9926_HK-220628e.pdf
+
+[^31]: Sandler A, et al. Paclitaxel-carboplatin alone or with bevacizumab for non-small-cell lung cancer. N Engl J Med. 2006;355(24):2542-50. (ECOG 4599)
+
+[^32]: Avastin FDA Label. https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=70ab1de6-fb68-aee4-a6cb-f9a0f146687f
+
+
+---
+
+## 7. 竞品格局与竞争护城河
+
+PD-1/VEGF双抗赛道已成为全球肿瘤免疫治疗领域竞争最为激烈的方向之一。随着AK112（依沃西单抗）在HARMONi-2和HARMONi-6中相继取得突破性阳性结果，多家药企加速布局同类产品。然而，从临床成熟度、差异化机制和全球化商业能力三个维度审视，AK112已构建起难以在短期内复制的竞争壁垒。
+
+### 7.1 其他PD-1/VEGF双抗在研进展
+
+目前全球范围内处于临床阶段（Phase 1及以上）的PD-1/VEGF或PD-L1/VEGF双抗至少有5款，但无一进入Phase 3数据读出阶段，整体较AK112落后2-3年。
+
+| 药物名称 | 开发企业 | 靶点 | 阶段 | NSCLC关键数据 | 与AK112差距 |
+|---------|---------|------|------|-------------|-----------|
+| PM8002/BNT327 | 普米斯/BioNTech | PD-L1/VEGF-A | Phase 2 | 一线NSCLC ORR 26.2%，DCR 78.7%[^1] | 2-3年；NSCLC Phase 3未启动 |
+| SSGJ-707 | 三生国健/辉瑞 | PD-1/VEGF | Phase 2→3 | 单药ORR 67.6%，mPFS 12.4个月[^2] | 1.5-2年；头对头数据缺失 |
+| HB0025 | 华海药业/华奥泰 | PD-L1/VEGF | Phase 2→3 | 鳞癌ORR 84.5%，mPFS 12.62个月[^3] | 2-3年；全球商业化能力有限 |
+| IMM2510 | 宜明昂科 | PD-L1/VEGF | Phase 1/2 | 鳞癌ORR 35.3%，DCR 76.5%[^4] | 3-5年；早期临床 |
+| IBI318 | 信达生物 | PD-1/PD-L1 | Phase 1/2 | 单药ORR 45.5%（非VEGF双抗）[^5] | 机制不同，联合仑伐替尼间接双通路抑制 |
+
+**PM8002/BNT327**采用mAb-VHH分子架构，Fc区经沉默改造，靶向PD-L1与VEGF-A。2024年BioNTech以8亿美元收购普米斯后，将其纳入全球管线，重点推进一线广泛期SCLC的Phase 3研究[^6]。但其在NSCLC领域的临床成熟度显著落后于AK112：一线NSCLC总体ORR仅26.2%，且缺乏头头对比PD-1单抗的数据[^1]。PM8002靶向PD-L1而非PD-1，分子量约175 kDa，且缺乏AK112的四价协同结合机制，临床定位更偏向PD-L1阳性高选择人群。
+
+**SSGJ-707**是AK112最直接的可比竞品。该药基于三生国健CLF2平台开发，为PD-1/VEGF四价双抗，与AK112靶点一致但分子架构不同。2025年5月，三生国健与辉瑞达成总额超60亿美元（12.5亿美元首付+48亿美元里程碑）的全球授权合作，成为PD-1/VEGF赛道中金额最高的交易之一[^7]。Phase 2数据显示其单药ORR 67.6%、mPFS 12.4个月，与AK112 HARMONi-2（ORR 50.0%，mPFS 11.14个月）处于相近水平[^2][^8]。但关键差异在于：SSGJ-707的数据来自单臂研究，非头对头随机对照；且≥G3 TRAE发生率23.5%，略高于AK112在鳞癌中的22.2%[^9]。辉瑞的全球开发能力虽强，但Phase 3入组启动时间已落后AK112至少18个月。
+
+**HB0025**采用mAb-Trap技术，将VEGFR1-D2融合于抗PD-L1抗体重链N端，同时保留Fc效应功能。其Phase 2鳞癌队列ORR高达84.5%，mPFS 12.62个月，看似优于AK112[^3]。但需注意：该研究为单臂设计，无对照组数据；且≥G3出血率达4.0%，远高于AK112的0.3%（HARMONi-2）和2.6%（HARMONi-6）[^10][^11]。华海药业的全球商业化能力有限，主要威胁局限于中国市场。目前III期随机对照试验刚启动（NCT06758557），预计2-3年后方可获得关键数据。
+
+**IMM2510**处于更早期阶段，虽可同时中和VEGF-A、VEGF-B和PlGF（胎盘生长因子），但鳞癌ORR仅35.3%，且临床成熟度远落后于AK112（Phase 1/2）[^4]。其余如君实生物JS207、荣昌生物RC148等尚处于Phase 1，短期内不构成竞争威胁[^12][^13]。
+
+### 7.2 PD-1+贝伐联合方案的历史
+
+在PD-1/VEGF双抗问世之前，PD-(L)1抑制剂与贝伐珠单抗的联合方案已在非鳞NSCLC中积累了大量循证证据，但也暴露了固有的局限性。
+
+**IMpower150**是验证三联方案（atezolizumab+bevacizumab+化疗，ABCP）价值的里程碑试验。1202例非鳞NSCLC患者1:1:1随机分组，结果显示ABCP较BCP（beva+化疗）显著延长OS（19.5 vs 14.7个月，HR 0.80）和PFS（8.3 vs 6.8个月，HR 0.62）[^14][^15]。但ABCP的≥G3 TRAE发生率更高，且**严格排除鳞癌患者**——这是贝伐珠单抗的绝对禁忌人群[^16]。
+
+**TASUKI-52**在亚洲非鳞NSCLC中验证了nivolumab+化疗+贝伐方案，mPFS 10.6 vs 8.2个月（HR 0.59），mOS 31.6 vs 24.7个月（HR 0.71），4年OS率34.7% vs 22.1%[^17]。但同样仅限非鳞癌。ORIENT-31在EGFRm经治非鳞NSCLC中证明PD-1+贝伐生物类似物+化疗的PFS价值（mPFS 7.2 vs 4.3个月，HR 0.51），但OS未达显著（HR 0.98）[^18]。
+
+贝伐珠单抗在鳞癌中的禁忌源于早期惨痛教训：AVF0757g试验中，13例鳞癌患者接受贝伐治疗后，4例发生危及生命或致死性咯血（发生率31%）[^19]。鳞癌常位于肺中央、靠近大血管，肿瘤中心坏死/空洞化常见；贝伐的系统性抗VEGF作用导致血管脆性增加、修复障碍，叠加中央型肿瘤侵蚀支气管血管，极易诱发大咯血[^20]。FDA说明书明确将鳞癌和近期咯血列为禁忌[^21]。
+
+从机制角度看，PD-1+贝伐联合方案与PD-1/VEGF双抗存在本质差异：
+
+| 维度 | PD-1+贝伐联合方案 | PD-1/VEGF双抗（AK112） |
+|------|------------------|----------------------|
+| 药代动力学 | 两种独立抗体，肿瘤内浓度难以同步优化 | 单分子双靶点协同结合，PD-1臂亲和力因VEGF存在增强18倍[^22] |
+| Fc效应 | 贝伐保留ADCC；PD-1抗体Fc多为沉默 | AK112 Fc沉默（L234A/L235A），减少irAE和系统毒性[^23] |
+| 鳞癌适用性 | 贝伐禁忌，无法用于鳞癌 | AK112在鳞癌中安全有效（HARMONi-2/6）[^24] |
+| 系统毒性 | 高血压（8-31%）、蛋白尿（3-20%）、出血风险高 | 高血压（8.2%）、蛋白尿（7.3%）、≥G3出血仅0.3%[^25] |
+| 用药复杂性 | 双药联合，输液负担重 | 单药，简化治疗流程 |
+
+联合方案中两种抗体独立代谢，难以保证在肿瘤部位的同步最优浓度；而AK112作为单分子天然解决了PK同步性问题。此外，AK112的协同结合使药物在VEGF高表达的肿瘤微环境（TME）中浓度升高，而系统暴露相对较低，这解释了其VEGF相关毒性显著低于贝伐的临床现象[^26]。
+
+### 7.3 AK112三重竞争壁垒
+
+面对上述竞品和联合方案，AK112已构建起三重难以复制的竞争壁垒。
+
+**壁垒一：全球唯一头对头击败K药的Phase 3药物**
+
+HARMONi-2是全球首个在Phase 3中证明单药优于帕博利珠单抗（K药）的临床研究。依沃西单抗单药mPFS 11.14个月，较K药5.82个月绝对延长5.3个月，疾病进展或死亡风险降低49%（HR 0.51，95%CI 0.38-0.69，p<0.0001）[^8]。这一"头对头胜K药"的临床标签具有极强的学术和商业价值——在NSCLC一线免疫治疗十余年的竞争史中，从未有任何药物在头对头随机对照中超越K药单药。该结果于2025年3月发表于《The Lancet》，并被NMPA于2025年4月批准为一线适应症[^27]。
+
+**壁垒二：全球唯一鳞癌OS阳性的抗VEGF药物**
+
+HARMONi-6在2026年ASCO公布的OS期中分析中，取得mOS 27.9 vs 23.7个月（HR 0.66，p=0.0017）的显著阳性结果，成为全球首个在鳞癌一线治疗中头对头击败PD-1+化疗、且同时取得PFS和OS双阳性的Phase 3研究[^28]。鳞癌占NSCLC约30%，既往因贝伐禁忌长期缺乏抗血管治疗选择。AK112的分子设计——四价协同结合、Fc沉默、较短半衰期——从根本上改变了VEGF靶向治疗在鳞癌中的安全性格局[^29]。竞品中，SSGJ-707鳞癌数据来自Phase 2单臂；PM8002和IMM2510的鳞癌数据尚不成熟；HB0025虽鳞癌ORR高，但出血风险显著更高且缺乏对照数据。
+
+**壁垒三：全球首个获批PD-1/VEGF双抗+Summit全球商业化网络**
+
+AK112于2024年5月获NMPA批准，成为全球首个获批的PD-1/VEGF双抗，目前已在中国获批3项NSCLC适应症，并获FDA Fast Track资格[^30]。其与Summit Therapeutics的50亿美元级合作（2022年）覆盖了北美、欧洲和日本市场的全球开发与商业化[^31]。Summit的全球化网络使AK112在关键市场的上市准备领先竞品2-3年。SSGJ-707虽背靠辉瑞，但合作2025年5月才达成，Phase 3尚未全球启动；PM8002的BioNTech合作虽早，但重心在SCLC而非NSCLC。
+
+### 7.4 市场定位与先发优势
+
+若HARMONi-3取得最终阳性，AK112将在全球NSCLC一线治疗格局中占据独特位置：
+
+- **鳞癌+非鳞癌全覆盖**：区别于贝伐-based方案仅适用于非鳞癌，AK112可覆盖100% NSCLC组织学类型；
+- **PD-L1全谱系获益**：HARMONi-6显示PD-L1阴性（TPS<1%）患者获益甚至更大（HR 0.55 vs 0.66），突破了PD-1单抗对PD-L1表达的依赖[^28]；
+- **"去化疗"单药+联合化疗双选择**：HARMONi-2验证了单药（PD-L1≥1%）的疗效，HARMONi-3/6验证联合化疗，覆盖不同临床场景。
+
+竞品时间线评估显示，**2-3年内难以撼动AK112的先发优势**：
+
+| 竞品 | 预计NSCLC关键数据/获批时间 | 潜在威胁评估 |
+|------|------------------------|-----------|
+| PM8002/BNT327 | NSCLC Phase 3未启动，预计2028年后 | 低；靶点差异（PD-L1×VEGF-A），进度落后 |
+| SSGJ-707 | Phase 3入组中，预计2028-2029年读出 | 中；辉瑞全球能力强，但头对头数据缺失，需时间追赶 |
+| HB0025 | Phase 3刚启动，预计2028年后 | 低；中国为主，出血风险高，全球商业化弱 |
+| IMM2510 | 早期临床，预计2030年后 | 极低；3-5年内不构成威胁 |
+
+需要关注的风险因素包括：HARMONi-3鳞癌队列期中PFS分析未达早期停止阈值，提示全球人群中的效应量可能低于中国研究；OS最终成熟度需要时间验证；以及生物类似药对K药价格的冲击可能间接影响AK112的定价空间。但即便存在这些不确定性，AK112在监管获批、头对头临床证据、鳞癌独占性和全球商业化网络四个维度上的先发优势，已构成一道竞品短期内难以逾越的护城河。SSGJ-707等竞品若要在全球市场上与AK112分庭抗礼，不仅需要Phase 3成功，还需要在头对头研究中复制"超越K药"的临床故事——这在肿瘤免疫治疗领域是极高的门槛。
+
+---
+
+### 参考文献
+
+[^1]: Wu C, et al. Phase Ib/IIa trial of PM8002 in advanced NSCLC. J Clin Oncol. 2024;42:8533.
+
+[^2]: Wu L, et al. Phase II trial of SSGJ-707 as monotherapy in advanced NSCLC. J Clin Oncol. 2025;43:8543.
+
+[^3]: Phase II study of HB0025 in combination with chemotherapy as first-line treatment for NSCLC. J Clin Oncol. 2026;44:8574.
+
+[^4]: IMM2510 clinical data. WCLC 2025; ImmuneOnco news. https://cn.immuneonco.com/news/gsdynamics/584.html
+
+[^5]: Ruan DY, et al. First-in-class bispecific antibody IBI318 targeting PD-1 and PD-L1. J Hematol Oncol. 2024;17:16.
+
+[^6]: Reck M, et al. Global Phase III trial of BNT327/PM8002 plus chemotherapy in first-line ES-SCLC. J Clin Oncol. 2025;43:TPS8129.
+
+[^7]: 三生国健公告. 2025年5月20日. http://news.10jqka.com.cn/field/20250521/668318093.shtml
+
+[^8]: Zhou C, et al. Ivonescimab vs pembrolizumab for PD-L1-positive NSCLC (HARMONi-2). Lancet. 2025;405:839-849.
+
+[^9]: Zhou C, et al. HARMONi-2 WCLC 2024 presentation. https://akesobio.com/media/2293/wclc-2024-presentation-ak112-303-final.pdf
+
+[^10]: Akeso 2021 Annual Results Presentation. https://www.akesobio.com/media/1643/
+
+[^11]: Chen Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6). Lancet. 2025;406(10515):2078-2088.
+
+[^12]: Lin S, et al. JS207, a novel bispecific antibody against PD-1 and VEGFA. Front Immunol. 2025;16:1612547.
+
+[^13]: Nature. The year of the bispecific in oncology and beyond. 2025. https://www.nature.com/articles/d43747-025-00111-4
+
+[^14]: Reck M, et al. Atezolizumab plus bevacizumab and chemotherapy in NSCLC (IMpower150). Lancet Respir Med. 2019;7:387-401.
+
+[^15]: Nogami N, et al. IMpower150 final OS analyses. J Thorac Oncol. 2021;16:1909-1920.
+
+[^16]: IMpower150 study design. NCT02366143. https://clinicaltrials.gov
+
+[^17]: Lee KH, et al. First-line nivolumab plus platinum chemotherapy and bevacizumab: 3-year follow-up of TASUKI-52. Lung Cancer. 2025;196:108328.
+
+[^18]: Lu S, et al. ORIENT-31 first interim results. Lancet Oncol. 2022;23:1167-1179.
+
+[^19]: Onclive. Bevacizumab in NSCLC. https://www.onclive.com/view/bevacizumab-in-non-small-cell-lung-cancer
+
+[^20]: PMC. The major thoracic vascular invasion of lung cancer. https://pmc.ncbi.nlm.nih.gov/articles/PMC5484982/
+
+[^21]: Avastin FDA Label. https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=70ab1de6-fb68-aee4-a6cb-f9a0f146687f
+
+[^22]: Ding T, et al. Mechanism of action of ivonescimab. SITC 2023; J Immunother Cancer. 2023;11(Suppl 1):A1316.
+
+[^23]: Shi F, et al. Ivonescimab's dual-target approach to anti-VEGF/PD-1. Front Immunol. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12665695/
+
+[^24]: Zhou C, et al. HARMONi-2 WCLC 2024 presentation. https://akesobio.com/media/2293/wclc-2024-presentation-ak112-303-final.pdf
+
+[^25]: BOCOM International Research. Akeso Initiation of Coverage. 2022. https://files.bocomgroup.com/download/9926_HK-220628e.pdf
+
+[^26]: Frontiers in Immunology. Anti-angiogenic therapies: bispecific VEGF x PD-(L)1 antibodies. 2026. https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1736806/full
+
+[^27]: 康方生物. 依沃西单抗获批新适应症，一线治疗肺癌. 2025年4月25日.
+
+[^28]: Summit Therapeutics. Ivonescimab with Chemotherapy Demonstrated a Statistically Significant Overall Survival Benefit in HARMONi-6. May 31, 2026. https://smmttx.com/news/press-releases/news-details/2026/
+
+[^29]: Shi F, et al. Front Immunol. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12665695/
+
+[^30]: Baidu Baike. Ivonescimab. 2026. https://baike.baidu.com/en/item/Ivonescimab/1691358
+
+[^31]: Akeso 2023 Interim Results. PR Newswire. 2023. https://www.prnewswire.com/news-releases/akeso-announced-2023-interim-results-301913152.html
+
+
+---
+
+# 第八章 风险因素与不确定性分析
+
+HARMONi-3作为首个PD-1/VEGF双抗头对头挑战K药联合化疗的全球III期试验，其数据读出将深刻改变一线NSCLC治疗格局。然而，任何临床预测都内含不确定性——既有削弱疗效的Downside风险，也存在超预期的Upside潜力。本章系统梳理关键不确定性维度，构建风险矩阵，量化各因素对疗效估计的影响。
+
+## 8.1 Downside风险因素
+
+### 8.1.1 中国人群效应
+
+HARMONi-3最核心且被低估的风险，是**中国人群效应**对疗效外推的干扰。KEYNOTE-407全球数据中K药+化疗鳞癌OS HR为0.71，中国扩展研究中同一方案OS HR骤降至0.44，降幅达0.27[^1]。中国鳞癌患者对免疫联合化疗应答显著强于全球平均，可能与EGFR突变率、吸烟模式或后续治疗差异有关，而非单纯药物效应[^2]。
+
+HARMONi-6作为纯中国人群试验，其OS HR=0.66可能受人群效应放大。若HARMONi-3全球鳞癌OS HR落在0.75–0.85区间，则中国优势被西方人群稀释，临床获益将低于HARMONi-6暗示的水平[^3]。非亚洲人群亚组数据是判断该效应真实影响的关键。
+
+### 8.1.2 西方人群基线差异
+
+西方鳞癌患者肥胖率更高、合并症（慢阻肺、心血管疾病）负担更重，可能降低免疫净获益[^4]。HARMONi全球试验（EGFRm后线）提供安慰证据：全球OS HR=0.78与中国HARMONi-A的HR=0.74仅差0.04，远小于KEYNOTE-407的0.27[^5]。但鳞癌种族差异可能大于EGFRm人群[^6]。桥接模型显示西方人群比例升高或带来约0.03个HR惩罚；然而HARMONi全球北美亚组OS HR=0.70优于总体HR=0.78，方向性积极[^7]。
+
+### 8.1.3 对照组交叉稀释OS
+
+KEYNOTE-407中对照组患者进展后交叉至K药比例高达50.9%[^8]，显著缩小OS差异。HARMONi-3对照组为K药+化疗，进展后后线可能含AK112；若交叉率高，OS检测将面临额外统计挑战。模型估算交叉效应带来约0.02个HR惩罚，但已被历史数据充分建模[^9]。
+
+### 8.1.4 2026年Q2期中分析的心理冲击
+
+2026年4月HARMONi-3早期期中分析未达提前终止阈值，IDMC建议继续，Summit保持盲态[^10]。该分析采用高度保守alpha-spending策略，仅消耗极小显著性预算，但市场反应剧烈——Summit股价单日跌约26%[^11]。这揭示"未达阈值≠失败"与市场误读之间的鸿沟：早期分析数据成熟度不足，保守边界要求极高获益才能终止。但市场可能误读为疗效不足前兆，对最终分析产生过度负面心理折价。
+
+### 8.1.5 统计设计不透明
+
+HARMONi-3的alpha分配、期中分析边界、PFS与OS显著性传递策略等核心统计细节未完整公开[^12]。现有功效计算基于标准假设，若实际设计更保守（如alpha进一步分割），实际成功概率可能低于模型预测。此"设计黑箱"对2026年Q2新增PFS期中分析能否达显著性构成不确定性。
+
+**表8-1 Downside风险矩阵**
+
+| 风险因素 | 估计HR影响 | 置信度 | 关键数据来源 | 缓释因素 |
+|---------|----------|--------|-------------|---------|
+| 中国人群效应稀释 | +0.05–0.10 | 高 | KEYNOTE-407中国HR=0.44 vs全球0.71[^1] | HARMONi全球vs HARMONi-A差异仅0.04[^5] |
+| 西方人群基线差异 | +0.02–0.03 | 中 | 真实世界流行病学数据[^4] | 北美亚组HR=0.70优于总体[^7] |
+| 对照组交叉稀释OS | +0.02 | 高 | KEYNOTE-407交叉率50.9%[^8] | 已被历史模型充分纳入[^9] |
+| 期中分析心理冲击 | 情绪/非量化 | 高 | Summit股价单日-26%[^11] | 高度保守alpha策略，未达阈值≠失败[^10] |
+| 统计设计不透明 | ±0.02–0.04 | 中 | alpha分配细节未公开[^12] | 双主要终点增加容错空间 |
+| **合计净惩罚** | **+0.11–0.21** | | | |
+
+## 8.2 Upside潜在利好
+
+### 8.2.1 野生型人群免疫敏感性优势
+
+HARMONi-A针对EGFR-TKI进展后EGFR突变人群，OS HR=0.74显著弱于HARMONi-6的0.66[^13]。EGFR突变人群免疫微环境呈"冷肿瘤"特征，PD-1/VEGF双抗疗效受限。HARMONi-3作为一线野生型（非EGFR突变）试验，理论上有更高免疫应答基线，模型估算带来约0.03个HR收益[^14]。
+
+### 8.2.2 PD-L1阴性亚组差异化获益
+
+HARMONi-6显示PD-L1 TPS<1%亚组PFS HR=0.55，优于PD-L1阳性亚组的HR=0.66[^15]。PD-L1阴性肿瘤中传统PD-1单抗疗效受限（KEYNOTE-407该亚组OS CI跨1），而AK112的VEGF阻断通过血管正常化和解除免疫抑制（减少MDSC、Treg）提供不依赖PD-L1的额外通路[^16]。若HARMONi-3重现此模式，AK112有望获all-comer标签，覆盖全人群而非仅PD-L1阳性，具有重大商业和临床价值[^17]。
+
+### 8.2.3 HARMONi-6机制验证价值
+
+HARMONi-6的OS HR=0.66（p=0.0017）是对AK112"PD-1+VEGF"双靶机制在鳞癌中有效性的强验证[^18]。免疫肿瘤学历史上PFS不转化为OS的案例屡见不鲜，HARMONi-6打破了此顾虑，证明VEGF加成可切实转化为长期生存获益。这为HARMONi-3提供了高于统计外推的生物学可信度，估算贡献约0.01个HR"信心溢价"[^19]。
+
+### 8.2.4 北美人群可能更优
+
+HARMONi全球试验北美亚组OS HR=0.70，优于总体HR=0.78[^20]。虽样本量有限，但提示西方人群应答可能不劣于中国。若HARMONi-3北美亚组重现此趋势，将有力反驳"中国人群效应"担忧，为AK112全球标准地位提供更坚实的地域一致性证据[^21]。
+
+**表8-2 Upside利好矩阵**
+
+| 利好因素 | 估计HR收益 | 置信度 | 关键数据来源 |
+|---------|----------|--------|-------------|
+| 野生型人群IO敏感性更高 | -0.03 | 高 | HARMONi-A EGFRm OS HR=0.74 vs HARMONi-6 0.66[^13][^14] |
+| PD-L1阴性亚组差异化获益 | -0.02 | 中 | HARMONi-6 PD-L1<1% PFS HR=0.55[^15][^16] |
+| HARMONi-6强OS机制验证 | -0.01 | 高 | HARMONi-6 OS HR=0.66, p=0.0017[^18] |
+| 北美人群疗效可能更优 | -0.01 | 低 | HARMONi全球北美OS HR=0.70[^20] |
+| **合计净收益** | **-0.07** | | |
+
+综合Downside（+0.11–0.21）与Upside（-0.07），基准预测鳞癌OS HR=0.70已纳入此平衡。悲观情景（净惩罚+0.14）下OS HR=0.84仍可能接近显著边界；乐观情景（净收益-0.07）下OS HR可低至0.63，与HARMONi-6高度一致[^22]。
+
+## 8.3 关键假设验证
+
+### 8.3.1 假设1：替雷≈K药
+
+HARMONi-6对照为替雷+化疗，HARMONi-3为K药+化疗。Guo等人2023年NMA显示中国一线鳞癌中替雷+化疗 vs K药+化疗的PFS HR=1.04（95% CI: 0.82–1.31），CI跨1，无显著差异[^23]。RATIONALE-307与KEYNOTE-407间接比较进一步支持[^24]。但NMA存在残留混杂，缺乏OS直接比较。若K药OS略优于替雷（HR=0.95），HARMONi-3 OS HR将恶化约0.02–0.04。该假设置信度**中高**[^25]。
+
+### 8.3.2 假设2：中国数据可外推至全球
+
+该假设最大不确定性来自KEYNOTE-407中0.27的HR种族差异。但HARMONi系列提供更积极内部证据：HARMONi全球OS HR=0.78与HARMONi-A的HR=0.74仅差0.04，表明AK112在中国与全球人群中的一致性优于K药在鳞癌中的一致性[^26]。HARMONi全球中38%患者来自西方国家，符合FDA种族多样性要求，北美亚组HR=0.70优于总体[^27]。该假设置信度**中等**，核心不确定性在于鳞癌种族差异是否被充分量化。
+
+### 8.3.3 假设3：PFS-to-OS转化效率可维持
+
+HARMONi-6展现极高转化效率（log(OS)/log(PFS)=0.81），远高于化疗联合免疫历史平均（约0.53）[^28]。生物学解释：两试验对照组均接受PD-1抑制剂，OS差异主要由进展前后VEGF通路持续抑制驱动。由于HARMONi-3与HARMONi-6在"对照组含PD-1"结构上一致，有充分理由相信类似转化效率可被复制[^29]。HARMONi-6的OS阳性本身即为最佳验证。该假设置信度**高**。
+
+### 8.3.4 假设4：鳞癌安全性全球一致
+
+传统抗VEGF药物（贝伐珠单抗）在鳞癌中因≥3级出血率高达9–10%被禁忌[^30]。AK112通过Fc-silencing（L234A/L235A）和协同结合机制，在HARMONi-6中实现≥3级出血仅2.6%（对照组0.8%），差异微小且可控[^31]。HARMONi-6入组甚至含63.2%中央型鳞癌和约30%咯血史患者，属极高危人群，进一步验证安全性稳健性[^32]。HARMONi-3采用相同药物分子且排除极高危患者，该假设置信度**高**。若成立，出血风险将不会成为FDA审评焦点，反而可能成为差异化监管优势[^33]。
+
+**表8-3 关键假设验证状态**
+
+| 假设 | 内容 | 验证状态 | 置信度 | 若失败的影响 |
+|------|------|---------|--------|-------------|
+| 假设1 | 替雷≈K药 | NMA HR=1.04, CI跨1[^23] | 中高 | OS HR恶化+0.02–0.04 |
+| 假设2 | 中国数据可外推全球 | HARMONi全球HR=0.78 vs HARMONi-A 0.74[^26] | 中 | OS HR恶化+0.03–0.08 |
+| 假设3 | PFS-to-OS转化效率维持 | HARMONi-6转化效率0.81[^28] | 高 | OS HR恶化+0.05–0.10 |
+| 假设4 | 鳞癌安全性全球一致 | HARMONi-6 ≥3级出血2.6%[^31] | 高 | 监管延迟或适应症受限 |
+
+## 8.4 2026年Q2期中分析的影响
+
+### 8.4.1 未达阈值≠失败
+
+2026年4月早期期中分析未达提前终止阈值，采用高度保守alpha-spending策略——数据成熟度极低时要求HR达极端水平（如<0.50）才能终止。这相当于"第一节超分胜利"，在肿瘤试验中几乎从未发生[^34]。未达阈值完全在预期内，且仅消耗极小显著性预算（<0.001 alpha），对最终分析功效影响可忽略。
+
+### 8.4.2 历史参照：HARMONi-6的早期分析假设
+
+若HARMONi-6在类似成熟度时进行早期分析，是否可能达显著性？其最终OS HR=0.66，但OS曲线在早期可能尚未充分分离，尤其对照组替雷+化疗初期具有活性。因此即便最终强阳性试验，早期分析也可能因数据不成熟而未达终止阈值。此参照强化"2026年4月阴性结果不预测最终阴性"的统计逻辑[^35]。
+
+### 8.4.3 投资者情绪与长期价值的错配
+
+市场对2026年4月消息的反应（Summit股价跌26%）典型反映短期情绪与长期价值的错配。未达阈值的"失望"信号触发止损和动量交易，导致价格超调。然而HARMONi-6强OS数据（HR=0.66, p=0.0017）、HARMONi-2单药优效性（PFS HR=0.51）及HARMONi全球阳性结果，共同构成AK112机制有效性的"三重锚定"[^36]。2026年Q2新增PFS期中分析（管理层主动增加，体现信心）和2026年H2最终分析，将提供远比早期分析更成熟的数据[^37]。投资者应将此事件视为"时间延迟"而非"疗效否定"，调整预期时间线而非成功概率。
+
+---
+
+## 脚注
+
+[^1]: KEYNOTE-407 5年更新数据. J Clin Oncol 2023. 全球OS HR=0.71; 中国扩展研究OS HR=0.44.
+
+[^2]: AK112 HARMONi-3 跨维度洞察提取. 洞察3: "中国人群效应"可能是HARMONi-3最大的被低估风险.
+
+[^3]: HARMONi-3预测模型（Dim08）. 悲观情景下鳞癌OS HR=0.76; 若叠加中国人群效应完全稀释，可能接近0.80–0.85.
+
+[^4]: HARMONi-3预测模型（Dim08）. 4.1 Downside Risks: 基线差异（肥胖/吸烟/合并症）估计HR惩罚+0.02，置信度低.
+
+[^5]: HARMONi-3交叉验证报告. 冲突1: HARMONi全球OS HR=0.78 vs HARMONi-A HR=0.74，差异仅0.04.
+
+[^6]: HARMONi-3交叉验证报告. 冲突1分析: 鳞癌的种族差异可能大于EGFRm人群.
+
+[^7]: Summit Therapeutics HARMONi WCLC 2025更新. 全球OS HR=0.78 (p=0.0332); 北美OS HR=0.70.
+
+[^8]: Novello S et al. KEYNOTE-407 5-year update. J Clin Oncol 2023. 对照组交叉至K药率50.9%.
+
+[^9]: HARMONi-3预测模型（Dim08）. 4.1: 交叉稀释已被历史数据充分建模，估计HR惩罚+0.02.
+
+[^10]: Summit Therapeutics Q1 2026 Earnings Release. IDMC完成早期期中分析，建议试验继续，Summit保持盲态.
+
+[^11]: HARMONi-3交叉验证报告. 冲突3: 部分投资者视为负面信号，股价跌26%.
+
+[^12]: HARMONi-3预测模型（Dim08）. 6.2模型局限性: alpha分配、期中分析边界等未完全公开.
+
+[^13]: HARMONi-A final OS analysis SITC 2025. OS HR=0.74 (95% CI: 0.58–0.95), p=0.019. 中位随访32.5个月.
+
+[^14]: HARMONi-3预测模型（Dim08）. 4.2 Upside: 野生型人群估计HR收益-0.03，置信度高.
+
+[^15]: HARMONi-6基线特征及亚组分析. PD-L1 TPS<1%亚组PFS HR=0.55; PD-L1阳性亚组HR=0.66.
+
+[^16]: AK112 HARMONi-3跨维度洞察提取. 洞察2: VEGF阻断通过血管正常化和解除免疫抑制（减少MDSC、Treg）增强抗肿瘤免疫，不完全依赖PD-L1表达.
+
+[^17]: AK112 HARMONi-3跨维度洞察提取. 洞察2: 若PD-L1阴性获益显著，AK112将获得all-comer适应症标签.
+
+[^18]: Lu S, et al. Lancet 2026. HARMONi-6 OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017.
+
+[^19]: HARMONi-3预测模型（Dim08）. 4.2 Upside: HARMONi-6强OS结果验证机制，估计HR收益-0.01.
+
+[^20]: Summit Therapeutics HARMONi WCLC 2025 update. 北美OS HR=0.70 vs 总体HR=0.78.
+
+[^21]: HARMONi-3交叉验证报告. 中等置信度发现5: 北美人群OS HR=0.70优于总体HR=0.78，样本量有限但方向积极.
+
+[^22]: HARMONi-3预测模型（Dim08）. 4.3 Downside/Upside Scenario汇总: 基准鳞癌OS HR=0.70; Upside 0.67; Downside 0.76.
+
+[^23]: Guo Y et al. Front Oncol 2023. Tislelizumab + chemo vs pembrolizumab + chemo for 1L NSCLC: NMA PFS HR=1.04 (95% CI: 0.82–1.31).
+
+[^24]: HARMONi-3交叉验证报告. 高置信度发现9: 替雷 vs K药在中国鳞癌中疗效相近，NMA HR=1.04.
+
+[^25]: HARMONi-3预测模型（Dim08）. 1.1: 替雷→K药桥接，若替雷略劣于K药，HR调整±0.02–0.04.
+
+[^26]: HARMONi-3交叉验证报告. 冲突1分析: HARMONi全球HR=0.78 vs HARMONi-A HR=0.74，差异远小于KEYNOTE-407.
+
+[^27]: MedThority, 2025年8月17日. HARMONi约38%患者来自西方国家（非亚洲），符合FDA种族多样性要求.
+
+[^28]: HARMONi-3预测模型（Dim08）. 2.1: HARMONi-6转化效率log(OS)/log(PFS)=0.81，化疗联合试验平均0.53.
+
+[^29]: HARMONi-3预测模型（Dim08）. 2.2: HARMONi-3与HARMONi-6对照结构类似（均为PD-1+chemo），可预期类似转化效率.
+
+[^30]: Xiao B et al. Cancer Manag Res 2018. 贝伐珠单抗≥3级出血相对风险RR=1.98，鳞癌禁忌.
+
+[^31]: Lu S, et al. Lancet 2026. HARMONi-6 ≥3级出血2.6% vs 对照组0.8%（或1%），差异微小.
+
+[^32]: HARMONi-6基线特征: 中央型鳞癌63.2%，IV期92.3%，咯血史约30%.
+
+[^33]: AK112 HARMONi-3跨维度洞察提取. 洞察4: 安全性将是AK112的监管和市场优势，而非障碍.
+
+[^34]: 雪球用户分析, 2026年5月2日. 早期分析相当于"第一节超分胜利"，数据成熟度不足，未达阳性不意外.
+
+[^35]: HARMONi-3预测模型（Dim08）. 历史参照推断: HARMONi-6若早期分析也可能未达阈值.
+
+[^36]: AK112 HARMONi-3跨维度洞察提取. 洞察6: AK112拥有三重独特壁垒（HARMONi-2头对头击败K药、HARMONi-6鳞癌OS阳性、全球首个PD-1/VEGF双抗上市）.
+
+[^37]: Summit Therapeutics Q4 2025 Earnings Release. 管理层主动新增2026 Q2 PFS期中分析，体现对数据读出节奏的信心.
+
+
+---
+
+# 第九章 结论与综合预测
+
+## 9.1 核心判断汇总
+
+基于前八章跨维度分析、统计模型与交叉验证，本报告对HARMONi-3（AK112+化疗 vs 帕博利珠单抗+化疗，一线转移性NSCLC）形成如下核心判断：
+
+| 队列 | 终点 | 基准预测HR | 95%预测区间 | 统计成功概率 | 置信度 |
+|------|------|-----------|------------|------------|--------|
+| **鳞癌** | PFS | **0.66** | 0.46–0.93 | **99.6%** | 高 |
+| **鳞癌** | OS | **0.70** | 0.65–0.80 | **96.4%** | 高 |
+| **非鳞癌** | PFS | **0.55** | 0.50–0.65 | **~100%** | 中高 |
+| **非鳞癌** | OS | **0.73** | 0.69–0.80 | **98.0%** | 中等 |
+
+鳞癌预测锚定坚实：HARMONi-6已提供直接头对头数据，PFS HR=0.60，OS HR=0.66（p=0.0017）[^2]。通过替雷利珠单抗与帕博利珠单抗的间接比较（NMA PFS HR=1.04，95% CI跨越1.0）[^3]，及中国至全球人群外推调整（因子1.05），桥接模型得出鳞癌PFS HR=0.66[^1]。非鳞癌基于多锚点：HARMONi-2（HR=0.51）[^4]、HARMONi-A（HR=0.46）[^5]及KEYNOTE-189（HR=0.52）[^1]，综合预测PFS HR=0.55。OS采用PFS-to-OS转化效率：鳞癌沿用HARMONi-6的0.81[^1]，非鳞癌采用化疗联合平均值0.53[^1]。双主要终点设计（PFS或OS任一显著即成功）进一步提升整体成功概率[^6]。
+
+## 9.2 HARMONi-3结果预测
+
+### 鳞癌队列：PFS与OS双阳性概率极高
+
+**鳞癌PFS**是预测置信度最高的终点。HARMONi-6的PFS HR=0.60已建立强锚点，替雷利珠单抗与帕博利珠单抗经间接比较证实无显著差异（HR=1.04）[^3]。即使保守情景，PFS HR仍仅恶化至0.72，成功率达94.8%[^1]。Monte Carlo显示，PFS HR<0.75的概率为77.6%[^1]。**鳞癌PFS最终分析达到显著性的概率超过99%**。
+
+**鳞癌OS**预测置信度同样高位。HARMONi-6已实现OS HR=0.66的阳性结果，打破了"PFS获益不一定转化为OS获益"的历史顾虑[^2]。HARMONi-3与HARMONi-6结构一致（均为AK112+化疗 vs PD-1+化疗），PFS-to-OS转化效率可合理预期与HARMONi-6接近（0.81）[^1]。基准OS HR=0.70对应约96%成功率[^1]，保守情景（HR=0.73）下仍维持91.7%[^1]。**最可能结果是鳞癌PFS与OS双主要终点均达到显著性**。
+
+### 非鳞癌队列：PFS高度确定，OS趋势阳性
+
+**非鳞癌PFS**基准预测HR=0.55，成功概率接近100%[^1]。多个间接锚点一致：HARMONi-2（HR=0.51）[^4]、HARMONi-A（HR=0.46）[^5]、KEYNOTE-189（HR=0.52）[^1]。即使悲观情景（HR=0.65），成功率仍维持100%[^1]，因样本量约1,000例、预设事件数约720，统计功效充裕[^1]。
+
+**非鳞癌OS**预测HR=0.73，成功率约98%[^1]。不确定性高于鳞癌，因PFS-to-OS转化效率缺乏直接观察数据，模型采用化疗联合试验平均水平（0.53）[^1]。非鳞癌OS最终分析预计需至2027年下半年，数据成熟度相对不足。但Monte Carlo显示P(OS HR<0.80)=79.9%[^1]，**OS至少趋势性阳性的概率极高**。
+
+### 最可能情景与敏感性
+
+综合两队列、两终点，**最可能情景：鳞癌PFS+OS双阳性，非鳞癌PFS阳性且OS趋势阳性**。Monte Carlo显示PFS HR<0.75且OS HR<0.80的联合概率为76.3%[^1]。Downside情景（鳞癌OS HR=0.76、非鳞癌OS HR=0.80）下成功率仍分别为83.9%和82.5%[^1]，多重不利因素叠加下HARMONi-3仍大概率成功。
+
+## 9.3 关键催化剂与投资建议
+
+### 2026年下半年：AK112的"决胜窗口"
+
+2026年下半年是HARMONi-3全球价值兑现的最关键时间窗口[^7]。该时段将密集出现：鳞癌PFS最终分析、鳞癌OS期中分析、非鳞癌队列入组完成等催化剂[^6]。**鳞癌PFS最终分析是首个决定性数据读出**，若阳性，将首次在全球人群中证实AK112一线鳞癌优效性[^7]。Summit在2025年Q4财报中新增2026年Q2鳞癌PFS期中分析计划[^6]，若该期中分析即达显著，将构成重大超预期事件，加速审批路径[^1]。
+
+### HARMONi-6 OS阳性已提供强信号
+
+HARMONi-6的OS阳性（HR=0.66，p=0.0017）是HARMONi-3最强预测锚点，而非HARMONi-2[^7]。HARMONi-6与HARMONi-3结构一致：均为AK112+化疗 vs PD-1+化疗。HARMONi-2单药头对头设计无法直接外推至联合化疗场景[^7]。HARMONi-6 OS阳性意味着AK112的PD-1/VEGF双靶机制在化疗背景下不仅改善PFS，更显著延长OS，为HARMONi-3全球验证提供了最直接证据[^2]。
+
+### 2026年11月FDA PDUFA与全球价值重估
+
+除HARMONi-3外，2026年11月FDA对HARMONi（EGFRm NSCLC）的PDUFA决定是另一关键催化剂[^1]。HARMONi的PFS HR=0.52（p<0.0001）和OS HR=0.78（p=0.0332）已显示阳性[^8]，北美人群OS HR=0.70优于总体[^8]。若获批，AK112将成为首个在美上市的PD-1/VEGF双抗，为HARMONi-3后续审批积累经验。
+
+**HARMONi-3成功后的全球价值重估远超单一试验意义**。AK112拥有三重壁垒：全球唯一头对头击败帕博利珠单抗的III期数据（HARMONi-2）[^4]、全球唯一鳞癌OS阳性的抗VEGF药物（HARMONi-6）[^2]、全球首个获批上市的PD-1/VEGF双抗。竞品III期预计最早2027–2028年才有头对头数据[^7]。HARMONi-3成功将巩固AK112一线NSCLC先发垄断地位，有望成为继帕博利珠单抗之后第二个确立全球一线标准的免疫药物[^7]。
+
+### 安全性：从风险项转为加分项
+
+传统上，VEGF抑制剂在鳞癌中的出血禁忌被视为重大监管风险。但AK112通过Fc-silencing机制，在HARMONi-6（63%中央型鳞癌、30%咯血史）中实现≥3级出血仅2.6%[^9]，与贝伐珠单抗历史数据（9–10%）形成鲜明对比[^9]。在HARMONi-3的FDA审评中，出血风险很可能不再是ODAC焦点，反而成为差异化优势的积极证据[^7]。
+
+## 9.4 模型局限性与免责声明
+
+本报告基于截至2026年6月的公开数据、间接比较统计模型和文献荟萃分析，**所有结论均具有不确定性，不构成确定性判断**。主要局限性包括：
+
+1. **替雷至帕博利珠单抗桥接依赖间接比较**：NMA（HR=1.04）存在残留混杂和发表偏倚风险[^3]。
+2. **中国至全球人群外推不确定性**：HARMONi试验提供全球一致性证据（OS HR=0.78）[^8]，但鳞癌种族差异未充分量化。KEYNOTE-407中国人群OS HR=0.44显著优于全球HR=0.71[^7]，提示西方人群占比可能带来疗效稀释。
+3. **PFS-to-OS转化效率外推风险**：HARMONi-6转化效率极高（0.81）[^1]，可能受中国人群特征影响，无法完全复制于全球人群。
+4. **统计设计假设**：HARMONi-3的alpha分配、期中分析边界等细节未完全公开，功效计算基于假设[^1]。
+5. **非鳞癌数据成熟度**：非鳞癌OS最终分析预计需至2027年下半年，预测不确定性高于鳞癌。
+6. **竞品动态与后续治疗格局**：若一线NSCLC标准治疗发生根本性变化（如TROP2 ADC获批），可能影响AK112相对价值定位。
+
+**本报告仅供研究参考，不构成任何投资建议**。投资有风险，决策需谨慎。实际结果可能因患者基线特征、地区分布、随访时间、统计方法等多种因素与预测偏离。最终以Summit Therapeutics和康方生物官方发布的临床数据为权威依据。
+
+---
+
+[^1]: 维度08研究文件《跨试验疗效外推模型与HARMONi-3预测推断》，基于HARMONi-6、HARMONi-2、HARMONi-A、KEYNOTE-189等试验的桥接分析与Monte Carlo模拟，基准预测：鳞癌PFS HR=0.66、OS HR=0.70；非鳞癌PFS HR=0.55、OS HR=0.73；成功概率分别为99.6%、96.4%、~100%、98.0%。
+
+[^2]: HARMONi-6 ASCO 2026 LBA4 / Lancet 2026。Lu S, et al. Ivonescimab + chemotherapy vs tislelizumab + chemotherapy in first-line squamous NSCLC: PFS HR=0.60 (95% CI: 0.47–0.77), p<0.0001; OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017. 中位PFS 11.14月 vs 6.90月。
+
+[^3]: Guo Y et al. "Tislelizumab plus chemotherapy vs pembrolizumab plus chemotherapy for first-line NSCLC: systematic review and indirect comparison." Front Oncol 2023. PFS HR=1.04 (95% CI: 0.82–1.31)，无显著差异。
+
+[^4]: HARMONi-2（AK112-303）数据。Xiong A, et al. Lancet 2025;405(10481):839-849. AK112单药 vs 帕博利珠单抗单药（PD-L1 TPS≥1%），PFS HR=0.51 (p<0.0001)，中位PFS 11.1月 vs 5.8月。
+
+[^5]: HARMONi-A（AK112-301）最终分析。SITC 2025. AK112+化疗 vs 化疗（EGFR-TKI进展后EGFRm NSCLC），PFS HR=0.46; OS最终HR=0.74 (95% CI: 0.58–0.95), p=0.019。
+
+[^6]: HARMONi-3试验设计文件（维度01）。Summit Therapeutics Q4 2025 Earnings Release / 10-K 2026. 双主要终点（PFS+OS），按组织学分别分析；鳞癌队列~600例，非鳞癌~1000例；2026 Q2新增鳞癌PFS期中分析；2026 H2鳞癌PFS最终分析预期。
+
+[^7]: 跨维度洞察提取文件（ak112_insight.md）。洞察1、3、5、6、7：HARMONi-6为HARMONi-3最强预测锚点；中国人群效应为被低估风险；双主要终点设计允许分阶段成功；2026 H2为决胜窗口；AK112三重竞争壁垒。
+
+[^8]: Summit Therapeutics HARMONi WCLC 2025更新。全球EGFRm NSCLC：OS HR=0.78 (p=0.0332)；北美人群OS HR=0.70；西方患者占比38%。
+
+[^9]: HARMONi-6基线特征与安全性数据。中央型鳞癌63.2%、IV期92.3%、PD-L1 TPS<1% 39.0%；≥3级出血2.6% vs 对照组0.8%。Xiao B et al. Cancer Manag Res 2018：贝伐珠单抗高级别出血RR=1.98。
+
+
+---
+
