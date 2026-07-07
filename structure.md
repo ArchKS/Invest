@@ -61,3 +61,27 @@ LastUpdate: 2026-06-01 20:46:10
 
 
 剔除雪球股票链接：[康方生物](https://xueqiu.com/S/09926?from=status_stock_match)替换为康方生物
+
+
+```css
+/* 控制 PDF 纸张和页边距 */
+@page {
+    size: A4;
+    /* padding: 0mm; */
+	/* margin: 0mm; */
+}
+
+/* 控制 PDF 里正文内容区的宽度 */
+@media print {
+    #write {
+        max-width: 95% !important;   /* 默认通常是 70%-80%，调大就宽 */
+    }
+	html {
+		font-size: 14px !important;  /* 默认通常是 16px，调大就宽 */
+	}
+	p > span {
+		font-size: 14px !important;  /* 默认通常是 14px，调大就宽 */
+		line-height: 1.6 !important;
+	}
+}
+```

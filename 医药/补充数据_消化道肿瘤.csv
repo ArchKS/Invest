@@ -1,0 +1,53 @@
+﻿一级,二级,三级,四级,五级,可能耐药的药,能克服或绕开的药物/方向,患者人数量级,全球药物市场空间,代表药物 / 公司
+实体瘤,消化道肿瘤,结直肠癌 CRC,RAS/BRAF野生型（左半结肠）,一线抗EGFR治疗（西妥昔单抗/帕尼单抗）,化疗后进展；获得性RAS/BRAF突变；EGFR胞外域突变,西妥昔单抗再挑战（RAS克隆清除）；化疗联合抗EGFR；抗HER2双抗（HER2扩增时）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,西妥昔单抗/帕尼单抗（默克/安进）；贝伐珠单抗（罗氏）；TAS-102（大鹏/施贵宝）
+实体瘤,消化道肿瘤,结直肠癌 CRC,RAS/BRAF野生型（左半结肠）,抗EGFR获得性耐药（RAS突变克隆）,西妥昔单抗/帕尼单抗（获得性KRAS/NRAS/BRAF突变）,RAS克隆清除后西妥昔单抗再挑战；抗HER2联合（T-DXd）；BRAF抑制剂联合（Encorafenib+西妥昔单抗）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,西妥昔单抗（默克/百时美施贵宝）；Encorafenib（Array/Pfizer）
+实体瘤,消化道肿瘤,结直肠癌 CRC,KRAS G12C突变,一线化疗后进展,传统化疗（FOLFOX/FOLFIRI）；抗EGFR单抗无效,KRAS G12C抑制剂联合抗EGFR单抗（Adagrasib+西妥昔单抗；Sotorasib+帕尼单抗）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,Adagrasib（Mirati/百时美施贵宝）；Sotorasib（安进）；Divarasib（罗氏）
+实体瘤,消化道肿瘤,结直肠癌 CRC,KRAS G12C突变,KRAS G12C抑制剂耐药,Sotorasib/Adagrasib单药（继发性RAS突变；旁路激活）,联合抗EGFR（西妥昔单抗）；联合SHP2抑制剂；化疗联合免疫治疗,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,Adagrasib+西妥昔单抗（Mirati）；Sotorasib+帕尼单抗（安进）
+实体瘤,消化道肿瘤,结直肠癌 CRC,BRAF V600E突变,一线化疗后进展,传统化疗；抗EGFR单抗无效,BRAF抑制剂+抗EGFR+MEK抑制剂（Encorafenib+西妥昔单抗+Binimetinib）；免疫治疗（MSI-H时）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,Encorafenib（Array/Pfizer）；西妥昔单抗（默克/百时美施贵宝）；Vemurafenib（罗氏）
+实体瘤,消化道肿瘤,结直肠癌 CRC,HER2扩增（RAS/BRAF野生型）,一线化疗后进展,抗EGFR单抗（HER2扩增导致抗EGFR耐药）,抗HER2双抗（T-DXd/DS-8201）；帕妥珠单抗+曲妥珠单抗；拉帕替尼+曲妥珠单抗,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,T-DXd/DS-8201（第一三共/阿斯利康）；曲妥珠单抗（罗氏）；帕妥珠单抗（罗氏）
+实体瘤,消化道肿瘤,结直肠癌 CRC,MSI-H/dMMR,一线免疫治疗进展,PD-1抑制剂（Pembrolizumab/Nivolumab）耐药（JAK/STAT突变；β2微球蛋白缺失）,CTLA-4联合（Nivolumab+Ipilimumab）；LAG-3抑制剂；化疗/TAS-102,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,Pembrolizumab（默沙东）；Nivolumab（百时美施贵宝）；Dostarlimab（GSK）
+实体瘤,消化道肿瘤,结直肠癌 CRC,NTRK融合,一线化疗后进展,传统化疗（响应有限）,NTRK抑制剂（Larotrectinib；Entrectinib）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,Larotrectinib（拜耳）；Entrectinib（罗氏）
+实体瘤,消化道肿瘤,结直肠癌 CRC,pMMR/MSS 无驱动基因（右半结肠）,一线化疗+抗血管生成后进展,贝伐珠单抗/阿柏西普耐药（FGF/FGFR旁路激活；Ang-2上调）,瑞戈非尼/呋喹替尼（多靶点TKI）；TAS-102；抗EGFR（仅RAS野生型左半结肠）,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,瑞戈非尼（拜耳）；呋喹替尼（和黄/武田）；TAS-102（大鹏/施贵宝）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,HER2阳性（IHC 3+或2+且FISH+）,一线曲妥珠单抗+化疗后进展,曲妥珠单抗（HER2/HER3异源二聚体；PIK3CA突变；PTEN缺失；MET扩增）,T-DXd/DS-8201（HER2 ADC）；维迪西妥单抗（RC48）；HER2双抗（泽尼达妥单抗）；HER2 TKI（吡咯替尼）,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,曲妥珠单抗（罗氏）；T-DXd（第一三共/阿斯利康）；泽尼达妥单抗（Jazz/康宁杰瑞）；维迪西妥单抗（荣昌）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,HER2阳性（IHC 3+或2+且FISH+）,HER2 ADC（T-DXd）耐药,T-DXd（旁路激活：MET/EGFR；HER2表达下调；多药耐药泵）,联合抗EGFR/MET抑制剂；联合免疫治疗；化疗联合另一种HER2靶向药物,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,T-DXd（第一三共/阿斯利康）；帕妥珠单抗（罗氏）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,CLDN18.2阳性（HER2阴性）,一线化疗后进展,传统化疗（响应有限）,CLDN18.2单抗（Zolbetuximab/GAS6）联合化疗；CLDN18.2 CAR-T；CLDN18.2 ADC,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,Zolbetuximab（安斯泰来）；GAS6（创胜集团）；CLDN18.2 ADC（信达/礼来）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,MSI-H/dMMR,一线免疫治疗进展,PD-1抑制剂（JAK/STAT突变；抗原呈递缺陷）,CTLA-4联合；LAG-3/TIM-3抑制剂；化疗,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,Pembrolizumab（默沙东）；Nivolumab（百时美施贵宝）；Dostarlimab（GSK）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,PD-L1阳性（CPS≥5）,一线免疫+化疗后进展,PD-1/PD-L1抑制剂（LAG-3/TIM-3上调；Treg浸润；Wnt/β-catenin通路）,免疫联合抗血管生成（雷莫芦单抗+帕博利珠单抗）；抗TGF-β；CTLA-4联合；化疗,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,Pembrolizumab+化疗（默沙东）；Nivolumab+化疗（百时美施贵宝）；雷莫芦单抗（礼来）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,FGFR2b扩增（HER2阴性）,一线化疗后进展,传统化疗（响应有限）,FGFR2b单抗（Bemarituzumab）；FGFR抑制剂（Pemigatinib）,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,Bemarituzumab（安进）；Pemigatinib（Incyte/信达）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,EBV阳性,一线化疗后进展,传统化疗,PD-1抑制剂（EBV+胃癌对免疫治疗高度敏感）；化疗联合免疫治疗,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,Pembrolizumab（默沙东）；Nivolumab（百时美施贵宝）
+实体瘤,消化道肿瘤,胃癌 Gastric Cancer,无驱动基因/HER2阴性（晚期）,一线化疗后进展,化疗（5-FU/铂类/紫杉类耐药；ABC转运体外排；TS酶上调）,雷莫芦单抗（抗VEGFR-2）；阿帕替尼；TAS-102；免疫联合化疗,全球年新发约100万人；美国年新发约2.7万人,约50-80亿美元,雷莫芦单抗（礼来）；阿帕替尼（恒瑞）；TAS-102（大鹏/施贵宝）
+实体瘤,消化道肿瘤,食管癌 Esophageal Cancer,食管鳞癌 ESCC（PD-L1阳性 CPS≥10）,一线免疫+化疗后进展,PD-1/PD-L1抑制剂（TIM-3/LAG-3上调；Treg/MDSC浸润；JAK/STAT突变）,双免疫（Nivolumab+Ipilimumab）；抗TGF-β；化疗联合抗血管生成；局部放疗联合免疫,全球年新发约60万人；美国年新发约2万人,约20-40亿美元,Pembrolizumab+化疗（默沙东）；Nivolumab+化疗（百时美施贵宝）；斯鲁利单抗（复宏汉霖）
+实体瘤,消化道肿瘤,食管癌 Esophageal Cancer,食管腺癌/GEJ（HER2阳性）,一线曲妥珠单抗+化疗后进展,曲妥珠单抗（HER2/HER3异源二聚体；PIK3CA突变；MET扩增）,T-DXd/DS-8201；帕妥珠单抗+曲妥珠单抗；雷莫芦单抗+帕博利珠单抗,全球年新发约60万人；美国年新发约2万人,约20-40亿美元,曲妥珠单抗（罗氏）；T-DXd（第一三共/阿斯利康）；雷莫芦单抗（礼来）
+实体瘤,消化道肿瘤,食管癌 Esophageal Cancer,MSI-H/dMMR（鳞癌/腺癌）,一线免疫治疗进展,PD-1抑制剂（获得性耐药：JAK/STAT突变；β2微球蛋白缺失）,CTLA-4联合；LAG-3抑制剂；化疗联合免疫再挑战,全球年新发约60万人；美国年新发约2万人,约20-40亿美元,Pembrolizumab（默沙东）；Nivolumab（百时美施贵宝）；Dostarlimab（GSK）
+实体瘤,消化道肿瘤,食管癌 Esophageal Cancer,NTRK融合（罕见）,一线化疗后进展,传统化疗（响应有限）,Larotrectinib；Entrectinib,全球年新发约60万人；美国年新发约2万人,约20-40亿美元,Larotrectinib（拜耳）；Entrectinib（罗氏）
+实体瘤,消化道肿瘤,食管癌 Esophageal Cancer,无驱动基因（鳞癌/腺癌）,一线化疗后进展,化疗（铂类/5-FU耐药；DNA损伤修复增强；EMT）,雷莫芦单抗（抗VEGFR-2）；多西他赛/紫杉醇；伊立替康；免疫联合化疗,全球年新发约60万人；美国年新发约2万人,约20-40亿美元,雷莫芦单抗（礼来）；多西他赛（赛诺菲）；卡瑞利珠单抗（恒瑞）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,BRCA1/2或PALB2突变,一线铂类化疗后进展,铂类化疗（DNA修复恢复；REV7突变；53BP1缺失）,PARP抑制剂（Olaparib）维持治疗；Rucaparib；Niraparib；铂类再挑战,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Olaparib（阿斯利康）；Rucaparib（Clovis/辉瑞）；Niraparib（GSK）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,BRCA1/2或PALB2突变,PARP抑制剂耐药,Olaparib/Rucaparib（BRCA二次突变；RAD51上调；REV7突变）,铂类再挑战；ATR抑制剂（Berzosertib）；Wee1抑制剂（Adavosertib）,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Olaparib（阿斯利康）；Berzosertib（Merck KGaA）；Adavosertib（AstraZeneca）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,KRAS G12C突变（约1-2%）,一线化疗后进展,传统化疗（FOLFIRINOX/GnP响应有限）,KRAS G12C抑制剂（Sotorasib；Adagrasib）+化疗；联合EGFR抑制剂,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Sotorasib（安进）；Adagrasib（Mirati/百时美施贵宝）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,KRAS G12C突变,KRAS G12C抑制剂耐药,Sotorasib/Adagrasib（继发性RAS突变；RTK旁路激活）,联合抗EGFR；联合SHP2抑制剂；泛RAS抑制剂（RMC-6236）,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,RMC-6236（Revolution Medicines）；Sotorasib+化疗（安进）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,KRAS G12D突变（约30-40%）,一线化疗后进展,传统化疗（无靶向药获批）,在研：MRTX1133（KRAS G12D抑制剂）；RMC-9805；RMC-7977（泛RAS）,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,MRTX1133（Mirati/百时美施贵宝，在研）；RMC-9805（Revolution Medicines，在研）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,MSI-H/dMMR（约1-2%）,一线免疫治疗进展,PD-1抑制剂（获得性耐药）,CTLA-4联合；LAG-3/TIM-3抑制剂；化疗,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Pembrolizumab（默沙东）；Nivolumab+Ipilimumab（百时美施贵宝）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,NTRK融合（罕见，<1%）,一线化疗后进展,传统化疗,Larotrectinib；Entrectinib,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Larotrectinib（拜耳）；Entrectinib（罗氏）
+实体瘤,消化道肿瘤,胰腺癌 Pancreatic Cancer,无驱动基因（KRAS突变，非G12C）,一线FOLFIRINOX/GnP后进展,FOLFIRINOX（5-FU/奥沙利铂/伊立替康/亚叶酸）；GnP（吉西他滨+白蛋白紫杉醇）,脂质体伊立替康（Onivyde）+5-FU；FOLFOX；瑞戈非尼；NALIRIFOX；免疫联合化疗（在研）,全球年新发约50万人；美国年新发约6.4万人,约30-50亿美元,Onivyde（Ipsen/施贵宝）；瑞戈非尼（拜耳）；NALIRIFOX（Ipsen）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,无驱动基因/晚期,一线阿替利珠单抗+贝伐珠单抗后进展,阿替利珠单抗+贝伐珠单抗（Treg/MDSC浸润；PD-L1再上调；Wnt/β-catenin激活；TGF-β高表达）,双免疫（Tremelimumab+Durvalumab STRIDE方案）；Nivolumab+Ipilimumab；仑伐替尼+帕博利珠单抗；瑞戈非尼/卡博替尼,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,Tremelimumab+Durvalumab（阿斯利康）；Nivolumab+Ipilimumab（百时美施贵宝）；仑伐替尼（卫材）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,无驱动基因/晚期,一线索拉非尼/仑伐替尼后进展,索拉非尼/仑伐替尼（EGFR活化；c-Met失调；自噬激活；血管生成旁路激活）,瑞戈非尼（多靶点TKI）；卡博替尼（多靶点TKI）；阿帕替尼；雷莫芦单抗（AFP≥400）,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,瑞戈非尼（拜耳）；卡博替尼（Exelixis/武田）；阿帕替尼（恒瑞）；雷莫芦单抗（礼来）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,CTNNB1（β-catenin）突变,免疫治疗原发性耐药,PD-1/PD-L1抑制剂（β-catenin激活导致T细胞排斥；冷肿瘤）,仑伐替尼/索拉非尼（TKI）；Wnt/β-catenin通路抑制剂（在研）；联合局部治疗（TACE）,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,仑伐替尼（卫材）；索拉非尼（拜耳）；在研Wnt抑制剂（Leap Therapeutics）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,TERT启动子突变,TKI/免疫治疗进展,索拉非尼/仑伐替尼（TERT突变与免疫治疗获益相关）,免疫联合抗血管生成（阿替利珠单抗+贝伐珠单抗）；TACE联合免疫治疗,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,阿替利珠单抗+贝伐珠单抗（罗氏/基因泰克）；Tremelimumab+Durvalumab（阿斯利康）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,AFP高表达（≥400 ng/mL）,一线仑伐替尼/索拉非尼后进展,索拉非尼/仑伐替尼,雷莫芦单抗（抗VEGFR-2，AFP≥400患者获益显著）；卡博替尼；免疫联合TKI,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,雷莫芦单抗（礼来）；卡博替尼（Exelixis/武田）
+实体瘤,消化道肿瘤,肝细胞癌 HCC,无驱动基因/早期（CNLC I-II期）,术后高复发风险,无（术后辅助治疗）,辅助靶向治疗（仑伐替尼/索拉非尼辅助，在研）；TACE；免疫辅助治疗（在研）,全球年新发约90万人；美国年新发约4.1万人,约60-100亿美元,仑伐替尼（卫材）；索拉非尼（拜耳）；帕博利珠单抗（默沙东，在研辅助）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,FGFR2融合/重排（肝内胆管癌）,一线化疗（吉西他滨+顺铂）后进展,传统化疗（吉西他滨+顺铂；FOLFOX）,FGFR抑制剂（Pemigatinib；Futibatinib；Infigratinib）；FGFR2单抗,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Pemigatinib（Incyte/信达）；Futibatinib（Taiho Oncology）；Infigratinib（BridgeBio）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,FGFR2融合/重排,FGFR抑制剂耐药,Pemigatinib/Futibatinib（FGFR2守门突变：V565F/I；N549K；E565A；多克隆继发性突变；RAF1/MAPK旁路激活）,Futibatinib（不可逆FGFR抑制剂，克服可逆抑制剂耐药）；MEK抑制剂联合（曲美替尼）；化疗再挑战；免疫治疗,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Futibatinib（Taiho Oncology）；曲美替尼（诺华）；Pemigatinib+曲美替尼（在研）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,IDH1突变（肝内胆管癌）,一线化疗后进展,传统化疗（吉西他滨+顺铂）,IDH1抑制剂（Ivosidenib）；化疗；度伐利尤单抗+化疗（TOPAZ-1）,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Ivosidenib（施贵宝）；度伐利尤单抗（阿斯利康）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,IDH1突变,IDH1抑制剂耐药,Ivosidenib（IDH1二次突变；旁路激活：MAPK/PI3K）,Ivosidenib+化疗；Ivosidenib+venetoclax（在研）；免疫治疗联合,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Ivosidenib（施贵宝）；Venetoclax（艾伯维/罗氏）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,HER2扩增（胆囊癌/肝外胆管癌）,一线化疗后进展,传统化疗,HER2靶向治疗（泽尼达妥单抗；T-DXd；曲妥珠单抗+帕妥珠单抗）,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,泽尼达妥单抗（Jazz/康宁杰瑞）；T-DXd（第一三共/阿斯利康）；曲妥珠单抗（罗氏）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,MSI-H/dMMR,一线免疫治疗进展,PD-1抑制剂（获得性耐药）,CTLA-4联合；LAG-3/TIM-3抑制剂；化疗,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Pembrolizumab（默沙东）；Nivolumab+Ipilimumab（百时美施贵宝）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,BRAF V600E（肝内胆管癌）,一线化疗后进展,传统化疗；抗EGFR无效,BRAF抑制剂+MEK抑制剂（Encorafenib+Binimetinib）；免疫治疗（MSI-H时）,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Encorafenib（Array/Pfizer）；Binimetinib（Array/Pfizer）；Vemurafenib（罗氏）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,NTRK融合（罕见）,一线化疗后进展,传统化疗,Larotrectinib；Entrectinib,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,Larotrectinib（拜耳）；Entrectinib（罗氏）
+实体瘤,消化道肿瘤,胆管癌 Cholangiocarcinoma,无驱动基因/晚期,一线化疗+度伐利尤单抗后进展,度伐利尤单抗+化疗（吉西他滨+顺铂）（TOPAZ-1方案）,FOLFOX；瑞戈非尼；佩米替尼（仅FGFR2+）；Ivosidenib（仅IDH1+）；TAS-102,全球年新发约2-3万人；美国年新发约8000人,约10-20亿美元,度伐利尤单抗（阿斯利康）；FOLFOX（多厂商）；瑞戈非尼（拜耳）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,HER2扩增（IHC 3+或2+）,一线化疗后进展,传统化疗（吉西他滨+顺铂；卡培他滨+奥沙利铂）,HER2靶向治疗（泽尼达妥单抗；T-DXd；曲妥珠单抗+帕妥珠单抗）,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,泽尼达妥单抗（Jazz/康宁杰瑞）；T-DXd（第一三共/阿斯利康）；曲妥珠单抗（罗氏）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,FGFR2突变/融合,一线化疗后进展,传统化疗,FGFR抑制剂（Pemigatinib；Futibatinib；Erdafitinib）,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,Pemigatinib（Incyte/信达）；Futibatinib（Taiho Oncology）；Erdafitinib（强生）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,FGFR2突变/融合,FGFR抑制剂耐药,Pemigatinib/Erdafitinib（FGFR2守门突变；下游MAPK激活）,Futibatinib（不可逆抑制剂）；MEK抑制剂联合；换用其他FGFR抑制剂,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,Futibatinib（Taiho Oncology）；曲美替尼（诺华）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,MSI-H/dMMR,一线免疫治疗进展,PD-1抑制剂（获得性耐药）,CTLA-4联合；LAG-3/TIM-3抑制剂；化疗,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,Pembrolizumab（默沙东）；Nivolumab（百时美施贵宝）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,NTRK融合（罕见）,一线化疗后进展,传统化疗,Larotrectinib；Entrectinib,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,Larotrectinib（拜耳）；Entrectinib（罗氏）
+实体瘤,消化道肿瘤,胆囊癌 Gallbladder Cancer,无驱动基因/晚期,一线化疗+免疫后进展,化疗（吉西他滨+顺铂）+度伐利尤单抗（TOPAZ-1方案）,FOLFOX；瑞戈非尼；TAS-102；临床试验,全球年新发约1-2万人；美国年新发约1.2万人,约5-10亿美元,度伐利尤单抗（阿斯利康）；FOLFOX；瑞戈非尼（拜耳）
+实体瘤,消化道肿瘤,结直肠癌 CRC,MSS/pMMR（晚期）,免疫联合抗血管生成后进展,PD-1/PD-L1+抗VEGF（FOLFOX+贝伐+PD-1，在研）,TAS-102+贝伐珠单抗；瑞戈非尼；呋喹替尼；化疗,全球年新发约190万人；美国年新发约15万人,约150-200亿美元,TAS-102+贝伐（施贵宝/罗氏）；瑞戈非尼（拜耳）；呋喹替尼（和黄/武田）
