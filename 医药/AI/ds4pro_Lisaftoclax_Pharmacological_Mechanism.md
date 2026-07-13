@@ -59,6 +59,12 @@ Lisaftoclax
 细胞色素 c 释放 → Caspase-9 → Caspase-3/7 级联激活
     ↓
 PARP 切割 → 凋亡执行
+
+
+化学式：
+1、lisaftoclax + BCL-2:BIM  →  lisaftoclax:BCL-2 + 游离 BIM 
+2、游离 BIM → 激活 BAX/BAK → 线粒体外膜通透化（MOMP） → 细胞色素 c / caspase → 凋亡
+
 ```
 
 **关键机制预测 1**：由于 BCL-2 高度依赖的肿瘤细胞（如 CLL）对 BCL-2 抑制特别敏感，Lisaftoclax 应在 CLL/SLL 中表现出最强的单药活性。
