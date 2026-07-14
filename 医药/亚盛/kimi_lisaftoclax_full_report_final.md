@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-12 14:20:58
-LastUpdate: 2026-07-12 14:20:58
+LastUpdate: 2026-07-14 20:36:51
 ---
 
 # Lisaftoclax (APG-2575) 完整药理机制构建：从分子设计到Phase 3临床验证的闭环推导
