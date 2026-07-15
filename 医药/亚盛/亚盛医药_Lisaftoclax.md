@@ -1,8 +1,13 @@
 ---
 CreateTime: 2026-06-28 16:39:41
-LastUpdate: 2026-07-14 20:36:51
+LastUpdate: 2026-07-15 17:39:42
 ---
 
+
+最核心的两个问题：
+
+1. Lisaftoclax的MDS能不能成？
+2. Sonrotoclax的AML/MDS能不能成？
 
 
 利沙托克拉(Lisaftoclax / APG-2575)研究报告
