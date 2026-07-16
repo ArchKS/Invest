@@ -5,13 +5,18 @@ LastUpdate: 2026-07-14 17:38:39
 
 
 
-1、药的特性，对比Ven。药物穿透力，代谢，短半衰期（这类的底层机制）
 
-- 快速细胞进入
-- 高 BCL-2/BCL-xL 选择性比：较低的血小板减少发生率
-- 短半衰期：降低 TLS 风险
 
-2、适应症的特性：CLL/SLL、AML、MDS。CLL对 BCL-2 抑制特别敏感，Lisaftoclax 应在 CLL/SLL 中表现出最强的单药活性。
+- 药理机制
+  - Venetoclax、Sonrotoclax、Lisaftoclax
+  - 半衰期、BCL-2亲和力、BCL-xL选择性、起效时间（快速细胞进入）、代谢通路
+- 疾病特征
+  - CLL/SLL、AML、MDS，CLL对BCL-2很敏感，AML会更多依赖MCL-1
+- 过往历史
+  - Venetoclax、off-label、真实人群
+  - 其余MDS药物
+
+
 
 
 
@@ -24,12 +29,6 @@ LastUpdate: 2026-07-14 17:38:39
 > 构建药理机制，根据已有临床数据印证，根据药理机制推导进行中临床的结果，根据临床结果再次印证药理机制，如果发现对不齐，则重新构建药理机制。从早期临床到1b、到2期、到3期，一步一步构建和验证
 >
 > 根据这个范式，能否预测维特克拉会在AZA联用时失败，进而预测MDS适应症中的失败？当时的人是否有过这类担忧？还是说大概知道会失败，但还是做了这个**VIALE-A**三期临床
-
-
-
-
-
-机制与维奈克拉对比 → CLL已获批数据 → CLL治疗格局 → AML/MDS数据 → 全球Ⅲ期 → 商业模型 → 风险调整估值
 
 
 
@@ -49,151 +48,10 @@ LastUpdate: 2026-07-14 17:38:39
 
 
 
-## 细胞凋亡
 
-从基因表达层面，到SLL/CLL、AML、MDS的BCL-2失控的原理
 
-> CLL/SLL：不肯死
->
-> AML：幼稚细胞疯狂扩增 + 不分化
->
-> **MDS：造血工厂质量失控，做了很多废品**
 
-**BCL-2 失控的本质，是细胞把“不要凋亡”的信号开得太强，导致本该死亡的异常血液细胞继续存活；不同疾病里，BCL-2 被抬高的原因不同。**
-
-从基因表达层面看，正常路径是：BCL2 基因 DNA→ 转录成 BCL2 mRNA→ 翻译成 BCL-2 蛋白→ BCL-2 在线粒体外膜上抑制凋亡
-
-
-
-如果调控失衡：
-
-BCL2 mRNA 增多、或 BCL2 mRNA 不再被 miRNA 压制、或 BCL-2 蛋白更稳定、或细胞更依赖 BCL-2
-
-→ BCL-2 抗凋亡能力增强 → 肿瘤细胞不容易死
-
-
-
-CLL/SLL 里，BCL-2 失控主要是“刹车丢了 + 生存信号增强”。
-
-del(13q14)
-
-→ miR-15a / miR-16-1 减少
-
-→ 对 BCL2 mRNA 的抑制减弱
-
-→ BCL-2 蛋白升高
-
-→ CLL/SLL 细胞不容易凋亡
-
-再加上：BCR 信号、淋巴结微环境、CD40L、BAFF、IL-4 →  给 CLL/SLL 细胞持续生存信号
-
-
-
-所以 CLL/SLL 的特点是：**细胞不一定疯狂增殖，但特别“不肯死”。**
-
-
-
-
-
-
-
-**AML**
-
-AML 里，BCL-2 失控更像是“白血病干/祖细胞把 BCL-2 当成保命系统”。
-
-AML 细胞，尤其是白血病干细胞，常常高度依赖线粒体抗凋亡机制：
-
-AML 白血病干细胞 → 氧化磷酸化依赖较强 → 线粒体凋亡阈值被 BCL-2 抬高 → 细胞更难被清除
-
-
-
-很多 AML 并不是因为 `BCL2` 基因易位，而是因为：分化阻滞、转录程序异常、FLT3 / RAS / IDH / NPM1 等突变背景、骨髓微环境生存信号
-
-共同把细胞推向：BCL-2、MCL-1、BCL-XL 等抗凋亡蛋白依赖
-
-所以 AML 里说 BCL-2，重点常是：**白血病细胞对 BCL-2 有功能依赖**，这就是 venetoclax 在 AML 中有效的基础。
-
-
-
-
-
-**MDS**
-
-MDS 比较复杂，因为它有阶段差异。
-
-低危/早期 MDS 常见特点是：
-
-无效造血
-→ 造血细胞容易凋亡
-→ 血细胞生成不足
-
-
-
-但到了高危 MDS，或向 AML 转化时，情况会变成：
-
-异常克隆获得生存优势
-
-→ 抗凋亡机制增强
-
-→ BCL-2 / MCL-1 等上调或依赖增强
-
-→ 异常造血克隆更容易存活和扩增
-
-
-
-所以 MDS 的逻辑是：早期：细胞死得太多，导致无效造血；高危/进展期：异常克隆越来越会逃避死亡
-
-
-
-CLL/SLL 的 BCL-2 失控主要来自 miR-15a/16-1 缺失和微环境生存信号；AML 的 BCL-2 失控主要表现为白血病干/祖细胞对线粒体抗凋亡机制的依赖；MDS 则从早期无效造血的高凋亡状态，逐渐演变为高危克隆依赖 BCL-2/MCL-1 等抗凋亡通路而逃避死亡。
-
-
-
-## 亚盛
-
-肿瘤细胞有两种途径被杀死，他杀和自杀。前者依赖激活免疫系统，代表药物为PD-1系列，后者依赖打开细胞凋亡，代表药物为VEN。
-
-本文主要分析亚盛APG-2575，一种靶向BCL-2的小分子抑制剂。
-
-![image-20260710073301023](./img/image-20260710073301023.png)
-
-https://www.mdpi.com/2072-6694/15/20/4957
-
-![image-20260709145036747](./img/image-20260709145036747.png)
-
-![](./img/image-20260713155718149.png)
-
-
-| 项目        | 内容                                                         |
-| ----------- | ---------------- |
-| 通用名      | 利沙托克拉(Lisaftoclax)|
-| 研发代号    | APG-2575|
-| 靶点        | Bcl-2 |
-| 给药方式    | 口服,每日一次;起始4–6天每日快速爬坡至目标剂量 |
-| 机制 | 让不会凋亡的癌细胞重新学会自杀 |
-| 权益方 | 亚盛医药，截止2026.7.9，暂无海外授权|
-| 中国获批    | 2025 年 7 月 10 日|
-| 获批适应症  | 既往≥1 线系统治疗(含 BTKi)的成人 R/R CLL/SLL（中国） |
-| 进行中三期临床 | GLORA/GLORA-2/GLORA-3/GLORA-4 |
-| 临床主要适应症 | CLL/SLL、AML、MSD |
-| 进度 | 中国刚上市（2025 年中）、放量早期，全球后期临床、多适应症并行出海早期 |
-
-在介绍2575之前，我们先对血液瘤分类有个大体的认知。肿瘤分为实体瘤和血液瘤，血液瘤下面又分为几个大类，分别是淋巴瘤、浆细胞肿瘤、白血病。
-
-| 子类               | 占比 | 核心细分                                         |
-| ------------------ | ---- | ------------------------------------------------ |
-| 淋巴瘤             | ~51% | 霍奇金淋巴瘤（HL）、非霍奇金淋巴瘤（NHL，占90%） |
-| 白血病             | ~36% | ALL、AML、CLL、CML                               |
-| 浆细胞肿瘤         | ~13% | 多发性脊髓瘤（MM）                               |
-| 其他（MDS、MPN等） | —    | 骨髓增生异常综合征、骨髓增殖性肿瘤               |
-
-![](./img/1deb9254-aff3-4052-a46b-99867060e1d4.png)
-
-
-
-
-
-## 药理
+# 药理机制
 
 
 
@@ -203,6 +61,56 @@ https://www.mdpi.com/2072-6694/15/20/4957
 
 
 ### 分子设计
+
+lisaftoclax与venetoclax在P2口袋结合区域存在结构差异。Venetoclax的氯苯基深插入P2口袋底部，正是这一区域受G101V突变的"knock-on"效应影响最为显著。APG-2575采用二氟环己烷（difluorocyclohexane）尾部结构替代venetoclax的氯苯基，P2口袋结合模式更为浅表。理论上，这种差异化的结合模式可能降低G101V突变对亲和力的影响，但目前尚无公开的APG-2575与G101V突变BCL-2的晶体结构或表面等离子体共振（surface plasmon resonance, SPR）数据直接验证这一假设。相比之下，sonrotoclax（BGB-11417）的P2口袋浅结合策略已通过1.80 Å高分辨率晶体结构获得完整验证。APG-2575在单药克服BCL-2突变方面的能力目前仍属推测性，需更多结构生物学数据支撑。
+
+
+
+
+
+#### 综述
+
+Lisaftoclax 以**高 Cmax、短血浆半衰期和短 ramp-up**换取更便捷、潜在更可控的 BCL-2 抑制方案
+
+核心模型为：药物快速达到足以跨越线粒体凋亡阈值的峰浓度，释放 BIM 并激活 BAX/BAK，触发不可逆的 MOMP；随后短血浆暴露限制正常组织持续受药，肿瘤组织滞留则可能维持疗效。该模型可解释早期 ALC 下降、0% TLS、4–6 天 ramp-up 及相对可控的血液学毒性。
+
+现有数据支持其在 CLL/SLL 中的活性和联合治疗潜力，但 TP53 缺失/突变、复杂核型及 MCL-1 上调仍是关键疗效边界。
+
+#### 1、靶点与凋亡通路
+
+*对BCL-xL的抑制*
+
+Lisaftoclax 是 BH3 模拟物，通过占据 BCL-2 的 BH3 结合槽，置换被隔离的促凋亡蛋白（主要为 BIM），继而激活 BAX/BAK、诱发线粒体外膜通透化（MOMP），启动 caspase 级联反应并执行凋亡。
+
+其生化特征为 BCL-2 偏向、但仍保留 BCL-xL 抑制活性：BCL-2 IC50 约 2 nM，BCL-xL IC50 约 5.9 nM，MCL-1 IC50 >5,000 nM。因此，它更接近“BCL-2 偏向性双重抑制剂”，而非 venetoclax 式的高度 BCL-2 选择性抑制剂。细胞实验中，其对 BCL-2 与 BCL-xL 依赖细胞均有功能性活性。
+
+2、Cmax脉冲式凋亡模型
+
+快速达到有效细胞内浓度，触发肿瘤细胞凋亡
+
+本报告的统一假设是：BCL-2 抑制的关键不是持续累积暴露，而是短时间内跨越凋亡阈值的峰浓度。MOMP 属于阈值型、不可逆事件；一旦足量 BIM 被释放并形成 BAX/BAK 孔道，后续维持高浓度的边际收益可能有限。
+
+> 高Cmax，低AUC，没有持续压制，BIM为什么不被其他BCL-2拦截
+
+肿瘤组织滞留（约 13–48 小时）大于血液滞留，血浆半衰期约 3–5 小时(venetoclax 约 26 小时)
+
+肿瘤滞留数据目前主要来自临床前模型
+
+
+
+#### 3、安全性
+
+BCL-xL 在巨核细胞和血小板生存中重要。Lisaftoclax 约 3 倍的 BCL-2/BCL-xL 选择性提示存在血小板减少风险；但其短半衰期可能降低持续 BCL-xL 抑制，从而部分抵消这一风险。现有早期综合数据中，≥3 级血小板减少约 13.5%，仍需长期暴露数据确认。
+
+对于 venetoclax 常见的 BCL-2 G101V 耐药突变，Lisaftoclax 的生化 IC50 约 57 nM、细胞 IC50 约 61 nM，活性并不显示其具有明确的耐药覆盖优势。因此，其主要竞争价值在安全性、给药便利性和联合方案，而非 G101V 克服能力。MCL-1 上调仍是最重要的旁路耐药机制。
+
+
+
+
+
+
+
+
 
 细胞内进入更快、血液中停留更短、半衰期更快
 
@@ -233,7 +141,7 @@ Sonrotoclax（BGB-11417）是当前二代BCL-2抑制剂中抗耐药证据最充�
 
 
 
-### Cmax
+#### Cmax
 
 **APG‑2575 的直接凋亡机制是靶点占领**——药物在细胞内结合 BCL‑2、破坏 BCL‑2:BIM 复合物，继而启动 BAX/BAK、线粒体外膜通透化和 caspase 凋亡；**较高的 Cmax 是帮助它在短时间内达到足够靶点占领的一种 PK 设计特征**。 
 
@@ -247,6 +155,38 @@ Sonrotoclax（BGB-11417）是当前二代BCL-2抑制剂中抗耐药证据最充�
 - 是否进入凋亡还取决于肿瘤对 BCL‑2 的依赖、BIM 储量、MCL‑1/BCL‑XL 的替代保护，以及暴露持续时间，不能只看 Cmax。
 
 APG‑2575 确实被设计为“**高 Cmax、短半衰期、低累积**”：临床中约 3–5 小时半衰期，且没有明显多次给药累积。这个特征的策略含义是“快速有效打击 + 缩短全身暴露窗口”，而不是已经证明存在一个普适的、仅由 Cmax 决定的凋亡开关。
+
+
+
+#### 耐药
+
+Sonrotoclax和Lisaftoclax耐药能力区别（尤其是处理各种突变）？=> 分子结构差异
+
+耐药的代价、分子设计与安全性、DDI
+
+
+
+1、BCL-2靶点突变：G101V、D103Y、F104C
+
+2、MCL-1上调：NF-κB驱动的代偿性表达，覆盖面远超BCL-2基因突变，MCL-1取代被抑制的BCL-2接管BH3-only蛋白的隔离功能
+
+3、BAX/BIM通路缺陷：效应器层面的凋亡阻断；PUMA（p53 upregulated modulator of apoptosis）的表观遗传沉默
+
+4、 微环境耐药：CD40信号与骨髓基质保护
+
+**表1. Venetoclax获得性耐药机制分类**
+
+| 耐药类别   | 具体机制         | 关键分子事件            | 出现频率             | 可逆性           | 疾病背景 |
+| :--------- | :--------------- | :---------------------- | :------------------- | :--------------- | :------- |
+| 靶点突变   | BCL-2 G101V      | P2口袋亲和力↓180倍      | ~46% (CLL进展)       | 不可逆           | CLL为主  |
+| 靶点突变   | BCL-2 D103Y      | P4口袋直接破坏          | ~3%                  | 不可逆           | CLL      |
+| 靶点突变   | BCL-2 F104C/L    | P2口袋亲和力↓14-1,389倍 | 低频                 | 不可逆           | CLL      |
+| 代偿上调   | NF-κB→MCL-1转录  | c-REL结合MCL1启动子     | ~100% (持续治疗复发) | 大部分可逆       | CLL/AML  |
+| 基因扩增   | MCL-1(1q21)扩增  | MCL-1表达稳定上调       | ~5%                  | 不可逆           | CLL      |
+| 效应器突变 | BAX功能缺失      | 错义/移码/剪接突变      | ~17% (AML复发)       | 不可逆           | AML      |
+| 表观遗传   | PUMA启动子甲基化 | CpG岛甲基化→PUMA沉默    | ~20%                 | 可逆(去甲基化药) | AML      |
+| 代谢重编程 | OXPHOS依赖增加   | 脂肪酸氧化驱动OXPHOS    | ~35%                 | 部分可逆         | CLL/AML  |
+| 微环境     | CD40/NF-κB信号   | BCL-XL/MCL-1上调        | ~30%                 | 可逆(离开微环境) | CLL      |
 
 
 
@@ -709,7 +649,7 @@ Noxa 是另一种 BH3-only 促凋亡蛋白，尤其可中和抗凋亡蛋白 MCL-
 
 
 
-# 适应症
+# 疾病特征
 
 慢性淋巴细胞白血病（CLL）中，BCL-2过表达是最强的抗凋亡驱动因素，BCL-2高表达导致BIM被隔离，使得CLL成为BCL-2抑制剂最敏感的适应症。各BCL-2抑制剂也在CLL适应症中展示出最好的治疗效果。
 
@@ -721,7 +661,7 @@ Noxa 是另一种 BH3-only 促凋亡蛋白，尤其可中和抗凋亡蛋白 MCL-
 
 
 
-# Noxa上调
+## Noxa上调
 
 > Lisaftoclax 抑制 BCL‑2 → BIM 被释放并转向线粒体 → 线粒体受压/凋亡信号增强 → NOXA 增加 → 抑制 MCL‑1 → 更彻底地启动 BAX/BAK 凋亡
 
@@ -733,9 +673,157 @@ BIM–BAX/BAK 通路启动后，线粒体功能下降、膜电位受损、ATP �
 
 NOXA 主要是 **MCL‑1 的拮抗者**。当 Lisaftoclax 把 BCL‑2 这道“生存防线”解除后，NOXA 再去抑制 MCL‑1，相当于继续拆除另一道防线；BIM、BAX/BAK 就更容易推动细胞凋亡。MCL‑1 保护常是 BCL‑2 抑制剂耐药的重要来源，因此 NOXA 增加在机制上可放大药效。
 
+
+
+
+
+从基因表达层面，到SLL/CLL、AML、MDS的BCL-2失控的原理
+
+> CLL/SLL：不肯死
+>
+> AML：幼稚细胞疯狂扩增 + 不分化
+>
+> **MDS：造血工厂质量失控，做了很多废品**
+
+**BCL-2 失控的本质，是细胞把“不要凋亡”的信号开得太强，导致本该死亡的异常血液细胞继续存活；不同疾病里，BCL-2 被抬高的原因不同。**
+
+从基因表达层面看，正常路径是：BCL2 基因 DNA→ 转录成 BCL2 mRNA→ 翻译成 BCL-2 蛋白→ BCL-2 在线粒体外膜上抑制凋亡
+
+
+
+如果调控失衡：
+
+BCL2 mRNA 增多、或 BCL2 mRNA 不再被 miRNA 压制、或 BCL-2 蛋白更稳定、或细胞更依赖 BCL-2
+
+→ BCL-2 抗凋亡能力增强 → 肿瘤细胞不容易死
+
+
+
+CLL/SLL 里，BCL-2 失控主要是“刹车丢了 + 生存信号增强”。
+
+del(13q14)
+
+→ miR-15a / miR-16-1 减少
+
+→ 对 BCL2 mRNA 的抑制减弱
+
+→ BCL-2 蛋白升高
+
+→ CLL/SLL 细胞不容易凋亡
+
+再加上：BCR 信号、淋巴结微环境、CD40L、BAFF、IL-4 →  给 CLL/SLL 细胞持续生存信号
+
+
+
+所以 CLL/SLL 的特点是：**细胞不一定疯狂增殖，但特别“不肯死”。**
+
+
+
+
+
+
+
+**AML**
+
+AML 里，BCL-2 失控更像是“白血病干/祖细胞把 BCL-2 当成保命系统”。
+
+AML 细胞，尤其是白血病干细胞，常常高度依赖线粒体抗凋亡机制：
+
+AML 白血病干细胞 → 氧化磷酸化依赖较强 → 线粒体凋亡阈值被 BCL-2 抬高 → 细胞更难被清除
+
+
+
+很多 AML 并不是因为 `BCL2` 基因易位，而是因为：分化阻滞、转录程序异常、FLT3 / RAS / IDH / NPM1 等突变背景、骨髓微环境生存信号
+
+共同把细胞推向：BCL-2、MCL-1、BCL-XL 等抗凋亡蛋白依赖
+
+所以 AML 里说 BCL-2，重点常是：**白血病细胞对 BCL-2 有功能依赖**，这就是 venetoclax 在 AML 中有效的基础。
+
+
+
+
+
+**MDS**
+
+MDS 比较复杂，因为它有阶段差异。
+
+低危/早期 MDS 常见特点是：
+
+无效造血
+→ 造血细胞容易凋亡
+→ 血细胞生成不足
+
+
+
+但到了高危 MDS，或向 AML 转化时，情况会变成：
+
+异常克隆获得生存优势
+
+→ 抗凋亡机制增强
+
+→ BCL-2 / MCL-1 等上调或依赖增强
+
+→ 异常造血克隆更容易存活和扩增
+
+
+
+所以 MDS 的逻辑是：早期：细胞死得太多，导致无效造血；高危/进展期：异常克隆越来越会逃避死亡
+
+
+
+CLL/SLL 的 BCL-2 失控主要来自 miR-15a/16-1 缺失和微环境生存信号；AML 的 BCL-2 失控主要表现为白血病干/祖细胞对线粒体抗凋亡机制的依赖；MDS 则从早期无效造血的高凋亡状态，逐渐演变为高危克隆依赖 BCL-2/MCL-1 等抗凋亡通路而逃避死亡。
+
+
+
+
+
+肿瘤细胞有两种途径被杀死，他杀和自杀。前者依赖激活免疫系统，代表药物为PD-1系列，后者依赖打开细胞凋亡，代表药物为VEN。
+
+本文主要分析亚盛APG-2575，一种靶向BCL-2的小分子抑制剂。
+
+![image-20260710073301023](./img/image-20260710073301023.png)
+
+https://www.mdpi.com/2072-6694/15/20/4957
+
+![image-20260709145036747](./img/image-20260709145036747.png)
+
+![](./img/image-20260713155718149.png)
+
+
+| 项目           | 内容                                                         |
+| -------------- | ------------------------------------------------------------ |
+| 通用名         | 利沙托克拉(Lisaftoclax)                                      |
+| 研发代号       | APG-2575                                                     |
+| 靶点           | Bcl-2                                                        |
+| 给药方式       | 口服,每日一次;起始4–6天每日快速爬坡至目标剂量                |
+| 机制           | 让不会凋亡的癌细胞重新学会自杀                               |
+| 权益方         | 亚盛医药，截止2026.7.9，暂无海外授权                         |
+| 中国获批       | 2025 年 7 月 10 日                                           |
+| 获批适应症     | 既往≥1 线系统治疗(含 BTKi)的成人 R/R CLL/SLL（中国）         |
+| 进行中三期临床 | GLORA/GLORA-2/GLORA-3/GLORA-4                                |
+| 临床主要适应症 | CLL/SLL、AML、MSD                                            |
+| 进度           | 中国刚上市（2025 年中）、放量早期，全球后期临床、多适应症并行出海早期 |
+
+在介绍2575之前，我们先对血液瘤分类有个大体的认知。肿瘤分为实体瘤和血液瘤，血液瘤下面又分为几个大类，分别是淋巴瘤、浆细胞肿瘤、白血病。
+
+| 子类               | 占比 | 核心细分                                         |
+| ------------------ | ---- | ------------------------------------------------ |
+| 淋巴瘤             | ~51% | 霍奇金淋巴瘤（HL）、非霍奇金淋巴瘤（NHL，占90%） |
+| 白血病             | ~36% | ALL、AML、CLL、CML                               |
+| 浆细胞肿瘤         | ~13% | 多发性脊髓瘤（MM）                               |
+| 其他（MDS、MPN等） | —    | 骨髓增生异常综合征、骨髓增殖性肿瘤               |
+
+![](./img/1deb9254-aff3-4052-a46b-99867060e1d4.png)
+
+
+
+
+
+
+
 ## CLL/SLL
 
-
+APG-2575（lisaftoclax）与venetoclax在P2口袋结合区域存在结构差异。Venetoclax的氯苯基深插入P2口袋底部，正是这一区域受G101V突变的"knock-on"效应影响最为显著。APG-2575采用二氟环己烷（difluorocyclohexane）尾部结构替代venetoclax的氯苯基，P2口袋结合模式更为浅表。理论上，这种差异化的结合模式可能降低G101V突变对亲和力的影响，但目前尚无公开的APG-2575与G101V突变BCL-2的晶体结构或表面等离子体共振（surface plasmon resonance, SPR）数据直接验证这一假设。相比之下，sonrotoclax（BGB-11417）的P2口袋浅结合策略已通过1.80 Å高分辨率晶体结构获得完整验证。APG-2575在单药克服BCL-2突变方面的能力目前仍属推测性，需更多结构生物学数据支撑。
 
 ## AML
 
@@ -809,91 +897,117 @@ AZA 单药在 MDS 中靠较温和、可持续的表观遗传调节延缓病程�
 
 
 
+# 过往案例
+
+# 更高危 MDS（HR-MDS）三期临床失败地图
+
+2020–2025 · 一线/HMA 失败后大空间的"新药坟场"风险水位盘点
+
+数据核实日期：2026-07-14 ｜ 来源：Blood《The conundrum of drug development in HR-MDS》、各申办方公告、ClinicalTrials.gov
+
+![image-20260714142728281](./img/image-20260714142728281-1784178729614-1.png)
+
+![image-20260714142738192](./img/image-20260714142738192-1784178729614-2.png)
 
 
 
+## 失败归因：为什么 HR-MDS 是"三期坟场"
 
-# 联用
-
-亚盛医药拥有的APG-2575（BCL-2i）+ APG-115（MDM2i）+ APG-2449（BTKi）+ APG-5918（EEDi）组合，在联合策略丰富度上构成了隐性竞争壁垒。
-
-
-
-APG-2575（lisaftoclax）与venetoclax在P2口袋结合区域存在结构差异。Venetoclax的氯苯基深插入P2口袋底部，正是这一区域受G101V突变的"knock-on"效应影响最为显著。APG-2575采用二氟环己烷（difluorocyclohexane）尾部结构替代venetoclax的氯苯基，P2口袋结合模式更为浅表。理论上，这种差异化的结合模式可能降低G101V突变对亲和力的影响，但目前尚无公开的APG-2575与G101V突变BCL-2的晶体结构或表面等离子体共振（surface plasmon resonance, SPR）数据直接验证这一假设。相比之下，sonrotoclax（BGB-11417）的P2口袋浅结合策略已通过1.80 Å高分辨率晶体结构获得完整验证。APG-2575在单药克服BCL-2突变方面的能力目前仍属推测性，需更多结构生物学数据支撑。
-
-#### 4.2.2 联合策略矩阵：多通路阻断的系统性抗耐药
-
-APG-2575的抗耐药开发策略核心在于联合用药矩阵，通过同时打击多条耐药通路降低单一逃逸机制的概率。这一策略的基石是亚盛医药内部的管线协同优势。
-
-**+MDM2抑制剂（APG-115/alrizomadlin）：** 这是APG-2575抗耐药证据最充分的组合。Zhai等在*Clinical Cancer Research*发表的研究显示，APG-2575联合APG-115在venetoclax耐药的AML和急性淋巴细胞白血病（acute lymphoblastic leukemia, ALL）细胞系、CDX（cell line-derived xenograft）和PDX（patient-derived xenograft）模型中均显示出协同抗增殖和促凋亡活性。该组合的独特价值在于能够克服由慢性药物暴露或基因工程BCL-2突变建立的venetoclax耐药模型——APG-115通过激活p53下调MCL-1和BCL-xL（BCL-extra-large）、上调BAX（BCL-2-associated X protein），从多维度重新致敏耐药细胞。2025年ASCO（American Society of Clinical Oncology）口头报告首次提供了BCL-2抑制剂克服venetoclax耐药的临床证据：在28例venetoclax难治的R/R AML/MPAL（mixed phenotype acute leukemia）患者中，APG-2575+AZA（azacitidine，阿扎胞苷）方案在22例可评估患者中达到ORR（overall response rate）31.8%，包括CR/CRi（complete remission/incomplete hematologic recovery）22.8%、PR（partial response）4.6%、MLFS（morphologic leukemia-free state）4.6%。所有应答者均曾接受含venetoclax的多线治疗，71%携带TP53突变和复杂核型。
-
-**+BTK抑制剂：** BTKi可通过打断TLR9诱导的CD40上调来降低MCL-1和BCL-XL表达，同时mobilize CLL细胞从保护性LN微环境至外周血。Ibrutinib单药治疗两个周期即可使CLL细胞中BCL-2、BCL-XL、MCL-1和Bfl-1蛋白表达下降，并显著减弱CD40诱导的venetoclax耐药。APG-2575+acalabrutinib（阿可替尼）的II期临床中未观察到药物间相互作用，支持该联合方案的安全性。
-
-**+FLT3抑制剂：** 在FLT3-ITD突变AML中，APG-2575联合olverembatinib（HQP1351）通过下调MCL-1实现协同杀伤，在PDX模型中完全清除骨髓微环境中的白血病细胞（<1% hCD45+/hCD33+），克服venetoclax耐药。
+- **疾病异质性极高**：HR-MDS 是一组分子背景迥异的疾病集合，"一个联合方案打天下"难以在所有亚型都胜出，整体 ITT 人群往往被稀释。
+- **对照组太强**：单药 AZA 本身是难以撼动的标准治疗，"AZA + X"要在它之上再挤出 OS 获益，门槛极高。
+- **CR 率 ≠ 生存获益**：多个项目（VERONA、magrolimab）能提高缓解率，却无法转化为 OS——提示 IWG 2006 疗效标准可能高估/低估真实获益。
+- **早期信号误导**：均在 I/II 期显示"惊艳"数据（magrolimab ORR 91%、APR-246 CR 50%），三期一放大就回归现实——小样本单臂的过度乐观是系统性陷阱。
+- **老年+高危人群脆弱**：叠加新机制常带来额外毒性/感染，抵消疗效增益（magrolimab 死亡风险升高即典型）。
 
 
 
+## 对照组：同期在"低危 MDS"却接连成功
+
+- **Luspatercept**（Reblozyl，MEDALIST/COMMANDS）— 低危 MDS 贫血，✅ 获批并成为一线新标准。
+- **Imetelstat**（Rytelo，IMerge）— 低危 MDS 输血依赖，✅ 2024 获批，首个端粒酶抑制剂。
+- **CC-486 口服阿扎胞苷**（Onureg，QUAZAR）— AML 维持治疗，✅ 获批。
+- ➟ **关键启示**：钱和人才没有变，变的是**适应症选择**——同一批 KOL 在低危/维持领域捷报频传，在 HR-MDS 一线却全军覆没。风险不在团队，在"赛道"。
+
+BCL-2（B-cell lymphoma 2）靶点的药物开发史是肿瘤靶向治疗领域最富教育意义的篇章之一。从2000年代初ABT-737的概念验证到2016年venetoclax（维奈克拉，ABT-199）成为首个获批的BCL-2抑制剂，这一过程凝聚了超过20年的结构生物学、药物化学和临床研究积累。在此期间，至少10个BCL-2靶向药物在临床试验中遭遇失败，每一次失败都为后续分子的设计提供了关键指导。对于APG-2575（lisaftoclax）而言，系统理解这一历史不仅有助于评估其技术路线的合理性，更能帮助预判其在GLORA系列试验中可能面临的陷阱。
+
+### 3.1 Navitoclax（ABT-263）的失败教训
+
+#### 3.1.1 剂量限制性血小板减少的生化根源：BCL-XL脱靶抑制导致循环血小板凋亡
+
+Navitoclax（ABT-263）是AbbVie基于ABT-737优化的口服BCL-2家族抑制剂，对BCL-2、BCL-XL和BCL-W均具有亚纳摩尔级别的亲和力（BCL-xL Ki ≤ 0.5 nM，BCL-2 Ki ≤ 1 nM，BCL-w Ki ≤ 1 nM）。在Phase I临床试验中，navitoclax在CLL和SCLC（small cell lung cancer，小细胞肺癌）患者中展现出明确的抗肿瘤活性，但所有患者均出现血小板减少，且该毒性呈剂量依赖性，在给药后24–72小时内血小板计数降至最低点，与动物模型中BCL-XL抑制的动力学完全平行 。
+
+这一毒性的生化根源在于BCL-XL在血小板中高度表达，是维持循环血小板存活的关键抗凋亡蛋白。Mason等人2007年在Cell上发表的研究首次证实，BCL-XL通过抑制BAK/BAX介导的线粒体外膜通透化（MOMP，mitochondrial outer membrane permeabilization）来维持血小板寿命 。当navitoclax以有效抗肿瘤剂量给药时，对BCL-XL的同步抑制触发了血小板的程序性凋亡，导致治疗窗口极度狭窄——有效剂量与产生严重血小板减少的剂量高度重叠。间歇给药策略虽可部分恢复血小板计数，但肿瘤暴露时间不足，无法解决根本矛盾。
+
+Navitoclax的肿瘤适应症开发最终因此终止，但其在衰老细胞清除（senolytic）领域的 repurposing 获得了新生。研究人员开发了Nav-Gal（半乳糖偶联前药），利用衰老细胞高表达β-半乳糖苷酶（SA-β-gal）的特性实现选择性释放，在保持senolytic活性的同时显著降低血小板毒性 。
+
+#### 3.1.2 对后续药物设计的启示：选择性>效力，BCL-2/BCL-XL选择性是成药的前提
+
+Navitoclax的失败为BCL-2靶点药物设计留下了最核心的教训：**选择性优于绝对效力**。AbbVie的研究团队通过反向工程navitoclax的结构，系统移除或替换关键结合元件，并引入氮杂吲哚（azaindole）作为P4口袋的新结合基团，最终获得了venetoclax（ABT-199）——一种对BCL-2具有极高亲和力（Ki < 0.01 nM）而对BCL-XL亲和力低约5,000倍（Ki = 48 nM）的高度选择性抑制剂 。这一结构优化的结果是venetoclax在体外和体内均显著减少对血小板的损伤，同时具备强大的抗白血病活性。
+
+APG-2575的设计同样遵循了这一原则。临床前数据显示，APG-2575对BCL-XL的选择性窗口超过1,000倍（venetoclax约325倍），在临床试验中未观察到显著的剂量限制性血小板减少 。这验证了Navitoclax教训的普适性——在BCL-2家族抑制剂的设计中，规避BCL-XL是成药的第一道门槛。
+
+### 3.2 Venetoclax的成功路径
+
+Venetoclax于2016年4月获FDA加速批准，成为首个上市的BCL-2抑制剂，至今已在CLL、SLL、AML等适应症中建立了标准治疗地位，2024年全球销售额约26亿美元 。其成功建立在三大支柱性III期试验之上——CLL14、MURANO和VIALE-A——并辅以6次FDA突破性疗法认定（Breakthrough Therapy Designation, BTD）。
+
+**表1 Venetoclax关键III期试验汇总**
+
+| 试验    | 适应症                 | 设计             | 样本量 | 主要终点   | 试验组结果                                  | 对照组结果                    | HR (95% CI)                               |
+| :------ | :--------------------- | :--------------- | :----- | :--------- | :------------------------------------------ | :---------------------------- | :---------------------------------------- |
+| CLL14   | 一线CLL（伴合并症）    | 开放标签、随机   | 432    | 研究者PFS  | 中位PFS 76.2月；6年PFS率 53%；PB uMRD 76%   | 中位PFS 36.4月；PB uMRD 35%   | PFS 0.31–0.40                             |
+| MURANO  | R/R CLL                | 开放标签、随机   | 389    | IRC评估PFS | 中位PFS 54.7月；7年OS率 69.6%；EOT uMRD 62% | 中位PFS 17.0月；7年OS率 51.0% | PFS 0.23 (0.18–0.29)；OS 0.53 (0.37–0.74) |
+| VIALE-A | 一线AML（≥75岁/unfit） | 双盲、安慰剂对照 | 431    | OS         | 中位OS 14.7月；CR/CRi 66.4%                 | 中位OS 9.6月；CR/CRi 28.3%    | OS 0.66 (0.52–0.85)                       |
+
+CLL14试验是venetoclax成功的基石。该试验纳入432例初治CLL伴合并症患者，随机接受12个周期的venetoclax+obinutuzumab（VenG）或chlorambucil+obinutuzumab（CO）。6年随访数据显示，VenG组PFS率为53%，而CO组仅为约27% 。治疗结束后3个月，VenG组外周血不可测微小残留病（uMRD，undetectable minimal residual disease）率达76%，骨髓uMRD率为57%，均为CO组的两倍以上 。更重要的是，达到uMRD的患者4年PFS约90%，证明了固定疗程策略下深度缓解可转化为持久临床获益 。
+
+MURANO试验验证了venetoclax在复发/难治性（R/R，relapsed/refractory）CLL中的价值。389例接受过1–3线治疗的患者随机接受venetoclax+rituximab（VenR，venetoclax持续2年）或bendamustine+rituximab（BR）。7年最终分析显示，VenR组中位PFS为54.7个月（BR组17.0个月），7年OS率为69.6%（BR组51.0%），PFS风险比（HR，hazard ratio）为0.23（95% CI 0.18–0.29）。EOT时达到uMRD的患者从EOT起中位PFS为52.5个月，而有MRD患者仅18.0个月 ，再次确认MRD作为长期预后替代终点的可靠性。再治疗亚研究也证明venetoclax复发后再治疗的ORR为72%，中位第二次PFS约23个月 。
+
+VIALE-A试验将venetoclax的成功从淋巴系扩展至髓系。431例新诊断AML（中位年龄76岁）随机接受azacitidine+venetoclax或azacitidine+安慰剂。联合组中位OS达14.7个月，对照组仅9.6个月（HR 0.66，95% CI 0.52–0.85；P<0.001），CR/CRi率为66.4% vs 28.3% 。该试验奠定了venetoclax+HMA（hypomethylating agent，低甲基化药物）在unfit AML中的标准治疗地位。值得注意的是，疗效在不同分子亚组间差异显著：正常核型和IDH突变患者获益最大，而TP53突变患者几乎无OS获益 ，提示BCL-2抑制剂的疗效高度依赖于疾病生物学。
+
+#### 3.2.4 FDA审批路径：加速批准→全面批准的完整路径
+
+Venetoclax的FDA审批路径为后续BCL-2抑制剂提供了清晰的监管蓝图。2016年4月，基于Phase II单臂试验中del(17p) R/R CLL患者79.4%的ORR，venetoclax获加速批准 。2018年6月，MURANO数据支持全面批准R/R CLL/SLL 。2019年5月，CLL14数据支持一线CLL/SLL批准 。在AML中，venetoclax先基于Ib期数据于2018年11月获加速批准，后由VIALE-A确证性数据于2020年10月转为全面批准 。
+
+这一路径的核心特征是"从高风险未满足需求人群切入→加速批准→确证性III期→全面批准→适应症扩展"。Venetoclax共获得6次BTD ，涵盖CLL、AML等多个适应症，体现了FDA对该类药物的高度重视。对于APG-2575而言，2025年7月NMPA批准R/R CLL/SLL适应症是国际化的第一步，后续GLORA系列试验的数据成熟将决定其能否复制venetoclax的监管路径。
+
+### 3.3 Venetoclax的挫折
+
+Venetoclax的成功并非没有边界。在其适应症扩展过程中，至少三次重大挫折为APG-2575的开发敲响了警钟。
+
+#### 3.3.1 VIALE-C试验失败：venetoclax+LDAC vs placebo+LDAC未改善OS
+
+VIALE-C试验比较venetoclax+LDAC（低剂量阿糖胞苷）与安慰剂+LDAC在unfit AML中的疗效。在主要分析时，联合组中位OS为7.2个月，对照组4.1个月，HR 0.75（95% CI 0.52–1.07），P=0.11，未达到统计学显著性 。虽然延长6个月随访后OS差异达到显著（8.4 vs 4.1个月，HR 0.70，P=0.04），但主要终点失败的教训明确：**LDAC作为骨架方案过于薄弱**，单药中位OS仅4.1个月，反映了该人群极差的预后。约60%的患者在研究时随访≤6个月，统计效力不足。这一失败直接指导了APG-2575 GLORA-3试验选择AZA而非LDAC作为骨架方案。
+
+#### 3.3.2 VERONA试验失败：venetoclax+AZA in HR-MDS主要终点OS未达统计学显著改善
+
+VERONA试验是venetoclax从AML向MDS（myelodysplastic syndromes，骨髓增生异常综合征）扩展的关键尝试，也是APG-2575 GLORA-4试验最直接的参照。509例初治高危MDS患者随机接受venetoclax+AZA或安慰剂+AZA，主要终点OS的HR为0.908（95% CI 0.733–1.126），P=0.3772，中位OS几乎相同（22.18 vs 21.68个月）。
+
+VERONA的失败根因是多层次的。第一，入组患者异质性过高：仅27%有原始细胞增多（≥5%），而Phase 1b中90%患者有原始细胞增多且ORR达80.4% 。BCL-2依赖性主要与白血病原始细胞相关，低原始细胞患者对BCL-2抑制剂敏感度有限。第二，TP53突变亚组（约25%患者）HR为1.064，venetoclax在此亚组中不仅无效甚至可能有害 。第三，骨髓抑制驱动的治疗中断：约50%患者需要venetoclax减量，约90%需要剂量中断，≥3级治疗期间不良事件（TEAE）发生率达94% 。毒性"抵消"了疗效优势——venetoclax组因不良事件停药比例更高（20% vs 15%），尽管疾病进展比例更低（29.8% vs 44.7%）。亚组分析显示<75岁患者（HR 0.835）和原始细胞≥5%患者（HR 0.858）可能有获益趋势，但未达到统计学显著 。
+
+#### 3.3.3 BELLINI试验警示：venetoclax+bortezomib in MM中感染相关死亡抵消PFS获益
+
+BELLINI试验评估venetoclax+bortezomib+地塞米松 vs 安慰剂+硼替佐米+地塞米松在R/R MM（multiple myeloma，多发性骨髓瘤）中的疗效。结果呈现矛盾画面：PFS显著获益（23.4 vs 11.4个月，HR 0.58，P=0.00026），但OS倾向安慰剂组（HR 1.19，P=0.39）。根本原因在于venetoclax组出现了过多的感染相关死亡（12例 vs 1例），4例（2%）治疗相关死亡均发生在venetoclax组 。t(11;14)阳性亚组是唯一真正获益的人群（PFS HR 0.17，OS HR 0.59），表明在MM中BCL-2高表达是疗效的前提条件。CANOVA试验在t(11;14)阳性RRMM中比较venetoclax+地塞米松 vs 泊马度胺+地塞米松，同样因7例 vs 0例致死性感染而未能达到PFS主要终点（HR 0.823，P=0.24）。
+
+#### 3.3.4 失败模式分类表：安全性失败/有效性失败/竞争淘汰三类模式的特征与根因
+
+**表2 BCL-2靶点开发失败案例分类对比**
+
+| 药物/试验     | 失败类型              | 根因层级          | 核心根因                                                     | 可逆性                       | 对APG-2575的启示                        |
+| :------------ | :-------------------- | :---------------- | :----------------------------------------------------------- | :--------------------------- | :-------------------------------------- |
+| Navitoclax    | 安全性失败（D-LT）    | 分子设计          | BCL-XL脱靶抑制→机制性血小板凋亡；有效剂量与毒性剂量重叠      | 不可逆（设计缺陷）           | 高BCL-2/BCL-XL选择性是成药前提          |
+| VIALE-C       | 有效性失败（OS未达）  | 试验设计+骨架方案 | LDAC骨架太弱（单药OS 4.1月）；随访不足（60%患者≤6月）        | 部分可逆（更长随访后达显著） | GLORA-3选择AZA骨架（VIALE-A模式已验证） |
+| VERONA        | 有效性失败（OS未达）  | 适应症生物学      | MDS异质性+低原始细胞比例；TP53突变耐药；过度骨髓抑制致治疗中断 | 可能可逆（亚组获益信号）     | 短半衰期设计可能降低骨髓抑制；精准入组  |
+| BELLINI       | 安全性失败（OS受损）  | 患者选择          | 非t(11;14)MM患者感染相关死亡抵消PFS获益                      | 可逆（t(11;14)亚组获益）     | MM开发需限定t(11;14)或BCL-2高表达       |
+| CANOVA        | 有效性失败（PFS未达） | 试验设计+安全性   | 开标签设计+信息性删失；致死性感染7例 vs 0例                  | 可能可逆                     | 双盲设计+感染监控                       |
+| S55746/BCL201 | 竞争淘汰              | 疗效不足？        | 两项Phase I完成六年未公布结果                                | 不可逆                       | 差异化定位避免"me-too"                  |
+| APG-1252      | 安全性失败            | 分子设计          | BCL-2/BCL-XL双重抑制剂面临Navitoclax同类血小板毒性           | 不可逆                       | 再次验证BCL-XL规避的必要性              |
+| 固体瘤整体    | 系统性失败            | 生物学差异        | MCL-1上调代偿；BCL-2非主要依赖；治疗窗口不足                 | 不可逆                       | 聚焦血液肿瘤，谨慎拓展实体瘤            |
+
+上表揭示了BCL-2靶点开发失败的三种基本模式。**安全性失败**（Navitoclax、BELLINI、APG-1252）的共同特征是额外毒性抵消或超过疗效获益。Navitoclax的血小板毒性和BELLINI的感染相关死亡虽然机制不同，但本质都是治疗窗不足——药物在靶点上的作用延伸到了不应影响的生理系统。**有效性失败**（VIALE-C、VERONA、CANOVA）的特征是药物具有生物学活性（CR率、ORR均提高），但活性未能转化为OS或PFS的统计学显著改善。VIALE-C的问题在于骨架方案太弱和统计设计保守，VERONA在于MDS的生物学复杂性超出预期，CANOVA在于开标签设计和感染事件。**竞争淘汰**（S55746）则反映了在没有明确差异化的情况下，后来者难以在已建立标准治疗的市场中立足。
+
+对APG-2575的战略启示是清晰的：在分子层面，高BCL-2/BCL-XL选择性已使其规避了Navitoclax和APG-1252的陷阱；在试验设计层面，GLORA-3选择AZA骨架是对VIALE-C教训的直接回应，GLORA-4的双主要终点（CR rate + OS）是对VERONA单一OS终点失败的策略性调整；在患者选择层面，GLORA系列应充分考虑分子亚组的分层，特别是在TP53突变和原始细胞比例等关键变量上。BCL-2靶点的历史表明，成功不是单一分子的胜利，而是对每一次失败进行系统性学习的结果。
 
 
-# 名词含义
-
-## 疾病相关：
-
-- CLL：Chronic Lymphocytic Leukemia，慢性淋巴细胞白血病，成熟 B 淋巴细胞在**血液和骨髓**里异常增殖，发病慢，难根治
-- SLL：Small Lymphocytic Lymphoma，小淋巴细胞淋巴瘤，本质和 CLL 是同一种病，只是肿瘤主要在**淋巴结/脾脏**里，没怎么进血液
-- AML：Acute Myeloid Leukemia，急性髓系白血病，骨髓里髓系原始细胞恶性增殖，抑制正常造血，起病急、进展快。 V 药+Aza 已经获批的适应症，但高危/老年人群仍有大量未满足需求
-- MDS：Myelodysplastic Syndromes，骨髓增生异常综合征。骨髓「生产」血细胞的功能紊乱，表现为贫血、白细胞低、血小板低，约 30% 会进展成 AML。核心是**骨髓衰竭 + 向白血病转化风险**
-- HR-MDS：Higher-Risk MDS，高危 MDS
-- R/R MCL：Relapsed/Refractory Mantle Cell Lymphoma，复发难治套细胞淋巴瘤，MCL 是一种特殊类型的 B 细胞非霍奇金淋巴瘤，R/R 就是**复发或既往治疗无效**
-- MM：Multiple Myeloma，多发性骨髓瘤，浆细胞在骨髓里异常增殖，分泌异常免疫球蛋白，典型表现是「CRAB」——高钙血症、肾功能损害、贫血、骨破坏
-- Ph+ ALL：
-- DDI：药物相互作用，有DDI联用会受限
-
-
-
-
-
-## 临床相关：
-
-- ORR ：Overall Response Rate，总体应答率，治疗后肿瘤缩小达到预定标准（CR+PR）的患者比例。ORR=CR（完全缓解）+PR（部分缓解，肿瘤缩小＞30%）
-- TLS：Tumor Lysis Syndrome，肿瘤溶解综合征。大量肿瘤细胞被药物快速杀死后，细胞内容物（钾、磷、尿酸）一股脑泄进血液，导致**高尿酸、高钾、高磷、低钙**，严重时会肾衰竭、心律失常甚至猝死
-- MRD：Minimal Residual Disease，微小残留病灶，MRD 阴性 表示体内查不到残留，复发风险显著降低，是现在 CLL/AML 审评的重要替代终点
-- MTD：Maximum Tolerated Dose，最大耐受剂量
-- DLT：Dose-Limiting Toxicity，剂量限制性毒性
-
-
-
-## 其他：
-
-- BTK/BTKi：Bruton's Tyrosine Kinase / BTK inhibitor，**BTK** 是 B 细胞受体信号通路里的关键酶，管 B 细胞存活增殖，**BTKi** 就是抑制它的药，代表是伊布替尼、阿卡替尼、泽布替尼
-
-
-
-
-
-# 专家
-
-|                                   | 国内/海外     | 机构/角色                                                  | 代表文章/摘要链接                                            |
-| --------------------------------- | ------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| Matthew S. Davids                 | 海外          | Dana-Farber；CLL/SLL核心KOL                                | [Med 2025：CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[Clin Cancer Res 2023：FIH，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/) |
-| Asher Chanan-Khan                 | 海外          | Mayo Clinic；FIH和CLL研究核心作者                          | [FIH开放标签研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/) |
-| Sikander Ailawadhi                | 海外          | Mayo Clinic；FIH、MM/AL联合方案                            | [FIH第一作者，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[ASH/SOHO MM/AL摘要页](https://ascentage.com/document/mm-718-lisaftoclax-apg-2575-combined-with-novel-therapeutic-regimens-in-patients-with-relapsed-or-refractory-r-r-multiple-myeloma-mm-or-immunoglobulin-light-chain-al-amyloidosis/) |
-| Patricia Kropf                    | 海外          | Novant Health；AML/MDS + AZA研究                           | [ASCO 2025：venetoclax难治AML/MDS口头报告，公司公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Michael Francis Leahy             | 海外          | Royal Perth Hospital；AML/MDS研究                          | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Shaun Fleming                     | 海外          | The Alfred Hospital / Australian Centre for Blood Diseases | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Aneel Paulus                      | 海外          | Mayo Clinic；机制/早期临床                                 | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
-| Anthony Letai / John Ryan         | 海外          | Dana-Farber相关BCL-2凋亡研究圈                             | [前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
-| 李建勇                            | 国内          | 江苏省人民医院；中国注册性CLL/SLL研究PI之一                | 暂未看到其作为作者的APG-2575论文链接；代表公开出处为[NMPA批准公告/注册研究说明](https://ascentage.com/ascentage-pharma-announces-its-novel-bcl-2-inhibitor-lisaftoclax-approved-by-china-nmpa-ushering-in-a-new-era-for-the-treatment-of-cll-sll/) |
-| 王建祥                            | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 孙敏                              | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1第一作者，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 周可树                            | 国内          | 河南省肿瘤医院/郑大附属肿瘤医院                            | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 孟珊                              | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
-| 顾柳芳                            | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
-| 赵华                              | 国内          | 转化/肿瘤免疫机制研究                                      | [APG-2575重塑TAM并增强抗PD-1反应，PMID 38062129](https://pubmed.ncbi.nlm.nih.gov/38062129/) |
-| 邓健 / Fang DD / 唐强等           | 国内/公司研发 | 亚盛相关前临床与组合机制研究                               | [APG-2575血液瘤前临床，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/)；[与alrizomadlin克服venetoclax耐药，PMID 36240005](https://pubmed.ncbi.nlm.nih.gov/36240005/)；[与olverembatinib在FLT3-ITD AML模型协同，PMID 34710737](https://pubmed.ncbi.nlm.nih.gov/34710737/) |
-| 翟一帆 / 杨大俊 / 陈子 / 王恒邦等 | 国内/公司研发 | 亚盛医学与研发核心作者                                     | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[中国NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-
-# 先驱
 
 Navitoclax（ABT-263），对BCL-2和BCL-xL的亲和性都很高，导致同步抑制触发了血小板的程序性凋亡，导致治疗窗口极度狭窄——有效剂量与产生严重血小板减少的剂量高度重叠。间歇给药策略虽可部分恢复血小板计数，但肿瘤暴露时间不足，无法解决根本矛盾。
 
@@ -990,186 +1104,10 @@ BELLINI试验评估venetoclax+bortezomib+地塞米松 vs 安慰剂+硼替佐米+
 
 
 
-# 临床
 
-主要临床：
 
-| 研究                       | 人群/设计                                                    | 结果摘要                                                     |
-| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| NCT05147467 / APG2575CC201 | 中国注册 II 期，单药，R/R CLL/SLL，主要终点 ORR              | 77 例入组，72 例可评估；IRC 确认 ORR 62.5%，mPFS 23.89 个月；外周血 MRD 阴性 21.8%；未见 TLS 或治疗相关死亡 |
-| NCT03913949                | 中国 phase 1，R/R CLL/SLL 和 NHL                             | CLL/SLL ORR 71.4%、CR 28.6%；未达 MTD，未观察到 TLS          |
-| NCT04215809                | phase 1b/2，单药或联合 rituximab/acalabrutinib               | ORR：单药 67.4%，联合 rituximab 84.6%，联合 acalabrutinib 97.7%；176 例中 TLS 2.8%，无治疗相关停药或死亡 |
-| NCT06104566 / GLORA        | 全球 III 期，经治 CLL/SLL，lisaftoclax+BTKi vs BTKi          | 招募中，约 400 例，主要终点 PFS                              |
-| NCT06319456 / GLORA-2      | 初治 CLL/SLL，lisaftoclax+acalabrutinib vs 免疫化疗          | 招募中，约 344 例，主要终点 PFS                              |
-| NCT06389292 / GLORA-3      | 初治老年或不适合强诱导 AML，lisaftoclax+azacitidine vs placebo+azacitidine | 招募中，约 486 例，主要终点 OS                               |
-| NCT06641414 / GLORA-4      | 初治高危 MDS，lisaftoclax+azacitidine vs placebo+azacitidine | 招募中，约 490 例，主要终点 OS；公司称 FDA/EMA/CDE 均已放行  |
+# Venetoclax
 
-**表1 APG-2575在CLL/SLL各治疗方案中的疗效对比**
+1、高选择性，对BCL-xL结合力弱，导致血小板减少安全性上好。CLL患者中≥3级血小板减少发生率仅为0-11%，显著低于venetoclax的15-24%
 
-| 治疗方案          | 患者人群 | 可评估n | ORR   | CR/CRi | 中位PFS   | 关键生存终点    | 数据来源      |
-| :---------------- | :------- | :------ | :---- | :----- | :-------- | :-------------- | :------------ |
-| 单药              | R/R CLL  | 45      | 73.3% | 24.4%  | 18.53个月 | 30月OS率86.3%   | ASH 2023汇总  |
-| 联合acalabrutinib | R/R CLL  | 87      | 96.6% | 待报告 | 未达到    | 18月PFS率86%    | ASH 2024更新  |
-| 联合acalabrutinib | BTKi耐药 | 15      | 88%   | 待报告 | 待报告    | 待报告          | ASH 2022      |
-| 联合acalabrutinib | Ven经治  | 14      | 86%   | 待报告 | 未达到    | 12/18月PFS率89% | ASH 2024      |
-| 联合rituximab     | R/R CLL  | 39      | 87%   | 待报告 | 待报告    | 待报告          | ASH 2022/2024 |
-| 联合acalabrutinib | 初治CLL  | 16      | 100%  | 待报告 | 未达到    | 1.5年PFS率86%   | ASH 2022      |
-
-**表2 APG-2575联合AZA在AML各人群中的疗效数据**
-
-| 患者人群         | 剂量      | n    | ORR    | CRc    | 中位PFS | 中位OS | 至CR时间 | 数据来源  |
-| :--------------- | :-------- | :--- | :----- | :----- | :------ | :----- | :------- | :-------- |
-| TN AML（全部）   | 400-800mg | 39   | 64.1%  | 51.3%  | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
-| TN AML（600mg）  | 600mg     | 29   | 待报告 | 待报告 | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
-| R/R AML（全部）  | 400-800mg | 37   | 72.7%  | 45.5%  | 待报告  | 待报告 | 2.5月    | ASCO 2024 |
-| R/R AML（600mg） | 600mg     | 30   | 76.7%  | 50.0%  | 10.2月  | 14.7月 | 2.5月    | ASCO 2024 |
-| Ven耐药AML/MPAL  | 28/14天   | 24   | 29.2%  | 20.8%  | 待报告  | 待报告 | 待报告   | ASH 2025  |
-
-| #     | 试验代号            | 适应症                          | 试验阶段          | 数据状态                 | 读出/预计读出时间       | 备注                              |
-| ----- | ------------------- | ------------------------------- | ----------------- | ------------------------ | ----------------------- | --------------------------------- |
-| **1** | APG2575CC201        | R/R CLL/SLL（单药）             | 注册 II 期        | ✅ **已读出**（支撑 NDA） | 2024-2025 年            | 2025.7.10 获批上市的依据          |
-| **2** | GLORA-4（中国部分） | 新诊断中高危 MDS（联合 AZA）    | 注册 III 期       | 🔄 进行中                 | **2026 年**读出关键数据 | 2024.8 CDE 批准，全球 III 期      |
-| **3** | —                   | CLL/SLL 1.5L（联合 BTKi）       | 国内桥接/拓展研究 | 🔄 进行中                 | **2026-2027 年**        | 对应全球 GLORA 系列，国内同步推进 |
-| **4** | —                   | R/R 多发性骨髓瘤 MM（联合方案） | II 期             | 🔄 进行中                 | **2026-2027 年**        | 早期数据已在 ASH/EHA 展示         |
-| **5** | —                   | 华氏巨球蛋白血症 WM             | II 期             | 🔄 进行中                 | **2026-2027 年**        | 尚未有中国数据正式读出            |
-| **6** | —                   | 急性髓系白血病 AML（联合方案）  | II 期             | 🔄 进行中                 | **2027 年及以后**       | 早期概念验证数据已在国际会议展示  |
-| **7** | —                   | NHL（非霍奇金淋巴瘤）亚型       | I/II 期           | 🔄 进行中                 | **2027 年及以后**       | 探索性适应症                      |
-| **8** | GLORA（中国部分）   | 一线 CLL/SLL（联合方案）        | 注册 III 期       | 🔄 入组中                 | **2027 年**提交 NDA     | 全球同步，中国为 MRCT 一部分      |
-
-G2数据来源：在16例初治（Treatment-Naive, TN）CLL/SLL患者中，APG-2575联合acalabrutinib治疗的ORR达100%（16/16），1.5年PFS率为86%。尽管样本量较小（n=16），但该数据与venetoclax联合方案在一线CLL中的历史数据方向一致
-
-
-
-**MDS**领域，APG-2575联合AZA的数据主要来自ASH 2024报告（Abstract #3202）。在23例初治高危MDS（HR-MDS）患者中，按2006年国际工作组标准评估的ORR为73.9%，CR率为30.4%。按2023年IWG标准，复合CR率为69.6%，其中包括52.2%的CR和17.4%的CR伴有限血细胞恢复。中位至CR时间为2.8个月（范围1.1-8.7个月），中位PFS未达到（95%置信区间 7.1-未达到）。
-
-ASCO 2025口头报告进一步扩展了数据集：在15例可评估的新诊断MDS/慢性粒单核细胞白血病（CMML）患者中，ORR为80%，CR和骨髓CR率各为40%。在22例R/R MDS/CMML患者中，ORR为50%，CR率为27.3%。
-
-将上述数据与venetoclax联合AZA在MDS中的数据进行对比：VERONA III期试验中venetoclax+AZA的修正ORR（modified ORR, mORR）为76.2%（vs安慰剂+AZA 57.7%），CR率为29.9%。APG-2575的ORR 73.9%和CR 30.4%与venetoclax数值相近，但直接的跨试验比较需谨慎解读——两项试验的入组标准、患者基线和疗效评估标准存在差异。
-
-
-
-**表3 APG-2575跨适应症疗效-安全性矩阵及与Venetoclax对比**
-
-| 指标             | APG-2575单药CLL | APG-2575+Aza AML (TN) | APG-2575+Aza AML (R/R) | APG-2575+Aza MDS | Venetoclax对标数据 |
-| :--------------- | :-------------- | :-------------------- | :--------------------- | :--------------- | :----------------- |
-| 样本量           | 45例            | 39例                  | 37例                   | 23例(TN)         | 286-431例(III期)   |
-| ORR              | 73.3%           | 64.1%                 | 72.7%                  | 73.9%            | 66-79%             |
-| CR/CRc           | 24.4%           | 51.3%                 | 45.5%                  | 30.4%(CR)        | 20-66%             |
-| 中位PFS          | 18.53月         | 未达(600mg)           | 10.2月(600mg)          | 未达             | 9.8-34月           |
-| 中位OS           | 30月率86.3%     | 未达(600mg)           | 14.7月(600mg)          | 未达             | 14.7-26月          |
-| TLS              | ~1-2%           | 0%                    | 0%                     | 0%               | 1-3%               |
-| 30天死亡率       | 未报告          | 1.3%                  | 1.3%                   | 0%               | 7%                 |
-| ≥3级中性粒减少   | 26%             | 57.9%                 | 57.9%                  | 65.3%            | 42-48%             |
-| ≥3级血小板减少   | 5%              | 50.0%                 | 50.0%                  | 61.2%            | 45%                |
-| 发热性中性粒减少 | 罕见            | 10.5%                 | 10.5%                  | 12.2%            | 42%                |
-
-**高成熟度数据（CLL/SLL单药与联合方案）**：CLL/SLL是APG-2575数据最成熟的适应症。单药R/R CLL的45例患者数据来源于两项研究的汇总分析，经多源交叉验证（健康界、医药魔方、Insight数据库、凯石国际等来源数据完全一致），且已获得NMPA监管批准，证据等级最高。联合acalabrutinib的数据基于176例入组患者和22.3个月的中位随访，ORR 96.6%和18个月PFS率86%具有足够的统计稳定性。venetoclax经治患者86%的ORR虽然样本量仅14例，但9例venetoclax难治患者中ORR达89%，信号方向明确。
-
-**中等成熟度数据（AML）**：AML数据目前全部为Ib/II期单臂试验结果，最大样本量76例（ASCO 2024）至103例（ASH 2025全球扩展）。600mg RP2D的选择基于有限的患者数，中位PFS和OS"未达到"的声明反映了随访时间的限制而非疗效的确定性。TN AML CRc 51.3%与VIALE-A的66.4%之间存在约15个百分点的差距，部分可归因于样本量差异（39例 vs 286例）和人群fitness差异（中位年龄66岁 vs 76岁），但亦不能排除APG-2575在AML中的疗效略低于venetoclax的可能性。GLORA-3 III期随机对照试验（NCT06389292，计划入组486例）将提供决定性证据。
-
-**早期数据（MDS）**：MDS数据目前仅来自49例入组患者（41例TN，8例R/R），其中23例600mg TN队列构成了核心数据集。虽然ORR 73.9%和CR 30.4%的方向令人鼓舞，但样本量过小导致置信区间较宽，且随访时间有限。ASCO 2025的15例ND MDS/CMML数据（ORR 80%）进一步支持了疗效信号，但仍需大规模验证。VERONA试验的失败前车之鉴表明，BCL-2抑制剂在MDS中的III期成功并非必然——即使I/II期数据 promising，患者异质性、TP53突变耐药和过度骨髓抑制仍可能在III期试验中抵消生存获益。GLORA-4（NCT06641414）采用CR rate + OS双主要终点设计，计划入组464例，预计2029年完成。
-
-早期
-
-
-
-Ⅱ期
-
--  全球多中心 Ib/II 期——联合阿扎胞苷治疗AML
-- 全球多中心 Ib/II 期——治疗华氏巨球蛋白血症（WM）
-- 中国关键注册 II 期——R/R CLL/SLL（NCT05147467）
-
-Ⅲ期（全球）
-
-- GLORA：R/R CLL/SLL（BTKi 后）	
-- GLORA-2：新诊断 CLL/SLL	
-- GLORA-3：新诊断老年/不适合强化疗 AML	
-- GLORA-4：新诊断高危 MDS
-
-
-
-
-
-
-
-
-
-# Reference
-
-有。若目标是找“最新、覆盖最全、且期刊层级显著高于《Cancers》”的一篇，我首推：
-
-1. [The BCL2 family: from apoptosis mechanisms to new advances in targeted therapy](https://www.nature.com/articles/s41392-025-02176-0)
-   *Signal Transduction and Targeted Therapy*, 2025-03-21，综述。
-   这是目前最适合系统阅读的一篇：从 BCL‑2 家族凋亡机制、维奈克拉，到新一代 BCL‑2 抑制剂 sonrotoclax、lisaftoclax（APG‑2575），再到 BCL‑XL/MCL‑1 的毒性瓶颈、PROTAC 和靶向递送策略，都有覆盖。文章对 lisaftoclax 的表述是“仍在临床评估”，而非已被充分验证优于维奈克拉。
-
-再配两篇，分别看“权威机制脉络”和“临床硬证据”：
-
-1. [The BCL-2 protein family: from discovery to drug development](https://www.nature.com/articles/s41418-025-01481-z)
-   *Cell Death & Differentiation*, 2025-04-09，综述。
-   作者是 BCL‑2/凋亡研究的重要奠基者与药物发现参与者，适合理解 BCL‑2、BCL‑XL、MCL‑1 抑制剂为什么有效、又为什么常受血小板或心脏毒性限制。要注意其透明披露：WEHI 与 Genentech/AbbVie 就维奈克拉有里程碑和版税安排，因此适合读机制与历史，但涉及维奈克拉时也应结合独立临床研究看。
-
-2. [Combination Targeted Therapy in Relapsed Diffuse Large B-Cell Lymphoma](https://www.nejm.org/doi/abs/10.1056/NEJMoa2401532)
-   *NEJM*, 2024。
-   这是 BCL‑2 抑制剂参与联合方案的高等级临床证据：ViPOR 五药方案用于复发/难治 DLBCL，48 名可评估患者中客观缓解率 54%、完全缓解率 38%；但它是单中心早期研究，不能等同于已确立的标准治疗。
-
-3. https://pdfs.semanticscholar.org/b4c6/390765ac85441a4433de46866bfbed72ba22.pdf
-
-   BCL‑2 抑制剂目前最成熟的是维奈克拉，血液肿瘤中效果突出，但耐药是核心问题。
-
-   耐药/疗效预测与基因特征有关：如 TP53、KRAS/NRAS、FLT3‑ITD 往往提示较差反应；NPM1、IDH1/2、RUNX1 等在特定场景下可能提示较好反应。
-
-   实体瘤单药效果总体有限，作者认为未来更可能依靠按生物标志物筛选患者、并与其他药物联合。
-
-一句话判断：2023 年那篇《Cancers》综述可以作为入门资料；要看“更权威、更新、更接近领域前沿”的全景，读第 1 篇；要判断具体疗法是否真的有效，则优先看疾病对应的 NEJM、*Lancet Oncology*、*Blood* 等原始临床试验，而不是综述。
-
-
-
-- https://www.bcl2.co/
-- https://www.nature.com/articles/cdd2017186
-
-一期PK/PD研究：Novel BCL-2 Inhibitor Lisaftoclax in Relapsed or Refractory Chronic Lymphocytic Leukemia and Other Hematologic Malignancies: First-in-Human Open-Label Trial：https://pmc.ncbi.nlm.nih.gov/articles/PMC10330157/
-
-
-
-临床前机制研究：Lisaftoclax (APG-2575) Is a Novel BCL-2 Inhibitor with Robust Antitumor Activity in Preclinical Models of Hematologic Malignancy ：https://aacrjournals.org/clincancerres/article-abstract/28/24/5455/711449/Lisaftoclax-APG-2575-Is-a-Novel-BCL-2-Inhibitor
-
-
-
-
-
-Venetoclax / VERONA分析海报：https://epostersonline-2.s3.amazonaws.com/soho2025/soho2025.00e001b.NORMAL.pdf
-
-
-
-flcq
-
-浅聊维奈克拉在VERONA试验上临床失败的原因：https://xueqiu.com/1393486978/351059273
-
-标题党时代，亚盛医药的几大硬伤：https://xueqiu.com/1393486978/325985687
-
-
-以Bcl-2为基石的全球创新战略:https://xueqiu.com/1393486978/319320489
-
-
-
-王少萌论文:
-
-| 排名 | 论文 | 年份 / 期刊 | 被引 |
-|---|---|---:|---:|
-| 1 | [Further development and validation of empirical scoring functions for structure-based binding affinity prediction](https://doi.org/10.1023/A:1016357811882) | 2002, *J. Computer-Aided Molecular Design* | 1,083 |
-| 2 | [Therapeutic Targeting of BET Bromodomain Proteins in Castration-Resistant Prostate Cancer](https://doi.org/10.1038/nature13229) | 2014, *Nature* | 897 |
-| 3 | [Temporal activation of p53 by a specific MDM2 inhibitor is selectively toxic to tumors…](https://doi.org/10.1073/pnas.0708917105) | 2008, *PNAS* | 652 |
-| 4 | [Endocrine-therapy-resistant ESR1 variants revealed by genomic characterization of breast-cancer-derived xenografts](https://doi.org/10.1016/j.celrep.2013.08.022) | 2013, *Cell Reports* | 625 |
-| 5 | [Structure-based design of potent non-peptide MDM2 inhibitors](https://doi.org/10.1021/ja051147z) | 2005, *JACS* | 615 |
-| 6 | [Small-Molecule Inhibitors of the MDM2-p53 Protein-Protein Interaction…](https://doi.org/10.1146/annurev.pharmtox.48.113006.094723) | 2009, *Annual Review of Pharmacology and Toxicology* | 600 |
-| 7 | [A Potent and Selective Small-molecule Degrader of STAT3 Achieves Complete Tumor Regression in vivo](https://doi.org/10.1016/j.ccell.2019.10.002) | 2019, *Cancer Cell* | 527 |
-| 8 | [Development and optimization of a binding assay for the XIAP BIR3 domain](https://doi.org/10.1016/j.ab.2004.05.055) | 2004, *Analytical Biochemistry* | 525 |
-| 9 | [Targeting the MDM2-p53 Interaction for Cancer Therapy](https://doi.org/10.1158/1078-0432.CCR-07-5136) | 2008, *Clinical Cancer Research* | 353 |
-| 10 | [Discovery of embelin as a cell-permeable… inhibitor of XIAP](https://doi.org/10.1021/jm030420+) | 2004, *Journal of Medicinal Chemistry* | 350 |
-| 11 | [Discovery of ARD-69… PROTAC Degrader of Androgen Receptor](https://doi.org/10.1021/acs.jmedchem.8b01631) | 2019, *Journal of Medicinal Chemistry* | 308 |
-| 12 | [Discovery of a Small-Molecule Degrader of BET Proteins…](https://doi.org/10.1021/acs.jmedchem.6b01816) | 2017, *Journal of Medicinal Chemistry* | 301 |
-| 13 | [Structure-based design of potent small-molecule inhibitors of anti-apoptotic Bcl-2 proteins](https://doi.org/10.1021/jm060460o) | 2006, *Journal of Medicinal Chemistry* | 285 |
-| 14 | [Targeting MLL1 H3K4 methyltransferase activity in MLL leukemia](https://doi.org/10.1016/j.molcel.2013.12.001) | 2014, *Molecular Cell* | 279 |
-| 15 | [SAR405838: An optimized inhibitor of MDM2-p53 interaction…](https://doi.org/10.1158/0008-5472.CAN-14-0799) | 2014, *Cancer Research* | 264 |
-
-简要判断：他的高影响力工作集中在三条主线——MDM2–p53、凋亡通路（BCL-2/IAP）和 PROTAC 蛋白降解。其中第 2、3、5、6、7、9、13、15 篇最能体现其在肿瘤小分子药物发现与转化上的核心学术影响；PROTAC 方向中，2019 年的 STAT3 降解剂论文是最突出的代表作。
+2、克服G101V获得性耐药突变，该突变在30-50%的venetoclax进展患者中出现 

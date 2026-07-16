@@ -91,6 +91,260 @@ LastUpdate: 2026-07-14 20:36:51
 
 
 
+## 2. APG-2575中国临床数据深度分析
+
+| #     | 试验代号            | 适应症                          | 试验阶段          | 数据状态                 | 读出/预计读出时间       | 备注                              |
+| ----- | ------------------- | ------------------------------- | ----------------- | ------------------------ | ----------------------- | --------------------------------- |
+| **1** | APG2575CC201        | R/R CLL/SLL（单药）             | 注册 II 期        | ✅ **已读出**（支撑 NDA） | 2024-2025 年            | 2025.7.10 获批上市的依据          |
+| **2** | GLORA-4（中国部分） | 新诊断中高危 MDS（联合 AZA）    | 注册 III 期       | 🔄 进行中                 | **2026 年**读出关键数据 | 2024.8 CDE 批准，全球 III 期      |
+| **3** | —                   | CLL/SLL 1.5L（联合 BTKi）       | 国内桥接/拓展研究 | 🔄 进行中                 | **2026-2027 年**        | 对应全球 GLORA 系列，国内同步推进 |
+| **4** | —                   | R/R 多发性骨髓瘤 MM（联合方案） | II 期             | 🔄 进行中                 | **2026-2027 年**        | 早期数据已在 ASH/EHA 展示         |
+| **5** | —                   | 华氏巨球蛋白血症 WM             | II 期             | 🔄 进行中                 | **2026-2027 年**        | 尚未有中国数据正式读出            |
+| **6** | —                   | 急性髓系白血病 AML（联合方案）  | II 期             | 🔄 进行中                 | **2027 年及以后**       | 早期概念验证数据已在国际会议展示  |
+| **7** | —                   | NHL（非霍奇金淋巴瘤）亚型       | I/II 期           | 🔄 进行中                 | **2027 年及以后**       | 探索性适应症                      |
+| **8** | GLORA（中国部分）   | 一线 CLL/SLL（联合方案）        | 注册 III 期       | 🔄 入组中                 | **2027 年**提交 NDA     | 全球同步，中国为 MRCT 一部分      |
+
+**GLORA-4（MDS）** 是最接近数据读出的下一个国内注册试验，2026 年读出后将有望成为利生妥第二个获批适应症
+
+ APG-2575 在 CLL/SLL 中的中国桥接/联合研究
+
+- **数据读出**：2025 ASH、2026 ASCO、2026 EHA 均有数据公布
+- **状态**：利生妥已获批，但拓展适应症（如联合 BTK 抑制剂、1.5L 等）的中国试验数据仍在陆续读出
+
+
+
+### 2.1 CLL/SLL临床数据
+
+#### 2.1.1 单药治疗R/R CLL：两项试验汇总数据
+
+APG-2575在复发/难治性慢性淋巴细胞白血病/小淋巴细胞淋巴瘤（Relapsed/Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma, R/R CLL/SLL）患者中的单药疗效数据来源于两项Ib/II期研究（NCT03913949和NCT04494503）的汇总分析。截至2023年4月27日，共入组47例CLL患者，其中45例疗效可评估。患者基线特征显示该群体预后风险较高：44.7%的患者接受过≥3线既往治疗，66%接受过≥2线治疗，23.4%既往接受过BTK抑制剂（Bruton's Tyrosine Kinase Inhibitor, BTKi）治疗，55.3%接受过CD20单抗治疗。
+
+在疗效层面，45例可评估患者的客观缓解率（Objective Response Rate, ORR）达73.3%（33/45），完全缓解/完全缓解伴血细胞未完全恢复（Complete Response/Complete Response with Incomplete Count Recovery, CR/CRi）率为24.4%（11/45），且CR/CRi率随剂量增加呈上升趋势。外周血微小残留病（Measurable Residual Disease, MRD）阴性率为38.9%（7/18），骨髓MRD阴性率为66.7%（4/6）。生存数据方面，中位无进展生存期（Progression-Free Survival, PFS）为18.53个月，12个月和24个月PFS率分别为58.0%和39.4%；12个月和30个月总生存期（Overall Survival, OS）率分别为94.8%和86.3%。首次缓解的中位时间为2.07个月，表明APG-2575起效迅速。上述数据构成了2025年7月NMPA附条件批准的核心依据。
+
+与国际数据进行对标，APG-2575单药R/R CLL的ORR 73.3%略低于venetoclax在MURANO试验中的79%，但CR/CRi率24.4%与venetoclax首次人体试验数据（20%）相当。考虑到APG-2575汇总分析中患者既往治疗线数更多、高危遗传学比例更高，该疗效数据具有临床竞争力。
+
+#### 2.1.2 联合acalabrutinib治疗R/R CLL
+
+R/R CCL 复发/难治性慢性淋巴细胞白血病
+
+APG-2575联合acalabrutinib（选择性BTKi）在R/R CLL中展现了深度且持久的缓解。ASH 2022首次披露的数据显示，截至2022年7月4日，联合组54例疗效可评估患者的ORR达98%（53/54），其中R/R人群ORR为98%（56/57）。ASH 2024更新的长期随访数据（截至2024年6月27日，中位随访22.3个月）在87例可评估患者中确认ORR为96.6%（84/87），中位缓解持续时间（Duration of Response, DOR）和中位PFS均未达到，12个月和18个月PFS率分别为89%和86%。
+
+对于BTKi耐药这一临床难题，联合方案同样显示了令人振奋的活性。在ASH 2022数据中，既往BTKi难治或不耐受患者的ORR达88%（7/8）。更值得关注的是，在联合acalabrutinib组中，14例经venetoclax治疗后复发/难治或不耐受的患者ORR为86%，其中9例venetoclax难治患者的ORR为89%，12个月和18个月PFS率均为89%。对于既往venetoclax+BTKi双重经治的6例患者，ORR为66.7%；而对于venetoclax经治但未接受BTKi的8例患者，ORR达100%。这些数据首次在临床层面证明了Bcl-2抑制剂之间可克服交叉耐药，为APG-2575在venetoclax治疗失败后的临床定位提供了直接证据。
+
+#### 2.1.3 联合rituximab治疗R/R CLL
+
+在ASH 2022和ASH 2024更新的数据中，联合利妥昔单抗（Rituximab,抗CD20单抗）组39例患者的ORR维持在87%左右（23例缓解）。利妥昔单抗在方案中使用6个周期，联合治疗的安全性与单药相当。虽然该方案的缓解深度不及联合acalabrutinib，但在无法使用BTKi的患者群体（如合并房颤或出血高风险）中提供了重要的治疗选择。
+
+#### 2.1.4 一线治疗CLL
+
+在16例初治（Treatment-Naive, TN）CLL/SLL患者中，APG-2575联合acalabrutinib治疗的ORR达100%（16/16），1.5年PFS率为86%。尽管样本量较小（n=16），但该数据与venetoclax联合方案在一线CLL中的历史数据方向一致。**基于该数据，亚盛医药与阿斯利康合作开展了APG-2575联合acalabrutinib一线治疗初治CLL/SLL的全球注册III期临床研究GLORA-2（NCT06319456），该研究于2023年10月获CDE许可。**
+
+#### 2.1.5 关键亚组分析
+
+在176例入组患者的整体分析中，25.6%伴有del(17p)和/或TP53突变，70.6%伴有IGHV未突变（Unmutated IGHV, U-IGHV）。在联合治疗组（n=95）中，TP53突变或del(17p)占41%，del(11q)占28%，IGHV未突变占38%。这些高危遗传学特征的分布比例与中国CLL患者流行病学一致，表明数据对中国人群具有代表性。
+
+
+
+**表1 APG-2575在CLL/SLL各治疗方案中的疗效对比**
+
+| 治疗方案          | 患者人群 | 可评估n | ORR   | CR/CRi | 中位PFS   | 关键生存终点    | 数据来源      |
+| :---------------- | :------- | :------ | :---- | :----- | :-------- | :-------------- | :------------ |
+| 单药              | R/R CLL  | 45      | 73.3% | 24.4%  | 18.53个月 | 30月OS率86.3%   | ASH 2023汇总  |
+| 联合acalabrutinib | R/R CLL  | 87      | 96.6% | 待报告 | 未达到    | 18月PFS率86%    | ASH 2024更新  |
+| 联合acalabrutinib | BTKi耐药 | 15      | 88%   | 待报告 | 待报告    | 待报告          | ASH 2022      |
+| 联合acalabrutinib | Ven经治  | 14      | 86%   | 待报告 | 未达到    | 12/18月PFS率89% | ASH 2024      |
+| 联合rituximab     | R/R CLL  | 39      | 87%   | 待报告 | 待报告    | 待报告          | ASH 2022/2024 |
+| 联合acalabrutinib | 初治CLL  | 16      | 100%  | 待报告 | 未达到    | 1.5年PFS率86%   | ASH 2022      |
+
+上表汇总了APG-2575在CLL/SLL领域六种临床场景下的疗效数据。从单药到联合治疗，ORR呈现明显的梯度提升：单药73.3% → 联合rituximab 87% → 联合acalabrutinib 96.6-100%，这一模式与venetoclax的临床开发轨迹高度一致。联合acalabrutinib在R/R CLL中实现的96.6% ORR和18个月PFS率86%，与venetoclax联合acalabrutinib在CAPTIVATE试验中报告的约95% ORR处于同一水平。特别值得注意的是，venetoclax经治患者86%的ORR为APG-2575提供了独特的差异化定位——这是venetoclax自身无法覆盖的治疗场景。然而，初治CLL 100% ORR的数据仅基于16例患者，样本量过小限制了其统计学可靠性，需等待GLORA-2 III期试验的验证。
+
+### 2.2 AML临床数据
+
+#### 2.2.1 联合AZA治疗TN AML
+
+APG-2575联合阿扎胞苷（Azacitidine, AZA）在新诊断不适合标准化疗的急性髓系白血病（Acute Myeloid Leukemia, AML）患者中显示了有临床意义的活性。ASCO 2024报告的数据（Abstract #6541）显示，截至2024年1月25日，39例TN AML患者的ORR为64.1%，CRc（CR+CRi+CR with incomplete platelet recovery, CRp）为51.3%，中位至CR时间为1.9个月。在600mg推荐II期剂量（Recommended Phase 2 Dose, RP2D）亚组（n=29）中，中位PFS和OS均未达到。
+
+与venetoclax联合AZA的VIALE-A III期试验进行间接对比：VIALE-A中venetoclax+AZA组TN AML的CR/CRi率为66.4%（vs APG-2575 CRc 51.3%），中位OS为14.7个月。需注意的是，APG-2575试验中位年龄为66岁，而VIALE-A中位年龄为76岁，人群fitness程度的差异可能影响疗效对比的公正性。APG-2575 600mg组中位PFS和OS均未达到，提示该亚组可能存在更长的生存获益，但随访时间有限，该数据尚不成熟。
+
+#### 2.2.2 联合AZA治疗R/R AML
+
+在37例R/R AML患者中，APG-2575联合AZA的ORR为72.7%，CRc为45.5%。在600mg组（n=30）中，ORR提升至76.7%，CRc为50.0%，中位PFS为10.2个月，中位OS为14.7个月，中位至CR时间为2.5个月。R/R AML中72.7%的ORR和14.7个月的中位OS具有临床竞争力——作为参照，venetoclax未在III期随机试验中评估R/R AML，真实世界中R/R AML患者的中位OS通常不足6个月。
+
+ASH 2025和ASCO 2025的全球多中心扩展数据（n=103）进一步提供了venetoclax耐药患者的数据：在24例可评估的venetoclax耐药AML/混合表型急性白血病（Mixed Phenotype Acute Leukemia, MPAL）患者中，ORR为29.2%，CR率为20.8%。虽然该缓解率低于初治患者，但在venetoclax耐药这一高度难治的人群中仍具临床意义。值得关注的是，在venetoclax耐药的HR-MDS患者中，4例可评估患者的ORR达50%。
+
+**表2 APG-2575联合AZA在AML各人群中的疗效数据**
+
+| 患者人群         | 剂量      | n    | ORR    | CRc    | 中位PFS | 中位OS | 至CR时间 | 数据来源  |
+| :--------------- | :-------- | :--- | :----- | :----- | :------ | :----- | :------- | :-------- |
+| TN AML（全部）   | 400-800mg | 39   | 64.1%  | 51.3%  | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
+| TN AML（600mg）  | 600mg     | 29   | 待报告 | 待报告 | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
+| R/R AML（全部）  | 400-800mg | 37   | 72.7%  | 45.5%  | 待报告  | 待报告 | 2.5月    | ASCO 2024 |
+| R/R AML（600mg） | 600mg     | 30   | 76.7%  | 50.0%  | 10.2月  | 14.7月 | 2.5月    | ASCO 2024 |
+| Ven耐药AML/MPAL  | 28/14天   | 24   | 29.2%  | 20.8%  | 待报告  | 待报告 | 待报告   | ASH 2025  |
+
+上表系统呈现了APG-2575联合AZA在AML中的剂量-效应关系和人群差异。两个关键趋势值得关注：其一，600mg RP2D组在TN和R/R AML中均显示出更优的缓解率和生存终点，支持该剂量作为未来III期试验的推荐剂量；其二，R/R AML的ORR（72.7%）反而略高于TN AML（64.1%），这一反直觉的现象可能源于R/R组中包含了更多对BCL-2抑制敏感的分子亚型（如IDH1/2突变），也可能受限于样本量导致的统计波动。venetoclax耐药患者29.2%的ORR虽不及初治患者，但为APG-2575在venetoclax失败后的后线定位提供了初步临床证据。
+
+#### 2.2.3 安全性差异化：TLS与早期死亡率
+
+APG-2575联合AZA在AML中的安全性特征展现出与venetoclax相比的差异化优势。在76例患者中，未报告任何肿瘤溶解综合征（Tumor Lysis Syndrome, TLS）事件，30天死亡率仅1.3%，60天死亡率为3.9%。作为对比，VIALE-A试验中venetoclax+AZA的30天死亡率约为7%，真实世界中venetoclax-based方案的60天死亡率约为10-12%。
+
+在血液学毒性方面，APG-2575联合AZA的≥3级中性粒细胞减少发生率为57.9%，≥3级血小板减少为50.0%，≥3级贫血为27.6%。这些数值与VIALE-A中venetoclax+AZA的≥3级中性粒细胞减少42%和血小板减少45%基本处于同一区间。然而，APG-2575的发热性中性粒细胞减少率（10.5%）显著低于VIALE-A报告的42%，这一差异可能转化为更低的感染相关死亡率和更好的治疗持续性。
+
+### 2.3 MDS临床数据
+
+#### 2.3.1 联合AZA治疗HR-MDS
+
+在骨髓增生异常综合征（Myelodysplastic Syndromes, MDS）领域，APG-2575联合AZA的数据主要来自ASH 2024报告（Abstract #3202）。在23例初治高危MDS（High-Risk MDS, HR-MDS）患者中，按2006年国际工作组（International Working Group, IWG）标准评估的ORR为73.9%，CR率为30.4%。按2023年IWG标准，复合CR率（Composite CR, cCR）为69.6%，其中包括52.2%的CR和17.4%的CR伴有限血细胞恢复（CR with Limited Count Recovery）。中位至CR时间为2.8个月（范围1.1-8.7个月），中位PFS未达到（95%置信区间 7.1-未达到）。
+
+ASCO 2025口头报告进一步扩展了数据集：在15例可评估的新诊断MDS/慢性粒单核细胞白血病（Chronic Myelomonocytic Leukemia, CMML）患者中，ORR为80%，CR和骨髓CR（Marrow CR, mCR）率各为40%。在22例R/R MDS/CMML患者中，ORR为50%，CR率为27.3%。
+
+将上述数据与venetoclax联合AZA在MDS中的数据进行对比：VERONA III期试验中venetoclax+AZA的修正ORR（modified ORR, mORR）为76.2%（vs安慰剂+AZA 57.7%），CR率为29.9%。APG-2575的ORR 73.9%和CR 30.4%与venetoclax数值相近，但直接的跨试验比较需谨慎解读——两项试验的入组标准、患者基线和疗效评估标准存在差异。
+
+#### 2.3.2 安全性特征
+
+APG-2575联合AZA在MDS中的安全性特征显示出可控的毒性 profile。在49例入组患者中，最常见的≥3级血液学治疗相关不良事件（Treatment-Related Adverse Events, TRAEs）包括白细胞减少（71.4%）、中性粒细胞减少（65.3%）、血小板减少（61.2%）、贫血（20.4%）和发热性中性粒细胞减少（12.2%）。≥3级感染发生率为46.9%（治疗相关26.5%）。关键的安全性信号包括：TLS发生率为0%，60天死亡率为0%，因毒性不耐受出组患者为0例，因TRAE减量比例仅为6.1%。
+
+与之形成鲜明对比的是，VERONA试验中约50%的venetoclax+AZA患者需要剂量减少，约90%需要剂量中断，≥3级治疗期间出现的不良事件（Treatment-Emergent Adverse Events, TEAEs）发生率高达94%。APG-2575仅6.1%的减量率和0%的60天死亡率提示其可能具有更优的治疗窗口，尤其在MDS这一老年患者为主、骨髓储备差的适应症中，这一安全性优势可能具有转化临床价值。然而，需客观指出≥3级感染率46.9%仍然较高，提示感染风险仍是BCL-2抑制剂联合HMA方案在髓系肿瘤中的共性挑战。
+
+### 2.4 跨适应症数据一致性评估
+
+#### 2.4.1 疗效-安全性权衡矩阵
+
+为全面评估APG-2575在不同适应症中的临床价值，下表汇总了CLL/SLL、AML和MDS三个适应症的疗效和安全性核心指标，并与venetoclax国际数据进行跨试验对比。
+
+**表3 APG-2575跨适应症疗效-安全性矩阵及与Venetoclax对比**
+
+| 指标             | APG-2575单药CLL | APG-2575+Aza AML (TN) | APG-2575+Aza AML (R/R) | APG-2575+Aza MDS | Venetoclax对标数据 |
+| :--------------- | :-------------- | :-------------------- | :--------------------- | :--------------- | :----------------- |
+| 样本量           | 45例            | 39例                  | 37例                   | 23例(TN)         | 286-431例(III期)   |
+| ORR              | 73.3%           | 64.1%                 | 72.7%                  | 73.9%            | 66-79%             |
+| CR/CRc           | 24.4%           | 51.3%                 | 45.5%                  | 30.4%(CR)        | 20-66%             |
+| 中位PFS          | 18.53月         | 未达(600mg)           | 10.2月(600mg)          | 未达             | 9.8-34月           |
+| 中位OS           | 30月率86.3%     | 未达(600mg)           | 14.7月(600mg)          | 未达             | 14.7-26月          |
+| TLS              | ~1-2%           | 0%                    | 0%                     | 0%               | 1-3%               |
+| 30天死亡率       | 未报告          | 1.3%                  | 1.3%                   | 0%               | 7%                 |
+| ≥3级中性粒减少   | 26%             | 57.9%                 | 57.9%                  | 65.3%            | 42-48%             |
+| ≥3级血小板减少   | 5%              | 50.0%                 | 50.0%                  | 61.2%            | 45%                |
+| 发热性中性粒减少 | 罕见            | 10.5%                 | 10.5%                  | 12.2%            | 42%                |
+
+上表揭示了几个跨适应症的一致性模式和关键差异。在疗效层面，APG-2575在三个适应症中均保持了60-74%的ORR区间，展现出BCL-2抑制剂作为类效应（class effect）的广谱抗白血病活性。CR率在CLL单药（24.4%）、AML（45-51%）和MDS（30.4%）之间的梯度差异反映了不同疾病对BCL-2抑制的内在敏感性——AML原始细胞对BCL-2的依赖性最强，而CLL的缓解深度受限于单药治疗的耐药机制。
+
+安全性数据呈现出更为鲜明的差异化特征。TLS发生率在所有三个适应症中均为0-2%，显著优于venetoclax的1-3%历史数据，这一优势可归因于APG-2575短半衰期（3-5小时）的药代动力学（Pharmacokinetics, PK）特征，该特征限制了肿瘤细胞大规模同步凋亡所致的代谢产物急剧释放。30天死亡率在AML中仅1.3%（vs venetoclax 7%），MDS中0%（vs VERONA期1b数据3.7%），提示APG-2575的毒性 profile 可能更适合老年和体弱患者群体。然而，≥3级血液学毒性（中性粒细胞减少57.9%、血小板减少50.0%）在AML中与venetoclax水平相当甚至略高，表明BCL-2抑制剂联合HMA方案在髓系肿瘤中的骨髓抑制仍是共性瓶颈。
+
+#### 2.4.2 数据成熟度评估
+
+对APG-2575各适应症的数据成熟度进行分层评估，有助于识别哪些结论基于充分样本量和随访时间，哪些仍为早期信号。
+
+**高成熟度数据（CLL/SLL单药与联合方案）**：CLL/SLL是APG-2575数据最成熟的适应症。单药R/R CLL的45例患者数据来源于两项研究的汇总分析，经多源交叉验证（健康界、医药魔方、Insight数据库、凯石国际等来源数据完全一致），且已获得NMPA监管批准，证据等级最高。联合acalabrutinib的数据基于176例入组患者和22.3个月的中位随访，ORR 96.6%和18个月PFS率86%具有足够的统计稳定性。venetoclax经治患者86%的ORR虽然样本量仅14例，但9例venetoclax难治患者中ORR达89%，信号方向明确。
+
+**中等成熟度数据（AML）**：AML数据目前全部为Ib/II期单臂试验结果，最大样本量76例（ASCO 2024）至103例（ASH 2025全球扩展）。600mg RP2D的选择基于有限的患者数，中位PFS和OS"未达到"的声明反映了随访时间的限制而非疗效的确定性。TN AML CRc 51.3%与VIALE-A的66.4%之间存在约15个百分点的差距，部分可归因于样本量差异（39例 vs 286例）和人群fitness差异（中位年龄66岁 vs 76岁），但亦不能排除APG-2575在AML中的疗效略低于venetoclax的可能性。GLORA-3 III期随机对照试验（NCT06389292，计划入组486例）将提供决定性证据。
+
+**早期数据（MDS）**：MDS数据目前仅来自49例入组患者（41例TN，8例R/R），其中23例600mg TN队列构成了核心数据集。虽然ORR 73.9%和CR 30.4%的方向令人鼓舞，但样本量过小导致置信区间较宽，且随访时间有限。ASCO 2025的15例ND MDS/CMML数据（ORR 80%）进一步支持了疗效信号，但仍需大规模验证。VERONA试验的失败前车之鉴表明，BCL-2抑制剂在MDS中的III期成功并非必然——即使I/II期数据 promising，患者异质性、TP53突变耐药和过度骨髓抑制仍可能在III期试验中抵消生存获益。GLORA-4（NCT06641414）采用CR rate + OS双主要终点设计，计划入组464例，预计2029年完成。
+
+**关键数据缺口**：跨适应症分析揭示了以下数据缺口需持续关注：（1）长期生存数据（5年OS/PFS）在所有适应症中均未成熟；（2）分子亚组疗效数据（特别是IDH1/2、NPM1、TP53在AML中的响应关联性）尚处于探索阶段；（3）固定疗程（fixed-duration）治疗的持久缓解数据缺乏；（4）中国人群数据向国际人群的外推性需GLORA系列全球试验验证。这些数据缺口构成了APG-2575临床价值评估的核心不确定性来源，其填充电将直接影响该产品的监管审批轨迹和市场定位策略。
+
+
+
+
+
+# 临床
+
+主要临床：
+
+| 研究                       | 人群/设计                                                    | 结果摘要                                                     |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| NCT05147467 / APG2575CC201 | 中国注册 II 期，单药，R/R CLL/SLL，主要终点 ORR              | 77 例入组，72 例可评估；IRC 确认 ORR 62.5%，mPFS 23.89 个月；外周血 MRD 阴性 21.8%；未见 TLS 或治疗相关死亡 |
+| NCT03913949                | 中国 phase 1，R/R CLL/SLL 和 NHL                             | CLL/SLL ORR 71.4%、CR 28.6%；未达 MTD，未观察到 TLS          |
+| NCT04215809                | phase 1b/2，单药或联合 rituximab/acalabrutinib               | ORR：单药 67.4%，联合 rituximab 84.6%，联合 acalabrutinib 97.7%；176 例中 TLS 2.8%，无治疗相关停药或死亡 |
+| NCT06104566 / GLORA        | 全球 III 期，经治 CLL/SLL，lisaftoclax+BTKi vs BTKi          | 招募中，约 400 例，主要终点 PFS                              |
+| NCT06319456 / GLORA-2      | 初治 CLL/SLL，lisaftoclax+acalabrutinib vs 免疫化疗          | 招募中，约 344 例，主要终点 PFS                              |
+| NCT06389292 / GLORA-3      | 初治老年或不适合强诱导 AML，lisaftoclax+azacitidine vs placebo+azacitidine | 招募中，约 486 例，主要终点 OS                               |
+| NCT06641414 / GLORA-4      | 初治高危 MDS，lisaftoclax+azacitidine vs placebo+azacitidine | 招募中，约 490 例，主要终点 OS；公司称 FDA/EMA/CDE 均已放行  |
+
+**表1 APG-2575在CLL/SLL各治疗方案中的疗效对比**
+
+| 治疗方案          | 患者人群 | 可评估n | ORR   | CR/CRi | 中位PFS   | 关键生存终点    | 数据来源      |
+| :---------------- | :------- | :------ | :---- | :----- | :-------- | :-------------- | :------------ |
+| 单药              | R/R CLL  | 45      | 73.3% | 24.4%  | 18.53个月 | 30月OS率86.3%   | ASH 2023汇总  |
+| 联合acalabrutinib | R/R CLL  | 87      | 96.6% | 待报告 | 未达到    | 18月PFS率86%    | ASH 2024更新  |
+| 联合acalabrutinib | BTKi耐药 | 15      | 88%   | 待报告 | 待报告    | 待报告          | ASH 2022      |
+| 联合acalabrutinib | Ven经治  | 14      | 86%   | 待报告 | 未达到    | 12/18月PFS率89% | ASH 2024      |
+| 联合rituximab     | R/R CLL  | 39      | 87%   | 待报告 | 待报告    | 待报告          | ASH 2022/2024 |
+| 联合acalabrutinib | 初治CLL  | 16      | 100%  | 待报告 | 未达到    | 1.5年PFS率86%   | ASH 2022      |
+
+**表2 APG-2575联合AZA在AML各人群中的疗效数据**
+
+| 患者人群         | 剂量      | n    | ORR    | CRc    | 中位PFS | 中位OS | 至CR时间 | 数据来源  |
+| :--------------- | :-------- | :--- | :----- | :----- | :------ | :----- | :------- | :-------- |
+| TN AML（全部）   | 400-800mg | 39   | 64.1%  | 51.3%  | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
+| TN AML（600mg）  | 600mg     | 29   | 待报告 | 待报告 | 未达到  | 未达到 | 1.9月    | ASCO 2024 |
+| R/R AML（全部）  | 400-800mg | 37   | 72.7%  | 45.5%  | 待报告  | 待报告 | 2.5月    | ASCO 2024 |
+| R/R AML（600mg） | 600mg     | 30   | 76.7%  | 50.0%  | 10.2月  | 14.7月 | 2.5月    | ASCO 2024 |
+| Ven耐药AML/MPAL  | 28/14天   | 24   | 29.2%  | 20.8%  | 待报告  | 待报告 | 待报告   | ASH 2025  |
+
+| #     | 试验代号            | 适应症                          | 试验阶段          | 数据状态                 | 读出/预计读出时间       | 备注                              |
+| ----- | ------------------- | ------------------------------- | ----------------- | ------------------------ | ----------------------- | --------------------------------- |
+| **1** | APG2575CC201        | R/R CLL/SLL（单药）             | 注册 II 期        | ✅ **已读出**（支撑 NDA） | 2024-2025 年            | 2025.7.10 获批上市的依据          |
+| **2** | GLORA-4（中国部分） | 新诊断中高危 MDS（联合 AZA）    | 注册 III 期       | 🔄 进行中                 | **2026 年**读出关键数据 | 2024.8 CDE 批准，全球 III 期      |
+| **3** | —                   | CLL/SLL 1.5L（联合 BTKi）       | 国内桥接/拓展研究 | 🔄 进行中                 | **2026-2027 年**        | 对应全球 GLORA 系列，国内同步推进 |
+| **4** | —                   | R/R 多发性骨髓瘤 MM（联合方案） | II 期             | 🔄 进行中                 | **2026-2027 年**        | 早期数据已在 ASH/EHA 展示         |
+| **5** | —                   | 华氏巨球蛋白血症 WM             | II 期             | 🔄 进行中                 | **2026-2027 年**        | 尚未有中国数据正式读出            |
+| **6** | —                   | 急性髓系白血病 AML（联合方案）  | II 期             | 🔄 进行中                 | **2027 年及以后**       | 早期概念验证数据已在国际会议展示  |
+| **7** | —                   | NHL（非霍奇金淋巴瘤）亚型       | I/II 期           | 🔄 进行中                 | **2027 年及以后**       | 探索性适应症                      |
+| **8** | GLORA（中国部分）   | 一线 CLL/SLL（联合方案）        | 注册 III 期       | 🔄 入组中                 | **2027 年**提交 NDA     | 全球同步，中国为 MRCT 一部分      |
+
+G2数据来源：在16例初治（Treatment-Naive, TN）CLL/SLL患者中，APG-2575联合acalabrutinib治疗的ORR达100%（16/16），1.5年PFS率为86%。尽管样本量较小（n=16），但该数据与venetoclax联合方案在一线CLL中的历史数据方向一致
+
+
+
+**MDS**领域，APG-2575联合AZA的数据主要来自ASH 2024报告（Abstract #3202）。在23例初治高危MDS（HR-MDS）患者中，按2006年国际工作组标准评估的ORR为73.9%，CR率为30.4%。按2023年IWG标准，复合CR率为69.6%，其中包括52.2%的CR和17.4%的CR伴有限血细胞恢复。中位至CR时间为2.8个月（范围1.1-8.7个月），中位PFS未达到（95%置信区间 7.1-未达到）。
+
+ASCO 2025口头报告进一步扩展了数据集：在15例可评估的新诊断MDS/慢性粒单核细胞白血病（CMML）患者中，ORR为80%，CR和骨髓CR率各为40%。在22例R/R MDS/CMML患者中，ORR为50%，CR率为27.3%。
+
+将上述数据与venetoclax联合AZA在MDS中的数据进行对比：VERONA III期试验中venetoclax+AZA的修正ORR（modified ORR, mORR）为76.2%（vs安慰剂+AZA 57.7%），CR率为29.9%。APG-2575的ORR 73.9%和CR 30.4%与venetoclax数值相近，但直接的跨试验比较需谨慎解读——两项试验的入组标准、患者基线和疗效评估标准存在差异。
+
+
+
+**表3 APG-2575跨适应症疗效-安全性矩阵及与Venetoclax对比**
+
+| 指标             | APG-2575单药CLL | APG-2575+Aza AML (TN) | APG-2575+Aza AML (R/R) | APG-2575+Aza MDS | Venetoclax对标数据 |
+| :--------------- | :-------------- | :-------------------- | :--------------------- | :--------------- | :----------------- |
+| 样本量           | 45例            | 39例                  | 37例                   | 23例(TN)         | 286-431例(III期)   |
+| ORR              | 73.3%           | 64.1%                 | 72.7%                  | 73.9%            | 66-79%             |
+| CR/CRc           | 24.4%           | 51.3%                 | 45.5%                  | 30.4%(CR)        | 20-66%             |
+| 中位PFS          | 18.53月         | 未达(600mg)           | 10.2月(600mg)          | 未达             | 9.8-34月           |
+| 中位OS           | 30月率86.3%     | 未达(600mg)           | 14.7月(600mg)          | 未达             | 14.7-26月          |
+| TLS              | ~1-2%           | 0%                    | 0%                     | 0%               | 1-3%               |
+| 30天死亡率       | 未报告          | 1.3%                  | 1.3%                   | 0%               | 7%                 |
+| ≥3级中性粒减少   | 26%             | 57.9%                 | 57.9%                  | 65.3%            | 42-48%             |
+| ≥3级血小板减少   | 5%              | 50.0%                 | 50.0%                  | 61.2%            | 45%                |
+| 发热性中性粒减少 | 罕见            | 10.5%                 | 10.5%                  | 12.2%            | 42%                |
+
+**高成熟度数据（CLL/SLL单药与联合方案）**：CLL/SLL是APG-2575数据最成熟的适应症。单药R/R CLL的45例患者数据来源于两项研究的汇总分析，经多源交叉验证（健康界、医药魔方、Insight数据库、凯石国际等来源数据完全一致），且已获得NMPA监管批准，证据等级最高。联合acalabrutinib的数据基于176例入组患者和22.3个月的中位随访，ORR 96.6%和18个月PFS率86%具有足够的统计稳定性。venetoclax经治患者86%的ORR虽然样本量仅14例，但9例venetoclax难治患者中ORR达89%，信号方向明确。
+
+**中等成熟度数据（AML）**：AML数据目前全部为Ib/II期单臂试验结果，最大样本量76例（ASCO 2024）至103例（ASH 2025全球扩展）。600mg RP2D的选择基于有限的患者数，中位PFS和OS"未达到"的声明反映了随访时间的限制而非疗效的确定性。TN AML CRc 51.3%与VIALE-A的66.4%之间存在约15个百分点的差距，部分可归因于样本量差异（39例 vs 286例）和人群fitness差异（中位年龄66岁 vs 76岁），但亦不能排除APG-2575在AML中的疗效略低于venetoclax的可能性。GLORA-3 III期随机对照试验（NCT06389292，计划入组486例）将提供决定性证据。
+
+**早期数据（MDS）**：MDS数据目前仅来自49例入组患者（41例TN，8例R/R），其中23例600mg TN队列构成了核心数据集。虽然ORR 73.9%和CR 30.4%的方向令人鼓舞，但样本量过小导致置信区间较宽，且随访时间有限。ASCO 2025的15例ND MDS/CMML数据（ORR 80%）进一步支持了疗效信号，但仍需大规模验证。VERONA试验的失败前车之鉴表明，BCL-2抑制剂在MDS中的III期成功并非必然——即使I/II期数据 promising，患者异质性、TP53突变耐药和过度骨髓抑制仍可能在III期试验中抵消生存获益。GLORA-4（NCT06641414）采用CR rate + OS双主要终点设计，计划入组464例，预计2029年完成。
+
+早期
+
+
+
+Ⅱ期
+
+-  全球多中心 Ib/II 期——联合阿扎胞苷治疗AML
+-  全球多中心 Ib/II 期——治疗华氏巨球蛋白血症（WM）
+-  中国关键注册 II 期——R/R CLL/SLL（NCT05147467）
+
+Ⅲ期（全球）
+
+- GLORA：R/R CLL/SLL（BTKi 后）	
+- GLORA-2：新诊断 CLL/SLL	
+- GLORA-3：新诊断老年/不适合强化疗 AML	
+- GLORA-4：新诊断高危 MDS
+
+
+
 
 
 
@@ -945,6 +1199,66 @@ Sonro + Obinutuzumab 组 C15 uMRD4 率 87%；三联组 100% 达 uMRD4、80% 达 
 | 24个月PFS率 (R/R CLL) | **94.5%** |
 | R/R MCL ORR (n=103) | **52.4%**, CR **15.5%** |
 | 获批 | 2026年1月中国(CLL/MCL)；2026年5月FDA(MCL) |
+
+
+
+# 名词含义
+
+## 疾病相关：
+
+- CLL：Chronic Lymphocytic Leukemia，慢性淋巴细胞白血病，成熟 B 淋巴细胞在**血液和骨髓**里异常增殖，发病慢，难根治
+- SLL：Small Lymphocytic Lymphoma，小淋巴细胞淋巴瘤，本质和 CLL 是同一种病，只是肿瘤主要在**淋巴结/脾脏**里，没怎么进血液
+- AML：Acute Myeloid Leukemia，急性髓系白血病，骨髓里髓系原始细胞恶性增殖，抑制正常造血，起病急、进展快。 V 药+Aza 已经获批的适应症，但高危/老年人群仍有大量未满足需求
+- MDS：Myelodysplastic Syndromes，骨髓增生异常综合征。骨髓「生产」血细胞的功能紊乱，表现为贫血、白细胞低、血小板低，约 30% 会进展成 AML。核心是**骨髓衰竭 + 向白血病转化风险**
+- HR-MDS：Higher-Risk MDS，高危 MDS
+- R/R MCL：Relapsed/Refractory Mantle Cell Lymphoma，复发难治套细胞淋巴瘤，MCL 是一种特殊类型的 B 细胞非霍奇金淋巴瘤，R/R 就是**复发或既往治疗无效**
+- MM：Multiple Myeloma，多发性骨髓瘤，浆细胞在骨髓里异常增殖，分泌异常免疫球蛋白，典型表现是「CRAB」——高钙血症、肾功能损害、贫血、骨破坏
+- Ph+ ALL：
+- DDI：药物相互作用，有DDI联用会受限
+
+
+
+
+
+## 临床相关：
+
+- ORR ：Overall Response Rate，总体应答率，治疗后肿瘤缩小达到预定标准（CR+PR）的患者比例。ORR=CR（完全缓解）+PR（部分缓解，肿瘤缩小＞30%）
+- TLS：Tumor Lysis Syndrome，肿瘤溶解综合征。大量肿瘤细胞被药物快速杀死后，细胞内容物（钾、磷、尿酸）一股脑泄进血液，导致**高尿酸、高钾、高磷、低钙**，严重时会肾衰竭、心律失常甚至猝死
+- MRD：Minimal Residual Disease，微小残留病灶，MRD 阴性 表示体内查不到残留，复发风险显著降低，是现在 CLL/AML 审评的重要替代终点
+- MTD：Maximum Tolerated Dose，最大耐受剂量
+- DLT：Dose-Limiting Toxicity，剂量限制性毒性
+
+
+
+## 其他：
+
+- BTK/BTKi：Bruton's Tyrosine Kinase / BTK inhibitor，**BTK** 是 B 细胞受体信号通路里的关键酶，管 B 细胞存活增殖，**BTKi** 就是抑制它的药，代表是伊布替尼、阿卡替尼、泽布替尼
+
+
+
+
+
+# 专家
+
+|                                   | 国内/海外     | 机构/角色                                                  | 代表文章/摘要链接                                            |
+| --------------------------------- | ------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| Matthew S. Davids                 | 海外          | Dana-Farber；CLL/SLL核心KOL                                | [Med 2025：CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[Clin Cancer Res 2023：FIH，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/) |
+| Asher Chanan-Khan                 | 海外          | Mayo Clinic；FIH和CLL研究核心作者                          | [FIH开放标签研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/) |
+| Sikander Ailawadhi                | 海外          | Mayo Clinic；FIH、MM/AL联合方案                            | [FIH第一作者，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[ASH/SOHO MM/AL摘要页](https://ascentage.com/document/mm-718-lisaftoclax-apg-2575-combined-with-novel-therapeutic-regimens-in-patients-with-relapsed-or-refractory-r-r-multiple-myeloma-mm-or-immunoglobulin-light-chain-al-amyloidosis/) |
+| Patricia Kropf                    | 海外          | Novant Health；AML/MDS + AZA研究                           | [ASCO 2025：venetoclax难治AML/MDS口头报告，公司公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Michael Francis Leahy             | 海外          | Royal Perth Hospital；AML/MDS研究                          | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Shaun Fleming                     | 海外          | The Alfred Hospital / Australian Centre for Blood Diseases | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Aneel Paulus                      | 海外          | Mayo Clinic；机制/早期临床                                 | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
+| Anthony Letai / John Ryan         | 海外          | Dana-Farber相关BCL-2凋亡研究圈                             | [前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
+| 李建勇                            | 国内          | 江苏省人民医院；中国注册性CLL/SLL研究PI之一                | 暂未看到其作为作者的APG-2575论文链接；代表公开出处为[NMPA批准公告/注册研究说明](https://ascentage.com/ascentage-pharma-announces-its-novel-bcl-2-inhibitor-lisaftoclax-approved-by-china-nmpa-ushering-in-a-new-era-for-the-treatment-of-cll-sll/) |
+| 王建祥                            | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 孙敏                              | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1第一作者，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 周可树                            | 国内          | 河南省肿瘤医院/郑大附属肿瘤医院                            | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 孟珊                              | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
+| 顾柳芳                            | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
+| 赵华                              | 国内          | 转化/肿瘤免疫机制研究                                      | [APG-2575重塑TAM并增强抗PD-1反应，PMID 38062129](https://pubmed.ncbi.nlm.nih.gov/38062129/) |
+| 邓健 / Fang DD / 唐强等           | 国内/公司研发 | 亚盛相关前临床与组合机制研究                               | [APG-2575血液瘤前临床，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/)；[与alrizomadlin克服venetoclax耐药，PMID 36240005](https://pubmed.ncbi.nlm.nih.gov/36240005/)；[与olverembatinib在FLT3-ITD AML模型协同，PMID 34710737](https://pubmed.ncbi.nlm.nih.gov/34710737/) |
+| 翟一帆 / 杨大俊 / 陈子 / 王恒邦等 | 国内/公司研发 | 亚盛医学与研发核心作者                                     | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[中国NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
 
 
 

@@ -605,6 +605,20 @@ PI3K 抑制剂(idelalisib、duvelisib)：因毒性问题基本退出一线/二�
 | 经治/BTKi 失败(利沙托克拉首发人群) | 相当规模、持续累积                        | 相对有限                     |
 | 高危 MDS / AML / MM 等扩展         | 显著增量(尤其 MDS/AML 在中美均为较大病种) | 较大增量                     |
 
+### 4.2.2 联合策略矩阵：多通路阻断的系统性抗耐药
+
+APG-2575的抗耐药开发策略核心在于联合用药矩阵，通过同时打击多条耐药通路降低单一逃逸机制的概率。这一策略的基石是亚盛医药内部的管线协同优势。
+
+**+MDM2抑制剂（APG-115/alrizomadlin）：** 这是APG-2575抗耐药证据最充分的组合。Zhai等在*Clinical Cancer Research*发表的研究显示，APG-2575联合APG-115在venetoclax耐药的AML和急性淋巴细胞白血病（acute lymphoblastic leukemia, ALL）细胞系、CDX（cell line-derived xenograft）和PDX（patient-derived xenograft）模型中均显示出协同抗增殖和促凋亡活性。该组合的独特价值在于能够克服由慢性药物暴露或基因工程BCL-2突变建立的venetoclax耐药模型——APG-115通过激活p53下调MCL-1和BCL-xL（BCL-extra-large）、上调BAX（BCL-2-associated X protein），从多维度重新致敏耐药细胞。2025年ASCO（American Society of Clinical Oncology）口头报告首次提供了BCL-2抑制剂克服venetoclax耐药的临床证据：在28例venetoclax难治的R/R AML/MPAL（mixed phenotype acute leukemia）患者中，APG-2575+AZA（azacitidine，阿扎胞苷）方案在22例可评估患者中达到ORR（overall response rate）31.8%，包括CR/CRi（complete remission/incomplete hematologic recovery）22.8%、PR（partial response）4.6%、MLFS（morphologic leukemia-free state）4.6%。所有应答者均曾接受含venetoclax的多线治疗，71%携带TP53突变和复杂核型。
+
+**+BTK抑制剂：** BTKi可通过打断TLR9诱导的CD40上调来降低MCL-1和BCL-XL表达，同时mobilize CLL细胞从保护性LN微环境至外周血。Ibrutinib单药治疗两个周期即可使CLL细胞中BCL-2、BCL-XL、MCL-1和Bfl-1蛋白表达下降，并显著减弱CD40诱导的venetoclax耐药。APG-2575+acalabrutinib（阿可替尼）的II期临床中未观察到药物间相互作用，支持该联合方案的安全性。
+
+**+FLT3抑制剂：** 在FLT3-ITD突变AML中，APG-2575联合olverembatinib（HQP1351）通过下调MCL-1实现协同杀伤，在PDX模型中完全清除骨髓微环境中的白血病细胞（<1% hCD45+/hCD33+），克服venetoclax耐药。
+
+
+
+
+
 
 
 ## 近期关注
