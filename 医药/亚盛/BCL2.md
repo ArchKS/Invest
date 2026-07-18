@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-18 14:21:09
-LastUpdate: 2026-07-18 14:21:09
+LastUpdate: 2026-07-18 14:33:08
 ---
 
 ![image-20260718131926942](img/image-20260718131926942.png)
@@ -40,6 +40,14 @@ BCL-2抑制剂 | 蜕变之旅：https://www.bilibili.com/video/BV1aMgWzhEUU/
 
 
 ![](img/bb84dba62d4e93d5452729380c7e4740.gif)
+
+
+
+![image-20260718142720864](img/image-20260718142720864.png)
+
+https://www.rcsb.org/structure/8HOG
+
+
 
 
 
