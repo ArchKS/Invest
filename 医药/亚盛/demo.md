@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-18 14:21:09
-LastUpdate: 2026-07-18 14:21:09
+LastUpdate: 2026-07-20 22:27:03
 ---
 
 # 髓系和淋系血液瘤的区别是什么
@@ -122,7 +122,167 @@ LastUpdate: 2026-07-18 14:21:09
 
 
 ```
+<svg viewBox="0 0 680 620" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .t { font-family: var(--font-sans, sans-serif); font-size: 14px; fill: var(--color-text-primary, #2C2C2A); }
+      .ts { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-secondary, #5F5E5A); }
+      .th { font-family: var(--font-sans, sans-serif); font-size: 14px; font-weight: 500; }
+      .tcap { font-family: var(--font-sans, sans-serif); font-size: 11px; fill: var(--color-text-tertiary, #888780); }
+    </style>
+  </defs>
 
+  <rect x="0" y="0" width="680" height="620" fill="none"/>
+
+  <text class="th" x="340" y="28" text-anchor="middle" style="font-size:15px">造血干细胞分化树与髓系/淋系肿瘤起源</text>
+
+  <g class="node c-amber" onclick="sendPrompt('造血干细胞HSC是什么')">
+    <rect x="270" y="50" width="140" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="340" y="72" text-anchor="middle" dominant-baseline="central">HSC 造血干细胞</text>
+  </g>
+
+  <line x1="340" y1="94" x2="340" y2="120" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5"/>
+  <line x1="180" y1="120" x2="500" y2="120" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5"/>
+  <line x1="180" y1="120" x2="180" y2="140" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="500" y1="120" x2="500" y2="140" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+
+  <g class="node c-coral" onclick="sendPrompt('髓系祖细胞CMP')">
+    <rect x="100" y="140" width="160" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="180" y="162" text-anchor="middle" dominant-baseline="central">CMP 髓系祖细胞</text>
+  </g>
+  <g class="node c-blue" onclick="sendPrompt('淋系祖细胞CLP')">
+    <rect x="420" y="140" width="160" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="500" y="162" text-anchor="middle" dominant-baseline="central">CLP 淋系祖细胞</text>
+  </g>
+
+  <text class="tcap" x="180" y="200" text-anchor="middle">分化为"固有免疫"细胞 + 红细胞/血小板</text>
+  <text class="tcap" x="500" y="200" text-anchor="middle">分化为"适应性免疫"细胞</text>
+
+  <line x1="180" y1="184" x2="90" y2="220" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="180" y1="184" x2="180" y2="220" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="180" y1="184" x2="270" y2="220" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+
+  <line x1="500" y1="184" x2="430" y2="220" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="500" y1="184" x2="570" y2="220" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+
+  <g class="node c-coral">
+    <rect x="30" y="220" width="120" height="36" rx="8" stroke-width="0.5"/>
+    <text class="ts" x="90" y="238" text-anchor="middle" dominant-baseline="central">GMP 粒单祖细胞</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="120" y="220" width="120" height="36" rx="8" stroke-width="0.5"/>
+    <text class="ts" x="180" y="238" text-anchor="middle" dominant-baseline="central">MEP 红巨核祖细胞</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="210" y="220" width="120" height="36" rx="8" stroke-width="0.5"/>
+    <text class="ts" x="270" y="238" text-anchor="middle" dominant-baseline="central">树突状细胞</text>
+  </g>
+
+  <g class="node c-blue">
+    <rect x="370" y="220" width="120" height="36" rx="8" stroke-width="0.5"/>
+    <text class="ts" x="430" y="238" text-anchor="middle" dominant-baseline="central">B 细胞前体</text>
+  </g>
+  <g class="node c-blue">
+    <rect x="510" y="220" width="120" height="36" rx="8" stroke-width="0.5"/>
+    <text class="ts" x="570" y="238" text-anchor="middle" dominant-baseline="central">T/NK 细胞前体</text>
+  </g>
+
+  <line x1="90" y1="256" x2="50" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="90" y1="256" x2="130" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="180" y1="256" x2="180" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="180" y1="256" x2="230" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="430" y1="256" x2="400" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="430" y1="256" x2="460" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="570" y1="256" x2="540" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+  <line x1="570" y1="256" x2="610" y2="285" stroke="var(--color-border-tertiary, #B4B2A9)" stroke-width="0.5" class="arr" marker-end="url(#arrow)"/>
+
+  <g>
+    <text class="ts" x="50" y="297" text-anchor="middle">中性粒细胞</text>
+    <text class="ts" x="130" y="297" text-anchor="middle">单核/巨噬</text>
+    <text class="ts" x="180" y="297" text-anchor="middle">红细胞</text>
+    <text class="ts" x="230" y="297" text-anchor="middle">血小板</text>
+    <text class="ts" x="400" y="297" text-anchor="middle">B 淋巴细胞</text>
+    <text class="ts" x="460" y="297" text-anchor="middle">浆细胞</text>
+    <text class="ts" x="540" y="297" text-anchor="middle">T 淋巴细胞</text>
+    <text class="ts" x="610" y="297" text-anchor="middle">NK 细胞</text>
+  </g>
+
+  <line x1="20" y1="315" x2="320" y2="315" stroke="#D85A30" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="360" y1="315" x2="650" y2="315" stroke="#378ADD" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <text class="th" x="170" y="338" text-anchor="middle" fill="#993C1D" style="font-size:13px">髓系肿瘤 (Myeloid)</text>
+  <text class="th" x="500" y="338" text-anchor="middle" fill="#185FA5" style="font-size:13px">淋系肿瘤 (Lymphoid)</text>
+
+  <g class="node c-coral">
+    <rect x="20" y="350" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="92" y="368" text-anchor="middle" dominant-baseline="central" style="font-size:13px">AML</text>
+    <text class="ts" x="92" y="386" text-anchor="middle" dominant-baseline="central">急性髓系白血病</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="175" y="350" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="247" y="368" text-anchor="middle" dominant-baseline="central" style="font-size:13px">CML</text>
+    <text class="ts" x="247" y="386" text-anchor="middle" dominant-baseline="central">慢性髓系白血病</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="20" y="410" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="92" y="428" text-anchor="middle" dominant-baseline="central" style="font-size:13px">MDS</text>
+    <text class="ts" x="92" y="446" text-anchor="middle" dominant-baseline="central">骨髓增生异常综合征</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="175" y="410" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="247" y="428" text-anchor="middle" dominant-baseline="central" style="font-size:13px">MPN</text>
+    <text class="ts" x="247" y="446" text-anchor="middle" dominant-baseline="central">骨髓增殖性肿瘤</text>
+  </g>
+  <g class="node c-coral">
+    <rect x="98" y="470" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="170" y="488" text-anchor="middle" dominant-baseline="central" style="font-size:13px">CMML</text>
+    <text class="ts" x="170" y="506" text-anchor="middle" dominant-baseline="central">慢性粒单核细胞白血病</text>
+  </g>
+
+  <g class="node c-blue">
+    <rect x="360" y="350" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="432" y="368" text-anchor="middle" dominant-baseline="central" style="font-size:13px">ALL</text>
+    <text class="ts" x="432" y="386" text-anchor="middle" dominant-baseline="central">急性淋巴细胞白血病</text>
+  </g>
+  <g class="node c-blue">
+    <rect x="515" y="350" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="587" y="368" text-anchor="middle" dominant-baseline="central" style="font-size:13px">CLL</text>
+    <text class="ts" x="587" y="386" text-anchor="middle" dominant-baseline="central">慢性淋巴细胞白血病</text>
+  </g>
+  <g class="node c-blue">
+    <rect x="360" y="410" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="432" y="428" text-anchor="middle" dominant-baseline="central" style="font-size:13px">NHL</text>
+    <text class="ts" x="432" y="446" text-anchor="middle" dominant-baseline="central">非霍奇金淋巴瘤</text>
+  </g>
+  <g class="node c-blue">
+    <rect x="515" y="410" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="587" y="428" text-anchor="middle" dominant-baseline="central" style="font-size:13px">HL</text>
+    <text class="ts" x="587" y="446" text-anchor="middle" dominant-baseline="central">霍奇金淋巴瘤</text>
+  </g>
+  <g class="node c-blue">
+    <rect x="438" y="470" width="145" height="48" rx="8" stroke-width="0.5"/>
+    <text class="th" x="510" y="488" text-anchor="middle" dominant-baseline="central" style="font-size:13px">MM</text>
+    <text class="ts" x="510" y="506" text-anchor="middle" dominant-baseline="central">多发性骨髓瘤</text>
+  </g>
+
+  <g>
+    <rect x="20" y="538" width="300" height="64" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts" x="30" y="558" fill="#712B13">主要累及: 骨髓 + 外周血</text>
+    <text class="ts" x="30" y="576" fill="#712B13">核心问题: 造血三系(红/白/血小板)异常</text>
+    <text class="ts" x="30" y="594" fill="#712B13">免疫表型: CD13+ CD33+ MPO+ TdT-</text>
+  </g>
+  <g>
+    <rect x="360" y="538" width="300" height="64" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="ts" x="370" y="558" fill="#0C447C">主要累及: 淋巴结/脾/骨髓</text>
+    <text class="ts" x="370" y="576" fill="#0C447C">核心问题: 免疫细胞(B/T/NK)恶性增殖</text>
+    <text class="ts" x="370" y="594" fill="#0C447C">免疫表型: CD19+ CD3+ TdT+(前体) CD20+</text>
+  </g>
+</svg>
 ```
 
 
