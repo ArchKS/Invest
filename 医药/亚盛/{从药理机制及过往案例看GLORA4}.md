@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-09 16:00:00
-LastUpdate: 2026-07-18 14:21:09
+LastUpdate: 2026-07-21 15:22:33
 ---
 
 
@@ -28,10 +28,6 @@ LastUpdate: 2026-07-18 14:21:09
 
 
 
-
-
-
-
 《我的创新药选股策略》一文讲了我自己的创新药选股方式，但还有几点需要补充的，一个是漏了临床入组标准，一个是创新药和其他行业的区别。
 
 药企临床入组标准越符合真实世界患者分布或者入组患者越难治，到了开大三期临床时，暴雷的可能性越低。如果初期临床就筛选患者去做好数据，那我会比较担心这款药。分析一家药企，最重要的是看它药好不好。一方面是药理机制和同类产品的差异，对比其优劣；另一方面是过往临床数据分析。由于人体机制的复杂，很多时候也是用临床反推药理，最后还是要落到临床上看，所以我会比较在乎药企临床的选择。
@@ -39,8 +35,6 @@ LastUpdate: 2026-07-18 14:21:09
 创新药和其他行业有个很明显的区别，药的好坏有**标准客观且信息详实**：一款药能延长20%的患者2年寿命还是5年，都有客观的临床数据做支撑。很多投资的错误是投资者主观臆断出来的，倘若可以在推断中提高客观信息的比例，推断的结论会更真实
 
 普通人和机构基本没有信息差距，药物临床数据都是公开的，竞品信息也容易获得，搞内幕交易的除外，更多的还是认知差距。
-
-
 
 
 
@@ -1109,3 +1103,526 @@ BELLINI试验评估venetoclax+bortezomib+地塞米松 vs 安慰剂+硼替佐米+
 1、高选择性，对BCL-xL结合力弱，导致血小板减少安全性上好。CLL患者中≥3级血小板减少发生率仅为0-11%，显著低于venetoclax的15-24%
 
 2、克服G101V获得性耐药突变，该突变在30-50%的venetoclax进展患者中出现 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## AZA临床数据
+
+
+
+AZA-001（pivotal Phase III，Fenaux 2007 / Silverman 2011二次分析，n=179）
+
+| 定义         | 包含           | 数值               |
+| :----------- | :------------- | :----------------- |
+| CR only      | 完全缓解       | **17%**            |
+| CR + PR      | 加部分缓解     | **~29%**           |
+| CR + PR + HI | 再加血液学改善 | **~51%**（91/179） |
+
+
+
+Brunner et al., *Blood Advances* 2022（meta-analysis，n=1908，最系统）
+
+| 定义                             | AZA     | DAC  |
+| :------------------------------- | :------ | :--- |
+| 骨髓ORR（CR+PR+mCR，**不含HI**） | **21%** | 29%  |
+| HI（单独）                       | **38%** | 15%  |
+
+
+
+
+
+
+
+# AZA+VEN
+
+
+
+患者治疗前：异常原始细胞15%+正常造血20%
+
+AZA+VEN：异常原始细胞2%+正常造血5%
+
+AZA单药：异常原始细胞5%+正常造血30%
+
+
+
+### off-label数据
+
+ven+aza在off-label真实世界中的治疗MDS的mOS是多少
+
+如果问的是**较高危MDS，而不是已经转化为AML**，真实世界数据没有一个统一的mOS。比较合理的概括是：
+
+> **混合人群总体mOS约16–20个月；初治患者约20–26个月；既往HMA失败患者约11–13个月。**
+
+代表性数据如下：
+
+| 真实世界队列                    | 人群                             | mOS                   |
+| ------------------------------- | -------------------------------- | --------------------- |
+| Ball等，44例                    | 初治和经治MDS混合，部分接受移植  | **19.5个月**          |
+| 同一队列                        | 既往HMA失败                      | **11.4个月**          |
+| 中国45例队列                    | 91%为高危/极高危，初治与经治混合 | **499天，约16.4个月** |
+| 美国多中心/单中心队列摘要，89例 | 一线HMA+Ven                      | **26.2个月**          |
+| 同一研究                        | R/R、既往接受HMA                 | **13.2个月**          |
+
+来源：[Ball等，Blood Advances真实世界研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC7362378/)、[中国高危MDS真实世界研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC11078685/)、[美国真实世界队列摘要](https://www.sciencedirect.com/science/article/pii/S0006497124045907)。
+
+需要注意三个问题：
+
+- **移植会明显拉长OS**：早期真实世界队列中不少应答者随后接受异基因移植，所以19.5个月不能全部归因于Ven+aza。
+- **既往是否使用过aza最关键**：未经HMA治疗的一线患者明显优于aza失败后再加Ven。
+- **TP53突变获益较弱**：近期真实世界比较中，TP53突变MDS接受HMA+Ven的mOS约**13.7个月**，并没有优于HMA单药的16.4个月；这是非随机回顾性比较，但至少说明高缓解率未必转化为OS改善。[TP53真实世界研究](https://haematologica.org/article/view/13087)
+
+作为参照，前瞻性Ⅰb期初治高危MDS的Ven+aza mOS为**26.0个月**，但这不是普通真实世界队列，而且患者经过筛选。[前瞻性Ⅰb期研究](https://pubmed.ncbi.nlm.nih.gov/39652823/)
+
+因此，如果要给模型放一个数字，我会这样取：
+
+- **一线高危MDS：mOS基准约24–26个月**
+- **真实世界混合人群：约17–20个月**
+- **既往aza/HMA失败：约11–13个月**
+- **TP53突变：大约10–14个月，且Ven的生存增益尚不确定**
+
+这也意味着不能拿AML VIALE‑A的14.7个月直接当作MDS的BCL‑2“天花板”：MDS患者病程更早、疾病负荷更低，而且部分患者能够桥接移植，因此一线MDS的mOS完全可能超过两年。
+
+
+
+
+
+## aza or ven
+
+mds中，bcl-2+aza，如果有一个因为毒性药减量，那么减哪个好，我的意思是，哪个对mds更重要
+
+这是一个非常实际的临床决策问题，直接关系到剂量管理策略。让我搜索相关循证证据。
+答案很明确：**先减 venetoclax，维持 AZA 剂量**。但这背后有一个非常讽刺的发现——VERONA 试验的方案恰好做了相反的选择。让我逐层解释。
+
+
+
+一、为什么 AZA 对 MDS 更重要
+
+基于我们之前整条讨论链的逻辑：
+
+| 维度       |                   AZA                   |                  Venetoclax                   |
+| ---------- | :-------------------------------------: | :-------------------------------------------: |
+| 主要通路   |          通路 A（HI）+ 部分 B           |                 通路 B（mCR）                 |
+| OS 获益    | 唯一在 III 期证实的 MDS 单药（AZA-001） |              VERONA 未达 OS 终点              |
+| OS 驱动力  |  HI 49% >> CR 17%，HI 降低死亡风险 93%  |              mCR ↑但不传导到 OS               |
+| HI 贡献    |         HI 率 49%（通路 A 强）          | HI 率仅 49.4% vs 对照 41.2%（P=0.07，未显著） |
+| 对正常 HSC |                相对保留                 |                 骨髓抑制更强                  |
+
+> **一句话**：AZA 是 MDS 的 OS 驱动药物，通过 HI（通路 A）改善生存；Venetoclax 主要提升 mCR（通路 B），但 mCR 在 MDS 中不改善 OS。所以减 AZA 等于削弱了 OS 获益的根基。
+
+---
+
+## 二、VERONA 做了相反的选择——但那是被双盲设计"绑架"的
+
+这是最关键的发现。ASH 官方对 VERONA PI Dr. Jacqueline Garcia 的采访原文：
+
+> **"The protocol prioritized reduction of the azacitidine backbone before venetoclax/placebo, which was necessary as the trial was double-blind."**
+
+翻译：方案优先减 AZA 后再调 Venetoclax/安慰剂——**这是"必须的"，因为试验是双盲的。**
+
+原因很简单：双盲试验中，研究者不知道患者分在 Ven+Aza 还是 Pbo+Aza 组。如果毒性出现时要调整"venetoclax/安慰剂"的剂量，就等于暴露了分组信息（只有 Ven 组才有 venetoclax 可调）。所以方案被迫选择先减"公开标签"的 AZA——**这是试验设计的妥协，不是经过生物学考量的临床策略。**
+
+VERONA 实际执行的结果证实了这一点：
+
+- AZA 减量率：Ven+Aza 组 **48.6%** vs Pbo+Aza 组 27.2%（**几乎翻倍**）
+- Ven 减量率：仅 12.5% vs 6.9%
+
+> VERONA 等于在"减掉 OS 驱动药物"的同时"维持毒性药物全量"——**双重受损**。这可能恰恰是 OS 阴性的一个未被讨论的原因。
+
+---
+
+## 三、Venetoclax 才是毒性的主要来源
+
+毒性管理首先要"减对药"。数据清楚显示 Venetoclax 是骨髓抑制的主因：
+
+| 毒性指标             | Ven+Aza | Pbo+Aza |   倍数   |
+| -------------------- | :-----: | :-----: | :------: |
+| 3-4 级中性粒细胞减少 |  76.9%  |  58.9%  |   1.3×   |
+| 3-4 级血小板减少     |  63.5%  |  52.0%  |   1.2×   |
+| 剂量中断             |  78.8%  |  67.9%  |    —     |
+| 因细胞减少导致的延迟 |  17.4%  |  3.4%   | **5.1×** |
+
+Daver 教授的原话：
+
+> "One of the on-target adverse effects that is seen with venetoclax is **prolonged myelosuppression**, especially for neutrophil recovery but also for platelet recovery."
+
+日本 PK 研究进一步证实：**Venetoclax 血药浓度过高（AUC₀₋₂₄↑）是持续 ≥28 天 3 级中性粒细胞缺乏的独立预测因子**（OR=54.3, P=0.007）。Venetoclax 暴露过度→骨髓抑制延长→感染风险升高→NRM 升高。
+
+> **减 AZA 根本不减轻 Venetoclax 的毒性**。毒性在 Ven 那里，你却去减 AZA——等于头痛医脚。
+
+---
+
+## 四、减 Venetoclax 不损害疗效的证据
+
+这是关键——Venetoclax 可以减量甚至停药，疗效不掉：
+
+### 证据 1：SE1 vs SE2 头对头比较（M15-531 Phase Ib）
+
+| 策略 | 操作                                     | CR/mCR 率 |
+| ---- | ---------------------------------------- | :-------: |
+| SE1  | 研究者选择减 AZA 或 Ven                  |  **86%**  |
+| SE2  | 先减 AZA（→50→36mg/m²），再减 Ven（→7d） |  **86%**  |
+
+两种策略疗效**完全相同**。虽然 SE2 没有直接测"先减 Ven"的策略，但它证明 Ven 减到 7 天时疗效不降——Ven 的剂量弹性很大。
+
+### 证据 2：中国真实世界——半量 Ven 维持疗效
+
+浙大附一研究：Ven 200mg/day（标准剂量的一半）+ AZA 标准剂量治疗 AML：
+
+- **100% CR/CRi**，中位 OS >24.6 个月
+- 3 级血小板减少仅 21.4%（vs 标准剂量 24-89.5%）
+- **NCCN 2025 指南已正式推荐：在细胞减少持续时采用半量 Ven 策略，同时维持 AZA 剂量，不影响疗效**
+
+### 证据 3：法国研究——Ven 停药后复发风险不增加
+
+法国单中心研究（n=19）：57.9% 的患者在 2 个周期后因毒性停用 Venetoclax，转为 AZA 单药：
+
+- 停 Ven 组 DOR = 9.0 个月 vs 继续 Ven 组 = 3.7 个月（P=0.09，无显著差异）
+- **"early venetoclax discontinuation did not increase the relapse risk"**
+
+### 证据 4：苏大附一真实世界
+
+30 例 HR-MDS 中 7 例 Ven 减至 50-100mg/day：
+
+- CR/mCR 仍达 24/30（80%）
+- 中位 OS 29.3 个月
+- CR/mCR 组 OS 显著优于未缓解组（NR vs 5.9 月, P=0.002）
+
+---
+
+## 五、为什么减 Ven 有效——骨髓评估指导下的精准调整
+
+Daver 教授描述的临床实践流程解释了为什么减 Ven 有效：
+
+1. **第 1 周期末做骨髓评估**（day 21-28）
+2. 如果骨髓已清除原始细胞（形态学缓解），但血象仍低 → **不是白血病导致的血象低，而是 Ven 的骨髓抑制**
+3. 此时**停 Ven 1-2 周**，等血象恢复后再开下一周期
+4. 后续周期 Ven 从 28 天缩短至 14-21 天
+5. **大部分患者的缓解持续维持**
+
+> 这个流程的核心逻辑是：**Ven 的作用是"打掉原始细胞"，一旦打掉了就不需要全量维持**；而 AZA 的作用是"持续重编程基因表达、维持分化、改善造血"，需要持续的周期给药才能维持 HI——所以 AZA 的剂量强度更重要。
+
+---
+
+## 六、总结：正确策略
+
+| 原则                   | 操作                                                |
+| ---------------------- | --------------------------------------------------- |
+| 毒性出现时**先减 Ven** | 缩短天数（14→10→7d）或减量（400→200mg）             |
+| **维持 AZA 剂量强度**  | 75mg/m² × 7d 全量，尽量不减                         |
+| 第 1 周期末做骨髓评估  | 骨髓清了→停 Ven 等恢复；没清→继续                   |
+| 持续监测 HI            | HI 比缓解率更能预测 OS                              |
+| 桥接移植者例外         | 如果目标是快速细胞减灭桥接移植，可短期维持 Ven 全量 |
+
+**一句话总结**：在 MDS 中，**AZA 比 Venetoclax 更重要**——AZA 是唯一证实改善 OS 的药物（通过 HI/通路 A），而 Venetoclax 的毒性是 NRM 的主要来源、其 mCR 提升又不传导到 OS。VERONA 试验因双盲设计被迫"先减 AZA 后减 Ven"的做法，恰恰可能削弱了 OS 获益的根基。临床实践中应**先减 Venetoclax、维持 AZA 剂量强度**，这在多项真实世界研究和 NCCN 2025 指南中已得到支持——Ven 减量后疗效不降，而 AZA 全量维持才能保留 OS 获益。
+已更新工作日志。
+
+## 总结
+
+**毒性减药时，应先减 Venetoclax，维持 AZA 剂量。** 理由有三层：
+
+**1. AZA 对 MDS 更重要（生物学层面）**
+
+- AZA 是唯一在 III 期试验中证实改善 OS 的 MDS 单药，其获益主要通过 HI（通路 A）驱动——HI 率 49% 远超 CR 率 17%，仅达 HI 的患者死亡风险仍降低 93%
+- Venetoclax 主要提升 mCR（通路 B），但 mCR 在 MDS 中不传导到 OS
+
+**2. Venetoclax 才是毒性主因（药理学层面）**
+
+- 3-4 级中性粒细胞减少 76.9% vs 58.9%，因细胞减少导致的延迟高达 17.4% vs 3.4%（5.1 倍）
+- 日本 PK 研究证实 Ven 暴露过高是持续 ≥28 天 3 级粒缺的独立预测因子（OR=54.3）
+- 减 AZA 根本不减轻 Ven 的毒性——等于头痛医脚
+
+**3. 减 Ven 不损害疗效（临床证据层面）**
+
+- M15-531 头对头比较：两种减药策略 CR/mCR 均为 86%
+- 中国半量 Ven（200mg）100% CR/CRi，中位 OS >24.6 月；NCCN 2025 已正式推荐
+- 法国研究：停 Ven 后缓解持续时间不缩短
+- Ven 的作用是"打掉原始细胞"，打掉后不需要全量维持；AZA 的作用是"持续重编程、维持分化、改善造血"，需要持续给药
+
+**最讽刺的发现**：VERONA 试验因双盲设计被迫"先减 AZA"（ASH 官方采访 Garcia 原话："necessary as the trial was double-blind"），导致 AZA 减量率翻倍（48.6% vs 27.2%）而 Ven 仅 12.5%——**减掉了 OS 驱动药物、保留了毒性药物全量**，这可能恰恰是 OS 阴性的一个未被充分讨论的原因。临床实践中不应照搬 VERONA 的减药策略，而应反过来——先减 Ven、维持 AZA。
+
+<svg viewBox="0 0 680 760" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">  <title>Venetoclax与阿扎胞苷联合治疗MDS时的剂量调整策略对比</title>  <desc>对比两种减药策略：先减AZA（VERONA试验方案）vs 先减Venetoclax（生物学优选方案），展示各自的临床后果。</desc>  <defs>    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>    </marker>  </defs>  <rect x="20" y="10" width="320" height="720" rx="12" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>  <rect x="350" y="10" width="310" height="720" rx="12" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>  <text x="180" y="38" text-anchor="middle" font-size="14" font-weight="500" fill="#791F1F">策略A：先减AZA</text>  <text x="180" y="56" text-anchor="middle" font-size="12" fill="#A32D2D">VERONA试验方案</text>  <text x="505" y="38" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">策略B：先减Venetoclax</text>  <text x="505" y="56" text-anchor="middle" font-size="12" fill="#0F6E56">生物学与循证优选</text>  <rect x="40" y="72" width="280" height="72" rx="8" fill="#F7C1C1" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="#501313">减AZA剂量/天数</text>  <text x="180" y="110" text-anchor="middle" font-size="12" fill="#791F1F">VERONA中48.6%患者减量</text>  <text x="180" y="128" text-anchor="middle" font-size="12" fill="#791F1F">（对照组仅27.2%）</text>  <rect x="370" y="72" width="270" height="72" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="#04342C">减Ven剂量/缩短天数</text>  <text x="505" y="110" text-anchor="middle" font-size="12" fill="#085041">400mg→200mg, 14d→10→7d</text>  <text x="505" y="128" text-anchor="middle" font-size="12" fill="#085041">VERONA中仅12.5%患者减量</text>  <path d="M180 148 L180 165" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 148 L505 165" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="170" width="280" height="88" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>  <text x="180" y="190" text-anchor="middle" font-size="13" font-weight="500" fill="#4A1B0C">丢失OS驱动药物</text>  <text x="180" y="208" text-anchor="middle" font-size="12" fill="#712B13">AZA是唯一证实改善OS的</text>  <text x="180" y="224" text-anchor="middle" font-size="12" fill="#712B13">MDS单药(AZA-001)</text>  <text x="180" y="240" text-anchor="middle" font-size="12" fill="#712B13">HI 49%→通路A→OS获益</text>  <rect x="370" y="170" width="270" height="88" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>  <text x="505" y="190" text-anchor="middle" font-size="13" font-weight="500" fill="#173404">保留OS驱动药物</text>  <text x="505" y="208" text-anchor="middle" font-size="12" fill="#27500A">维持AZA全量→保留通路A</text>  <text x="505" y="224" text-anchor="middle" font-size="12" fill="#27500A">→保留HI→保留OS获益</text>  <text x="505" y="240" text-anchor="middle" font-size="12" fill="#27500A">NCCN 2025推荐维持AZA剂量</text>  <path d="M180 262 L180 279" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 262 L505 279" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="284" width="280" height="88" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>  <text x="180" y="304" text-anchor="middle" font-size="13" font-weight="500" fill="#4A1B0C">毒性源头未解决</text>  <text x="180" y="322" text-anchor="middle" font-size="12" fill="#712B13">Ven是骨髓抑制主因</text>  <text x="180" y="338" text-anchor="middle" font-size="12" fill="#712B13">G3-4中性粒缺77.3%</text>  <text x="180" y="354" text-anchor="middle" font-size="12" fill="#712B13">减AZA不减轻Ven毒性</text>  <rect x="370" y="284" width="270" height="88" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>  <text x="505" y="304" text-anchor="middle" font-size="13" font-weight="500" fill="#173404">直接解决毒性源头</text>  <text x="505" y="322" text-anchor="middle" font-size="12" fill="#27500A">减Ven→减轻骨髓抑制</text>  <text x="505" y="338" text-anchor="middle" font-size="12" fill="#27500A">→减少感染/出血NRM</text>  <text x="505" y="354" text-anchor="middle" font-size="12" fill="#27500A">→保留AZA剂量强度</text>  <path d="M180 376 L180 393" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 376 L505 393" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="398" width="280" height="100" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="418" text-anchor="middle" font-size="13" font-weight="500" fill="#501313">疗效未获补偿</text>  <text x="180" y="436" text-anchor="middle" font-size="12" fill="#791F1F">Ven保留全量但</text>  <text x="180" y="452" text-anchor="middle" font-size="12" fill="#791F1F">CR率无提升(18% vs 20.2%)</text>  <text x="180" y="468" text-anchor="middle" font-size="12" fill="#791F1F">mCR↑但mCR不改善OS</text>  <text x="180" y="484" text-anchor="middle" font-size="12" fill="#791F1F">→毒性抵消了获益</text>  <rect x="370" y="398" width="270" height="100" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="418" text-anchor="middle" font-size="13" font-weight="500" fill="#04342C">疗效可维持</text>  <text x="505" y="436" text-anchor="middle" font-size="12" fill="#085041">Ven减量后疗效不降</text>  <text x="505" y="452" text-anchor="middle" font-size="12" fill="#085041">CR/mCR均86%(SE1=SE2)</text>  <text x="505" y="468" text-anchor="middle" font-size="12" fill="#085041">半量Ven仍100% CR/CRi(中国)</text>  <text x="505" y="484" text-anchor="middle" font-size="12" fill="#085041">停Ven后复发风险不增(法国)</text>  <path d="M180 502 L180 519" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 502 L505 519" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="524" width="280" height="68" rx="8" fill="#F7C1C1" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="548" text-anchor="middle" font-size="14" font-weight="500" fill="#501313">VERONA结果</text>  <text x="180" y="568" text-anchor="middle" font-size="13" fill="#791F1F">OS: 22.2月 vs 21.7月</text>  <text x="180" y="584" text-anchor="middle" font-size="13" fill="#791F1F">HR 0.908, P=0.38 阴性</text>  <rect x="370" y="524" width="270" height="68" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="548" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">预期获益</text>  <text x="505" y="568" text-anchor="middle" font-size="13" fill="#085041">保留OS驱动+降低NRM</text>  <text x="505" y="584" text-anchor="middle" font-size="13" fill="#085041">可能释放OS获益信号</text>  <path d="M180 596 L180 613" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 596 L505 613" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="50" y="618" width="260" height="52" rx="8" fill="#501313" stroke="none"/>  <text x="180" y="640" text-anchor="middle" font-size="13" font-weight="500" fill="#FCEBEB">减OS驱动药 + 保留毒性药</text>  <text x="180" y="658" text-anchor="middle" font-size="12" fill="#F7C1C1">双重受损，OS获益被抵消</text>  <rect x="380" y="618" width="250" height="52" rx="8" fill="#04342C" stroke="none"/>  <text x="505" y="640" text-anchor="middle" font-size="13" font-weight="500" fill="#E1F5EE">保留OS驱动药 + 减毒性药</text>  <text x="505" y="658" text-anchor="middle" font-size="12" fill="#9FE1CB">双重获益，最大化OS潜力</text>  <rect x="40" y="690" width="280" height="28" rx="6" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="3,3"/>  <text x="180" y="708" text-anchor="middle" font-size="11" fill="#A32D2D">注：VERONA因双盲设计被迫先减AZA</text>  <rect x="370" y="690" width="270" height="28" rx="6" fill="none" stroke="#1D9E75" stroke-width="0.5" stroke-dasharray="3,3"/>  <text x="505" y="708" text-anchor="middle" font-size="11" fill="#0F6E56">注：临床实践中应先减Ven维持AZA</text></svg>
+
+# Only Venetoclax or AZA
+
+Venetoclax没做单药在MDS上的适应症
+
+
+
+2009年，AZA单药三期临床AZA-001 mOS 24.5个月
+
+2025年，VEN+AZA 三期临床VERONA mOS 22.2个月，对照组AZA单药21.7个月
+
+
+
+# Venetoclax
+
+快速清场的杀伤力且停留在血液内时间很长，导致骨髓造血能力一直被抑制，影响血象改善，导致毒性盖过收益。
+
+
+
+## 为什么tp53特别是双等位突变、复杂核型的MDS患者在临床中难以缓解
+
+
+
+机制 1：凋亡通路彻底失活——化疗和靶向药共同的命门
+
+p53 是细胞凋亡的"总开关"。几乎所有化疗药物的杀癌机制最终都要经过 p53 → BAX/PMAIP1 → 线粒体 → caspase 这条凋亡通路：
+
+**双等位 TP53 失活后，这条通路从头到尾断裂了：**
+
+- p53 不存在 → BAX 不被上调
+- p53 不存在 → PMAIP1（NOXA）不被上调
+- BAX 表达本身就降低（TP53 缺失直接导致 BAX 转录减少）
+- 线粒体孔无法形成 → 细胞色素 C 不释放 → caspase 不激活
+
+> **结果**：DNA 损伤信号到达了，但"死刑执行器"（BAX/BAK）无人启动。癌细胞"收到了死刑判决书但没有刽子手来执行"。
+
+CRISPR 全基因组筛选（Cancer Discov 2019）直接证实：TP53、BAX、PMAIP1 三个基因的敲除**都导致 venetoclax 耐药**——它们正是 p53 凋亡通路的核心节点。
+
+### 机制 2：基因组不稳定 → 复杂核型 → 多重耐药同时涌现
+
+p53 的另一个核心功能是维持基因组稳定性——它在 DNA 损伤时暂停细胞周期（G1/S 检查点），给修复系统时间修复 DNA。如果修复不了，才启动凋亡。
+
+**双等位 TP53 失活后，两道防线全部丧失：**
+
+1. **G1/S 检查点消失** → 带有 DNA 损伤的细胞不停复制 → 突变不断累积
+2. **凋亡清除消失** → 严重基因组损伤的细胞不被淘汰 → 染色体异常代代传递
+
+这导致一个灾难性后果——**染色质碎裂（chromothripsis）**：
+
+> 一次性大规模染色体断裂 → 随机重新拼接 → 一步形成数十个染色体异常
+
+数据显示，**35% 的 TP53 突变 MDS/AML 发生染色质碎裂**，最常累及 5 号、17 号、21 号染色体。这不是渐进式的基因突变积累，而是"染色体地震"——一次事件就产生大量异常。
+
+复杂核型（≥3 个无关染色体异常）因此形成，通常包括：
+
+- **5 号染色体缺失（-5/del5q）**：丢失 RPS14、APC、CTNNA1 等抑癌基因
+- **7 号染色体缺失（-7/del7q）**：丢失 EZH2、CUTL1 等
+- **17 号染色体缺失（-17/del17p）**：TP53 本身丢失（正反馈恶性循环）
+- **复杂单体性核型（monosomal karyotype）**
+
+这些染色体异常各自携带不同的耐药基因缺失，**多重耐药机制同时涌现**——不是对一个药耐药，而是对几乎所有药都耐药。
+
+### 机制 3：白血病干细胞对 HMA 固有耐药——TP53 克隆"清不掉"
+
+Fred Hutchinson 癌症中心的前瞻性研究（PMC5451346）提供了最直接的分子证据。他们对移植后复发、接受 AZA 治疗的 MDS/AML 患者进行了连续骨髓采样和突变追踪：
+
+| 患者         | TP53 突变 VAF 变化         | 临床反应 |
+| :----------- | :------------------------- | :------- |
+| AZA 应答者   | 突变克隆**消失**（VAF→0）  | 有效     |
+| AZA 无应答者 | TP53 突变 VAF **几乎不变** | 无效     |
+
+> 原文结论："Mutations in TP53 remained unchanged over the course of treatment, suggesting that clones with TP53 mutations were refractory to azacitidine."
+
+**这意味着 AZA 治疗后即使骨髓原始细胞降到 < 5%（形态学 mCR），TP53 突变克隆仍然原封不动地潜伏着——这是"假性缓解"。** 形态学上看不到原始细胞了，但 TP53 驱动的白血病干细胞一个都没少。
+
+这也解释了为什么 TP53 突变 MDS 的缓解极其短暂——所谓的"缓解"从一开始就不是真正的清除，只是暂时压低了原始细胞计数。
+
+### 机制 4：Venetoclax 逃逸——初始有效但快速失效
+
+Venetoclax 通过抑制 BCL-2 → 释放 BAX/BAK → 线粒体凋亡。这条路看起来不依赖 p53，应该对 TP53 突变有效。但实际情况远更复杂。
+
+**TP53 缺失通过两条机制导致 venetoclax 逃逸：**
+
+**4a. BAX/BAK 激活阈值升高**
+
+p53 直接调控 BAX 的转录。TP53 双等位缺失 → BAX 基础表达降低 → **触发线粒体凋亡所需的 BAX/BAK 寡聚化阈值升高**。
+
+Venetoclax 能暂时抑制 BCL-2、释放少量 BAX，但量不够 → 线粒体膜孔打不开 → 凋亡不触发。初期可能因为残余 BAX 量够用而有效，但随着 TP53 突变克隆获得竞争优势，耐药克隆逐渐主导 → **逃逸**。
+
+**4b. 代谢重编程——OXPHOS 依赖转换**
+
+TP53 突变 AML 细胞表现出**氧化磷酸化（OXPHOS）增强**和白血病干细胞群富集。BCL-2 抑制主要靶向依赖糖酵解的原始细胞，而 TP53 突变的 LSC 依赖 OXPHOS 生存 → venetoclax 打不到它们。
+
+此外，TP53 突变细胞还通过**上调一碳代谢**抵抗阿糖胞苷诱导的死亡，提供更强的抗氧化能力和活性氧管理。
+
+**临床数据直接验证：**
+
+| 指标              | multi-hit TP53 | single-hit TP53 | 野生型  |
+| :---------------- | :------------- | :-------------- | :------ |
+| Ven+HMA 的 CR/CRi | **38%**        | 63%             | 67%     |
+| RFS（无复发生存） | **7.9 月**     | —               | 19.3 月 |
+| OS                | **5.9 月**     | —               | 16.6 月 |
+
+### 机制 5：免疫微环境逃逸——"免疫特权"表型
+
+TP53 突变不仅改变了癌细胞本身，还重塑了整个骨髓免疫微环境（PMC7731792）：
+
+| 免疫变化             | 机制                             | 后果                    |
+| :------------------- | :------------------------------- | :---------------------- |
+| **HSC 表面 PD-L1 ↑** | p53缺失→miR-34a↓→MYC↑→PD-L1转录↑ | 癌细胞"隐身"于T细胞     |
+| **细胞毒性T细胞 ↓**  | OX40+ CD8+ T 细胞减少            | 抗肿瘤免疫第一线削弱    |
+| **辅助性T细胞 ↓**    | Th 细胞减少                      | 免疫协调能力下降        |
+| **NK 细胞 ↓**        | ICOS+ 和 4-1BB+ NK 细胞减少      | 先天免疫监视削弱        |
+| **Treg ↑**           | ICOShigh/PD-1- Treg 扩张         | 免疫抑制增强            |
+| **MDSC ↑**           | 髓系来源抑制细胞扩张             | 释放颗粒酶B杀伤红系前体 |
+
+> 原文结论："The microenvironment of TP53 mutant MDS and sAML has an **immune-privileged, evasive phenotype**."
+
+这个免疫逃逸表型有两个严重后果：
+
+1. **削弱 GVL 效应** → 移植后复发率极高（即使异基因造血干细胞移植也难以控制）
+2. **为免疫治疗提供靶点** → 抗 PD-L1 等免疫检查点抑制剂正在 TP53 突变 MDS 中探索
+
+### 机制 6：治疗压力下克隆清扫——越治越选出来 TP53
+
+这是最"阴险"的机制——**治疗本身在正向选择 TP53 突变克隆**。
+
+因为 TP53 突变细胞具有凋亡抗性和基因组不稳定带来的高适应性，任何治疗压力（化疗、HMA、venetoclax）都会**优先杀死敏感克隆，留下 TP53 突变克隆**。
+
+临床证据：
+
+- 来那度胺治疗 del(5q) MDS 时，TP53 突变克隆被选择出来并快速进展为 AML
+- HMA 治疗中 TP53 VAF 的动态变化比基线 TP53 状态更能预测预后
+- Jaiswal 等的 CHIP 研究显示：携带 TP53 突变的克隆造血个体，在接受化疗后发展 t-MN 的风险增加 **10 倍**——化疗直接"激活"了潜伏的 TP53 克隆
+
+> **治疗像一个筛子**：敏感的克隆被筛掉了，TP53 突变这个最危险的克隆反而被"筛"到了最上面。越治，TP53 克隆占比越高，疾病越难治。
+
+
+
+以上 6 大机制叠加后，形成了对现有三大治疗手段的全面耐药：
+
+| 治疗手段       | 耐药机制                                              | 临床数据                        |
+| :------------- | :---------------------------------------------------- | :------------------------------ |
+| **HMA**        | 机制3（克隆不清除）+ 机制1（凋亡失效）                | CR 10-25%，OS 8-12 月           |
+| **Venetoclax** | 机制4（BAX阈值↑+OXPHOS逃逸）+ 机制1                   | multi-hit CR/CRi 38%，OS 5.9 月 |
+| **异基因移植** | 机制5（GVL削弱）+ 机制3（LSC残留）+ 机制6（克隆清扫） | 3 年 OS 23%，复发率 >50%        |
+
+> 移植虽然是唯一可能治愈的手段，但只有 7-18% 的 TP53 突变 MDS 患者能走到移植这一步——因为前两重困境导致绝大多数患者根本无法达到移植所需的缓解深度。
+
+<svg viewBox="0 0 680 720" width="100%" role="img" font-size="11px">
+    <rect width="100%" height="100%" fill="#f2f2f2" />
+    <title>TP53双等位突变与复杂核型MDS多维耐药机制</title>
+    <desc>展示TP53 multi-hit与复杂核型导致MDS治疗难治的6大机制：凋亡通路失活、基因组不稳定、白血病干细胞耐药、venetoclax逃逸、免疫逃逸、克隆清扫</desc>
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="#fff" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </marker>
+    </defs>
+    <text x="340" y="28" text-anchor="middle">TP53 multi-hit + 复杂核型 MDS：6大耐药机制</text> <text class="ts"
+        x="340" y="46" text-anchor="middle">中位 OS 仅 8.7 月（mono-allelic: 30 月；野生型: 42 月）</text>
+    <line x1="40" y1="58" x2="640" y2="58" stroke="#000" stroke-width="0.5" /> <text x="40"
+        y="76">核心突变事件</text>
+    <g>
+        <rect x="40" y="84" width="270" height="52" rx="8" /> <text x="50" y="103"
+            fill="#fff">等位基因1: 错义突变</text> <text x="50" y="121" fill="#fff">DNA结合域(R175/R248/R273) →
+            p53错误折叠</text>
+    </g> <text x="130" y="152" text-anchor="middle">+</text>
+    <g>
+        <rect x="40" y="158" width="270" height="52" rx="8" /> <text x="50" y="177"
+            fill="#fff">等位基因2: 17p缺失 / cnLOH</text> <text x="50" y="195" fill="#fff">杂合性缺失 →
+            野生型p53完全丧失</text>
+    </g>
+    <path d="M175 215 L175 235" stroke="#E24B4A" stroke-width="1.5" fill="#fff" marker-end="url(#arrow)" />
+    <g>
+        <rect x="40" y="240" width="270" height="44" rx="8" /> <text x="175" y="258"
+            text-anchor="middle" fill="#fff" dominant-baseline="central">双等位TP53失活 → p53功能归零</text> <text class="ts"
+            x="175" y="274" text-anchor="middle" fill="#fff" dominant-baseline="central">"基因组守护者"彻底丧失</text>
+    </g>
+    <line x1="320" y1="262" x2="370" y2="262" stroke="#EF9F27" stroke-width="1.5" fill="#fff"
+        marker-end="url(#arrow)" /> <text x="345" y="256" text-anchor="middle" fill="#fff">触发</text> <text
+        x="345" y="272" text-anchor="middle" fill="#fff">6大机制</text>
+    <g>
+        <rect x="375" y="84" width="265" height="52" rx="8" /> <text x="385" y="103"
+            fill="#fff">机制1: 凋亡通路彻底失活</text> <text x="385" y="121" fill="#fff">p53→BAX/PMAIP1轴断裂 →
+            化疗无法触发凋亡</text>
+    </g>
+    <g>
+        <rect x="375" y="144" width="265" height="52" rx="8" /> <text x="385" y="163"
+            fill="#fff">机制2: 基因组不稳定→复杂核型</text> <text x="385" y="181"
+            fill="#fff">染色质碎裂(35%)→5/7/17号染色体缺失→多药耐药</text>
+    </g>
+    <g>
+        <rect x="375" y="204" width="265" height="52" rx="8" /> <text x="385" y="223"
+            fill="#fff">机制3: LSC对HMA固有耐药</text> <text x="385" y="241" fill="#fff">TP53 VAF治疗中不变 →
+            克隆无法清除</text>
+    </g>
+    <g>
+        <rect x="375" y="264" width="265" height="52" rx="8" /> <text x="385" y="283"
+            fill="#fff">机制4: Venetoclax逃逸</text> <text x="385" y="301"
+            fill="#fff">BAX/BAK激活阈值↑→初始有效但快速逃逸</text>
+    </g>
+    <g>
+        <rect x="375" y="324" width="265" height="52" rx="8" /> <text x="385" y="343"
+            fill="#fff">机制5: 免疫微环境逃逸</text> <text x="385" y="361" fill="#fff">PD-L1↑ + Treg↑ + NK/T细胞↓
+            → 免疫特权</text>
+    </g>
+    <g>
+        <rect x="375" y="384" width="265" height="52" rx="8" /> <text x="385" y="403"
+            fill="#fff">机制6: 治疗压力下克隆清扫</text> <text x="385" y="421" fill="#fff">TP53克隆被正向选择 →
+            取代其他克隆</text>
+    </g>
+    <line x1="40" y1="460" x2="640" y2="460" stroke="#000" stroke-width="0.5" /> <text x="40"
+        y="478">临床结局：三重困境</text>
+    <g>
+        <rect x="40" y="488" width="190" height="100" rx="8" /> <text x="50" y="508"
+            fill="#fff">HMA疗效极差</text> <text x="50" y="526" fill="#fff">CR率 10-25%</text> <text class="ts"
+            x="50" y="544" fill="#fff">VAF>40%: OS 4-7月</text> <text x="50" y="562"
+            fill="#fff">TP53克隆不被清除</text> <text x="50" y="580" fill="#fff">→ 假性缓解</text>
+    </g>
+    <g>
+        <rect x="245" y="488" width="190" height="100" rx="8" /> <text x="255" y="508"
+            fill="#fff">Venetoclax逃逸</text> <text x="255" y="526" fill="#fff">multi-hit
+            CR/CRi仅38%</text> <text x="255" y="544" fill="#fff">(vs single-hit 63%)</text> <text class="ts"
+            x="255" y="562" fill="#fff">RFS 7.9月(vs wt 19.3月)</text> <text x="255" y="580" fill="#fff">OS
+            5.9月(vs wt 16.6月)</text>
+    </g>
+    <g>
+        <rect x="450" y="488" width="190" height="100" rx="8" /> <text x="460" y="508"
+            fill="#fff">移植后仍高复发</text> <text x="460" y="526" fill="#fff">3年OS仅23%</text> <text class="ts"
+            x="460" y="544" fill="#fff">(vs 非TP53 40-50%)</text> <text x="460" y="562"
+            fill="#fff">复发率>50%</text> <text x="460" y="580" fill="#fff">GVL效应被削弱</text>
+    </g>
+    <line x1="40" y1="608" x2="640" y2="608" stroke="#000" stroke-width="0.5" /> <text x="40"
+        y="626">关键数据对比（n=3324, Bernard et al.）</text>
+    <g>
+        <rect x="40" y="636" width="185" height="68" rx="8" fill="#000" stroke="#639922" stroke-width="0.5" /> <text
+            x="50" y="656" fill="#fff">TP53 野生型</text> <text x="50" y="674" fill="#fff">中位OS: 3.5年
+            (42月)</text> <text x="50" y="692" fill="#fff">AML转化率: 低</text>
+    </g>
+    <g>
+        <rect x="240" y="636" width="185" height="68" rx="8" fill="#000" stroke="#EF9F27" stroke-width="0.5" /> <text
+            x="250" y="656" fill="#fff">TP53 单等位</text> <text x="250" y="674" fill="#fff">中位OS:
+            2.5年 (30月)</text> <text x="250" y="692" fill="#fff">≈ 野生型预后</text>
+    </g>
+    <g>
+        <rect x="440" y="636" width="200" height="68" rx="8" /> <text x="450" y="656"
+            fill="#fff">TP53 multi-hit</text> <text x="450" y="674" fill="#fff">中位OS: 8.7月</text> <text
+            x="450" y="692" fill="#fff">AML转化率高 + 化疗CR仅10%</text>
+    </g>
+</svg>
+
+
+# QA
+
+
+
+1. 你说分化失败和异常扩增都是这批异常干细胞导致的，那我直接用BCL-2杀死这批细胞就行了，为什么历史上这么做的都失败了？或者根本没有BCL-2靶点的药物去做MDS的单药适应症？如果你说是MDS不只是对BCL-2依赖，还有部分对BCL-xL等依赖，但我把BCL-2依赖的CMP患者筛出来不就行了吗？
+2. 既然其余细胞可以通过其他抗凋亡靶点代偿，那么BCL-2抑制剂还有什么意义呢？
+3. Lisaftoclax在早期的药理分析中，看到了BCL-2释放BIM后，上调Noxa，抑制了MCL-1通路，后期临床表现为对部分Venetoclax耐药患者仍有疗效；那么Sonrotoclax和Venetoclax在药理分析时，有上调Noxa或其他方式的通路，进而抑制MCL-1吗？
+4. mds中，bcl-2+aza，如果有一个因为毒性药减量，那么减哪个好，我的意思是，哪个对mds更重要？
+5. 为什么HI比mCR更容易OS获益，我清除了更多的异常造血干细胞，那么正常的分化细胞不是会更多起来吗，对身体不是更好吗？
+6. BCL-2杀了骨髓异常细胞，需要多久能恢复生产正常细胞？
+7. AZA+Lisaftoclax对比AZA单药，在血液数据上，会有什么不同？
+8. AZA和Venetoclax抑制的是同一种细胞吗？
+9. 如果ven+aza早期研究，是不是更接近这两个药联用的天花板，那么BCL-2和aza的天花板差不多就是这个了，跟aza单药也没什么区别，bcl-2还有意义吗？
+10. Lisaftoclax在MDS上的所有临床数据
+11. MDS的CR能否传导到OS
+12. 改善mCR、真的对改善OS有益处吗？
+13. 为什么缓解率意味着可以移植；为什么不让MDS患者转化为AML后再治疗，我记得AML的药也有很多？
+14. 为什么tp53特别是双等位突变、复杂核型的MDS患者在临床中难以缓解？
+
+
+

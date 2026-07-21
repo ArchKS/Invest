@@ -1,9 +1,39 @@
 ---
 CreateTime: 2026-07-19 19:06:25
-LastUpdate: 2026-07-19 19:06:25
+LastUpdate: 2026-07-21 15:22:33
 ---
 
-本文是一些前置的知识内容,这个系列的文章主要集中在APG-2575(利沙托克拉，Lisaftoclax)的GLORA-4(MDS适应症的三期临床),不会分析亚盛的财务、企业文化、管理层等。
+
+
+每个重仓的股票我都会写篇文章，但亚盛不算是重仓，买到现在仓位在13%左右，未来也不会再加了。或许亚盛会涨到重仓，这是我买过的远期赔率最高的标的了，先提前写点吧。
+
+康方现在的仓位也到25%了，但由于ak112的鳞癌队列确定性比较大，基本能过，后续有时间就写，没时间就算了。
+
+亚盛的APG-2575（利沙托克拉，Lisaftoclax）在MDS适应症上（GLOAR-4 全球Ⅲ期临床）比较不确定，这段时间打算仔细研究一下。大致会有3～5篇，年底能写完就行，内容是：BCL-2和MDS（本篇）、Lisaftoclax分子设计、从药理机制和过往临床看GLORA-4。
+
+我写起来有点困难，可能时间会拉的很长，也是仅作学习笔记。我不是很喜欢写这种科普文章，没太大价值，这篇就当是留个痕，毕竟现在亚盛也算是低位。所有的研究完再写会很晚，万一发出的时候已经涨起来了就很无聊。
+
+如果对亚盛感兴趣，可以看看下面这几篇，我大概率也不会比他写的更好了。
+
+> HR-MDS
+>
+> 加菲如意，公众号：研究进化论[亚盛医药思考系列（1）：HR-MDS](https://mp.weixin.qq.com/s/ZazMxnrPIMrenIEDgnRbqA)
+
+> CR、OS与GLORA4
+>
+> 加菲如意，公众号：研究进化论[亚盛医药思考系列（2）：HR-MDS下的CR与OS关系以及GLORA4分析](https://mp.weixin.qq.com/s/xXizjLfaJxnBkob_-L5ALg)
+
+> AML
+>
+> 加菲如意，公众号：研究进化论[亚盛医药思考系列（3）：AML（急性髓系白血病）](https://mp.weixin.qq.com/s/_jQZXDzGCndyLzvk_C1pzw)
+
+
+
+以下是本篇正文
+
+---
+
+
 
 
 在讲BCL-2和MDS这类内容前，我们先对血液有个大致的框架。
@@ -11,6 +41,20 @@ LastUpdate: 2026-07-19 19:06:25
 各种血细胞最初的来源都是**造血干细胞**，造血干细胞分化为**髓系祖细胞**和**淋巴系祖细胞**。
 
 髓系祖细胞继续分化出红细胞、粒系（中性粒细胞）、巨噬细胞、巨核细胞（血小板是其胞质碎片），这部分主要负责**先天免疫和供氧**。淋巴系祖细胞继续分化出B细胞、T细胞、NK细胞。这部分主要负责**适应性免疫**。
+
+正常的造血过程：造血干细胞 → 增殖 → 分化成熟 → 红细胞、白细胞、血小板
+
+MDS是1、造血干细胞异常 → 产生不了正常成熟血细胞（无效造血）。2、异常克隆细胞逃避调控 → 在骨髓里扩张
+
+（1）的结果：
+
+- 红细胞生成失败 → 贫血（Hb下降）
+- 中性粒细胞生成失败 → 感染（ANC下降）
+- 血小板生成失败 → 出血（PLT下降）
+
+（2）的结果是异常造血细胞克隆，挤压正常造血细胞，这也是为什么后期的MDS会向AML转化（sAML和AML不一样）
+
+
 
 
 
@@ -182,7 +226,7 @@ BCL-2抑制剂也并非永久有效，也可能遇到**结合点位突变**（G1
 
 # MDS
 
-
+> '分化障碍 & 异常克隆扩增'（同一个异常造血干细胞克隆造成的两类表现）
 
 骨髓增生异常综合征，英文简称MDS。MDS是造血干细胞发生了克隆异常，进而导致的髓系祖细胞**异常克隆扩增**和**分化障碍**。突变细胞不断克隆扩增，占据了骨髓，却造不出合格的血细胞。主要的症状表现有贫血、淤血、免疫降低反复感染发热。
 
@@ -262,7 +306,7 @@ BCL-2抑制剂也并非永久有效，也可能遇到**结合点位突变**（G1
 
 检测血液中这三类细胞数量的指标分别是：血红蛋白 Hb（Hb >= 110，运氧能力正常）、绝对中性粒细胞计数ANC（ANC ≥ 1.0，感染抵抗力基本正常）、血小板计数PLT（PLT ≥ 100，止血功能基本正常）
 
-<svg viewBox="0 0 680 226" width="100%" role="img">
+<svg viewBox="0 0 680 576" width="100%" role="img">
     <rect width="100%" height="100%" fill="#f2f2f2" />
     <title>MDS一个克隆两张面孔悖论与疾病谱演变图</title>
     <desc>展示MDS不是两条独立通路而是同一克隆在干细胞层面扩增、前体层面凋亡的悖论，以及疾病谱中凋亡向增殖的演变</desc>
@@ -273,31 +317,238 @@ BCL-2抑制剂也并非永久有效，也可能遇到**结合点位突变**（G1
                 stroke-linejoin="round" />
         </marker>
     </defs>
-    <text x="340" y="44" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">疾病谱演变：凋亡与增殖的平衡偏移</text>
-    <rect x="48" y="62" width="135" height="36" rx="4" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5" />
-    <text x="115" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">CHIP</text>
-    <rect x="191" y="62" width="135" height="36" rx="4" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5" />
-    <text x="258" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">低危MDS</text>
-    <rect x="334" y="62" width="135" height="36" rx="4" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5" />
-    <text x="401" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#712B13">高危MDS</text>
-    <rect x="477" y="62" width="135" height="36" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5" />
-    <text x="544" y="80" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#501313">sAML</text>
-    <text x="48" y="116" text-anchor="start" font-size="11" font-weight="500" fill="#185FA5">凋亡主导</text>
-    <rect x="48" y="122" width="135" height="9" rx="2" fill="#378ADD" opacity="0.85" />
-    <rect x="191" y="122" width="135" height="7" rx="2" fill="#7F77DD" opacity="0.55" />
-    <rect x="334" y="122" width="135" height="4" rx="2" fill="#D85A30" opacity="0.3" />
-    <rect x="477" y="122" width="135" height="2" rx="2" fill="#E24B4A" opacity="0.15" />
-    <rect x="48" y="138" width="135" height="2" rx="2" fill="#378ADD" opacity="0.15" />
-    <rect x="191" y="138" width="135" height="4" rx="2" fill="#7F77DD" opacity="0.3" />
-    <rect x="334" y="138" width="135" height="7" rx="2" fill="#D85A30" opacity="0.55" />
-    <rect x="477" y="138" width="135" height="9" rx="2" fill="#E24B4A" opacity="0.85" />
-    <text x="48" y="160" text-anchor="start" font-size="11" font-weight="500" fill="#993C1D">增殖主导</text>
-    <text x="340" y="188" text-anchor="middle" font-size="11" fill="#5F5E5A">MDS→AML转化的本质：凋亡主导 →
-        增殖主导</text>
+    <text x="340" y="28" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">MDS的核心悖论：一个克隆，两张面孔</text>
+    <rect x="230" y="48" width="220" height="56" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5" />
+    <text x="340" y="68" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500"
+        fill="#3C3489">MDS突变克隆（同一个细胞）</text>
+    <text x="340" y="88" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#534AB7">携带 TET2 / DNMT3A
+        / SF3B1 等驱动突变</text>
+    <path d="M 280 104 Q 235 128 180 150" fill="none" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arrow)" />
+    <rect x="50" y="140" width="245" height="86" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" />
+    <text x="172" y="160" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500"
+        fill="#0C447C">干细胞层面 · 获得功能</text>
+    <text x="172" y="178" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#185FA5">自我更新增强 →
+        克隆扩增</text>
+    <text x="172" y="194" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#185FA5">→ 排挤正常HSC →
+        骨髓高增生</text>
+    <text x="172" y="214" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500"
+        fill="#0C447C">"骨髓是满的"</text>
+    <path d="M 400 104 Q 445 128 500 150" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow)" />
+    <rect x="385" y="140" width="245" height="86" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5" />
+    <text x="507" y="160" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500"
+        fill="#712B13">前体细胞层面 · 丧失功能</text>
+    <text x="507" y="178" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">分化阻滞 →
+        线粒体/炎症/核糖体缺陷</text>
+    <text x="507" y="194" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">→ 前体细胞过度凋亡 →
+        无效造血</text>
+    <text x="507" y="214" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500"
+        fill="#712B13">"外周血是空的"</text>
+    <rect x="120" y="248" width="440" height="40" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5" />
+    <text x="340" y="264" text-anchor="middle" dominant-baseline="central" font-size="12"
+        fill="#444441">悖论：同一克隆同时"扩增"和"凋亡" → 骨髓满但血象空</text>
+    <text x="340" y="278" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">stem cell:
+        gain-of-function = precursor: loss-of-function</text>
+    <rect x="40" y="305" width="600" height="68" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" />
+    <text x="340" y="323" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500"
+        fill="#085041">关键修正：这不是"两条独立通路"</text>
+    <text x="340" y="340" text-anchor="middle" dominant-baseline="central" font-size="11"
+        fill="#0F6E56">是同一个克隆在干细胞层面"赢了"（扩增）、在前体层面"输了"（凋亡）——两面同源</text>
+    <text x="340" y="356" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56">"通路A vs
+        通路B"是药理学评价工具，帮助理解为何HI和mCR可独立实现，但不是生物学现实</text>
+    <line x1="40" y1="392" x2="640" y2="392" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 3" />
+    <text x="340" y="414" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">疾病谱演变：凋亡与增殖的平衡偏移</text>
+    <rect x="48" y="432" width="135" height="36" rx="4" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5" />
+    <text x="115" y="450" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">CHIP</text>
+    <rect x="191" y="432" width="135" height="36" rx="4" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5" />
+    <text x="258" y="450" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3C3489">低危MDS</text>
+    <rect x="334" y="432" width="135" height="36" rx="4" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5" />
+    <text x="401" y="450" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#712B13">高危MDS</text>
+    <rect x="477" y="432" width="135" height="36" rx="4" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5" />
+    <text x="544" y="450" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#501313">sAML</text>
+    <text x="48" y="486" text-anchor="start" font-size="11" font-weight="500" fill="#185FA5">凋亡主导</text>
+    <rect x="48" y="492" width="135" height="9" rx="2" fill="#378ADD" opacity="0.85" />
+    <rect x="191" y="492" width="135" height="7" rx="2" fill="#7F77DD" opacity="0.55" />
+    <rect x="334" y="492" width="135" height="4" rx="2" fill="#D85A30" opacity="0.3" />
+    <rect x="477" y="492" width="135" height="2" rx="2" fill="#E24B4A" opacity="0.15" />
+    <rect x="48" y="508" width="135" height="2" rx="2" fill="#378ADD" opacity="0.15" />
+    <rect x="191" y="508" width="135" height="4" rx="2" fill="#7F77DD" opacity="0.3" />
+    <rect x="334" y="508" width="135" height="7" rx="2" fill="#D85A30" opacity="0.55" />
+    <rect x="477" y="508" width="135" height="9" rx="2" fill="#E24B4A" opacity="0.85" />
+    <text x="48" y="530" text-anchor="start" font-size="11" font-weight="500" fill="#993C1D">增殖主导</text>
+    <text x="340" y="558" text-anchor="middle" font-size="11" fill="#5F5E5A">MDS→AML转化的本质：凋亡主导 →
+        增殖主导——不是"两条路"，是同一条路的此消彼长</text>
 </svg>
+
+
+
+
+
+| 维度         | 通路 A（无效造血）       | 通路 B（克隆增殖）       |
+| :----------- | :----------------------- | :----------------------- |
+| 核心病理     | 前体细胞凋亡/分化阻滞    | 原始细胞不受控增殖       |
+| 分子驱动     | TGF-β/炎症/核糖体缺陷    | TP53/FLT3/表观遗传突变   |
+| 临床表现     | 贫血/感染/出血           | 原始细胞比例↑ → AML 转化 |
+| 检测指标     | Hb/ANC/PLT（外周血）     | 骨髓原始细胞 %           |
+| 对应疗效终点 | **HI**                   | **mCR**                  |
+| 致死路径     | 感染/出血/输血依赖并发症 | 白血病转化               |
+| 药物靶点     | GDF11/IL-1β/端粒酶/TNF   | DNA甲基化/BCL-2/FLT3     |
+
+
+
+| 修复通路 A（HI） | 修复通路 B（mCR）           |                                           |
+| :--------------- | :-------------------------- | ----------------------------------------- |
+| **直接后果**     | 血象恢复：Hb↑/ANC↑/PLT↑     | 原始细胞 < 5%                             |
+| **感染风险**     | ↓ ANC 恢复 → 抗感染能力恢复 | 不变（如果 ANC 没恢复）                   |
+| **出血风险**     | ↓ PLT 恢复 → 止血功能恢复   | 不变（如果 PLT 没恢复）                   |
+| **输血依赖**     | ↓ 脱离输血 → 铁过载改善     | 不变（如果 Hb 没恢复）                    |
+| **死亡驱动**     | ↓ 直接降低致死性并发症      | 间接（推迟 AML 转化，但不改善当前并发症） |
+
+
+
+
+<svg viewBox="0 0 680 520" width="100%" role="img">
+    <rect width="100%" height="100%" fill="#f2f2f2" />
+    <title>骨髓原始细胞比例的临床意义与5%阈值由来</title>
+    <desc>解释正常骨髓原始细胞范围、5%阈值的来源、不同比例对应的临床诊断</desc>
+    <defs>
+        <marker id="arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </marker>
+    </defs> <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="500"
+        fill="#2C2C2A">骨髓原始细胞比例：从正常到白血病</text> <text x="340" y="44" text-anchor="middle" font-size="12"
+        fill="#888780">同一条轴上，不同比例对应不同临床判断</text>
+    <line x1="80" y1="100" x2="600" y2="100" stroke="#B4B2A9" stroke-width="2" />
+    <line x1="80" y1="90" x2="80" y2="110" stroke="#B4B2A9" stroke-width="2" />
+    <line x1="600" y1="90" x2="600" y2="110" stroke="#B4B2A9" stroke-width="2" />
+    <rect x="80" y="80" width="170" height="40" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" /> <text
+        x="165" y="98" text-anchor="middle" font-size="12" font-weight="500" fill="#085041">正常范围</text> <text x="165"
+        y="113" text-anchor="middle" font-size="11" fill="#1D9E75">0% – 5%</text>
+    <rect x="250" y="80" width="90" height="40" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5" /> <text
+        x="295" y="98" text-anchor="middle" font-size="12" font-weight="500" fill="#633806">MDS</text> <text x="295"
+        y="113" text-anchor="middle" font-size="11" fill="#EF9F27">5% – 19%</text>
+    <rect x="340" y="80" width="260" height="40" rx="4" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5" /> <text
+        x="470" y="98" text-anchor="middle" font-size="12" font-weight="500" fill="#791F1F">AML（急性髓系白血病）</text> <text
+        x="470" y="113" text-anchor="middle" font-size="11" fill="#E24B4A">≥ 20%</text>
+    <line x1="250" y1="76" x2="250" y2="130" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2" />
+    <line x1="340" y1="76" x2="340" y2="130" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2" /> <text x="250"
+        y="142" text-anchor="middle" font-size="10" fill="#5F5E5A">5% 分界</text> <text x="340" y="142"
+        text-anchor="middle" font-size="10" fill="#5F5E5A">20% 分界</text> <text x="340" y="166" text-anchor="middle"
+        font-size="13" font-weight="500" fill="#2C2C2A">5% 这个数字怎么来的？</text>
+    <g>
+        <rect x="40" y="178" width="300" height="80" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" /><text
+            x="56" y="200" font-size="12" font-weight="500" fill="#0C447C">正常骨髓的生理基线</text><text x="56" y="218"
+            font-size="11" fill="#378ADD">造血干细胞持续分裂分化</text><text x="56" y="234" font-size="11"
+            fill="#378ADD">正常时幼稚细胞占比极低</text><text x="56" y="250" font-size="11" fill="#378ADD">大样本统计：正常人 bl 多在
+            1%–3%</text><text x="56" y="252" font-size="11" fill="#378ADD"> </text>
+    </g>
+    <g>
+        <rect x="350" y="178" width="290" height="80" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5" /><text
+            x="366" y="200" font-size="12" font-weight="500" fill="#633806">流行病学拐点</text><text x="366" y="218"
+            font-size="11" fill="#EF9F27">bl &gt; 5% 后，恶变风险陡升</text><text x="366" y="234" font-size="11"
+            fill="#EF9F27">向白血病转化的概率显著增加</text><text x="366" y="250" font-size="11" fill="#EF9F27">5% 是统计学上的最佳分界点</text>
+    </g> <text x="340" y="280" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">是越小越好吗？</text>
+    <g>
+        <rect x="40" y="292" width="290" height="100" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" /><text
+            x="56" y="314" font-size="12" font-weight="500" fill="#085041">是的，越低越好</text><text x="56" y="332"
+            font-size="11" fill="#1D9E75">0% 当然最好 = 完全没有异常幼稚细胞</text><text x="56" y="348" font-size="11"
+            fill="#1D9E75">残留越少 → 复发风险越低</text><text x="56" y="364" font-size="11"
+            fill="#1D9E75">MRD（微小残留病）阴性预后更好</text><text x="56" y="380" font-size="11" fill="#1D9E75">长期生存率越高</text>
+    </g>
+    <g>
+        <rect x="350" y="292" width="290" height="100" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="0.5" /><text
+            x="366" y="314" font-size="12" font-weight="500" fill="#72243E">但有重要细节</text><text x="366" y="332"
+            font-size="11" fill="#D4537E">正常骨髓也不会是 0%</text><text x="366" y="348" font-size="11"
+            fill="#D4537E">造血需要少量原始细胞维持再生</text><text x="366" y="364" font-size="11" fill="#D4537E">完全为 0
+            反而说明骨髓衰竭</text><text x="366" y="380" font-size="11" fill="#D4537E">→ 再生障碍性贫血等</text>
+    </g>
+    <g>
+        <rect x="40" y="404" width="600" height="104" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" /><text
+            x="60" y="426" font-size="12" font-weight="500" fill="#2C2C2A">疗效标准中的 &lt; 5% 含义</text><text x="60" y="446"
+            font-size="11" fill="#444441">mCR 要求 bl &lt; 5%，不是追求 0%，而是"回到正常范围"</text><text x="60" y="462" font-size="11"
+            fill="#444441">= 把白血病从"异常增殖"拉回到"正常生理水平"</text><text x="60" y="478" font-size="11" fill="#444441">=
+            骨髓恢复到健康人应有的造血秩序</text><text x="60" y="494" font-size="11" fill="#888780">更深层次：即使 bl &lt; 5%，若存在高危基因突变(如
+            FLT3-ITD)，仍不算真正安全</text>
+    </g>
+</svg>
+
 MDS的患病并非是一成不变的，早期分化障碍为主，后期异常克隆扩增为主。正常人体的骨髓原始细胞（Blasts）小于5%，MDS后期肿瘤细胞恶性扩增超过20%，疾病就会进展为sAML（继发性AML），也有写做AML的，但MDS进展成的AML和原发性AML治疗难度完全不同，前者生物学更耐药、缓解率更低、复发更快、预后更差。
 
 分化障碍造成的贫血、免疫低、出血及并发症，往往是患者的主要死因，比如免疫力下降导致肺炎。
+
+
+
+## 疗效评估
+
+<svg viewBox="0 0 680 420" width="100%" role="img">
+    <rect width="100%" height="100%" fill="#f2f2f2"/>
+    <title>临床疗效评估两大维度</title>
+    <desc>展示骨髓维度(原始细胞)和外周血维度(三大指标)如何组合形成疗效评价标准</desc>
+    <defs>
+        <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </marker>
+    </defs> <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">疗效评估 = 骨髓维度 +
+        外周血维度</text> <text x="340" y="44" text-anchor="middle" font-size="12" fill="#888780">两个维度独立评估，组合后形成不同缓解等级</text>
+    <line x1="340" y1="56" x2="340" y2="76" stroke="#5F5E5A" stroke-width="0.5" />
+    <line x1="140" y1="76" x2="540" y2="76" stroke="#5F5E5A" stroke-width="0.5" />
+    <line x1="140" y1="76" x2="140" y2="96" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow2)" />
+    <line x1="540" y1="76" x2="540" y2="96" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow2)" />
+    <g>
+        <rect x="40" y="96" width="280" height="100" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5" />
+        <text x="180" y="120" text-anchor="middle" font-size="13" font-weight="500" fill="#3C3489">维度一：骨髓</text>
+        <text x="180" y="140" text-anchor="middle" font-size="12" fill="#534AB7">核心指标：骨髓原始细胞比例</text> <text x="180"
+            y="158" text-anchor="middle" font-size="11" fill="#7F77DD">需做骨髓穿刺(骨穿)</text> <text x="180" y="176"
+            text-anchor="middle" font-size="11" fill="#7F77DD">评估"白血病负荷是否下降"</text> <text x="180" y="190"
+            text-anchor="middle" font-size="10" fill="#AFA9EC">blasts &lt; 5% = 骨髓完全缓解(mCR)</text>
+    </g>
+    <g>
+        <rect x="360" y="96" width="280" height="100" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" />
+        <text x="500" y="120" text-anchor="middle" font-size="13" font-weight="500" fill="#0C447C">维度二：外周血</text>
+        <text x="500" y="140" text-anchor="middle" font-size="12" fill="#185FA5">核心指标：ANC + PLT (+ Hb)</text> <text
+            x="500" y="158" text-anchor="middle" font-size="11" fill="#378ADD">抽血化验即可(血常规)</text> <text x="500" y="176"
+            text-anchor="middle" font-size="11" fill="#378ADD">评估"造血功能是否恢复"</text> <text x="500" y="190"
+            text-anchor="middle" font-size="10" fill="#85B7EB">改善幅度达阈值 = 血液学改善(HI)</text>
+    </g> <text x="340" y="222" text-anchor="middle" font-size="13" font-weight="500" fill="#2C2C2A">两维度组合 →
+        疗效等级</text>
+    <line x1="180" y1="196" x2="180" y2="232" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2" />
+    <line x1="500" y1="196" x2="500" y2="232" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2" />
+    <g>
+        <rect x="40" y="232" width="150" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5" />
+        <text x="115" y="252" text-anchor="middle" font-size="12" font-weight="500" fill="#085041">CR</text> <text
+            x="115" y="268" text-anchor="middle" font-size="10" fill="#5DCAA5">骨髓✓ + 血象完全✓</text> <text x="115" y="280"
+            text-anchor="middle" font-size="10" fill="#5DCAA5">ANC≥1.0, PLT≥100</text>
+    </g>
+    <g>
+        <rect x="200" y="232" width="150" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5" />
+        <text x="275" y="252" text-anchor="middle" font-size="12" font-weight="500" fill="#27500A">CRh</text> <text
+            x="275" y="268" text-anchor="middle" font-size="10" fill="#97C459">骨髓✓ + 血象部分✓</text> <text x="275" y="280"
+            text-anchor="middle" font-size="10" fill="#97C459">ANC≥0.5, PLT≥50</text>
+    </g>
+    <g>
+        <rect x="360" y="232" width="150" height="52" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5" />
+        <text x="435" y="252" text-anchor="middle" font-size="12" font-weight="500" fill="#633806">CRi</text> <text
+            x="435" y="268" text-anchor="middle" font-size="10" fill="#EF9F27">骨髓✓ + 血象未恢复</text> <text x="435" y="280"
+            text-anchor="middle" font-size="10" fill="#EF9F27">ANC&lt;1.0 或 PLT&lt;100</text>
+    </g>
+    <g>
+        <rect x="520" y="232" width="120" height="52" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5" />
+        <text x="580" y="252" text-anchor="middle" font-size="12" font-weight="500" fill="#791F1F">mCR</text> <text
+            x="580" y="268" text-anchor="middle" font-size="10" fill="#E24B4A">骨髓✓</text> <text x="580" y="280"
+            text-anchor="middle" font-size="10" fill="#E24B4A">不评估血象</text>
+    </g>
+    <g>
+        <rect x="40" y="306" width="600" height="100" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" />
+        <text x="60" y="328" font-size="12" font-weight="500" fill="#2C2C2A">术语对应关系</text> <text x="60" y="348"
+            font-size="11" fill="#444441">血象 / 外周血计数 / 外周血血细胞 = 同一概念</text> <text x="60" y="364" font-size="11"
+            fill="#888780"> → 指血液中红细胞、白细胞、血小板的数量和状态（血常规即可获得）</text> <text x="60" y="384" font-size="11"
+            fill="#444441">血液学改善 (HI) = 外周血指标的好转</text> <text x="60" y="400" font-size="11" fill="#888780"> →
+            分红系(Hb↑)、粒系(ANC↑)、巨核系(PLT↑)三类，有各自改善阈值</text>
+    </g>
+</svg>
 
 
 
@@ -305,7 +556,7 @@ MDS的患病并非是一成不变的，早期分化障碍为主，后期异常�
 
 MDS=异常造血干细胞的增殖+分化障碍，用药和检测病情也从这两方面入手。
 
-## 检测和临床指标预测OS
+## 缓解层级
 
 先说检测两个检测维度，一个是看原始骨髓比例是否缩小到5%以下（Blasts<5%），一个是看血象，即红细胞、白细胞和血小板的数量和状态（Hb↑、ANC↑、PLT↑），即血液改善（Hematologic Improvement，HI）的状态。临床常见组合：
 
@@ -313,6 +564,10 @@ MDS=异常造血干细胞的增殖+分化障碍，用药和检测病情也从这
 - CRh：骨髓✓ + 血液部分改善（ANC≥0.5, PLT≥50）
 - CRi：骨髓✓ + 血液状态未恢复（ANC < 1.0 或 PLT < 100）
 - mCR：骨髓✓ + 不评估血液是否改善
+
+
+
+## 预测指标
 
 一份来自Komrokji et al. 2021 — MDS Clinical Research Consortium 验证研究（n=597 + 验证队列 n=539）给出了各指标与OS之间的相关性。
 
@@ -384,11 +639,196 @@ HI是更强的预测因子，仅仅是缓解肿瘤（mCR）带来的OS获益很�
 
 
 
-再说用药，主要是两类，一个恢复造血干细胞的分化能力，另一个是促进肿瘤细胞凋亡。前者用去甲基化药物，如阿扎胞苷（AZA），后者用BCL-2抑制剂，如维奈克拉（Ven），亚盛的利沙托克拉（APG-2575，Lisaftoclax）也属于这一类。需要注意的是，MDS的治疗应当以AZA为骨架，而非BCL-2抑制剂，正如前文所述，血象的改善远比肿瘤的缩小重要。这部分后续的文章会详述，本文主要讲BCL-2。
+> 为什么HI比mCR更能改善OS？
+
+抑制造血干细胞分化，mCR↑ 和 改善HI，哪个好？
+
+mCR压到5%，可能是正常造血干细胞和异常造血干细胞一起干掉，未必会增加正常造血能力。MDS患者死亡往往是因为严重感染（中性粒细胞低）、出血（血小板低）、血红蛋白低。
+
+出现HI通常意味着以下至少一项成立：
+
+- 正常残余干细胞恢复生产；
+- 异常克隆的无效造血有所改善；
+- 骨髓微环境仍有恢复能力；
+- 治疗没有把正常祖细胞一起长期压制；
+- 患者具有更好的骨髓储备
+
+清楚异常细胞后，正常细胞也可能不那么容易恢复，正常细胞的恢复需要满足：
+
+- 仍有足够的正常造血干细胞；
+- 骨髓微环境未被严重破坏；
+- 药物没有持续抑制正常祖细胞；
+- 异常上游克隆得到真正控制；
+- 感染、炎症和纤维化没有持续压制造血；
+- 有足够时间让干细胞重新生成成熟血细胞。
+
+| 疗效状态  | 含义                           | 与OS关系                       |
+| --------- | ------------------------------ | ------------------------------ |
+| mCR、无HI | 原始细胞下降，但造血没恢复     | 较弱                           |
+| HI、无mCR | 血象改善，但异常克隆仍较明显   | 有临床价值，但疾病控制可能不深 |
+| mCR＋HI   | 疾病负荷下降，同时功能恢复     | 更有意义                       |
+| CR或CRh   | 原始细胞低，并有较充分血象恢复 | 通常与更好生存最相关           |
+
+并不是HI在生物学上一定比清除异常干细胞重要。而是现行mCR指标**没有证明异常干细胞真的被清除**，只证明原始细胞比例下降。最有价值的结果是：**异常克隆真正减少＋正常有效造血恢复＋这种状态足够持久。**
 
 
 
 
 
+## 用药
 
+再说用药，主要是两类，一个恢复造血干细胞的分化能力，另一个是促进肿瘤细胞凋亡。前者用去甲基化药物，如阿扎胞苷（AZA），后者用BCL-2抑制剂，如维奈克拉（Ven），亚盛的Lisaftoclax也属于这一类。需要注意的是，MDS的治疗应当以AZA为骨架，而非BCL-2抑制剂，正如前文所述，血象的改善远比肿瘤的缩小重要。
+
+**MDS很难成药**，近30年只有7款药物获批，高危MDS领域自去甲基化药物（HMA）之后几乎没有突破性新疗法获批。
+
+主要有三原因，一是**疾病异质性高**，不像CLL/SLL有明确的BCL-2靶点，MDS多路突变共存，缺乏单一靶点；二是**患者普遍高龄**，骨髓本来就很差，且常伴心血管、肾功能和感染等问题；三是**药效冲突**，既要恢复造血，又要清除恶性克隆，两者存在冲突。MDS患者本来就有贫血、中性粒细胞减少和血小板减少。许多抗肿瘤药进一步抑制骨髓，肿瘤的细胞少了，但正常的造血干细胞也少了，造血功能减弱，就进一步加剧了上述症状。缓解率也没有转为生存获益（mCR≠OS）。
+
+本文仅简单介绍MDS，后续临床及用药放到GLORA-4相关文章详述。
+
+
+
+## AZA作用机制
+
+<svg viewBox="0 0 680 720" width="100%" role="img" font-size="11px">
+    <rect width="100%" height="100%" fill="#f2f2f2" />
+    <title>Azacitidine dual-pathway mechanism and clinical response mapping</title>
+    <desc>Diagram showing how azacitidine acts on both Pathway A (effective hematopoiesis restoration) and Pathway B
+        (blast clearance) at clinical doses, with AZA-001 trial response rates overlaid.</desc>
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </marker>
+    </defs>
+    <rect x="0" y="0" width="680" height="720" fill="transparent" /> <text  x="340" y="28"
+        text-anchor="middle">AZA 作用机制：剂量决定通路</text> <text  x="340" y="46"
+        text-anchor="middle">标准临床剂量下，通路 A 效应远超通路 B</text>
+    <line x1="40" y1="58" x2="640" y2="58" stroke="#D3D1C7" stroke-width="0.5" /> <text  x="50"
+        y="80">给药剂量</text>
+    <rect x="50" y="88" width="250" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" /> <text
+         x="175" y="106" text-anchor="middle" dominant-baseline="central">高剂量 (150-400 mg/m²)</text> <text
+         x="175" y="120" text-anchor="middle" dominant-baseline="central">1960s-1980s 早期研究</text>
+    <rect x="380" y="88" width="250" height="40" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="505" y="106" text-anchor="middle" dominant-baseline="central" fill="#085041">标准临床剂量 (75 mg/m² ×
+        7d)</text> <text  x="505" y="120" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">FDA
+        批准方案 · 现行标准</text>
+    <line x1="175" y1="128" x2="175" y2="160" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="128" x2="505" y2="160" stroke="#1D9E75" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="152">主要机制</text>
+    <rect x="50" y="160" width="250" height="56" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="180" text-anchor="middle" dominant-baseline="central" fill="#712B13">直接细胞毒性</text> <text
+         x="175" y="198" text-anchor="middle" dominant-baseline="central" fill="#993C1D">RNA + DNA 损伤 →
+        广泛凋亡</text>
+    <rect x="380" y="160" width="250" height="56" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="505" y="180" text-anchor="middle" dominant-baseline="central" fill="#0C447C">表观遗传重编程 (主)</text>
+    <text  x="505" y="198" text-anchor="middle" dominant-baseline="central" fill="#185FA5">DNMT1 捕获降解 →
+        去甲基化</text>
+    <line x1="175" y1="216" x2="175" y2="250" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="216" x2="505" y2="250" stroke="#378ADD" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="242">作用通路</text>
+    <rect x="50" y="250" width="250" height="56" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="270" text-anchor="middle" dominant-baseline="central" fill="#712B13">通路 B (克隆清除)</text>
+    <text  x="175" y="288" text-anchor="middle" dominant-baseline="central" fill="#993C1D">无差别杀伤增殖期细胞</text>
+    <rect x="380" y="250" width="250" height="56" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="505" y="266" text-anchor="middle" dominant-baseline="central" fill="#085041">通路 A + 通路 B +
+        免疫调节</text> <text  x="505" y="282" text-anchor="middle" dominant-baseline="central"
+        fill="#0F6E56">沉默基因再表达 → 分化恢复</text> <text  x="505" y="296" text-anchor="middle"
+        dominant-baseline="central" fill="#0F6E56">CTA 上调 → T 细胞识别增强</text>
+    <line x1="175" y1="306" x2="175" y2="340" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="306" x2="505" y2="340" stroke="#1D9E75" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="332">临床疗效</text>
+    <rect x="50" y="340" width="250" height="80" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="358" text-anchor="middle" dominant-baseline="central" fill="#993C1D">高剂量试验（已弃用）</text>
+    <text  x="175" y="378" text-anchor="middle" dominant-baseline="central" fill="#712B13">CR
+        较高，但毒性死亡极高</text> <text  x="175" y="398" text-anchor="middle" dominant-baseline="central"
+        fill="#993C1D">OS 无获益 → 退出临床</text>
+    <rect x="380" y="340" width="250" height="80" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="505" y="356" text-anchor="middle" dominant-baseline="central" fill="#0C447C">AZA-001 试验
+        (n=179)</text> <text  x="505" y="372" text-anchor="middle" dominant-baseline="central"
+        fill="#185FA5">OS 24.5 月 vs 15.0 月 (CCR)</text> <text  x="505" y="388" text-anchor="middle"
+        dominant-baseline="central" fill="#185FA5">首个延长 OS 的 MDS 药物</text> <text  x="505" y="404"
+        text-anchor="middle" dominant-baseline="central" fill="#185FA5">List 2008 · Fenaux 2009</text>
+    <line x1="505" y1="420" x2="505" y2="450" stroke="#378ADD" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="442">疗效拆解</text>
+    <rect x="50" y="455" width="580" height="130" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" /> <text
+         x="70" y="476" fill="#2C2C2A">AZA-001 各疗效终点拆解</text> <text  x="70" y="491">HI 远超 CR →
+        临床获益主要来自通路 A</text>
+    <rect x="70" y="500" width="100" height="68" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="120" y="518" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">HI (血液学改善)</text>
+    <text  x="120" y="542" text-anchor="middle" dominant-baseline="central" fill="#085041">49%</text> <text
+         x="120" y="560" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">通路 A</text>
+    <rect x="190" y="500" width="100" height="68" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="240" y="518" text-anchor="middle" dominant-baseline="central" fill="#185FA5">PR (部分缓解)</text>
+    <text  x="240" y="542" text-anchor="middle" dominant-baseline="central" fill="#0C447C">12%</text> <text
+         x="240" y="560" text-anchor="middle" dominant-baseline="central" fill="#185FA5">A+B 混合</text>
+    <rect x="310" y="500" width="100" height="68" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="360" y="518" text-anchor="middle" dominant-baseline="central" fill="#993C1D">CR (完全缓解)</text>
+    <text  x="360" y="542" text-anchor="middle" dominant-baseline="central" fill="#712B13">17%</text> <text
+         x="360" y="560" text-anchor="middle" dominant-baseline="central" fill="#993C1D">通路 B</text>
+    <rect x="430" y="500" width="100" height="68" rx="6" fill="#F1EFE8" stroke="#888780" stroke-width="0.5" /> <text
+         x="480" y="518" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">SD (稳定)</text> <text
+         x="480" y="542" text-anchor="middle" dominant-baseline="central" fill="#444441">49%</text> <text
+         x="480" y="560" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">含获益</text> <text
+         x="570" y="520" dominant-baseline="central" fill="#5F5E5A">总有效率</text> <text  x="570"
+        y="542" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">51%</text> <text  x="570"
+        y="560" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">CR+PR+HI</text>
+    <line x1="340" y1="595" x2="340" y2="620" stroke="#B4B2A9" stroke-width="0.5" />
+    <rect x="50" y="625" width="580" height="80" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5" /> <text
+         x="70" y="646" fill="#3C3489">关键发现：HI 是 AZA 延长 OS 的主要驱动</text> <text  x="70" y="664"
+        fill="#3C3489">AZA-001 多因素分析（PMC3696610）：</text> <text  x="70" y="680" fill="#3C3489">以 HI 为最佳疗效的患者（未达
+        CR/PR），死亡风险仍降低 93%（vs CCR）</text> <text  x="70" y="696" fill="#3C3489">"CR is sufficient but not
+        necessary to prolong OS" — List 2008</text>
+</svg>
+
+
+
+
+作用：改变异常细胞的生物学状态
+
+生效过程：
+
+1. 只有进入细胞周期的细胞才会被AZA影响
+   1. 阿扎胞苷必须被细胞摄取并掺入RNA或DNA
+   2. DNA去甲基化尤其依赖细胞进入S期、复制DNA
+2. 去甲基化不是一个瞬间完成的
+   1. 阿扎胞苷使DNMT失活，减少新生DNA上的甲基化标记，随后才会逐步改变一批与分化、细胞周期、凋亡和肿瘤抑制有关的基因表达
+   2. 从DNA甲基化改变，到蛋白表达改变，再到细胞分化和骨髓结构改善，中间存在明显时间差
+   3. 临床研究中，部分基因的去甲基化改变是在治疗3–5个周期后才与血液学缓解对应
+3. 每个周期的去甲基化效应可能部分回退，需要持续修正
+4. 骨髓改善后，外周血指标还需要时间才能体现
+   1. 阿扎胞苷也会损伤正在增殖的正常造血祖细胞，前1–2个周期可能出现血细胞下降、输血需求增加，看起来像病情没有改善
+   2. 随着异常造血逐渐受控、有效造血恢复，净效果才转为血细胞上升，所以早期血细胞下降并不必然代表无效
+5. 早期骨髓抑制会暂时掩盖药效
+6. 首次缓解以后继续加深，是因为首次缓解只是“刚刚越过标准线”
+
+这个过程需要一定的时间，主要为：
+
+第一个周期，异常细胞开始受影响，但已成熟血细胞寿命还没结束。
+
+第二、三周期，异常克隆持续受压力，更多细胞进入分化/死亡；开始出现血象改善
+
+第四、六周期，骨髓生态逐渐改变，正常造血开始恢复
+
+
+
+# 结尾
+
+上述提到的机制/原理，在后续的讨论中很多会用到，比如：
+
+1、药物在短时间内激活足够的BAX/BAK触发MOMP，本身是个阈值事件，或许是Lisaftoclax可能依赖Cmax的原因，而依靠Cmax的杀伤方式，就不需要单次持续压制BCL-2，毒性会远小于AUC
+
+2、Cmax机制还可以支持药物半衰期短的设计，这样药物在血液中停留时间短，对代谢的影响较少，更容易和其他药物联用
+
+3、安全性+无DDI可成为某些领域的基石药物，这带来的销售空间是巨大的
+
+4、MDS中以AZA为骨架，Venetoclax的Ⅲ期临床（ven+aza vs aza）中出现了减量，最后以失败告终，主要是Venetoclax毒性太强，而MDS患者本身骨髓就很脆弱，双重抑制带来的毒性改过了OS获益。所以选择一个低毒性无DDI，不影响AZA用量的药物显得尤为重要
+
+------
+
+
+
+若MDS临床做出显著获益，亚盛可以给到至少700亿HKD市值，当前135亿HKD。
+
+尽管APG-2575是近20年来在MDS领域最有可能成药的BCL-2抑制剂，但其临床依然面临着诸多的不确定性
 
