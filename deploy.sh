@@ -65,39 +65,39 @@ EOF
 
 # 收集所有文件信息：完整时间|目录|文件名|路径
 tmp=$(mktemp)
-# find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
-#     ts=$(grep "^$UPDATE_KEY" "$f" | head -1 | sed 's/LastUpdate: //')
-#     dir=$(dirname "$f" | sed 's/^.\///')
-#     name=$(basename "$f")
-#     path="$f"
-#     echo "$ts|$dir|$name|$path" >> "$tmp"
-# done
+find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
+    ts=$(grep "^$UPDATE_KEY" "$f" | head -1 | sed 's/LastUpdate: //')
+    dir=$(dirname "$f" | sed 's/^.\///')
+    name=$(basename "$f")
+    path="$f"
+    echo "$ts|$dir|$name|$path" >> "$tmp"
+done
 
-# echo "✅ 文件信息收集完成，开始生成目录结构…"
+echo "✅ 文件信息收集完成，开始生成目录结构…"
 
-# # ✅ 正确正序排序（字符串时间）
-# sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
-#     [ -z "$ts" ] && continue
-#     show_date=${ts:0:10}
-#     relpath=${path#./}
-#     # echo "$relpath  $path"
-#     if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
-#         :  # 匹配到则跳过，不处理
-#     else
-#         # echo "匹配失败"
-#         if [ "$dir" = "." ]; then
-#             echo "$show_date  [$name]($relpath)" >> "$README_FILE"
-#             echo "" >> "$README_FILE"
-#         else
-#             if [ "$last_dir" != "$dir" ]; then
-#                 echo -e "\n## $dir\n" >> "$README_FILE"
-#                 last_dir="$dir"
-#             fi
-#             echo "- $show_date  [$name]($relpath)" >> "$README_FILE"
-#         fi
-#     fi
+# ✅ 正确正序排序（字符串时间）
+sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
+    [ -z "$ts" ] && continue
+    show_date=${ts:0:10}
+    relpath=${path#./}
+    # echo "$relpath  $path"
+    if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
+        :  # 匹配到则跳过，不处理
+    else
+        # echo "匹配失败"
+        if [ "$dir" = "." ]; then
+            echo "$show_date  [$name]($relpath)" >> "$README_FILE"
+            echo "" >> "$README_FILE"
+        else
+            if [ "$last_dir" != "$dir" ]; then
+                echo -e "\n## $dir\n" >> "$README_FILE"
+                last_dir="$dir"
+            fi
+            echo "- $show_date  [$name]($relpath)" >> "$README_FILE"
+        fi
+    fi
     
-# done
+done
 
 rm -f "$tmp"
 echo "✅ README.md 生成完成！"
