@@ -46,49 +46,6 @@ Treg浸润本身会导致自身免疫，免疫细胞攻击正常细胞，导致�
 
 ## 过往MDS临床
 
-成药结构
-
-```
-从上游到下游：
-第1层 基因突变:    IDH1 成功，但只有 4% 的人有靶点
-第2层 表观遗传:    AZA/DAC 最成功，覆盖大部分患者
-第3层 分化阻滞:    Tamibarotene 失败
-第4层 克隆扩增:    Rigosertib 两次失败
-第5层 免疫+端粒:   Imetelstat 成功，Sabatolimab 失败
-第6层 凋亡逃逸:    Venetoclax 失败，Lisaftoclax 待定
-```
-
-https://codebuddy.work/agents/tasks/share/qTxi8IJTn2?platform=workbuddy
-
-
-
-| 失败药物                    | 年份  | 机制          | 失败的直接原因                |
-| --------------------------- | ----- | ------------- | ----------------------------- |
-| Rigosertib (ONTIME)         | 2016  | RAS通路抑制剂 | OS无差异                      |
-| Guadecitabine (ASTRAL-3)    | ~2018 | DNMT抑制剂    | OS无差异                      |
-| Eprenetapopt/APR-246        | 2020  | p53再激活剂   | CR率未达统计学意义            |
-| Rigosertib (INSPIRE)        | 2020  | RAS通路抑制剂 | OS无差异（第二次失败）        |
-| Pevonedistat                | 2021  | NAE抑制剂     | EFS无差异，早期停药率高       |
-| Magrolimab (ENHANCE)        | 2023  | 抗CD47单抗    | OS+CR双失败，毒性增加死亡风险 |
-| Sabatolimab (STIMULUS-MDS2) | 2024  | 抗TIM-3       | OS无显著差异                  |
-| Tamibarotene (SELECT-MDS-1) | 2024  | RARα激动剂    | CR率未达统计学意义            |
-| Venetoclax (VERONA)         | 2025  | BCL-2抑制剂   | OS无差异                      |
-
-近30年来，仅7个药物获得FDA/EMA批准用于MDS（阿扎胞苷、来那度胺、地西他滨、地西他滨/cedazuridine、luspatercept、imetelstat、ivosidenib），而大多数 MDS 患者在诊断后3年内没有有效治疗选择。**未来方向**已明确指向：基于分子分型的富集设计、更精准的终点选择（IWG 2023标准）、以及适应性试验设计。
-
-
-
-| 文献                                                         | 期刊/年份                         | 核心内容                                                     |
-| :----------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------- |
-| **"Why has it been so difficult to develop new drugs for MDS?"** — Santini V, Mittelman M, Steensma D | MDS Foundation, 2025              | 全面回顾30年MDS药物研发困境：疾病异质性、老年合并症、终点选择不当、试验设计缺陷等七大障碍 |
-| **"The wider perspective: 20 years of clinical trials in MDS"** — Duetz C et al. | *Br J Haematol* 2022              | 2000-2020年384种药物、48项III期试验的系统分析                |
-| **"The conundrum of drug development in HR-MDS"** — Zeidan AM et al. | *Blood* 2025                      | 6项最近失败的III期试验（eprenetapopt、magrolimab、pevonedistat、sabatolimab、tamibarotene、venetoclax）的教训总结 |
-| **"Learning from late-stage trial failures in HR-MDS"** — 综述 | *Expert Rev Anticancer Ther* 2026 | 15项失败关键试验设计缺陷分析，提出适应性试验+生物标志物富集新范式 |
-| **"Treatment of high-risk MDS"** — 多中心综述                | *Haematologica* 2025              | HR-MDS治疗全景，聚焦HMA联合方案、移植策略和新兴靶向治疗      |
-| **"Contemporary Approach to Diagnosis and Classification of MDS"** — icMDS | *Modern Pathology* 2024           | MDS多步骤诊断路径的实操指南                                  |
-
-
-
 $亚盛医药-B(06855)$
 GLORA4的临床试验虽然还在入组，而实际上的试验结果，公司都已经看到了。
 1.取得CR的患者，无论是持续用药，还是去接受骨髓移植，生存期都非常显著比没有取得CR的患者更长。
