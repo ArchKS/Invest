@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1160" viewBox="0 0 1800 1160" role="img" aria-labelledby="title desc">
+  <title id="title">MDS克隆异常、炎症微环境与疾病进展机制</title>
+  <desc id="desc">造血干祖细胞的克隆性异常与骨髓炎症微环境共同导致无效造血；后续获得增殖信号异常可推动高危MDS或向AML转化。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="rootFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="outcomeFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0369A1"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="riskFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B91C1C"/>
+      <stop offset="1" stop-color="#DC2626"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6366F1"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#D97706"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0284C7"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#DC2626"/>
+    </marker>
+    <style>
+      .title { font: 700 34px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .subtitle { font: 400 17px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; fill: #64748B; letter-spacing: .5px; }
+      .section { font: 700 16px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; letter-spacing: 2px; }
+      .node-title { font: 700 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; text-anchor: middle; }
+      .node-detail { font: 500 16px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; text-anchor: middle; }
+      .white { fill: #FFFFFF; }
+      .dark { fill: #172033; }
+      .muted { fill: #475569; }
+      .edge-purple { fill: none; stroke: #6366F1; stroke-width: 3; marker-end: url(#arrowPurple); }
+      .edge-orange { fill: none; stroke: #D97706; stroke-width: 3; marker-end: url(#arrowOrange); }
+      .edge-blue { fill: none; stroke: #0284C7; stroke-width: 3; marker-end: url(#arrowBlue); }
+      .edge-red { fill: none; stroke: #DC2626; stroke-width: 3.5; marker-end: url(#arrowRed); }
+      .panel { rx: 18; filter: url(#shadow); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1160" fill="url(#bg)"/>
+  <circle cx="145" cy="80" r="180" fill="#C7D2FE" opacity=".25"/>
+  <circle cx="1690" cy="1090" r="230" fill="#FECACA" opacity=".24"/>
+
+  <text x="60" y="52" class="title">MDS克隆异常、炎症微环境与疾病进展机制</text>
+  <text x="60" y="82" class="subtitle">遗传异常与骨髓微环境共同造成无效造血；增殖信号的后续获得推动疾病进展</text>
+
+  <!-- Section labels -->
+  <text x="60" y="150" class="section" fill="#4F46E5">克隆性起点与遗传通路</text>
+  <line x1="60" y1="162" x2="1300" y2="162" stroke="#C7D2FE" stroke-width="2"/>
+  <text x="60" y="535" class="section" fill="#B45309">骨髓炎症微环境</text>
+  <line x1="60" y1="547" x2="1300" y2="547" stroke="#FDE68A" stroke-width="2"/>
+  <text x="1390" y="358" class="section" fill="#B91C1C">克隆进展轴</text>
+  <line x1="1390" y1="370" x2="1740" y2="370" stroke="#FECACA" stroke-width="2"/>
+
+  <!-- Edges: genetic branches -->
+  <path class="edge-purple" d="M900 232 V255 H225 V282"/>
+  <path class="edge-purple" d="M900 232 V255 H625 V282"/>
+  <path class="edge-purple" d="M900 232 V255 H1025 V282"/>
+  <path class="edge-purple" d="M900 232 V255 H1425 V282"/>
+
+  <path class="edge-purple" d="M225 384 V410 H690 V430"/>
+  <path class="edge-purple" d="M625 384 V430"/>
+  <path class="edge-purple" d="M1025 384 V410 H810 V430"/>
+  <path class="edge-purple" d="M1425 384 V410 H870 V430"/>
+
+  <!-- Edges: inflammatory branches -->
+  <path class="edge-orange" d="M680 638 V660 H235 V680"/>
+  <path class="edge-orange" d="M680 638 V680"/>
+  <path class="edge-orange" d="M680 638 V660 H1125 V680"/>
+
+  <path class="edge-blue" d="M700 510 V848"/>
+  <path class="edge-orange" d="M235 786 V820 H620 V848"/>
+  <path class="edge-orange" d="M680 786 V848"/>
+  <path class="edge-orange" d="M1125 786 V820 H780 V848"/>
+  <path class="edge-blue" d="M700 932 V972"/>
+
+  <!-- Edges: progression -->
+  <path class="edge-red" d="M1160 192 H1570 V398"/>
+  <path class="edge-red" d="M1570 500 V540"/>
+  <path class="edge-red" d="M1570 670 V712"/>
+  <path class="edge-red" d="M1570 796 V850"/>
+
+  <!-- A -->
+  <g>
+    <rect x="640" y="112" width="520" height="120" rx="22" fill="url(#rootFill)" filter="url(#shadow)"/>
+    <circle cx="696" cy="172" r="28" fill="#FFFFFF" opacity=".16"/>
+    <path d="M682 171c0-9 6-16 14-16s14 7 14 16c0 10-6 18-14 18s-14-8-14-18Z" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M686 164c8 4 12 4 20 0M686 178c8-4 12-4 20 0" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="920" y="166" class="node-title white">造血干/祖细胞</text>
+    <text x="920" y="198" class="node-detail white">获得克隆性异常</text>
+  </g>
+
+  <!-- B1 -->
+  <g>
+    <rect class="panel" x="40" y="282" width="370" height="102" fill="#EEF2FF" stroke="#818CF8" stroke-width="2"/>
+    <text x="225" y="321" class="node-title dark">表观遗传异常</text>
+    <text x="225" y="353" class="node-detail muted">TET2、DNMT3A、IDH1/2</text>
+    <text x="225" y="376" class="node-detail muted">ASXL1、EZH2</text>
+  </g>
+
+  <!-- B2 -->
+  <g>
+    <rect class="panel" x="440" y="282" width="370" height="102" fill="#F5F3FF" stroke="#A78BFA" stroke-width="2"/>
+    <text x="625" y="321" class="node-title dark">RNA剪接异常</text>
+    <text x="625" y="354" class="node-detail muted">SF3B1、SRSF2</text>
+    <text x="625" y="377" class="node-detail muted">U2AF1、ZRSR2</text>
+  </g>
+
+  <!-- B3 -->
+  <g>
+    <rect class="panel" x="840" y="282" width="370" height="102" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <text x="1025" y="321" class="node-title dark">转录/染色体结构异常</text>
+    <text x="1025" y="359" class="node-detail muted">RUNX1、GATA2、STAG2</text>
+  </g>
+
+  <!-- B4 -->
+  <g>
+    <rect class="panel" x="1240" y="282" width="370" height="102" fill="#FFF1F2" stroke="#FB7185" stroke-width="2"/>
+    <text x="1425" y="321" class="node-title dark">DNA损伤监控失效</text>
+    <text x="1425" y="359" class="node-detail muted">TP53、PPM1D</text>
+  </g>
+
+  <!-- C -->
+  <g>
+    <rect class="panel" x="440" y="430" width="520" height="80" fill="#FFFFFF" stroke="#6366F1" stroke-width="2.5"/>
+    <circle cx="485" cy="470" r="20" fill="#E0E7FF"/>
+    <path d="M476 470h18M485 461v18" stroke="#4F46E5" stroke-width="3" stroke-linecap="round"/>
+    <text x="720" y="478" class="node-title dark">基因表达与分化程序紊乱</text>
+  </g>
+
+  <!-- D -->
+  <g>
+    <rect class="panel" x="400" y="568" width="560" height="70" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="680" y="596" class="node-title dark">骨髓炎症微环境</text>
+    <text x="680" y="624" class="node-detail muted">S100A8/A9、TNF-α、IL-1β、TGF-β</text>
+  </g>
+
+  <!-- E1 -->
+  <g>
+    <rect class="panel" x="40" y="680" width="390" height="106" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <text x="235" y="719" class="node-title dark">TLR–MYD88–IRAK–TRAF6</text>
+    <text x="235" y="758" class="node-detail muted">NF-κB / p38 MAPK</text>
+  </g>
+
+  <!-- E2 -->
+  <g>
+    <rect class="panel" x="485" y="680" width="390" height="106" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <text x="680" y="719" class="node-title dark">ROS–NLRP3–Caspase-1</text>
+    <text x="680" y="758" class="node-detail muted">细胞焦亡</text>
+  </g>
+
+  <!-- E3 -->
+  <g>
+    <rect class="panel" x="930" y="680" width="390" height="106" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <text x="1125" y="719" class="node-title dark">TGF-β受体–SMAD2/3</text>
+    <text x="1125" y="758" class="node-detail muted">抑制红系成熟</text>
+  </g>
+
+  <!-- F -->
+  <g>
+    <rect class="panel" x="440" y="848" width="520" height="84" fill="#ECFEFF" stroke="#06B6D4" stroke-width="2.5"/>
+    <text x="700" y="899" class="node-title dark">无效造血、发育异常</text>
+  </g>
+
+  <!-- G -->
+  <g>
+    <rect x="500" y="972" width="400" height="88" rx="20" fill="url(#outcomeFill)" filter="url(#shadow)"/>
+    <text x="700" y="1025" class="node-title white">贫血、感染、出血</text>
+  </g>
+
+  <!-- H -->
+  <g>
+    <rect class="panel" x="1370" y="398" width="400" height="102" fill="#FFF1F2" stroke="#F87171" stroke-width="2"/>
+    <text x="1570" y="437" class="node-title dark">后续获得增殖相关异常</text>
+    <text x="1570" y="474" class="node-detail muted">RAS、FLT3、PTPN11等</text>
+  </g>
+
+  <!-- I -->
+  <g>
+    <rect class="panel" x="1370" y="540" width="400" height="130" fill="#FFF7F7" stroke="#F87171" stroke-width="2"/>
+    <text x="1570" y="577" class="node-title dark">增殖与存活信号通路</text>
+    <text x="1570" y="611" class="node-detail muted">RAS–RAF–MEK–ERK</text>
+    <text x="1570" y="636" class="node-detail muted">JAK–STAT</text>
+    <text x="1570" y="661" class="node-detail muted">PI3K–AKT–mTOR</text>
+  </g>
+
+  <!-- J -->
+  <g>
+    <rect class="panel" x="1370" y="712" width="400" height="84" fill="#FEF2F2" stroke="#EF4444" stroke-width="2.5"/>
+    <text x="1570" y="763" class="node-title dark">克隆增殖和存活增强</text>
+  </g>
+
+  <!-- K -->
+  <g>
+    <rect x="1370" y="850" width="400" height="104" rx="22" fill="url(#riskFill)" filter="url(#shadow)"/>
+    <text x="1570" y="894" class="node-title white">高危MDS</text>
+    <text x="1570" y="928" class="node-detail white">或向AML转化</text>
+  </g>
+
+  <!-- Footer legend -->
+  <g transform="translate(60 1110)">
+    <circle cx="7" cy="0" r="7" fill="#6366F1"/>
+    <text x="23" y="6" class="node-detail muted" text-anchor="start">遗传/分化</text>
+    <circle cx="155" cy="0" r="7" fill="#D97706"/>
+    <text x="171" y="6" class="node-detail muted" text-anchor="start">炎症微环境</text>
+    <circle cx="324" cy="0" r="7" fill="#0284C7"/>
+    <text x="340" y="6" class="node-detail muted" text-anchor="start">临床表型</text>
+    <circle cx="466" cy="0" r="7" fill="#DC2626"/>
+    <text x="482" y="6" class="node-detail muted" text-anchor="start">克隆进展</text>
+  </g>
+</svg>

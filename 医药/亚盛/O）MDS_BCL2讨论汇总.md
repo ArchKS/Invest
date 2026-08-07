@@ -1,15 +1,9 @@
 ---
 CreateTime: 2026-08-06 15:14:18
-LastUpdate: 2026-08-06 15:14:18
+LastUpdate: 2026-08-07 16:02:34
 ---
 
 # MDS 中 BCL-2 抑制剂与阿扎胞苷：讨论汇总
-
-> 整理日期：2026-08-06  
-> 主题范围：Venetoclax、阿扎胞苷（AZA）、VERONA、真实世界 Ven+Aza、Lisaftoclax/APG-2575、GLORA-4，以及 CR 与 OS 的关系。  
-> 说明：本文为研究资料汇总，不构成个体医疗建议。涉及尚未公开的 GLORA-4 数据时，已明确区分“公开事实”与“模型估算”。
-
----
 
 ## 一、核心结论
 
@@ -706,7 +700,7 @@ CR 是缓解指标，不能直接确定死亡风险。
 
 - [AZA-001：Azacitidine改善高危MDS生存](https://pubmed.ncbi.nlm.nih.gov/19230772/)
 
----
+
 
 ## 十五、一句话总结
 
