@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-14 20:36:51
-LastUpdate: 2026-08-05 10:45:59
+LastUpdate: 2026-08-13 14:10:59
 ---
 
 # 亚盛医药（Ascentage Pharma）全线临床数据汇总
@@ -22,22 +22,24 @@ LastUpdate: 2026-08-05 10:45:59
 
 **CLL/SLL 系列**
 
-| 试验                | 名称 / 描述                             | NCT 编号    | 链接                                                         | 报告                                                         |
-| :------------------ | :-------------------------------------- | :---------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| Phase 1 全球 FIH    | 剂量爬坡 20–1200mg，52 例 R/R 血液肿瘤  | NCT03537482 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT03537482) | ASH 2024壁报：[#4614](https://ash.confex.com/ash/2024/webprogram/Paper207408.html) <br />ASH 2024 [Rare Disease Advisor 报道](https://www.rarediseaseadvisor.com/reports/lisaftoclax-plus-acalabrutinib-effective-cll-sll-prior-venetoclax/)<br /> ASH2024 [亚盛官方新闻](https://pr.wis.community/article/ASH-2024-or-Results-From-Three-Clinical-Studies-of-Ascentage-Pharmas-Bcl-2-Inhibitor-Lisaftoclax-Selected-for-Presentations-Including-an-Oral-Report?storyId=672b0911def489cc6dc95f8a) |
-| 中国 Phase 1        | R/R NHL 含 CLL/SLL 51 例                | NCT03913949 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT03913949) |                                                              |
-| Phase 1b/2 联合治疗 | 单药/+利妥昔/+阿可替尼，176 例          | NCT04215809 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT04215809) |                                                              |
-| 中国关键注册 II 期  | 单药 R/R CLL/SLL，77 例                 | NCT05147467 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT05147467) | ASH2025 <br />https://www.liangyihui.net/doc/158810 <br /> [亚盛官网新闻](https://www.ascentage.cn/news-detail/%E3%80%90%E7%9B%B4%E5%87%BB2025-ash%E3%80%91%E7%AA%81%E7%A0%B4btki%E8%80%90%E8%8D%AF%E5%92%8C%E5%A4%8D%E6%9D%82%E6%A0%B8%E5%9E%8B%E7%9A%84%E5%9B%B0%E5%A2%83%EF%BC%81%E4%BA%9A%E7%9B%9B%E5%8C%BB/) <br />  [Targeted Oncology 报道](https://www.targetedonc.com/view/lisaftoclax-monotherapy-achieves-significant-responses-and-pfs-in-r-r-cll-sll) <br/> [ScienceDirect/Blood 摘要](https://www.sciencedirect.com/science/article/pii/S0006497125026631) |
-| GLORA (III 期)      | BTKi 经治 CLL/SLL vs BTKi 单药，~440 例 | NCT06104566 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT06104566) |                                                              |
-| GLORA-2 (III 期)    | 初治 CLL/SLL +阿可替尼 vs FCR，344 例   | NCT06319456 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT06319456) |                                                              |
+| 试验                | 名称 / 描述                            | NCT 编号    | 链接                                                         | 报告                                                         |
+| :------------------ | :------------------------------------- | :---------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| Phase 1 全球 FIH    | 剂量爬坡 20–1200mg，52 例 R/R 血液肿瘤 | NCT03537482 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT03537482) | ASH 2024壁报：[#4614](https://ash.confex.com/ash/2024/webprogram/Paper207408.html) <br />ASH 2024 [Rare Disease Advisor 报道](https://www.rarediseaseadvisor.com/reports/lisaftoclax-plus-acalabrutinib-effective-cll-sll-prior-venetoclax/)<br /> ASH2024 [亚盛官方新闻](https://pr.wis.community/article/ASH-2024-or-Results-From-Three-Clinical-Studies-of-Ascentage-Pharmas-Bcl-2-Inhibitor-Lisaftoclax-Selected-for-Presentations-Including-an-Oral-Report?storyId=672b0911def489cc6dc95f8a) |
+| 中国 Phase 1        | R/R NHL 含 CLL/SLL 51 例               | NCT03913949 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT03913949) |                                                              |
+| Phase 1b/2 联合治疗 | 单药/+利妥昔/+阿可替尼，176 例         | NCT04215809 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT04215809) |                                                              |
+| 中国关键注册 II 期  | 单药 R/R CLL/SLL，77 例                | NCT05147467 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT05147467) | ASH2025 <br />https://www.liangyihui.net/doc/158810 <br /> [亚盛官网新闻](https://www.ascentage.cn/news-detail/%E3%80%90%E7%9B%B4%E5%87%BB2025-ash%E3%80%91%E7%AA%81%E7%A0%B4btki%E8%80%90%E8%8D%AF%E5%92%8C%E5%A4%8D%E6%9D%82%E6%A0%B8%E5%9E%8B%E7%9A%84%E5%9B%B0%E5%A2%83%EF%BC%81%E4%BA%9A%E7%9B%9B%E5%8C%BB/) <br />  [Targeted Oncology 报道](https://www.targetedonc.com/view/lisaftoclax-monotherapy-achieves-significant-responses-and-pfs-in-r-r-cll-sll) <br/> [ScienceDirect/Blood 摘要](https://www.sciencedirect.com/science/article/pii/S0006497125026631) |
+
+
 
 **AML/MDS 系列**
 
-| 试验             | 名称 / 描述                                   | NCT 编号    | 链接                                                         | 报道                                                         |
-| :--------------- | :-------------------------------------------- | :---------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
-| 联合 AZA I 期    | AML/MDS 全球多中心，103 例                    | NCT04964518 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT04964518) | Synapse 报道](https://synapse.patsnap.com/article/asco-2024-promising-efficacy-and-safety-of-lisaftoclax-with-azacitidine-in-aml)<br />[Ovid/JCO 全文](https://www.ovid.com/jnls/ascojco/pdf/10.1200/jco.2024.42.16_suppl.6541~safety-and-efficacy-of-lisaftoclax-a-novel-bcl-2-inhibitor)<br />[PRN Asia 中文](https://hk.prnasia.com/story/449467-1.shtml) |
-| GLORA-3 (III 期) | 老年/体弱初治 AML +AZA vs 安慰剂+AZA，~486 例 | NCT06389292 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT06389292) |                                                              |
-| GLORA-4 (III 期) | 初治中高危 MDS +AZA vs 安慰剂+AZA，464 例     | NCT06641414 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT06641414) |                                                              |
+| 试验          | 名称 / 描述                | NCT 编号    | 链接                                                         | 报道                                                         |
+| :------------ | :------------------------- | :---------- | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| 联合 AZA I 期 | AML/MDS 全球多中心，103 例 | NCT04964518 | [clinicaltrials.gov](https://clinicaltrials.gov/study/NCT04964518) | [Synapse 报道](https://synapse.patsnap.com/article/asco-2024-promising-efficacy-and-safety-of-lisaftoclax-with-azacitidine-in-aml)<br />[Ovid/JCO 全文](https://www.ovid.com/jnls/ascojco/pdf/10.1200/jco.2024.42.16_suppl.6541~safety-and-efficacy-of-lisaftoclax-a-novel-bcl-2-inhibitor)<br />[PRN Asia 中文](https://hk.prnasia.com/story/449467-1.shtml) |
+
+
+
+
 
 
 #### ASCO 2025 — Venetoclax 耐药 + MDS/CMML 扩展（口头报告！）
@@ -91,29 +93,7 @@ LastUpdate: 2026-08-05 10:45:59
 
 
 
-## 2. APG-2575中国临床数据深度分析
-
-| #     | 试验代号            | 适应症                          | 试验阶段          | 数据状态                 | 读出/预计读出时间       | 备注                              |
-| ----- | ------------------- | ------------------------------- | ----------------- | ------------------------ | ----------------------- | --------------------------------- |
-| **1** | APG2575CC201        | R/R CLL/SLL（单药）             | 注册 II 期        | ✅ **已读出**（支撑 NDA） | 2024-2025 年            | 2025.7.10 获批上市的依据          |
-| **2** | GLORA-4（中国部分） | 新诊断中高危 MDS（联合 AZA）    | 注册 III 期       | 🔄 进行中                 | **2026 年**读出关键数据 | 2024.8 CDE 批准，全球 III 期      |
-| **3** | —                   | CLL/SLL 1.5L（联合 BTKi）       | 国内桥接/拓展研究 | 🔄 进行中                 | **2026-2027 年**        | 对应全球 GLORA 系列，国内同步推进 |
-| **4** | —                   | R/R 多发性骨髓瘤 MM（联合方案） | II 期             | 🔄 进行中                 | **2026-2027 年**        | 早期数据已在 ASH/EHA 展示         |
-| **5** | —                   | 华氏巨球蛋白血症 WM             | II 期             | 🔄 进行中                 | **2026-2027 年**        | 尚未有中国数据正式读出            |
-| **6** | —                   | 急性髓系白血病 AML（联合方案）  | II 期             | 🔄 进行中                 | **2027 年及以后**       | 早期概念验证数据已在国际会议展示  |
-| **7** | —                   | NHL（非霍奇金淋巴瘤）亚型       | I/II 期           | 🔄 进行中                 | **2027 年及以后**       | 探索性适应症                      |
-| **8** | GLORA（中国部分）   | 一线 CLL/SLL（联合方案）        | 注册 III 期       | 🔄 入组中                 | **2027 年**提交 NDA     | 全球同步，中国为 MRCT 一部分      |
-
-**GLORA-4（MDS）** 是最接近数据读出的下一个国内注册试验，2026 年读出后将有望成为利生妥第二个获批适应症
-
- APG-2575 在 CLL/SLL 中的中国桥接/联合研究
-
-- **数据读出**：2025 ASH、2026 ASCO、2026 EHA 均有数据公布
-- **状态**：利生妥已获批，但拓展适应症（如联合 BTK 抑制剂、1.5L 等）的中国试验数据仍在陆续读出
-
-
-
-### 2.1 CLL/SLL临床数据
+## 2.1 CLL/SLL临床数据
 
 #### 2.1.1 单药治疗R/R CLL：两项试验汇总数据
 
@@ -158,7 +138,11 @@ APG-2575联合acalabrutinib（选择性BTKi）在R/R CLL中展现了深度且持
 
 上表汇总了APG-2575在CLL/SLL领域六种临床场景下的疗效数据。从单药到联合治疗，ORR呈现明显的梯度提升：单药73.3% → 联合rituximab 87% → 联合acalabrutinib 96.6-100%，这一模式与venetoclax的临床开发轨迹高度一致。联合acalabrutinib在R/R CLL中实现的96.6% ORR和18个月PFS率86%，与venetoclax联合acalabrutinib在CAPTIVATE试验中报告的约95% ORR处于同一水平。特别值得注意的是，venetoclax经治患者86%的ORR为APG-2575提供了独特的差异化定位——这是venetoclax自身无法覆盖的治疗场景。然而，初治CLL 100% ORR的数据仅基于16例患者，样本量过小限制了其统计学可靠性，需等待GLORA-2 III期试验的验证。
 
-### 2.2 AML临床数据
+
+
+
+
+## 2.2 AML临床数据
 
 #### 2.2.1 联合AZA治疗TN AML
 
@@ -190,7 +174,11 @@ APG-2575联合AZA在AML中的安全性特征展现出与venetoclax相比的差�
 
 在血液学毒性方面，APG-2575联合AZA的≥3级中性粒细胞减少发生率为57.9%，≥3级血小板减少为50.0%，≥3级贫血为27.6%。这些数值与VIALE-A中venetoclax+AZA的≥3级中性粒细胞减少42%和血小板减少45%基本处于同一区间。然而，APG-2575的发热性中性粒细胞减少率（10.5%）显著低于VIALE-A报告的42%，这一差异可能转化为更低的感染相关死亡率和更好的治疗持续性。
 
-### 2.3 MDS临床数据
+
+
+
+
+## 2.3 MDS临床数据
 
 #### 2.3.1 联合AZA治疗HR-MDS
 
@@ -367,8 +355,6 @@ ASCO 2025口头报告进一步扩展了数据集：在15例可评估的新诊断
 | APG-2449-III-1 | APG-2449   | 2L ALK+ NSCLC              | CDE             | 待定      | 招募中           | 待定          |
 | APG-2449-III-2 | APG-2449   | 1L ALK+ NSCLC              | CDE             | 待定      | 招募中           | 待定          |
 
-
-
 从入组进度看，GLORA-2和GLORA-3已完成80–90%入组，GLORA和POLARIS-2预计于2026年内完成入组，POLARIS-1和GLORA-4预计于2026年完成大部分入组。
 
 POLARIS-1的初步数据已在2025年ASH年会发布：截至2025年7月18日，53例可评估Ph+ ALL患者中50例（94.3%）实现CR或CRi，最佳MRD阴性率为66.0%，MRD阴性CR率为64.2%；携带高危因素IKZF1plus的10例患者中分子学缓解率高达90%[^21]。POLARIS-2的Phase II随机注册研究4年随访显示，奥雷巴替尼组中位EFS显著优于BAT组（21.22 vs 2.86个月，P<0.001），为Phase III终点设计提供了充分验证[^22]。
@@ -377,36 +363,7 @@ POLARIS-1的初步数据已在2025年ASH年会发布：截至2025年7月18日，
 
 
 
-
-
-# 第一部分：Lisaftoclax (APG-2575/利沙托克拉/利生妥®) 临床数据
-
-## 一、药物基本信息
-
-| 项目 | 内容 |
-|:---|:---|
-| 通用名 | 利沙托克拉 (Lisaftoclax) |
-| 研发代号 | APG-2575 |
-| 商品名 | 利生妥® |
-| 靶点 | BCL-2 (高选择性抑制剂，BH3模拟物) |
-| BCL-2 Ki | < 0.1 nM |
-| BCL-2 IC50 | 2 nM |
-| BCL-xL IC50 | 5.9 nM (BCL-2/BCL-xL选择性比约3倍) |
-| MCL-1 IC50 | >5000 nM (几乎无活性) |
-| BCL-2 G101V IC50 | biochemical ~57 nM；细胞实验约161 nM |
-| 血浆半衰期 (t½) | 3–6小时 |
-| Tmax | 4–6小时 |
-| 400mg Cmax | 0.822 μg/mL |
-| 400mg AUC0-24 | 6.85 h·μg/mL |
-| 肿瘤组织半衰期 | 13–48小时 |
-| 给药方案 | 每日口服，4–6天快速爬坡至目标剂量(400/600/800 mg) |
-| 中国获批 | 2025年7月10日 (NMPA附条件批准) |
-| 获批适应症 | 既往≥1线系统治疗(含BTKi)的成人R/R CLL/SLL |
-| FDA孤儿药认定 | 5项 (WM, CLL, MM, AML, FL) |
-
----
-
-## 二、CLL/SLL 临床数据
+## CLL/SLL 临床数据
 
 ### 2.1 Phase 1 全球FIH研究 (NCT03537482)
 
@@ -1228,63 +1185,9 @@ Sonro + Obinutuzumab 组 C15 uMRD4 率 87%；三联组 100% 达 uMRD4、80% 达 
 
 
 
-# 名词含义
-
-## 疾病相关：
-
-- CLL：Chronic Lymphocytic Leukemia，慢性淋巴细胞白血病，成熟 B 淋巴细胞在**血液和骨髓**里异常增殖，发病慢，难根治
-- SLL：Small Lymphocytic Lymphoma，小淋巴细胞淋巴瘤，本质和 CLL 是同一种病，只是肿瘤主要在**淋巴结/脾脏**里，没怎么进血液
-- AML：Acute Myeloid Leukemia，急性髓系白血病，骨髓里髓系原始细胞恶性增殖，抑制正常造血，起病急、进展快。 V 药+Aza 已经获批的适应症，但高危/老年人群仍有大量未满足需求
-- MDS：Myelodysplastic Syndromes，骨髓增生异常综合征。骨髓「生产」血细胞的功能紊乱，表现为贫血、白细胞低、血小板低，约 30% 会进展成 AML。核心是**骨髓衰竭 + 向白血病转化风险**
-- HR-MDS：Higher-Risk MDS，高危 MDS
-- R/R MCL：Relapsed/Refractory Mantle Cell Lymphoma，复发难治套细胞淋巴瘤，MCL 是一种特殊类型的 B 细胞非霍奇金淋巴瘤，R/R 就是**复发或既往治疗无效**
-- MM：Multiple Myeloma，多发性骨髓瘤，浆细胞在骨髓里异常增殖，分泌异常免疫球蛋白，典型表现是「CRAB」——高钙血症、肾功能损害、贫血、骨破坏
-- Ph+ ALL：
-- DDI：药物相互作用，有DDI联用会受限
 
 
 
-
-
-## 临床相关：
-
-- ORR ：Overall Response Rate，总体应答率，治疗后肿瘤缩小达到预定标准（CR+PR）的患者比例。ORR=CR（完全缓解）+PR（部分缓解，肿瘤缩小＞30%）
-- TLS：Tumor Lysis Syndrome，肿瘤溶解综合征。大量肿瘤细胞被药物快速杀死后，细胞内容物（钾、磷、尿酸）一股脑泄进血液，导致**高尿酸、高钾、高磷、低钙**，严重时会肾衰竭、心律失常甚至猝死
-- MRD：Minimal Residual Disease，微小残留病灶，MRD 阴性 表示体内查不到残留，复发风险显著降低，是现在 CLL/AML 审评的重要替代终点
-- MTD：Maximum Tolerated Dose，最大耐受剂量
-- DLT：Dose-Limiting Toxicity，剂量限制性毒性
-
-
-
-## 其他：
-
-- BTK/BTKi：Bruton's Tyrosine Kinase / BTK inhibitor，**BTK** 是 B 细胞受体信号通路里的关键酶，管 B 细胞存活增殖，**BTKi** 就是抑制它的药，代表是伊布替尼、阿卡替尼、泽布替尼
-
-
-
-
-
-# 专家
-
-|                                   | 国内/海外     | 机构/角色                                                  | 代表文章/摘要链接                                            |
-| --------------------------------- | ------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| Matthew S. Davids                 | 海外          | Dana-Farber；CLL/SLL核心KOL                                | [Med 2025：CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[Clin Cancer Res 2023：FIH，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/) |
-| Asher Chanan-Khan                 | 海外          | Mayo Clinic；FIH和CLL研究核心作者                          | [FIH开放标签研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/) |
-| Sikander Ailawadhi                | 海外          | Mayo Clinic；FIH、MM/AL联合方案                            | [FIH第一作者，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[ASH/SOHO MM/AL摘要页](https://ascentage.com/document/mm-718-lisaftoclax-apg-2575-combined-with-novel-therapeutic-regimens-in-patients-with-relapsed-or-refractory-r-r-multiple-myeloma-mm-or-immunoglobulin-light-chain-al-amyloidosis/) |
-| Patricia Kropf                    | 海外          | Novant Health；AML/MDS + AZA研究                           | [ASCO 2025：venetoclax难治AML/MDS口头报告，公司公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Michael Francis Leahy             | 海外          | Royal Perth Hospital；AML/MDS研究                          | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Shaun Fleming                     | 海外          | The Alfred Hospital / Australian Centre for Blood Diseases | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
-| Aneel Paulus                      | 海外          | Mayo Clinic；机制/早期临床                                 | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
-| Anthony Letai / John Ryan         | 海外          | Dana-Farber相关BCL-2凋亡研究圈                             | [前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
-| 李建勇                            | 国内          | 江苏省人民医院；中国注册性CLL/SLL研究PI之一                | 暂未看到其作为作者的APG-2575论文链接；代表公开出处为[NMPA批准公告/注册研究说明](https://ascentage.com/ascentage-pharma-announces-its-novel-bcl-2-inhibitor-lisaftoclax-approved-by-china-nmpa-ushering-in-a-new-era-for-the-treatment-of-cll-sll/) |
-| 王建祥                            | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 孙敏                              | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1第一作者，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 周可树                            | 国内          | 河南省肿瘤医院/郑大附属肿瘤医院                            | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
-| 孟珊                              | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
-| 顾柳芳                            | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
-| 赵华                              | 国内          | 转化/肿瘤免疫机制研究                                      | [APG-2575重塑TAM并增强抗PD-1反应，PMID 38062129](https://pubmed.ncbi.nlm.nih.gov/38062129/) |
-| 邓健 / Fang DD / 唐强等           | 国内/公司研发 | 亚盛相关前临床与组合机制研究                               | [APG-2575血液瘤前临床，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/)；[与alrizomadlin克服venetoclax耐药，PMID 36240005](https://pubmed.ncbi.nlm.nih.gov/36240005/)；[与olverembatinib在FLT3-ITD AML模型协同，PMID 34710737](https://pubmed.ncbi.nlm.nih.gov/34710737/) |
-| 翟一帆 / 杨大俊 / 陈子 / 王恒邦等 | 国内/公司研发 | 亚盛医学与研发核心作者                                     | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[中国NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
 
 ### AML/MDS 联合 AZA — 髓系肿瘤验证
 
@@ -1320,35 +1223,20 @@ Sonro + Obinutuzumab 组 C15 uMRD4 率 87%；三联组 100% 达 uMRD4、80% 达 
 
 
 
-# 第五部分：汇总关键数据时间线
-
-| 时间 | 里程碑 | 产品 |
-|:---|:---|:---|
-| 2021年11月 | 奥雷巴替尼中国获批 (T315I CML) | 奥雷巴替尼 |
-| 2023年11月 | 奥雷巴替尼新增适应症 (一/二代TKI耐药CML-CP) | 奥雷巴替尼 |
-| 2024年6月 | 武田13亿美元选择权协议签署 | 奥雷巴替尼 |
-| 2025年7月 | 利沙托克拉中国获批 (R/R CLL/SLL) | 利沙托克拉 |
-| 2025年8月 | GLORA-4获FDA/EMA许可 (MDS) | 利沙托克拉 |
-| 2025年12月 | Sonrotoclax获FDA加速批准 (R/R MCL) | 竞品 |
-| 2026年1月 | Sonrotoclax中国获批 (CLL/SLL + MCL) | 竞品 |
-| 2026年 | POLARIS-2完成入组，预计FDA NDA | 奥雷巴替尼 |
-| 2026年 | GLORA/GLORA-2/GLORA-3入组完成 | 利沙托克拉 |
-| 2026–2027年 | 武田行权窗口期 | 奥雷巴替尼 |
-| 2027年 | GLORA数据读出 (PFS) | 利沙托克拉 |
-| 2028年Q2–Q3 | GLORA-3数据读出 (OS) | 利沙托克拉 |
-| 2029年 | GLORA-4 CR率数据读出；OS数据 2029–2030 | 利沙托克拉 |
-
----
-
-> **报告生成日期**：2026年7月14日
->
-> **数据截止日期**：2026年7月 (含ASCO 2026、EHA 2026、ASH 2025等最新会议数据)
+# GLORA 系列
 
 
 
+**表2 | 各GLORA试验与venetoclax先例试验对照**
 
+| GLORA试验              | 对标先例                      | 先例结果                        | 设计相似度                               | 关键差异                                                     |
+| :--------------------- | :---------------------------- | :------------------------------ | :--------------------------------------- | :----------------------------------------------------------- |
+| GLORA（R/R CLL/SLL）   | MURANO（Ven+rituximab vs BR） | PFS HR 0.17，7年PFS率23%        | 高：均为开放标签随机III期，PFS主要终点   | GLORA为Bcl-2i+BTKi联合（vs Ven+抗CD20），对照为活性治疗（vs化疗） |
+| GLORA-2（初治CLL/SLL） | CLL14（Ven+Obi vs Clb+Obi）   | PFS HR 0.35，6年PFS率53%        | 中高：均为固定疗程设计，PFS主要终点      | GLORA-2对照为FCR（vs chlorambucil），联合伙伴为BTKi（vs抗CD20） |
+| GLORA-3（AML）         | VIALE-A（Ven+AZA vs Pbo+AZA） | OS HR 0.66，mOS 14.7 vs 9.6月   | 极高：双盲安慰剂对照、OS终点、相同对照组 | 1:1随机（vs 2:1）；不同Bcl-2i分子                            |
+| GLORA-4（HR-MDS）      | VERONA（Ven+AZA vs Pbo+AZA）  | OS HR 0.908，P=0.38（**失败**） | 高：双盲安慰剂对照、相同对照组           | **双主要终点**（CR+OS，vs单一OS）；不同Bcl-2i分子            |
 
-# GLORA
+该对照表展示了APG-2575的临床开发策略如何系统性借鉴venetoclax的成功路径并规避其失败教训。
 
 
 
@@ -1451,17 +1339,6 @@ GLORA-4的成功概率评估为55–65%，是四项试验中最低的。核心�
 | 预计数据读出 | 2028年Q2–Q3              | ~2028年末                 | ~2028年         | 2029年CR率/2029–2030年OS        |
 
 
-
-**表2 | 各GLORA试验与venetoclax先例试验对照**
-
-| GLORA试验              | 对标先例                      | 先例结果                        | 设计相似度                               | 关键差异                                                     |
-| :--------------------- | :---------------------------- | :------------------------------ | :--------------------------------------- | :----------------------------------------------------------- |
-| GLORA（R/R CLL/SLL）   | MURANO（Ven+rituximab vs BR） | PFS HR 0.17，7年PFS率23%        | 高：均为开放标签随机III期，PFS主要终点   | GLORA为Bcl-2i+BTKi联合（vs Ven+抗CD20），对照为活性治疗（vs化疗） |
-| GLORA-2（初治CLL/SLL） | CLL14（Ven+Obi vs Clb+Obi）   | PFS HR 0.35，6年PFS率53%        | 中高：均为固定疗程设计，PFS主要终点      | GLORA-2对照为FCR（vs chlorambucil），联合伙伴为BTKi（vs抗CD20） |
-| GLORA-3（AML）         | VIALE-A（Ven+AZA vs Pbo+AZA） | OS HR 0.66，mOS 14.7 vs 9.6月   | 极高：双盲安慰剂对照、OS终点、相同对照组 | 1:1随机（vs 2:1）；不同Bcl-2i分子                            |
-| GLORA-4（HR-MDS）      | VERONA（Ven+AZA vs Pbo+AZA）  | OS HR 0.908，P=0.38（**失败**） | 高：双盲安慰剂对照、相同对照组           | **双主要终点**（CR+OS，vs单一OS）；不同Bcl-2i分子            |
-
-该对照表展示了APG-2575的临床开发策略如何系统性借鉴venetoclax的成功路径并规避其失败教训。
 
 
 

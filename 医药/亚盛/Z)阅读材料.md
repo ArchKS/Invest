@@ -1,6 +1,6 @@
 ---
 CreateTime: 2026-07-15 17:31:32
-LastUpdate: 2026-08-05 10:45:59
+LastUpdate: 2026-08-13 14:10:59
 ---
 
 # 王少萌论文
@@ -33,6 +33,28 @@ LastUpdate: 2026-08-05 10:45:59
 [药理机制论文](./药理机制论文.html)
 
 
+
+# 专家
+
+|                                   | 国内/海外     | 机构/角色                                                  | 代表文章/摘要链接                                            |
+| --------------------------------- | ------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| Matthew S. Davids                 | 海外          | Dana-Farber；CLL/SLL核心KOL                                | [Med 2025：CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[Clin Cancer Res 2023：FIH，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/) |
+| Asher Chanan-Khan                 | 海外          | Mayo Clinic；FIH和CLL研究核心作者                          | [FIH开放标签研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/) |
+| Sikander Ailawadhi                | 海外          | Mayo Clinic；FIH、MM/AL联合方案                            | [FIH第一作者，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[ASH/SOHO MM/AL摘要页](https://ascentage.com/document/mm-718-lisaftoclax-apg-2575-combined-with-novel-therapeutic-regimens-in-patients-with-relapsed-or-refractory-r-r-multiple-myeloma-mm-or-immunoglobulin-light-chain-al-amyloidosis/) |
+| Patricia Kropf                    | 海外          | Novant Health；AML/MDS + AZA研究                           | [ASCO 2025：venetoclax难治AML/MDS口头报告，公司公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Michael Francis Leahy             | 海外          | Royal Perth Hospital；AML/MDS研究                          | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Shaun Fleming                     | 海外          | The Alfred Hospital / Australian Centre for Blood Diseases | [ASCO 2025：AZA+lisaftoclax公告](https://ascentage.com/live-from-asco-2025-ascentage-pharma-presents-clinical-data-on-bcl-2-inhibitor-lisaftoclax-in-venetoclax-refractory-patients-in-oral-report/) |
+| Aneel Paulus                      | 海外          | Mayo Clinic；机制/早期临床                                 | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
+| Anthony Letai / John Ryan         | 海外          | Dana-Farber相关BCL-2凋亡研究圈                             | [前临床血液瘤模型，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/) |
+| 李建勇                            | 国内          | 江苏省人民医院；中国注册性CLL/SLL研究PI之一                | 暂未看到其作为作者的APG-2575论文链接；代表公开出处为[NMPA批准公告/注册研究说明](https://ascentage.com/ascentage-pharma-announces-its-novel-bcl-2-inhibitor-lisaftoclax-approved-by-china-nmpa-ushering-in-a-new-era-for-the-treatment-of-cll-sll/) |
+| 王建祥                            | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 孙敏                              | 国内          | 中国医学科学院血液病医院                                   | [中国R/R CLL/SLL及NHL Phase 1第一作者，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 周可树                            | 国内          | 河南省肿瘤医院/郑大附属肿瘤医院                            | [中国R/R CLL/SLL及NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
+| 孟珊                              | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
+| 顾柳芳                            | 国内          | 西安交通大学第二附属医院血液科                             | [AZA+lisaftoclax治疗R/R AML和MDS-IB，PMID 42111228](https://pubmed.ncbi.nlm.nih.gov/42111228/) |
+| 赵华                              | 国内          | 转化/肿瘤免疫机制研究                                      | [APG-2575重塑TAM并增强抗PD-1反应，PMID 38062129](https://pubmed.ncbi.nlm.nih.gov/38062129/) |
+| 邓健 / Fang DD / 唐强等           | 国内/公司研发 | 亚盛相关前临床与组合机制研究                               | [APG-2575血液瘤前临床，PMID 36048524](https://pubmed.ncbi.nlm.nih.gov/36048524/)；[与alrizomadlin克服venetoclax耐药，PMID 36240005](https://pubmed.ncbi.nlm.nih.gov/36240005/)；[与olverembatinib在FLT3-ITD AML模型协同，PMID 34710737](https://pubmed.ncbi.nlm.nih.gov/34710737/) |
+| 翟一帆 / 杨大俊 / 陈子 / 王恒邦等 | 国内/公司研发 | 亚盛医学与研发核心作者                                     | [FIH研究，PMID 37074726](https://pubmed.ncbi.nlm.nih.gov/37074726/)；[CLL Phase 1b/2，PMID 41109219](https://pubmed.ncbi.nlm.nih.gov/41109219/)；[中国NHL Phase 1，PMID 42000210](https://pubmed.ncbi.nlm.nih.gov/42000210/) |
 
 
 
