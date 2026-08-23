@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venetoclax（维奈克拉）在MDS领域的临床研究全景</title>
+<style>
+  :root{
+    --primary:#1a5276; --primary-light:#2e86c1; --accent:#c0392b;
+    --bg:#f7f9fb; --card:#ffffff; --border:#dbe4ec; --text:#1c2833;
+    --muted:#5d6d7e; --tag-bg:#eaf2f8; --green:#1e8449; --red:#c0392b; --amber:#b9770e;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.75; font-size:15px;}
+  .container{max-width:1080px; margin:0 auto; padding:24px 28px 80px;}
+  header.hero{background:linear-gradient(135deg,#1a5276 0%,#2e86c1 100%); color:#fff; border-radius:14px; padding:38px 40px; margin-bottom:28px;}
+  header.hero h1{font-size:26px; margin-bottom:10px;}
+  header.hero p{font-size:14px; opacity:.92;}
+  header.hero .meta{margin-top:16px; font-size:13px; opacity:.85;}
+  h2.section{font-size:21px; color:var(--primary); margin:44px 0 18px; padding-left:12px; border-left:5px solid var(--primary-light);}
+  h3{font-size:17px; color:var(--primary); margin:26px 0 10px;}
+  h4{font-size:15px; color:var(--primary-light); margin:16px 0 6px;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px 28px; margin-bottom:22px; box-shadow:0 1px 3px rgba(20,50,80,.05);}
+  .card h3{margin-top:0;}
+  .badges{margin:6px 0 14px;}
+  .badge{display:inline-block; background:var(--tag-bg); color:var(--primary); font-size:12px; border-radius:20px; padding:2px 12px; margin:2px 6px 2px 0; border:1px solid #d4e6f1;}
+  .badge.terminated{background:#fdedec; color:var(--red); border-color:#f5b7b1;}
+  .badge.negative{background:#fdedec; color:var(--red); border-color:#f5b7b1;}
+  .badge.completed{background:#e9f7ef; color:var(--green); border-color:#abebc6;}
+  .badge.ongoing{background:#fef9e7; color:var(--amber); border-color:#f9e79f;}
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:13.5px;}
+  th{background:#eaf2f8; color:var(--primary); text-align:left; padding:8px 10px; border:1px solid var(--border); font-weight:600;}
+  td{padding:8px 10px; border:1px solid var(--border); vertical-align:top;}
+  tr:nth-child(even) td{background:#fbfdfe;}
+  .result-box{background:#f4f9fd; border-left:4px solid var(--primary-light); border-radius:0 8px 8px 0; padding:14px 18px; margin:12px 0; font-size:14px;}
+  .result-box.negative{background:#fdf3f2; border-left-color:var(--red);}
+  .result-box.positive{background:#f2faf4; border-left-color:var(--green);}
+  ul{margin:8px 0 8px 22px;}
+  li{margin-bottom:4px;}
+  .note{font-size:13px; color:var(--muted);}
+  .kpi-row{display:flex; flex-wrap:wrap; gap:12px; margin:14px 0;}
+  .kpi{flex:1 1 140px; background:#f4f9fd; border:1px solid var(--border); border-radius:10px; padding:12px 14px; text-align:center;}
+  .kpi .num{font-size:20px; font-weight:700; color:var(--primary);}
+  .kpi .lbl{font-size:12px; color:var(--muted); margin-top:2px;}
+  .kpi.neg .num{color:var(--red);}
+  .kpi.pos .num{color:var(--green);}
+  /* timeline */
+  .timeline{position:relative; margin:20px 0 10px 14px; padding-left:26px; border-left:3px solid var(--primary-light);}
+  .tl-item{position:relative; margin-bottom:16px;}
+  .tl-item::before{content:""; position:absolute; left:-34px; top:6px; width:13px; height:13px; border-radius:50%; background:#fff; border:3px solid var(--primary-light);}
+  .tl-item.key::before{background:var(--red); border-color:var(--red);}
+  .tl-date{font-weight:700; color:var(--primary); font-size:13.5px;}
+  .tl-item.key .tl-date{color:var(--red);}
+  .tl-text{font-size:13.5px; color:var(--text);}
+  .toc{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 26px; font-size:14px; column-count:2; column-gap:40px;}
+  .toc a{color:var(--primary-light); text-decoration:none;}
+  .toc a:hover{text-decoration:underline;}
+  .footer{margin-top:40px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--border); padding-top:16px;}
+  .small{font-size:12.5px;}
+  @media (max-width:760px){.toc{column-count:1;}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="hero">
+  <h1>Venetoclax（维奈克拉）在 MDS 领域的临床研究全景</h1>
+  <p>覆盖全球注册性研究（VERONA、AbbVie Ib 期）、学术机构研究（MD Anderson 系列）、分子靶向/免疫联合、移植相关研究及中国研究的完整梳理</p>
+  <div class="meta">报告日期：2026年7月26日 ｜ 数据截至：2026年7月（含 ASH 2025 / Blood Advances 2026 等最新数据）</div>
+</header>
+
+<!-- ============ 总览 ============ -->
+<h2 class="section">一、总览：研究图谱与核心结论</h2>
+
+<div class="card">
+  <p>Venetoclax（VEN，选择性 BCL-2 抑制剂）联合去甲基化药物（HMA）是高危 MDS（HR-MDS）领域近十年最重要的探索方向。该领域的研发路径为：<b>Ib 期信号（NCT02942290，mOR 80.4%、mOS 26.0 个月）→ 全球 III 期 VERONA（NCT04401748）→ 2025年6月宣布未达到 OS 主要终点</b>。尽管 VERONA 为阴性研究，VEN+HMA 在提高缓解深度（mCR）、促进输血独立、桥接异基因造血干细胞移植（allo-HSCT）方面仍显示出明确价值，且在 <75岁、原始细胞增多、高危/极高危亚组中观察到获益趋势。</p>
+  <div class="result-box negative" style="margin-top:14px;">
+    <b>核心结论：</b>① VERONA III 期未改善 OS（22.18 vs 21.68 个月，HR 0.908，P=0.38），VEN+AZA 未成为 HR-MDS 一线新标准；② 但 mOR（76.2% vs 57.7%，P&lt;0.0001）、mCR、mCR+HI、输血独立率显著提高，AML 转化率数值更低（15% vs 20%），桥接移植比例更高（17% vs 13%）；③ 亚组分析提示 <75岁、原始细胞 ≥5%、IPSS-R 高危/极高危人群可能是优势人群；④ VEN 单药在 R/R MDS 中活性有限（ORR 7%），联合 HMA mORR 约 39%、mOS 12.6 个月；⑤ 未来方向转向：优势人群富集设计、分子靶向三联（IDH1/2）、移植桥接与移植后维持。
+  </div>
+</div>
+
+<div class="card">
+<h3>全部临床研究一览表</h3>
+<table>
+  <tr><th style="width:24%">研究 / NCT</th><th style="width:10%">分期</th><th style="width:16%">人群</th><th style="width:18%">方案</th><th style="width:8%">样本量</th><th style="width:24%">核心结果</th></tr>
+  <tr><td><b>VERONA</b><br>NCT04401748<br>AbbVie/Genentech</td><td>III期 随机双盲</td><td>初治 HR-MDS（IPSS-R>3）</td><td>VEN 400mg d1-14 + AZA vs PBO+AZA</td><td>509（随机）</td><td><span style="color:var(--red)">OS 阴性</span>（HR 0.908）；mOR 76.2% vs 57.7%</td></tr>
+  <tr><td><b>初治 Ib 期</b><br>NCT02942290<br>AbbVie/Genentech</td><td>Ib期 单臂</td><td>初治 HR-MDS</td><td>VEN 400mg d1-14 + AZA（RP2D）</td><td>107（RP2D）</td><td>CR 29.9%，mCR 50.5%，mOR 80.4%，mOS 26.0 个月</td></tr>
+  <tr><td><b>R/R Ib 期</b><br>NCT02966782<br>AbbVie</td><td>Ib期 单臂</td><td>R/R MDS（HMA 失败）</td><td>VEN 单药 或 VEN d1-14 + AZA</td><td>70（联合44）</td><td>单药 ORR 7%；联合 mORR 38.6%，mOS 12.6 个月</td></tr>
+  <tr><td><b>MD Anderson 5+14</b><br>NCT04160052<br>MD Anderson</td><td>I/II期 单臂</td><td>初治及 R/R HR-MDS/CMML</td><td>AZA×5天 + VEN d1-14</td><td>51（I期23）</td><td>I期 ORR 87%；RP2D 400mg×14天；2026年2月终止</td></tr>
+  <tr><td><b>MD Anderson R/R</b><br>NCT04550442<br>MD Anderson</td><td>I/II期 单臂</td><td>R/R HR-MDS/CMML（HMA 失败）</td><td>VEN d1-14 + AZA d1-5</td><td>34</td><td>提前终止（入组不足），数据以汇总分析形式报告</td></tr>
+  <tr><td><b>全口服 ASTX727+VEN</b><br>NCT04655755<br>MD Anderson</td><td>I/II期 单臂</td><td>初治 HR-MDS/CMML</td><td>口服地西他滨/cedazuridine d1-5 + VEN 400 d1-14</td><td>37</td><td>ORR 94.5%，CR 35.1%，49% 桥接移植，mOS 未达到</td></tr>
+  <tr><td><b>STIMULUS-MDS3</b><br>NCT04812548<br>Novartis</td><td>II期 单臂</td><td>初治 IPSS-R 高/极高危 MDS</td><td>Sabatolimab + AZA + VEN 三联</td><td>20</td><td>CR 6.7%，CR+mCR 86.7%；申办方战略终止</td></tr>
+  <tr><td><b>IVO+VEN±AZA</b><br>NCT03471260<br>MD Anderson</td><td>Ib/II期</td><td>IDH1 突变髓系肿瘤（含 MDS 9例）</td><td>Ivosidenib + VEN ± AZA</td><td>31</td><td>CRc 87%（三联 90%）；MDS 24个月 OS 100%</td></tr>
+  <tr><td><b>ENAVEN-AML</b><br>NCT04092179<br>Princess Margaret 等</td><td>Ib/II期</td><td>R/R IDH2 突变 AML/MDS</td><td>Enasidenib + VEN</td><td>27（MDS 1例）</td><td>AML ORR 62%；唯一 MDS 患者无应答</td></tr>
+  <tr><td><b>Johns Hopkins 移植</b><br>NCT03613532<br>Johns Hopkins</td><td>I期</td><td>高危 MDS/AML 移植</td><td>VEN+FluBu2 预处理 → VEN+口服地西他滨维持</td><td>30（维持26）</td><td>2年 PFS 53%、OS 67%；NRM 0%</td></tr>
+  <tr><td><b>GESMD 桥接研究</b><br>西班牙多中心</td><td>回顾性</td><td>HR-MDS/CMML 拟移植</td><td>HMA + VEN 桥接 allo-HSCT</td><td>30</td><td>ORR 90%，83% 完成移植，2年移植后生存 75%</td></tr>
+  <tr><td><b>浙江 R/R 15天方案</b><br>Hematol Oncol 2023</td><td>回顾性</td><td>R/R HR-MDS</td><td>AZA + VEN 15天</td><td>35</td><td>ORR 57.2%，mOS 14 个月</td></tr>
+  <tr><td><b>浙江/宁波 初治前瞻</b><br>Cancers 2026</td><td>前瞻性 多中心</td><td>初治 HR-MDS（IPSS-R>3.5）</td><td>AZA d1-7 + VEN d1-15（100→400mg）</td><td>28</td><td>ORR 85.7%（CR 35.7%），mOS 未达到；TP53 不良</td></tr>
+  <tr><td><b>苏大附一院真实世界</b><br>中国实验血液学杂志 2025</td><td>回顾性</td><td>高危 MDS</td><td>VEN + HMA</td><td>30</td><td>ORR 80%，mOS 28.1 个月，12例桥接移植</td></tr>
+</table>
+<p class="note">另有多项 AML 为主但含 MDS 亚组的研究（eprenetapopt+VEN±AZA、navitoclax+VEN+地西他滨等）及 CMML、移植后维持相关研究在正文相应章节说明。</p>
+</div>
+
+<!-- ============ 时间轴 ============ -->
+<h2 class="section">二、关键时间轴（2017–2026）</h2>
+<div class="card">
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-date">2017年1月 / 3月</div><div class="tl-text">AbbVie 初治 Ib 期（NCT02942290）与 R/R Ib 期（NCT02966782）相继启动，VEN 正式进入 MDS 领域</div></div>
+    <div class="tl-item"><div class="tl-date">2018–2019 ASH</div><div class="tl-text">初治 Ib 期早期数据：因 28 天给药不耐受，方案修订为 VEN 100/200/400mg 递增 ×14天 + AZA×7天</div></div>
+    <div class="tl-item"><div class="tl-date">2019年10月</div><div class="tl-text">MD Anderson AZA×5天+VEN I/II 期（NCT04160052）启动</div></div>
+    <div class="tl-item"><div class="tl-date">2020年9月</div><div class="tl-text"><b>VERONA III 期（NCT04401748）启动</b>，全球约 220 中心、30 余国（含中国）</div></div>
+    <div class="tl-item"><div class="tl-date">2020 ASH / 2021 ASH</div><div class="tl-text">初治 Ib 期更新：ORR 77–80%，CR 40–42%，mOS 28.2 个月，奠定 III 期基础</div></div>
+    <div class="tl-item"><div class="tl-date">2021年1月 / 5月</div><div class="tl-text">全口服 ASTX727+VEN（NCT04655755）与 STIMULUS-MDS3 三联研究启动</div></div>
+    <div class="tl-item"><div class="tl-date">2022年</div><div class="tl-text">Lancet Haematol 发表 MD Anderson I 期（Bazinet）；Am J Hematol 发表 R/R Ib 期（Zeidan）；Blood Adv 发表 VEN 加入移植预处理初步数据</div></div>
+    <div class="tl-item"><div class="tl-date">2023年</div><div class="tl-text">EHA：ASTX727+VEN ORR 94.5%；MD Anderson 80例汇总分析（HMA 初治 mOS 28.2 vs HMA 失败 8.3 个月）；STIMULUS-MDS3 终止</div></div>
+    <div class="tl-item"><div class="tl-date">2025年3月</div><div class="tl-text">Blood 发表初治 Ib 期最终结果（Garcia 等，n=107：CR 29.9%，mOS 26.0 个月）</div></div>
+    <div class="tl-item key"><div class="tl-date">2025年6月16日</div><div class="tl-text"><b>AbbVie/Genentech 宣布 VERONA 未达到 OS 主要终点（HR 0.908，P=0.3772）</b></div></div>
+    <div class="tl-item"><div class="tl-date">2025年9月 / 12月</div><div class="tl-text">SOHO 2025 主要分析（MDS-1497）；ASH 2025 亚组分析（摘要 235，中位随访 41.2 个月）：<75岁、原始细胞增多亚组呈获益趋势</div></div>
+    <div class="tl-item"><div class="tl-date">2025–2026年</div><div class="tl-text">GESMD 桥接移植研究、DEC-C±VEN 倾向评分匹配研究、VEN 移植后维持数据（Blood Adv 2026）、中国 15 天方案前瞻研究（Cancers 2026）相继发表</div></div>
+    <div class="tl-item"><div class="tl-date">2027年7月（预计）</div><div class="tl-text">VERONA 长期随访完成</div></div>
+  </div>
+</div>
+
+<!-- ============ 注册性研究 ============ -->
+<h2 class="section">三、注册性研究（AbbVie / Genentech 主导）</h2>
+
+<!-- VERONA -->
+<div class="card" id="verona">
+  <h3>3.1 VERONA：III 期随机双盲研究（NCT04401748）—— 领域 pivotal 研究，OS 阴性</h3>
+  <div class="badges">
+    <span class="badge">III期 · 随机双盲安慰剂对照</span><span class="badge">AbbVie / Genentech</span>
+    <span class="badge">全球约220中心 · 30余国（含中国）</span><span class="badge negative">主要终点 OS 未达到</span>
+  </div>
+
+  <h4>基本信息</h4>
+  <ul>
+    <li>正式名称：A Randomized, Double-Blind, Phase 3 Study Evaluating the Safety and Efficacy of Venetoclax in Combination With Azacitidine in Patients Newly Diagnosed With Higher-Risk MDS</li>
+    <li>主要研究者：Guillermo Garcia-Manero（MD Anderson，第一作者）、Jacqueline S. Garcia（Dana-Farber，资深作者）；中国医学科学院血液病医院（肖志坚教授）等中国中心参与</li>
+    <li>数据发表：2025-06-16 企业公告 → SOHO 2025 主要分析（摘要 MDS-1497）→ ASH 2025 亚组分析（摘要 235，2025-12-06，奥兰多）；数据截止 2025-04-10</li>
+  </ul>
+
+  <h4>研究设计与入组人群</h4>
+  <ul>
+    <li>设计：全球多中心、1:1 随机、四重盲、安慰剂对照；按 IPSS-R 风险（中危/高危/极高危）、地区（北美/欧洲/日本/中国/其他）、HSCT 资格分层</li>
+    <li>方案：<b>VEN 400mg 口服 d1-14 + AZA 75mg/m²（IV/SC）×7天/28天周期</b> vs 安慰剂+AZA，治疗至疾病进展、移植或不可耐受毒性</li>
+    <li>入组：≥18岁、WHO 2016 确诊 MDS、骨髓原始细胞 <20%、<b>IPSS-R >3（中危/高危/极高危）</b>、ECOG 0-2、无既往 MDS 治疗；排除治疗相关 MDS、MPN 继发 MDS、CMML</li>
+    <li>实际入组 531 例，<b>509 例随机纳入疗效分析</b>（VEN+AZA 256 例 vs PBO+AZA 253 例）；安全性集 255 vs 246 例</li>
+    <li>基线特征（VEN vs PBO）：中位年龄 72 vs 72 岁；IPSS-R 极高危 36% vs 32%、高危 37% vs 39%、中危 27% vs 28%；原始细胞 <5% 约 27%；约 46% 原始细胞 10–20%；TP53 突变 25% vs 19%，ASXL1 30% vs 33%，RUNX1 15% vs 24%；约 20% 基线具备 HSCT 资格</li>
+  </ul>
+
+  <h4>终点与时间轴</h4>
+  <ul>
+    <li>主要终点：<b>总生存期（OS）</b>；关键次要终点：改良总体缓解（mOR = CR+PR+mCR）、CR、总体血液学改善（HI）、输血独立（TI）、PRO（EORTC QLQ-C30、PROMIS-Fatigue）</li>
+    <li>时间轴：2020-09-10 启动 → 2025-04-10 数据截止（<b>中位随访 41.2 个月</b>）→ 2025-06-16 topline 公告 → 2025-09 SOHO 主要分析 → 2025-12-06 ASH 亚组分析 → 预计 2027-07 完成长期随访</li>
+  </ul>
+
+  <h4>临床结果</h4>
+  <div class="kpi-row">
+    <div class="kpi neg"><div class="num">HR 0.908</div><div class="lbl">OS（P=0.38）<br>22.18 vs 21.68 个月</div></div>
+    <div class="kpi pos"><div class="num">76.2% vs 57.7%</div><div class="lbl">mOR（P<0.0001）</div></div>
+    <div class="kpi pos"><div class="num">57.8% vs 37.5%</div><div class="lbl">mCR 率</div></div>
+    <div class="kpi"><div class="num">18.0% vs 20.2%</div><div class="lbl">CR 率（VEN 组数值更低）</div></div>
+    <div class="kpi pos"><div class="num">55.7% vs 33.6%</div><div class="lbl">输血独立率（P=0.0003）</div></div>
+    <div class="kpi pos"><div class="num">15% vs 20%</div><div class="lbl">AML 转化率</div></div>
+  </div>
+  <ul>
+    <li>HI：49.4% vs 41.2%（P=0.0723）；<b>mCR 伴血液学改善（mCR+HI）：27.3% vs 18.2%</b></li>
+    <li>TI 中位持续时间：183 vs 294 天（对照组更长，提示 VEN 组部分患者早停药/早移植）</li>
+    <li>治疗中止原因（VEN vs PBO）：疾病进展 30% vs 45%、不良事件 20% vs 15%、HSCT 16% vs 8%、患者退出 14% vs 17%；研究后 VEN 治疗：11% vs 21%</li>
+    <li>研究后 allo-HSCT：43/256（17%）vs 33/253（13%），中位至移植 5.6 vs 6.7 个月；移植前最佳反应：VEN 组 CR 25.6%、mCR 60.5%、SD 14.0%；PBO 组 CR 27.3%、mCR 33.3%、SD 39.4% —— <b>VEN 组以更深缓解（mCR）进入移植</b></li>
+    <li>安全性：与两药已知安全性一致，无新安全信号；发热性中性粒细胞减少 23% vs 16%；AZA 减量大约为对照组 2 倍</li>
+  </ul>
+
+  <h4>亚组分析（ASH 2025，预设分析）</h4>
+  <table>
+    <tr><th>亚组</th><th>OS HR（95%CI）</th><th>解读</th></tr>
+    <tr><td>年龄 18–<75 岁</td><td>0.835（0.630–1.107）</td><td>数值上倾向 VEN+AZA</td></tr>
+    <tr><td>年龄 ≥75 岁</td><td>1.160（0.834–1.613）</td><td>相反趋势</td></tr>
+    <tr><td>原始细胞 ≥5%–<20%</td><td>0.858（0.676–1.090）</td><td>数值上倾向 VEN+AZA</td></tr>
+    <tr><td>原始细胞 <5%</td><td>1.313（0.795–2.169）</td><td>无获益趋势（可能对 BCL-2 依赖低）</td></tr>
+    <tr><td>TP53 突变</td><td>1.064（0.670–1.688）</td><td>OS 无获益</td></tr>
+  </table>
+  <ul>
+    <li>mOR 获益趋势（未达统计学显著）：<75 岁、IPSS-R 高危/极高危、原始细胞 >5%、ASXL1 / TP53 / RUNX1 突变、较高细胞遗传学风险亚组</li>
+    <li>全部亚组 OS 均无统计学差异；研究者（Garcia）指出：VERONA 纳入了 28% 中危及 27% 无原始细胞增多患者（Ib 期分别为少数），可能"稀释"了高危人群的真实获益信号，未来试验应富集优势人群</li>
+  </ul>
+</div>
+
+<!-- Ph1b TN -->
+<div class="card">
+  <h3>3.2 初治 HR-MDS Ib 期（NCT02942290）—— VERONA 的奠基研究</h3>
+  <div class="badges">
+    <span class="badge">Ib期 · 开放标签 · 多中心</span><span class="badge">AbbVie / Genentech</span>
+    <span class="badge completed">已完成并正式发表</span>
+    <span class="badge">Blood 2025;145(11):1126-1135（Garcia JS 等）</span>
+  </div>
+
+  <h4>基本信息</h4>
+  <ul>
+    <li>第一作者 Jacqueline S. Garcia（Dana-Farber），通讯 Guillermo Garcia-Manero；2017-01-12 启动，总入组约 129 例（含剂量递增），<b>RP2D 队列 107 例</b></li>
+    <li>数据里程碑：ASH 2020（n=57：ORR 77%，CR 42%，mCR 35%）→ ASH 2021（n=78：CR 40%，mCR 40%，mOS 28.2 个月，23% 桥接移植）→ <b>Blood 2025 最终发表（数据截止 2023-05，中位随访 31.9 个月）</b></li>
+  </ul>
+
+  <h4>研究设计与入组人群</h4>
+  <ul>
+    <li>人群：≥18岁、<b>初治 HR-MDS</b>（IPSS 中危-2/高危即 ≥1.5 分，或 IPSS-R >3）、骨髓原始细胞 <20%、ECOG ≤2；排除 CMML、治疗相关 MDS；86% 为高危/极高危，90% 伴原始细胞增多（与 VERONA 人群构成明显不同）</li>
+    <li>剂量探索：初始 VEN 400/800mg <b>×28天</b> → 因血液学不耐受修订为 <b>100/200/400mg ×14天</b> 递增 + AZA 75mg/m² d1-7/28天 → 确定 <b>RP2D：VEN 400mg d1-14</b></li>
+  </ul>
+
+  <h4>终点</h4>
+  <ul>
+    <li>主要：安全性 + CR 率（主要疗效终点）；次要：mOR、HI、OS、TTNT、患者报告结局（EORTC QLQ-C30）</li>
+  </ul>
+
+  <h4>临床结果（RP2D 队列，n=107）</h4>
+  <div class="kpi-row">
+    <div class="kpi pos"><div class="num">80.4%</div><div class="lbl">mOR（CR+mCR+PR）</div></div>
+    <div class="kpi"><div class="num">29.9%</div><div class="lbl">CR 率</div></div>
+    <div class="kpi pos"><div class="num">50.5%</div><div class="lbl">mCR 率</div></div>
+    <div class="kpi pos"><div class="num">26.0 个月</div><div class="lbl">中位 OS（1年 71.2%，2年 51.3%）</div></div>
+    <div class="kpi pos"><div class="num">39.3%</div><div class="lbl">桥接 allo-HSCT（中位 4.8 个月）</div></div>
+  </div>
+  <ul>
+    <li>中位 CR 持续时间 16.6 个月（95%CI 10.0–NR）；达 CR 者 mOS 未达到</li>
+    <li>HI：49.0%（红系 43.0%、血小板 43.2%、中性粒细胞 17.5%）；基线输血依赖者 40.7% 获得输血独立；给药后 RBC TI 61.7%、血小板 TI 72.0%</li>
+    <li>TTNT（不含移植）13.4 个月；（含移植）6.8 个月</li>
+    <li>移植亚组：44.1% 的 mCR 无 HI 患者成功桥接至 HSCT，中位 3 个周期后移植</li>
+    <li>安全性：任意级 AE——便秘 53.3%、恶心 49.5%、中性粒细胞减少 48.6%、血小板减少 44.9%、发热性中性粒细胞减少 42.1%、腹泻 41.1%；94% 发生 3/4 级 TEAE；约 50% 需 VEN 减量、近 90% 需给药中断；30 天死亡率约 1–2%</li>
+    <li>PRO：躯体功能维持，第 5 周期起疲乏、气促获得有临床意义的改善并维持至 48 周</li>
+  </ul>
+
+  <h4>亚组分析</h4>
+  <ul>
+    <li>早期报告提示各分子亚组（含 TP53 突变）均可见缓解；最终发表的亚组数据显示缓解在各 IPSS-R 与突变亚组间总体一致（详细数据见 Blood 2025 原文）</li>
+  </ul>
+</div>
+
+<!-- Ph1b RR -->
+<div class="card">
+  <h3>3.3 R/R MDS Ib 期（NCT02966782）—— HMA 失败后救援</h3>
+  <div class="badges">
+    <span class="badge">Ib期 · 开放标签 · 多中心</span><span class="badge">AbbVie</span>
+    <span class="badge completed">已完成并正式发表</span>
+    <span class="badge">Am J Hematol 2023（Zeidan AM 等，2022年11月在线）</span>
+  </div>
+
+  <h4>基本信息</h4>
+  <ul>
+    <li>2017-03-07 启动，2023-04-05 完成；共 70 例（VEN 单药队列 16 例 + VEN+AZA 联合队列 44 例）</li>
+    <li>因 VEN 单药疗效有限（ORR 7%，1/16；75% 疾病稳定），分析聚焦联合组</li>
+  </ul>
+
+  <h4>研究设计与入组人群</h4>
+  <ul>
+    <li>人群：≥18岁、R/R MDS（<b>HMA 失败：≥4 周期 AZA 或地西他滨后无应答或复发</b>，近 5 年内）、骨髓原始细胞 <20%、ECOG ≤2、非 HSCT 候选；排除 MDS/MPN（含 CMML）、既往 BH3 模拟物、既往移植</li>
+    <li>联合组 44 例：男性 86%，中位年龄 74 岁（44–91）；中位既往 1 线 HMA，65% 接受 >6 周期 HMA</li>
+    <li>方案：VEN 100/200/400mg 递增 ×14天 + AZA 75mg/m² d1-7/28天；中位治疗 4 个周期（1–32）</li>
+  </ul>
+
+  <h4>终点</h4>
+  <ul><li>安全性/PK 与疗效（按改良 IWG 2006 标准评估 CR、mCR、PR、HI、TI、DOR、PFS、OS）</li></ul>
+
+  <h4>临床结果（VEN+AZA，n=44；中位随访 21.2 个月）</h4>
+  <div class="kpi-row">
+    <div class="kpi"><div class="num">38.6%</div><div class="lbl">mORR（CR+mCR+PR）</div></div>
+    <div class="kpi"><div class="num">7% / 32%</div><div class="lbl">CR / mCR</div></div>
+    <div class="kpi"><div class="num">12.6 个月</div><div class="lbl">中位 OS（95%CI 9.1–17.2）</div></div>
+    <div class="kpi"><div class="num">8.6 个月</div><div class="lbl">中位 PFS 与 DOR</div></div>
+    <div class="kpi pos"><div class="num">36%</div><div class="lbl">输血独立</div></div>
+  </div>
+  <ul>
+    <li>中位至 CR/mCR 时间 1.2 个月（起效快）；mCR 者中 43% 获 HI；4 例桥接 allo-HSCT</li>
+    <li>安全性：≥3 级血液学 AE——发热性中性粒细胞减少 34%、血小板减少 32%、中性粒细胞减少 27%、贫血 18%；肺炎 23%；SAE 61%；30 天死亡率 2%；48% 因 AE 中断给药，21% 停药</li>
+    <li>死亡 29 例（66%）：疾病进展 21%、AE 9%</li>
+  </ul>
+  <div class="result-box">
+    <b>意义：</b>HMA 失败后 MDS 缺乏标准治疗，历史 mOS 仅 4–6 个月；VEN+AZA 在该人群中 mOS 12.6 个月、起效快、可改善血象与输血依赖，为救援治疗与桥接移植提供了可行选择，但缓解深度（CR 仅 7%）与持续时间有限。
+  </div>
+</div>
+
+<!-- ============ 学术机构研究 ============ -->
+<h2 class="section">四、学术机构主导的 HMA+VEN 研究</h2>
+
+<div class="card">
+  <h3>4.1 MD Anderson AZA×5天 + VEN I/II 期（NCT04160052）</h3>
+  <div class="badges"><span class="badge">I/II期 · 单中心</span><span class="badge terminated">2026年2月终止（入组不足）</span><span class="badge">Lancet Haematol 2022（Bazinet 等）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>MD Anderson 单中心、剂量递增+扩展；2019-10 启动；入组初治（IPSS 中危-2/高危）或 R/R（HMA 失败）HR-MDS/CMML、原始细胞 >5%；I 期 23 例（17 例 HMA 初治、6 例 HMA 失败）</li>
+    <li>方案：AZA 75mg/m² <b>×5天</b> + VEN 100–400mg ×7–14天（3+3 设计），周期 4–8 周；总入组 51 例后终止</li>
+  </ul>
+  <h4>结果（I 期，中位随访 13.2 个月）</h4>
+  <ul>
+    <li>MTD 未达到，<b>RP2D：AZA×5天 + VEN 400mg×14天</b>；<b>ORR 87%（20/23，95%CI 66–97）</b></li>
+    <li>3–4 级 TEAE：中性粒细胞减少 39%、血小板减少 39%、肺部感染 30%、发热性中性粒细胞减少 17%；3 例脓毒症死亡（判定为非治疗相关）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>4.2 MD Anderson R/R MDS/CMML I/II 期（NCT04550442）</h3>
+  <div class="badges"><span class="badge">I/II期 · 单中心</span><span class="badge terminated">已终止（入组率<75%）</span></div>
+  <ul>
+    <li>2020-09 启动，入组 34 例 HMA 失败的 R/R HR-MDS/CMML（含治疗相关 MDS）；VEN d1-14 + AZA d1-5，周期 4–8 周</li>
+    <li>未单独发表，其数据并入 MD Anderson 三项研究汇总分析（见 4.4）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>4.3 全口服方案：ASTX727（口服地西他滨/cedazuridine）+ VEN（NCT04655755）</h3>
+  <div class="badges"><span class="badge">I/II期 · 单中心 · 全口服</span><span class="badge">EHA 2022 / EHA 2023（Venugopal/Bataller 等）</span><span class="badge completed">倾向评分匹配分析已发表（Blood Cancer J 2025）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>初治 HR-MDS/CMML（IPSS 中危-2/高危、原始细胞 >5%）；2021-01 至 2023-01 入组 37 例：MDS-EB1 6 例、MDS-EB2 24 例、CMML-2 6 例、aCML 1 例；中位 71 岁；突变谱：ASXL1 49%、RUNX1 38%、SRSF2 30%、TET2 22%、TP53 19%</li>
+    <li>方案：ASTX727 100/35mg d1-5 + VEN（递增 200→400mg）d1-14；RP2D = ASTX727 + VEN 400mg d1-14</li>
+  </ul>
+  <h4>结果（EHA 2023，n=37，中位随访 9.6 个月）</h4>
+  <div class="kpi-row">
+    <div class="kpi pos"><div class="num">94.5%</div><div class="lbl">ORR</div></div>
+    <div class="kpi pos"><div class="num">35.1%</div><div class="lbl">CR</div></div>
+    <div class="kpi pos"><div class="num">59.4%</div><div class="lbl">mCR（含 mCR-HI 29.7%）</div></div>
+    <div class="kpi pos"><div class="num">23 个月</div><div class="lbl">中位 DOR / 中位 PFS</div></div>
+    <div class="kpi pos"><div class="num">49%</div><div class="lbl">桥接 allo-HSCT</div></div>
+  </div>
+  <ul>
+    <li>伴细胞遗传学异常者 53% 获细胞遗传学缓解；中位 OS 未达到；4 周/8 周死亡率 0%/3%</li>
+    <li>3–4 级 TEAE：血小板减少 81%、中性粒细胞减少 70%、发热性中性粒细胞减少 19%、贫血 16%</li>
+  </ul>
+  <h4>倾向评分匹配分析（Bataller 等，Blood Cancer J 2025）</h4>
+  <ul>
+    <li>按 IPSS-M 与年龄匹配 DEC-C+VEN（n=51，来自 3 项试验）vs DEC-C 单药（n=73）：<b>ORR 90% vs 64%（P=0.002）</b>；至最佳缓解 1.1 vs 2.7 个月（P<0.001）；HSCT 率 47% vs 16%（P<0.001）；<b>mEFS 18 vs 10 个月（P=0.026）</b>；mOS 24 vs 19 个月（P=0.89，NS）；4/8 周死亡率无差异</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>4.4 MD Anderson 三项研究汇总分析（EHA 2023，n=80）—— 疗效预测因素</h3>
+  <div class="badges"><span class="badge">汇总分析（NCT04160052 + NCT04550442 + NCT04655755）</span></div>
+  <h4>临床结果</h4>
+  <table>
+    <tr><th></th><th>HMA 初治（n=52）</th><th>HMA 失败（n=28）</th></tr>
+    <tr><td>ORR</td><td>90%（CR 14、mCR-HI 11、mCR 22）</td><td>57%（CR 1、mCR-HI 6、mCR 9）</td></tr>
+    <tr><td>中位 OS</td><td>28.2 个月</td><td>8.3 个月</td></tr>
+    <tr><td>中位 EFS</td><td>17.9 个月</td><td>5.5 个月</td></tr>
+  </table>
+  <ul>
+    <li>31%（25 例）桥接 allo-HSCT；18%（14 例）转化为 AML；IPSS-M：高危 26%、极高危 64%</li>
+  </ul>
+  <h4>亚组 / 分子相关分析</h4>
+  <ul>
+    <li>HMA 初治组：<b>8 号染色体三体为 OS 与 EFS 的不良预后因素</b>；RNA 剪接通路与 OS 改善相关；IPSS-M 与 OS/EFS 无显著相关</li>
+    <li>HMA 失败组：<b>RAS 信号通路突变与更差的 ORR（OR 0.02）、OS（HR 37.9）、EFS（HR 4.60）相关</b>；DNA 甲基化与染色质修饰通路突变与更好 ORR/OS/EFS 相关；IPSS-M 与 EFS 相关（HR 3.24）</li>
+  </ul>
+</div>
+
+<!-- ============ 靶向/免疫联合 ============ -->
+<h2 class="section">五、分子靶向与免疫联合研究</h2>
+
+<div class="card">
+  <h3>5.1 STIMULUS-MDS3：Sabatolimab（抗 TIM-3）+ AZA + VEN 三联（NCT04812548）</h3>
+  <div class="badges"><span class="badge">II期 · 单臂 · Novartis</span><span class="badge terminated">2023年5月战略终止（非安全性原因）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>初治 IPSS-R 高危（>4.5–6）/极高危（>6）MDS、不适合即刻 HSCT 或强化疗；欧洲 7 国 10 中心；2021-05-31 启动，计划 76 例，实际 20 例（400mg 组 5 例 + 800mg 组 15 例）后终止</li>
+    <li>方案：Sabatolimab 400/800mg IV 每周期第 8 天 + AZA 标准剂量 d1-7 + VEN 400mg d1-14/28天</li>
+  </ul>
+  <h4>结果</h4>
+  <ul>
+    <li>DLT：800mg 组 2/13（血小板减少、颅内出血各 1 例）；<b>CR 率 6.7%（1/15），CR+mCR 86.7%</b>；至 CR/mCR 2.33 个月；缓解持续 5.6 个月；mPFS 6.77 个月；mLFS 7.59 个月；mOS 未达到；5 例桥接 HSCT</li>
+    <li>背景：Novartis 在 STIMULUS-MDS1（II 期随机，CR/PFS/OS 均无差异）与 STIMULUS-MDS2（III 期，2024 年终止）失败后停止了 sabatolimab 的 MDS 开发</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>5.2 Ivosidenib + VEN ± AZA（IDH1 突变；NCT03471260）</h3>
+  <div class="badges"><span class="badge">Ib/II期 · MDA/Oxford/Dana-Farber</span><span class="badge completed">Blood Cancer Discov 2023（Lachowiez 等）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>IDH1 突变髓系肿瘤 31 例（AML 71%，<b>MDS 29%，约 9 例</b>）；4 个剂量组：IVO+VEN 400 / IVO+VEN 800 / IVO+VEN 400+AZA / IVO+VEN 800+AZA；IVO 500mg 持续 + VEN d1-14 ± AZA d1-7；RP2D 为 DL3（IVO+VEN400+AZA）</li>
+  </ul>
+  <h4>结果（中位随访 26 个月）</h4>
+  <ul>
+    <li><b>ORR 94%；复合 CR 87%（三联 90% vs 双联 83%）</b>；MRD 阴性 63%；≥5 周期者 IDH1 突变清除 64%</li>
+    <li>中位 EFS 36 个月，中位 OS 42 个月；<b>24 个月 OS：MDS 100%</b>、初治 AML 67%、R/R AML 50%</li>
+    <li>亚组：伴信号通路（signaling）基因突变者从三联方案获益更明显；单细胞蛋白基因组学揭示共突变、抗凋亡蛋白表达与细胞成熟度共同决定敏感性，未观察到 IDH 亚型转换等经典耐药</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>5.3 Enasidenib + VEN（IDH2 突变；ENAVEN-AML，NCT04092179）</h3>
+  <div class="badges"><span class="badge">Ib/II期 · 加拿大两中心</span><span class="badge completed">Lancet Haematol 2025（Richard-Carpentier 等）</span></div>
+  <ul>
+    <li>R/R IDH2 突变（R140/R172）AML/MDS 27 例（AML 26 例、<b>MDS 仅 1 例且未应答</b>）；VEN 400mg/d（3 天递增）+ ENA 100mg/d（C1D15 起）</li>
+    <li>AML ORR 62%、CR 50%；中位 OS 9.4 个月，2 年 OS 42%；R172 突变优于 R140（ORR 83% vs 55%）；47% 应答者 IDH2 清除；RP2D：VEN 400mg + ENA 100mg</li>
+    <li>另注：enasidenib+AZA 的 II 期研究中 7 例接受 ENA+AZA+VEN 三联，复合 CR 86%（小样本）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>5.4 TP53 突变相关：Eprenetapopt + VEN ± AZA（NCT04214860）及其他</h3>
+  <div class="badges"><span class="badge">I期 · TP53 突变 AML 为主</span><span class="badge completed">Lancet Haematol 2023（Garcia-Manero 等）</span></div>
+  <ul>
+    <li>49 例初治 TP53 突变 AML（剂量发现队列 1 允许既往因 MDS 接受过 HMA）；eprenetapopt 4.5g/d d1-4 + VEN 400mg d1-28 ± AZA d1-7</li>
+    <li>三联 ORR 64%（25/39）、CR 38%；为 TP53 突变髓系肿瘤（含 MDS 转化 AML）中 VEN 三联策略提供了依据，但非 MDS 研究；MDS 领域 TP53 亚组在 VERONA 中 OS 无获益（HR 1.064），但 mOR 有提高趋势</li>
+    <li>其他含 VEN 的 AML/髓系研究（与 MDS 相关但非 MDS 主体）：tagraxofusp+AZA+VEN（TP53 突变 CR 54%）、navitoclax+VEN+地西他滨双重抗凋亡抑制 I 期（Clin Cancer Res 2026，晚期髓系肿瘤含 MDS）、10 天地西他滨+VEN（Lancet Haematol 2020，含继发 AML/MDS 背景人群）</li>
+  </ul>
+</div>
+
+<!-- ============ 移植 ============ -->
+<h2 class="section">六、移植相关研究（桥接、预处理、维持）</h2>
+
+<div class="card">
+  <h3>6.1 VEN 加入预处理 + 移植后 VEN/口服地西他滨维持（Johns Hopkins，NCT03613532）</h3>
+  <div class="badges"><span class="badge">I期 · 单中心</span><span class="badge completed">Blood Adv 2022（预处理）→ Blood Adv 2026（维持，PMID 41348911）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>不良风险 AML 与高危 MDS/MPN（允许既往 VEN 暴露、要求 8/8 HLA 相合供者）；<b>VEN + 氟达拉滨/白消安（FluBu2）减低强度预处理</b> → 移植后 <b>VEN 400mg d1-14 + 口服地西他滨/cedazuridine（35/100mg，d1,3,5 或 d1-3，42 天/周期，共 8 周期）维持</b></li>
+  </ul>
+  <h4>结果</h4>
+  <ul>
+    <li>预处理阶段（Blood Adv 2022，n=22）：无 DLT、MTD 未达到；中位随访 14.7 个月时 50% 无白血病存活；TP53 突变者 50% 存活（3 例 MRD 转阴后持续缓解）；移植后 d28/d100  duplex 测序 MRD 可预测复发</li>
+    <li>维持阶段（Blood Adv 2026，n=30 移植 / 26 例维持）：维持中位起始 d55、中位 8 周期；<b>2 年 PFS 53%、OS 67%、累积复发率 47%</b>（维持人群 mITT：62% / 77% / 38%）；<b>非复发死亡率 0%</b>；3/4 级中性粒细胞减少 92%；6 个月 2–4 度 aGVHD 13%、1 年中重度 cGVHD 31%；复发为主要停药原因</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>6.2 移植后维持：中国单中心研究与匹配队列分析</h3>
+  <ul>
+    <li><b>中国单中心回顾性队列（ASH 2025，n=33，高危 MDS/AML）</b>：移植后 VEN + 节拍式低剂量地西他滨（0.2mg/kg d1,2,8,9,15,16）± α-干扰素两阶段维持；12 个月 OS 92.4%、EFS 88.2%；24 个月 CIR 13.9%、NRM 3.6%；≥3 级中性粒细胞减少 45%</li>
+    <li><b>匹配队列分析（ASH 2025）</b>：RIC allo-HSCT 后低剂量 HMA+VEN 维持 vs 不维持：mRFS NR vs 21.9 个月、mOS NR vs 31.3 个月（均 P=0.01）；多因素分析维持治疗改善 OS（HR 0.61），未增加 GVHD</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>6.3 HMA+VEN 桥接移植：GESMD 研究（Exp Hematol Oncol 2025）</h3>
+  <div class="badges"><span class="badge">西班牙 GESMD 多中心 · 回顾性</span></div>
+  <ul>
+    <li>30 例拟移植 HR-MDS/CMML（18 例初治、12 例 R/R）接受 HMA+VEN 桥接</li>
+    <li><b>ORR 90%（IWG 2023），复合 CR 77%；R/R 亚组 ORR 83%</b>；<b>allo-HSCT 率 83%</b>（仅用 HMA/VEN 桥接者 76%）；移植后 1 年/2 年生存 75%；2 年累积复发率 30.5%；MRD 监测指导的抢先治疗控制了部分分子复发</li>
+    <li>与 VERONA 数据互证：VEN+AZA 组移植率更高（17% vs 13%）、移植前 mCR 更深（60.5% vs 33.3%）——<b>桥接移植是 VEN 在 MDS 中最具共识的临床应用方向</b></li>
+  </ul>
+</div>
+
+<!-- ============ 中国研究 ============ -->
+<h2 class="section">七、中国研究</h2>
+
+<div class="card">
+  <h3>7.1 浙江大学医学院附属第一医院等：初治 HR-MDS 前瞻性多中心研究（15 天方案）</h3>
+  <div class="badges"><span class="badge">前瞻性 · 多中心</span><span class="badge completed">Cancers 2026;18(1):159（Lai B、佟红艳、欧阳高翔等）</span></div>
+  <h4>设计与人群</h4>
+  <ul>
+    <li>初治 HR-MDS（IPSS-R >3.5），28 例，中位 63 岁；VEN 100→400mg 递增 <b>d1-15</b> + AZA 75mg/m² d1-7/28天</li>
+    <li>主要终点 ORR（IWG 2006）；次要 CR、OS、AML 转化</li>
+  </ul>
+  <h4>结果（中位随访 8.5 个月）</h4>
+  <ul>
+    <li><b>ORR 85.7%（CR 35.7%、mCR 50.0%）；IWG 2023 标准 ORR 78.6%</b>；mOS 未达到；各分子与 IPSS-R 亚组缓解一致</li>
+    <li>亚组：高中性粒细胞计数、高细胞遗传学风险者疗效更优；<b>TP53 突变/缺失为显著不良预后因素（P<0.001）</b>；应答后桥接 HSCT 者 OS 显著更优（P=0.037）</li>
+    <li>安全性：3–4 级中性粒细胞减少 96.4%、贫血 71.4%、血小板减少 64.3%；SAE 35.7%（主要为感染）；无 DLT 与非预期毒性</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>7.2 浙江大学：R/R HR-MDS 15 天方案回顾性研究</h3>
+  <div class="badges"><span class="badge">回顾性 · 单中心</span><span class="badge completed">Hematol Oncol 2023;41(3):546-554（Mei C、佟红艳等）</span></div>
+  <ul>
+    <li>35 例 R/R HR-MDS 接受 AZA + VEN-15天：<b>ORR 57.2%（20/35），中位 OS 14 个月</b></li>
+    <li>主要毒性为血细胞减少与感染；该方案可挽救 HMA 应答不佳患者、降低肿瘤负荷以桥接 allo-HSCT</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>7.3 苏州大学附属第一医院真实世界研究</h3>
+  <div class="badges"><span class="badge">回顾性</span><span class="badge completed">中国实验血液学杂志 2025;33(1):168-174（徐杨、吴德沛等）</span></div>
+  <ul>
+    <li>2019-03 至 2022-11 收治的 30 例高危 MDS 接受 VEN+HMA：<b>ORR 80%（CR/mCR 24 例，PR 2 例），mOS 28.1 个月，mPFS 28.1 个月</b>；达 CR/mCR 者 OS 显著更长；12 例桥接 allo-HSCT</li>
+    <li>≥3 级血液学 AE：血小板减少 14 例、中性粒细胞减少 14 例、发热性中性粒细胞减少 10 例</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>7.4 中国在 VERONA 中的参与</h3>
+  <ul>
+    <li>VERONA 按地区分层（北美/欧洲/日本/中国/其他），中国多家中心入组；ASH 2025 亚组分析作者列表包括中国医学科学院血液病医院（肖志坚教授），中国数据为全球结果的一部分（尚未单独披露中国亚组数据）</li>
+  </ul>
+</div>
+
+<!-- ============ 其他 ============ -->
+<h2 class="section">八、真实世界与循证汇总</h2>
+<div class="card">
+  <ul>
+    <li><b>MD Anderson 真实世界经验（Hemasphere 2021）</b>：VEN+HMA 在初治与 R/R 晚期髓系肿瘤（含 MDS）中的安全性与疗效与临床试验一致，确立了临床实践的剂量管理经验（VEN 14 天、积极支持治疗）</li>
+    <li><b>Meta 分析</b>：VEN+HMA 治疗 AML/MDS 的系统综述（Hematology 2020）；初治 MDS 汇总 ORR 约 64%，优于 HMA 单药历史数据；<b>CMML 中 VEN 方案的系统综述与 Meta 分析（Acta Haematol 2026，PMID 41945493）</b></li>
+    <li><b>失败 III 期的教训（Blood 2026 述评，PMID 41175364）</b>：VERONA 与 ENHANCE（magrolimab）、STIMULUS（sabatolimab）等 HR-MDS III 期相继失败，提示 MDS 异质性、对照组表现好于预期、亚组富集不足是共性问题；未来试验需以分子/负荷特征富集人群，并考虑 EFS、复合缓解等更敏感的终点</li>
+    <li><b>监管状态</b>：截至 2026 年 7 月，VEN 未获任何监管机构批准用于 MDS；VERONA 阴性结果不影响 VEN 已获批的 CLL/SLL 与 AML 适应症</li>
+  </ul>
+</div>
+
+<!-- ============ 总结 ============ -->
+<h2 class="section">九、总结与展望</h2>
+<div class="card">
+  <h4>证据格局（一句话版）</h4>
+  <ul>
+    <li><b>缓解率获益确切、生存获益未证实</b>：VEN+AZA 可将 HR-MDS 的 mOR 从约 58% 提高至 76%、mCR 从 38% 提高至 58%，并显著提高输血独立率、降低 AML 转化趋势，但 III 期未转化为 OS 获益</li>
+    <li><b>最可能获益人群</b>：<75 岁、骨髓原始细胞 ≥5%（尤其 10–20%）、IPSS-R 高危/极高危；原始细胞 <5% 及 ≥75 岁人群无获益信号；TP53 突变者缓解率可提高但 OS 不改善</li>
+    <li><b>当前最具共识的临床定位</b>：① 拟移植患者的桥接治疗（提高 mCR 深度、增加移植率）；② HMA 失败后的救援（mOS 12.6 个月 vs 历史 4–6 个月）；③ 分子亚型驱动的联合（IDH1 突变 IVO+VEN±AZA 活性突出）</li>
+    <li><b>安全性管理要点</b>：血液学毒性显著（94% 3/4 级 TEAE），VEN 14 天方案、剂量中断/减量、感染预防是标准操作</li>
+    <li><b>未来方向</b>：优势人群富集的随机研究、移植全程管理（桥接-预处理-维持）整合、新型 BCL-2/BCL-xL 双靶点及分子靶向三联、以中国 15 天方案为代表的剂量优化探索</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p><b>主要数据来源：</b>Garcia JS, et al. Blood 2025;145:1126-1135（NCT02942290）；Zeidan AM, et al. Am J Hematol 2023（NCT02966782）；Garcia-Manero G, et al. SOHO 2025（MDS-1497）与 ASH 2025（摘要 235，NCT04401748）；Bazinet A, et al. Lancet Haematol 2022（NCT04160052）；Venugopal/Bataller 等，EHA 2023 及 Blood Cancer J 2025（NCT04655755）；Lachowiez CA, et al. Blood Cancer Discov 2023（NCT03471260）；Richard-Carpentier G, et al. Lancet Haematol 2025（NCT04092179）；ClinicalTrials.gov（NCT04812548、NCT03613532 等）；Blood Adv 2026（PMID 41348911）；Zugasti I, et al. Exp Hematol Oncol 2025；Lai B, et al. Cancers 2026；Mei C, et al. Hematol Oncol 2023；徐杨等，中国实验血液学杂志 2025。</p>
+  <p style="margin-top:8px;">本报告仅供医学信息参考，不构成临床用药建议。Venetoclax 在 MDS 中尚未获批，属超适应症研究性使用。</p>
+</div>
+
+</div>
+</body>
+</html>
