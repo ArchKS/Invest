@@ -1,0 +1,14 @@
+filing_date,reporting_date,accession,insider_name,position,transaction_code,transaction_type,transaction_description,shares,price_per_share,transaction_value,shares_owned_after,issuer,ticker
+2026-06-15,2026-05-13,0001104659-26-073760,Gefei Li,COO,M,exercise,Option Exercise,23076,0.01,230.76,69229,So-Young International Inc.,SY
+2026-06-15,2026-05-13,0001104659-26-073760,Gefei Li,COO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",1923,0.01,19.23,69229,So-Young International Inc.,SY
+2026-06-15,2026-05-13,0001104659-26-073760,Gefei Li,COO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",21153,0.01,211.53,69229,So-Young International Inc.,SY
+2026-06-15,2026-05-13,0001104659-26-073760,Gefei Li,COO,A,derivative_purchase,"Grant/Award (Class A ordinary share, par value US$0.01)",10576,0.01,105.76,69229,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,exercise,Option Exercise,30260,0.01,302.6,141940,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",12824,0.01,128.24,141940,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",12821,0.01,128.21,141940,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",769,0.01,7.69,141940,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",641,0.01,6.41,141940,So-Young International Inc.,SY
+2026-06-11,2026-06-10,0001104659-26-072602,Bei Wang,CMO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",3205,0.01,32.05,141940,So-Young International Inc.,SY
+2026-04-02,2026-03-31,0001104659-26-038803,Gefei Li,COO,M,exercise,Option Exercise,46153,0.01,461.53000000000003,46153,So-Young International Inc.,SY
+2026-04-02,2026-03-31,0001104659-26-038803,Gefei Li,COO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",38461,0.01,384.61,46153,So-Young International Inc.,SY
+2026-04-02,2026-03-31,0001104659-26-038803,Gefei Li,COO,M,derivative_sale,"Option Exercise (Class A ordinary share, par value US$0.01)",7692,0.01,76.92,46153,So-Young International Inc.,SY

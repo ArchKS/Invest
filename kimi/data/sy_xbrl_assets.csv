@@ -1,0 +1,12 @@
+concept_queried,id,cik,concept,label,value,numeric_value,unit,period_end,fiscal_period,fiscal_year,period_type,statement_type,is_audited,data_quality,confidence_score
+us-gaap:Assets,151700858,1758530,us-gaap:Assets,Assets,2649636000.0,2649636000,CNY,2025-12-31,FY,2025,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700859,1758530,us-gaap:Assets,Assets,378894000.0,378894000,USD,2025-12-31,FY,2025,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700855,1758530,us-gaap:Assets,Assets,2735158000.0,2735158000,CNY,2024-12-31,FY,2024,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700856,1758530,us-gaap:Assets,Assets,2735158000.0,2735158000,CNY,2024-12-31,FY,2025,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700857,1758530,us-gaap:Assets,Assets,374715000.0,374715000,USD,2024-12-31,FY,2024,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700852,1758530,us-gaap:Assets,Assets,3214565000.0,3214565000,CNY,2023-12-31,FY,2023,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700853,1758530,us-gaap:Assets,Assets,3214565000.0,3214565000,CNY,2023-12-31,FY,2024,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700854,1758530,us-gaap:Assets,Assets,452761000.0,452761000,USD,2023-12-31,FY,2023,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700849,1758530,us-gaap:Assets,Assets,3197873000.0,3197873000,CNY,2022-12-31,FY,2022,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700850,1758530,us-gaap:Assets,Assets,3197873000.0,3197873000,CNY,2022-12-31,FY,2023,instant,BalanceSheet,true,high,0.9
+us-gaap:Assets,151700851,1758530,us-gaap:Assets,Assets,463646000.0,463646000,USD,2022-12-31,FY,2022,instant,BalanceSheet,true,high,0.9
