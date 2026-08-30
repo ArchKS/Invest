@@ -1,0 +1,10 @@
+ifind_get_stock_financial_index|600027.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600027.SH_2024.csv
+ifind_get_stock_financial_index|600011.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600011.SH_2024.csv
+ifind_get_stock_financial_index|601991.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_601991.SH_2024.csv
+ifind_get_stock_financial_index|600023.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600023.SH_2024.csv
+ifind_get_stock_financial_index|000543.SZ|"financial_parameter":"20241231","category":"capital_structure"|cap_000543.SZ_2024.csv
+ifind_get_stock_financial_index|600863.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600863.SH_2024.csv
+ifind_get_stock_financial_index|600578.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600578.SH_2024.csv
+ifind_get_stock_financial_index|600021.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600021.SH_2024.csv
+ifind_get_stock_financial_index|600900.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600900.SH_2024.csv
+ifind_get_stock_financial_index|601985.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_601985.SH_2024.csv

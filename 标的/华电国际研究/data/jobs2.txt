@@ -1,0 +1,10 @@
+ifind_get_financial_statements|000543.SZ|"statement":"bs,is","financial_parameter":"20241231"|hd_000543_2024.csv
+ifind_get_financial_statements|600027.SH|"statement":"is","financial_parameter":"20211231"|hd_600027_2021is.csv
+ifind_get_financial_statements|600011.SH|"statement":"is","financial_parameter":"20211231"|hd_600011_2021is.csv
+ifind_get_financial_statements|601991.SH|"statement":"is","financial_parameter":"20211231"|hd_601991_2021is.csv
+ifind_get_financial_statements|600023.SH|"statement":"is","financial_parameter":"20211231"|hd_600023_2021is.csv
+ifind_get_financial_statements|000543.SZ|"statement":"is","financial_parameter":"20211231"|hd_000543_2021is.csv
+ifind_get_financial_statements|600863.SH|"statement":"is","financial_parameter":"20211231"|hd_600863_2021is.csv
+ifind_get_financial_statements|600578.SH|"statement":"is","financial_parameter":"20211231"|hd_600578_2021is.csv
+ifind_get_financial_statements|600021.SH|"statement":"is","financial_parameter":"20211231"|hd_600021_2021is.csv
+ifind_get_financial_statements|600900.SH|"statement":"is","financial_parameter":"20211231"|hd_600900_2021is.csv

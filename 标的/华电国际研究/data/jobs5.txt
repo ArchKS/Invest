@@ -1,0 +1,7 @@
+ifind_get_financial_statements|000543.SZ|"statement":"bs,is","financial_parameter":"20241231"|hd_000543_2024.csv
+ifind_get_stock_financial_index|000543.SZ|"financial_parameter":"20241231","category":"profitability"|prof_000543_2024.csv
+ifind_get_financial_statements|600027.SH|"statement":"is","financial_parameter":"20211231"|hd_600027_2021is.csv
+ifind_get_financial_statements|601991.SH|"statement":"is","financial_parameter":"20211231"|hd_601991_2021is.csv
+ifind_get_financial_statements|600578.SH|"statement":"is","financial_parameter":"20211231"|hd_600578_2021is.csv
+ifind_get_financial_statements|600021.SH|"statement":"is","financial_parameter":"20211231"|hd_600021_2021is.csv
+ifind_get_financial_statements|000543.SZ|"statement":"is","financial_parameter":"20211231"|hd_000543_2021is.csv

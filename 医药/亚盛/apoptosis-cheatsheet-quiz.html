@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>细胞凋亡 · 速查海报 + 术语表 + 自测 30 题</title>
+<style>
+  :root{
+    --paper:#faf8f4; --card:#ffffff; --ink:#2e2a26; --muted:#6f6a62;
+    --line:#ece4d6; --accent:#b3602f; --accent-soft:#fff7ec;
+    --orange:#e8862e; --orange-soft:#fdeedd; --teal:#2a9d8f; --teal-soft:#e0f2f1;
+    --purple:#7b5ea7; --purple-soft:#efe9f7; --red:#d64545; --green:#3a9e4f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* ---------- 头部与导航 ---------- */
+  header.site{padding:38px 0 14px;text-align:center}
+  header.site h1{margin:0 0 6px;font-size:30px;letter-spacing:.5px}
+  header.site p.sub{margin:0 0 16px;color:var(--muted);font-size:15px}
+  .guide-link{display:inline-block;background:var(--accent-soft);border:1.5px solid #f0d9b5;
+    color:#8a4b1f;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+  .guide-link:hover{background:#fdeed3}
+  nav.toc{position:sticky;top:0;z-index:60;background:rgba(250,248,244,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line)}
+  nav.toc .wrap{display:flex;gap:10px;justify-content:center;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+  nav.toc a{display:inline-block;padding:6px 18px;border-radius:999px;text-decoration:none;
+    color:var(--ink);font-weight:600;font-size:14.5px;border:1px solid var(--line);background:#fff}
+  nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- 卡片 ---------- */
+  section.card{background:var(--card);border:1px solid #efe9df;border-radius:18px;
+    box-shadow:0 2px 16px rgba(80,60,30,.06);padding:30px 30px 34px;margin:30px 0}
+  section.card h2{margin:0 0 6px;font-size:23px}
+  section.card .sec-sub{margin:0 0 18px;color:var(--muted);font-size:14.5px}
+
+  /* ---------- 海报 ---------- */
+  .poster-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+  .poster-scroll svg{display:block;width:100%;height:auto;min-width:960px}
+  .print-hint{margin:14px 2px 0;padding:10px 16px;background:#f4f0e8;border:1px dashed #cfc3ab;
+    border-radius:10px;font-size:14px;color:var(--muted)}
+
+  /* ---------- 术语表 ---------- */
+  .table-scroll{overflow-x:auto}
+  table.terms{width:100%;border-collapse:collapse;font-size:15px;min-width:760px}
+  table.terms th,table.terms td{padding:9px 12px;border-bottom:1px solid #f0e9dc;text-align:left;vertical-align:top}
+  table.terms thead th{background:#f6f1e7;font-size:14px;color:#5c5546;position:sticky;top:0}
+  table.terms tbody tr:hover{background:#fbf7ef}
+  td.term{font-weight:600;white-space:nowrap}
+  td.term .en{display:block;font-weight:400;color:var(--muted);font-size:13px;white-space:normal}
+  .tag{display:inline-block;padding:2px 12px;border-radius:999px;font-size:12.5px;white-space:nowrap;font-weight:600}
+  .tag-in{background:var(--orange-soft);color:#a95f16}
+  .tag-out{background:var(--teal-soft);color:#1f7a6d}
+  .tag-exe{background:var(--purple-soft);color:#6b4fa0}
+  .tag-reg{background:#fdeaea;color:#b23c3c}
+  .tag-det{background:#e8f1fb;color:#2f5f8f}
+  .tag-dis{background:#f3e9f7;color:#8a3f8f}
+
+  /* ---------- 自测 ---------- */
+  .quiz-status{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+  .quiz-status .stat{font-size:15.5px}
+  .quiz-status .stat b{color:var(--accent);font-size:19px}
+  .progress{flex:1;min-width:180px;height:12px;background:#eee5d3;border-radius:999px;overflow:hidden}
+  #progressBar{height:100%;width:0;background:linear-gradient(90deg,#e0a458,#b3602f);transition:width .35s}
+  .q-group-title{margin:26px 0 4px;font-size:18px;font-weight:700;color:#5c5546;
+    border-left:5px solid var(--accent);padding-left:12px}
+  .q-block{border:1px solid #efe6d6;border-radius:14px;padding:16px 18px;margin:12px 0;background:#fffdf9}
+  .q-stem{font-weight:600;margin-bottom:10px;font-size:15.5px}
+  .q-stem .qno{display:inline-block;background:#f0e7d6;color:#7a6a4d;border-radius:6px;
+    padding:0 8px;margin-right:8px;font-size:13.5px}
+  .q-opt{display:block;width:100%;text-align:left;padding:9px 14px;margin:6px 0;
+    border:1.5px solid #ddd2bf;border-radius:10px;background:#fff;cursor:pointer;
+    font-size:15px;font-family:inherit;color:var(--ink);line-height:1.55;transition:border-color .15s,background .15s}
+  .q-opt:hover:not(:disabled){border-color:var(--accent);background:#fffaf2}
+  .q-opt:disabled{cursor:default}
+  .q-opt.correct{background:#e9f6ec;border-color:var(--green);color:#1e6b2e;font-weight:600}
+  .q-opt.wrong{background:#fdeeee;border-color:var(--red);color:#9c2b2b}
+  .q-opt.dim{opacity:.55}
+  .q-exp{display:none;margin-top:9px;padding:10px 14px;border-radius:10px;
+    background:#f2f7fd;border:1px solid #cfe0f4;font-size:14.5px;color:#33506e}
+  .q-exp.show{display:block}
+  .final-card{margin:22px 0 6px;padding:22px;border-radius:16px;text-align:center;
+    background:linear-gradient(135deg,#fff7ec,#f7efe3);border:1.5px solid #ecd9b8}
+  .final-card .score-big{font-size:40px;font-weight:800;color:var(--accent)}
+  .final-card .verdict{font-size:18px;font-weight:700;margin-top:4px}
+  .final-card .note{color:var(--muted);font-size:14px;margin-top:6px}
+  .hidden{display:none}
+  .reset-btn{display:block;margin:18px auto 0;padding:11px 30px;border-radius:999px;
+    border:1.5px solid var(--accent);background:#fff;color:var(--accent);
+    font-size:15.5px;font-weight:700;cursor:pointer;font-family:inherit}
+  .reset-btn:hover{background:var(--accent-soft)}
+
+  footer.site{padding:10px 20px 44px;text-align:center}
+  footer.site p{color:var(--muted);font-size:13.5px;margin:14px auto 0;max-width:920px}
+
+  @media (max-width:640px){
+    header.site h1{font-size:24px}
+    section.card{padding:20px 16px 24px}
+    .poster-scroll svg{min-width:820px}
+  }
+
+  /* ---------- 打印：只保留海报 + 术语表 ---------- */
+  @media print{
+    @page{size:A4 landscape;margin:8mm}
+    body{background:#fff}
+    nav.toc,header.site .actions,#quiz,footer.site,.print-hint{display:none !important}
+    header.site{padding:0 0 6px}
+    header.site h1{font-size:20px}
+    section.card{box-shadow:none;border:none;padding:0;margin:0 0 10px}
+    section#poster{page-break-after:always}
+    .poster-scroll{overflow:visible;border:none}
+    .poster-scroll svg{min-width:0;width:100%;max-height:185mm}
+    table.terms{font-size:11.5px;min-width:0}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <h1>🧫 细胞凋亡 · 速查海报 + 术语表 + 自测</h1>
+  <p class="sub">Apoptosis 一页速查 · 中英术语 · 30 题互动自测 —— 新手友好配套件</p>
+  <p class="actions" style="margin:0">
+    <a class="guide-link" href="apoptosis-learning-guide.html">📖 配套主指南：细胞凋亡通路从入门到深入</a>
+  </p>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#poster">🗺️ 速查海报</a>
+    <a href="#terms">📇 中英术语表</a>
+    <a href="#quiz">✍️ 自测 30 题</a>
+    <a href="apoptosis-learning-guide.html">📖 主指南</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ================= 板块一：海报 ================= -->
+<section class="card" id="poster">
+  <h2>🗺️ 一图读懂细胞凋亡</h2>
+  <p class="sec-sub">内源（线粒体）通路为暖橙色，外源（死亡受体）通路为青蓝色，汇合与执行为紫色；绿色箭头 = 激活 / 促进，红色平头线（⊣）= 抑制。</p>
+  <div class="poster-scroll">
+  <svg viewBox="0 0 1600 1122" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="一图读懂细胞凋亡">
+    <style>
+      .t{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;fill:#2e2a26}
+      .b-out{fill:#e0f2f1;stroke:#2a9d8f;stroke-width:2}
+      .b-in{fill:#fdeedd;stroke:#e8862e;stroke-width:2}
+      .b-exe{fill:#efe9f7;stroke:#7b5ea7;stroke-width:2.4}
+      .chip{fill:#fffdf7;stroke:#d9c9a8;stroke-width:1.4}
+      .chip-red{fill:#fff8f6;stroke:#d64545;stroke-width:1.6}
+      .chip-gray{fill:#f7f4ee;stroke:#c9c0ae;stroke-width:1.4}
+      .ln-g{stroke:#3a9e4f;stroke-width:3;fill:none}
+      .ln-r{stroke:#d64545;stroke-width:3;fill:none}
+      .ln-p{stroke:#7b5ea7;stroke-width:2.5;fill:none;stroke-dasharray:7 5}
+      .ln-d{stroke:#b9ad96;stroke-width:1.6;fill:none;stroke-dasharray:4 4}
+      .f-title{font-size:32px;font-weight:800;text-anchor:middle}
+      .f-sub{font-size:14px;fill:#7b756a;text-anchor:middle}
+      .f-col{font-size:17px;font-weight:800;text-anchor:middle}
+      .f-h{font-size:15px;font-weight:700}
+      .f-b{font-size:13px;fill:#5c5546}
+      .f-s{font-size:12.5px;fill:#6f6a62}
+      .f-g{font-size:12.5px;fill:#2e7d3f;font-weight:600}
+      .f-r{font-size:12.5px;fill:#b23c3c;font-weight:600}
+      .f-p{font-size:13px;fill:#6b4fa0;font-weight:700}
+      .c{text-anchor:middle}
+    </style>
+    <defs>
+      <marker id="arrG" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M1,1.5 L11,6 L1,10.5 z" fill="#3a9e4f"/>
+      </marker>
+      <marker id="arrP" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M1,1.5 L11,6 L1,10.5 z" fill="#7b5ea7"/>
+      </marker>
+      <marker id="inhT" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M9,1.5 L9,10.5" stroke="#d64545" stroke-width="2.6"/>
+      </marker>
+    </defs>
+
+    <!-- 标题与图例 -->
+    <text class="t f-title" x="800" y="48">一图读懂细胞凋亡（Apoptosis）</text>
+    <text class="t f-sub" x="800" y="74">两大类诱因 → 内源线粒体通路 × 外源死亡受体通路 → caspase 级联 → 无声清除（无炎症）</text>
+    <line class="ln-g" x1="330" y1="92" x2="362" y2="92" marker-end="url(#arrG)"/>
+    <text class="t f-s" x="370" y="96">激活 / 促进</text>
+    <line class="ln-r" x1="478" y1="92" x2="510" y2="92" marker-end="url(#inhT)"/>
+    <text class="t f-s" x="518" y="96">抑制</text>
+    <line class="ln-p" x1="592" y1="92" x2="624" y2="92" marker-end="url(#arrP)"/>
+    <text class="t f-s" x="632" y="96">转录调控</text>
+    <text class="t f-s" x="752" y="96">💊 = 药物靶点　　🔬 = 实验检测位点</text>
+
+    <!-- 顶部：两大类诱因 -->
+    <rect class="b-out" x="60" y="106" width="560" height="96" rx="14"/>
+    <text class="t f-h c" x="340" y="134" fill="#1f7a6d">外源信号（死亡配体）</text>
+    <rect class="chip" x="95" y="150" width="150" height="36" rx="18"/>
+    <text class="t f-b c" x="170" y="173">FasL</text>
+    <rect class="chip" x="265" y="150" width="150" height="36" rx="18"/>
+    <text class="t f-b c" x="340" y="173">TNF-α</text>
+    <rect class="chip" x="435" y="150" width="150" height="36" rx="18"/>
+    <text class="t f-b c" x="510" y="173">TRAIL</text>
+
+    <rect class="b-in" x="980" y="106" width="460" height="110" rx="14"/>
+    <text class="t f-h c" x="1210" y="132" fill="#a95f16">内源信号（细胞应激）</text>
+    <rect class="chip" x="1038" y="142" width="96" height="32" rx="16"/>
+    <text class="t f-s c" x="1086" y="163">DNA 损伤</text>
+    <rect class="chip" x="1146" y="142" width="128" height="32" rx="16"/>
+    <text class="t f-s c" x="1210" y="163">生长因子撤除</text>
+    <rect class="chip" x="1286" y="142" width="96" height="32" rx="16"/>
+    <text class="t f-s c" x="1334" y="163">氧化应激</text>
+    <rect class="chip" x="1132" y="180" width="72" height="30" rx="15"/>
+    <text class="t f-s c" x="1168" y="200">化疗</text>
+    <rect class="chip" x="1216" y="180" width="72" height="30" rx="15"/>
+    <text class="t f-s c" x="1252" y="200">放疗</text>
+
+    <!-- 药物贴纸：化疗/放疗 -->
+    <rect class="chip-red" x="1452" y="106" width="140" height="110" rx="12" stroke-dasharray="5 4"/>
+    <text class="t f-r c" x="1522" y="132">💊 化疗 / 放疗</text>
+    <text class="t f-s c" x="1522" y="154">经 DNA 损伤</text>
+    <text class="t f-s c" x="1522" y="174">p53 → 走内源通路</text>
+    <text class="t f-s c" x="1522" y="194">（肿瘤治疗基础）</text>
+
+    <!-- p53 转录调控 -->
+    <rect x="640" y="112" width="220" height="56" rx="12" fill="#f5f0fa" stroke="#7b5ea7" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text class="t f-h c" x="750" y="135" fill="#6b4fa0">p53（基因组卫士）</text>
+    <text class="t f-s c" x="750" y="155">转录因子，~50% 肿瘤中突变</text>
+    <path class="ln-p" d="M862,150 C930,180 990,220 1050,262" marker-end="url(#arrP)"/>
+    <text class="t f-p" x="896" y="196">转录激活 Puma / Noxa / Bax</text>
+
+    <!-- 通路入口箭头 -->
+    <line class="ln-g" x1="300" y1="204" x2="300" y2="246" marker-end="url(#arrG)"/>
+    <line class="ln-g" x1="1220" y1="218" x2="1220" y2="246" marker-end="url(#arrG)"/>
+    <text class="t f-col" x="300" y="240" fill="#1f7a6d">外源（死亡受体）通路</text>
+    <text class="t f-col" x="1220" y="240" fill="#a95f16">内源（线粒体）通路</text>
+
+    <!-- ======== 左列：外源通路 ======== -->
+    <rect class="b-out" x="130" y="252" width="340" height="58" rx="12"/>
+    <text class="t f-h c" x="300" y="276">FasL 结合 Fas（CD95）三聚体</text>
+    <text class="t f-b c" x="300" y="296">死亡受体在膜上聚集</text>
+    <line class="ln-g" x1="300" y1="312" x2="300" y2="326" marker-end="url(#arrG)"/>
+
+    <rect class="b-out" x="130" y="330" width="340" height="58" rx="12"/>
+    <text class="t f-h c" x="300" y="354">FADD（接头蛋白）</text>
+    <text class="t f-b c" x="300" y="374">经 DD–DED 结构域接力招募</text>
+    <line class="ln-g" x1="300" y1="390" x2="300" y2="404" marker-end="url(#arrG)"/>
+
+    <rect class="b-out" x="130" y="408" width="340" height="58" rx="12"/>
+    <text class="t f-h c" x="300" y="432">DISC 复合体组装</text>
+    <text class="t f-b c" x="300" y="452">Fas + FADD + pro-caspase-8</text>
+    <line class="ln-g" x1="300" y1="468" x2="300" y2="482" marker-end="url(#arrG)"/>
+
+    <rect class="b-out" x="130" y="486" width="340" height="58" rx="12" stroke-width="3"/>
+    <text class="t f-h c" x="300" y="510">caspase-8 自身激活</text>
+    <text class="t f-b c" x="300" y="530">启动型 caspase（外源通路口）</text>
+
+    <!-- c-FLIP 刹车 -->
+    <rect class="chip-red" x="490" y="420" width="180" height="42" rx="10"/>
+    <text class="t f-r c" x="580" y="438">c-FLIP</text>
+    <text class="t f-s c" x="580" y="455">刹车：抢占 DISC 席位</text>
+    <line class="ln-r" x1="488" y1="441" x2="476" y2="441" marker-end="url(#inhT)"/>
+
+    <!-- caspase-8 两路输出 -->
+    <path class="ln-g" d="M470,512 L552,498" marker-end="url(#arrG)"/>
+    <rect class="b-exe" x="560" y="470" width="220" height="52" rx="12"/>
+    <text class="t f-h c" x="670" y="492">切割 Bid → tBid</text>
+    <text class="t f-b c" x="670" y="511">II 型细胞：线粒体放大回路</text>
+    <path class="ln-g" d="M782,492 C870,478 950,458 1012,440" marker-end="url(#arrG)"/>
+    <text class="t f-g" x="846" y="466">tBid 激活 Bax / Bak</text>
+
+    <path class="ln-g" d="M300,546 L300,822 L630,822" marker-end="url(#arrG)"/>
+    <text class="t f-g" x="316" y="726">I 型细胞：</text>
+    <text class="t f-g" x="316" y="745">caspase-8 足量，直接激活 caspase-3</text>
+
+    <!-- TNFR1 旁注 -->
+    <rect class="chip-gray" x="490" y="556" width="280" height="148" rx="12"/>
+    <text class="t f-h c" x="630" y="580">TNFR1 的生死开关</text>
+    <text class="t f-s" x="504" y="604">Complex I：TRADD / RIPK1 / TRAF2</text>
+    <text class="t f-s" x="504" y="623">　/ c-IAP → NF-κB（促生存）</text>
+    <text class="t f-s" x="504" y="646">Complex II：FADD + caspase-8（促死）</text>
+    <text class="t f-s" x="504" y="668">TRAIL → DR4 / DR5，同走 FADD 招募</text>
+    <text class="t f-s" x="504" y="690">caspase-8 被抑制时可转向 necroptosis</text>
+  <!-- (SVG 续) -->
+
+    <!-- ======== 右列：内源通路 ======== -->
+    <rect class="b-in" x="1020" y="252" width="400" height="58" rx="12"/>
+    <text class="t f-h c" x="1220" y="276">BH3-only 蛋白被激活（感受器）</text>
+    <text class="t f-b c" x="1220" y="296">Bid · Bim · Puma · Noxa · Bad</text>
+    <line class="ln-r" x1="1220" y1="312" x2="1220" y2="324" marker-end="url(#inhT)"/>
+    <text class="t f-r" x="1236" y="323">拮抗</text>
+
+    <rect class="b-in" x="1020" y="328" width="400" height="58" rx="12"/>
+    <text class="t f-h c" x="1220" y="352">抗凋亡蛋白被抑制（刹车松开）</text>
+    <text class="t f-b c" x="1220" y="372">Bcl-2 · Bcl-xL · Mcl-1</text>
+    <line class="ln-g" x1="1220" y1="388" x2="1220" y2="402" marker-end="url(#arrG)"/>
+    <text class="t f-g" x="1236" y="400">Bax / Bak 被释放</text>
+
+    <rect class="b-in" x="1020" y="406" width="400" height="58" rx="12"/>
+    <text class="t f-h c" x="1220" y="430">Bax / Bak 寡聚成孔</text>
+    <text class="t f-b c" x="1220" y="450">在线粒体外膜（MOM）形成通道</text>
+    <line class="ln-g" x1="1220" y1="466" x2="1220" y2="488" marker-end="url(#arrG)"/>
+
+    <!-- 药物贴纸：venetoclax -->
+    <rect class="chip-red" x="1452" y="328" width="140" height="62" rx="12" stroke-dasharray="5 4"/>
+    <text class="t f-r c" x="1522" y="349">💊 venetoclax</text>
+    <text class="t f-s c" x="1522" y="367">BH3 拟似物 ⊣ Bcl-2</text>
+    <text class="t f-s c" x="1522" y="383">CLL / AML</text>
+    <line class="ln-r" x1="1450" y1="359" x2="1426" y2="359" marker-end="url(#inhT)"/>
+
+    <!-- 线粒体 -->
+    <ellipse cx="1220" cy="565" rx="185" ry="72" fill="#fff3e2" stroke="#e8862e" stroke-width="2.5"/>
+    <path d="M1060,560 q20,-26 40,0 q20,26 40,0 q20,-26 40,0 q20,26 40,0 q20,-26 40,0 q20,26 40,0 q20,-26 40,0 q20,26 40,0 q20,-26 40,0"
+      fill="none" stroke="#f0b273" stroke-width="2"/>
+    <rect x="1130" y="497" width="14" height="10" rx="3" fill="#c96a12"/>
+    <rect x="1213" y="492" width="14" height="10" rx="3" fill="#c96a12"/>
+    <rect x="1296" y="497" width="14" height="10" rx="3" fill="#c96a12"/>
+    <text class="t f-b c" x="1220" y="612">线粒体</text>
+    <text class="t c" x="1220" y="660" font-size="15" font-weight="800" fill="#b23c3c">▼ MOMP（外膜通透化）＝ 不归点</text>
+
+    <!-- cyto c 与 Smac 释放 -->
+    <circle cx="1360" cy="648" r="5.5" fill="#e8862e"/>
+    <circle cx="1380" cy="662" r="5.5" fill="#e8862e"/>
+    <circle cx="1346" cy="668" r="5.5" fill="#e8862e"/>
+    <text class="t f-s c" x="1366" y="692" fill="#a95f16">cyto c</text>
+    <circle cx="1075" cy="648" r="5.5" fill="#9c4d9e"/>
+    <circle cx="1056" cy="662" r="5.5" fill="#9c4d9e"/>
+    <text class="t c" x="1004" y="672" font-size="12" font-weight="700" fill="#9c2b2b">Smac / DIABLO ⊣ XIAP</text>
+    <line class="ln-g" x1="1220" y1="639" x2="1220" y2="694" marker-end="url(#arrG)"/>
+    <text class="t f-g" x="1205" y="676" text-anchor="end">cyto c 释放</text>
+
+    <!-- 检测贴纸：JC-1 -->
+    <rect class="chip-gray" x="800" y="548" width="200" height="40" rx="10"/>
+    <text class="t f-s c" x="900" y="573">🔬 JC-1：测线粒体膜电位</text>
+    <line class="ln-d" x1="1002" y1="568" x2="1034" y2="564"/>
+
+    <!-- XIAP 与 Smac 拟似物 -->
+    <rect class="chip-red" x="790" y="700" width="170" height="48" rx="10"/>
+    <text class="t f-r c" x="875" y="720">XIAP（IAP 家族）</text>
+    <text class="t f-s c" x="875" y="738">抑制 caspase-9 / -3</text>
+    <path class="ln-r" d="M1072,664 L1008,690 L966,712" marker-end="url(#inhT)"/>
+    <line class="ln-r" x1="962" y1="716" x2="1012" y2="796" marker-end="url(#inhT)"/>
+    <line class="ln-r" x1="868" y1="750" x2="868" y2="784" marker-end="url(#inhT)"/>
+
+    <!-- 凋亡体与 caspase-9 -->
+    <rect class="b-in" x="1020" y="700" width="400" height="58" rx="12"/>
+    <text class="t f-h c" x="1220" y="724">细胞色素 c + Apaf-1 + dATP</text>
+    <text class="t f-b c" x="1220" y="744">→ 凋亡体 apoptosome（七聚体轮盘）</text>
+    <line class="ln-g" x1="1220" y1="760" x2="1220" y2="784" marker-end="url(#arrG)"/>
+    <text class="t f-g" x="1236" y="778">组装并募集 caspase-9</text>
+
+    <rect class="b-in" x="1020" y="788" width="400" height="58" rx="12" stroke-width="3"/>
+    <text class="t f-h c" x="1220" y="822">caspase-9 激活（启动型）</text>
+
+    <rect class="chip-red" x="1020" y="862" width="400" height="38" rx="10" stroke-dasharray="5 4"/>
+    <text class="t f-s c" x="1220" y="886">💊 Smac 拟似物（在研药）：⊣ XIAP，解除 caspase 抑制</text>
+
+    <!-- ======== 中央汇合：执行 caspase ======== -->
+    <rect class="b-exe" x="640" y="790" width="320" height="64" rx="14"/>
+    <text class="t c" x="800" y="816" font-size="16" font-weight="800" fill="#5f4390">caspase-3 / -7 激活（效应型）</text>
+    <text class="t f-b c" x="800" y="838">执行者：切割数百种底物（Asp 后，如 DEVD）</text>
+    <line class="ln-g" x1="1018" y1="820" x2="968" y2="822" marker-end="url(#arrG)"/>
+
+    <rect class="chip-gray" x="640" y="862" width="330" height="38" rx="10"/>
+    <text class="t f-s c" x="805" y="886">🔬 检测：cleaved caspase-3 / cleaved PARP（WB）</text>
+
+    <line class="ln-g" x1="800" y1="904" x2="800" y2="942" stroke-width="4" marker-end="url(#arrG)"/>
+    <text class="t c" x="800" y="968" font-size="17" font-weight="800" fill="#5f4390">执行结局：caspase-3 的底物 → 细胞被无声清除</text>
+
+    <!-- ======== 底部：执行结局七联 ======== -->
+    <g font-size="11.5">
+      <rect class="chip" x="34" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="140" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">DNA ladder</text>
+      <text class="t f-s c" x="140" y="1023">caspase-3 切 ICAD → CAD 激活</text>
+      <text class="t f-s c" x="140" y="1041">核小体之间切断 DNA</text>
+      <text class="t f-s c" x="140" y="1059">≈180–200 bp 整数倍条带</text>
+      <text class="t f-s c" x="140" y="1081" fill="#2f5f8f">🔬 TUNEL / 凝胶电泳</text>
+
+      <rect class="chip" x="254" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="360" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">PARP 剪切</text>
+      <text class="t f-s c" x="360" y="1023">caspase-3 标志性底物</text>
+      <text class="t f-s c" x="360" y="1041">lamin 剪切 → 核膜崩解</text>
+      <text class="t f-s c" x="360" y="1063" fill="#2f5f8f">🔬 cleaved-PARP（WB）</text>
+
+      <rect class="chip" x="474" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="580" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">膜出泡 blebbing</text>
+      <text class="t f-s c" x="580" y="1023">ROCK1 被 caspase 激活</text>
+      <text class="t f-s c" x="580" y="1041">胞膜鼓起成泡</text>
+      <text class="t f-s c" x="580" y="1059">细胞皱缩、核碎裂</text>
+
+      <rect class="chip" x="694" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="800" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">凋亡小体</text>
+      <text class="t f-s c" x="800" y="1023">apoptotic bodies</text>
+      <text class="t f-s c" x="800" y="1041">内容物被膜完整包裹</text>
+      <text class="t f-s c" x="800" y="1059">不外泄、不污染周围</text>
+
+      <rect class="chip" x="914" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="1020" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">PS 外翻</text>
+      <text class="t f-s c" x="1020" y="1023">Xkr8 介导磷脂酰丝氨酸外翻</text>
+      <text class="t f-s c" x="1020" y="1041">＝「吃我」信号</text>
+      <text class="t f-s c" x="1020" y="1063" fill="#2f5f8f">🔬 Annexin V / PI 流式</text>
+
+      <rect class="chip" x="1134" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="1240" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">吞噬清除</text>
+      <text class="t f-s c" x="1240" y="1023">efferocytosis</text>
+      <text class="t f-s c" x="1240" y="1041">TIM-4 · BAI1 · MFG-E8 · MerTK</text>
+      <text class="t f-s c" x="1240" y="1059">CD47 ＝「别吃我」信号</text>
+
+      <rect class="chip" x="1354" y="980" width="212" height="124" rx="12" stroke="#c9b8e0"/>
+      <text class="t c" x="1460" y="1003" font-size="13.5" font-weight="800" fill="#5f4390">无炎症</text>
+      <text class="t f-s c" x="1460" y="1023">膜保持完整</text>
+      <text class="t f-s c" x="1460" y="1041">不诱发炎症反应</text>
+      <text class="t f-s c" x="1460" y="1059">（对比坏死 / 焦亡）</text>
+    </g>
+  </svg>
+  </div>
+  <p class="print-hint">🖨️ 打印提示：用浏览器「打印」功能即可把本海报 + 术语表适配为 A4 横向分页输出（导航与自测区会自动隐藏）；建议缩放 100%、勾选背景图形。</p>
+</section>
+
+<!-- ================= 板块二：术语速查表 ================= -->
+<section class="card" id="terms">
+  <h2>📇 中英术语速查表（49 条）</h2>
+  <p class="sec-sub">按学习中遇到的频率排序；「所属环节」标签：内源 / 外源 / 执行 / 调控 / 检测 / 疾病。</p>
+  <div class="table-scroll">
+  <table class="terms">
+    <thead>
+      <tr><th style="width:24%">术语（中 / 英）</th><th>一句话解释</th><th style="width:11%">所属环节</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="term">细胞凋亡<span class="en">apoptosis</span></td><td>主动、耗能、受基因调控的程序性细胞死亡方式，形态有序、不引发炎症。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">程序性细胞死亡<span class="en">programmed cell death, PCD</span></td><td>由基因程序决定的一类细胞死亡总称，凋亡是其最经典代表。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">半胱氨酸天冬氨酸蛋白酶<span class="en">caspase</span></td><td>在底物天冬氨酸（Asp）之后切割的半胱氨酸蛋白酶家族，是凋亡的中央执行机器。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">启动型 caspase<span class="en">initiator caspase-2/8/9/10</span></td><td>级联顶端成员，带长前域（CARD/DED），在 DISC、凋亡体等平台上被激活。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">效应型 caspase<span class="en">executioner caspase-3/6/7</span></td><td>被启动型切割激活后大量剪切细胞底物，直接造成凋亡形态。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">酶原<span class="en">zymogen / pro-caspase</span></td><td>caspase 以无活性前体形式合成，需加工或诱导聚集才激活，防止误伤。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">DEVD 序列<span class="en">DEVD motif</span></td><td>caspase-3/7 偏好的四肽识别序列，切点在末端 Asp 之后；荧光底物常用它。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">线粒体外膜通透化<span class="en">MOMP</span></td><td>内源通路的"不归点"：外膜被 Bax/Bak 打孔，膜间隙蛋白外泄。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">细胞色素 c<span class="en">cytochrome c</span></td><td>呼吸链蛋白，释放入胞质后转而触发凋亡体组装。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Apaf-1<span class="en">Apaf-1</span></td><td>接头蛋白，结合 cyto c 与 dATP 后构象改变并寡聚。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">凋亡体<span class="en">apoptosome</span></td><td>Apaf-1 组成的七聚体轮盘，募集并激活 caspase-9。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Bcl-2<span class="en">Bcl-2</span></td><td>抗凋亡蛋白代表，扣住 Bax/Bak；t(14;18) 易位使其在滤泡性淋巴瘤中过表达。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Bcl-xL<span class="en">Bcl-xL</span></td><td>Bcl-2 家族抗凋亡成员，功能与 Bcl-2 部分重叠。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Mcl-1<span class="en">Mcl-1</span></td><td>抗凋亡成员，半衰期短，常被 Noxa 专一拮抗。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Bax<span class="en">Bax</span></td><td>促凋亡效应蛋白，激活后转到线粒体外膜寡聚成孔。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Bak<span class="en">Bak</span></td><td>与 Bax 功能冗余的成孔效应蛋白，常驻线粒体外膜。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">BH3-only 蛋白<span class="en">BH3-only proteins</span></td><td>只含 BH3 结构域的应激感受器（Bid/Bim/Puma/Noxa/Bad 等），启动内源通路。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Bid / tBid<span class="en">Bid / truncated Bid</span></td><td>caspase-8 的底物；切割产物 tBid 激活 Bax/Bak，把外源信号汇入线粒体（串话）。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">Bim<span class="en">Bim</span></td><td>强力 BH3-only 蛋白，能结合全部抗凋亡成员并直接激活 Bax/Bak。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Puma<span class="en">Puma (BBC3)</span></td><td>p53 的关键转录靶标之一，BH3-only，强力促凋亡。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">Noxa<span class="en">Noxa (PMAIP1)</span></td><td>p53 转录靶标，专一拮抗 Mcl-1。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">p53<span class="en">p53 (TP53)</span></td><td>"基因组卫士"转录因子，转录激活 Puma/Noxa/Bax 等；约半数肿瘤带 p53 突变。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">DISC<span class="en">death-inducing signaling complex</span></td><td>死亡诱导信号复合体：Fas + FADD + pro-caspase-8，外源通路的点火台。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">FADD<span class="en">FADD</span></td><td>接头蛋白：死亡结构域（DD）接受体，死亡效应结构域（DED）招募 caspase-8。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">Fas / CD95<span class="en">Fas / CD95</span></td><td>经典死亡受体，配体结合后三聚化，启动外源通路。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">FasL<span class="en">Fas ligand</span></td><td>Fas 的配体，杀伤性 T/NK 细胞清除靶细胞的武器之一。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">TNFR1<span class="en">TNF receptor 1</span></td><td>双面受体：膜上 Complex I 激活 NF-κB 促生存，胞质 Complex II 促死亡。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">TRAIL / DR4 / DR5<span class="en">TRAIL / death receptor 4/5</span></td><td>TRAIL 经 DR4/DR5 受体，同样走 FADD–caspase-8 轴诱导凋亡。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">c-FLIP<span class="en">c-FLIP</span></td><td>caspase-8 的无活性同源蛋白，抢占 DISC 席位，充当外源通路的刹车。</td><td><span class="tag tag-out">外源</span></td></tr>
+      <tr><td class="term">XIAP<span class="en">XIAP</span></td><td>IAP 家族成员，直接结合并抑制 caspase-9、-3、-7。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">Smac/DIABLO<span class="en">Smac/DIABLO</span></td><td>MOMP 时与 cyto c 一同释放，拮抗 XIAP（Omi/HtrA2 作用类似）。</td><td><span class="tag tag-in">内源</span></td></tr>
+      <tr><td class="term">PARP<span class="en">PARP</span></td><td>DNA 修复酶，被 caspase-3 剪切失活，是 Western blot 经典凋亡指标。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">CAD / ICAD<span class="en">CAD / ICAD (DFF40/DFF45)</span></td><td>caspase-3 切掉抑制亚基 ICAD 后，CAD 核酸酶释放并切断 DNA。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">DNA ladder<span class="en">DNA ladder</span></td><td>CAD 在核小体连接处切断 DNA，电泳呈约 180–200 bp 整数倍的"梯子"条带。</td><td><span class="tag tag-det">检测</span></td></tr>
+      <tr><td class="term">膜出泡<span class="en">blebbing</span></td><td>caspase 激活 ROCK1 后胞膜动态鼓起成泡，是凋亡特征形态。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">凋亡小体<span class="en">apoptotic bodies</span></td><td>细胞解体成的膜包被小体，内容物不外泄，等待被吞噬。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">磷脂酰丝氨酸外翻<span class="en">phosphatidylserine (PS) exposure</span></td><td>Xkr8 介导 PS 翻到膜外，构成吞噬细胞识别的"吃我"信号。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">Annexin V<span class="en">Annexin V</span></td><td>结合外翻 PS 的荧光探针；Annexin V⁺/PI⁻＝早期凋亡，双阳＝晚期。</td><td><span class="tag tag-det">检测</span></td></tr>
+      <tr><td class="term">胞葬作用<span class="en">efferocytosis</span></td><td>吞噬细胞经 TIM-4/BAI1/MFG-E8/MerTK 等识别清除凋亡细胞，过程无炎症。</td><td><span class="tag tag-exe">执行</span></td></tr>
+      <tr><td class="term">CD47<span class="en">CD47</span></td><td>膜上的"别吃我"信号，肿瘤细胞常高表达以逃逸吞噬。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">坏死性凋亡<span class="en">necroptosis</span></td><td>程序性坏死：caspase-8 受抑制时由 RIPK1–RIPK3–MLKL 执行，促炎。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">RIPK1 / RIPK3 / MLKL<span class="en">RIPK1 / RIPK3 / MLKL</span></td><td>坏死性凋亡核心轴：RIPK3 磷酸化 MLKL，后者在膜上打孔。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">细胞焦亡<span class="en">pyroptosis</span></td><td>炎症小体激活 caspase-1/4/5，切割 gasdermin D 打孔，强烈促炎。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">gasdermin D<span class="en">GSDMD</span></td><td>焦亡执行蛋白，切割后 N 端在质膜成孔，释放炎症因子。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">铁死亡<span class="en">ferroptosis</span></td><td>铁依赖的脂质过氧化堆积导致的死亡，形态与凋亡不同。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">GPX4<span class="en">GPX4</span></td><td>谷胱甘肽过氧化物酶 4，清除膜脂过氧化物，是铁死亡的关键刹车。</td><td><span class="tag tag-reg">调控</span></td></tr>
+      <tr><td class="term">维奈克拉<span class="en">venetoclax (ABT-199)</span></td><td>BH3 拟似物，选择性抑制 Bcl-2，用于 CLL/AML 等血液肿瘤。</td><td><span class="tag tag-dis">疾病</span></td></tr>
+      <tr><td class="term">Smac 拟似物<span class="en">Smac mimetic</span></td><td>模拟 Smac 拮抗 XIAP/cIAP 的在研抗癌药，可与死亡受体通路协同。</td><td><span class="tag tag-dis">疾病</span></td></tr>
+      <tr><td class="term">自身免疫性淋巴增生综合征<span class="en">ALPS</span></td><td>Fas/FasL 突变致淋巴细胞凋亡障碍，淋巴细胞堆积、自身免疫。</td><td><span class="tag tag-dis">疾病</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ================= 板块三：互动自测 ================= -->
+<section class="card" id="quiz">
+  <h2>✍️ 互动自测 · 30 题</h2>
+  <p class="sec-sub">单选题，点选后立即判定并显示解析；三组各 10 题：入门 → 进阶 → 深入。</p>
+  <div class="quiz-status">
+    <div class="stat">已答 <b id="answeredCount">0</b> / 30</div>
+    <div class="stat">实时得分 <b id="scoreNow">0</b></div>
+    <div class="progress"><div id="progressBar"></div></div>
+  </div>
+  <div id="quizRoot"></div>
+  <div id="finalCard" class="final-card hidden"></div>
+  <button id="resetBtn" class="reset-btn" type="button">🔄 重新作答</button>
+</section>
+
+</main>
+
+<footer class="site">
+  <p class="actions" style="margin:0 0 6px">
+    <a class="guide-link" href="apoptosis-learning-guide.html">📖 配套主指南：细胞凋亡通路从入门到深入</a>
+  </p>
+  <p>本页为单文件离线学习件 · 科学内容以经典教材与综述共识为准 · 历史小注：1972 年 Kerr / Wyllie / Currie 命名 apoptosis；2002 年诺贝尔生理学或医学奖授予 Brenner / Horvitz / Sulston（线虫 ced-3 / ced-4 / ced-9）。</p>
+</footer>
+
+<script>
+"use strict";
+/* ============ 题库：30 题（入门 10 / 进阶 10 / 深入 10） ============ */
+var GROUP_NAMES = [
+  "第 1 组 · 入门：凋亡是什么",
+  "第 2 组 · 进阶：通路如何运转",
+  "第 3 组 · 深入：调控、疾病与药物"
+];
+var QUIZ = [
+  /* ---- 入门组 ---- */
+  { g:0, q:"关于细胞凋亡（apoptosis）的本质，下列哪项描述正确？",
+    o:["细胞受损后被动、随机地崩解",
+       "主动、耗能、受基因调控的程序性细胞死亡",
+       "只有受到物理撕裂才会发生的死亡",
+       "一定会伴随强烈的炎症反应"],
+    a:1, e:"凋亡是细胞主动启动的“自杀程序”，需要 ATP、受基因精密调控；被动崩解和炎症是坏死的特点。" },
+  { g:0, q:"下列哪项不属于凋亡的典型特征？",
+    o:["细胞皱缩、体积变小",
+       "染色质凝聚、核碎裂",
+       "细胞膜破裂、内容物外泄并引发炎症",
+       "形成膜包被的凋亡小体"],
+    a:2, e:"凋亡全程细胞膜保持完整，内容物被包裹进凋亡小体，因此不引发炎症；膜破裂外泄是坏死的表现。" },
+  { g:0, q:"凋亡与坏死（necrosis）最关键的区别是什么？",
+    o:["凋亡需要氧气，坏死不需要",
+       "凋亡膜完整、无炎症且受基因调控；坏死膜破裂、内容物外泄并引发炎症",
+       "坏死是基因调控的程序性死亡",
+       "二者在形态和功能上无法区分"],
+    a:1, e:"核心区别在于：凋亡有序、膜完整、被吞噬清除、无炎症；坏死是被动肿胀破裂，内容物外泄引发炎症。" },
+  { g:0, q:"人胚胎发育中手指能彼此分开，主要靠的是？",
+    o:["指间细胞发生凋亡被清除",
+       "指间细胞发生坏死脱落",
+       "指间细胞无限增殖把手指顶开",
+       "指间细胞全部转化成骨细胞"],
+    a:0, e:"胚胎指（趾）间的细胞通过凋亡被精确清除，手指才得以分开——这是凋亡塑造形态的经典例子。" },
+  { g:0, q:"蝌蚪变态为青蛙时尾巴消失，主要依赖哪种过程？",
+    o:["尾巴被外力磨断",
+       "尾部细胞发生细胞凋亡",
+       "尾部细胞全部坏死",
+       "尾巴骨质化保留下来"],
+    a:1, e:"蝌蚪尾部的消退是发育性凋亡的教科书案例：尾部细胞在激素信号下有序凋亡并被吞噬清除。" },
+  { g:0, q:"凋亡在免疫系统中的重要作用是？",
+    o:["清除自身反应性淋巴细胞，维持免疫耐受",
+       "让所有免疫细胞获得永生",
+       "与免疫系统没有关系",
+       "只负责产生抗体"],
+    a:0, e:"胸腺和骨髓中识别自身抗原的淋巴细胞经凋亡被清除（阴性选择），防止自身免疫；ALPS 就是该过程障碍导致的疾病。" },
+  { g:0, q:"凋亡细胞的典型形态学表现是？",
+    o:["细胞明显肿胀、体积变大",
+       "细胞皱缩、染色质凝聚、核碎裂、膜出泡",
+       "细胞体积增大一倍并融合",
+       "形态完全没有任何改变"],
+    a:1, e:"凋亡形态学四联征：细胞皱缩、染色质凝聚边集、核碎裂、膜出泡并形成凋亡小体——与坏死的肿胀破裂相反。" },
+  { g:0, q:"健康成年人体内每天大约有多少细胞经凋亡被清除？",
+    o:["约 5 万个",
+       "约 500 万个",
+       "约 500–700 亿个",
+       "约 7 万亿个"],
+    a:2, e:"成人每天约有 500–700 亿个细胞经凋亡更新清除，相当于每天“换掉”一小部分身体，却毫无察觉。" },
+  { g:0, q:"磷脂酰丝氨酸（PS）从细胞膜内侧外翻到外侧，意味着？",
+    o:["向吞噬细胞发出“吃我”信号",
+       "向吞噬细胞发出“别吃我”信号",
+       "启动细胞分裂",
+       "没有生物学意义"],
+    a:0, e:"PS 外翻是凋亡细胞的标准“吃我”信号（由 Xkr8 介导）；相对的“别吃我”信号是 CD47。" },
+  { g:0, q:"凋亡细胞和凋亡小体的最终归宿通常是？",
+    o:["在原地腐烂并引发炎症",
+       "被巨噬细胞等吞噬清除（efferocytosis），不引发炎症",
+       "永久残留在组织里",
+       "转变成为癌细胞"],
+    a:1, e:"吞噬细胞识别“吃我”信号后经胞葬作用（efferocytosis）完整吞掉凋亡细胞，内容物不外泄，因此无炎症。" },
+
+  /* ---- 进阶组 ---- */
+  { g:1, q:"下列哪一组全部属于启动型（initiator）caspase？",
+    o:["caspase-3、caspase-7",
+       "caspase-2、caspase-8、caspase-9、caspase-10",
+       "caspase-3、caspase-6、caspase-7",
+       "caspase-1、caspase-4、caspase-5"],
+    a:1, e:"启动型为 2/8/9/10，带长前域（CARD 或 DED），在 DISC、凋亡体等平台被激活；3/6/7 是效应型，1/4/5 主要参与焦亡。" },
+  { g:1, q:"负责直接切割细胞底物、造成凋亡形态的效应型（executioner）caspase 是？",
+    o:["caspase-8",
+       "caspase-9",
+       "caspase-3、caspase-6、caspase-7",
+       "caspase-2"],
+    a:2, e:"效应型 caspase-3/6/7 前域短，由启动型切割激活后大量剪切 PARP、ICAD、lamin 等底物。" },
+  { g:1, q:"caspase 切割底物的位点特异性是？",
+    o:["在天冬氨酸（Asp）残基之后切割，如识别 DEVD 序列",
+       "随机切割任何氨基酸之间",
+       "只在赖氨酸（Lys）之前切割",
+       "切割 DNA 而不切割蛋白质"],
+    a:0, e:"caspase 是半胱氨酸蛋白酶，绝对专一地在 Asp 之后切割；caspase-3/7 偏好 DEVD 四肽序列。" },
+  { g:1, q:"内源（线粒体）通路的事件顺序，正确的是？",
+    o:["MOMP → 细胞色素 c 释放 → 凋亡体组装 → caspase-9 → caspase-3",
+       "caspase-3 最先激活，随后才发生 MOMP",
+       "FADD → DISC → caspase-8 → 凋亡体",
+       "凋亡体组装 → MOMP → 细胞色素 c 释放"],
+    a:0, e:"内源通路：Bax/Bak 成孔（MOMP）→ cyto c 释出 → 与 Apaf-1、dATP 组装凋亡体 → 激活 caspase-9 → 再激活 caspase-3。" },
+  { g:1, q:"关于 Bcl-2 家族三个阵营的归类，正确的是？",
+    o:["Bcl-2 是抗凋亡蛋白、Bax 是成孔的促凋亡效应蛋白、Bim 属于 BH3-only 蛋白",
+       "Bax 是抗凋亡蛋白",
+       "Bim 是抗凋亡蛋白",
+       "三者属于同一类，功能完全相同"],
+    a:0, e:"三阵营：抗凋亡（Bcl-2/Bcl-xL/Mcl-1）、促凋亡效应成孔（Bax/Bak）、BH3-only 感受器（Bim/Bid/Puma/Noxa/Bad）。" },
+  { g:1, q:"死亡诱导信号复合体 DISC 的经典组成是？",
+    o:["Fas + FADD + pro-caspase-8",
+       "Apaf-1 + 细胞色素 c + dATP",
+       "Bax + Bak",
+       "RIPK3 + MLKL"],
+    a:0, e:"DISC＝三聚化的死亡受体（如 Fas）＋接头蛋白 FADD＋pro-caspase-8；Apaf-1 复合体是凋亡体，勿混淆。" },
+  { g:1, q:"caspase-8 切割 Bid 生成的 tBid，其作用是？",
+    o:["激活 Bax/Bak 引发 MOMP，把外源信号汇入线粒体通路进行放大",
+       "直接降解所有 DNA",
+       "抑制 Bcl-2 家族的 Bax 使其失活",
+       "把细胞色素 c 塞回线粒体"],
+    a:0, e:"tBid 是两条通路的“串话”分子：它转位到线粒体激活 Bax/Bak → MOMP，使外源信号获得线粒体级联放大。" },
+  { g:1, q:"I 型细胞与 II 型细胞的区别在于？",
+    o:["I 型中 caspase-8 足量、可直接激活 caspase-3；II 型需经 tBid–线粒体回路放大",
+       "I 型走线粒体通路，II 型走死亡受体通路",
+       "II 型细胞不会发生凋亡",
+       "两者没有任何机制差别"],
+    a:0, e:"I 型细胞 caspase-8 激活量大，直接切开 caspase-3 即可；II 型细胞 caspase-8 量不足，必须经 Bid→tBid→线粒体放大。" },
+  { g:1, q:"凋亡细胞 DNA 电泳呈“梯子”状条带（DNA ladder，约 180–200 bp 的倍数）的原因是？",
+    o:["caspase-3 切掉 ICAD 后释放 CAD，CAD 在核小体连接处切断 DNA",
+       "DNA 复制时频繁出错",
+       "DNA 被随机机械撕碎",
+       "端粒异常延长所致"],
+    a:0, e:"ICAD 被 caspase-3 剪切后 CAD 核酸酶获释，在核小体之间切断 DNA，片段为单个核小体 DNA（约 180–200 bp）的整数倍。" },
+  { g:1, q:"流式细胞术中 Annexin V 阳性、PI 阴性（Annexin V⁺/PI⁻）的细胞处于？",
+    o:["早期凋亡：PS 已外翻，但细胞膜仍然完整",
+       "晚期凋亡或坏死",
+       "完全正常的活细胞",
+       "正在分裂的细胞"],
+    a:0, e:"Annexin V 检测外翻的 PS，PI 只能进入膜破损的细胞；V⁺/PI⁻＝早期凋亡，双阳＝晚期凋亡/坏死，双阴＝活细胞。" },
+
+  /* ---- 深入组 ---- */
+  { g:2, q:"XIAP 与 Smac/DIABLO 的关系是？",
+    o:["XIAP 抑制 caspase-9/-3，Smac 从线粒体释放后拮抗 XIAP、解除这一抑制",
+       "Smac 直接抑制 caspase-3",
+       "XIAP 负责激活 caspase-9",
+       "两者功能完全无关"],
+    a:0, e:"XIAP 是胞质里的 caspase“手刹”；MOMP 时 Smac/DIABLO（及 Omi/HtrA2）释出，结合 XIAP 并解除其对 caspase-9/-3 的抑制。" },
+  { g:2, q:"c-FLIP 在外源通路中的作用是？",
+    o:["作为 caspase-8 的无活性同源物抢占 DISC 席位，抑制 caspase-8 激活",
+       "直接激活 caspase-9",
+       "在线粒体膜上打孔",
+       "把 DNA 切成梯子状"],
+    a:0, e:"c-FLIP 结构类似 caspase-8 但无酶活性，竞争结合 FADD 的 DED，相当于死亡受体通路的“刹车”。" },
+  { g:2, q:"关于 TNFR1 的 Complex I 与 Complex II，正确的是？",
+    o:["Complex I（TRADD/RIPK1/TRAF2/c-IAP）激活 NF-κB 促生存；胞质 Complex II（FADD + caspase-8）促死亡",
+       "两个复合体都只促进死亡",
+       "Complex I 负责杀死细胞",
+       "TNFR1 只能传递死亡信号"],
+    a:0, e:"TNFR1 先在膜上组装 Complex I 启动 NF-κB 促生存程序；当生存信号失败时转为胞质 Complex II，招募 FADD/caspase-8 促死。" },
+  { g:2, q:"关于坏死性凋亡（necroptosis），下列哪项正确？",
+    o:["当 caspase-8 活性受抑制时，由 RIPK1–RIPK3–MLKL 轴执行的程序性坏死",
+       "由 caspase-3 切割底物执行",
+       "细胞膜保持完整、完全无炎症",
+       "与 RIPK3 无关"],
+    a:0, e:"caspase-8 活性本身会抑制 necroptosis；一旦它被抑制，RIPK1–RIPK3 成坏死小体，磷酸化 MLKL 在膜上打孔，细胞胀亡并促炎。" },
+  { g:2, q:"细胞焦亡（pyroptosis）的执行分子是？",
+    o:["gasdermin D：炎症小体激活 caspase-1/4/5 将其切割后在膜上打孔",
+       "Bax",
+       "MLKL",
+       "CAD"],
+    a:0, e:"焦亡由炎症小体 → caspase-1/4/5 → gasdermin D（GSDMD）N 端成孔执行，释放炎症因子，强烈促炎。" },
+  { g:2, q:"铁死亡（ferroptosis）的关键特征是？",
+    o:["铁依赖的膜脂过氧化堆积，GPX4 是清除脂质过氧化物的关键刹车",
+       "完全依赖 caspase 级联",
+       "以 DNA ladder 为标志",
+       "由凋亡体组装触发"],
+    a:0, e:"ferroptosis 是铁依赖的脂质过氧化性死亡；GPX4 用谷胱甘肽清除膜脂过氧化物，GPX4 失活或缺 GSH 即诱发铁死亡。" },
+  { g:2, q:"维奈克拉（venetoclax，ABT-199）的作用机制是？",
+    o:["BH3 拟似物，选择性抑制 Bcl-2，解放促凋亡蛋白，用于 CLL/AML",
+       "直接抑制 XIAP",
+       "重新激活突变的 p53",
+       "阻断 Fas 受体"],
+    a:0, e:"venetoclax 模拟 BH3 占据 Bcl-2 的疏水沟，使被扣住的 Bax/Bak 获释触发 MOMP；用于慢性淋巴细胞白血病（CLL）和急性髓系白血病（AML）。" },
+  { g:2, q:"自身免疫性淋巴增生综合征（ALPS）的病因是？",
+    o:["Fas 或 FasL 突变，淋巴细胞凋亡障碍而在体内堆积",
+       "p53 基因突变",
+       "Bcl-2 过表达",
+       "GPX4 缺失"],
+    a:0, e:"ALPS 患者 Fas/FasL 突变，外源凋亡通路失灵，自身反应性淋巴细胞无法被清除，表现为淋巴结肿大和自身免疫。" },
+  { g:2, q:"滤泡性淋巴瘤常见的 t(14;18) 染色体易位会导致？",
+    o:["Bcl-2 基因被置于免疫球蛋白强启动子下而过表达，细胞“拒绝凋亡”",
+       "Bax 基因整段缺失",
+       "caspase-8 持续激活",
+       "p53 蛋白过量表达"],
+    a:0, e:"t(14;18) 把 BCL2 基因并到 IGH 增强子旁，抗凋亡 Bcl-2 大量过表达，B 细胞该死不死，逐步积累成淋巴瘤。" },
+  { g:2, q:"p53 促进凋亡的主要方式是？",
+    o:["作为转录因子激活 Puma、Noxa、Bax 等促凋亡基因",
+       "直接抑制所有 caspase",
+       "阻止细胞色素 c 释放",
+       "与凋亡没有关系"],
+    a:0, e:"DNA 损伤时 p53 转录激活 Puma/Noxa/Bax，推动内源通路；约 50% 的人类肿瘤携带 p53 突变，因而逃避凋亡。" }
+];
+</script>
+
+<script>
+"use strict";
+/* ============ 自测交互逻辑（纯 vanilla JS，零依赖） ============ */
+(function () {
+  var TOTAL = QUIZ.length;
+  var answered = 0;
+  var score = 0;
+  var quizRoot = document.getElementById("quizRoot");
+  var answeredEl = document.getElementById("answeredCount");
+  var scoreEl = document.getElementById("scoreNow");
+  var barEl = document.getElementById("progressBar");
+  var finalCard = document.getElementById("finalCard");
+  var resetBtn = document.getElementById("resetBtn");
+
+  function esc(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function renderQuiz() {
+    var html = "";
+    var curGroup = -1;
+    for (var i = 0; i < QUIZ.length; i++) {
+      var item = QUIZ[i];
+      if (item.g !== curGroup) {
+        curGroup = item.g;
+        html += '<div class="q-group-title">' + esc(GROUP_NAMES[curGroup]) + "</div>";
+      }
+      html += '<div class="q-block" data-q="' + i + '">';
+      html += '<div class="q-stem"><span class="qno">' + (i + 1) + "</span>" + esc(item.q) + "</div>";
+      for (var j = 0; j < item.o.length; j++) {
+        html += '<button type="button" class="q-opt" data-q="' + i + '" data-o="' + j + '">' +
+                "<b>" + "ABCD".charAt(j) + ".</b> " + esc(item.o[j]) + "</button>";
+      }
+      html += '<div class="q-exp" id="exp-' + i + '"></div>';
+      html += "</div>";
+    }
+    quizRoot.innerHTML = html;
+  }
+
+  function updateStatus() {
+    answeredEl.textContent = String(answered);
+    scoreEl.textContent = String(score);
+    barEl.style.width = (answered / TOTAL * 100) + "%";
+  }
+
+  function verdict(s) {
+    if (s >= 27) return { t: "🏆 深入掌握", n: "通路机制、调控网络与疾病药物都已打通，可以去给别人讲了！" };
+    if (s >= 21) return { t: "💪 进阶良好", n: "主干通路已掌握，建议回看深入组错题，重点巩固 XIAP/Smac、TNFR1 复合体与死亡方式鉴别。" };
+    if (s >= 15) return { t: "✅ 入门达标", n: "基本概念已建立，建议对照上方海报把两条通路再捋一遍，重做错题。" };
+    return { t: "🌱 继续加油", n: "建议先读配套主指南，再用本页海报和术语表过一遍，然后重新作答。" };
+  }
+
+  function showFinal() {
+    var v = verdict(score);
+    finalCard.classList.remove("hidden");
+    finalCard.innerHTML =
+      '<div class="score-big">' + score + " / " + TOTAL + "</div>" +
+      '<div class="verdict">' + v.t + "</div>" +
+      '<div class="note">评级参考：≥27 深入掌握 · ≥21 进阶良好 · ≥15 入门达标 · &lt;15 继续加油</div>' +
+      '<div class="note">' + v.n + "</div>";
+    finalCard.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function onPick(btn) {
+    var qi = parseInt(btn.getAttribute("data-q"), 10);
+    var oi = parseInt(btn.getAttribute("data-o"), 10);
+    var item = QUIZ[qi];
+    var block = quizRoot.querySelector('.q-block[data-q="' + qi + '"]');
+    var opts = block.querySelectorAll(".q-opt");
+    var correct = oi === item.a;
+
+    for (var k = 0; k < opts.length; k++) {
+      opts[k].disabled = true;
+      if (k === item.a) opts[k].classList.add("correct");
+      else if (k === oi) opts[k].classList.add("wrong");
+      else opts[k].classList.add("dim");
+    }
+
+    var exp = document.getElementById("exp-" + qi);
+    exp.innerHTML = (correct ? "✅ 回答正确。" : "❌ 回答错误。正确答案是 " + "ABCD".charAt(item.a) + "。") + " " + esc(item.e);
+    exp.classList.add("show");
+
+    answered++;
+    if (correct) score++;
+    updateStatus();
+    if (answered === TOTAL) showFinal();
+  }
+
+  function resetAll() {
+    answered = 0;
+    score = 0;
+    finalCard.classList.add("hidden");
+    finalCard.innerHTML = "";
+    renderQuiz();
+    updateStatus();
+    document.getElementById("quiz").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  quizRoot.addEventListener("click", function (ev) {
+    var t = ev.target;
+    while (t && t !== quizRoot && !(t.classList && t.classList.contains("q-opt"))) {
+      t = t.parentNode;
+    }
+    if (t && t.classList && t.classList.contains("q-opt") && !t.disabled) {
+      onPick(t);
+    }
+  });
+  resetBtn.addEventListener("click", resetAll);
+
+  renderQuiz();
+  updateStatus();
+})();
+</script>
+</body>
+</html>

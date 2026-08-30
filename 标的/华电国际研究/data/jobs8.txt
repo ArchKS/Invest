@@ -1,0 +1,7 @@
+ifind_get_financial_statements|600795.SH|"statement":"bs,is","financial_parameter":"20241231"|hd_600795_2024.csv
+ifind_get_financial_statements|600795.SH|"statement":"bs,is","financial_parameter":"20251231"|hd_600795_2025.csv
+ifind_get_financial_statements|600795.SH|"statement":"is","financial_parameter":"20211231"|hd_600795_2021is.csv
+ifind_get_stock_financial_index|600795.SH|"financial_parameter":"20241231","category":"profitability"|prof_600795_2024.csv
+ifind_get_stock_financial_index|600795.SH|"financial_parameter":"20251231","category":"profitability"|prof_600795_2025.csv
+ifind_get_stock_financial_index|600795.SH|"financial_parameter":"20241231","category":"capital_structure"|cap_600795.SH_2024.csv
+ifind_get_stock_financial_index|600795.SH|"financial_parameter":"20251231","category":"capital_structure"|cap_600795.SH_2025.csv
