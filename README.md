@@ -5,7 +5,7 @@
 > Typora插件： https://github.com/obgnail/typora_plugin
 2026-08-30  [To.md](To.md)
 
-2026-08-11  [Structure.md](Structure.md)
+2026-08-11  [structure.md](structure.md)
 
 
 ## kimi
@@ -58,12 +58,12 @@
 
 ## 医药/亚盛/Lisaftoclax
 
+- 2026-08-31  [药理机制.md](医药/亚盛/Lisaftoclax/药理机制.md)
 - 2026-08-30  [MDS药物发展20年与Lisaftoclax展望分析报告.md](医药/亚盛/Lisaftoclax/MDS药物发展20年与Lisaftoclax展望分析报告.md)
 - 2026-08-30  [O)亚盛flcq.md](医药/亚盛/Lisaftoclax/O)亚盛flcq.md)
 - 2026-08-30  [临床及数据.md](医药/亚盛/Lisaftoclax/临床及数据.md)
 - 2026-08-30  [亚盛KOL分析.md](医药/亚盛/Lisaftoclax/亚盛KOL分析.md)
 - 2026-08-30  [竞品分析.md](医药/亚盛/Lisaftoclax/竞品分析.md)
-- 2026-08-30  [药理机制.md](医药/亚盛/Lisaftoclax/药理机制.md)
 - 2026-08-30  [适应症.md](医药/亚盛/Lisaftoclax/适应症.md)
 
 ## 医药/其他
