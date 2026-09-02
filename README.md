@@ -170,8 +170,8 @@
 
 ## 医药/亚盛/Lisaftoclax
 
-- 2026-09-02  [竞品分析.md](医药/亚盛/Lisaftoclax/竞品分析.md)
 - 2026-09-02  [临床及数据.md](医药/亚盛/Lisaftoclax/临床及数据.md)
+- 2026-09-02  [竞品分析.md](医药/亚盛/Lisaftoclax/竞品分析.md)
 - 2026-09-02  [亚盛_claudeopus5.md](医药/亚盛/Lisaftoclax/亚盛_claudeopus5.md)
 - 2026-09-02  [药理机制.md](医药/亚盛/Lisaftoclax/药理机制.md)
 - 2026-08-30  [MDS药物发展20年与Lisaftoclax展望分析报告.md](医药/亚盛/Lisaftoclax/MDS药物发展20年与Lisaftoclax展望分析报告.md)
