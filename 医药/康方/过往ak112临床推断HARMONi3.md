@@ -1,23 +1,14 @@
 ---
 CreateTime: 2026-07-07 07:59:51
-LastUpdate: 2026-07-14 20:36:51
+LastUpdate: 2026-09-04 20:11:47
 ---
 
 # AK112 HARMONi-3 结果预测分析报告
-> **报告日期**：2026年7月6日
-> **研究对象**：康方生物AK112（Ivonescimab/依沃西单抗）
-> **预测目标**：HARMONi-3全球III期临床试验结果
-> **分析方法**：基于历史临床数据的跨试验外推与统计建模
 
----
 
 # 第一章 执行摘要
 
-## 1.1 研究背景与目的
 
-AK112（ivonescimab，依沃西单抗）是由康方生物开发、Summit Therapeutics全球商业化的全球首创PD-1/VEGF双特异性抗体，同时也是首个在III期头对头试验中击败帕博利珠单抗（K药，pembrolizumab）的免疫检查点抑制剂[^1]。HARMONi-3是Summit主导的、旨在验证AK112全球价值的关键III期临床试验，采用AK112联合化疗头对头对比K药联合化疗的优效性设计，一线治疗转移性非小细胞肺癌（NSCLC），按组织学类型分为鳞状（squamous）和非鳞状（non-squamous）两个队列分别独立分析[^2]。
-
-本报告旨在基于AK112已完成和已披露的多项关键临床试验数据，通过跨试验桥接分析、PFS-to-OS转化模型、统计功效模拟及多维度交叉验证，对HARMONi-3的疗效结果进行系统性预测。HARMONi-3的成功不仅将决定AK112能否成为一线NSCLC的全球新标准，也将对Summit股价和康方生物估值产生深远影响，更是2026年下半年全球肿瘤药物领域最受关注的催化剂之一[^3]。
 
 ## 1.2 核心数据来源
 
@@ -31,7 +22,7 @@ AK112（ivonescimab，依沃西单抗）是由康方生物开发、Summit Therap
 
 **HARMONi（全球EGFRm）**：全球多中心EGFRm经治NSCLC，38%为西方患者。PFS HR为0.52；OS HR为0.78（p=0.0332），其中北美患者亚组OS HR为0.70，优于总体[^9]。
 
-上述四项试验在PFS层面展现出高度一致的疗效信号（HR范围0.46–0.60），为HARMONi-3的预测提供了坚实的跨试验证据链。
+
 
 ## 1.3 关键发现
 
@@ -85,42 +76,7 @@ HARMONi-6亚组分析显示，PD-L1 TPS<1%人群的PFS HR=0.55，甚至优于PD-
 
 综合以上分析，基于现有跨试验数据的高度一致性和HARMONi-6已证实的OS获益转化，本报告对HARMONi-3最终取得阳性结果持高度乐观态度。鳞癌队列的双终点阳性概率均超过96%，非鳞癌队列PFS成功概率接近100%，最可能情景为鳞癌双阳性、非鳞癌PFS阳性且OS趋势阳性的分阶段成功路径。2026年下半年的数据读出将是AK112从"中国创新"迈向"全球标准"的关键一跃。
 
----
 
-## 脚注
-
-[^1]: HARMONi-2 (AK112-303) 临床研究报告. Summit Therapeutics press release 2025; JAMA 2025. Ivonescimab monotherapy vs pembrolizumab monotherapy in PD-L1+ NSCLC: PFS HR=0.51, p<0.0001.
-
-[^2]: Summit Therapeutics Q3 2025 Earnings Call Deck & 2025 Annual Report. HARMONi-3 protocol design: AK112 + chemotherapy vs pembrolizumab + chemotherapy, 1L metastatic NSCLC, dual primary endpoints (PFS + OS), separate analyses by histology (sq n≈600, non-sq n≈1000).
-
-[^3]: AK112 HARMONi-3 跨维度洞察提取报告. Insight 1 & Insight 7. 2026-07-06.
-
-[^4]: HARMONi-6 (AK112-306) ESMO 2025 interim analysis & ASCO 2026 LBA4. PFS HR=0.60 (95% CI: 0.47–0.77), p<0.0001; OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017. Lancet 2026.
-
-[^5]: HARMONi-6 ASCO 2026 LBA4 final OS analysis. OS HR=0.66 (95% CI: 0.50–0.87), p=0.0017.
-
-[^6]: HARMONi-6 ESMO 2025 interim analysis. Median PFS: 11.14 months (AK112+chemo) vs 6.90 months (tislelizumab+chemo), absolute benefit 4.24 months.
-
-[^7]: HARMONi-2 (AK112-303) interim OS analysis (39% maturity). OS HR=0.777. Summit Therapeutics press release 2025.
-
-[^8]: HARMONi-A (AK112-301) final OS analysis SITC 2025. OS HR=0.74 (95% CI: 0.58–0.95), p=0.019. Median follow-up 32.5 months.
-
-[^9]: Summit Therapeutics HARMONi WCLC 2025 update. OS HR=0.78 (p=0.0332); North America OS HR=0.70; 38% Western patients.
-
-[^10]: Xiao B et al. Risk of bleeding with bevacizumab and ramucirumab: meta-analysis of 85 RCTs. Cancer Manag Res 2018. Bevacizumab high-grade bleeding RR=1.98 in squamous NSCLC.
-
-[^11]: HARMONi-6 baseline characteristics and safety data: central squamous 63.2%, hemoptysis history 30%, Grade ≥3 hemorrhage 2.6% vs 0.8% in control.
-
-[^12]: AK112 HARMONi-3 交叉验证报告. 冲突3: HARMONi-3期中分析未达阈值的解读. 2026-07-06.
-
-[^13]: Guo Y et al. Tislelizumab plus chemotherapy vs pembrolizumab plus chemotherapy for first-line NSCLC: systematic review and indirect comparison. Front Oncol 2023. PFS HR=1.04 (95% CI: 0.82–1.31).
-
-[^14]: 维度08: 跨试验疗效外推模型与HARMONi-3预测推断 (Dim08 v1.0). 2026-07-06. 基于HARMONi-6、HARMONi-2、HARMONi-A、HARMONi及KEYNOTE-407/RATIONALE-307数据.
-
-[^15]: Summit Therapeutics Q4 2025 Earnings Release (Feb 2026). HARMONi-3 sq enrollment screening completed Q1 2026; added Q2 2026 PFS interim analysis.
-
-
----
 
 # 第二章 研究背景与HARMONi-3试验设计
 
@@ -241,66 +197,7 @@ HARMONi-2（中国，PD-L1≥1%，单药头对头）证明AK112单药在PD-L1阳
 
 HARMONi-6（中国，鳞状NSCLC，联合化疗）已取得PFS和OS双阳性结果（PFS HR 0.60，OS HR 0.66，P=0.0017），成为首个在一线NSCLC中头对头击败PD-1联合化疗的III期研究[^21]。HARMONi-6对照组为Tislelizumab（中国常用PD-1），HARMONi-3对照组为Pembrolizumab（全球标准），两者在中国鳞癌中的疗效相近[^23]。HARMONi-3的核心任务是验证HARMONi-6的阳性结果能否在**全球多中心、西方人群占相当比例**的人群中复现。若鳞状队列取得阳性，AK112将成为**首个在一线NSCLC中击败Pembrolizumab+化疗的全球标准方案**[^24]。
 
-### 2.4.3 全球监管意义
 
-HARMONi-3采用全球多中心试验（MRCT）设计，覆盖北美、欧洲及中国，数据可直接支持FDA、EMA、PMDA等全球主要监管机构的注册审批[^25]。这一设计与HARMONi（EGFR-TKI进展后NSCLC全球研究）类似——后者约38%的患者来自西方国家，符合FDA对全球注册性试验的种族/地理多样性要求[^25]。相比之下，HARMONi-6仅在中国开展，主要支持NMPA审批；HARMONi-3则承载着AK112从"中国创新药"跃升为"全球一线标准"的终极使命。
-
----
-
-## 脚注
-
-[^1]: Zhong T, et al. Mechanism of action of ivonescimab (AK112/SMT112): a first-in-class tetravalent Fc-silent bispecific antibody with dual blockade of PD-1 and VEGF. *J Immunother Cancer*. 2023;11(Suppl 1):A1316.
-
-[^2]: Akeso, Inc. Ivonescimab Mechanism of Action. https://www.akesobio.com/en/rd-and-science/products-center/ivonescimab/
-
-[^3]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. *The Lancet*. 2025;405(10481):839-849.
-
-[^4]: Olivares-Hernández A, et al. Ivonescimab: promise or reality for advanced NSCLC? PMC, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12775690/
-
-[^5]: Xiong A, et al. *The Lancet*. 2025;405(10481):839-849. HARMONi-2完整数据.
-
-[^6]: Zhong T, et al. *J Immunother Cancer*. 2023;11(Suppl 1):A1316. Fc-silencing机制.
-
-[^7]: 康方生物新闻稿, 2022年12月. Summit Therapeutics授权合作.
-
-[^8]: Summit Therapeutics Q4 & FY 2025 Earnings Call, 2026年2月23日. https://s206.q4cdn.com/652410165/files/doc_financials/2025/q4/20260223-Q4-FY-2025-Earnings-Call-Deck-_-FINAL-v3.pdf
-
-[^9]: 康方生物新闻稿, 2023年8月. https://bydrug.pharmcube.com/news/detail/d84324f782ad62828ef31de829543501
-
-[^10]: OncLive, "Ivonescimab Under Priority Review by China's NMPA", 2026年6月29日. https://www.onclive.com/view/ivonescimab-under-priority-review-by-china-s-nmpa-for-frontline-pd-l1-positive-nsclc
-
-[^11]: Summit Therapeutics HARMONi-3 Clinical Trial page. https://smmttx.com/clinical-trials/harmoni-3-clinical-trial/default.aspx
-
-[^12]: Summit Therapeutics Q1 2026 Earnings Release, 2026年. https://www.smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-First-Quarter-Ended-March-31-2026/default.aspx
-
-[^13]: Olivares-Hernández A, et al. PMC, 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12775690/
-
-[^14]: 富途翻译研报, Summit Therapeutics ESMO Update Q3 2025, 2025年10月20日. https://news.futunn.com/translate-news/notice/305702108/zh-cn/4
-
-[^15]: Summit Therapeutics JPM 2025 Presentation. https://s206.q4cdn.com/652410165/files/doc_presentation/Summit-Therapeutics-2025-JPM-Presentation-Slides.pdf
-
-[^16]: Summit Therapeutics Q3 2025 Earnings Release, 2025年9月30日. https://www.smmttx.com/news/press-releases/news-details/2025/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2025/
-
-[^17]: Jefferies分析师报告, 2025年6月1日. https://xueqiu.com/6974174633/337121232
-
-[^18]: 雪球用户分析, 2026年5月2日. https://xueqiu.com/9523950972/387028391
-
-[^19]: Summit Therapeutics 10-K, 2026年. https://stocklight.com/stocks/us/nasdaq-smmt/summit-therapeutics/annual-reports/nasdaq-smmt-2026-10K-26665225.pdf
-
-[^20]: Quartr Summit Q4 2025 earnings summary, 2026年6月22日. https://quartr.com/events/summit-therapeutics-inc-smmt-q4-2025_FkQB7Lwk
-
-[^21]: Lu S, et al. Lancet. 2026. https://pubmed.ncbi.nlm.nih.gov/42218899/ ; ASCO 2026 Plenary Session LBA4. https://www.onclive.com/view/harmoni-6-shows-os-benefit-with-ivonescimab-chemo-over-tislelizumab-chemo-in-first-line-squamous-nsclc
-
-[^22]: Summit Therapeutics 10-K, 2026年. https://stocklight.com/stocks/us/nasdaq-smmt/summit-therapeutics/annual-reports/nasdaq-smmt-2026-10K-26665225.pdf
-
-[^23]: RATIONALE-307 4-Year Follow-Up. *Springer*. 2026. https://link.springer.com/article/10.1007/s40487-026-00424-z ; KEYNOTE-407 5-Year Update. *JCO*. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10082300/
-
-[^24]: CMB International, "China Healthcare - ASCO 2026 review", 2026年6月3日. https://www.cmbi.com.hk/upload/202606/20260603485363.pdf
-
-[^25]: MedThority, "Topline results from HARMONi", 2025年8月17日. https://inte.medthority.com/news/2025/8/-topline-results-from-the-phase-iii-clinical-trial-harmoni-evaluating-ivonescimab-successfully-met-the-progression-free-survival-pfs-primary-endpoint-for-nsclcegfr-.--summit-therapeutics
-
-
----
 
 # 第三章 历史临床数据深度回顾
 
@@ -729,70 +626,7 @@ PFS HR在中国（0.46）和全球（0.52）数据中的高度一致，为HARMON
 
 **核心结论**：HARMONi-A、HARMONi-2、HARMONi-6三项研究构成了依沃西临床开发中逐级递进的证据链条。从PFS HR 0.46（二线EGFRm+化疗）到0.51（一线PD-L1+单药）到0.60（一线鳞癌+化疗），依沃西在三种截然不同的临床场景中均展现出稳定而优异的疗效信号。OS数据从HARMONi-A的显著阳性（HR=0.74，P=0.019）到HARMONi-6的双阳性（HR=0.66，P=0.0017），再到HARMONi-2的方向性获益（HR=0.777），呈现出一致的获益趋势。鳞癌安全性的突破（HARMONi-2中0%≥3级出血、HARMONi-6中2.60%≥3级出血）打破了传统抗VEGF药物的禁忌，为HARMONi-3的全球鳞癌队列奠定了坚实的安全性基础。全球数据一致性验证（HARMONi全球PFS HR=0.52 vs 中国0.46）进一步增强了HARMONi-3跨人群成功的外推信心。这三项研究共同构成的历史临床数据深度图谱，为HARMONi-3的结果预测提供了多维度、跨场景、强一致性的循证基础。
 
----
 
-## 脚注
-
-[^1]: Fang W, Zhao Y, Luo Y, et al. Ivonescimab plus chemotherapy in non-small cell lung cancer with EGFR variant: a randomized clinical trial. *JAMA*. 2024;332(7):561-570.
-
-[^2]: Akeso, Inc. Ivonescimab HARMONi-A Study Final OS Analysis Results Presented at SITC 2025. Press release. Nov 7, 2025.
-
-[^3]: Zhang L, et al. HARMONi-A ASCO 2024 Oral Abstract 8508.
-
-[^4]: Lu S, et al. ORIENT-31 second interim analysis. *Lancet Respir Med*. 2023;11(7):624-636.
-
-[^5]: Merck. KEYNOTE-789 Phase 3 trial update. Feb 2023.
-
-[^6]: Akeso, Inc. Ivonescimab Updated Label Shows Positive Dual Results in PFS and OS. Press release. Jan 6, 2026.
-
-[^7]: Summit Therapeutics. HARMONi WCLC 2025 Presidential Symposium. Aug 2025.
-
-[^8]: Summit Therapeutics. HARMONi Intracranial Efficacy Presentation. Mar 2026.
-
-[^9]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. *The Lancet*. 2025;405(10481):839-849.
-
-[^10]: ClinicalTrials.gov. NCT05499390. https://clinicaltrials.gov/ct2/show/NCT05499390
-
-[^11]: Zhou C, et al. Phase 3 Study of Ivonescimab (AK112) vs. Pembrolizumab as First-line Treatment for PD-L1-positive Advanced NSCLC: HARMONi-2. WCLC 2024 Presidential Symposium. September 8, 2024, San Diego, CA.
-
-[^12]: Mok TSK, et al. Pembrolizumab versus chemotherapy for previously untreated, PD-L1-expressing, locally advanced or metastatic non-small-cell lung cancer (KEYNOTE-042). *Lancet*. 2019;393(10183):1819-1830.
-
-[^13]: BusinessWire. Ivonescimab Monotherapy Reduced the Risk of Disease Progression or Death by 49%. September 8, 2024.
-
-[^14]: 浦银国际. 康方生物：1L NSCLC中国获批，HARMONi-2初次OS数据读出. 2025年5月2日.
-
-[^15]: JP Morgan. 康方生物公司研报. 2025年3月.
-
-[^16]: Zhong T, et al. Mechanism of action of ivonescimab (AK112/SMT112): a first-in-class tetravalent Fc-silent bispecific antibody with dual blockade of PD-1 and VEGF. *J Immunother Cancer*. 2023;11(Suppl 1):A1316.
-
-[^17]: Frontiers in Immunology. Anti-angiogenic therapies in cancer: from endogenous inhibitors to bispecific VEGF x PD-(L)1 antibodies. 2026;17:1736806.
-
-[^18]: TrialX. Brain Metastasis in Triple Negative Breast Cancer: Ivonescimab and Trop2 ADC. Clinical trial description citing AK112-201/202 intracranial data.
-
-[^19]: Akeso, Inc. Ivonescimab Mechanism of Action. https://www.akesobio.com/en/rd-and-science/products-center/ivonescimab/
-
-[^20]: Akeso, Inc. Ivonescimab Shows Quality of Life Benefits in Chemotherapy-Free First-Line NSCLC: HRQoL Data from HARMONi-2 at ELCC 2026. March 31, 2026.
-
-[^21]: 康方生物. 生存与生活质量双重显著获益！依沃西"去化疗"一线治疗NSCLC生活质量分析数据发表于2026 ELCC. 2026年3月30日.
-
-[^22]: Chen Z, Yang F, Jiang Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6): a randomised, double-blind, phase 3 trial. *The Lancet*. 2025;406(10515):2078-2088.
-
-[^23]: Lu S, et al. Phase III study of ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small cell lung cancer (HARMONi-6). Presented at: 2025 ESMO Congress; October 17-25, 2025; Berlin, Germany. Abstract LBA4.
-
-[^24]: Akeso Biopharma. HARMONi-6 Phase III Study of Ivonescimab Accepted by The Lancet. Oct 16, 2025.
-
-[^25]: 梅斯肿瘤新前沿. 胃癌OS翻倍！晚期宫颈癌生存期突破34个月，ESMO炸场的国产创新药（下篇）. 2025-10-26.
-
-[^26]: Summit Therapeutics. Ivonescimab with Chemotherapy Demonstrated a Statistically Significant Overall Survival Benefit in HARMONi-6. May 31, 2026.
-
-[^27]: 中国方案登顶ASCO最高舞台：HARMONi-6研究OS显著阳性. 美通社PR-Newswire. 2026-06-02.
-
-[^28]: Cancer Network. Ivonescimab/Chemo Prolongs PFS in 1L Advanced Squamous NSCLC. 2025.
-
-[^29]: Cancer Network. Ivonescimab/Chemotherapy Improves OS in Squamous NSCLC. June 2026.
-
-
----
 
 # 第四章 对照基准：Keytruda在一线NSCLC的历史数据
 
@@ -979,48 +813,7 @@ RATIONALE-307的PFS HR（0.48-0.52）与KEYNOTE-407（0.57）相近，但**ORR�
 
 ---
 
-## 脚注
 
-[^1]: Paz-Ares L, et al. Pembrolizumab plus Chemotherapy for Squamous Non–Small-Cell Lung Cancer. *N Engl J Med*. 2018;379(21):2040-2051. doi:10.1056/NEJMoa1810865
-
-[^2]: Paz-Ares L, et al. A Randomized, Placebo-Controlled Trial of Pembrolizumab Plus Chemotherapy in Patients With Metastatic Squamous NSCLC: Protocol-Specified Final Analysis of KEYNOTE-407. *J Thorac Oncol*. 2020;15(10):1657-1669. doi:10.1016/j.jtho.2020.05.010
-
-[^3]: Paz-Ares L, et al. Pembrolizumab Plus Chemotherapy in Squamous Non–Small-Cell Lung Cancer: 5-Year Update of the Phase III KEYNOTE-407 Study. *J Clin Oncol*. 2023;41(11):1999-2006. doi:10.1200/JCO.22.01990
-
-[^4]: Targeted Oncology. Pembrolizumab/Chemo Continues to Impress in NSCLC With 5-Year Updates. October 2024. https://www.targetedonc.com/view/pembrolizumab-chemo-continues-to-impress-in-nsclc-with-5-year-updates
-
-[^5]: Gandhi L, et al. Pembrolizumab plus Chemotherapy in Metastatic Non–Small-Cell Lung Cancer. *N Engl J Med*. 2018;378(22):2078-2092. doi:10.1056/NEJMoa1801005
-
-[^6]: Garassino MC, et al. Pembrolizumab Plus Pemetrexed and Platinum in Nonsquamous Non-Small-Cell Lung Cancer: 5-Year Outcomes From the Phase 3 KEYNOTE-189 Study. *J Clin Oncol*. 2023. doi:10.1200/JCO.22.01989
-
-[^7]: Cheng Y, et al. Pembrolizumab Plus Chemotherapy for Chinese Patients With Metastatic Squamous NSCLC in KEYNOTE-407. *J Thorac Oncol*. 2021;16(11):1850-1861. doi:10.1016/j.jtho.2021.07.022
-
-[^8]: Niho S, et al. Pembrolizumab plus chemotherapy in Japanese patients with metastatic squamous non-small-cell lung cancer in KEYNOTE-407. *Cancer Sci*. 2023;114(8):3330-3338. doi:10.1111/cas.15424
-
-[^9]: Wang J, et al. Tislelizumab Plus Chemotherapy vs Chemotherapy Alone as First-line Treatment for Advanced Squamous Non–Small-Cell Lung Cancer: A Phase 3 Randomized Clinical Trial. *JAMA Oncol*. 2021;7(5):709-717. doi:10.1001/jamaoncol.2021.0366
-
-[^10]: Wang J, et al. Tislelizumab plus chemotherapy versus chemotherapy alone as first-line treatment for advanced squamous non-small cell lung cancer: final analysis of the randomized, phase III RATIONALE-307 trial. *ESMO Open*. 2024;9(10):103727.
-
-[^11]: Reck M, et al. Pembrolizumab versus Chemotherapy for PD-L1–Positive Non–Small-Cell Lung Cancer. *N Engl J Med*. 2016;375(19):1823-1833. doi:10.1056/NEJMoa1606774; 5-year update: Reck M, et al. Five-Year Outcomes With Pembrolizumab Versus Chemotherapy for Metastatic Non–Small-Cell Lung Cancer With PD-L1 Tumor Proportion Score ≥ 50. *J Clin Oncol*. 2021;39(21):2339-2349. doi:10.1200/JCO.21.00174
-
-[^12]: Mok TSK, et al. Pembrolizumab versus chemotherapy for previously untreated, PD-L1-positive, locally advanced or metastatic non-small-cell lung cancer (KEYNOTE-042): a randomised, open-label, controlled, phase 3 trial. *Lancet*. 2019;393(10183):1819-1830. doi:10.1016/S0140-6736(18)32409-7
-
-[^13]: Paz-Ares L, et al. First-line nivolumab plus ipilimumab combined with two cycles of chemotherapy in patients with non-small-cell lung cancer (CheckMate 9LA): an international, randomised, open-label, phase 3 trial. *Lancet Oncol*. 2021;22(2):198-211. doi:10.1016/S1470-2045(20)30641-0
-
-[^14]: CheckMate 9LA 4-year update. *J Immunother Cancer*. 2024;12(2):e008189. doi:10.1136/jitc-2023-008189
-
-[^15]: Johnson ML, et al. Durvalumab With or Without Tremelimumab Plus Chemotherapy as First-Line Treatment for Metastatic Non-Small Cell Lung Cancer: The Phase III POSEIDON Study. *J Clin Oncol*. 2023;41(7):1213-1225. doi:10.1200/JCO.22.00975
-
-[^16]: Peters S, et al. Durvalumab ± Tremelimumab + Chemotherapy in First-Line Metastatic NSCLC: 5-Year Overall Survival Update from the POSEIDON Study. *ESMO Immuno-Oncology Congress*. December 2023. LBA3.
-
-[^17]: Chen Z, Yang F, Jiang Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (HARMONi-6): a randomised, double-blind, phase 3 trial. *The Lancet*. 2025;406(10515):2078-2088.
-
-[^18]: Lu S, et al. Phase III study of ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous non-small cell lung cancer (HARMONi-6). Presented at: 2025 ESMO Congress; October 17-25, 2025; Berlin, Germany. Abstract LBA4.
-
-[^19]: Summit Therapeutics. Ivonescimab with Chemotherapy Demonstrated a Statistically Significant Overall Survival Benefit in HARMONi-6. May 31, 2026. https://smmttx.com/news/press-releases/news-details/2026/
-
-
----
 
 # 第五章 跨试验疗效外推与HARMONi-3预测模型
 
@@ -1404,77 +1197,6 @@ HARMONi-3（NCT05899608）作为AK112首个全球多中心III期试验，其安�
 ## 本章小结
 
 AK112在超过2,800例患者的临床研究中展现了可预测、可管理的安全性profile。其在鳞癌中的出血风险突破——HARMONi-2鳞癌亚组≥3级出血0%、HARMONi-6高危人群仅2.6%——与贝伐珠单抗在鳞癌中9-10%的致命性出血率形成鲜明对比，标志VEGF靶向治疗在sq-NSCLC中的历史性解禁。VEGF相关AE和irAE发生率均处于可管理范围，且irAE未因双靶点设计而增加，反而在严重irAE和停药指标上优于帕博利珠单抗。基于HARMONi全球数据的一致性，HARMONi-3中西方人群安全性预期与中国数据一致。AK112在sq-NSCLC中的安全性，将从监管障碍转化为全球市场获批的**核心差异化优势**。
-
----
-
-## 脚注
-
-[^1]: Akeso Biopharma; Summit Therapeutics. ASCO 2026 HARMONi-6 presentation. June 2026. https://www.smmttx.com
-
-[^2]: Frentzas S, et al. Phase 1a dose escalation study of ivonescimab (AK112/SMT112), an anti-PD-1/VEGF-A bispecific antibody, in patients with advanced solid tumors. J Immunother Cancer. 2022.
-
-[^3]: Wang F, et al. Safety, Pharmacokinetics, and Pharmacodynamics Evaluation of Ivonescimab in Chinese Patients With Advanced Solid Tumors. PMC11925807. 2025.
-
-[^4]: 2022 ASCO. AK112-202 Ib期研究. 安全性数据: 88.5% TRAE, 13.5% Gr 3/4.
-
-[^5]: Zhang L, et al. Ivonescimab combined with chemotherapy in patients with EGFR-mutant non-squamous NSCLC who progressed on EGFR-TKIs (HARMONi-A): a randomized, double-blind, multi-center, phase 3 trial. ASCO 2024; JAMA 2024.
-
-[^6]: Akeso Biopharma. Ivonescimab's Updated Label Shows Positive Dual Results in PFS and OS from HARMONi-A Study. Jan 2026. 32.5 months follow-up.
-
-[^7]: Summit Therapeutics. Longer-Term Follow-Up of Western Patients in Global Phase III HARMONi Trial. Sept 2025. WCLC 2025.
-
-[^8]: Xiong A, et al. Ivonescimab versus pembrolizumab for PD-L1-positive non-small cell lung cancer (HARMONi-2): a randomised, double-blind, phase 3 study in China. Lancet. 2025; PubMed 40057343.
-
-[^9]: Zhou C, et al. Phase 3 Study of Ivonescimab (AK112) vs Pembrolizumab as First-line Treatment for PD-L1 positive Advanced NSCLC: HARMONi-2. WCLC 2024. IASLC Press Release.
-
-[^10]: Chen Z, et al. Ivonescimab plus chemotherapy versus tislelizumab plus chemotherapy as first-line treatment for advanced squamous NSCLC (HARMONi-6): a randomised, double-blind, phase 3 trial. Lancet. 2026; PubMed 41125109.
-
-[^11]: Akeso Biopharma. OS显著阳性！依沃西联合化疗战胜PD-1联合化疗OS结果在ASCO 2026发布. May 2026. https://www.akesobio.com/cn/media/akeso-news/20260531/
-
-[^12]: Dai Y, et al. Efficacy and safety of ivonescimab in non-small cell lung cancer: a systematic review and meta-analysis of emerging clinical data. Front Pharmacol. 2026;1770637.
-
-[^13]: 罗详冲. PD-1/VEGF双特异性抗体依沃西单抗：全面开启肺癌治疗新时代. MedSci.cn. 2025.
-
-[^14]: Johnson DH, et al. Phase II trial of carboplatin/paclitaxel with bevacizumab in NSCLC. J Clin Oncol. 2004;22(11):2184-91.
-
-[^15]: PMC3335247. Predicting and managing the risk of pulmonary haemorrhage in patients with NSCLC treated with bevacizumab: a consensus report from a panel of experts.
-
-[^16]: Sandler A, et al. Paclitaxel-carboplatin alone or with bevacizumab for non-small-cell lung cancer. N Engl J Med. 2006;355(24):2542-50.
-
-[^17]: AVAiL. Bevacizumab in Lung Cancer. EMA Avastin Product Information.
-
-[^18]: AVASQ (BO19734). Avastin in Squamous NSCLC trial. Terminated early after 2/20 Gr ≥3 PH.
-
-[^19]: BRIDGE trial. Open-Label Phase II Evaluating Safety of Bevacizumab + Carboplatin/Paclitaxel in Squamous NSCLC. J Thorac Oncol.
-
-[^20]: Principles and Practice of Lung Cancer, 4th Edition. IASLC Official Reference Text. Bevacizumab in Squamous Cell Histology chapter.
-
-[^21]: 熊安稳教授解读依沃西单抗的迭代升级之路. 良医汇. 2025.
-
-[^22]: 孙龙华教授专访. HARMONi-6 PI专访: 依沃西方案突破肺鳞癌抗VEGF治疗禁区. ByDrug/医药魔方. 2026.
-
-[^23]: AK112临床前研究成果. 康方生物官网. 2022. Fc-silencing L234A/L235A设计.
-
-[^24]: 雪球. AK112高效低毒的秘密公布了. Fc区域L234A/L235A突变消除ADCC/ADCP/CDC/ADCR/CRS.
-
-[^25]: Summit Therapeutics. Ivonescimab mechanism of action. Cooperative binding and tetravalent structure. 2025.
-
-[^26]: 富途证券. 康方生物(09926.HK)：决胜之年 双抗龙头引领下一代肿瘤免疫范式. 2026.
-
-[^27]: Cancer Network. Ivonescimab/Chemotherapy Improves OS in Squamous NSCLC. June 2026. https://www.cancernetwork.com/view/ivonescimab-chemotherapy-improves-os-squamous-nsclc-harmoni-6
-
-[^28]: 华中科技大学同济医学院附属同济医院图书馆. HARMONi-6 Lancet全文摘录. 2025. https://tjhlib.yuntsg.com/web/detail?type=news&tid=1&id=18924
-
-[^29]: 雪球. AK112在2026年可能面临的FDA专家委员会（ODAC）辩论焦点. 2026.
-
-[^30]: BOCOM International Research. Akeso Initiation of Coverage. 2022. https://files.bocomgroup.com/download/9926_HK-220628e.pdf
-
-[^31]: Sandler A, et al. Paclitaxel-carboplatin alone or with bevacizumab for non-small-cell lung cancer. N Engl J Med. 2006;355(24):2542-50. (ECOG 4599)
-
-[^32]: Avastin FDA Label. https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=70ab1de6-fb68-aee4-a6cb-f9a0f146687f
-
-
----
 
 ## 7. 竞品格局与竞争护城河
 
