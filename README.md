@@ -5,7 +5,7 @@
 > Typora插件： https://github.com/obgnail/typora_plugin
 2026-08-30  [To.md](To.md)
 
-2026-08-11  [structure.md](structure.md)
+2026-08-11  [Structure.md](Structure.md)
 
 
 ## kimi
