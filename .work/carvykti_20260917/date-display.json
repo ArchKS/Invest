@@ -1,0 +1,218 @@
+[
+  {
+    "name": "LEGEND-2",
+    "nct": "NCT03090659",
+    "start": "2015-10-02",
+    "end": "2023-12-31",
+    "type": "预计",
+    "status": "状态未知",
+    "url": "https://clinicaltrials.gov/study/NCT03090659"
+  },
+  {
+    "name": "CARTITUDE-1",
+    "nct": "NCT03548207",
+    "start": "2018-06-29",
+    "end": "2022-08-23",
+    "type": "实际",
+    "status": "已完成",
+    "url": "https://clinicaltrials.gov/study/NCT03548207"
+  },
+  {
+    "name": "CARTIFAN-1",
+    "nct": "NCT03758417",
+    "start": "2019-01-23",
+    "end": "2025-10-20",
+    "type": "实际",
+    "status": "已终止",
+    "url": "https://clinicaltrials.gov/study/NCT03758417"
+  },
+  {
+    "name": "CARTITUDE-2（含A/B/D）",
+    "nct": "NCT04133636",
+    "start": "2019-11-07",
+    "end": "2028-08-25",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04133636"
+  },
+  {
+    "name": "CARTITUDE-3",
+    "nct": "NCT04566419",
+    "start": "待核实",
+    "end": "待核实",
+    "type": "不适用",
+    "status": "注册号不匹配",
+    "url": "https://clinicaltrials.gov/study/NCT04566419"
+  },
+  {
+    "name": "CARTITUDE-4",
+    "nct": "NCT04181827",
+    "start": "2020-06-12",
+    "end": "2027-03-31",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04181827"
+  },
+  {
+    "name": "CARTITUDE-5",
+    "nct": "NCT04923893",
+    "start": "2021-08-19",
+    "end": "2036-09-22",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04923893"
+  },
+  {
+    "name": "CARTITUDE-6",
+    "nct": "NCT05257083",
+    "start": "2023-10-10",
+    "end": "2040-08",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT05257083"
+  },
+  {
+    "name": "MajesTEC-1（I/II期）",
+    "nct": "NCT03145181",
+    "start": "2017-05-16",
+    "end": "2027-08-24",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT03145181"
+  },
+  {
+    "name": "MajesTEC-1（II期扩展）",
+    "nct": "NCT04557098",
+    "start": "2020-09-17",
+    "end": "2027-05-28",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04557098"
+  },
+  {
+    "name": "MajesTEC-2",
+    "nct": "NCT04722146",
+    "start": "2021-03-12",
+    "end": "2027-10-13",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04722146"
+  },
+  {
+    "name": "MajesTEC-3",
+    "nct": "NCT05083169",
+    "start": "2021-10-14",
+    "end": "2028-09-15",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT05083169"
+  },
+  {
+    "name": "MajesTEC-4 / EMN30",
+    "nct": "NCT05243797",
+    "start": "2022-09-08",
+    "end": "2032-04",
+    "type": "预计",
+    "status": "招募中",
+    "url": "https://clinicaltrials.gov/study/NCT05243797"
+  },
+  {
+    "name": "MajesTEC-5 / HD10",
+    "nct": "NCT05695508",
+    "start": "2022-12-01",
+    "end": "2029-09-15",
+    "type": "预计",
+    "status": "招募中",
+    "url": "https://clinicaltrials.gov/study/NCT05695508"
+  },
+  {
+    "name": "MajesTEC-7",
+    "nct": "NCT05552222",
+    "start": "2022-10-25",
+    "end": "2033-10-28",
+    "type": "预计",
+    "status": "招募中",
+    "url": "https://clinicaltrials.gov/study/NCT05552222"
+  },
+  {
+    "name": "MajesTEC-9",
+    "nct": "NCT05572515",
+    "start": "2023-03-29",
+    "end": "2031-08-31",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT05572515"
+  },
+  {
+    "name": "MonumenTAL-1（早期登记）",
+    "nct": "NCT03399799",
+    "start": "2017-12-16",
+    "end": "2027-10-20",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT03399799"
+  },
+  {
+    "name": "MonumenTAL-1（II期登记）",
+    "nct": "NCT04634552",
+    "start": "2021-02-01",
+    "end": "2029-03-30",
+    "type": "预计",
+    "status": "招募中",
+    "url": "https://clinicaltrials.gov/study/NCT04634552"
+  },
+  {
+    "name": "TRIMM-2",
+    "nct": "NCT04108195",
+    "start": "2020-02-21",
+    "end": "2027-04-07",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04108195"
+  },
+  {
+    "name": "MonumenTAL-2",
+    "nct": "NCT05050097",
+    "start": "2021-09-22",
+    "end": "2027-04-07",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT05050097"
+  },
+  {
+    "name": "RedirecTT-1",
+    "nct": "NCT04586426",
+    "start": "2020-12-15",
+    "end": "2026-10-27",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT04586426"
+  },
+  {
+    "name": "MonumenTAL-3",
+    "nct": "NCT05455320",
+    "start": "2022-10-13",
+    "end": "2028-05-25",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT05455320"
+  },
+  {
+    "name": "MonumenTAL-5",
+    "nct": "NCT05461209",
+    "start": "2022-10-20",
+    "end": "2024-10-31",
+    "type": "预计",
+    "status": "已撤回",
+    "url": "https://clinicaltrials.gov/study/NCT05461209"
+  },
+  {
+    "name": "MonumenTAL-6",
+    "nct": "NCT06208150",
+    "start": "2024-01-22",
+    "end": "2028-12-31",
+    "type": "预计",
+    "status": "进行中，不再招募",
+    "url": "https://clinicaltrials.gov/study/NCT06208150"
+  }
+]

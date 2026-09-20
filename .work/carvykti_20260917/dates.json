@@ -1,0 +1,646 @@
+[
+  {
+    "name": "LEGEND-2",
+    "drug": "Carvykti",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT03090659",
+    "title": "LCAR-B38M Cells in Treating Relapsed/Refractory (R/R) Multiple Myeloma",
+    "officialTitle": "A Clinical Study of Legend Biotech BCMA-chimeric Antigen Receptor Technology in Treating Relapsed/Refractory (R/R) Multiple Myeloma Patients",
+    "acronym": "LEGEND-2",
+    "start": {
+      "date": "2015-10-02",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2023-12-31",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2023-12-31",
+      "type": "ESTIMATED"
+    },
+    "status": "UNKNOWN",
+    "updated": "2023-06-12",
+    "url": "https://clinicaltrials.gov/study/NCT03090659"
+  },
+  {
+    "name": "CARTITUDE-1",
+    "drug": "Carvykti",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT03548207",
+    "title": "A Study of JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against B-Cell Maturation Antigen (BCMA) in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 1b-2, Open-Label Study of JNJ-68284528, A Chimeric Antigen Receptor T-Cell (CAR-T) Therapy Directed Against BCMA in Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "CARTITUDE-1",
+    "start": {
+      "date": "2018-06-29",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2022-08-23",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2022-08-23",
+      "type": "ACTUAL"
+    },
+    "status": "COMPLETED",
+    "updated": "2025-07-30",
+    "url": "https://clinicaltrials.gov/study/NCT03548207"
+  },
+  {
+    "name": "MajesTEC-1",
+    "drug": "Tecvayli",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT03145181",
+    "title": "Dose Escalation Study of Teclistamab, a Humanized BCMA*CD3 Bispecific Antibody, in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "64007957MMY1001: A Phase 1/2, First-in-Human, Open-Label, Dose Escalation Study of Teclistamab, a Humanized BCMA x CD3 Bispecific Antibody, in Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "MajesTEC-1",
+    "start": {
+      "date": "2017-05-16",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-09-25",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-08-24",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT03145181"
+  },
+  {
+    "name": "MajesTEC-2（公开多队列）",
+    "drug": "Tecvayli",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04722146",
+    "title": "A Study of Teclistamab With Other Anticancer Therapies in Participants With Multiple Myeloma",
+    "officialTitle": "A Multi-arm Phase 1b Study of Teclistamab With Other Anticancer Therapies in Participants With Multiple Myeloma",
+    "acronym": "MajesTEC-2",
+    "start": {
+      "date": "2021-03-12",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-10-03",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-10-13",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT04722146"
+  },
+  {
+    "name": "MonumenTAL-1",
+    "drug": "Talvey",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT03399799",
+    "title": "Dose Escalation Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "64407564MMY1001: A Phase 1/2, First-in-Human, Open-Label, Dose Escalation Study of Talquetamab, a Humanized GPRC5D x CD3 Bispecific Antibody, in Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "MonumenTAL-1",
+    "start": {
+      "date": "2017-12-16",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2022-07-07",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-10-20",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-07-07",
+    "url": "https://clinicaltrials.gov/study/NCT03399799"
+  },
+  {
+    "name": "MonumenTAL-1",
+    "drug": "Talvey",
+    "locations": [
+      "早期临床",
+      "二期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04634552",
+    "title": "A Study of Talquetamab in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 1/2, First-in-Human, Open-Label, Dose Escalation Study of Talquetamab, a Humanized GPRC5D x CD3 Bispecific Antibody, in Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "MonumenTAL-1",
+    "start": {
+      "date": "2021-02-01",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2027-06-30",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2029-03-30",
+      "type": "ESTIMATED"
+    },
+    "status": "RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT04634552"
+  },
+  {
+    "name": "TRIMM-2",
+    "drug": "Talvey",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04108195",
+    "title": "A Study of Subcutaneous Daratumumab Regimens in Combination With Bispecific T Cell Redirection Antibodies for the Treatment of Participants With Multiple Myeloma",
+    "officialTitle": "A Phase 1b Study of Subcutaneous Daratumumab Regimens in Combination With Bispecific T Cell Redirection Antibodies for the Treatment of Subjects With Multiple Myeloma",
+    "acronym": null,
+    "start": {
+      "date": "2020-02-21",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2027-04-07",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2027-04-07",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT04108195"
+  },
+  {
+    "name": "MonumenTAL-2",
+    "drug": "Talvey",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05050097",
+    "title": "A Study of Talquetamab With Other Anticancer Therapies in Participants With Multiple Myeloma",
+    "officialTitle": "A Multi-arm Phase 1b Study of Talquetamab With Other Anticancer Therapies in Participants With Multiple Myeloma",
+    "acronym": "MonumenTAL-2",
+    "start": {
+      "date": "2021-09-22",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-03-31",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-04-07",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT05050097"
+  },
+  {
+    "name": "RedirecTT-1",
+    "drug": "Talvey",
+    "locations": [
+      "早期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04586426",
+    "title": "A Study of the Combination of Talquetamab and Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 1b/2 Dose Escalation and Expansion Study of the Combination of the Bispecific T Cell Redirection Antibodies Talquetamab and Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "RedirecTT-1",
+    "start": {
+      "date": "2020-12-15",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-03-18",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2026-10-27",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-01-16",
+    "url": "https://clinicaltrials.gov/study/NCT04586426"
+  },
+  {
+    "name": "CARTIFAN-1",
+    "drug": "Carvykti",
+    "locations": [
+      "二期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT03758417",
+    "title": "A Study of LCAR-B38M CAR-T Cells, a Chimeric Antigen Receptor T-cell (CAR-T) Therapy Directed Against B-cell Maturation Antigen (BCMA) in Chinese Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 2, Open-Label Study of LCAR-B38M CAR-T Cells, a Chimeric Antigen Receptor T-cell (CAR-T) Therapy Directed Against BCMA in Chinese Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "CARTIFAN-1",
+    "start": {
+      "date": "2019-01-23",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-07-10",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2025-10-20",
+      "type": "ACTUAL"
+    },
+    "status": "TERMINATED",
+    "updated": "2025-12-17",
+    "url": "https://clinicaltrials.gov/study/NCT03758417"
+  },
+  {
+    "name": "CARTITUDE-2（Cohorts A/B/D）",
+    "drug": "Carvykti",
+    "locations": [
+      "二期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04133636",
+    "title": "A Study of JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against B-cell Maturation Antigen (BCMA) in Participants With Multiple Myeloma",
+    "officialTitle": "68284528MMY2003: A Phase 2, Multicohort Open-Label Study of JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA in Subjects With Multiple Myeloma",
+    "acronym": "CARTITUDE-2",
+    "start": {
+      "date": "2019-11-07",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2027-02-26",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2028-08-25",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-31",
+    "url": "https://clinicaltrials.gov/study/NCT04133636"
+  },
+  {
+    "name": "MajesTEC-1（II期注册/扩展）",
+    "drug": "Tecvayli",
+    "locations": [
+      "二期临床"
+    ],
+    "nct": "NCT04557098",
+    "title": "A Study of Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "TECLIMMY1001-P3: A Phase 1/2, First-in-Human, Open-Label, Dose Escalation Study of Teclistamab, a Humanized BCMA x CD3 Bispecific Antibody, in Subjects With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "MajesTEC-1",
+    "start": {
+      "date": "2020-09-17",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2021-11-09",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-05-28",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-07-31",
+    "url": "https://clinicaltrials.gov/study/NCT04557098"
+  },
+  {
+    "name": "MajesTEC-5 / GMMG-HD10/DSMM-XX",
+    "drug": "Tecvayli",
+    "locations": [
+      "二期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05695508",
+    "title": "GMMG-HD10 / DSMM-XX / 64007957MMY2003, MajesTEC-5",
+    "officialTitle": "A Phase 2 Study to Evaluate Safety and Efficacy of Teclistamab-, Talquetamab-, and JNJ-79635322-based Combination Regimens in Participants With Newly Diagnosed Transplant Eligible Multiple Myeloma",
+    "acronym": "HD10/DSMMXX",
+    "start": {
+      "date": "2022-12-01",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2028-09-15",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2029-09-15",
+      "type": "ESTIMATED"
+    },
+    "status": "RECRUITING",
+    "updated": "2025-12-24",
+    "url": "https://clinicaltrials.gov/study/NCT05695508"
+  },
+  {
+    "name": "CARTITUDE-4",
+    "drug": "Carvykti",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT04181827",
+    "title": "A Study Comparing JNJ-68284528, a CAR-T Therapy Directed Against B-cell Maturation Antigen (BCMA), Versus Pomalidomide, Bortezomib and Dexamethasone (PVd) or Daratumumab, Pomalidomide and Dexamethasone (DPd) in Participants With Relapsed and Lenalidomide-Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 3 Randomized Study Comparing JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA, Versus Pomalidomide, Bortezomib and Dexamethasone (PVd) or Daratumumab, Pomalidomide and Dexamethasone (DPd) in Subjects With Relapsed and Lenalidomide-Refractory Multiple Myeloma",
+    "acronym": "CARTITUDE-4",
+    "start": {
+      "date": "2020-06-12",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2024-05-01",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2027-03-31",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-31",
+    "url": "https://clinicaltrials.gov/study/NCT04181827"
+  },
+  {
+    "name": "CARTITUDE-3",
+    "drug": "Carvykti",
+    "locations": [
+      "三期临床"
+    ],
+    "nct": "NCT04566419",
+    "title": "poStoperative Anesthesia Care: Facial Mask vs Hfnc and Thoracic Ultrasound for Reduction of Atelectasis Incidence",
+    "officialTitle": "Effects of the Application of a High-flow System Nasal Cannulas (Opti-Flow) Post General Anesthesia Versus Conventional Oxygen Therapy for Post-operative Hypoxemia After Gynecological Oncology Surgery",
+    "acronym": "SAMURAI",
+    "start": {
+      "date": "2020-10-01",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2022-06-01",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2022-06-01",
+      "type": "ACTUAL"
+    },
+    "status": "COMPLETED",
+    "updated": "2022-09-16",
+    "url": "https://clinicaltrials.gov/study/NCT04566419"
+  },
+  {
+    "name": "CARTITUDE-5",
+    "drug": "Carvykti",
+    "locations": [
+      "三期临床"
+    ],
+    "nct": "NCT04923893",
+    "title": "A Study of Bortezomib, Lenalidomide and Dexamethasone (VRd) Followed by Cilta-cel, a CAR-T Therapy Directed Against BCMA Versus VRd Followed by Lenalidomide and Dexamethasone (Rd) Therapy in Participants With Newly Diagnosed Multiple Myeloma for Whom ASCT is Not Planned as Initial Therapy",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Bortezomib, Lenalidomide and Dexamethasone (VRd) Followed by Ciltacabtagene Autoleucel, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA Versus Bortezomib, Lenalidomide, and Dexamethasone (VRd) Followed by Lenalidomide and Dexamethasone (Rd) Therapy in Participants With Newly Diagnosed Multiple Myeloma for Whom Hematopoietic Stem Cell Transplant is Not Planned as Initial Therapy",
+    "acronym": "CARTITUDE-5",
+    "start": {
+      "date": "2021-08-19",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2029-02-14",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2036-09-22",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT04923893"
+  },
+  {
+    "name": "CARTITUDE-6",
+    "drug": "Carvykti",
+    "locations": [
+      "三期临床"
+    ],
+    "nct": "NCT05257083",
+    "title": "A Study of Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Ciltacabtagene Autoleucel Versus Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Autologous Stem Cell Transplant (ASCT) in Participants With Newly Diagnosed Multiple Myeloma",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Ciltacabtagene Autoleucel Versus Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Autologous Stem Cell Transplant (ASCT) in Participants With Newly Diagnosed Multiple Myeloma Who Are Transplant Eligible",
+    "acronym": "CARTITUDE-6",
+    "start": {
+      "date": "2023-10-10",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2033-06",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2040-08",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-03-17",
+    "url": "https://clinicaltrials.gov/study/NCT05257083"
+  },
+  {
+    "name": "MajesTEC-3",
+    "drug": "Tecvayli",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05083169",
+    "title": "A Study of Teclistamab in Combination With Daratumumab Subcutaneously (SC) (Tec-Dara) Versus Daratumumab SC, Pomalidomide, and Dexamethasone (DPd) or Daratumumab SC, Bortezomib, and Dexamethasone (DVd) in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Teclistamab in Combination With Daratumumab SC (Tec-Dara) Versus Daratumumab SC, Pomalidomide, and Dexamethasone (DPd) or Daratumumab SC, Bortezomib, and Dexamethasone (DVd) in Participants With Relapsed or Refractory Multiple Myeloma",
+    "acronym": "MajesTEC-3",
+    "start": {
+      "date": "2021-10-14",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-09-15",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2028-09-15",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT05083169"
+  },
+  {
+    "name": "MajesTEC-4 / EMN30",
+    "drug": "Tecvayli",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05243797",
+    "title": "Phase 3 Study of Teclistamab in Combination With Lenalidomide and Teclistamab Alone Versus Lenalidomide Alone in Participants With Newly Diagnosed Multiple Myeloma as Maintenance Therapy Following Autologous Stem Cell Transplantation",
+    "officialTitle": "Phase 3 Study of Teclistamab in Combination With Lenalidomide and Teclistamab Alone Versus Lenalidomide Alone in Participants With Newly Diagnosed Multiple Myeloma as Maintenance Therapy Following Autologous Stem Cell Transplantation - MajesTEC-4",
+    "acronym": "MajesTEC-4",
+    "start": {
+      "date": "2022-09-08",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2028-04",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2032-04",
+      "type": "ESTIMATED"
+    },
+    "status": "RECRUITING",
+    "updated": "2026-06-04",
+    "url": "https://clinicaltrials.gov/study/NCT05243797"
+  },
+  {
+    "name": "MajesTEC-7",
+    "drug": "Tecvayli + Talvey",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05552222",
+    "title": "A Study of Teclistamab in Combination With Daratumumab and Lenalidomide (Tec-DR) and Talquetamab in Combination With Daratumumab and Lenalidomide (Tal-DR) in Participants With Newly Diagnosed Multiple Myeloma",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Teclistamab in Combination With Daratumumab SC and Lenalidomide (Tec-DR) and Talquetamab in Combination With Daratumumab SC and Lenalidomide (Tal-DR) Versus Daratumumab SC, Lenalidomide, and Dexamethasone (DRd) in Participants With Newly Diagnosed Multiple Myeloma Who Are Either Ineligible or Not Intended for Autologous Stem Cell Transplant as Initial Therapy",
+    "acronym": "MajesTEC-7",
+    "start": {
+      "date": "2022-10-25",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2031-04-30",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2033-10-28",
+      "type": "ESTIMATED"
+    },
+    "status": "RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT05552222"
+  },
+  {
+    "name": "MajesTEC-9",
+    "drug": "Tecvayli",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05572515",
+    "title": "A Study Comparing Teclistamab Monotherapy Versus Pomalidomide, Bortezomib, Dexamethasone (PVd) or Carfilzomib, Dexamethasone (Kd) in Participants With Relapsed or Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Teclistamab Monotherapy Versus Pomalidomide, Bortezomib, Dexamethasone (PVd) or Carfilzomib, Dexamethasone (Kd) in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received 1 to 3 Prior Lines of Therapy, Including an Anti-CD38 Monoclonal Antibody and Lenalidomide",
+    "acronym": "MajesTEC-9",
+    "start": {
+      "date": "2023-03-29",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2025-10-13",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2031-08-31",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-04-13",
+    "url": "https://clinicaltrials.gov/study/NCT05572515"
+  },
+  {
+    "name": "MonumenTAL-3",
+    "drug": "Talvey",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT05455320",
+    "title": "A Study Comparing Talquetamab in Combination With Daratumumab or in Combination With Daratumumab and Pomalidomide Versus Daratumumab in Combination With Pomalidomide and Dexamethasone in Participants With Multiple Myeloma That Returns After Treatment or is Resistant to Treatment",
+    "officialTitle": "A Phase 3 Randomized Study Comparing Talquetamab SC in Combination With Daratumumab SC and Pomalidomide (Tal-DP) or Talquetamab SC in Combination With Daratumumab SC (Tal-D) Versus Daratumumab SC, Pomalidomide and Dexamethasone (DPd), in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received at Least 1 Prior Line of Therapy",
+    "acronym": "MonumenTAL-3",
+    "start": {
+      "date": "2022-10-13",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2027-07-30",
+      "type": "ESTIMATED"
+    },
+    "end": {
+      "date": "2028-05-25",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT05455320"
+  },
+  {
+    "name": "MonumenTAL-5",
+    "drug": "Talvey",
+    "locations": [
+      "三期临床"
+    ],
+    "nct": "NCT05461209",
+    "title": "A Study of Comparing Talquetamab to Belantamab Mafodotin in Participants With Relapsed/Refractory Multiple Myeloma",
+    "officialTitle": "A Phase 3 Study Comparing Talquetamab to Belantamab Mafodotin in Participants With Relapsed/Refractory Multiple Myeloma Who Have Received at Least 4 Prior Therapies Including an Immunomodulatory Drug, a Proteasome Inhibitor, and an Anti-CD38 Antibody",
+    "acronym": "MonumenTAL-5",
+    "start": {
+      "date": "2022-10-20",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2022-11-15",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2024-10-31",
+      "type": "ESTIMATED"
+    },
+    "status": "WITHDRAWN",
+    "updated": "2025-08-15",
+    "url": "https://clinicaltrials.gov/study/NCT05461209"
+  },
+  {
+    "name": "MonumenTAL-6",
+    "drug": "Tecvayli + Talvey",
+    "locations": [
+      "三期临床",
+      "已读出数据"
+    ],
+    "nct": "NCT06208150",
+    "title": "A Study Comparing Talquetamab Plus Pomalidomide, Talquetamab Plus Teclistamab, and Elotuzumab, Pomalidomide, and Dexamethasone or Pomalidomide, Bortezomib, and Dexamethasone in Participants With Relapsed or Refractory Myeloma Who Have Received an Anti-CD38 Antibody and Lenalidomide",
+    "officialTitle": "64407564MMY3009: A Phase 3 Randomized Study Comparing Talquetamab in Combination With Pomalidomide (Tal-P), Talquetamab in Combination With Teclistamab (Tal-Tec), and Investigator's Choice of Either Elotuzumab, Pomalidomide, and Dexamethasone (EPd) or Pom",
+    "acronym": "MonumenTAL-6",
+    "start": {
+      "date": "2024-01-22",
+      "type": "ACTUAL"
+    },
+    "primary": {
+      "date": "2026-04-01",
+      "type": "ACTUAL"
+    },
+    "end": {
+      "date": "2028-12-31",
+      "type": "ESTIMATED"
+    },
+    "status": "ACTIVE_NOT_RECRUITING",
+    "updated": "2026-08-28",
+    "url": "https://clinicaltrials.gov/study/NCT06208150"
+  }
+]
