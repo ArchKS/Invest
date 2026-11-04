@@ -54,3 +54,6 @@ LastUpdate: 2026-08-07 16:02:34
       2. 完成入组时间 27个月
       3. 完成入组后随访时间 28个月
       4. AZA 单药mOS 21.7个月（VERONA三期对照组）
+7. 竞品Sonrotoclax
+   1. 半衰期相似，效力不同，如果Sonrotoclax降低剂量到和Lisaftoclax齐平，是否可以实现和Lisaftoclax一样的药理机制？
+8. off-label数据和感受

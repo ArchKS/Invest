@@ -1,117 +1,107 @@
-# APG-2575 off-label 文献索引
+# 西安交通大学第二附属医院血液科（n=17）
 
-检索日期：2026-10-23。以下用于匹配用户提供的评论文章中提到的三份文献。
+重点是“VEN失败后，2575＋AZA还有没有用”。
 
-## 1. 西安交通大学第二附属医院正式论文
+- **论文**：Meng S, et al. *EJHaem* 2026; 7(3): e70305（通讯作者：古流芳；DOI: 10.1002/jha2.70305，[PMC13156405](https://pmc.ncbi.nlm.nih.gov/articles/PMC13156405/)） [Efficacy and Safety of Azacitidine Combined With Lisaftoclax in the Treatment of Relapsed/Refractory Acute Myeloid Leukemia and Myelodysplastic Syndrome With Increased Blasts](https://doi.org/10.1002/jha2.70305)
+- **性质**：单中心回顾性、无企业资助、无需试验注册——**典型的获批后真实世界 off-label 用药研究**（AML 和 MDS-IB 均非获批适应症，获批适应症仅为经治 CLL/SLL）
+- **方案**：AZA 75 mg/m² D1-7 + Lisaftoclax 200→600 mg D1-10/14，28 天周期
+- **数据**（17 例，2025年8–12月，中位年龄 68.5 岁）：
 
-**Efficacy and Safety of Azacitidine Combined With Lisaftoclax in the Treatment of Relapsed/Refractory Acute Myeloid Leukemia and Myelodysplastic Syndrome With Increased Blasts**
+> MDS-IB = MDS with Increased Blasts，"MDS 伴原始细胞增多"。MDS-IB 基本对应 IPSS-R 的高危/极高危组
+>
+> | 亚型    | 骨髓原始细胞 | 外周血原始细胞 |
+> | :------ | :----------- | :------------- |
+> | MDS-IB1 | 5–9%         | 2–4%           |
+> | MDS-IB2 | 10–19%       | 5–19%          |
 
-- 作者：Shan Meng, Wanhong Zhao, Hui Zhang, Bo Lei, Wanggang Zhang, Yilin Zhang, Jin Wang, Yinxia Chen, Xingmei Cao, Liufang Gu。
-- 机构：西安交通大学第二附属医院血液科。
-- 期刊：eJHaem；在线发表日期：2026-05-08。
-- DOI：10.1002/jha2.70305；PMID：42111228。
-- 研究设计：回顾性、单中心、单臂；2025年8月1日至12月31日，共17例：9例R/R AML、8例MDS-IB，其中4例AML既往对venetoclax难治。
-- PubMed：https://pubmed.ncbi.nlm.nih.gov/42111228/
-- DOI及出版商：https://doi.org/10.1002/jha2.70305
-- 可读全文：https://www.ovid.com/journals/ejhae/fulltext/10.1002/jha2.70305~efficacy-and-safety-of-azacitidine-combined-with-lisaftoclax
-- 本地英文全文：[Meng-2026-eJHaem-fulltext.md](Meng-2026-eJHaem-fulltext.md)。全文由网页提取，附图不在该文本文件中。
+| 指标                | R/R AML (n=9)    | MDS-IB (n=8)     |
+| :------------------ | :--------------- | :--------------- |
+| 1 周期 CR 率        | **55.6%**（5/9） | **62.5%**（5/8） |
+| CR 者 MRD 阴性率    | 60.0%            | 40.0%            |
+| 首次 CR 中位时间    | 1 个月           | 1 个月           |
+| Lisaftoclax ramp-up | 200 mg × D1-3    | 200 mg × D1-3    |
+| 维持剂量            | 600 mg/d, D4-14  | 400 mg/d, D4-14  |
 
-## 2. 山东牵头的2026 EHA摘要
+> IB1（n=3，37.5%）+ IB2（n=5，62.5%）
 
-**REAL-WORLD EFFICACY AND SAFETY OF LISAFTOCLAX IN MYELOID NEOPLASMS: A MULTICENTER STUDY**
+- **维奈克拉耐药亚组 4 例：CR 率 75%（3/4）**——直接支持 lisaftoclax 对 venetoclax 耐药后仍有效的假设
+- 安全性：3-4 级血小板/白细胞减少 58.8%，发热性粒缺 35.3%，2 例生化型 TLS，**无治疗相关死亡、无人需减量**
+- 文中有两处数据自相矛盾（耐药组 MRD 阴性率 66.7% vs 33.3%；中位 OS 表述不一），引用时注意
+- **药物来源未披露**（自费/赠药不明），这是该文的信息缺口
 
-- 编号：EHA-5454；会议短编号：PF562。
-- 类型：Poster Presentation，2026-06-11。
-- 首位作者及展示人：Chen Cao；山东大学齐鲁医院。
-- 原始作者机构涉及：山东大学齐鲁医院、南阳市中心医院、山东中医药大学附属医院、临沂市人民医院。
-- 设计：四中心回顾性研究，共30例：25例AML、3例MDS、2例CMML。
-- AML一线12例，后线13例；ELN低危15例、中危9例、高危1例。
-- 摘要未列明全部患者的具体联合用药，不能直接假设30例均为2575+AZA双联。
-- EHA原始页：https://library.ehaweb.org/eha/2026/eha-2026/4207550/chen.cao.real-world.efficacy.and.safety.of.lisaftoclax.in.myeloid.neoplasms.a.html?f=
-- 本地英文原摘要及作者：[EHA-5454-PF562.md](EHA-5454-PF562.md)。
-- 本地原始附图：[EHA-5454-PF562-figure-1.png](EHA-5454-PF562-figure-1.png)。
+安全性方面，作者报告没有因不良反应减量，也没有治疗相关死亡；但仍出现较多严重血细胞减少、感染，以及2例生化性肿瘤溶解综合征。
 
-## 3. 深圳多中心的2026 EHA MDS摘要
-
-**EFFICACY AND SAFETY OF LISAFTOCLAX COMBINED WITH AZACITIDINE IN TREATMENT OF PATIENTS WITH MYELODYSPLASTIC SYNDROME: A MULTICENTER RETROSPECTIVE STUDY**
-
-- 编号：EHA-3812；会议短编号：PB3081。
-- 类型：Publication Only；EHA页面日期：2026-05-12。不是Poster Presentation。
-- 作者包括Mengying Gao、Lina Hu、Huijun Li、Jing Luo、Xiaohua He、Peng Ke、Guangyang Weng、Suyun Wang、Qiuxia Wan、Heng Wang、Jihao Zhou。页面展示人为Jihao Zhou（Zhou J）。
-- 机构：深圳市人民医院、深圳市第二人民医院、深圳市龙华区中心医院。
-- 设计：多中心回顾性，共10例MDS，一线5例、二线5例。
-- Table 1：初治组TP53突变3/5，二线组0/5；二线组骨髓原始细胞≤5%为4/5。这里是≤5%，不是严格<5%。
-- 4例此前接受过VEN+AZA，其中1例换用2575+AZA后达到CR。
-- Table 1的ORR由CR、PR和HI组成，不能直接等同其他研究的ORR口径。
-- 附图数据截止日期：2026-02-26。
-- EHA原始页：https://library.ehaweb.org/eha/2026/eha-2026/4209631/jihao.zhou.efficacy.and.safety.of.lisaftoclax.combined.with.azacitidine.in.html
-- 本地英文原摘要及作者：[EHA-3812-PB3081.md](EHA-3812-PB3081.md)。
-- 本地原始基线表与泳道图：[EHA-3812-PB3081-figure-1.png](EHA-3812-PB3081-figure-1.png)。
-
-## 来源匹配边界
-
-这些文件确认了三份文献及相应人群描述。作者列出的医院名称不等于医院支持治疗能力的测量证据。三份来源的存在、单臂缓解和安全性观察，也不直接证明GLORA-4的OS终点将成功。公众号单例尚不能凭评论文章唯一匹配，需原公众号名、标题或链接。
+**它提供了换药后可能有效的线索。**不过随访中位仅2.1个月，且原文有 CR/cCR 称法及部分 MRD 数值不一致，不能据此判断长期生存或比较两药优劣。
 
 
 
+# 齐鲁医院 EHA-5454（n=30）
+
+| 中心                                    | 地位                       |
+| :-------------------------------------- | :------------------------- |
+| **山东大学齐鲁医院**（济南，9/12 作者） | 主导中心，全国血液前十     |
+| 南阳市中心医院                          | 地市级三甲                 |
+| 山东中医药大学附属医院（济南）          | 省级中医院，血液非强势学科 |
+| 临沂市人民医院                          | 地市级三甲                 |
+
+30例髓系肿瘤真实世界研究
+
+[Real-World Efficacy and Safety of Lisaftoclax in Myeloid Neoplasms: A Multicenter Study](https://library.ehaweb.org/eha/2026/eha-2026/4207550/chen.cao.real-world.efficacy.and.safety.of.lisaftoclax.in.myeloid.neoplasms.a.html?f=)
+
+四中心共30例，其中25例 AML。AML 的 **CR＋CRi 为18/25，即72%**，缓解者中约61%达到 MRD 阴性；初治和后线患者都观察到应答。
+
+但 AML 人群以低危、中危为主，**高危仅1例**。严重不良事件主要是血小板减少、贫血和中性粒细胞减少，报告了1例死亡；摘要没有列明全部联合用药。
+
+**它支持2575在真实世界中具有临床活性，尤其在较有利的 AML 人群中。**它没有测量医院的支持治疗能力，也不能证明在基层医院更安全，或外推到高危 MDS 的 OS。
+
+| 维度   | 内容                                                         |
+| :----- | :----------------------------------------------------------- |
+| 人群   | AML 25 例（83%）、MDS 3 例、CMML 2 例；中位 63 岁            |
+| 疗效   | AML **CR/CRi 72%**；ELN 低危亚组 **87%**；CR/CRi 者 MRD 阴性率 **61%**；**NPM1 突变 100%、IDH2 突变 83%**；MDS 3 例中 2 例 CRi |
+| 安全性 | ≥3 级：血小板减少 27%、贫血 23%、中性粒减少 20%              |
+
+入组人群
+
+| 基线            | 数据                                                         |
+| :-------------- | :----------------------------------------------------------- |
+| 年龄            | 中位 63（26-77），60% 男性                                   |
+| ELN 2024 危险度 | 低危 15 例（60%）、中危 9 例、高危仅 1 例                    |
+| 治疗线数        | 一线 12 例（48%）、后线 13 例（52%）                         |
+| 突变谱          | DNMT3A 33%、RUNX1 30%、ASXL1 27%、NPM1 20%、FLT3 20%；HMR 43% |
+
+60% ELN 低危、只有 1 例高危、近半是一线。对比西交二附院（全 R/R、29.4% 复杂核型），两个队列根本不在一个难度级别——72% CR/CRi 的含金量没有表面那么高，87% 的低危亚组数据才是主体。高危唯一 1 例无应答，所以这项研究完全无法回答"高危 AML 行不行"。
+疗效：
+
+- CR 12 例 + CRi 6 例 = 72%；一线 75% vs 后线 69%（线数影响不大）
+- **突变-缓解梯度非常有信息量**：NPM1 100% > IDH2 83% > DNMT3A 70% > FLT3 67% > NRAS 60% > **RUNX1 56% > ASXL1 50%**——RUNX1/ASXL1/RAS 通路低响应，**与 venetoclax 的已知耐药谱完全同构**（RAS 通路突变是 venetoclax 经典耐药机制）。这是 lisaftoclax 真实世界中第一次画出这条梯度
+
+安全性：
+
+- 任意级别 TEAE 87%；全级别血小板减少 57%、贫血 53%、中性粒减少 47%
+- ≥3 级 AE 合计 **47%**（血小板减少 27%、贫血 23%、中性粒减少 20%）
+- 非血液学：**发热性肺炎 27%**、肝功能异常 23%、肾功能损害 17%
+- **1 例死亡**（首例真实世界死亡报告，死因摘要未说明）；2 例后续桥接移植
 
 
-**已找到文中对应的三份文献，全文、摘要及附图已整理到 [文献索引](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/README.md)。查找完成（3/3）。**
 
-1. **西安交大二附院：2575＋AZA治疗 R/R AML 和 MDS-IB**
+# 深圳市人民医院 EHA-3812（n=10）
 
-   [Efficacy and Safety of Azacitidine Combined With Lisaftoclax in the Treatment of Relapsed/Refractory Acute Myeloid Leukemia and Myelodysplastic Syndrome With Increased Blasts](https://doi.org/10.1002/jha2.70305)
+| 维度            | 内容                                                         |
+| :-------------- | :----------------------------------------------------------- |
+| 人群            | 高危 MDS：初诊 5 + R/R 5；**TP53 突变 3 例（30%）**；中位 67 岁 |
+| 疗效            | **ORR 70%**（一线 60%、二线 80%），CR 3 例，**中位起效 1.8 个月** |
+| Venetoclax 经治 | 4 例 VA 方案失败者换 LA 后 **1 例 CR**                       |
+| 安全性          | "积极支持治疗下总体可控"（无分级细节）                       |
 
-   **Shan Meng 等，eJHaem，2026年5月8日。**DOI：`10.1002/jha2.70305`。单中心回顾性研究，共17例：9例 R/R AML、8例 MDS-IB；其中确有 **4例 VEN 难治 AML**，与文章描述对应。
+1. 
 
-   [PubMed](https://pubmed.ncbi.nlm.nih.gov/42111228/) · [本地英文全文](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/Meng-2026-eJHaem-fulltext.md)
+1. 
 
-2. **山东牵头：30例髓系肿瘤真实世界研究**
+1. **[深圳多中心的 EHA-3812](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-3812-PB3081.md)：重点是“2575＋AZA在初治和二线 MDS 中有没有反应”。**
 
-   [Real-World Efficacy and Safety of Lisaftoclax in Myeloid Neoplasms: A Multicenter Study](https://library.ehaweb.org/eha/2026/eha-2026/4207550/chen.cao.real-world.efficacy.and.safety.of.lisaftoclax.in.myeloid.neoplasms.a.html?f=)
-
-   **Chen Cao 等，2026 EHA，EHA-5454／PF562，壁报摘要。**共30例：25例 AML、3例 MDS、2例 CMML。四家中心为山东大学齐鲁医院、南阳市中心医院、山东中医药大学附属医院、临沂市人民医院。
-
-   **摘要未列明全部患者的联合用药，不能默认所有人都接受2575＋AZA。**
-   [本地原始摘要](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-5454-PF562.md)
-
-3. **深圳多中心：初治及复发／难治 MDS**
+   初治及复发／难治 MDS**
 
    [Efficacy and Safety of Lisaftoclax Combined With Azacitidine in Treatment of Patients With Myelodysplastic Syndrome: A Multicenter Retrospective Study](https://library.ehaweb.org/eha/2026/eha-2026/4209631/jihao.zhou.efficacy.and.safety.of.lisaftoclax.combined.with.azacitidine.in.html)
-
-   **作者包括 Mengying Gao、Jihao Zhou 等，2026 EHA，EHA-3812／PB3081。**涉及深圳市人民医院、深圳市第二人民医院、深圳市龙华区中心医院，共10例：初治5例、二线5例。
-
-   原始基线表确认：**初治组 TP53 突变3/5；二线组骨髓原始细胞 ≤5% 为4/5**。注意原文是“≤5%”，并且这份文献标注 **Publication Only（仅发表摘要），不是壁报报告**。
-
-   [本地原始摘要](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-3812-PB3081.md) · [原始基线表与泳道图](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-3812-PB3081-figure-1.png)
-
-下一步：先打开第3份的原始基线表，它直接对应你引用的 **TP53 和低原始细胞比例**两项描述。
-
-
-
-概括一下这些文章讲了什么
-
-
-
-**三份文献共同讲的是：2575在髓系肿瘤中有早期疗效信号，部分 VEN 治疗失败患者换药后仍能缓解；但还没有证明它能延长生存，或比 VEN 更安全。**概括完成（2/2）。
-
-1. **[西安交大二附院论文](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/Meng-2026-eJHaem-fulltext.md)：重点是“VEN失败后，2575＋AZA还有没有用”。**
-
-   回顾了17例患者：9例复发／难治 AML、8例 MDS-IB。作者报告，首周期 AML 的 CR 为 **5/9**，MDS 的 CR 为 **5/8**；其中4例 VEN 难治 AML，有 **3例达到作者所称的 CR**。多数缓解在约1个月内出现。
-
-   安全性方面，作者报告没有因不良反应减量，也没有治疗相关死亡；但仍出现较多严重血细胞减少、感染，以及2例生化性肿瘤溶解综合征。
-
-   **它提供了换药后可能有效的线索。**不过随访中位仅2.1个月，且原文有 CR/cCR 称法及部分 MRD 数值不一致，不能据此判断长期生存或比较两药优劣。
-
-2. **[山东牵头的 EHA-5454](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-5454-PF562.md)：重点是“2575在多家医院实际使用时表现怎样”。**
-
-   四中心共30例，其中25例 AML。AML 的 **CR＋CRi 为18/25，即72%**，缓解者中约61%达到 MRD 阴性；初治和后线患者都观察到应答。
-
-   但 AML 人群以低危、中危为主，**高危仅1例**。严重不良事件主要是血小板减少、贫血和中性粒细胞减少，报告了1例死亡；摘要没有列明全部联合用药。
-
-   **它支持2575在真实世界中具有临床活性，尤其在较有利的 AML 人群中。**它没有测量医院的支持治疗能力，也不能证明在基层医院更安全，或外推到高危 MDS 的 OS。
-
-3. **[深圳多中心的 EHA-3812](/Users/zendu/Documents/Invest/research/lisaftoclax-off-label-2026-10-23/EHA-3812-PB3081.md)：重点是“2575＋AZA在初治和二线 MDS 中有没有反应”。**
 
    共10例，一线、二线各5例。总体 **ORR为70%，但 CR只有30%**：另外的反应包括部分缓解和血液学改善。4例此前用过 VEN＋AZA，其中1例换药后达到 CR。
 
@@ -119,19 +109,11 @@
 
    **它提供了 MDS 换药和特殊人群的探索线索。**“纳入了这些亚组”还不等于“证明这些亚组不会拖累三期结果”。
 
-对 **GLORA-4**，这些资料最能支持的是：**2575值得继续研究，部分难治患者仍可能应答。**还缺少的关键环节是：缓解能否持久、是否减少感染和早期死亡，以及最终能否改善 OS。发表论文或会议摘要本身，也不能代替这些结果。
-
-下一步：先看第3份的 **CR、PR、HI拆分**，理解为什么“ORR 70%”不能直接转换成生存获益。
 
 
+## 2575超适应症用药信息
 
 
-
-# 2575在国内存在超适应症用药吗？存在的话帮我查找这类用药的最新数据和文章
-
-已确认：**APG-2575（利生妥）国内存在超适应症实际用药报道**。前文查到的 AML、MDS、CMML 和骨髓瘤数据均对应这款药，3 步检索已完成。
-
-下一步：优先阅读 [17 例 AML/MDS 上市后用药研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC13156405/)，2 分钟查看 Table 2 和安全性段落。
 
 **继续核查后，新增一项 10 例 MDS 研究，并找到两处需要限制引用的数据。**3 步已完成，完整资料已保存到[研究笔记](/Users/zendu/Documents/Invest/医药/临床/APG2575_国内超适应症用药证据_2026-10-23.md)。
 
@@ -164,8 +146,6 @@
    [2026 年 CSCO 更新报道](https://www.prnasia.com/story/530776-1.shtml)及中期公告提及利沙托克拉在老年／不适合强化化疗 AML 中的推荐。尚未取得完整指南表格，因此不指定其具体推荐等级；指南推荐也不等于适应症获批。
 
    截至 2026-06-30，准入医院与 DTP 药房合计 **415 家，其中医院 60 家**。这是渠道覆盖数据，不能换算成超适应症患者数。**目前仍没有可核实的全国处方占比或收入占比。**
-
-下一步：打开[研究笔记](/Users/zendu/Documents/Invest/医药/临床/APG2575_国内超适应症用药证据_2026-10-23.md)，用 2 分钟查看第 3 节，新增 MDS 数据及待核实项已集中列出。
 
 **新增找到两篇国内上市后用药病例，以及一篇明确推荐等级的正式指南更新文章。**3 步已完成，已补入[研究笔记](/Users/zendu/Documents/Invest/医药/临床/APG2575_国内超适应症用药证据_2026-10-23.md)。
 
@@ -202,10 +182,6 @@
    国内实际用药报道已覆盖 **AML、MDS、CMML、骨髓瘤、MPAL，以及婴幼儿髓系肉瘤**。其中后两种新病例扩大了已报道使用范围，尚不足以证明规模化应用。
 
    **10 例 MDS 研究的机构／国家、30 例 EHA 研究的完整方案，以及全国超适应症处方占比，仍未核实。**
-
-下一步：打开[9 月 17 日病例原文](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1936497/full)，搜索 **“lisaftoclax”**；2 分钟可看到实际使用记录及作者对疗效归因的限制。
-
-**是，但要限定含义：AML 和高危 MDS 中，完整 CR 在部分多变量研究里是 OS 的独立预后因素；这不等于“药物提高 CR 率，就一定延长 OS”。**3 步核查已完成。
 
 **1. AML：完整 CR 有独立预后价值，MRD 还会进一步区分风险**
 
@@ -258,7 +234,7 @@ MDS 的 [VERONA 试验](https://doi.org/10.1182/blood-2025-235)也说明这一�
 
 
 
-# 我模拟一场临床实验：
+## TP53入组数量对临床数据的影响
 
 有两个假设，A药物对一般适应症mOS是 26个月，SOC是 20个月；但如果遇到X突变，A和SOC的mOS都会降到5个月，我想知道，如果临床X突变比例分别为10%、20%、30%的情况下，对应的mOS的HR是多少
 
@@ -295,37 +271,9 @@ MDS 的 [VERONA 试验](https://doi.org/10.1182/blood-2025-235)也说明这一�
 
 
 
-mOS和mDOR是什么
-
-**mOS 是“患者能活多久”，mDOR 是“获得缓解后，缓解能维持多久”。**两项定义说明完成。
-
-| 指标             | mOS                      | mDOR                             |
-| ---------------- | ------------------------ | -------------------------------- |
-| 全称             | 中位总生存期             | 中位缓解持续时间                 |
-| 统计人群         | 通常为全部入组／随机患者 | **仅获得规定缓解的患者**         |
-| 从何时开始       | 通常从随机分组或治疗开始 | 从首次达到规定缓解开始           |
-| 什么事件结束计时 | 任何原因死亡             | 疾病进展／复发或死亡，按研究定义 |
-| “中位”含义       | 生存曲线降到 50% 的时间  | 缓解持续曲线降到 50% 的时间      |
-
-1. **一个患者的例子**
-
-   第 0 月开始治疗，第 2 月达到 CR，第 14 月复发，第 20 月死亡。
-
-   这个患者的 **OS＝20 个月，DOR＝12 个月**。这是个人时长；汇总一组患者后，才能估计 mOS、mDOR。
-
-2. **为什么两者要一起看**
-
-   某药只有少数患者缓解，但这些患者缓解很持久，可能出现 **CR 率低、mDOR 长**。未缓解患者不进入 DOR 分析，因此长 mDOR 本身不能证明所有患者都有生存获益。
-
-   在 AML、MDS 中，还要确认 DOR 统计的是 **CR、CR/CRi，还是包括其他响应的 ORR**。它们不能直接混比。
-
-下一步：查看报告的 DOR 定义，确认“哪些缓解患者进入统计”，通常 1 分钟即可找到。
 
 
-
-
-
-帮我找一下官网放出来的和美国医药分析师的采访链接
+## 美国医药分析师的采访链接
 
 **找到了。最符合你需求的是 Umer Raffat 和亚盛管理层的访谈，官网有视频及完整英文文字稿。**以下均来自[亚盛医药官网活动页](https://ir.ascentage.com/news-events/events)，已完成核对（第 3/3 步，2026 年 10 月 23 日）。
 
@@ -336,10 +284,6 @@ mOS和mDOR是什么
 | **2026-03-04**  | **TD Cowen 第 46 届医疗健康会议**，炉边访谈                  | [官网活动页](https://ir.ascentage.com/events/event-details/td-cowen-46th-annual-health-care-conference) · [回放入口](https://event.summitcast.com/view/9z5g2VrV6e6rbCqQgDRoHA/h2PnsTULMFMgLQ8SeKzYxj) | 入口可访问，**要求填写姓名、公司及邮箱**；尚未核实主持分析师姓名和完整回放。 |
 | **2025-09-03**  | **Citi：John Whittaker** 对话 CFO Veet Misra                 | [官网访谈页及文字稿](https://ir.ascentage.com/events/event-details/citis-2025-biopharma-back-school-conference) · [回放入口](https://kvgo.com/2025-biopharma-back-to-school-conference/ascentage-pharma-group-sep-2025) | 公司管线、APG-2575 获批及商业化。**主持人自述来自花旗投行团队**，身份需与股票研究分析师区分。 |
 | **2026-05-20**¹ | **Stifel 靶向肿瘤论坛**，炉边访谈                            | [官网活动页](https://ir.ascentage.com/events/event-details/stifel-2026-virtual-targeted-oncology-forum) | 官网仍列回放链接，但目前显示 **“Lobby Unavailable”**，无法确认是否还能观看。 |
-
-¹ Stifel 官网活动页写 **5 月 20 日**，[早期官方公告](https://ir.ascentage.com/static-files/011528dd-88d8-4b9b-b250-0faa3d41f78a)写 **5 月 19 日**，两者存在日期差异。
-
-**下一步：打开第一场文字稿，按 `Ctrl/⌘ + F` 搜索 `MDS` 或 `GLORA`，2 分钟内即可定位与你前面问题最相关的问答。**
 
 
 
