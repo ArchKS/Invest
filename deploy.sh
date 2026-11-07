@@ -87,7 +87,12 @@ sort -t '|' -k1,1 -k2,2 "$tmp" | while IFS='|' read -r dir name path; do
             echo "" >> "$README_FILE"
         else
             if [ "$last_dir" != "$dir" ]; then
-                echo -e "\n## $dir\n" >> "$README_FILE"
+                # ai coding: 标题层级按目录深度递减，顶级目录为二级，子目录依次为三级、四级 2026/11/07: 15:04
+                depth=$(awk -F'/' '{print NF}' <<< "$dir")
+                level=$((depth + 1))
+                [ "$level" -gt 6 ] && level=6
+                hashes=$(printf '%*s' "$level" '' | tr ' ' '#')
+                echo -e "\n${hashes} $dir\n" >> "$README_FILE"
                 last_dir="$dir"
             fi
             echo "- [$name]($relpath)" >> "$README_FILE"
