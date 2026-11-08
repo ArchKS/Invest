@@ -1,0 +1,254 @@
+<svg role="img" width="100%" viewBox="0 0 680 880" xmlns="http://www.w3.org/2000/svg">
+  <title>Chromosome structure and t(14;18) translocation leading to BCL-2 overexpression</title>
+  <desc>From DNA packaging into chromosomes, to the t(14;18) translocation event that places BCL-2 next to the IgH enhancer, causing constitutive BCL-2 overexpression in follicular lymphoma</desc>
+
+  <defs>
+    <style>
+      .title { font: 500 15px 'Inter', sans-serif; fill: #3C3489; }
+      .h2 { font: 500 13px 'Inter', sans-serif; fill: #26215C; }
+      .h3 { font: 500 12px 'Inter', sans-serif; fill: #3C3489; }
+      .body { font: 400 12px 'Inter', sans-serif; fill: #5F5E5A; }
+      .small { font: 400 11px 'Inter', sans-serif; fill: #5F5E5A; }
+      .note { font: 400 10px 'Inter', sans-serif; fill: #888780; }
+      .gene-label { font: 500 11px 'Inter', sans-serif; }
+      .highlight { font: 500 12px 'Inter', sans-serif; fill: #A32D2D; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="880" fill="transparent"/>
+
+  <text class="title" x="340" y="28" text-anchor="middle">染色体、t(14;18) 易位与 BCL-2 的发现</text>
+
+  <!-- ============================ SECTION 1 ============================ -->
+  <text class="h2" x="50" y="58">1. 什么是染色体？</text>
+  <text class="body" x="50" y="78">人类每个细胞核内有 46 条染色体（23对），是 DNA 的最高级包装形式。</text>
+
+  <!-- DNA to Chromosome zoom-in -->
+  <!-- DNA double helix -->
+  <g transform="translate(50, 90)">
+    <text class="small" x="0" y="-2" text-anchor="start">DNA 双螺旋</text>
+    <path d="M0,0 C5,10 15,10 20,0 C25,10 35,10 40,0 C45,10 55,10 60,0 C65,10 75,10 80,0 C85,10 95,10 100,0 C105,10 115,10 120,0" fill="none" stroke="#5DCAA5" stroke-width="1.2"/>
+    <path d="M0,0 C5,-10 15,-10 20,0 C25,-10 35,-10 40,0 C45,-10 55,-10 60,0 C65,-10 75,-10 80,0 C85,-10 95,-10 100,0 C105,-10 115,-10 120,0" fill="none" stroke="#378ADD" stroke-width="1.2"/>
+  </g>
+
+  <text class="note" x="180" y="90" text-anchor="start">→ 缠绕组蛋白 →</text>
+
+  <!-- Nucleosome beads -->
+  <g transform="translate(260, 85)">
+    <circle cx="20" cy="5" r="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+    <circle cx="45" cy="5" r="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+    <circle cx="70" cy="5" r="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+    <circle cx="95" cy="5" r="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+    <line x1="28" y1="5" x2="37" y2="5" stroke="#534AB7" stroke-width="0.5"/>
+    <line x1="53" y1="5" x2="62" y2="5" stroke="#534AB7" stroke-width="0.5"/>
+    <line x1="78" y1="5" x2="87" y2="5" stroke="#534AB7" stroke-width="0.5"/>
+    <text class="note" x="57" y="24" text-anchor="middle">核小体串珠</text>
+  </g>
+
+  <text class="note" x="370" y="90">→ 螺旋化压缩 →</text>
+
+  <!-- Chromosome -->
+  <g transform="translate(440, 82)">
+    <ellipse cx="30" cy="8" rx="12" ry="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+    <ellipse cx="80" cy="8" rx="12" ry="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+    <ellipse cx="155" cy="8" rx="12" ry="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+    <line x1="42" y1="8" x2="68" y2="8" stroke="#534AB7" stroke-width="1"/>
+    <line x1="92" y1="8" x2="143" y2="8" stroke="#534AB7" stroke-width="1"/>
+    <circle cx="55" cy="8" r="3" fill="#7F77DD"/>
+    <text class="note" x="55" y="22" text-anchor="middle">着丝粒</text>
+    <text class="small" x="100" y="22" text-anchor="middle">染色体</text>
+  </g>
+
+  <!-- ============================ SECTION 2 ============================ -->
+  <text class="h2" x="50" y="145">2. 什么是 t(14;18) 易位？</text>
+
+  <text class="body" x="50" y="165">"t" = translocation（易位），即染色体片段断裂后错误地重新连接。</text>
+  <text class="body" x="50" y="183">t(14;18) = 第 14 号染色体与第 18 号染色体之间发生了相互易位。</text>
+
+  <!-- Before: Normal chromosomes -->
+  <g transform="translate(50, 200)">
+    <text class="h3" x="20" y="0">正常状态</text>
+
+    <!-- Chromosome 14 -->
+    <g transform="translate(0, 15)">
+      <ellipse cx="25" cy="8" rx="10" ry="5" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+      <ellipse cx="120" cy="8" rx="10" ry="5" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+      <line x1="35" y1="8" x2="110" y2="8" stroke="#378ADD" stroke-width="1.5"/>
+      <circle cx="72" cy="8" r="2.5" fill="#185FA5"/>
+      <text class="small" x="72" y="22" text-anchor="middle" fill="#185FA5">14号</text>
+      <!-- Band pattern -->
+      <rect x="55" y="3" width="8" height="10" rx="1" fill="#B5D4F4" opacity="0.7"/>
+      <rect x="75" y="3" width="8" height="10" rx="1" fill="#85B7EB" opacity="0.7"/>
+      <!-- IgH enhancer label -->
+      <line x1="65" y1="8" x2="65" y2="42" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <rect x="20" y="42" width="90" height="16" rx="3" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+      <text class="small" x="65" y="53" text-anchor="middle" fill="#185FA5">IgH 增强子</text>
+    </g>
+
+    <!-- Chromosome 18 -->
+    <g transform="translate(180, 15)">
+      <ellipse cx="25" cy="8" rx="10" ry="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+      <ellipse cx="120" cy="8" rx="10" ry="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+      <line x1="35" y1="8" x2="110" y2="8" stroke="#D85A30" stroke-width="1.5"/>
+      <circle cx="72" cy="8" r="2.5" fill="#993C1D"/>
+      <text class="small" x="72" y="22" text-anchor="middle" fill="#993C1D">18号</text>
+      <!-- Band pattern -->
+      <rect x="55" y="3" width="8" height="10" rx="1" fill="#F5C4B3" opacity="0.7"/>
+      <rect x="75" y="3" width="8" height="10" rx="1" fill="#F0997B" opacity="0.7"/>
+      <!-- BCL-2 gene label -->
+      <line x1="65" y1="8" x2="65" y2="42" stroke="#993C1D" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <rect x="20" y="42" width="90" height="16" rx="3" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+      <text class="small" x="65" y="53" text-anchor="middle" fill="#993C1D">BCL-2 基因</text>
+    </g>
+  </g>
+
+  <!-- Arrow between -->
+  <g transform="translate(320, 260)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow)"/>
+    <text class="note" x="10" y="-8" text-anchor="middle">易位事件</text>
+  </g>
+
+  <!-- After: Translocated chromosomes -->
+  <g transform="translate(50, 280)">
+    <text class="h3" x="20" y="0">易位后 — 断裂与错误重接</text>
+
+    <!-- Broken Chr14 → der(14) -->
+    <g transform="translate(0, 15)">
+      <!-- Chr14 left part -->
+      <ellipse cx="18" cy="8" rx="8" ry="5" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+      <!-- Break point lightning -->
+      <line x1="26" y1="8" x2="40" y2="8" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <text class="note" fill="#E24B4A" x="33" y="4" text-anchor="middle">×</text>
+      <!-- Chr18 right part attached -->
+      <ellipse cx="90" cy="8" rx="10" ry="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+      <line x1="40" y1="8" x2="80" y2="8" stroke="#5F5E5A" stroke-width="1"/>
+      <circle cx="60" cy="8" r="2.5" fill="#5F5E5A"/>
+      <text class="small" x="54" y="22" text-anchor="middle" fill="#5F5E5A">der(14)</text>
+      <!-- IgH + BCL-2 together -->
+      <rect x="10" y="42" width="160" height="16" rx="3" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>
+      <text class="gene-label" fill="#A32D2D" x="90" y="53" text-anchor="middle">IgH 增强子 + BCL-2 基因</text>
+    </g>
+
+    <!-- Broken Chr18 → der(18) -->
+    <g transform="translate(180, 15)">
+      <!-- Chr18 left part -->
+      <ellipse cx="25" cy="8" rx="10" ry="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+      <!-- Break point -->
+      <line x1="35" y1="8" x2="50" y2="8" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <text class="note" fill="#E24B4A" x="42" y="4" text-anchor="middle">×</text>
+      <!-- Chr14 right part attached -->
+      <ellipse cx="100" cy="8" rx="8" ry="5" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+      <line x1="50" y1="8" x2="92" y2="8" stroke="#5F5E5A" stroke-width="1"/>
+      <circle cx="71" cy="8" r="2.5" fill="#5F5E5A"/>
+      <text class="small" x="71" y="22" text-anchor="middle" fill="#5F5E5A">der(18)</text>
+      <rect x="15" y="42" width="120" height="16" rx="3" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+      <text class="gene-label" fill="#5F5E5A" x="75" y="53" text-anchor="middle">无功能基因片段</text>
+    </g>
+  </g>
+
+  <!-- ============================ SECTION 3 ============================ -->
+  <text class="h2" x="50" y="385">3. 这如何导致 BCL-2 过度表达？</text>
+
+  <!-- Explanation boxes -->
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="580" height="54" rx="6" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+    <text class="body" x="15" y="20">IgH（免疫球蛋白重链）增强子：在 B 淋巴细胞中</text>
+    <text class="highlight" x="320" y="20">始终高度活跃</text>
+    <text class="body" x="15" y="40">易位使 BCL-2 基因被置于 IgH 增强子的控制之下 → BCL-2 在 B 细胞中</text>
+    <text class="highlight" x="410" y="40">持续高表达</text>
+  </g>
+
+  <!-- Normal vs Translocated comparison: Gene expression dials -->
+  <g transform="translate(50, 468)">
+    <!-- Normal BCL-2 expression -->
+    <rect x="0" y="0" width="270" height="120" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="h3" x="135" y="22" text-anchor="middle">正常 B 细胞 — BCL-2 正常表达</text>
+
+    <!-- Promoter/Enhancer representation -->
+    <rect x="25" y="35" width="60" height="22" rx="4" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="note" x="55" y="49" text-anchor="middle">BCL-2 启动子</text>
+
+    <rect x="105" y="35" width="60" height="22" rx="4" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+    <text class="note" x="135" y="49" text-anchor="middle">BCL-2 基因</text>
+
+    <!-- Low expression meter -->
+    <line x1="185" y1="46" x2="205" y2="46" stroke="#B4B2A9" stroke-width="0.5"/>
+    <text class="note" x="230" y="44" text-anchor="middle" fill="#888780">转录→</text>
+    <line x1="185" y1="60" x2="200" y2="60" stroke="#639922" stroke-width="2"/>
+    <line x1="200" y1="60" x2="245" y2="60" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text class="small" x="250" y="64" fill="#639922">mRNA 低水平</text>
+
+    <!-- Protein level -->
+    <text class="note" x="135" y="85" text-anchor="middle" fill="#888780">↓ BCL-2 蛋白适量</text>
+    <text class="note" x="135" y="100" text-anchor="middle" fill="#639922">→ 凋亡正常进行 ✓</text>
+  </g>
+
+  <g transform="translate(360, 468)">
+    <!-- High BCL-2 expression -->
+    <rect x="0" y="0" width="270" height="120" rx="8" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>
+    <text class="h3" x="135" y="22" text-anchor="middle">t(14;18) 淋巴瘤细胞 — 过量表达</text>
+
+    <!-- IgH enhancer + BCL-2 -->
+    <rect x="15" y="35" width="80" height="22" rx="4" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="note" x="55" y="42" text-anchor="middle">IgH 增强子</text>
+    <text class="note" x="55" y="54" text-anchor="middle" fill="#378ADD">(持续活跃!)</text>
+
+    <rect x="110" y="35" width="60" height="22" rx="4" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+    <text class="note" x="140" y="49" text-anchor="middle">BCL-2</text>
+
+    <!-- High expression meter -->
+    <line x1="185" y1="46" x2="205" y2="46" stroke="#B4B2A9" stroke-width="0.5"/>
+    <text class="note" x="230" y="44" text-anchor="middle" fill="#888780">转录→</text>
+    <line x1="185" y1="60" x2="245" y2="60" stroke="#E24B4A" stroke-width="2.5"/>
+    <text class="small" x="250" y="64" fill="#E24B4A">mRNA 极高水平</text>
+
+    <!-- Protein level -->
+    <text class="note" x="135" y="85" text-anchor="middle" fill="#E24B4A">↑↑↑ BCL-2 蛋白大量堆积</text>
+    <text class="note" x="135" y="100" text-anchor="middle" fill="#E24B4A">→ 凋亡被阻断 ✗</text>
+  </g>
+
+  <!-- ============================ SECTION 4 ============================ -->
+  <text class="h2" x="50" y="625">4. 为什么这个发现很重要？</text>
+
+  <g transform="translate(50, 640)">
+    <!-- Discovery -->
+    <rect x="0" y="0" width="180" height="72" rx="6" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="h3" x="90" y="22" text-anchor="middle">历史发现</text>
+    <text class="body" x="90" y="40" text-anchor="middle">1984年 Tsujimoto 等</text>
+    <text class="body" x="90" y="56" text-anchor="middle">在滤泡性淋巴瘤中</text>
+    <text class="body" x="90" y="68" text-anchor="middle">首次克隆 BCL-2 基因</text>
+
+    <!-- Arrow -->
+    <line x1="180" y1="36" x2="210" y2="36" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+    <!-- Mechanism -->
+    <rect x="210" y="0" width="180" height="72" rx="6" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+    <text class="h3" x="300" y="22" text-anchor="middle">致病机制</text>
+    <text class="body" x="300" y="40" text-anchor="middle">BCL-2 过量表达</text>
+    <text class="body" x="300" y="56" text-anchor="middle">→ 抑制细胞凋亡</text>
+    <text class="body" x="300" y="68" text-anchor="middle">→ B 细胞永生化</text>
+
+    <!-- Arrow -->
+    <line x1="390" y1="36" x2="420" y2="36" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+    <!-- Clinical implication -->
+    <rect x="420" y="0" width="210" height="72" rx="6" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+    <text class="h3" x="525" y="22" text-anchor="middle">药物靶点意义</text>
+    <text class="body" x="525" y="40" text-anchor="middle">BCL-2 成为抗癌靶点</text>
+    <text class="body" x="525" y="56" text-anchor="middle">→ Venetoclax (2016)</text>
+    <text class="body" x="525" y="68" text-anchor="middle">→ Lisaftoclax (2025)</text>
+  </g>
+
+  <!-- ============================ TAKE-HOME ============================ -->
+  <rect x="50" y="735" width="580" height="50" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="h3" x="340" y="755" text-anchor="middle">一句话总结</text>
+  <text class="body" x="340" y="775" text-anchor="middle">t(14;18) → BCL-2 基因被放到 IgH 增强子旁边 → B细胞中 BCL-2 永不停歇地高表达 → 凋亡受阻 → 淋巴瘤</text>
+
+  <!-- Nomenclature footnote -->
+  <text class="note" x="50" y="810">命名法说明: t = translocation, 括号内为涉及的染色体编号。der(14) = 衍生的 14 号染色体 (derivative chromosome 14)。</text>
+  <text class="note" x="50" y="826">t(14;18)(q32;q21) 中 q32 和 q21 分别是 14 号和 18 号染色体长臂上的具体断裂位点。</text>
+
+</svg>
