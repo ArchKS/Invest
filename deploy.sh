@@ -51,53 +51,54 @@ echo "============================================="
 #     fi
 # done
 
-# ====================== 生成 README：目录结构保留 + 同目录内时间正序 ======================
+# ====================== 生成 README：目录结构保留 + 同目录内按文件名排序 ======================
 echo ""
 echo "📚 生成 README.md 目录结构…"
 
 cat > "$README_FILE" << EOF
 # 文档目录
-自动生成 | 同目录按最后更新时间正序（最早→最新）
+自动生成 | 同目录按文件名排序
 
 > 仓库地址： https://github.com/ArchKS/invest
 > Typora插件： https://github.com/obgnail/typora_plugin
 EOF
 
-# 收集所有文件信息：完整时间|目录|文件名|路径
-# tmp=$(mktemp)
-# find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
-#     ts=$(grep "^$UPDATE_KEY" "$f" | head -1 | sed 's/LastUpdate: //')
-#     dir=$(dirname "$f" | sed 's/^.\///')
-#     name=$(basename "$f")
-#     path="$f"
-#     echo "$ts|$dir|$name|$path" >> "$tmp"
-# done
+# ai coding: 改为收集 目录|文件名|路径，不再读取文件内的 LastUpdate 时间 2026/11/07: 14:59
+# 收集所有文件信息：目录|文件名|路径
+tmp=$(mktemp)
+find . -type f -name "*.md" | grep -v "$README_FILE" | while IFS= read -r f; do
+    dir=$(dirname "$f" | sed 's/^.\///')
+    name=$(basename "$f")
+    path="$f"
+    echo "$dir|$name|$path" >> "$tmp"
+done
 
-# echo "✅ 文件信息收集完成，开始生成目录结构…"
+echo "✅ 文件信息收集完成，开始生成目录结构…"
 
-# # ✅ 正确正序排序（字符串时间）
-# sort -t '|' -k2,2 -k1,1r "$tmp" | while IFS='|' read -r ts dir name path; do
-#     [ -z "$ts" ] && continue
-#     show_date=${ts:0:10}
-#     relpath=${path#./}
-#     # echo "$relpath  $path"
-#     if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
-#         :  # 匹配到则跳过，不处理
-#     else
-#         # echo "匹配失败"
-#         if [ "$dir" = "." ]; then
-#             echo "$show_date  [$name]($relpath)" >> "$README_FILE"
-#             echo "" >> "$README_FILE"
-#         else
-#             if [ "$last_dir" != "$dir" ]; then
-#                 echo -e "\n## $dir\n" >> "$README_FILE"
-#                 last_dir="$dir"
-#             fi
-#             echo "- $show_date  [$name]($relpath)" >> "$README_FILE"
-#         fi
-#     fi
-    
-# done
+# ai coding: 排序键由时间改为 目录+文件名，输出条目不再带日期前缀 2026/11/07: 14:59
+# 按目录分组、同目录内按文件名排序
+sort -t '|' -k1,1 -k2,2 "$tmp" | while IFS='|' read -r dir name path; do
+    relpath=${path#./}
+    if [[ "$relpath" =~ ^书单/阅读笔记/ ]]; then
+        :  # 匹配到则跳过，不处理
+    else
+        if [ "$dir" = "." ]; then
+            echo "[$name]($relpath)" >> "$README_FILE"
+            echo "" >> "$README_FILE"
+        else
+            if [ "$last_dir" != "$dir" ]; then
+                # ai coding: 标题层级按目录深度递减，顶级目录为二级，子目录依次为三级、四级 2026/11/07: 15:04
+                depth=$(awk -F'/' '{print NF}' <<< "$dir")
+                level=$((depth + 1))
+                [ "$level" -gt 6 ] && level=6
+                hashes=$(printf '%*s' "$level" '' | tr ' ' '#')
+                echo -e "\n${hashes} $dir\n" >> "$README_FILE"
+                last_dir="$dir"
+            fi
+            echo "- [$name]($relpath)" >> "$README_FILE"
+        fi
+    fi
+done
 
 rm -f "$tmp"
 echo "✅ README.md 生成完成！"
