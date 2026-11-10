@@ -1,0 +1,233 @@
+<svg role="img" width="100%" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg">
+  <title>DNA packaging into chromosome: 6 levels of hierarchical compaction</title>
+  <desc>From 2nm DNA double helix to 1400nm metaphase chromosome, showing each compaction level with scale and description</desc>
+
+  <defs>
+    <style>
+      .title { font: 500 15px 'Inter', sans-serif; fill: #3C3489; }
+      .h2 { font: 500 13px 'Inter', sans-serif; fill: #26215C; }
+      .h3 { font: 500 11px 'Inter', sans-serif; fill: #3C3489; }
+      .body { font: 400 12px 'Inter', sans-serif; fill: #5F5E5A; }
+      .small { font: 400 11px 'Inter', sans-serif; fill: #5F5E5A; }
+      .note { font: 400 10px 'Inter', sans-serif; fill: #888780; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#378ADD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="620" fill="transparent"/>
+
+  <text class="title" x="340" y="28" text-anchor="middle">DNA 与染色体的关系：从 2 纳米到 1.4 微米的压缩之旅</text>
+  <text class="small" x="340" y="46" text-anchor="middle" fill="#888780">一条完整的 DNA 分子长约 2 米，需压缩约 10,000 倍才能装入直径 5 微米的细胞核</text>
+
+  <!-- ============================ LEVEL 1 ============================ -->
+  <rect x="40" y="62" width="70" height="120" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="h3" x="75" y="82" text-anchor="middle">Level 1</text>
+  <text class="note" x="75" y="96" text-anchor="middle">DNA</text>
+  <text class="note" x="75" y="110" text-anchor="middle">双螺旋</text>
+  <rect x="48" y="118" width="54" height="14" rx="3" fill="#9FE1CB"/>
+  <text class="note" x="75" y="128" text-anchor="middle" fill="#085041">2 nm 宽</text>
+  <text class="note" x="75" y="150" text-anchor="middle" fill="#0F6E56">碱基对序列</text>
+  <text class="note" x="75" y="164" text-anchor="middle" fill="#0F6E56">ATCG...</text>
+
+  <!-- DNA helix illustration -->
+  <g transform="translate(120, 62)">
+    <line x1="0" y1="10" x2="0" y2="116" stroke="#5DCAA5" stroke-width="1.2"/>
+    <g opacity="0.6">
+      <path d="M0,10 C15,30 -15,50 0,70 C15,90 -15,110 0,116" fill="none" stroke="#378ADD" stroke-width="1"/>
+      <path d="M0,10 C-15,30 15,50 0,70 C-15,90 15,110 0,116" fill="none" stroke="#E24B4A" stroke-width="1"/>
+      <line x1="-4" y1="20" x2="4" y2="20" stroke="#5DCAA5" stroke-width="0.5"/>
+      <line x1="-5" y1="35" x2="5" y2="35" stroke="#5DCAA5" stroke-width="0.5"/>
+      <line x1="-5" y1="50" x2="5" y2="50" stroke="#5DCAA5" stroke-width="0.5"/>
+      <line x1="-4" y1="65" x2="4" y2="65" stroke="#5DCAA5" stroke-width="0.5"/>
+      <line x1="-5" y1="80" x2="5" y2="80" stroke="#5DCAA5" stroke-width="0.5"/>
+      <line x1="-5" y1="95" x2="5" y2="95" stroke="#5DCAA5" stroke-width="0.5"/>
+    </g>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="130" y1="122" x2="168" y2="122" stroke="#5F5E5A" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <text class="note" x="149" y="115" text-anchor="middle" fill="#888780">×7</text>
+
+  <!-- ============================ LEVEL 2 ============================ -->
+  <rect x="178" y="62" width="70" height="120" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="h3" x="213" y="82" text-anchor="middle">Level 2</text>
+  <text class="note" x="213" y="96" text-anchor="middle">核小体</text>
+  <text class="note" x="213" y="110" text-anchor="middle">串珠</text>
+  <rect x="186" y="118" width="54" height="14" rx="3" fill="#CECBF6"/>
+  <text class="note" x="213" y="128" text-anchor="middle" fill="#26215C">11 nm 宽</text>
+  <text class="note" x="213" y="150" text-anchor="middle" fill="#534AB7">DNA 缠绕组蛋白</text>
+  <text class="note" x="213" y="164" text-anchor="middle" fill="#534AB7">八聚体</text>
+
+  <!-- Nucleosome beads -->
+  <g transform="translate(258, 62)">
+    <line x1="0" y1="60" x2="60" y2="60" stroke="#AFA9EC" stroke-width="0.5"/>
+    <circle cx="4" cy="50" r="8" fill="#CECBF6" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="note" x="4" y="53" text-anchor="middle" fill="#3C3489">H</text>
+    <circle cx="22" cy="58" r="8" fill="#CECBF6" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="note" x="22" y="61" text-anchor="middle" fill="#3C3489">H</text>
+    <circle cx="42" cy="58" r="8" fill="#CECBF6" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="note" x="42" y="61" text-anchor="middle" fill="#3C3489">H</text>
+    <!-- DNA wrapped around -->
+    <path d="M-6,50 C-10,42 -2,38 4,42 C10,38 18,38 22,42 C28,38 36,38 42,42 C48,38 56,38 60,44" fill="none" stroke="#378ADD" stroke-width="0.8"/>
+    <path d="M-6,50 C-10,58 -2,62 4,58 C10,62 18,62 22,58 C28,62 36,62 42,58 C48,62 56,62 60,56" fill="none" stroke="#E24B4A" stroke-width="0.8"/>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="266" y1="122" x2="304" y2="122" stroke="#5F5E5A" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <text class="note" x="285" y="115" text-anchor="middle" fill="#888780">×6</text>
+
+  <!-- ============================ LEVEL 3 ============================ -->
+  <rect x="314" y="62" width="70" height="120" rx="8" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="h3" x="349" y="82" text-anchor="middle">Level 3</text>
+  <text class="note" x="349" y="96" text-anchor="middle">30 nm</text>
+  <text class="note" x="349" y="110" text-anchor="middle">染色质纤维</text>
+  <rect x="322" y="118" width="54" height="14" rx="3" fill="#D3D1C7"/>
+  <text class="note" x="349" y="128" text-anchor="middle" fill="#444441">30 nm 宽</text>
+  <text class="note" x="349" y="150" text-anchor="middle" fill="#5F5E5A">核小体螺旋</text>
+  <text class="note" x="349" y="164" text-anchor="middle" fill="#5F5E5A">管状排列</text>
+
+  <!-- 30nm fiber -->
+  <g transform="translate(398, 62)">
+    <path d="M0,40 C15,20 35,20 50,40 C65,60 85,60 100,40 C115,20 135,20 150,40" fill="none" stroke="#B4B2A9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0,40 C15,60 35,60 50,40 C65,20 85,20 100,40 C115,60 135,60 150,40" fill="none" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <!-- Banding pattern -->
+    <line x1="15" y1="31" x2="15" y2="49" stroke="#888780" stroke-width="1.5"/>
+    <line x1="35" y1="31" x2="35" y2="49" stroke="#888780" stroke-width="1.5"/>
+    <line x1="65" y1="31" x2="65" y2="49" stroke="#888780" stroke-width="1.5"/>
+    <line x1="85" y1="31" x2="85" y2="49" stroke="#888780" stroke-width="1.5"/>
+    <line x1="115" y1="31" x2="115" y2="49" stroke="#888780" stroke-width="1.5"/>
+    <line x1="135" y1="31" x2="135" y2="49" stroke="#888780" stroke-width="1.5"/>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="402" y1="122" x2="440" y2="122" stroke="#5F5E5A" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <text class="note" x="421" y="115" text-anchor="middle" fill="#888780">×40</text>
+
+  <!-- ============================ LEVEL 4 ============================ -->
+  <rect x="450" y="62" width="70" height="120" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="h3" x="485" y="82" text-anchor="middle">Level 4</text>
+  <text class="note" x="485" y="96" text-anchor="middle">伸展</text>
+  <text class="note" x="485" y="110" text-anchor="middle">染色体</text>
+  <rect x="458" y="118" width="54" height="14" rx="3" fill="#B5D4F4"/>
+  <text class="note" x="485" y="128" text-anchor="middle" fill="#0C447C">300 nm 宽</text>
+  <text class="note" x="485" y="150" text-anchor="middle" fill="#185FA5">形成环状</text>
+  <text class="note" x="485" y="164" text-anchor="middle" fill="#185FA5">结构域</text>
+
+  <!-- Loop domains -->
+  <g transform="translate(530, 62)">
+    <ellipse cx="40" cy="60" rx="35" ry="45" fill="none" stroke="#378ADD" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <path d="M20,30 C25,20 35,15 40,15 C45,15 55,20 60,30" fill="none" stroke="#378ADD" stroke-width="1"/>
+    <path d="M20,90 C25,100 35,105 40,105 C45,105 55,100 60,90" fill="none" stroke="#378ADD" stroke-width="1"/>
+    <path d="M5,60 C10,50 20,45 40,45 C60,45 70,50 75,60" fill="none" stroke="#378ADD" stroke-width="1"/>
+    <path d="M5,60 C10,70 20,75 40,75 C60,75 70,70 75,60" fill="none" stroke="#378ADD" stroke-width="1"/>
+    <circle cx="40" cy="15" r="3" fill="#185FA5"/>
+    <circle cx="40" cy="105" r="3" fill="#185FA5"/>
+    <circle cx="5" cy="60" r="3" fill="#185FA5"/>
+    <circle cx="75" cy="60" r="3" fill="#185FA5"/>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <line x1="530" y1="122" x2="563" y2="122" stroke="#5F5E5A" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <text class="note" x="546" y="115" text-anchor="middle" fill="#888780">×4</text>
+
+  <!-- ============================ LEVEL 5 ============================ -->
+  <rect x="572" y="62" width="70" height="120" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+  <text class="h3" x="607" y="82" text-anchor="middle">Level 5</text>
+  <text class="note" x="607" y="96" text-anchor="middle">浓缩</text>
+  <text class="note" x="607" y="110" text-anchor="middle">染色体</text>
+  <rect x="580" y="118" width="54" height="14" rx="3" fill="#F5C4B3"/>
+  <text class="note" x="607" y="128" text-anchor="middle" fill="#993C1D">700 nm 宽</text>
+  <text class="note" x="607" y="150" text-anchor="middle" fill="#D85A30">螺旋化</text>
+  <text class="note" x="607" y="164" text-anchor="middle" fill="#D85A30">进一步压缩</text>
+
+  <!-- Condensed chromosome -->
+  <g transform="translate(640, 80)">
+    <ellipse cx="0" cy="30" rx="8" ry="25" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <ellipse cx="0" cy="90" rx="8" ry="25" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <line x1="0" y1="55" x2="0" y2="65" stroke="#D85A30" stroke-width="1.5"/>
+    <circle cx="0" cy="60" r="2.5" fill="#993C1D"/>
+  </g>
+
+  <!-- ============================ COMPARISON PANEL ============================ -->
+  <rect x="40" y="200" width="600" height="180" rx="8" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text class="h2" x="340" y="222" text-anchor="middle">类比：DNA 与染色体的关系</text>
+
+  <!-- Analogy visual -->
+  <!-- Thread -->
+  <g transform="translate(60, 235)">
+    <path d="M0,30 C20,10 40,10 60,30 C80,50 100,50 120,30" fill="none" stroke="#378ADD" stroke-width="1"/>
+    <path d="M0,30 C20,50 40,50 60,30 C80,10 100,10 120,30" fill="none" stroke="#E24B4A" stroke-width="1"/>
+    <text class="note" x="60" y="48" text-anchor="middle" fill="#888780">一根 2m 长的线</text>
+  </g>
+
+  <text class="body" x="200" y="260" fill="#5F5E5A">DNA 分子 =</text>
+  <text class="body" x="200" y="280" fill="#378ADD">长 2 米</text>
+  <text class="body" x="200" y="298" fill="#5F5E5A">的信息载体分子</text>
+
+  <!-- Yarn ball in between -->
+  <g transform="translate(340, 245)">
+    <circle cx="0" cy="20" r="18" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+    <path d="M-8,12 C0,5 8,5 12,12" fill="none" stroke="#7F77DD" stroke-width="0.5"/>
+    <path d="M-6,22 C0,28 8,28 10,22" fill="none" stroke="#7F77DD" stroke-width="0.5"/>
+    <path d="M-10,18 C-5,25 5,25 8,18" fill="none" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="note" x="0" y="50" text-anchor="middle" fill="#888780">缠绕 + 折叠</text>
+  </g>
+
+  <!-- X-shaped chromosome -->
+  <g transform="translate(440, 240)">
+    <ellipse cx="25" cy="8" rx="6" ry="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+    <ellipse cx="25" cy="48" rx="6" ry="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+    <ellipse cx="65" cy="8" rx="6" ry="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+    <ellipse cx="65" cy="48" rx="6" ry="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.8"/>
+    <line x1="25" y1="20" x2="25" y2="36" stroke="#D85A30" stroke-width="1.5"/>
+    <line x1="65" y1="20" x2="65" y2="36" stroke="#D85A30" stroke-width="1.5"/>
+    <circle cx="25" cy="28" r="3" fill="#993C1D"/>
+    <circle cx="65" cy="28" r="3" fill="#993C1D"/>
+  </g>
+
+  <text class="body" x="540" y="260" fill="#5F5E5A">染色体 =</text>
+  <text class="body" x="540" y="280" fill="#D85A30">高度压缩</text>
+  <text class="body" x="540" y="298" fill="#5F5E5A">的 DNA-蛋白质复合体</text>
+
+  <!-- Equation line -->
+  <line x1="80" y1="338" x2="600" y2="338" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text class="body" x="340" y="356" text-anchor="middle">染色体是 DNA 的</text>
+  <text class="body" x="340" y="356" text-anchor="middle" fill="empty">染色体是 DNA 的 </text>
+
+  <!-- Key point: condensation ratio -->
+  <rect x="200" y="338" width="280" height="36" rx="6" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="h2" x="340" y="360" text-anchor="middle" fill="#3C3489">DNA 是染色体的唯一信息载体</text>
+  <text class="note" x="340" y="362" text-anchor="middle" fill="#3C3489"></text>
+
+  <!-- ============================ KEY NUMBERS ============================ -->
+  <rect x="40" y="398" width="600" height="110" rx="8" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>
+  <text class="h2" x="340" y="420" text-anchor="middle" fill="#791F1F">关键数字</text>
+
+  <g transform="translate(55, 432)">
+    <text class="body" x="0" y="14">一个人类细胞的 DNA 总长度</text>
+    <text class="h3" x="230" y="14" fill="#A32D2D">≈ 2 米</text>
+    <text class="body" x="0" y="34">细胞核直径</text>
+    <text class="h3" x="230" y="34" fill="#A32D2D">≈ 5–10 微米</text>
+    <text class="body" x="0" y="54">总压缩比</text>
+    <text class="h3" x="230" y="54" fill="#A32D2D">≈ 10,000 倍</text>
+    <text class="body" x="0" y="74">人类染色体数（二倍体）</text>
+    <text class="h3" x="230" y="74" fill="#A32D2D">46 条（23 对）</text>
+    <text class="body" x="0" y="94">每条染色体含基因数</text>
+    <text class="h3" x="230" y="94" fill="#A32D2D">数百到数千个</text>
+  </g>
+
+  <text class="note" x="340" y="428" fill="#A32D2D" text-anchor="middle"></text>
+
+  <!-- ============================ AHA! ============================ -->
+  <rect x="40" y="525" width="600" height="80" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+  <text class="h2" x="340" y="548" text-anchor="middle" fill="#27500A">一句话说清楚</text>
+  <text class="body" x="340" y="572" text-anchor="middle">如果把 DNA 比作写满遗传信息的 2 米长纸条，</text>
+  <text class="body" x="340" y="592" text-anchor="middle">染色体就是把这张纸条卷起来、折成 X 形、方便塞进 5 微米小房间的包装方式。</text>
+</svg>
