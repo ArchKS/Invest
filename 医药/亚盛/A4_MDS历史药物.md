@@ -2377,3 +2377,163 @@ CR 是缓解指标，不能直接确定死亡风险。
 
 
 
+
+
+
+
+
+
+# AZA作用机制
+
+<svg viewBox="0 0 680 720" width="100%" role="img" font-size="11px">
+    <rect width="100%" height="100%" fill="#f2f2f2" />
+    <title>Azacitidine dual-pathway mechanism and clinical response mapping</title>
+    <desc>Diagram showing how azacitidine acts on both Pathway A (effective hematopoiesis restoration) and Pathway B
+        (blast clearance) at clinical doses, with AZA-001 trial response rates overlaid.</desc>
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </marker>
+    </defs>
+    <rect x="0" y="0" width="680" height="720" fill="transparent" /> <text  x="340" y="28"
+        text-anchor="middle">AZA 作用机制：剂量决定通路</text> <text  x="340" y="46"
+        text-anchor="middle">标准临床剂量下，通路 A 效应远超通路 B</text>
+    <line x1="40" y1="58" x2="640" y2="58" stroke="#D3D1C7" stroke-width="0.5" /> <text  x="50"
+        y="80">给药剂量</text>
+    <rect x="50" y="88" width="250" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" /> <text
+         x="175" y="106" text-anchor="middle" dominant-baseline="central">高剂量 (150-400 mg/m²)</text> <text
+         x="175" y="120" text-anchor="middle" dominant-baseline="central">1960s-1980s 早期研究</text>
+    <rect x="380" y="88" width="250" height="40" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="505" y="106" text-anchor="middle" dominant-baseline="central" fill="#085041">标准临床剂量 (75 mg/m² ×
+        7d)</text> <text  x="505" y="120" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">FDA
+        批准方案 · 现行标准</text>
+    <line x1="175" y1="128" x2="175" y2="160" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="128" x2="505" y2="160" stroke="#1D9E75" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="152">主要机制</text>
+    <rect x="50" y="160" width="250" height="56" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="180" text-anchor="middle" dominant-baseline="central" fill="#712B13">直接细胞毒性</text> <text
+         x="175" y="198" text-anchor="middle" dominant-baseline="central" fill="#993C1D">RNA + DNA 损伤 →
+        广泛凋亡</text>
+    <rect x="380" y="160" width="250" height="56" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="505" y="180" text-anchor="middle" dominant-baseline="central" fill="#0C447C">表观遗传重编程 (主)</text>
+    <text  x="505" y="198" text-anchor="middle" dominant-baseline="central" fill="#185FA5">DNMT1 捕获降解 →
+        去甲基化</text>
+    <line x1="175" y1="216" x2="175" y2="250" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="216" x2="505" y2="250" stroke="#378ADD" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="242">作用通路</text>
+    <rect x="50" y="250" width="250" height="56" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="270" text-anchor="middle" dominant-baseline="central" fill="#712B13">通路 B (克隆清除)</text>
+    <text  x="175" y="288" text-anchor="middle" dominant-baseline="central" fill="#993C1D">无差别杀伤增殖期细胞</text>
+    <rect x="380" y="250" width="250" height="56" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="505" y="266" text-anchor="middle" dominant-baseline="central" fill="#085041">通路 A + 通路 B +
+        免疫调节</text> <text  x="505" y="282" text-anchor="middle" dominant-baseline="central"
+        fill="#0F6E56">沉默基因再表达 → 分化恢复</text> <text  x="505" y="296" text-anchor="middle"
+        dominant-baseline="central" fill="#0F6E56">CTA 上调 → T 细胞识别增强</text>
+    <line x1="175" y1="306" x2="175" y2="340" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)" />
+    <line x1="505" y1="306" x2="505" y2="340" stroke="#1D9E75" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="332">临床疗效</text>
+    <rect x="50" y="340" width="250" height="80" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="175" y="358" text-anchor="middle" dominant-baseline="central" fill="#993C1D">高剂量试验（已弃用）</text>
+    <text  x="175" y="378" text-anchor="middle" dominant-baseline="central" fill="#712B13">CR
+        较高，但毒性死亡极高</text> <text  x="175" y="398" text-anchor="middle" dominant-baseline="central"
+        fill="#993C1D">OS 无获益 → 退出临床</text>
+    <rect x="380" y="340" width="250" height="80" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="505" y="356" text-anchor="middle" dominant-baseline="central" fill="#0C447C">AZA-001 试验
+        (n=179)</text> <text  x="505" y="372" text-anchor="middle" dominant-baseline="central"
+        fill="#185FA5">OS 24.5 月 vs 15.0 月 (CCR)</text> <text  x="505" y="388" text-anchor="middle"
+        dominant-baseline="central" fill="#185FA5">首个延长 OS 的 MDS 药物</text> <text  x="505" y="404"
+        text-anchor="middle" dominant-baseline="central" fill="#185FA5">List 2008 · Fenaux 2009</text>
+    <line x1="505" y1="420" x2="505" y2="450" stroke="#378ADD" stroke-width="0.5" marker-end="url(#arrow)" /> <text
+         x="50" y="442">疗效拆解</text>
+    <rect x="50" y="455" width="580" height="130" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" /> <text
+         x="70" y="476" fill="#2C2C2A">AZA-001 各疗效终点拆解</text> <text  x="70" y="491">HI 远超 CR →
+        临床获益主要来自通路 A</text>
+    <rect x="70" y="500" width="100" height="68" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5" /> <text
+         x="120" y="518" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">HI (血液学改善)</text>
+    <text  x="120" y="542" text-anchor="middle" dominant-baseline="central" fill="#085041">49%</text> <text
+         x="120" y="560" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">通路 A</text>
+    <rect x="190" y="500" width="100" height="68" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5" /> <text
+         x="240" y="518" text-anchor="middle" dominant-baseline="central" fill="#185FA5">PR (部分缓解)</text>
+    <text  x="240" y="542" text-anchor="middle" dominant-baseline="central" fill="#0C447C">12%</text> <text
+         x="240" y="560" text-anchor="middle" dominant-baseline="central" fill="#185FA5">A+B 混合</text>
+    <rect x="310" y="500" width="100" height="68" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5" /> <text
+         x="360" y="518" text-anchor="middle" dominant-baseline="central" fill="#993C1D">CR (完全缓解)</text>
+    <text  x="360" y="542" text-anchor="middle" dominant-baseline="central" fill="#712B13">17%</text> <text
+         x="360" y="560" text-anchor="middle" dominant-baseline="central" fill="#993C1D">通路 B</text>
+    <rect x="430" y="500" width="100" height="68" rx="6" fill="#F1EFE8" stroke="#888780" stroke-width="0.5" /> <text
+         x="480" y="518" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">SD (稳定)</text> <text
+         x="480" y="542" text-anchor="middle" dominant-baseline="central" fill="#444441">49%</text> <text
+         x="480" y="560" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">含获益</text> <text
+         x="570" y="520" dominant-baseline="central" fill="#5F5E5A">总有效率</text> <text  x="570"
+        y="542" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">51%</text> <text  x="570"
+        y="560" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">CR+PR+HI</text>
+    <line x1="340" y1="595" x2="340" y2="620" stroke="#B4B2A9" stroke-width="0.5" />
+    <rect x="50" y="625" width="580" height="80" rx="12" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5" /> <text
+         x="70" y="646" fill="#3C3489">关键发现：HI 是 AZA 延长 OS 的主要驱动</text> <text  x="70" y="664"
+        fill="#3C3489">AZA-001 多因素分析（PMC3696610）：</text> <text  x="70" y="680" fill="#3C3489">以 HI 为最佳疗效的患者（未达
+        CR/PR），死亡风险仍降低 93%（vs CCR）</text> <text  x="70" y="696" fill="#3C3489">"CR is sufficient but not
+        necessary to prolong OS" — List 2008</text>
+</svg>
+
+
+
+
+
+作用：改变异常细胞的生物学状态
+
+生效过程：
+
+1. 只有进入细胞周期的细胞才会被AZA影响
+   1. 阿扎胞苷必须被细胞摄取并掺入RNA或DNA
+   2. DNA去甲基化尤其依赖细胞进入S期、复制DNA
+2. 去甲基化不是一个瞬间完成的
+   1. 阿扎胞苷使DNMT失活，减少新生DNA上的甲基化标记，随后才会逐步改变一批与分化、细胞周期、凋亡和肿瘤抑制有关的基因表达
+   2. 从DNA甲基化改变，到蛋白表达改变，再到细胞分化和骨髓结构改善，中间存在明显时间差
+   3. 临床研究中，部分基因的去甲基化改变是在治疗3–5个周期后才与血液学缓解对应
+3. 每个周期的去甲基化效应可能部分回退，需要持续修正
+4. 骨髓改善后，外周血指标还需要时间才能体现
+   1. 阿扎胞苷也会损伤正在增殖的正常造血祖细胞，前1–2个周期可能出现血细胞下降、输血需求增加，看起来像病情没有改善
+   2. 随着异常造血逐渐受控、有效造血恢复，净效果才转为血细胞上升，所以早期血细胞下降并不必然代表无效
+5. 早期骨髓抑制会暂时掩盖药效
+6. 首次缓解以后继续加深，是因为首次缓解只是“刚刚越过标准线”
+
+这个过程需要一定的时间，主要为：
+
+第一个周期，异常细胞开始受影响，但已成熟血细胞寿命还没结束。
+
+第二、三周期，异常克隆持续受压力，更多细胞进入分化/死亡；开始出现血象改善
+
+第四、六周期，骨髓生态逐渐改变，正常造血开始恢复
+
+
+
+
+
+
+
+# 结尾
+
+上述提到的机制/原理，在后续的讨论中很多会用到，比如：
+
+1、药物在短时间内激活足够的BAX/BAK触发MOMP，本身是个阈值事件，或许是Lisaftoclax可能依赖Cmax的原因，而依靠Cmax的杀伤方式，就不需要单次持续压制BCL-2，毒性会远小于AUC
+
+2、Cmax机制还可以支持药物半衰期短的设计，这样药物在血液中停留时间短，对代谢的影响较少，更容易和其他药物联用
+
+3、安全性+无DDI可成为某些领域的基石药物，这带来的销售空间是巨大的
+
+4、MDS中以AZA为骨架，Venetoclax的Ⅲ期临床（ven+aza vs aza）中出现了减量，最后以失败告终，主要是Venetoclax毒性太强，而MDS患者本身骨髓就很脆弱，双重抑制带来的毒性改过了OS获益。所以选择一个低毒性无DDI，不影响AZA用量的药物显得尤为重要
+
+------
+
+
+
+若MDS临床做出显著获益，亚盛可以给到至少700亿HKD市值，当前135亿HKD。
+
+尽管APG-2575是近20年来在MDS领域最有可能成药的BCL-2抑制剂，但其临床依然面临着诸多的不确定性
+
+
+# 用药
+
+再说用药，主要是两类，一个恢复造血干细胞的分化能力，另一个是促进肿瘤细胞凋亡。前者用去甲基化药物，如阿扎胞苷（AZA），后者用BCL-2抑制剂，如维奈克拉（Ven），亚盛的利沙托克拉（APG-2575，Lisaftoclax）也属于这一类。需要注意的是，MDS的治疗应当以AZA为骨架，而非BCL-2抑制剂，正如前文所述，血象的改善远比肿瘤的缩小重要。本文仅简单介绍MDS，后续临床及用药放到GLORA-4相关文章详述。
