@@ -11,9 +11,11 @@ TEMP_REFS=$(mktemp)
 TEMP_IMGS=$(mktemp)
 TEMP_REFS_SORTED="${TEMP_REFS}.sorted"
 TEMP_IMGS_SORTED="${TEMP_IMGS}.sorted"
+TEMP_KEPT=$(mktemp)
+TEMP_ORPHAN=$(mktemp)
 
 cleanup() {
-    rm -f "$TEMP_REFS" "$TEMP_IMGS" "$TEMP_REFS_SORTED" "$TEMP_IMGS_SORTED"
+    rm -f "$TEMP_REFS" "$TEMP_IMGS" "$TEMP_REFS_SORTED" "$TEMP_IMGS_SORTED" "$TEMP_KEPT" "$TEMP_ORPHAN"
 }
 trap cleanup EXIT HUP INT TERM
 
@@ -87,29 +89,71 @@ find "$WORKSPACE" \
     done
 done
 
+# ai coding: 增加按文件名搜索引用的兜底函数，文件名出现在任何非图片文本文件中即视为被引用 2026/11/07: 15:10
+# 在仓库所有非图片文件（md、html 等任意文本格式）中按固定字符串查找图片文件名，
+# 用于兜底"md 被移动、图片留在原地"导致的相对路径断链场景。
+find_name_references() {
+    local base=$1
+    grep -r -F -I -l \
+        --exclude-dir=.git --exclude-dir=.venv --exclude-dir=node_modules \
+        --exclude='*.png' --exclude='*.jpg' --exclude='*.jpeg' \
+        --exclude='*.gif' --exclude='*.svg' --exclude='*.webp' \
+        -- "$base" "$WORKSPACE" 2>/dev/null
+}
+
 # 3. 对比列表并删除未引用的图片
 if [ -s "$TEMP_IMGS" ]; then
     # 排序和去重
     sort -u "$TEMP_IMGS" > "$TEMP_IMGS_SORTED"
     touch "$TEMP_REFS"
     sort -u "$TEMP_REFS" > "$TEMP_REFS_SORTED"
-    
+
     # 找出存在于系统但未被引用的图片
     # comm -23 比较两个已排序的文件，输出只在第一个文件中的行
     UNUSED_IMGS=$(comm -23 "$TEMP_IMGS_SORTED" "$TEMP_REFS_SORTED")
-    
+
     if [ -z "$UNUSED_IMGS" ]; then
         echo "🎉 没有发现未使用的图片。"
     else
-        printf '%s\n' "$UNUSED_IMGS" | while IFS= read -r img_to_delete; do
-            if [ -n "$img_to_delete" ]; then
-                rm -f "$img_to_delete"
-                echo "已删除: $img_to_delete"
+        # ai coding: 分类为"断链引用（保留并输出对照）"和"真孤儿（删除）"，先报告后删除 2026/11/07: 15:10
+        # 3.1 分类：路径解析失败的图片，再按文件名兜底搜一遍
+        printf '%s\n' "$UNUSED_IMGS" | while IFS= read -r img_path; do
+            [ -z "$img_path" ] && continue
+            base=$(basename "$img_path")
+            if find_name_references "$base" | grep -q .; then
+                echo "$img_path" >> "$TEMP_KEPT"
+            else
+                echo "$img_path" >> "$TEMP_ORPHAN"
             fi
         done
-        # 由于在管道中修改变量，这里通过再次计算行数来显示正确的数量
-        final_count=$(printf '%s\n' "$UNUSED_IMGS" | wc -l | tr -d ' ')
-        echo "✅ 清理完成！共删除了 $final_count 张未使用的图片。"
+
+        # 3.2 输出保留清单：图片路径 + 引用它的文件路径
+        if [ -s "$TEMP_KEPT" ]; then
+            echo "---------------------------------------------"
+            echo "🔒 以下图片路径引用已断，但文件名仍在文件中出现，予以保留："
+            while IFS= read -r kept_img; do
+                [ -z "$kept_img" ] && continue
+                echo "图片: $kept_img"
+                find_name_references "$(basename "$kept_img")" | while IFS= read -r ref_file; do
+                    echo "  ↳ 被引用于: $ref_file"
+                done
+            done < "$TEMP_KEPT"
+            echo "---------------------------------------------"
+        fi
+
+        # 3.3 只删除真孤儿（文件名在任何文件中都没出现过）
+        if [ -s "$TEMP_ORPHAN" ]; then
+            while IFS= read -r img_to_delete; do
+                if [ -n "$img_to_delete" ]; then
+                    rm -f "$img_to_delete"
+                    echo "已删除: $img_to_delete"
+                fi
+            done < "$TEMP_ORPHAN"
+        fi
+
+        deleted_count=$(wc -l < "$TEMP_ORPHAN" | tr -d ' ')
+        kept_count=$(wc -l < "$TEMP_KEPT" | tr -d ' ')
+        echo "✅ 清理完成！共删除了 $deleted_count 张未使用的图片，保留 $kept_count 张断链引用图片。"
     fi
 else
     echo "未发现任何本地图片。"
