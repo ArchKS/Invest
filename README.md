@@ -3,7 +3,7 @@
 
 > 仓库地址： https://github.com/ArchKS/invest
 > Typora插件： https://github.com/obgnail/typora_plugin
-[Structure.md](Structure.md)
+[structure.md](structure.md)
 
 
 ## 标的
@@ -199,6 +199,7 @@
 - [康方生物AK104卡度尼利深度分析.md](医药/康方/康方生物AK104卡度尼利深度分析.md)
 - [康方生物技术团队.md](医药/康方/康方生物技术团队.md)
 - [快乐鼠鼠.md](医药/康方/快乐鼠鼠.md)
+- [摘录.md](医药/康方/摘录.md)
 
 ### 医药/临床
 
@@ -226,10 +227,10 @@
 - [A4_MDS历史药物.md](医药/亚盛/A4_MDS历史药物.md)
 - [A5_2575竞品分析.md](医药/亚盛/A5_2575竞品分析.md)
 - [A6_V见解.md](医药/亚盛/A6_V见解.md)
+- [A7_毒性.md](医药/亚盛/A7_毒性.md)
 - [B1_亚盛_QA.md](医药/亚盛/B1_亚盛_QA.md)
 - [B2_阅读材料.md](医药/亚盛/B2_阅读材料.md)
 - [B3_亚盛入门报告.md](医药/亚盛/B3_亚盛入门报告.md)
-- [药理机制__x.md](医药/亚盛/药理机制__x.md)
 
 #### 医药/亚盛/非2575
 
