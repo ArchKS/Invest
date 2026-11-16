@@ -338,3 +338,26 @@ Cmax和AUC越高，疗效就越强，但毒性也越强
 推迟减量比例
 
 Venetoclax off-label使用，最新的真实世界数据显示，有较好支持治疗的个性化治疗下，cr率在30%左右，2023 iwg 的crc在50%左右，mos在26个月附近，和早期临床的数据非常一致
+
+
+
+
+
+
+
+# @其他
+
+
+
+## 美国医药分析师的采访链接
+
+**找到了。最符合你需求的是 Umer Raffat 和亚盛管理层的访谈，官网有视频及完整英文文字稿。**以下均来自[亚盛医药官网活动页](https://ir.ascentage.com/news-events/events)，已完成核对（第 3/3 步，2026 年 10 月 23 日）。
+
+| 日期            | 访谈与参与人                                                 | 官方链接                                                     | 重点／访问状态                                               |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **2026-06-22**  | **Evercore ISI：Umer Raffat** 对话董事长杨大俊、CFO Veet Misra | [视频访谈](https://ir.ascentage.com/events/event-details/fireside-chat-umer-raffat-evercore) · [完整文字稿 PDF](https://ir.ascentage.com/static-files/bc94bee6-7eb5-42c9-96d7-63aff963cc82) | **优先看这场**：APG-2575 与维奈克拉、sonrotoclax 的差异；MDS 数据、GLORA-4、申报时间。视频页及文字稿可访问。 |
+| **2025-09-04**  | **Cantor Fitzgerald：Li Watsek** 对话 CFO Veet Misra         | [官网访谈页](https://ir.ascentage.com/events/event-details/cantor-global-healthcare-conference-2025) · [完整文字稿 PDF](https://ir.ascentage.com/static-files/dd491d7a-efe8-44b1-b897-e5ab76374513) | 涉及 **VERONA 失败、GLORA-4 的 CR／OS 终点、AML 数据及国内商业化**。文字稿已核实。 |
+| **2026-03-04**  | **TD Cowen 第 46 届医疗健康会议**，炉边访谈                  | [官网活动页](https://ir.ascentage.com/events/event-details/td-cowen-46th-annual-health-care-conference) · [回放入口](https://event.summitcast.com/view/9z5g2VrV6e6rbCqQgDRoHA/h2PnsTULMFMgLQ8SeKzYxj) | 入口可访问，**要求填写姓名、公司及邮箱**；尚未核实主持分析师姓名和完整回放。 |
+| **2025-09-03**  | **Citi：John Whittaker** 对话 CFO Veet Misra                 | [官网访谈页及文字稿](https://ir.ascentage.com/events/event-details/citis-2025-biopharma-back-school-conference) · [回放入口](https://kvgo.com/2025-biopharma-back-to-school-conference/ascentage-pharma-group-sep-2025) | 公司管线、APG-2575 获批及商业化。**主持人自述来自花旗投行团队**，身份需与股票研究分析师区分。 |
+| **2026-05-20**¹ | **Stifel 靶向肿瘤论坛**，炉边访谈                            | [官网活动页](https://ir.ascentage.com/events/event-details/stifel-2026-virtual-targeted-oncology-forum) | 官网仍列回放链接，但目前显示 **“Lobby Unavailable”**，无法确认是否还能观看。 |
+
