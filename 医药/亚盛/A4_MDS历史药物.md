@@ -4,23 +4,13 @@ LastUpdate: 2026-11-07 11:16:56
 ---
 
 # MDS 适应症 20 年药物发展与治疗标准全景分析
-## ——兼论 Lisaftoclax（利沙托克拉，APG-2575）在 MDS 方向的探索与展望
-
-> 报告日期：2026-08-29。所有关键事实均附来源（格式：来源: 日期(URL)）。标注「公司口径」的数据来自企业新闻稿/会议披露，尚未经同行评议全文或监管审评文件确认。
-
 ---
 
 ## 摘要（结论先行）
 
 1. **MDS 药物发展呈清晰的"四阶段"结构**：支持治疗时代（2004 年前）→ 去甲基化药物（HMA）时代（2004–2019，阿扎胞苷/来那度胺/地西他滨三足鼎立）→ 分层精准治疗时代（2020 至今，低危端 luspatercept、imetelstat、ivosidenib 接连获批）→ 高危端联合策略屡败（2020–2025，VERONA 等 5 个 III 期全部失败）。
-
 2. **20 年间 MDS 领域 FDA 获批药物仅 7 个，且全部集中在低危端或维持 HMA 框架**：高危 MDS（HR-MDS）自 2004 年阿扎胞苷以来**没有任何新机制药物获批**，HMA 单药（CR 率仅约 15%–20%、真实世界中位 OS 14–18 个月）至今仍是不能移植患者的标准一线。
-
 3. **治疗标准的核心演变在于"分层"而非"换药"**：分层工具从 IPSS（1997，4 组）演进到 IPSS-M（2022，纳入 31 基因突变、6 组，重分层 46% 患者）；低危 MDS 已形成按 SF3B1/RS、del(5q)、输血依赖程度细分的路径，高危 MDS 仍以 HMA 单药 + 移植评估为骨架。
-
-4. **Lisaftoclax（利沙托克拉）是当前全球唯一进入 HR-MDS 注册 III 期（GLORA-4）的 BCL-2 抑制剂**：其 ND HR-MDS 早期数据 ORR 77.5%–80%、60 天死亡率 0、无 TLS（公司口径），药代上短半衰期（3–5 h vs 维奈克拉 26 h）支持 5 天快速爬坡；但维奈克拉 VERONA III 期的失败（OS HR 0.908）提示——**反应率优势不等于生存获益**，GLORA-4（预计 2029 年读出 OS）之前，一切"有效"表述只能限定在缓解率层面。
-
-5. **展望**：Lisaftoclax 在 MDS 的机会在于（i）VERONA 失败后成为赛道"独苗"；（ii）人群聚焦（限定原始细胞 >5% 的 HR-MDS）与给药优化（14 天/周期）吸取了 VERONA 教训；（iii）维奈克拉耐药后人群已有初步活性信号。核心风险在于 OS 终点本身的高难度、TP53 突变亚组的天然耐药、以及 BCL-2 类药物骨髓抑制毒性的管理。
 
 ---
 
@@ -35,12 +25,6 @@ LastUpdate: 2026-11-07 11:16:56
 ---
 
 ## 二、MDS 药物发展 20 年（2004–2026）：四个阶段
-
-![MDS 药物发展与关键事件时间轴](mds_药物发展时间轴.png)
-
-### 2.1 阶段一：支持治疗时代（2004 年前）——无药可用
-
-2004 年之前，MDS 没有任何获批药物，唯一手段是支持治疗：红细胞/血小板输注、促红细胞生成素（ESA）、G-CSF、抗感染和去铁治疗；异基因造血干细胞移植（allo-HSCT）是仅有的潜在治愈手段，但仅少数年轻、有供者、无严重合并症的患者适合。来源：PMC 综述 PMC3627328: (https://pmc.ncbi.nlm.nih.gov/articles/PMC3627328/)
 
 ### 2.2 阶段二：HMA 时代（2004–2019）——奠基的三个药
 
@@ -60,7 +44,11 @@ LastUpdate: 2026-11-07 11:16:56
 - 2006-05-02 FDA 批准，覆盖全部 FAB 亚型及 IPSS 中危-1/中危-2/高危；关键 III 期 CR+PR 仅 17%（CR 9%）。来源：FDA 孤儿药数据库: (https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=122298)；NCBI 综述 PMC4036667: (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4036667/)
 - 值得注意：EMA **未批准**地西他滨的 MDS 适应症（欧洲仅 2012 年批准其用于老年 AML），MDS 适应症的疗效证据标准在两大监管体系间并不一致。来源：EMA 评审综述（PubMed）: (https://pubmed.ncbi.nlm.nih.gov/27091416/)
 
-**时代特征**：HMA 确立了 HR-MDS 一线标准，但疗效天花板明显——CR 率不足 20%，且此后约 20 年高危 MDS 无新机制药物获批。Gilead 在 2023 年 ENHANCE 失败声明中的原话即"高危 MDS 近 20 年没有新一类药物获批"。来源：AJMC: (https://www.ajmc.com/view/top-5-most-read-myelodysplastic-syndromes-articles-of-2023)
+**时代特征**：HMA 确立了 HR-MDS 一线标准，但疗效天花板明显——CR 率不足 20%，且此后约 20 年高危 MDS 无新机制药物获批。Gilead 在 2023 年 ENHANCE 失败声明中的原话即"高危 MDS 近 20 年没有新一类药物获批"。
+
+
+
+
 
 ### 2.3 阶段三：分层精准时代（2020– ）——突破集中在低危端
 
@@ -72,7 +60,7 @@ LastUpdate: 2026-11-07 11:16:56
 | 艾伏尼布（ivosidenib，Tibsovo） | 2023-10-24 FDA | IDH1 突变 R/R MDS | 单臂 18 例，CR+PR 39%（全部 CR）；67% 输血依赖转独立 | **MDS 首个分子靶向药**（伴随诊断同步获批） |
 | Imetelstat（Rytelo） | 2024-06-06 FDA | ESA 失败/不耐受的输血依赖低危 MDS | IMerge：8 周 RBC-TI **39.8% vs 15%**；24 周 28% vs 3.3%（Lancet 2024） | **首个端粒酶抑制剂**；经 ODAC 12:2 投票获批 |
 
-来源：FDA luspatercept: 2020-04-03(https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-luspatercept-aamt-anemia-adults-mds)；FDA Inqovi 审批综述 PMC9378483: (https://pmc.ncbi.nlm.nih.gov/articles/PMC9378483/)；Cancer Network: 2023-08-29(https://www.cancernetwork.com/view/fda-approves-luspatercept-in-low-risk-myelodysplastic-syndrome)；FDA ivosidenib: 2023-10-24(https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ivosidenib-myelodysplastic-syndromes)；FDA imetelstat: 2024-06-06(https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imetelstat-low-intermediate-1-risk-myelodysplastic-syndromes-transfusion-dependent)
+
 
 **时代特征**：获批逻辑从"统一化疗样药物"变为"按生物学亚型/通路细分"——红细胞生成通路（luspatercept）、端粒酶（imetelstat）、IDH1 突变（ivosidenib）。**但这些突破全部集中在低危 MDS 的贫血管理，目标是输血独立（生活质量终点），无一证明 OS 获益**（imetelstat 获批时 FDA 明确指出无 CR/PR 或 OS 获益）。
 
@@ -89,20 +77,11 @@ LastUpdate: 2026-11-07 11:16:56
 | Sabatolimab（抗 TIM-3） | STIMULUS-MDS2（2024） | OS HR 0.85，p=0.0825 未达标；诺华 2024-01 全面终止该项目 |
 | **维奈克拉 venetoclax（BCL-2）** | **VERONA（2025-06 宣布失败）** | **OS HR 0.908，p=0.3772**；中位 OS 22.2 vs 21.7 个月 |
 
-来源：ONTIME（Lancet Oncol 2016）: (https://pubmed.ncbi.nlm.nih.gov/26968357/)；INSPIRE（SymBio IR）: (https://www.symbiopharma.com/en/ir/pdf/20220325_SR_4582_EN_20220325.pdf)；eprenetapopt（GlobeNewswire）: 2020-12-28(https://www.globenewswire.com/news-release/2020/12/28/2150874/0/en/Aprea-Therapeutics-Announces-Results-of-Primary-Endpoint-from-Phase-3-Trial-of-Eprenetapopt-in-TP53-Mutant-Myelodysplastic-Syndromes-MDS.html)；ENHANCE（Gilead 新闻稿）: 2023-07-21(https://www.gilead.com/news-and-press/press-room/press-releases/2023/7/gilead-to-discontinue-phase-3-enhance-study-of-magrolimab-plus-azacitidine-in-higher-risk-mds)；sabatolimab（pharmaphorum）: 2024-01-31(https://pharmaphorum.com/news/novartis-calls-time-tim3-drug-sabatolimab-mds)；VERONA（AbbVie 财报）: 2025-07-31(https://news.abbvie.com/2025-07-31-AbbVie-Reports-Second-Quarter-2025-Financial-Results)
+其中 **VERONA 的失败最具风向标意义**：维奈克拉+阿扎胞苷在 AML 已大获成功（VIALE-A），其 MDS Ib 期数据也极为亮眼（mOR 80.4%、中位 OS 26.0 个月，并曾获 FDA 突破性疗法认定（2021-07）；但 509 例 III 期中 OS 曲线基本重合——反应率（mOR 76.6% vs 57.7%、mCR 57.8% vs 37.5%）和输血独立率（55.7% vs 33.6%）的显著优势未能转化为生存获益。来源：Dana-Farber（ASH 2025 报告）: 
 
-其中 **VERONA 的失败最具风向标意义**：维奈克拉+阿扎胞苷在 AML 已大获成功（VIALE-A），其 MDS Ib 期数据也极为亮眼（mOR 80.4%、中位 OS 26.0 个月，Blood 2025: (https://pubmed.ncbi.nlm.nih.gov/39652823/)），并曾获 FDA 突破性疗法认定（2021-07）；但 509 例 III 期中 OS 曲线基本重合——反应率（mOR 76.6% vs 57.7%、mCR 57.8% vs 37.5%）和输血独立率（55.7% vs 33.6%）的显著优势未能转化为生存获益。来源：Dana-Farber（ASH 2025 报告）: 2025-12-06(https://physicianresources.dana-farber.org/news/phase-iii-verona-trial-results-show-potential-benefit-for-some-groups-with-myelodysplastic-syndrome-mds)；SOHO Insider: 2025-10-21(https://sohoinsider.com/news/verona-phase-3-trial-shows-no-survival-benefit-in-high-risk-mds)
+学界对 VERONA 失败的解读集中于两点：入组人群偏"软"（近 1/3 为中危、仅 27% 原始细胞增多，而 BCL-2 依赖性与原始细胞负荷相关）、TP53 突变者对 BCL-2 抑制天然不敏感。
 
-学界对 VERONA 失败的解读集中于两点：入组人群偏"软"（近 1/3 为中危、仅 27% 原始细胞增多，而 BCL-2 依赖性与原始细胞负荷相关）、TP53 突变者对 BCL-2 抑制天然不敏感。来源：综述 PMC13184396: (https://pmc.ncbi.nlm.nih.gov/articles/PMC13184396/)。这两条教训直接构成了后文 Lisaftoclax 试验设计的参照系。
 
-### 2.5 中国（NMPA）获批与医保脉络
-
-- **地西他滨**：2009 年进入中国并获原 SFDA 批准，长期是中国唯一可用的 HMA，衍生出 CAG/HAG 等本土联合方案。来源：Dove Medical Press 综述: 2015-10-03(https://www.dovepress.com/spotlight-on-decitabine-for-myelodysplastic-syndromes-in-chinese-patie-peer-reviewed-fulltext-article-OTT)
-- **阿扎胞苷（维达莎）**：2017 年 4 月获 CFDA 批准，2018 年纳入国家医保乙类（国内由百济神州销售）。来源：美通社（百济神州）: 2018-02-06(https://www.prnasia.com/story/201780-1.shtml)
-- **罗特西普（luspatercept/利布洛泽）**：2025-06-04 NMPA 批准较低危 MDS 贫血适应症（基于 COMMANDS/MEDALIST + 亚洲桥接 MDS-004），为**中国近 20 年来首个较低危 MDS 创新药**；2025 年 12 月纳入国家医保目录，并进入《CSCO 恶性血液病诊疗指南（2025）》一线推荐。来源：BMS 中国: 2025-06-04(https://www.bms.com/cn/media/press-release-listing/06042025.html)；新华网: 2025-12-08(http://www.news.cn/health/20251208/1d6292b712884af19e1dbff5548bccc8/c.html)
-- **利沙托克拉（lisaftoclax/利生妥）**：2025-07-10 NMPA 附条件批准（首个适应症为 BTKi 经治 CLL/SLL，非 MDS）——为中国首个、全球第二个获批的 BCL-2 抑制剂。来源：亚盛医药官网: 2025-07-10(https://www.ascentage.com/ascentage-pharma-announces-its-novel-bcl-2-inhibitor-lisaftoclax-approved-by-china-nmpa-ushering-in-a-new-era-for-the-treatment-of-cll-sll/)
-
----
 
 ## 三、治疗标准的演变：从"统一分层"到"分子整合"
 
@@ -114,124 +93,28 @@ LastUpdate: 2026-11-07 11:16:56
 | IPSS-R | 2012 | 细胞遗传学细化为 5 组 + 三系血细胞减少按严重度加权 | 5 组 |
 | IPSS-M | 2022 | 临床参数 + 细胞遗传学 + **31 基因突变**（TP53 multi-hit 为最强不良因素 HR 3.27；SF3B1 为保护性因素） | 6 组 |
 
-IPSS-M 将 46% 患者重新分层（74% 上调），IPSS-R 中危患者中 21% 被上调至极高危——分子信息直接改变治疗决策。来源：Greenberg et al., Blood 2012;120:2454；Bernard et al., NEJM Evidence: 2022-06-28(https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200008)；独立验证（Blood Cancer Journal 2023）: (https://www.nature.com/articles/s41408-023-00894-8.pdf)
+IPSS-M 将 46% 患者重新分层（74% 上调），IPSS-R 中危患者中 21% 被上调至极高危——分子信息直接改变治疗决策
 
 ### 3.2 低危 MDS（LR-MDS）现行治疗路径（以 NCCN v2.2025 为代表）
 
 - **症状性贫血 + RS≥15%（或 RS≥5% 伴 SF3B1 突变）**：一线 **luspatercept**（1 类首选）；失败后换 **imetelstat**（1 类首选）；sEPO≤200 者仍可先用 ESA。
 - **del(5q)**：来那度胺。
 - **RS<15% 且 sEPO≤500**：ESA 与 luspatercept 并列首选；sEPO>500 者评估免疫抑制治疗（IST）候选或进入 HMA/imetelstat。
-- 来源：JNCCN（NCCN Guidelines Insights MDS v2.2025）: 2025-03-10(https://jnccn.org/view/journals/jnccn/23/3/article-p66.xml?print)
+- 来源：JNCCN（NCCN Guidelines Insights MDS v2.2025）
 
 低危端的目标已从"维持血象"升级为"摆脱输血依赖"（RBC-TI），luspatercept（COMMANDS 58.5% vs 31.2%）与 imetelstat（IMerge 39.8% vs 15%）构成了 ESA 之后的两条新支柱。
 
 ### 3.3 高危 MDS（HR-MDS）现行治疗路径
 
-- **唯一潜在治愈手段仍是 allo-HSCT**；不适合移植者以 **HMA 单药**（阿扎胞苷/地西他滨/口服 Inqovi）为标准一线；适合强化疗者的 AML 样诱导多作为移植桥接。来源：NCCN 患者指南 2026: (https://www.nccn.org/patients/guidelines/content/pdf/mds-patient.pdf)；Haematologica 综述（Kröger N）: 2025-02-01(https://aamds.org/research-article/treatment-high-risk-myelodysplastic-syndromes)
-- 中国《MDS 中国诊断与治疗指南（2026 年版）》（中华血液学杂志，2026-02 上线）：较低危路径纳入艾伏尼布（IDH1）、TPO-RA；较高危路径注明"**HMA+维奈克拉用于复发难治患者或移植前桥接治疗**"。来源：PubMed 41839623: 2026-02-14(https://pubmed.ncbi.nlm.nih.gov/41839623/)
+- **唯一潜在治愈手段仍是 allo-HSCT**；不适合移植者以 **HMA 单药**（阿扎胞苷/地西他滨/口服 Inqovi）为标准一线；适合强化疗者的 AML 样诱导多作为移植桥接。来源：NCCN 患者指南 2026
+- 中国《MDS 中国诊断与治疗指南（2026 年版）》（中华血液学杂志，2026-02 上线）：较低危路径纳入艾伏尼布（IDH1）、TPO-RA；较高危路径注明"**HMA+维奈克拉用于复发难治患者或移植前桥接治疗**"
 
 ### 3.4 未满足需求（量化）
 
-1. **HMA 单药疗效天花板**：试验口径 CR 约 15%–17%、中位 OS 约 24.5 个月（AZA-001）；真实世界中位 OS 仅 14–18 个月，约 50% 患者原发耐药。2025 年综述结论："联合方案迄今未能改写 HMA 单药范式"。来源：PMC2948932: (https://pmc.ncbi.nlm.nih.gov/articles/PMC2948932/)；AME 述评: 2026-06-04(https://aob.amegroups.org/article/view/13020/html)；Stempel et al., Cancers 2025: (https://pubmed.ncbi.nlm.nih.gov/40805168/)
-2. **HMA 失败后无标准方案**：R/R MDS 中位 OS 仅 4–6 个月（原发耐药 4.6 vs 继发 7.4 个月）；转化 AML 后中位 OS 约 4 个月。来源：Adès L 综述 PMC8925703: (https://pmc.ncbi.nlm.nih.gov/articles/PMC8925703/)；Blood Cancers Today: 2022-09-30(https://www.bloodcancerstoday.com/post/poor-prognosis-after-transformation-to-aml-following-hma-therapy-in-mds)
-3. **TP53 突变 MDS**：对化疗、HMA、维奈克拉方案反应均差；multi-hit TP53 中位 OS 约 8.7 个月、5 年 OS<10%（即使移植）。来源：Cancer Discov 2022（PMC9627130）: (https://pmc.ncbi.nlm.nih.gov/articles/PMC9627130/)；Frontiers in Oncology 综述: 2026-02-23(https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1735418/full)
-4. **老年主体人群难以触及根治手段**：约 80% HR-MDS 患者诊断时即不适合移植（首要原因高龄）；60–80 岁患者仅 6%–8% 实际接受 allo-HSCT。来源：Dove Medical Press 真实世界研究: (https://www.dovepress.com/article/download/104178)；MDPI 综述: 2024-04-29(https://www.mdpi.com/2227-9059/12/5/975)
-
----
-
-## 四、Lisaftoclax（利沙托克拉，APG-2575）在 MDS 方向的探索与展望
-
-### 4.1 药物背景：一个"后发但差异化"的 BCL-2 抑制剂
-
-- **基本情况**：亚盛医药（Ascentage Pharma，6855.HK / NASDAQ: AAPG）自主研发的口服选择性 BCL-2 抑制剂，中国商品名"利生妥®"；2025-07-10 获 NMPA 附条件批准用于 BTKi 经治 CLL/SLL，是中国首个、全球第二个获批的 BCL-2 抑制剂。来源：亚盛医药官网: 2025-07-10（同上）；The Cancer Letter: 2025-07-11(https://cancerletter.com/drugs-and-targets/20250711_11b/)
-- **关键差异化（vs 维奈克拉）**：
-  - **药代**：半衰期约 3–5 小时（维奈克拉约 26 小时），高 Cmax、低蓄积 → 支持 **5 天每日递增完成爬坡**（维奈克拉需 5 周），这对骨髓储备差的 MDS 老年患者的剂量管理有实际意义。
-  - **安全性**：首次人体研究（52 例）无临床/实验室 TLS；CLL 大样本（176 例）TLS 仅 2.8%、≥3 级血小板减少 8.5%——骨髓抑制相关毒性谱理论上更可控。
-  - 来源：Ailawadhi et al., Clin Cancer Res 2023（PMC10330157）: (https://pmc.ncbi.nlm.nih.gov/articles/PMC10330157/)；Med 2025（PubMed 41109219）: (https://pubmed.ncbi.nlm.nih.gov/41109219/)
-- **权益格局**：与信达生物的 2.45 亿美元合作（2021-07）仅涉及联合用药临床合作与股权；武田 13 亿美元交易（2024-06）标的是奥雷巴替尼——**利沙托克拉的全球权益完整保留在亚盛手中**。来源：亚盛官网: 2021-07-14(https://www.ascentage.com/ascentage-pharma-and-innovent-biologics-reach-multifaceted-strategic-agreement-totaling-us245-million-.../)；亚盛官网: 2024-06-14(https://www.ascentage.com/ascentage-pharma-signs-option-agreement-with-takeda-.../)
-
-### 4.2 MDS 临床数据时间线（均为公司会议披露口径，尚未见同行评议全文）
-
-| 时间/会议 | 研究 | 人群与样本 | 核心数据 |
-|---|---|---|---|
-| ASH 2023 #2925 | 中国 I 期 | 22 例 MDS（15 初治/7 R/R） | MDS 队列 ORR **70.0%**，CR/mCR 60.0%；无 TLS |
-| **ASH 2024 #3202** | 中国 Ib/II 期 APG2575AC101（NCT04501120），联合 AZA | 49 例（41 初治 + 8 R/R；TP53 突变占 23.1%） | 初治 MDS ORR **77.5%**、CR 25.0%；600mg 组按 IWG2023 复合 CR **69.6%**；**60 天死亡率 0、TLS 0**；≥3 级血液学 TRAE 高（中性粒细胞减少 65.3%、血小板减少 65.3%）但剂量降低仅 8.2% |
-| ASCO 2025 #6505（口头） | 全球 Ib/II 期 APG2575AU101（NCT04964518） | 97 例（含 15 例 ND HR-MDS） | TN-MDS/CMML ORR 64%；确定 ND HR-MDS 的 RP2D 为 600mg D1–14 |
-| **ASH 2025 #1641** | 同上研究更新 | 103 例（40 例 HR-MDS/CMML） | **ND HR-MDS/CMML：ORR 80.0%、CR 40.0%、mCR 40.0%**，中位 OS 未达到；R/R HR-MDS/CMML 中位 OS 11.3 个月；维奈克拉经治 AML/MPAL ORR 31.8%——公司称"BCL-2 克服 BCL-2 耐药"的首个临床证据 |
-
-来源：亚盛官网 ASH 2024 数据稿: 2024-12-10(https://www.ascentage.com/live-from-ash-2024-ascentage-pharma-releases-updated-data-of-bcl-2-inhibitor-lisaftoclax-in-mds-that-demonstrates-potential-clinical-benefits-and-favorable-safety/)；ASH 2024 摘要页: (https://ash.confex.com/ash/2024/webprogram/Paper205371.html)；亚盛官网 ASH 2025 数据稿: 2025-12-07(https://ascentage.com/ash-2025-ascentage-pharma-presents-encouraging-data-from-phase-ib-ii-study-of-bcl-2-inhibitor-lisaftoclax-in-venetoclax-exposed-patients-with-myeloid-malignances/)
-
-**数据解读要点**：反应率层面（ORR 77.5%–80%）与维奈克拉 Ib 期（mOR 80.4%）处于同一量级；真正的差异化信号在于**安全性结构**（0 早期死亡、0 TLS、骨髓抑制可管理）和**给药便利性**（5 天爬坡）。但必须强调：VERONA 已经证明此类反应率优势在 III 期可能完全不转化为 OS——早期单臂数据的"惊艳"在 MDS 领域有反复破灭的先例（eprenetapopt 早期 ORR 87%→III 期失败；magrolimab 早期 ORR 75%→终止）。
-
-### 4.3 GLORA-4：全球注册 III 期（MDS 适应症成败的决胜局）
-
-- **登记号**：NCT06641414（方案号 APG2575MG301）；设计为全球多中心、随机、双盲、安慰剂对照 III 期：**利沙托克拉 + 阿扎胞苷 vs 安慰剂 + 阿扎胞苷，一线治疗新诊断 HR-MDS，主要终点 OS**；给药为利沙托克拉 D1–14 + AZA D1–7（28 天/周期）。来源：CenterWatch: (https://www.centerwatch.com/clinical-trials/listings/NCT06641414/)；Duke Health 研究页: (https://www.dukehealth.org/clinical-trials/directory/pro00120001)
-- **规模与进度**：计划入组约 490 例（CenterWatch/Veeva 口径；中文媒体引公司口径为 464 例，以 ClinicalTrials.gov 为准），预计 2029 年完成；中国 CDE 2024-05 给予临床许可，**2025-08-17 FDA 与 EMA 双双许可**，中美欧同步入组。来源：亚盛官网: 2025-08-17(https://www.ascentage.com/ascentage-pharma-announces-global-registrational-phase-iii-study-of-lisaftoclax-for-first-line-treatment-of-patients-with-higher-risk-myelodysplastic-syndrome-cleared-by-us-fda-and-ema/)；亚盛 2024 年报（HKEX）: 2025-04-16(https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0416/2025041601729.pdf)
-- **学术背书**：全球共同牵头 PI 为 Guillermo Garcia-Manero（MD Anderson 白血病系主任，VERONA 的报告者）与黄晓军院士（北京大学人民医院）。
-- **定位**（公司口径）：利沙托克拉是"**目前全球唯一进入 HR-MDS 注册 III 期的 BCL-2 抑制剂**"；若成功，有望成为"HMA 之后 20 余年来首个 HR-MDS 一线靶向疗法"。来源：亚盛官网: 2025-08-17（同上）
-
-**与 VERONA 的设计对比（吸取的教训）**：
-
-| 维度 | VERONA（维奈克拉，失败） | GLORA-4（利沙托克拉） |
-|---|---|---|
-| 人群 | IPSS-R 中危+高危（近 1/3 中危，原始细胞负荷偏低） | 聚焦 ND HR-MDS（中国 Ib/II 期入组要求原始细胞 >5%、IPSS-R>3.5），人群更"硬" |
-| 给药强度 | 维奈克拉 14 天/28 天（从 28 天减量而来，骨髓毒性驱动减量/中断更多） | 利沙托克拉 D1–14；短半衰期药物理论上周期内清除更快、蓄积更少 |
-| 终点 | OS 主要终点（CR 双主要终点） | OS 主要终点 |
-| 背景 | AML 成功外推 + Ib 期乐观数据 | Ib/II 期数据 + VERONA 的事后教训 |
-
-### 4.4 竞争格局
-
-- **维奈克拉（AbbVie/罗氏）**：VERONA 失败后 MDS 开发前景冻结（至今无 MDS 适应症），但亚组信号（>5% 原始细胞、需桥接移植者）提示 BCL-2 机制在 MDS 并未被"证伪"，只是未在广谱人群中证明 OS。来源：Dana-Farber: 2025-12-06（同上）；SOHO Insider: 2025-10-21（同上）
-- **Sonrotoclax（BGB-11417，百济神州/BeOne）**：下一代 BCL-2 抑制剂，经 Ib/II 期 BGB-11417-103（NCT04771130）布局 AML/MDS/MDS-MPN，但其 III 期重心在 CLL/NHL，MDS 尚无注册性研究。来源：BeOne Medical Affairs: (https://beonemedaffairs.com/us/clinical-trials/hematology/bgb-11417-103-trial/)
-- **非 BCL-2 赛道**：bexmarilimab（BEXMAB，TP53 突变 HR-MDS，2025-08 获 FDA 同意推进注册性 2/3 期）、IRAK1/4 抑制剂等仍在角逐。来源：MDS Foundation 汇编: (https://www.mds-foundation.org/api/file/file/Fall%202025%20MDS%20News_DIGITAL_opt.pdf)
-- **中国 IIT 探索**：已有研究者发起"利沙托克拉+地西他滨用于维奈克拉治疗失败 MDS"的单臂 II 期（ChiCTR2600125359，24 例，2026-01 首例入组）——切入维奈克拉耐药这一真实未满足场景。来源：药融云引 ChiCTR: 2026-05-26(https://www.pharnexcloud.com/data/lcsy_03dee88950a3d97a885c927a9a924d66.html)
-- **指南认可**：2026 版《CSCO 淋巴瘤诊疗指南》与《CSCO 恶性血液病诊疗指南》均已纳入利沙托克拉，覆盖 CLL/SLL、AML、MDS。来源：经济观察网: 2026-05-17(http://www.eeo.com.cn/2026/0517/880191.shtml)
-
-### 4.5 展望：机会与风险
-
-**机会**
-1. **赛道独占性**：VERONA 出局后，GLORA-4 是 BCL-2 机制在 HR-MDS 唯一的注册级赌注，若读出阳性将直接定义"HMA+BCL-2"新标准，且中美欧三地同步申报路径已打开。
-2. **人群聚焦策略**：限定 HR-MDS（原始细胞 >5%）避开了 VERONA"中危人群稀释效应"的坑——BCL-2 依赖性与原始细胞负荷正相关，聚焦人群理论上效应量更大。
-3. **安全性即差异化**：MDS 患者基线血细胞减少严重（ASH 2024 队列基线 ≥3 级贫血 70.8%），短半衰期 + 5 天爬坡 + 低 TLS/低早期死亡，可能减少剂量中断——VERONA 中联合组 AZA 减量/中断更频繁正是其被诟病的因素之一。
-4. **耐药后市场**：维奈克拉经治人群的初步活性（AML/MPAL ORR 31.8%）+ 中国 IIT 布局，为"BCL-2 耐药后 BCL-2"这一新叙事提供支点。
-
-**风险**
-1. **OS 终点的历史魔咒**：HR-MDS 领域近 10 年 6 个 III 期全部倒在 OS/EFS 上；利沙托克拉的反应率数据与维奈克拉同量级，没有先验理由保证 OS 结局不同。MDS 的 OS 受后续治疗（移植、进展为 AML 后的治疗）高度混杂——VERONA 中移植率差异（17% vs 13%）即是例子。
-2. **TP53 亚组**：约占 HR-MDS 20%–25%（ASH 2024 队列中 23.1%），对 BCL-2 抑制天然不敏感；GLORA-4 若未对 TP53 分层富集或排除，该亚组可能稀释整体效应。
-3. **单臂早期数据的固有偏倚**：现有 MDS 数据均为公司披露的单臂 Ib/II 期、样本量小（核心队列 40–49 例）、随访短（中位 OS 均未达到），骨髓抑制率并不低（≥3 级中性粒细胞减少 65%）。
-4. **商业化不确定性**：利沙托克拉中国定价（约 ¥6,590/盒，药房报价口径）且尚未见进入国家医保的公开信息；即便 GLORA-4 成功，MDS 人群以老年为主，支付能力/医保准入将决定放量天花板。来源：北京美信康年药房网: (https://www.bjmxkn.com/mx3000.html)
-
-### 4.6 前瞻性验证里程碑表（建议跟踪清单）
-
-| 里程碑/指标 | 时间窗 | 确认信号（强化判断） | 挑战信号（削弱判断） | 触发动作 |
-|---|---|---|---|---|
-| GLORA-4 入组进度 | 2026–2028 | 按计划完成中美欧入组（约 490 例） | 入组显著延迟/方案修订 | 重新评估 2029 读出时点 |
-| ASH/EHA 2026–2027 数据更新 | 每年 6 月/12 月 | 中位 OS 趋于成熟且数值 >24 个月；TP53 亚组有活性 | 随访延长后缓解持续时间快速衰减 | 下调 OS 阳性概率假设 |
-| GLORA-4 OS 读出 | 预计 2029 | **HR<0.80 且 p<0.05**；CR/复合 CR 同步显著 | 重蹈 VERONA（HR≥0.90） | 阳性→关注 NMPA/FDA 申报；阴性→管线价值重估 |
-| 维奈克拉耐药 IIT（ChiCTR2600125359） | 2026–2027 | ORR≥30% 且有缓解持续 | ORR<15% | 评估"耐药后"适应症拓展价值 |
-| 中国医保谈判（CLL 适应症） | 2026–2027 | 纳入 NRDL → MDS 适应症未来可及性改善 | 连续未进医保 | 调整中国市场放量预期 |
-| 监管资格认定 | 持续 | MDS 获 FDA 突破性疗法/孤儿药认定（目前 5 项 ODD 不含 MDS） | 无进展 | 影响审评速度与独占期假设 |
-
----
-
-## 五、总结
-
-过去 20 年，MDS 的药物发展史是一部"低危端节节突破、高危端原地踏步"的不对称历史：低危 MDS 已从"输血+ESA"演进到 luspatercept、imetelstat、ivosidenib 按亚型精准管理的时代；而高危 MDS 自 2004 年阿扎胞苷确立 HMA 标准后，所有"HMA+1"联合尝试（包括曾最被看好的维奈克拉 VERONA）均未能在 III 期证明 OS 获益。分层体系本身则从细胞遗传学时代跨入分子时代（IPSS-M），为"把对的药给对的人"提供了工具。
-
-Lisaftoclax 恰是在这一背景下接过了 BCL-2 机制在 MDS 的接力棒：差异化的药代/安全性结构、聚焦高危人群的试验设计、VERONA 失败后的赛道独占位置，构成了它的机会；而 MDS 领域 OS 终点的历史魔咒、TP53 亚组、以及单臂早期数据的固有不确定性，构成了它的风险。**GLORA-4 的 OS 读出（预计 2029 年）将是下一个十年 MDS 治疗格局最重要的单一事件**——它若成功，将终结 HR-MDS 二十余年无新机制药物获批的历史；它若失败，BCL-2 机制在 MDS 的探索很可能整体退回到"桥接移植/特定亚组"的窄场景。
-
----
-
-## 附录：数据口径与引用说明
-
-1. 疗效数据分「临床试验口径」与「真实世界口径」：AZA-001 中位 OS 24.5 个月为试验口径，真实世界 HMA 单药中位 OS 14–18 个月。
-2. Lisaftoclax 的 MDS 疗效数据（ORR 77.5%–80% 等）均为**公司会议披露口径**（ASH 2024/2025 摘要），单臂、小样本，尚未见同行评议全文与独立审评确认。
-3. GLORA-4 样本量存在 464（公司中文口径）与 490（登记平台口径）两种表述；完成时间 2029-06 / 2029-12 亦有差异，以 ClinicalTrials.gov（NCT06641414）当前记录为准。
-4. 中国 MDS 年新发存在"约 2.2 万例"（弗若斯特沙利文市场口径）与"30 余万"（专家按德国发病率外推）两种差异 >10 倍的估计，本报告正文采用前者并标注来源。
-5. 维奈克拉 VERONA 为阴性试验：任何"BCL-2 抑制剂在 HR-MDS 有效"的表述仅适用于反应率层面，OS 获益尚无任何 III 期证据。
-6. 三份详细调研笔记（含全部来源链接）存于本目录：`MDS药物获批史调研笔记.md`、`MDS调研笔记.md`、`lisaftoclax-MDS-调研笔记.md`。
-
-
+1. **HMA 单药疗效天花板**：试验口径 CR 约 15%–17%、中位 OS 约 24.5 个月（AZA-001）；真实世界中位 OS 仅 14–18 个月，约 50% 患者原发耐药。
+2. **HMA 失败后无标准方案**：R/R MDS 中位 OS 仅 4–6 个月（原发耐药 4.6 vs 继发 7.4 个月）；转化 AML 后中位 OS 约 4 个月。
+3. **TP53 突变 MDS**：对化疗、HMA、维奈克拉方案反应均差；multi-hit TP53 中位 OS 约 8.7 个月、5 年 OS<10%（即使移植）。
+4. **老年主体人群难以触及根治手段**：约 80% HR-MDS 患者诊断时即不适合移植（首要原因高龄）；60–80 岁患者仅 6%–8% 实际接受 allo-HSCT
 
 
 
@@ -280,53 +163,6 @@ Treg浸润本身会导致自身免疫，免疫细胞攻击正常细胞，导致�
 
 
 
-## 过往MDS临床
-
-$亚盛医药-B(06855)$
-GLORA4的临床试验虽然还在入组，而实际上的试验结果，公司都已经看到了。
-1.取得CR的患者，无论是持续用药，还是去接受骨髓移植，生存期都非常显著比没有取得CR的患者更长。
-2.只要治疗组CR率显著高于对照组，OS做出来也是顺理成章。
-3.VERONA不仅仅是OS未取得统计学差异的优效，CR率相比对照组AZA单药也几乎没有差异。
-4.联合治疗CR率比单药高很多，在Bcl2过往的临床试验，以及在真实世界应用中，都是如此。
-5.VERONA试验失败的根本原因是治疗组AZA减量的比例过大，减了一半多的剂量，造成了疗效不足。
-6.GLORA4就看整体AZA减量的比例，就能知道最后的结果了。如果AZA减量比例低，同时就算减量，也是减到50mg而非36mg，那么CR率做出阳性结果就顺理成章了。
-7.而前两个周期减量的情况，公司临床团队肯定是随时掌握的，所以在JP Morgan的时候，大俊已经说得非常直白了。
-
-
-GLORA-4，一线HR-MDS，APG2575靠什么来赢下全球三期？：https://xueqiu.com/1393486978/351692187
-
-
-- 药理机制
-  - Venetoclax、Sonrotoclax、Lisaftoclax
-  - 半衰期、BCL-2亲和力、BCL-xL选择性、起效时间（快速细胞进入）、代谢通路
-- 疾病特征
-  - CLL/SLL、AML、MDS，CLL对BCL-2很敏感，AML会更多依赖MCL-1
-- 过往历史
-  - Venetoclax、off-label、真实人群
-  - 其余MDS药物
-
-药物研究的基本范式：从药理预测临床结果，从临床结果验证、迭代药理机制，只盯着临床的数据，就像无根浮萍，没有锚点，心里就没底。
-
-故本文也是如此，先看药物设计的底层逻辑，再用这个逻辑去验证早期临床反应和数据，再根据结果，看有无增量信息或原来的药物原理假象是否有漏洞，进行增删改，行程新的机理，进行下次临床预测，循环往复进行迭代。
-
-
-
-> 构建药理机制，根据已有临床数据印证，根据药理机制推导进行中临床的结果，根据临床结果再次印证药理机制，如果发现对不齐，则重新构建药理机制。从早期临床到1b、到2期、到3期，一步一步构建和验证
->
-> 根据这个范式，能否预测维特克拉会在AZA联用时失败，进而预测MDS适应症中的失败？当时的人是否有过这类担忧？还是说大概知道会失败，但还是做了这个**VIALE-A**三期临床
-
-
-
-《我的创新药选股策略》一文讲了我自己的创新药选股方式，但还有几点需要补充的，一个是漏了临床入组标准，一个是创新药和其他行业的区别。
-
-药企临床入组标准越符合真实世界患者分布或者入组患者越难治，到了开大三期临床时，暴雷的可能性越低。如果初期临床就筛选患者去做好数据，那我会比较担心这款药。分析一家药企，最重要的是看它药好不好。一方面是药理机制和同类产品的差异，对比其优劣；另一方面是过往临床数据分析。由于人体机制的复杂，很多时候也是用临床反推药理，最后还是要落到临床上看，所以我会比较在乎药企临床的选择。
-
-创新药和其他行业有个很明显的区别，药的好坏有**标准客观且信息详实**：一款药能延长20%的患者2年寿命还是5年，都有客观的临床数据做支撑。很多投资的错误是投资者主观臆断出来的，倘若可以在推断中提高客观信息的比例，推断的结论会更真实
-
-普通人和机构基本没有信息差距，药物临床数据都是公开的，竞品信息也容易获得，搞内幕交易的除外，更多的还是认知差距。
-
-
-
 
 
 ## VEN+AZA在MDS失败的原因以及对2575+AZA的启示
@@ -365,7 +201,7 @@ MDS病症下患者贫血、中性粒细胞低、血小板低、正常造血储�
 >
 > 一句话概括：AZA通过干扰异常细胞的DNA和RNA发挥作用，但正常造血细胞也需要快速合成DNA和RNA，因此会被同时抑制。
 
-AZA的作用是表观遗传调节 + 温和细胞毒，降低异常甲基化，改善异常造血克隆、改善分化、延缓疾病进展、改善血象、骨髓抑制明显。由此产生的结果是血液学改善 HI、输血依赖减少、AML 转化延后、OS 延长、治疗期间骨髓抑制、感染、血小板低/中性粒低常见。AZA不擅长大幅度清除癌变细胞。临床数据上就是CR弱，OS行。
+AZA的作用是改善异常造血克隆、改善分化、延缓疾病进展、改善血象、骨髓抑制明显。由此产生的结果是血液学改善 HI、输血依赖减少、AML 转化延后、OS 延长、治疗期间骨髓抑制、感染、血小板低/中性粒低常见。AZA不擅长大幅度清除癌变细胞。临床数据上就是CR弱，OS行。
 
 | 指标          | AZA          | 低剂量阿糖胞苷 / 强化化疗 |
 | ------------- | ------------ | ------------------------- |
@@ -374,24 +210,6 @@ AZA的作用是表观遗传调节 + 温和细胞毒，降低异常甲基化，�
 | CR            | **约17%**    | 约8%                      |
 | CR + PR       | **约29%**    | 约12%                     |
 | 血液学改善 HI | **约49%**    | 约29%                     |
-
-
-
-AZA+VEN：缓解更深，但毒性和治疗中断可能更重，最终毒副作用大于OS获益。
-
-**为什么 AML 里 VEN+AZA 可以成功，MDS 里却可能不行**？
-
-AML 里疾病负荷高、进展快：不强力杀白血病细胞，患者很快进展/死亡，所以 VEN 带来的杀伤增益很大，足以超过毒性成本。
-
-MDS 病程相对慢一些，主要问题是无效造血和血细胞低，患者需要长期维持造血功能。这时如果联用药物让血象更差，OS 就容易被抵消。
-
-AML：房子着火，强力灭火剂值得用，哪怕有副作用
-
-MDS：房子线路老化，不能用太猛的灭火剂把电路也冲坏
-
-AZA 单药在 MDS 中靠较温和、可持续的表观遗传调节延缓病程；VEN+AZA 虽然可能更强地清除异常克隆、提高缓解率，但在骨髓储备很差的 MDS 患者中会加重骨髓抑制、感染和治疗中断，导致缓解率提升不一定转化为 OS 获益。
-
-
 
 # 过往MDS失败案例汇总
 
@@ -424,201 +242,25 @@ AZA 单药在 MDS 中靠较温和、可持续的表观遗传调节延缓病程�
 - **CC-486 口服阿扎胞苷**（Onureg，QUAZAR）— AML 维持治疗，✅ 获批。
 - ➟ **关键启示**：钱和人才没有变，变的是**适应症选择**——同一批 KOL 在低危/维持领域捷报频传，在 HR-MDS 一线却全军覆没。风险不在团队，在"赛道"。
 
-BCL-2（B-cell lymphoma 2）靶点的药物开发史是肿瘤靶向治疗领域最富教育意义的篇章之一。从2000年代初ABT-737的概念验证到2016年venetoclax（维奈克拉，ABT-199）成为首个获批的BCL-2抑制剂，这一过程凝聚了超过20年的结构生物学、药物化学和临床研究积累。在此期间，至少10个BCL-2靶向药物在临床试验中遭遇失败，每一次失败都为后续分子的设计提供了关键指导。对于APG-2575（lisaftoclax）而言，系统理解这一历史不仅有助于评估其技术路线的合理性，更能帮助预判其在GLORA系列试验中可能面临的陷阱。
 
-### 3.1 Navitoclax（ABT-263）的失败教训
 
-#### 3.1.1 剂量限制性血小板减少的生化根源：BCL-XL脱靶抑制导致循环血小板凋亡
-
-Navitoclax（ABT-263）是AbbVie基于ABT-737优化的口服BCL-2家族抑制剂，对BCL-2、BCL-XL和BCL-W均具有亚纳摩尔级别的亲和力（BCL-xL Ki ≤ 0.5 nM，BCL-2 Ki ≤ 1 nM，BCL-w Ki ≤ 1 nM）。在Phase I临床试验中，navitoclax在CLL和SCLC（small cell lung cancer，小细胞肺癌）患者中展现出明确的抗肿瘤活性，但所有患者均出现血小板减少，且该毒性呈剂量依赖性，在给药后24–72小时内血小板计数降至最低点，与动物模型中BCL-XL抑制的动力学完全平行 。
-
-这一毒性的生化根源在于BCL-XL在血小板中高度表达，是维持循环血小板存活的关键抗凋亡蛋白。Mason等人2007年在Cell上发表的研究首次证实，BCL-XL通过抑制BAK/BAX介导的线粒体外膜通透化（MOMP，mitochondrial outer membrane permeabilization）来维持血小板寿命 。当navitoclax以有效抗肿瘤剂量给药时，对BCL-XL的同步抑制触发了血小板的程序性凋亡，导致治疗窗口极度狭窄——有效剂量与产生严重血小板减少的剂量高度重叠。间歇给药策略虽可部分恢复血小板计数，但肿瘤暴露时间不足，无法解决根本矛盾。
-
-Navitoclax的肿瘤适应症开发最终因此终止，但其在衰老细胞清除（senolytic）领域的 repurposing 获得了新生。研究人员开发了Nav-Gal（半乳糖偶联前药），利用衰老细胞高表达β-半乳糖苷酶（SA-β-gal）的特性实现选择性释放，在保持senolytic活性的同时显著降低血小板毒性 。
-
-#### 3.1.2 对后续药物设计的启示：选择性>效力，BCL-2/BCL-XL选择性是成药的前提
-
-Navitoclax的失败为BCL-2靶点药物设计留下了最核心的教训：**选择性优于绝对效力**。AbbVie的研究团队通过反向工程navitoclax的结构，系统移除或替换关键结合元件，并引入氮杂吲哚（azaindole）作为P4口袋的新结合基团，最终获得了venetoclax（ABT-199）——一种对BCL-2具有极高亲和力（Ki < 0.01 nM）而对BCL-XL亲和力低约5,000倍（Ki = 48 nM）的高度选择性抑制剂 。这一结构优化的结果是venetoclax在体外和体内均显著减少对血小板的损伤，同时具备强大的抗白血病活性。
-
-APG-2575的设计同样遵循了这一原则。临床前数据显示，APG-2575对BCL-XL的选择性窗口超过1,000倍（venetoclax约325倍），在临床试验中未观察到显著的剂量限制性血小板减少 。这验证了Navitoclax教训的普适性——在BCL-2家族抑制剂的设计中，规避BCL-XL是成药的第一道门槛。
-
-### 3.2 Venetoclax的成功路径
-
-Venetoclax于2016年4月获FDA加速批准，成为首个上市的BCL-2抑制剂，至今已在CLL、SLL、AML等适应症中建立了标准治疗地位，2024年全球销售额约26亿美元 。其成功建立在三大支柱性III期试验之上——CLL14、MURANO和VIALE-A——并辅以6次FDA突破性疗法认定（Breakthrough Therapy Designation, BTD）。
-
-**表1 Venetoclax关键III期试验汇总**
-
-| 试验    | 适应症                 | 设计             | 样本量 | 主要终点   | 试验组结果                                  | 对照组结果                    | HR (95% CI)                               |
-| :------ | :--------------------- | :--------------- | :----- | :--------- | :------------------------------------------ | :---------------------------- | :---------------------------------------- |
-| CLL14   | 一线CLL（伴合并症）    | 开放标签、随机   | 432    | 研究者PFS  | 中位PFS 76.2月；6年PFS率 53%；PB uMRD 76%   | 中位PFS 36.4月；PB uMRD 35%   | PFS 0.31–0.40                             |
-| MURANO  | R/R CLL                | 开放标签、随机   | 389    | IRC评估PFS | 中位PFS 54.7月；7年OS率 69.6%；EOT uMRD 62% | 中位PFS 17.0月；7年OS率 51.0% | PFS 0.23 (0.18–0.29)；OS 0.53 (0.37–0.74) |
-| VIALE-A | 一线AML（≥75岁/unfit） | 双盲、安慰剂对照 | 431    | OS         | 中位OS 14.7月；CR/CRi 66.4%                 | 中位OS 9.6月；CR/CRi 28.3%    | OS 0.66 (0.52–0.85)                       |
-
-CLL14试验是venetoclax成功的基石。该试验纳入432例初治CLL伴合并症患者，随机接受12个周期的venetoclax+obinutuzumab（VenG）或chlorambucil+obinutuzumab（CO）。6年随访数据显示，VenG组PFS率为53%，而CO组仅为约27% 。治疗结束后3个月，VenG组外周血不可测微小残留病（uMRD，undetectable minimal residual disease）率达76%，骨髓uMRD率为57%，均为CO组的两倍以上 。更重要的是，达到uMRD的患者4年PFS约90%，证明了固定疗程策略下深度缓解可转化为持久临床获益 。
-
-MURANO试验验证了venetoclax在复发/难治性（R/R，relapsed/refractory）CLL中的价值。389例接受过1–3线治疗的患者随机接受venetoclax+rituximab（VenR，venetoclax持续2年）或bendamustine+rituximab（BR）。7年最终分析显示，VenR组中位PFS为54.7个月（BR组17.0个月），7年OS率为69.6%（BR组51.0%），PFS风险比（HR，hazard ratio）为0.23（95% CI 0.18–0.29）。EOT时达到uMRD的患者从EOT起中位PFS为52.5个月，而有MRD患者仅18.0个月 ，再次确认MRD作为长期预后替代终点的可靠性。再治疗亚研究也证明venetoclax复发后再治疗的ORR为72%，中位第二次PFS约23个月 。
-
-VIALE-A试验将venetoclax的成功从淋巴系扩展至髓系。431例新诊断AML（中位年龄76岁）随机接受azacitidine+venetoclax或azacitidine+安慰剂。联合组中位OS达14.7个月，对照组仅9.6个月（HR 0.66，95% CI 0.52–0.85；P<0.001），CR/CRi率为66.4% vs 28.3% 。该试验奠定了venetoclax+HMA（hypomethylating agent，低甲基化药物）在unfit AML中的标准治疗地位。值得注意的是，疗效在不同分子亚组间差异显著：正常核型和IDH突变患者获益最大，而TP53突变患者几乎无OS获益 ，提示BCL-2抑制剂的疗效高度依赖于疾病生物学。
-
-#### 3.2.4 FDA审批路径：加速批准→全面批准的完整路径
-
-Venetoclax的FDA审批路径为后续BCL-2抑制剂提供了清晰的监管蓝图。2016年4月，基于Phase II单臂试验中del(17p) R/R CLL患者79.4%的ORR，venetoclax获加速批准 。2018年6月，MURANO数据支持全面批准R/R CLL/SLL 。2019年5月，CLL14数据支持一线CLL/SLL批准 。在AML中，venetoclax先基于Ib期数据于2018年11月获加速批准，后由VIALE-A确证性数据于2020年10月转为全面批准 。
-
-这一路径的核心特征是"从高风险未满足需求人群切入→加速批准→确证性III期→全面批准→适应症扩展"。Venetoclax共获得6次BTD ，涵盖CLL、AML等多个适应症，体现了FDA对该类药物的高度重视。对于APG-2575而言，2025年7月NMPA批准R/R CLL/SLL适应症是国际化的第一步，后续GLORA系列试验的数据成熟将决定其能否复制venetoclax的监管路径。
-
-### 3.3 Venetoclax的挫折
+# 3.3 Venetoclax的挫折
 
 Venetoclax的成功并非没有边界。在其适应症扩展过程中，至少三次重大挫折为APG-2575的开发敲响了警钟。
 
-#### 3.3.1 VIALE-C试验失败：venetoclax+LDAC vs placebo+LDAC未改善OS
+**3.3.1 VIALE-C试验失败：venetoclax+LDAC vs placebo+LDAC未改善OS**
 
-VIALE-C试验比较venetoclax+LDAC（低剂量阿糖胞苷）与安慰剂+LDAC在unfit AML中的疗效。在主要分析时，联合组中位OS为7.2个月，对照组4.1个月，HR 0.75（95% CI 0.52–1.07），P=0.11，未达到统计学显著性 。虽然延长6个月随访后OS差异达到显著（8.4 vs 4.1个月，HR 0.70，P=0.04），但主要终点失败的教训明确：**LDAC作为骨架方案过于薄弱**，单药中位OS仅4.1个月，反映了该人群极差的预后。约60%的患者在研究时随访≤6个月，统计效力不足。这一失败直接指导了APG-2575 GLORA-3试验选择AZA而非LDAC作为骨架方案。
+VIALE-C试验比较venetoclax+LDAC（低剂量阿糖胞苷）与安慰剂+LDAC在unfit AML中的疗效。在主要分析时，联合组中位OS为7.2个月，对照组4.1个月，HR 0.75（95% CI 0.52–1.07），P=0.11，未达到统计学显著性 。虽然延长6个月随访后OS差异达到显著（8.4 vs 4.1个月，HR 0.70，P=0.04），但主要终点失败的教训明确：LDAC作为骨架方案过于薄弱*，单药中位OS仅4.1个月，反映了该人群极差的预后。约60%的患者在研究时随访≤6个月，统计效力不足。这一失败直接指导了APG-2575 GLORA-3试验选择AZA而非LDAC作为骨架方案。
 
-#### 3.3.2 VERONA试验失败：venetoclax+AZA in HR-MDS主要终点OS未达统计学显著改善
+**3.3.2 VERONA试验失败：venetoclax+AZA in HR-MDS主要终点OS未达统计学显著改善**
 
 VERONA试验是venetoclax从AML向MDS（myelodysplastic syndromes，骨髓增生异常综合征）扩展的关键尝试，也是APG-2575 GLORA-4试验最直接的参照。509例初治高危MDS患者随机接受venetoclax+AZA或安慰剂+AZA，主要终点OS的HR为0.908（95% CI 0.733–1.126），P=0.3772，中位OS几乎相同（22.18 vs 21.68个月）。
 
 VERONA的失败根因是多层次的。第一，入组患者异质性过高：仅27%有原始细胞增多（≥5%），而Phase 1b中90%患者有原始细胞增多且ORR达80.4% 。BCL-2依赖性主要与白血病原始细胞相关，低原始细胞患者对BCL-2抑制剂敏感度有限。第二，TP53突变亚组（约25%患者）HR为1.064，venetoclax在此亚组中不仅无效甚至可能有害 。第三，骨髓抑制驱动的治疗中断：约50%患者需要venetoclax减量，约90%需要剂量中断，≥3级治疗期间不良事件（TEAE）发生率达94% 。毒性"抵消"了疗效优势——venetoclax组因不良事件停药比例更高（20% vs 15%），尽管疾病进展比例更低（29.8% vs 44.7%）。亚组分析显示<75岁患者（HR 0.835）和原始细胞≥5%患者（HR 0.858）可能有获益趋势，但未达到统计学显著 。
 
-#### 3.3.3 BELLINI试验警示：venetoclax+bortezomib in MM中感染相关死亡抵消PFS获益
+**3.3.3 BELLINI试验警示：venetoclax+bortezomib in MM中感染相关死亡抵消PFS获益**
 
 BELLINI试验评估venetoclax+bortezomib+地塞米松 vs 安慰剂+硼替佐米+地塞米松在R/R MM（multiple myeloma，多发性骨髓瘤）中的疗效。结果呈现矛盾画面：PFS显著获益（23.4 vs 11.4个月，HR 0.58，P=0.00026），但OS倾向安慰剂组（HR 1.19，P=0.39）。根本原因在于venetoclax组出现了过多的感染相关死亡（12例 vs 1例），4例（2%）治疗相关死亡均发生在venetoclax组 。t(11;14)阳性亚组是唯一真正获益的人群（PFS HR 0.17，OS HR 0.59），表明在MM中BCL-2高表达是疗效的前提条件。CANOVA试验在t(11;14)阳性RRMM中比较venetoclax+地塞米松 vs 泊马度胺+地塞米松，同样因7例 vs 0例致死性感染而未能达到PFS主要终点（HR 0.823，P=0.24）。
-
-#### 3.3.4 失败模式分类表：安全性失败/有效性失败/竞争淘汰三类模式的特征与根因
-
-**表2 BCL-2靶点开发失败案例分类对比**
-
-| 药物/试验     | 失败类型              | 根因层级          | 核心根因                                                     | 可逆性                       | 对APG-2575的启示                        |
-| :------------ | :-------------------- | :---------------- | :----------------------------------------------------------- | :--------------------------- | :-------------------------------------- |
-| Navitoclax    | 安全性失败（D-LT）    | 分子设计          | BCL-XL脱靶抑制→机制性血小板凋亡；有效剂量与毒性剂量重叠      | 不可逆（设计缺陷）           | 高BCL-2/BCL-XL选择性是成药前提          |
-| VIALE-C       | 有效性失败（OS未达）  | 试验设计+骨架方案 | LDAC骨架太弱（单药OS 4.1月）；随访不足（60%患者≤6月）        | 部分可逆（更长随访后达显著） | GLORA-3选择AZA骨架（VIALE-A模式已验证） |
-| VERONA        | 有效性失败（OS未达）  | 适应症生物学      | MDS异质性+低原始细胞比例；TP53突变耐药；过度骨髓抑制致治疗中断 | 可能可逆（亚组获益信号）     | 短半衰期设计可能降低骨髓抑制；精准入组  |
-| BELLINI       | 安全性失败（OS受损）  | 患者选择          | 非t(11;14)MM患者感染相关死亡抵消PFS获益                      | 可逆（t(11;14)亚组获益）     | MM开发需限定t(11;14)或BCL-2高表达       |
-| CANOVA        | 有效性失败（PFS未达） | 试验设计+安全性   | 开标签设计+信息性删失；致死性感染7例 vs 0例                  | 可能可逆                     | 双盲设计+感染监控                       |
-| S55746/BCL201 | 竞争淘汰              | 疗效不足？        | 两项Phase I完成六年未公布结果                                | 不可逆                       | 差异化定位避免"me-too"                  |
-| APG-1252      | 安全性失败            | 分子设计          | BCL-2/BCL-XL双重抑制剂面临Navitoclax同类血小板毒性           | 不可逆                       | 再次验证BCL-XL规避的必要性              |
-| 固体瘤整体    | 系统性失败            | 生物学差异        | MCL-1上调代偿；BCL-2非主要依赖；治疗窗口不足                 | 不可逆                       | 聚焦血液肿瘤，谨慎拓展实体瘤            |
-
-上表揭示了BCL-2靶点开发失败的三种基本模式。**安全性失败**（Navitoclax、BELLINI、APG-1252）的共同特征是额外毒性抵消或超过疗效获益。Navitoclax的血小板毒性和BELLINI的感染相关死亡虽然机制不同，但本质都是治疗窗不足——药物在靶点上的作用延伸到了不应影响的生理系统。**有效性失败**（VIALE-C、VERONA、CANOVA）的特征是药物具有生物学活性（CR率、ORR均提高），但活性未能转化为OS或PFS的统计学显著改善。VIALE-C的问题在于骨架方案太弱和统计设计保守，VERONA在于MDS的生物学复杂性超出预期，CANOVA在于开标签设计和感染事件。**竞争淘汰**（S55746）则反映了在没有明确差异化的情况下，后来者难以在已建立标准治疗的市场中立足。
-
-对APG-2575的战略启示是清晰的：在分子层面，高BCL-2/BCL-XL选择性已使其规避了Navitoclax和APG-1252的陷阱；在试验设计层面，GLORA-3选择AZA骨架是对VIALE-C教训的直接回应，GLORA-4的双主要终点（CR rate + OS）是对VERONA单一OS终点失败的策略性调整；在患者选择层面，GLORA系列应充分考虑分子亚组的分层，特别是在TP53突变和原始细胞比例等关键变量上。BCL-2靶点的历史表明，成功不是单一分子的胜利，而是对每一次失败进行系统性学习的结果。
-
-
-
-Navitoclax（ABT-263），对BCL-2和BCL-xL的亲和性都很高，导致同步抑制触发了血小板的程序性凋亡，导致治疗窗口极度狭窄——有效剂量与产生严重血小板减少的剂量高度重叠。间歇给药策略虽可部分恢复血小板计数，但肿瘤暴露时间不足，无法解决根本矛盾。
-
-Navitoclax的失败为BCL-2靶点药物设计留下了最核心的教训：**选择性优于绝对效力**。venetoclax（ABT-199）——一种对BCL-2具有极高亲和力（Ki < 0.01 nM）而对BCL-XL亲和力低约5,000倍（Ki = 48 nM）的高度选择性抑制剂 。
-
-**表1 Venetoclax关键III期试验汇总**
-
-| 试验    | 适应症                 | 设计             | 样本量 | 主要终点   | 试验组结果                                  | 对照组结果                    | HR (95% CI)                               |
-| :------ | :--------------------- | :--------------- | :----- | :--------- | :------------------------------------------ | :---------------------------- | :---------------------------------------- |
-| CLL14   | 一线CLL（伴合并症）    | 开放标签、随机   | 432    | 研究者PFS  | 中位PFS 76.2月；6年PFS率 53%；PB uMRD 76%   | 中位PFS 36.4月；PB uMRD 35%   | PFS 0.31–0.40                             |
-| MURANO  | R/R CLL                | 开放标签、随机   | 389    | IRC评估PFS | 中位PFS 54.7月；7年OS率 69.6%；EOT uMRD 62% | 中位PFS 17.0月；7年OS率 51.0% | PFS 0.23 (0.18–0.29)；OS 0.53 (0.37–0.74) |
-| VIALE-A | 一线AML（≥75岁/unfit） | 双盲、安慰剂对照 | 431    | OS         | 中位OS 14.7月；CR/CRi 66.4%                 | 中位OS 9.6月；CR/CRi 28.3%    | OS 0.66 (0.52–0.85)                       |
-
-CLL14试验是venetoclax成功的基石。该试验纳入432例初治CLL伴合并症患者，随机接受12个周期的venetoclax+obinutuzumab（VenG）或chlorambucil+obinutuzumab（CO）。6年随访数据显示，VenG组PFS率为53%，而CO组仅为约27% 。治疗结束后3个月，VenG组外周血不可测微小残留病（uMRD，undetectable minimal residual disease）率达76%，骨髓uMRD率为57%，均为CO组的两倍以上 。更重要的是，达到uMRD的患者4年PFS约90%，证明了固定疗程策略下深度缓解可转化为持久临床获益 。
-
-MURANO试验验证了venetoclax在复发/难治性（R/R，relapsed/refractory）CLL中的价值。389例接受过1–3线治疗的患者随机接受venetoclax+rituximab（VenR，venetoclax持续2年）或bendamustine+rituximab（BR）。7年最终分析显示，VenR组中位PFS为54.7个月（BR组17.0个月），7年OS率为69.6%（BR组51.0%），PFS风险比（HR，hazard ratio）为0.23（95% CI 0.18–0.29）。EOT时达到uMRD的患者从EOT起中位PFS为52.5个月，而有MRD患者仅18.0个月 ，再次确认MRD作为长期预后替代终点的可靠性。再治疗亚研究也证明venetoclax复发后再治疗的ORR为72%，中位第二次PFS约23个月 。
-
-VIALE-A试验将venetoclax的成功从淋巴系扩展至髓系。431例新诊断AML（中位年龄76岁）随机接受azacitidine+venetoclax或azacitidine+安慰剂。联合组中位OS达14.7个月，对照组仅9.6个月（HR 0.66，95% CI 0.52–0.85；P<0.001），CR/CRi率为66.4% vs 28.3% 。该试验奠定了venetoclax+HMA（hypomethylating agent，低甲基化药物）在unfit AML中的标准治疗地位。值得注意的是，疗效在不同分子亚组间差异显著：正常核型和IDH突变患者获益最大，而TP53突变患者几乎无OS获益 ，提示BCL-2抑制剂的疗效高度依赖于疾病生物学。
-
-
-
-### Venetoclax的挫折
-
-Venetoclax的成功并非没有边界。在其适应症扩展过程中，至少三次重大挫折为APG-2575的开发敲响了警钟。
-
-
-
-VIALE-C试验失败：venetoclax+LDAC vs placebo+LDAC未改善OS
-
-VIALE-C试验比较venetoclax+LDAC（低剂量阿糖胞苷）与安慰剂+LDAC在unfit AML中的疗效。在主要分析时，联合组中位OS为7.2个月，对照组4.1个月，HR 0.75（95% CI 0.52–1.07），P=0.11，未达到统计学显著性 。虽然延长6个月随访后OS差异达到显著（8.4 vs 4.1个月，HR 0.70，P=0.04），但主要终点失败的教训明确：**LDAC作为骨架方案过于薄弱**，单药中位OS仅4.1个月，反映了该人群极差的预后。约60%的患者在研究时随访≤6个月，统计效力不足。这一失败直接指导了APG-2575 GLORA-3试验选择AZA而非LDAC作为骨架方案。
-
-#### 3.3.2 VERONA试验失败：venetoclax+AZA in HR-MDS主要终点OS未达统计学显著改善
-
-VERONA试验是venetoclax从AML向MDS扩展的关键尝试，也是APG-2575 GLORA-4试验最直接的参照。509例初治高危MDS患者随机接受venetoclax+AZA或安慰剂+AZA，主要终点OS的HR为0.908（95% CI 0.733–1.126），P=0.3772，中位OS几乎相同（22.18 vs 21.68个月）。
-
-VERONA的失败根因是多层次的。第一，入组患者异质性过高：仅27%有原始细胞增多（≥5%），而Phase 1b中90%患者有原始细胞增多且ORR达80.4% 。BCL-2依赖性主要与白血病原始细胞相关，低原始细胞患者对BCL-2抑制剂敏感度有限。第二，TP53突变亚组（约25%患者）HR为1.064，venetoclax在此亚组中不仅无效甚至可能有害 。第三，骨髓抑制驱动的治疗中断：约50%患者需要venetoclax减量，约90%需要剂量中断，≥3级治疗期间不良事件（TEAE）发生率达94% 。毒性"抵消"了疗效优势——venetoclax组因不良事件停药比例更高（20% vs 15%），尽管疾病进展比例更低（29.8% vs 44.7%）。亚组分析显示<75岁患者（HR 0.835）和原始细胞≥5%患者（HR 0.858）可能有获益趋势，但未达到统计学显著 。
-
-#### 3.3.3 BELLINI试验警示：venetoclax+bortezomib in MM中感染相关死亡抵消PFS获益
-
-BELLINI试验评估venetoclax+bortezomib+地塞米松 vs 安慰剂+硼替佐米+地塞米松在R/R MM（multiple myeloma，多发性骨髓瘤）中的疗效。结果呈现矛盾画面：PFS显著获益（23.4 vs 11.4个月，HR 0.58，P=0.00026），但OS倾向安慰剂组（HR 1.19，P=0.39）。根本原因在于venetoclax组出现了过多的感染相关死亡（12例 vs 1例），4例（2%）治疗相关死亡均发生在venetoclax组 。t(11;14)阳性亚组是唯一真正获益的人群（PFS HR 0.17，OS HR 0.59），表明在MM中BCL-2高表达是疗效的前提条件。CANOVA试验在t(11;14)阳性RRMM中比较venetoclax+地塞米松 vs 泊马度胺+地塞米松，同样因7例 vs 0例致死性感染而未能达到PFS主要终点（HR 0.823，P=0.24）。
-
-
-
-> 为什么VIALE-A成功了，而VIALE-C失败了?
->
-> VIALE‑C 更准确地说是：**在预设的主要分析时点，未达到 OS（总生存期）统计学显著性**；不是“Venetoclax + LDAC 完全无效”。
->
-> | 试验                    | 方案                                       | 主要 OS 结果                            | 结论                                                         |
-> | ----------------------- | ------------------------------------------ | --------------------------------------- | ------------------------------------------------------------ |
-> | VIALE‑A                 | Venetoclax + 阿扎胞苷 vs 阿扎胞苷          | 14.7 vs 9.6 个月；HR 0.66；`P<0.001`    | 明确成功                                                     |
-> | VIALE‑C 主分析          | Venetoclax + 低剂量阿糖胞苷（LDAC）vs LDAC | 7.2 vs 4.1 个月；HR 0.75；`P=0.11`      | 未达预设显著性                                               |
-> | VIALE‑C 额外 6 个月随访 | 同上                                       | 8.4 vs 4.1 个月；HR 0.70；名义 `P=0.04` | 提示获益，但属于事后/非预设确认性分析，不能“补救”原主终点失败 |
->
-> VIALE‑A 的生存获益由原始 III 期研究明确证实。 [VIALE‑A，NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2012971)
-> VIALE‑C 在主分析时约 60% 患者入组后不足 6 个月，成熟度不足是其结果不稳定的重要背景；追加随访后才出现更明显的生存曲线分离。 [VIALE‑C 随访报告](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486817/)
->
-> 为什么会不同？最合理的解释是多个因素叠加，而不是单一原因。
->
-> 1. **治疗骨架不同，阿扎胞苷本身通常比 LDAC 更有活性**
->
-> 在不能接受强化化疗的新诊断 AML 中，LDAC 对照组的中位 OS 只有 4.1 个月，而 VIALE‑A 中阿扎胞苷对照组为 9.6 个月。这反映了两者基础治疗强度不同，也说明 VIALE‑C 的患者/治疗背景整体更困难。  
->
-> 阿扎胞苷除了直接抑制异常髓系细胞外，还是低甲基化药，能改变白血病细胞的转录和凋亡依赖状态；这在生物学上可能与 Venetoclax 形成更持续的协同。**但 VIALE‑A 与 VIALE‑C 不是头对头试验，不能仅靠跨试验 OS 证明“阿扎胞苷一定比 LDAC 协同更强”。**
->
-> 1. **VIALE‑C 纳入了既往接受过 HMA 的患者**
->
-> VIALE‑C 中约 **20%** 患者既往使用过低甲基化药；VIALE‑A 没有这类既往 HMA 暴露。既往 HMA 治疗、尤其疗效不佳的患者通常代表疾病更难治，也可能削弱以低强度治疗为基础的组合效果。 [两项研究差异的综述分析](https://ascopubs.org/doi/10.1200/JCO.21.00080)
->
-> 1. **VIALE‑C 样本更小、主分析更早，统计把握度不足**
->
-> VIALE‑A 随机了 431 人；VIALE‑C 为 211 人。VIALE‑C 的主分析发生得更早、事件数和随访都较少，因此虽看到 HR 0.75 的死亡风险下降趋势，但 95% CI 跨过 1，未能排除随机波动。
->
-> 1. **LDAC 组合也有活性，但疗效“幅度/稳定性”较弱**
->
-> VIALE‑C 后续 OS 从 7.2 更新到 8.4 个月，说明早期截点低估了获益；但其绝对生存仍低于 VIALE‑A 的 14.7 个月。最谨慎的结论是：**Venetoclax 的药效并未消失，但在 LDAC 骨架、更复杂/部分既往 HMA 暴露的人群和较早分析的共同条件下，证据强度不足以复制 VIALE‑A 那种确定的 III 期成功。**
->
-> 一句话总结：
->
-> `VIALE‑A = 更成熟随访 + 更大样本 + 阿扎胞苷骨架 + 治疗初始人群 → 明确 OS 获益。`
-> `VIALE‑C = LDAC 骨架 + 20% 既往 HMA 暴露 + 样本较小且早期分析不成熟 → 有获益趋势，但主终点未过统计门槛。`
-
-**表2 BCL-2靶点开发失败案例分类对比**
-
-| 药物/试验     | 失败类型              | 根因层级          | 核心根因                                                     | 可逆性                       | 对APG-2575的启示                        |
-| :------------ | :-------------------- | :---------------- | :----------------------------------------------------------- | :--------------------------- | :-------------------------------------- |
-| Navitoclax    | 安全性失败（D-LT）    | 分子设计          | BCL-XL脱靶抑制→机制性血小板凋亡；有效剂量与毒性剂量重叠      | 不可逆（设计缺陷）           | 高BCL-2/BCL-XL选择性是成药前提          |
-| VIALE-C       | 有效性失败（OS未达）  | 试验设计+骨架方案 | LDAC骨架太弱（单药OS 4.1月）；随访不足（60%患者≤6月）        | 部分可逆（更长随访后达显著） | GLORA-3选择AZA骨架（VIALE-A模式已验证） |
-| VERONA        | 有效性失败（OS未达）  | 适应症生物学      | MDS异质性+低原始细胞比例；TP53突变耐药；过度骨髓抑制致治疗中断 | 可能可逆（亚组获益信号）     | 短半衰期设计可能降低骨髓抑制；精准入组  |
-| BELLINI       | 安全性失败（OS受损）  | 患者选择          | 非t(11;14)MM患者感染相关死亡抵消PFS获益                      | 可逆（t(11;14)亚组获益）     | MM开发需限定t(11;14)或BCL-2高表达       |
-| CANOVA        | 有效性失败（PFS未达） | 试验设计+安全性   | 开标签设计+信息性删失；致死性感染7例 vs 0例                  | 可能可逆                     | 双盲设计+感染监控                       |
-| S55746/BCL201 | 竞争淘汰              | 疗效不足？        | 两项Phase I完成六年未公布结果                                | 不可逆                       | 差异化定位避免"me-too"                  |
-| APG-1252      | 安全性失败            | 分子设计          | BCL-2/BCL-XL双重抑制剂面临Navitoclax同类血小板毒性           | 不可逆                       | 再次验证BCL-XL规避的必要性              |
-| 固体瘤整体    | 系统性失败            | 生物学差异        | MCL-1上调代偿；BCL-2非主要依赖；治疗窗口不足                 | 不可逆                       | 聚焦血液肿瘤，谨慎拓展实体瘤            |
-
-
-
-
-
-# Venetoclax
-
-1、高选择性，对BCL-xL结合力弱，导致血小板减少安全性上好。CLL患者中≥3级血小板减少发生率仅为0-11%，显著低于venetoclax的15-24%
-
-2、克服G101V获得性耐药突变，该突变在30-50%的venetoclax进展患者中出现 
-
-
-
-
-
-
-
-
-
-
-
-
 
 # AZA+VEN数据
 
@@ -632,55 +274,9 @@ AZA单药：异常原始细胞5%+正常造血30%
 
 
 
-### off-label数据
-
-ven+aza在off-label真实世界中的治疗MDS的mOS是多少
-
-如果问的是**较高危MDS，而不是已经转化为AML**，真实世界数据没有一个统一的mOS。比较合理的概括是：
-
-> **混合人群总体mOS约16–20个月；初治患者约20–26个月；既往HMA失败患者约11–13个月。**
-
-代表性数据如下：
-
-| 真实世界队列                    | 人群                             | mOS                   |
-| ------------------------------- | -------------------------------- | --------------------- |
-| Ball等，44例                    | 初治和经治MDS混合，部分接受移植  | **19.5个月**          |
-| 同一队列                        | 既往HMA失败                      | **11.4个月**          |
-| 中国45例队列                    | 91%为高危/极高危，初治与经治混合 | **499天，约16.4个月** |
-| 美国多中心/单中心队列摘要，89例 | 一线HMA+Ven                      | **26.2个月**          |
-| 同一研究                        | R/R、既往接受HMA                 | **13.2个月**          |
-
-来源：[Ball等，Blood Advances真实世界研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC7362378/)、[中国高危MDS真实世界研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC11078685/)、[美国真实世界队列摘要](https://www.sciencedirect.com/science/article/pii/S0006497124045907)。
-
-需要注意三个问题：
-
-- **移植会明显拉长OS**：早期真实世界队列中不少应答者随后接受异基因移植，所以19.5个月不能全部归因于Ven+aza。
-- **既往是否使用过aza最关键**：未经HMA治疗的一线患者明显优于aza失败后再加Ven。
-- **TP53突变获益较弱**：近期真实世界比较中，TP53突变MDS接受HMA+Ven的mOS约**13.7个月**，并没有优于HMA单药的16.4个月；这是非随机回顾性比较，但至少说明高缓解率未必转化为OS改善。[TP53真实世界研究](https://haematologica.org/article/view/13087)
-
-作为参照，前瞻性Ⅰb期初治高危MDS的Ven+aza mOS为**26.0个月**，但这不是普通真实世界队列，而且患者经过筛选。[前瞻性Ⅰb期研究](https://pubmed.ncbi.nlm.nih.gov/39652823/)
-
-因此，如果要给模型放一个数字，我会这样取：
-
-- **一线高危MDS：mOS基准约24–26个月**
-- **真实世界混合人群：约17–20个月**
-- **既往aza/HMA失败：约11–13个月**
-- **TP53突变：大约10–14个月，且Ven的生存增益尚不确定**
-
-这也意味着不能拿AML VIALE‑A的14.7个月直接当作MDS的BCL‑2“天花板”：MDS患者病程更早、疾病负荷更低，而且部分患者能够桥接移植，因此一线MDS的mOS完全可能超过两年。
-
-
-
 
 
 ## aza or ven
-
-mds中，bcl-2+aza，如果有一个因为毒性药减量，那么减哪个好，我的意思是，哪个对mds更重要
-
-这是一个非常实际的临床决策问题，直接关系到剂量管理策略。让我搜索相关循证证据。
-答案很明确：**先减 venetoclax，维持 AZA 剂量**。但这背后有一个非常讽刺的发现——VERONA 试验的方案恰好做了相反的选择。让我逐层解释。
-
-
 
 一、为什么 AZA 对 MDS 更重要
 
@@ -696,9 +292,7 @@ mds中，bcl-2+aza，如果有一个因为毒性药减量，那么减哪个好�
 
 > **一句话**：AZA 是 MDS 的 OS 驱动药物，通过 HI（通路 A）改善生存；Venetoclax 主要提升 mCR（通路 B），但 mCR 在 MDS 中不改善 OS。所以减 AZA 等于削弱了 OS 获益的根基。
 
----
 
-## 二、VERONA 做了相反的选择——但那是被双盲设计"绑架"的
 
 这是最关键的发现。ASH 官方对 VERONA PI Dr. Jacqueline Garcia 的采访原文：
 
@@ -715,33 +309,6 @@ VERONA 实际执行的结果证实了这一点：
 
 > VERONA 等于在"减掉 OS 驱动药物"的同时"维持毒性药物全量"——**双重受损**。这可能恰恰是 OS 阴性的一个未被讨论的原因。
 
----
-
-## 三、Venetoclax 才是毒性的主要来源
-
-毒性管理首先要"减对药"。数据清楚显示 Venetoclax 是骨髓抑制的主因：
-
-| 毒性指标             | Ven+Aza | Pbo+Aza |   倍数   |
-| -------------------- | :-----: | :-----: | :------: |
-| 3-4 级中性粒细胞减少 |  76.9%  |  58.9%  |   1.3×   |
-| 3-4 级血小板减少     |  63.5%  |  52.0%  |   1.2×   |
-| 剂量中断             |  78.8%  |  67.9%  |    —     |
-| 因细胞减少导致的延迟 |  17.4%  |  3.4%   | **5.1×** |
-
-Daver 教授的原话：
-
-> "One of the on-target adverse effects that is seen with venetoclax is **prolonged myelosuppression**, especially for neutrophil recovery but also for platelet recovery."
-
-日本 PK 研究进一步证实：**Venetoclax 血药浓度过高（AUC₀₋₂₄↑）是持续 ≥28 天 3 级中性粒细胞缺乏的独立预测因子**（OR=54.3, P=0.007）。Venetoclax 暴露过度→骨髓抑制延长→感染风险升高→NRM 升高。
-
-> **减 AZA 根本不减轻 Venetoclax 的毒性**。毒性在 Ven 那里，你却去减 AZA——等于头痛医脚。
-
----
-
-## 四、减 Venetoclax 不损害疗效的证据
-
-这是关键——Venetoclax 可以减量甚至停药，疗效不掉：
-
 ### 证据 1：SE1 vs SE2 头对头比较（M15-531 Phase Ib）
 
 | 策略 | 操作                                     | CR/mCR 率 |
@@ -751,59 +318,9 @@ Daver 教授的原话：
 
 两种策略疗效**完全相同**。虽然 SE2 没有直接测"先减 Ven"的策略，但它证明 Ven 减到 7 天时疗效不降——Ven 的剂量弹性很大。
 
-### 证据 2：中国真实世界——半量 Ven 维持疗效
 
-浙大附一研究：Ven 200mg/day（标准剂量的一半）+ AZA 标准剂量治疗 AML：
 
-- **100% CR/CRi**，中位 OS >24.6 个月
-- 3 级血小板减少仅 21.4%（vs 标准剂量 24-89.5%）
-- **NCCN 2025 指南已正式推荐：在细胞减少持续时采用半量 Ven 策略，同时维持 AZA 剂量，不影响疗效**
-
-### 证据 3：法国研究——Ven 停药后复发风险不增加
-
-法国单中心研究（n=19）：57.9% 的患者在 2 个周期后因毒性停用 Venetoclax，转为 AZA 单药：
-
-- 停 Ven 组 DOR = 9.0 个月 vs 继续 Ven 组 = 3.7 个月（P=0.09，无显著差异）
-- **"early venetoclax discontinuation did not increase the relapse risk"**
-
-### 证据 4：苏大附一真实世界
-
-30 例 HR-MDS 中 7 例 Ven 减至 50-100mg/day：
-
-- CR/mCR 仍达 24/30（80%）
-- 中位 OS 29.3 个月
-- CR/mCR 组 OS 显著优于未缓解组（NR vs 5.9 月, P=0.002）
-
----
-
-## 五、为什么减 Ven 有效——骨髓评估指导下的精准调整
-
-Daver 教授描述的临床实践流程解释了为什么减 Ven 有效：
-
-1. **第 1 周期末做骨髓评估**（day 21-28）
-2. 如果骨髓已清除原始细胞（形态学缓解），但血象仍低 → **不是白血病导致的血象低，而是 Ven 的骨髓抑制**
-3. 此时**停 Ven 1-2 周**，等血象恢复后再开下一周期
-4. 后续周期 Ven 从 28 天缩短至 14-21 天
-5. **大部分患者的缓解持续维持**
-
-> 这个流程的核心逻辑是：**Ven 的作用是"打掉原始细胞"，一旦打掉了就不需要全量维持**；而 AZA 的作用是"持续重编程基因表达、维持分化、改善造血"，需要持续的周期给药才能维持 HI——所以 AZA 的剂量强度更重要。
-
----
-
-## 六、总结：正确策略
-
-| 原则                   | 操作                                                |
-| ---------------------- | --------------------------------------------------- |
-| 毒性出现时**先减 Ven** | 缩短天数（14→10→7d）或减量（400→200mg）             |
-| **维持 AZA 剂量强度**  | 75mg/m² × 7d 全量，尽量不减                         |
-| 第 1 周期末做骨髓评估  | 骨髓清了→停 Ven 等恢复；没清→继续                   |
-| 持续监测 HI            | HI 比缓解率更能预测 OS                              |
-| 桥接移植者例外         | 如果目标是快速细胞减灭桥接移植，可短期维持 Ven 全量 |
-
-**一句话总结**：在 MDS 中，**AZA 比 Venetoclax 更重要**——AZA 是唯一证实改善 OS 的药物（通过 HI/通路 A），而 Venetoclax 的毒性是 NRM 的主要来源、其 mCR 提升又不传导到 OS。VERONA 试验因双盲设计被迫"先减 AZA 后减 Ven"的做法，恰恰可能削弱了 OS 获益的根基。临床实践中应**先减 Venetoclax、维持 AZA 剂量强度**，这在多项真实世界研究和 NCCN 2025 指南中已得到支持——Ven 减量后疗效不降，而 AZA 全量维持才能保留 OS 获益。
-已更新工作日志。
-
-## 总结
+总结
 
 **毒性减药时，应先减 Venetoclax，维持 AZA 剂量。** 理由有三层：
 
@@ -825,15 +342,11 @@ Daver 教授描述的临床实践流程解释了为什么减 Ven 有效：
 - 法国研究：停 Ven 后缓解持续时间不缩短
 - Ven 的作用是"打掉原始细胞"，打掉后不需要全量维持；AZA 的作用是"持续重编程、维持分化、改善造血"，需要持续给药
 
-**最讽刺的发现**：VERONA 试验因双盲设计被迫"先减 AZA"（ASH 官方采访 Garcia 原话："necessary as the trial was double-blind"），导致 AZA 减量率翻倍（48.6% vs 27.2%）而 Ven 仅 12.5%——**减掉了 OS 驱动药物、保留了毒性药物全量**，这可能恰恰是 OS 阴性的一个未被充分讨论的原因。临床实践中不应照搬 VERONA 的减药策略，而应反过来——先减 Ven、维持 AZA。
 
-<svg viewBox="0 0 680 760" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">  <title>Venetoclax与阿扎胞苷联合治疗MDS时的剂量调整策略对比</title>  <desc>对比两种减药策略：先减AZA（VERONA试验方案）vs 先减Venetoclax（生物学优选方案），展示各自的临床后果。</desc>  <defs>    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>    </marker>  </defs>  <rect x="20" y="10" width="320" height="720" rx="12" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>  <rect x="350" y="10" width="310" height="720" rx="12" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>  <text x="180" y="38" text-anchor="middle" font-size="14" font-weight="500" fill="#791F1F">策略A：先减AZA</text>  <text x="180" y="56" text-anchor="middle" font-size="12" fill="#A32D2D">VERONA试验方案</text>  <text x="505" y="38" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">策略B：先减Venetoclax</text>  <text x="505" y="56" text-anchor="middle" font-size="12" fill="#0F6E56">生物学与循证优选</text>  <rect x="40" y="72" width="280" height="72" rx="8" fill="#F7C1C1" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="#501313">减AZA剂量/天数</text>  <text x="180" y="110" text-anchor="middle" font-size="12" fill="#791F1F">VERONA中48.6%患者减量</text>  <text x="180" y="128" text-anchor="middle" font-size="12" fill="#791F1F">（对照组仅27.2%）</text>  <rect x="370" y="72" width="270" height="72" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="92" text-anchor="middle" font-size="13" font-weight="500" fill="#04342C">减Ven剂量/缩短天数</text>  <text x="505" y="110" text-anchor="middle" font-size="12" fill="#085041">400mg→200mg, 14d→10→7d</text>  <text x="505" y="128" text-anchor="middle" font-size="12" fill="#085041">VERONA中仅12.5%患者减量</text>  <path d="M180 148 L180 165" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 148 L505 165" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="170" width="280" height="88" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>  <text x="180" y="190" text-anchor="middle" font-size="13" font-weight="500" fill="#4A1B0C">丢失OS驱动药物</text>  <text x="180" y="208" text-anchor="middle" font-size="12" fill="#712B13">AZA是唯一证实改善OS的</text>  <text x="180" y="224" text-anchor="middle" font-size="12" fill="#712B13">MDS单药(AZA-001)</text>  <text x="180" y="240" text-anchor="middle" font-size="12" fill="#712B13">HI 49%→通路A→OS获益</text>  <rect x="370" y="170" width="270" height="88" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>  <text x="505" y="190" text-anchor="middle" font-size="13" font-weight="500" fill="#173404">保留OS驱动药物</text>  <text x="505" y="208" text-anchor="middle" font-size="12" fill="#27500A">维持AZA全量→保留通路A</text>  <text x="505" y="224" text-anchor="middle" font-size="12" fill="#27500A">→保留HI→保留OS获益</text>  <text x="505" y="240" text-anchor="middle" font-size="12" fill="#27500A">NCCN 2025推荐维持AZA剂量</text>  <path d="M180 262 L180 279" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 262 L505 279" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="284" width="280" height="88" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>  <text x="180" y="304" text-anchor="middle" font-size="13" font-weight="500" fill="#4A1B0C">毒性源头未解决</text>  <text x="180" y="322" text-anchor="middle" font-size="12" fill="#712B13">Ven是骨髓抑制主因</text>  <text x="180" y="338" text-anchor="middle" font-size="12" fill="#712B13">G3-4中性粒缺77.3%</text>  <text x="180" y="354" text-anchor="middle" font-size="12" fill="#712B13">减AZA不减轻Ven毒性</text>  <rect x="370" y="284" width="270" height="88" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>  <text x="505" y="304" text-anchor="middle" font-size="13" font-weight="500" fill="#173404">直接解决毒性源头</text>  <text x="505" y="322" text-anchor="middle" font-size="12" fill="#27500A">减Ven→减轻骨髓抑制</text>  <text x="505" y="338" text-anchor="middle" font-size="12" fill="#27500A">→减少感染/出血NRM</text>  <text x="505" y="354" text-anchor="middle" font-size="12" fill="#27500A">→保留AZA剂量强度</text>  <path d="M180 376 L180 393" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 376 L505 393" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="398" width="280" height="100" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="418" text-anchor="middle" font-size="13" font-weight="500" fill="#501313">疗效未获补偿</text>  <text x="180" y="436" text-anchor="middle" font-size="12" fill="#791F1F">Ven保留全量但</text>  <text x="180" y="452" text-anchor="middle" font-size="12" fill="#791F1F">CR率无提升(18% vs 20.2%)</text>  <text x="180" y="468" text-anchor="middle" font-size="12" fill="#791F1F">mCR↑但mCR不改善OS</text>  <text x="180" y="484" text-anchor="middle" font-size="12" fill="#791F1F">→毒性抵消了获益</text>  <rect x="370" y="398" width="270" height="100" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="418" text-anchor="middle" font-size="13" font-weight="500" fill="#04342C">疗效可维持</text>  <text x="505" y="436" text-anchor="middle" font-size="12" fill="#085041">Ven减量后疗效不降</text>  <text x="505" y="452" text-anchor="middle" font-size="12" fill="#085041">CR/mCR均86%(SE1=SE2)</text>  <text x="505" y="468" text-anchor="middle" font-size="12" fill="#085041">半量Ven仍100% CR/CRi(中国)</text>  <text x="505" y="484" text-anchor="middle" font-size="12" fill="#085041">停Ven后复发风险不增(法国)</text>  <path d="M180 502 L180 519" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 502 L505 519" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="40" y="524" width="280" height="68" rx="8" fill="#F7C1C1" stroke="#E24B4A" stroke-width="0.5"/>  <text x="180" y="548" text-anchor="middle" font-size="14" font-weight="500" fill="#501313">VERONA结果</text>  <text x="180" y="568" text-anchor="middle" font-size="13" fill="#791F1F">OS: 22.2月 vs 21.7月</text>  <text x="180" y="584" text-anchor="middle" font-size="13" fill="#791F1F">HR 0.908, P=0.38 阴性</text>  <rect x="370" y="524" width="270" height="68" rx="8" fill="#9FE1CB" stroke="#1D9E75" stroke-width="0.5"/>  <text x="505" y="548" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">预期获益</text>  <text x="505" y="568" text-anchor="middle" font-size="13" fill="#085041">保留OS驱动+降低NRM</text>  <text x="505" y="584" text-anchor="middle" font-size="13" fill="#085041">可能释放OS获益信号</text>  <path d="M180 596 L180 613" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>  <path d="M505 596 L505 613" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arrow)"/>  <rect x="50" y="618" width="260" height="52" rx="8" fill="#501313" stroke="none"/>  <text x="180" y="640" text-anchor="middle" font-size="13" font-weight="500" fill="#FCEBEB">减OS驱动药 + 保留毒性药</text>  <text x="180" y="658" text-anchor="middle" font-size="12" fill="#F7C1C1">双重受损，OS获益被抵消</text>  <rect x="380" y="618" width="250" height="52" rx="8" fill="#04342C" stroke="none"/>  <text x="505" y="640" text-anchor="middle" font-size="13" font-weight="500" fill="#E1F5EE">保留OS驱动药 + 减毒性药</text>  <text x="505" y="658" text-anchor="middle" font-size="12" fill="#9FE1CB">双重获益，最大化OS潜力</text>  <rect x="40" y="690" width="280" height="28" rx="6" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="3,3"/>  <text x="180" y="708" text-anchor="middle" font-size="11" fill="#A32D2D">注：VERONA因双盲设计被迫先减AZA</text>  <rect x="370" y="690" width="270" height="28" rx="6" fill="none" stroke="#1D9E75" stroke-width="0.5" stroke-dasharray="3,3"/>  <text x="505" y="708" text-anchor="middle" font-size="11" fill="#0F6E56">注：临床实践中应先减Ven维持AZA</text></svg>
 
 # Only Venetoclax or AZA
 
 Venetoclax没做单药在MDS上的适应症
-
-
 
 2009年，AZA单药三期临床AZA-001 mOS 24.5个月
 
