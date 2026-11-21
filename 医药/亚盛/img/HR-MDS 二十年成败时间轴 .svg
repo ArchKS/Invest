@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 325" role="img" font-family="Arial, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" style="--font-sans: Arial, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; background-color: rgb(28, 28, 28);"><rect x="0" y="0" width="680" height="325" fill="#1c1c1c" data-svg-studio-background=""/>
+  <title>HR-MDS 二十年成败时间轴</title>
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g data-svg-studio-offset="" transform="translate(0 -85)">
+    <circle cx="44" cy="110" r="4" fill="#5DCAA5"/>
+    <text x="56" y="114" font-family="var(--font-sans)" font-size="11" fill="#888780">成功 / 确立获益</text>
+    <circle cx="200" cy="110" r="4" fill="#E24B4A"/>
+    <text x="212" y="114" font-family="var(--font-sans)" font-size="11" fill="#888780">失败 / 未达主要终点</text>
+    <line x1="44" y1="230" x2="636" y2="230" stroke="#5F5E5A" stroke-width="1" marker-end="url(#ax)"/>
+    <text x="50" y="196" font-family="var(--font-sans)" font-size="11" fill="#9FE1CB">2004　AZA 首个获批</text>
+    <line x1="50" y1="224" x2="50" y2="204" stroke="#5DCAA5" stroke-width="1"/>
+    <circle cx="50" cy="228" r="3.5" fill="#5DCAA5"/>
+    <text x="182" y="160" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#9FE1CB">2009　AZA-001　OS 24.5 月</text>
+    <line x1="182" y1="224" x2="182" y2="168" stroke="#5DCAA5" stroke-width="1"/>
+    <circle cx="182" cy="228" r="3.5" fill="#5DCAA5"/>
+    <text x="472" y="196" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#9FE1CB">2020　Luspatercept（LR）</text>
+    <line x1="472" y1="224" x2="472" y2="204" stroke="#5DCAA5" stroke-width="1"/>
+    <circle cx="472" cy="228" r="3.5" fill="#5DCAA5"/>
+    <text x="577" y="160" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#9FE1CB">2024　Imetelstat（LR）</text>
+    <line x1="577" y1="224" x2="577" y2="168" stroke="#5DCAA5" stroke-width="1"/>
+    <circle cx="577" cy="228" r="3.5" fill="#5DCAA5"/>
+    <text x="235" y="272" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2011　DAC</text>
+    <line x1="235" y1="236" x2="235" y2="260" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="235" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="393" y="272" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2017　AZA 联合</text>
+    <line x1="393" y1="236" x2="393" y2="260" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="393" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="551" y="272" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2023　Magrolimab</text>
+    <line x1="551" y1="236" x2="551" y2="260" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="551" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="340" y="307" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2015　Rigosertib</text>
+    <line x1="340" y1="236" x2="340" y2="295" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="340" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="498" y="307" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2021　Pevonedistat</text>
+    <line x1="498" y1="236" x2="498" y2="295" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="498" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="604" y="307" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2025　Sabatolimab</text>
+    <line x1="604" y1="236" x2="604" y2="295" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="604" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="419" y="342" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2018　Guadecitabine</text>
+    <line x1="419" y1="236" x2="419" y2="330" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="419" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="577" y="342" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2024　Tamibarotene</text>
+    <line x1="577" y1="236" x2="577" y2="330" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="577" cy="232" r="3.5" fill="#E24B4A"/>
+    <text x="525" y="377" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="#F7C1C1">2022　APR-246</text>
+    <line x1="525" y1="236" x2="525" y2="365" stroke="#E24B4A" stroke-width="1"/>
+    <circle cx="525" cy="232" r="3.5" fill="#E24B4A"/>
+  </g>
+</svg>
