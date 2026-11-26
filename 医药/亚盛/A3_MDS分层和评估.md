@@ -100,3 +100,24 @@ IWG 2023 剔除了既往“虚高”的单纯骨髓完全缓解（mCR，不要�
 
 TP53
 
+“比较好的预后指标”在临床和转化研究中通常有两层含义：一是**提示预后相对较好或对治疗敏感的“有利指标”**，二是**在统计上区分度最强、最可靠的“独立预测因子”**。结合最新的 **IPSS-M** 分子模型（涵盖31个基因，可将约46%患者的风险分层重新校准），两类核心指标汇总如下：
+
+### 一、提示预后相对较好 / 治疗更敏感的“有利指标”
+
+| **基因 / 遗传学异常**                                        | **临床预后与治疗敏感性特征**                                 | **关键限制条件（避坑要点）**                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ***DDX41\* 突变**（胚系/体细胞）                             | HR-MDS中最典型的“**高原始细胞但长生存**”指标：虽然常伴原始细胞增多和AML转化风险，但对**阿扎胞苷等HMA及维奈克拉高度敏感，总生存期（OS）显著更长**，甚至能大幅削弱伴发 *TP53* 突变的不良影响（[Blood 2023](https://ashpublications.org/blood/article/141/5/534/486974/Germ-line-DDX41-mutations-define-a-unique-subtype)；[MDS Hub](https://mds-hub.com/medical-information/new-ipss-molecular-model-for-mds-risk-stratification-and-prognosis)）。 | 常见于老年男性，截短突变（truncating variants）易向AML转化，但总体OS仍优于常规HR-MDS。 |
+| **孤立 \*SF3B1\* 突变**（*SF3B1*α 亚型）                     | IPSS-M中**最经典的独立有利预后基因**，全终点（OS、无白血病生存、AML转化）均显著更优（[MDS Hub](https://mds-hub.com/medical-information/new-ipss-molecular-model-for-mds-risk-stratification-and-prognosis)）。 | **高度依赖共突变背景**：若合并 *RUNX1*、*ASXL1*、*STAG2*、*BCOR* 或 del(5q)，有利保护效应会被完全抵消（[Blood 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12782972/)）。 |
+| ***TET2\* 突变**（伴 *ASXL1* 野生型）                        | 经典的**HMA疗效预测指标**，提示对阿扎胞苷/地西他滨的缓解率更高，且自然病程相对温和（[PMC9630842](https://pmc.ncbi.nlm.nih.gov/articles/PMC9630842/)）。 | 本身对长期OS的独立拉升弱于 *DDX41/SF3B1*，需结合是否共突变 *ASXL1* 判断。 |
+| **有利核型**（-Y、del(11q)、正常核型、孤立del(5q)/del(20q)） | 即使因原始细胞增多进入HR-MDS，其基因组稳定性与生存期仍显著优于 -7/del(7q) 或复杂核型（[HealthTree IPSS-R](https://healthtree.org/news/ipss-r-risk-categories-mds)）。 | 需排除隐匿的高危分子突变（如 *TP53*、*FLT3*、*MLL-PTD*）。   |
+
+### 二、预测效能最强、最可靠的“独立不良预后指标”（按IPSS-M权重）
+
+如果从**模型预测精度与临床决策价值**来看，以下基因在IPSS-M中区分生存与白血病转化的效力最强：
+
+- **第一梯队（最强决定性指标）**：
+  - **多打击 \*TP53\*（\*TP53\* multi-hit / 双等位失活）**：整个MDS领域**权重最高、预测最精准的单一分子标志物**。无论采用HMA、强化化疗还是移植，均独立预示极短OS与极高复发率；而**单打击 \*TP53\*（single-hit）** 预后与野生型几乎无异，临床必须严格区分等位基因状态（[MDPI Cells 2023](https://www.mdpi.com/2073-4409/12/4/627)；[MDS Hub](https://mds-hub.com/medical-information/new-ipss-molecular-model-for-mds-risk-stratification-and-prognosis)）。
+  - ***FLT3\* 突变** 与 ***MLL-PTD\*（\*KMT2A\*-PTD）**：在IPSS-M中拥有**最高的AML转化风险比（HR）**，常将传统IPSS-R判为低/中危的患者直接上调至高危（[MDS Hub](https://mds-hub.com/medical-information/new-ipss-molecular-model-for-mds-risk-stratification-and-prognosis)）。
+- **第二梯队（稳定的核心不良驱动群）**：
+  - ***ASXL1\*、\*RUNX1\*、\*BCOR\*、\*EZH2\*、\*U2AF1\*、\*SRSF2\*、\*STAG2\*、\*NRAS\*、\*ETV6\***：在OS、无白血病生存及AML转化三大终点上均呈显著不良预后；其中 ***ASXL1\*** 突变尤其与HMA低缓解率和较短OS密切相关（[Blood 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12782972/)；[MDS Hub](https://mds-hub.com/medical-information/new-ipss-molecular-model-for-mds-risk-stratification-and-prognosis)）。
+- **精简检测的实用基准**：若临床无法完成全部31个IPSS-M基因测序，仅检测其中 **15个主效基因**（*TP53*多打击、*FLT3*、*MLL-PTD*、*SF3B1*、*ASXL1*、*RUNX1*、*EZH2*、*U2AF1*、*SRSF2*、*CBL*、*NRAS*、*NPM1*、*DNMT3A*、*ETV6*、*IDH2*）即可保留完整IPSS-M模型 **高达80%的生存预测精度**（[Blood 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12782972/)）。

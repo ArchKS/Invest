@@ -209,3 +209,67 @@ AZA会影响造血干细胞以外的细胞吗?
 
 **阅读建议：** 想快速建立框架可先读第 1、2 篇；如果核心目的是评估 AZA 联合 BCL-2 抑制剂（如 VERONA / GLORA-4）的成败逻辑，建议重点精读第 4、5 篇。
 
+
+
+
+
+# 数据
+
+Codex
+
+
+
+按**初治较高危 MDS、阿扎胞苷（AZA）一线单药**估计，PANTHER III 期试验按 IWG 2023 重评后的可评估人群中，**严格 CR 约 27%，复合完全缓解 cCR 约 51%，CR-L 约 23%**。[PANTHER 单药组重评，Blood 2025](https://ashpublications.org/blood/article/146/Supplement 1/5651/550857/Validation-of-the-international-working-group-IWG)
+
+| IWG 2023 指标 | AZA 单药   | 含义                                      |
+| ------------- | ---------- | ----------------------------------------- |
+| **CR**        | **27%**    | 严格完全缓解                              |
+| **cCR**       | **51%**    | CR + CR-L + CRh + CR equivalent           |
+| **CR-L**      | **约 23%** | 有限血细胞恢复的缓解，双系 11% + 单系 12% |
+
+三个比例都以 **113 名可评估患者**为分母。CR-L 已计入 cCR。AZA 单药组共有 163 名较高危 MDS 患者，其中 113 名（69%）有足够数据按 IWG 2023 重评，因此 **51% 是可评估人群的结果**。[PANTHER 单药组重评](https://ashpublications.org/blood/article/146/Supplement 1/5651/550857/Validation-of-the-international-working-group-IWG) · [IWG 2023 定义](https://ashpublications.org/blood/article/141/17/2047/494297/Consensus-proposal-for-revised-International)
+
+作为真实世界参照，VALIDATE 的 **1,773 名一线 HMA 单药**患者按同一标准评估，**CR 为 11.7%，cCR 为 27.7%**。该队列包含 AZA 和地西他滨，适合作为更广泛的 HMA 单药参照。[VALIDATE，Blood Cancer Journal 2026](https://www.nature.com/articles/s41408-026-01543-6)
+
+
+
+
+
+
+
+Gemini 
+
+
+
+AZA IWG 2023标准的CR
+
+在高危 MDS（HR-MDS）一线治疗中，阿扎胞苷（AZA）单药按 IWG 2023 标准评估的预期缓解率区间如下：   
+
+- CR（完全缓解）：约 12% – 18%（大型数据库实测 11.7%–15.3%，筛选更严的 III 期试验对照组可达 ~20%）   
+- CRL（血象部分恢复的 CR，含单系/双系恢复）：约 15% – 19%   
+- cCR（复合完全缓解 = CR + CRL + CRh + CRequ）：约 28% – 36%   
+
+
+
+
+
+| 指标           | AZA/HMA 单药对照队列(icMDS VALIDATE 2026) | 全队列 IWG 2023 重算(Haematologica 2026, n=1,047) | 关键构成说明                              |
+| -------------- | ----------------------------------------- | ------------------------------------------------- | ----------------------------------------- |
+| cCR（复合 CR） | 27.7%                                     | 36.0%                                             | 相比 IWG 2006（原 CR+mCR 约 50%）明显下调 |
+| CR（完全缓解） | 11.7%                                     | 15.3%（另含 CRequ 1.3%）                          | 骨髓原始细胞 <5% 且三系血象完全恢复       |
+| CRL（含 CRh）  | ~16.0%（推算差值）                        | 19.0%（CRbi 9.2% + CRuni 9.8%）                   | CRL 是 cCR 的最大贡献项，略高于纯 CR      |
+
+为什么 IWG 2023 下 AZA 单药的“高缓解率”缩水了：IWG 2006 时代的 AZA 单药“总有效/mCR”常高达 40%–50%，是因为纳入了大量仅骨髓原始细胞下降、但外周血象毫无改善的纯 mCR。IWG 2023 废除了 mCR，要求至少达到单系血象改善才能算 CRL，因此 AZA 单药的 cCR 基准直接压缩至 28%–36% 区间
+
+GLORA-4 的安全边际：在 GLORA-4 中，对照组（AZA + 安慰剂）的 IWG 2023 CR 率预计落在 15% 左右（cCR 约 30%–35%），而 Lisaftoclax + AZA 在早期 600mg 队列中跑出了 CR 52.2% / cCR 69.6%。即便 III 期大样本出现常规折损，试验组在 CR 终点上相对 AZA 单药仍具备较厚的统计学安全垫
+
+
+
+
+
+ven+aza
+
+| **研究与评估标准**                                           | **严格 CR 率（Ven+HMA vs 对照）**                            | **显著提升的缓解指标**                                       | **总生存期（OS）**                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **VERONA III 期**（NCT04401748，n=509，IWG 2006 改良标准）   | **18.0% vs 20.2%**（数值反而略低，无获益）（[OncLive 2025](https://www.onclive.com/view/venetoclax-plus-azacitidine-fails-to-provide-os-advantage-in-treatment-naive-higher-risk-mds)） | **mOR：76.2% vs 57.7%**（P < 0.0001）；增量主要来自 **mCR（57.8% vs 37.5%）** 及 mCR+HI（27.3% vs 18.2%）（[OncLive 2025](https://www.onclive.com/view/venetoclax-plus-azacitidine-fails-to-provide-os-advantage-in-treatment-naive-higher-risk-mds)；[Blood ASH 2025](https://ashpublications.org/blood/article/146/Supplement 1/235/552343/Subgroup-analyses-from-the-randomized-Phase-3)） | **22.18 vs 21.68 个月**（无统计学差异）（[Cure Today 2025](https://www.curetoday.com/view/venclexta-and-azacitidine-fail-to-improve-mds-survival)） |
+| **icMDS VALIDATE 队列**（*Blood Cancer J* 2026，n=1,907，**IWG 2023 中心双人评估**） | **17.1% vs 11.7%**（**P = 0.16**，无统计学差异）（[Blood Cancer J 2026](https://www.aamds.org/research-article/outcomes-patients-higher-risk-myelodysplastic-syndromesneoplasms-treated)） | **IWG 2023 复合完全缓解（cCR = CR + CR_L + CR_h）：48.8% vs 27.7%**（**P < 0.001**，校正 OR = 2.49）（[Blood Cancer J 2026](https://www.aamds.org/research-article/outcomes-patients-higher-risk-myelodysplastic-syndromesneoplasms-treated)） | 全人群 **HR = 0.83（P = 0.15）** 无差异；仅 ***TP53\* 野生型**亚组显著获益（HR = 0.47，P = 0.002）（[Blood Cancer J 2026](https://www.aamds.org/research-article/outcomes-patients-higher-risk-myelodysplastic-syndromesneoplasms-treated)；[PubMed 42373605](https://pubmed.ncbi.nlm.nih.gov/42373605/)） |
