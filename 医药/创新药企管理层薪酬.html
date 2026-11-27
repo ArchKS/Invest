@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8家中国生物医药公司核心管理层薪酬、股权激励与近10年减持分析（人民币统一口径）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Utilitarian Deep Research · answer-first compact hero · normalized comparison -> 3 un-normalized bar charts -> methodology band -> raw comp table -> raw sales table -> sources · IBM Plex Sans + Noto Sans SC + IBM Plex Mono · Crisp White #FFFFFF + Deep Teal #0F766E / Cobalt #1D4ED8 · 0px radius · 1 emphasis numeral · horizontal normalized comparison table as signature element · 3 inline SVG un-normalized bar charts */
+
+:root {
+  --paper: #FFFFFF;
+  --ink: #111827;
+  --ink2: #374151;
+  --mute: #4B5563;
+  --hair: #D1D5DB;
+  --accent: #0F766E;
+  --accent-text: #115E59;
+  --accent-2: #1D4ED8;
+  --accent-2-text: #1E40AF;
+  --band-bg: #F3F6F6;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%;
+  padding: 56px clamp(24px, 6vw, 96px) 84px;
+}
+
+h1 {
+  font-size: clamp(32px, 3.6vw, 48px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  max-width: 28ch;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.deck {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink2);
+  max-width: 68ch;
+  margin: 0 0 36px 0;
+}
+
+.sec {
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid var(--hair);
+}
+
+h2 {
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: var(--ink);
+}
+
+p {
+  margin: 0 0 14px 0;
+  color: var(--ink2);
+  max-width: 68ch;
+}
+
+a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+.hero-split {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 28px 0 36px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--hair);
+}
+
+.hero-verdict {
+  grid-column: 1 / 9;
+}
+
+.hero-numeral {
+  grid-column: 9 / 13;
+  padding-left: 24px;
+  border-left: 1px solid var(--hair);
+}
+
+.big-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(40px, 4.2vw, 60px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+
+.big-caption {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--mute);
+  margin-top: 8px;
+}
+
+.band {
+  margin: 48px calc(-1 * clamp(24px, 6vw, 96px)) 0;
+  padding: 36px clamp(24px, 6vw, 96px);
+  background: var(--band-bg);
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.strip-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.strip-item {
+  border-top: 1px solid var(--hair);
+  padding-top: 14px;
+}
+
+.strip-item strong {
+  display: block;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.strip-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--ink2);
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+thead th {
+  font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: left;
+  padding: 11px 10px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  vertical-align: bottom;
+  color: var(--ink);
+}
+
+tbody td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+}
+
+th.num, td.num {
+  text-align: right;
+  font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+  white-space: nowrap;
+}
+
+.rank-col {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  color: var(--accent-text);
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.ticker-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--mute);
+  display: block;
+}
+
+tr.total-row td {
+  font-weight: 700;
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  color: var(--ink);
+}
+
+tr.total-row td.highlight-val {
+  color: var(--accent-text);
+}
+
+tr.group-row td {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  padding-top: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.table-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--mute);
+  max-width: 90ch;
+  margin: 8px 0 0;
+}
+
+figure {
+  margin: 36px 0;
+  padding: 0;
+}
+
+.fig-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 12px 0;
+  line-height: 1.35;
+}
+
+figcaption {
+  font-size: 13px;
+  color: var(--mute);
+  margin-top: 10px;
+  line-height: 1.55;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pull-quote {
+  margin: 44px 0;
+  padding: 20px 0 20px 24px;
+  border-left: 3px solid var(--accent);
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+  max-width: 48ch;
+}
+
+ol.sources {
+  padding-left: 22px;
+  margin: 16px 0 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--ink2);
+  columns: 2;
+  column-gap: 40px;
+}
+
+ol.sources li {
+  margin-bottom: 8px;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .hero-verdict, .hero-numeral {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    border-left: none;
+  }
+  .strip-3 {
+    grid-template-columns: 1fr;
+  }
+  ol.sources {
+    columns: 1;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>实控人减持决定分化：8家中国生物医药公司管理层薪酬、股权激励与近10年减持分析</h1>
+  <p class="deck">以 2026 年 11 月 26 日收盘市值为分母，全部金额按今日（2026 年 11 月 27 日）实时汇率（1 港元 = 0.8511 人民币，1 美元 = 6.6645 人民币）统一折算为人民币，并按万级取整（xxx万）、亿级取整（xxx亿）、无千分位格式呈现。</p>
+
+  <div class="hero-split">
+    <div class="hero-verdict">
+      <p>按“总体 = 薪酬归一 + 减持归一”从左到右从小到大排序，<strong>百利天恒（0.05%）</strong>与<strong>亚盛医药（0.57%）</strong>因核心管理层上市以来无公开主动减持而居最左端；<strong>百济神州（1.09%下限）、信达生物（1.62%）、维立志博（1.77%）、康方生物（2.80%）</strong>处于中游；<strong>药明康德（3.95%）</strong>与<strong>药明生物（50.70%）</strong>因实控人阵营分别累计减持 173亿 与 729亿 人民币居最右端。</p>
+      <p>在绝对金额维度，<strong>药明康德（现金薪酬 9634万、股权激励 5亿）</strong>与<strong>百济神州（现金薪酬 5875万、股权激励 3亿）</strong>稳居年度激励前二；特别需要指出，<strong>康方生物四位创始人执行董事（夏瑜、李百勇、王忠民、张鹏）在 2021～2024 年无股份支付</strong>，直到 2025 年 5 月才首次集中获授期权与 RSU，FY2025 合计确认股权激励 1亿。</p>
+    </div>
+    <div class="hero-numeral">
+      <div class="big-num">0.05% – 50.70%</div>
+      <div class="big-caption">8 家公司总体归一化指标跨度接近三个数量级；剔除平台减持仅计高管个人直接减持时，维立志博降至 0.39%、药明生物降至 0.26%。</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: Centerpiece Horizontal Table -->
+  <section class="sec">
+    <h2>从左到右、从小到大：8家公司市值归一化核心总表（人民币统一口径）</h2>
+    <p>下表按 2026 年 11 月 27 日汇率全部折算为人民币，金额遵循万级写 xxx万、亿级写 xxx亿、不保留小数、无千分位；按总体指标从小到大自左向右排列。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>指标（人民币统一口径）</th>
+            <th class="num"><span class="rank-col">No.1 最小</span>百利天恒<span class="ticker-sub">688506.SH</span></th>
+<th class="num"><span class="rank-col">No.2</span>亚盛医药<span class="ticker-sub">06855.HK</span></th>
+<th class="num"><span class="rank-col">No.3</span>百济神州*<span class="ticker-sub">06160.HK / ONC</span></th>
+<th class="num"><span class="rank-col">No.4</span>信达生物<span class="ticker-sub">01801.HK</span></th>
+<th class="num"><span class="rank-col">No.5</span>维立志博*<span class="ticker-sub">09887.HK</span></th>
+<th class="num"><span class="rank-col">No.6</span>康方生物<span class="ticker-sub">09926.HK</span></th>
+<th class="num"><span class="rank-col">No.7</span>药明康德<span class="ticker-sub">603259.SH / 2359.HK</span></th>
+<th class="num"><span class="rank-col">No.8 最大</span>药明生物*<span class="ticker-sub">02269.HK</span></th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>2026-11-26 收盘市值</strong></td>
+            <td class="num">1040亿</td>
+<td class="num">76亿</td>
+<td class="num">3240亿</td>
+<td class="num">1225亿</td>
+<td class="num">45亿</td>
+<td class="num">427亿</td>
+<td class="num">4535亿</td>
+<td class="num">1439亿</td>
+          </tr>
+          <tr>
+            <td><strong>FY2025 现金年薪合计</strong></td>
+            <td class="num">2029万</td>
+<td class="num">未拆分</td>
+<td class="num">5875万</td>
+<td class="num">5395万</td>
+<td class="num">928万</td>
+<td class="num">1588万</td>
+<td class="num">9634万</td>
+<td class="num">2345万</td>
+          </tr>
+          <tr>
+            <td><strong>FY2025 股权激励合计</strong></td>
+            <td class="num">3358万</td>
+<td class="num">未拆分</td>
+<td class="num">3亿</td>
+<td class="num">2亿</td>
+<td class="num">674万</td>
+<td class="num">1亿</td>
+<td class="num">5亿</td>
+<td class="num">9273万</td>
+          </tr>
+          <tr>
+            <td><strong>FY2025 总薪酬合计</strong></td>
+            <td class="num">5386万</td>
+<td class="num">4368万</td>
+<td class="num">4亿</td>
+<td class="num">2亿</td>
+<td class="num">1602万</td>
+<td class="num">1亿</td>
+<td class="num">6亿</td>
+<td class="num">1亿</td>
+          </tr>
+          <tr>
+            <td><strong>薪酬归一 = FY25总薪酬 / 市值</strong></td>
+            <td class="num">0.05%</td>
+<td class="num">0.57%</td>
+<td class="num">0.12%</td>
+<td class="num">0.19%</td>
+<td class="num">0.36%</td>
+<td class="num">0.27%</td>
+<td class="num">0.13%</td>
+<td class="num">0.08%</td>
+          </tr>
+          <tr>
+            <td><strong>过去10年累计减持总额</strong></td>
+            <td class="num">0</td>
+<td class="num">0</td>
+<td class="num">31亿</td>
+<td class="num">18亿</td>
+<td class="num">6309万</td>
+<td class="num">11亿</td>
+<td class="num">173亿</td>
+<td class="num">729亿</td>
+          </tr>
+          <tr>
+            <td><strong>减持归一 = 10年减持 / 市值</strong></td>
+            <td class="num">0.00%</td>
+<td class="num">0.00%</td>
+<td class="num">0.97%</td>
+<td class="num">1.43%</td>
+<td class="num">1.41%</td>
+<td class="num">2.53%</td>
+<td class="num">3.82%</td>
+<td class="num">50.62%</td>
+          </tr>
+          <tr class="total-row">
+            <td>总体 = 薪酬归一 + 减持归一</td>
+            <td class="num highlight-val">0.05%</td>
+<td class="num highlight-val">0.57%</td>
+<td class="num highlight-val">1.09%*</td>
+<td class="num highlight-val">1.62%</td>
+<td class="num highlight-val">1.77%*</td>
+<td class="num highlight-val">2.80%</td>
+<td class="num highlight-val">3.95%</td>
+<td class="num highlight-val">50.70%*</td>
+          </tr>
+          <tr>
+            <td>敏感性：仅高管个人直接减持总体</td>
+            <td class="num">0.05%</td>
+<td class="num">0.57%</td>
+<td class="num">1.09%</td>
+<td class="num">1.62%</td>
+<td class="num">0.39%</td>
+<td class="num">2.80%</td>
+<td class="num">3.95%</td>
+<td class="num">0.26%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">*口径备注：① <strong>百济神州</strong>：SEC Form 4 聚合库覆盖近 24 个月（2025.02–2026.11）核心高管累计卖出 31亿（98% 经 Rule 10b5-1 计划执行），2016–2024 年原 BGNE 时期另有历史减持，故 1.09% 为已核实下限。② <strong>维立志博</strong>：康小强与赖寿鹏个人均零减持，左鸿刚个人减持 158万；主口径计入康小强受控员工持股平台南京礼至解禁后减持 6151万，合计 6309万（若仅计高管个人直接减持，总体为 0.39%）。③ <strong>药明生物</strong>：主口径含实控人李革控股平台 Biologics Holdings 15 次大宗配售 726亿 及执行高管个人减持 3亿（共 729亿）；若仅计执行高管个人减持，总体为 0.26%。④ <strong>康方生物</strong>：四位创始人执行董事（夏瑜、李百勇、王忠民、张鹏）<strong>2021～2024 年无股份支付</strong>，2025 年 5 月首次集中授予后 FY2025 确认股权激励 1亿。</p>
+  </section>
+
+
+  <!-- SECTION 1B: 5-Year Average Normalized Table -->
+  <section class="sec">
+    <h2>平滑单年波动：过去5年年均薪酬与减持归一化总表（从左到右、从小到大）</h2>
+    <p>为消除单年集中授股（如康方生物 21～24 年无股份支付、25 年首次集中授予，或百济神州 25 年高管一次性晋升奖励）的扰动，下表沿用与主表完全一致的数据字段，将年度现金年薪、股权激励与总薪酬替换为<strong>过去 5 年年均（FY2021–FY2025）</strong>；上市或公开披露不足 5 年的公司按实际已披露完整财年取均值并在列头标明统计区间。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>指标（人民币统一口径 · 5年年均）</th>
+            <th class="num"><span class="rank-col">No.1 最小</span>百利天恒<span class="ticker-sub">近3年(FY23–25)</span></th>
+<th class="num"><span class="rank-col">No.2</span>亚盛医药<span class="ticker-sub">FY25基准</span></th>
+<th class="num"><span class="rank-col">No.3</span>百济神州*<span class="ticker-sub">近5年(FY21–25)</span></th>
+<th class="num"><span class="rank-col">No.4</span>信达生物<span class="ticker-sub">近5年(FY21–25)</span></th>
+<th class="num"><span class="rank-col">No.5</span>维立志博*<span class="ticker-sub">近3年(FY23–25)</span></th>
+<th class="num"><span class="rank-col">No.6</span>康方生物<span class="ticker-sub">近5年(FY21–25)</span></th>
+<th class="num"><span class="rank-col">No.7</span>药明康德<span class="ticker-sub">近3年(FY23–25)</span></th>
+<th class="num"><span class="rank-col">No.8 最大</span>药明生物*<span class="ticker-sub">近4年(FY22–25)</span></th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>2026-11-26 收盘市值</strong></td>
+            <td class="num">1040亿</td>
+<td class="num">76亿</td>
+<td class="num">3240亿</td>
+<td class="num">1225亿</td>
+<td class="num">45亿</td>
+<td class="num">427亿</td>
+<td class="num">4535亿</td>
+<td class="num">1439亿</td>
+          </tr>
+          <tr>
+            <td><strong>过去5年年均现金年薪</strong></td>
+            <td class="num">1165万</td>
+<td class="num">未拆分</td>
+<td class="num">未拆分</td>
+<td class="num">4392万</td>
+<td class="num">604万</td>
+<td class="num">1546万</td>
+<td class="num">9345万</td>
+<td class="num">1289万</td>
+          </tr>
+          <tr>
+            <td><strong>过去5年年均股权激励</strong></td>
+            <td class="num">1326万</td>
+<td class="num">未拆分</td>
+<td class="num">未拆分</td>
+<td class="num">1亿</td>
+<td class="num">1886万</td>
+<td class="num">2004万</td>
+<td class="num">3亿</td>
+<td class="num">1亿</td>
+          </tr>
+          <tr>
+            <td><strong>过去5年年均总薪酬</strong></td>
+            <td class="num">2492万</td>
+<td class="num">4368万</td>
+<td class="num">3亿</td>
+<td class="num">2亿</td>
+<td class="num">2489万</td>
+<td class="num">3551万</td>
+<td class="num">4亿</td>
+<td class="num">1亿</td>
+          </tr>
+          <tr>
+            <td><strong>薪酬归一 = 5年年均总薪酬 / 市值</strong></td>
+            <td class="num">0.02%</td>
+<td class="num">0.57%</td>
+<td class="num">0.10%</td>
+<td class="num">0.15%</td>
+<td class="num">0.56%</td>
+<td class="num">0.08%</td>
+<td class="num">0.09%</td>
+<td class="num">0.08%</td>
+          </tr>
+          <tr>
+            <td><strong>过去10年累计减持总额</strong></td>
+            <td class="num">0</td>
+<td class="num">0</td>
+<td class="num">31亿</td>
+<td class="num">18亿</td>
+<td class="num">6309万</td>
+<td class="num">11亿</td>
+<td class="num">173亿</td>
+<td class="num">729亿</td>
+          </tr>
+          <tr>
+            <td><strong>减持归一 = 10年减持 / 市值</strong></td>
+            <td class="num">0.00%</td>
+<td class="num">0.00%</td>
+<td class="num">0.97%</td>
+<td class="num">1.43%</td>
+<td class="num">1.41%</td>
+<td class="num">2.53%</td>
+<td class="num">3.82%</td>
+<td class="num">50.62%</td>
+          </tr>
+          <tr class="total-row">
+            <td>总体 = 薪酬归一 + 减持归一</td>
+            <td class="num highlight-val">0.02%</td>
+<td class="num highlight-val">0.57%</td>
+<td class="num highlight-val">1.07%*</td>
+<td class="num highlight-val">1.58%</td>
+<td class="num highlight-val">1.96%*</td>
+<td class="num highlight-val">2.61%</td>
+<td class="num highlight-val">3.91%</td>
+<td class="num highlight-val">50.70%*</td>
+          </tr>
+          <tr>
+            <td>敏感性：仅高管个人直接减持总体</td>
+            <td class="num">0.02%</td>
+<td class="num">0.57%</td>
+<td class="num">1.07%</td>
+<td class="num">1.58%</td>
+<td class="num">0.59%</td>
+<td class="num">2.61%</td>
+<td class="num">3.91%</td>
+<td class="num">0.27%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">统计区间说明：① <strong>百济神州、信达生物、康方生物</strong>均采用完整 5 年（FY2021–FY2025）均值；其中<strong>康方生物</strong>四位创始人执董 21～24 年无股份支付，平滑后年均股权激励降至 2004万、薪酬归一由 0.27% 大幅降至 0.08%（若计入原执董夏羽 21～24 年股份支付，5 年年均总薪酬为 7408万、总体 2.70%，排序不变）。② <strong>药明生物</strong>按完整披露现金/股权拆分的近 4 年（FY2022–FY2025）取均；<strong>百利天恒、维立志博</strong>因上市时间限制按近 3 年（FY2023–FY2025）取均；<strong>药明康德</strong>现金年薪按近 3 年（FY2023–FY2025）取均，股权激励按已核实的 2023 及 2025 两次 H 股奖励计划均值核算；<strong>亚盛医药</strong>暂以已核实的 FY2025 总薪酬 4368万 为基准。</p>
+  </section>
+
+  <!-- SECTION 2: 3 Un-normalized Statistical Bar Charts -->
+  <section class="sec">
+    <h2>绝对金额对比：薪酬、股权激励与近10年减持三张柱状图（未归一化）</h2>
+    <p>剔除市值分母影响、直接以人民币绝对金额横向比较，可以更直观地看到各公司核心管理层的现金支出、股权授予力度以及历史变现体量。</p>
+
+    <figure>
+      <div class="fig-title">FY2025 现金年薪：药明康德（9634万）与百济神州（5875万）领跑，康方生物与维立志博低于 2000万</div>
+      <svg viewBox="0 0 700 415" width="100%" role="img" aria-label="8家公司FY2025核心管理层现金薪酬统计柱状图">
+<line x1="120" y1="36" x2="120" y2="366" stroke="#111827" stroke-width="1.2"/>
+<text x="120.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">0</text>
+<line x1="210.0" y1="36" x2="210.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="210.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">2500万</text>
+<line x1="300.0" y1="36" x2="300.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="300.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">5000万</text>
+<line x1="390.0" y1="36" x2="390.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="390.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">7500万</text>
+<line x1="480.0" y1="36" x2="480.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="480.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">1亿</text>
+<text x="340" y="20" font-family="IBM Plex Sans, Noto Sans SC, sans-serif" font-size="13" fill="#4B5563" text-anchor="middle">FY2025 核心管理层年度现金薪酬合计（人民币，未归一化）</text>
+<text x="110" y="64" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">亚盛医药</text>
+<text x="128.0" y="64" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">未拆分 (总薪酬4368万)</text>
+<text x="110" y="104" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">维立志博</text>
+<rect x="120" y="88" width="33.4" height="22" fill="#0F766E"/>
+<text x="161.4" y="104" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">928万</text>
+<text x="110" y="144" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">康方生物</text>
+<rect x="120" y="128" width="57.2" height="22" fill="#0F766E"/>
+<text x="185.2" y="144" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">1588万</text>
+<text x="110" y="184" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百利天恒</text>
+<rect x="120" y="168" width="73.0" height="22" fill="#0F766E"/>
+<text x="201.0" y="184" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">2029万</text>
+<text x="110" y="224" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">药明生物</text>
+<rect x="120" y="208" width="84.4" height="22" fill="#0F766E"/>
+<text x="212.4" y="224" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">2345万</text>
+<text x="110" y="264" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">信达生物</text>
+<rect x="120" y="248" width="194.2" height="22" fill="#0F766E"/>
+<text x="322.2" y="264" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">5395万</text>
+<text x="110" y="304" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百济神州</text>
+<rect x="120" y="288" width="211.5" height="22" fill="#0F766E"/>
+<text x="339.5" y="304" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">5875万</text>
+<text x="110" y="344" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="end">药明康德</text>
+<rect x="120" y="328" width="346.8" height="22" fill="#1D4ED8"/>
+<text x="474.8" y="344" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="600" fill="#1E40AF">9634万</text>
+</svg>
+      <figcaption>单位：人民币（万/亿，未做市值归一化）。亚盛医药 2025 年报披露执行董事杨大俊与联合创始人王少萌合计总薪酬 4368万，未单独拆分现金年薪与股份支付。</figcaption>
+    </figure>
+
+    <figure>
+      <div class="fig-title">FY2025 股权激励：药明康德（5亿）与百济神州（3亿）居前，康方管理层 21～24 年无股份支付</div>
+      <svg viewBox="0 0 700 415" width="100%" role="img" aria-label="8家公司FY2025核心管理层股权激励统计柱状图">
+<line x1="120" y1="36" x2="120" y2="366" stroke="#111827" stroke-width="1.2"/>
+<text x="120.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">0</text>
+<line x1="250.9" y1="36" x2="250.9" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="250.9" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">2亿</text>
+<line x1="381.8" y1="36" x2="381.8" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="381.8" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">4亿</text>
+<line x1="447.3" y1="36" x2="447.3" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="447.3" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">5亿</text>
+<text x="340" y="20" font-family="IBM Plex Sans, Noto Sans SC, sans-serif" font-size="13" fill="#4B5563" text-anchor="middle">FY2025 核心管理层股权激励 / 股份支付合计（人民币，未归一化）</text>
+<text x="110" y="64" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">亚盛医药</text>
+<text x="128.0" y="64" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">未拆分 (总薪酬4368万)</text>
+<text x="110" y="104" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">维立志博</text>
+<rect x="120" y="88" width="4.4" height="22" fill="#0F766E"/>
+<text x="132.4" y="104" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">674万</text>
+<text x="110" y="144" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百利天恒</text>
+<rect x="120" y="128" width="22.0" height="22" fill="#0F766E"/>
+<text x="150.0" y="144" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">3358万</text>
+<text x="110" y="184" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">药明生物</text>
+<rect x="120" y="168" width="60.7" height="22" fill="#0F766E"/>
+<text x="188.7" y="184" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">9273万</text>
+<text x="110" y="224" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="end">康方生物</text>
+<rect x="120" y="208" width="65.6" height="22" fill="#1D4ED8"/>
+<text x="193.6" y="224" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="600" fill="#1E40AF">1亿 (21～24年无股份支付)</text>
+<text x="110" y="264" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">信达生物</text>
+<rect x="120" y="248" width="117.7" height="22" fill="#0F766E"/>
+<text x="245.7" y="264" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">2亿</text>
+<text x="110" y="304" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百济神州</text>
+<rect x="120" y="288" width="222.3" height="22" fill="#0F766E"/>
+<text x="350.3" y="304" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">3亿</text>
+<text x="110" y="344" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">药明康德</text>
+<rect x="120" y="328" width="328.9" height="22" fill="#0F766E"/>
+<text x="456.9" y="344" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">5亿</text>
+</svg>
+      <figcaption>单位：人民币（万/亿，未做市值归一化）。特别说明：<strong>康方生物四位创始人执行董事（夏瑜、李百勇、王忠民、张鹏）在 FY2021～FY2024 连续 4 年无股份支付</strong>，直至 2024 年 6 月修订激励计划并于 2025 年 5 月首次集中授予，FY2025 合计确认股权激励 1亿（同期非创始人原执董夏羽在 21～24 年持续确认股份支付）。药明康德按 2025 年 H 股奖励信托计划授予日市值 5亿 计列（分 4 年归属，年化约 1亿）。</figcaption>
+    </figure>
+
+    <figure>
+      <div class="fig-title">过去10年累计减持：药明生物（729亿）与药明康德（173亿）大幅领先，百利天恒与亚盛医药为零</div>
+      <svg viewBox="0 0 700 415" width="100%" role="img" aria-label="8家公司过去10年核心管理层累计减持金额统计柱状图">
+<line x1="120" y1="36" x2="120" y2="366" stroke="#111827" stroke-width="1.2"/>
+<text x="120.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">0</text>
+<line x1="220.0" y1="36" x2="220.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="220.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">50亿</text>
+<line x1="320.0" y1="36" x2="320.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="320.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">100亿</text>
+<line x1="420.0" y1="36" x2="420.0" y2="366" stroke="#D1D5DB" stroke-width="1"/>
+<text x="420.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">150亿</text>
+<text x="535.0" y="390" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" fill="#4B5563" text-anchor="middle">700亿+</text>
+<text x="340" y="20" font-family="IBM Plex Sans, Noto Sans SC, sans-serif" font-size="13" fill="#4B5563" text-anchor="middle">过去10年（或上市以来）核心管理层及实控平台累计减持金额（人民币，未归一化）</text>
+<text x="110" y="64" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百利天恒</text>
+<text x="128.0" y="64" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">0</text>
+<text x="110" y="104" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">亚盛医药</text>
+<text x="128.0" y="104" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">0</text>
+<text x="110" y="144" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">维立志博</text>
+<rect x="120" y="128" width="3.0" height="22" fill="#1D4ED8"/>
+<text x="131.0" y="144" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">6309万 (含员工平台)</text>
+<text x="110" y="184" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">康方生物</text>
+<rect x="120" y="168" width="21.6" height="22" fill="#1D4ED8"/>
+<text x="149.6" y="184" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">11亿</text>
+<text x="110" y="224" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">信达生物</text>
+<rect x="120" y="208" width="35.1" height="22" fill="#1D4ED8"/>
+<text x="163.1" y="224" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">18亿</text>
+<text x="110" y="264" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">百济神州</text>
+<rect x="120" y="248" width="62.7" height="22" fill="#1D4ED8"/>
+<text x="190.7" y="264" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">31亿 (近24月下限)</text>
+<text x="110" y="304" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="end">药明康德</text>
+<rect x="120" y="288" width="346.4" height="22" fill="#1D4ED8"/>
+<text x="474.4" y="304" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="500" fill="#111827">173亿</text>
+<text x="110" y="344" font-family="Noto Sans SC, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="end">药明生物</text>
+<rect x="120" y="328" width="350" height="22" fill="#0F766E"/>
+<rect x="486" y="328" width="54" height="22" fill="#0F766E"/>
+<line x1="474" y1="324" x2="480" y2="354" stroke="#FFFFFF" stroke-width="5"/>
+<line x1="472" y1="325" x2="478" y2="353" stroke="#111827" stroke-width="1.5"/>
+<line x1="480" y1="325" x2="486" y2="353" stroke="#111827" stroke-width="1.5"/>
+<text x="548.0" y="344" font-family="IBM Plex Mono, Noto Sans SC, monospace" font-size="13" font-weight="600" fill="#1E40AF">729亿 (含实控人平台)</text>
+</svg>
+      <figcaption>单位：人民币（万/亿，未做市值归一化；药明生物采用断裂轴展示）。百济神州 31亿 为近 24 个月已核实下限；维立志博 6309万 含员工持股平台南京礼至 6151万（高管个人仅 158万）；药明生物 729亿 含实控人平台 Biologics Holdings 配售 726亿（执行高管个人仅 3亿）。</figcaption>
+    </figure>
+  </section>
+
+  <!-- Full-bleed Band: Methodology & FX -->
+  <div class="band">
+    <h2>今日汇率基准、数值格式与康方股份支付说明</h2>
+    <div class="strip-3">
+      <div class="strip-item">
+        <strong>今日汇率与数值规则（2026-11-27）</strong>
+        <p>所有港币与美元数据均按 2026 年 11 月 27 日 Google Finance 实时汇率（1 港元 = 0.8511 人民币、1 美元 = 6.6645 人民币）统一换算为人民币；万级取整写 xxx万、亿级取整写 xxx亿，不保留小数且不使用千分位。</p>
+      </div>
+      <div class="strip-item">
+        <strong>康方管理层 21～24 年无股份支付原因</strong>
+        <p>夏瑜、李百勇、王忠民、张鹏四位创始人上市前已持有高比例原始股，FY2021～FY2024 未获授新期权或 RSU；直至 2024 年 6 月 30 日修订激励计划、2025 年 5 月 24 日首次集中授予后，FY2025 才首次确认股份支付费用。</p>
+      </div>
+      <div class="strip-item">
+        <strong>先旧后新配售与机构减持剔除</strong>
+        <p>信达生物 2019 年及亚盛医药 2021/2023/2025 年先旧后新配售融资、百利天恒外资机构 OAP III 减持均非管理层个人套现，已予剔除。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Raw Compensation Table (All RMB, no decimals, no commas) -->
+  <section class="sec">
+    <h2>原始数据一：8家公司核心管理层逐人历年薪酬与股权激励明细（人民币）</h2>
+    <p>以下所有金额均已按今日（2026 年 11 月 27 日）汇率统一换算为人民币，按万级/亿级取整且不带千分位。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>姓名与职务</th>
+            <th>财年</th>
+            <th class="num">现金年薪</th>
+            <th class="num">股权激励</th>
+            <th class="num">年度合计</th>
+            <th>备注与原始来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group-row"><td colspan="6">1. 百利天恒（688506.SH · 市值 1040亿）</td></tr>
+          <tr><td><strong>朱义</strong>（董事长、总经理、CSO）</td><td>FY2025</td><td class="num">795万</td><td class="num">2614万</td><td class="num">3409万</td><td>含SystImmune期权股份支付（<a href="https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?type=web&code=SH688506" target="_blank" rel="noopener noreferrer">东方财富F10</a>、<a href="https://cj.sina.cn/articles/view/8018195504/1ddebf430001017a52" target="_blank" rel="noopener noreferrer">港股招股书</a>）</td></tr>
+          <tr><td><strong>朱义</strong>（历史对比）</td><td>FY24 / 23 / 22</td><td class="num">339万 / 246万 / 112万</td><td class="num">487万 / 0 / 0</td><td class="num">826万 / 246万 / 112万</td><td>2026Q1另确认现金149万+股份支付460万（<a href="https://news.qq.com/rain/a/20251111A04EJS00" target="_blank" rel="noopener noreferrer">招股书摘要</a>）</td></tr>
+          <tr><td><strong>朱海</strong>（董事、SystImmune CTDO）</td><td>FY2025 / FY2024</td><td class="num">627万 / 577万</td><td class="num">743万 / 135万</td><td class="num">1371万 / 712万</td><td>2026Q1现金126万+股份支付131万（<a href="https://cj.sina.cn/articles/view/8018195504/1ddebf430001017a52" target="_blank" rel="noopener noreferrer">星岛/港股招股书</a>）</td></tr>
+          <tr><td><strong>张苏娅</strong>（董事、常务副总、董秘）</td><td>FY25 / 24 / 23</td><td class="num">257万 / 100万 / 100万</td><td class="num">0 / 0 / 0</td><td class="num">257万 / 100万 / 100万</td><td>前任CFO（<a href="https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?type=web&code=SH688506" target="_blank" rel="noopener noreferrer">东方财富F10</a>、<a href="https://www.wabei.cn/Home/News/367904" target="_blank" rel="noopener noreferrer">挖贝网</a>）</td></tr>
+          <tr><td><strong>卓识 / 王潇潇 / 万维李 / 何勇</strong></td><td>FY2025</td><td class="num">199万 / 66万 / 56万 / 29万</td><td class="num">0</td><td class="num">350万 (4人)</td><td>其余董事/副总均无股份支付（<a href="https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?type=web&code=SH688506" target="_blank" rel="noopener noreferrer">东方财富F10</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">2. 亚盛医药（06855.HK / AAPG · 市值 76亿）</td></tr>
+          <tr><td><strong>杨大俊</strong>（董事长、执行董事、CEO）</td><td>FY2025</td><td class="num">未拆分</td><td class="num">未拆分</td><td class="num">4177万</td><td>唯一执行董事，含薪金、花红及RSU（<a href="http://basic.10jqka.com.cn/HK6855/manager.html" target="_blank" rel="noopener noreferrer">同花顺F10</a>、<a href="https://www.sec.gov/Archives/edgar/data/2023311/000121390026049412/R39.htm" target="_blank" rel="noopener noreferrer">SEC 20-F</a>）</td></tr>
+          <tr><td><strong>王少萌</strong>（联合创始人、非执董、SAB主席）</td><td>FY2025</td><td class="num">未拆分</td><td class="num">未拆分</td><td class="num">191万</td><td>联合创始人；非董事高管翟一帆/Veet Misra未单列（<a href="http://basic.10jqka.com.cn/HK6855/manager.html" target="_blank" rel="noopener noreferrer">同花顺F10</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">3. 百济神州（06160.HK / ONC / 688235.SH · A+H 市值 3240亿）</td></tr>
+          <tr><td><strong>欧雷强 John V. Oyler</strong>（董事长、CEO）</td><td>FY2025</td><td class="num">1962万</td><td class="num">9996万</td><td class="num">1亿</td><td>FY24 1亿 / FY23 1亿 / FY22 1亿（<a href="https://www.sec.gov/Archives/edgar/data/1651308/000110465926049655/tm261479-4_def14a.htm" target="_blank" rel="noopener noreferrer">SEC 2026 DEF 14A</a>）</td></tr>
+          <tr><td><strong>汪来 Lai Wang</strong>（总裁、全球研发负责人）</td><td>FY2025</td><td class="num">880万</td><td class="num">1亿</td><td class="num">1亿</td><td>含6665万晋升一次性股权；FY24 4933万 / FY23 4876万（<a href="https://gloom.sh/stocks/onc/proxy/2026" target="_blank" rel="noopener noreferrer">2026 Proxy</a>）</td></tr>
+          <tr><td><strong>吴晓滨 Xiaobin Wu</strong>（总裁、COO）</td><td>FY2025</td><td class="num">1353万</td><td class="num">6664万</td><td class="num">8017万</td><td>FY24 7423万 / FY23 7331万 / FY22 7126万（<a href="https://www.salary.com/research/executive-compensation/xiaobin-wu-executive-member-of-beigene-ltd" target="_blank" rel="noopener noreferrer">Salary.com</a>）</td></tr>
+          <tr><td><strong>Aaron Rosenberg</strong>（现任CFO）</td><td>FY2025</td><td class="num">844万</td><td class="num">3440万</td><td class="num">4284万</td><td>FY24半年度含签约股权 4099万（<a href="https://www.morningstar.com/stocks/xnas/onc/executive" target="_blank" rel="noopener noreferrer">Morningstar</a>）</td></tr>
+          <tr><td><strong>Chan Henry Lee</strong>（总法律顾问）</td><td>FY2025</td><td class="num">837万</td><td class="num">2532万</td><td class="num">3369万</td><td>FY24 3116万 / FY23 2699万（<a href="https://www.salary.com/research/executive-compensation/chan-lee-executive-member-of-beigene-ltd" target="_blank" rel="noopener noreferrer">Salary.com</a>）</td></tr>
+          <tr><td><strong>王晓东</strong>（联合创始人、非执董、SAB主席）</td><td>FY2023参考</td><td class="num">167万协议</td><td class="num">股权为主</td><td class="num">2944万</td><td>非SEC NEO；2025续签咨询费67万+目标奖金100万+股权激励（<a href="https://www.sec.gov/Archives/edgar/data/1651308/000110465925052750/tm2515777d13_8k.htm" target="_blank" rel="noopener noreferrer">SEC 8-K</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">4. 信达生物（01801.HK · 市值 1225亿）</td></tr>
+          <tr><td><strong>俞德超</strong>（创始人、董事长、CEO）</td><td>FY2025</td><td class="num">4275万</td><td class="num">1亿</td><td class="num">2亿</td><td>精确值现金4275万+股份支付11496万=15771万；FY20–25 6年累计8亿（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042805171.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>俞德超</strong>（历史对比）</td><td>FY24 / 23 / 22</td><td class="num">4060万 / 3644万 / 3296万</td><td class="num">9517万 / 9956万 / 1亿</td><td class="num">1亿 / 1亿 / 1亿</td><td>FY21 1亿 / FY20 1亿（<a href="http://www.hkexnews.hk/listedco/listconews/sehk/2024/0429/2024042905755.pdf" target="_blank" rel="noopener noreferrer">2023年报</a>）</td></tr>
+          <tr><td><strong>奚浩</strong>（原执董/CFO，2026.09转非执董）</td><td>FY2025</td><td class="num">698万</td><td class="num">3159万</td><td class="num">3857万</td><td>FY24 3269万 / FY23 3141万 / FY22 2963万（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042805171.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>张倩</strong>（执行董事、首席商业官）</td><td>FY2025 / FY2024</td><td class="num">422万 / 279万</td><td class="num">3326万 / 1712万</td><td class="num">3748万 / 1991万</td><td>2024年5月起任执行董事；全集团关键管理人员FY25合计2亿（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042805171.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">5. 维立志博（09887.HK · 市值 45亿）</td></tr>
+          <tr><td><strong>康小强</strong>（创始人、董事长、CEO）</td><td>FY25 / 24 / 23</td><td class="num">411万 / 90万 / 291万</td><td class="num">0 / 2245万 / 742万</td><td class="num">411万 / 2335万 / 1032万</td><td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042403304.pdf" target="_blank" rel="noopener noreferrer">2025年报 Note 10</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0717/2025071700005.pdf" target="_blank" rel="noopener noreferrer">招股书</a></td></tr>
+          <tr><td><strong>赖寿鹏</strong>（联合创始人、执行董事、CSO）</td><td>FY25 / 24 / 23</td><td class="num">98万 / 98万 / 195万</td><td class="num">0 / 541万 / 495万</td><td class="num">98万 / 639万 / 689万</td><td><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042403304.pdf" target="_blank" rel="noopener noreferrer">2025年报 Note 10</a></td></tr>
+          <tr><td><strong>左鸿刚</strong>（执行董事、CFO、董秘）</td><td>FY2025 / FY2024</td><td class="num">420万 / 210万</td><td class="num">674万 / 961万</td><td class="num">1094万 / 1171万</td><td>3名非董事高管（含蔡胜利/凌红）FY25合计1701万（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042403304.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">6. 康方生物（09926.HK · 市值 427亿 · 注：四位创始人执董 21～24 年无股份支付）</td></tr>
+          <tr><td><strong>夏瑜</strong>（创始人、董事长、CEO）</td><td>FY2025</td><td class="num">455万</td><td class="num">7424万</td><td class="num">7879万</td><td><strong>21～24年无股份支付</strong>（年薪527万至709万），25年5月首次获授（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906227_c.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>李百勇</strong>（联合创始人、执行董事、CSO）</td><td>FY2025</td><td class="num">440万</td><td class="num">1856万</td><td class="num">2295万</td><td><strong>21～24年无股份支付</strong>（年薪421万至528万）（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906227_c.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>王忠民</strong>（联合创始人、执行董事、SVP）</td><td>FY2025</td><td class="num">352万</td><td class="num">371万</td><td class="num">723万</td><td><strong>21～24年无股份支付</strong>（年薪339万至396万）（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906227_c.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>张鹏</strong>（联合创始人、执行董事、SVP）</td><td>FY2025 / FY2024</td><td class="num">341万 / 383万</td><td class="num">371万 / 0</td><td class="num">713万 / 383万</td><td><strong>24年无股份支付</strong>，25年首次确认（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906227_c.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>夏羽</strong>（SVP，前执行董事，非创始人）</td><td>FY24 / 23 / 21</td><td class="num">397万 / 390万 / 401万</td><td class="num">536万 / 2976万 / 1亿</td><td class="num">933万 / 3365万 / 1亿</td><td>非创始人，21～24年持续确认股份支付（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2022/0428/2022042801357_c.pdf" target="_blank" rel="noopener noreferrer">2021年报</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">7. 药明康德（603259.SH / 02359.HK · A+H 市值 4535亿）</td></tr>
+          <tr><td><strong>李革 Ge Li</strong>（董事长、CEO）</td><td>FY2025</td><td class="num">3998万</td><td class="num">2亿</td><td class="num">3亿</td><td>FY24现金4180万/FY23 4197万；2025 H股计划获授213万股（4年归属）（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">授予公告</a>）</td></tr>
+          <tr><td><strong>陈民章</strong>（执行董事、联席CEO）</td><td>FY2025</td><td class="num">1800万</td><td class="num">1亿</td><td class="num">1亿</td><td>FY24现金1672万/FY23 1093万；获授111万股H股（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">授予公告</a>）</td></tr>
+          <tr><td><strong>杨青 Steve Yang</strong>（执行董事、联席CEO）</td><td>FY2025</td><td class="num">1480万</td><td class="num">9083万</td><td class="num">1亿</td><td>FY24现金938万/FY23 759万；获授91万股H股（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">授予公告</a>）</td></tr>
+          <tr><td><strong>张朝晖</strong>（执行董事、副总裁）</td><td>FY2025</td><td class="num">988万</td><td class="num">4367万</td><td class="num">5355万</td><td>FY24现金781万/FY23 705万；获授44万股H股（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">授予公告</a>）</td></tr>
+          <tr><td><strong>施明</strong>（首席财务官 CFO）</td><td>FY2025</td><td class="num">795万</td><td class="num">2337万</td><td class="num">3132万</td><td>FY24现金565万/FY23 506万；获授24万股H股（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">授予公告</a>）</td></tr>
+          <tr><td><strong>胡正国（已退休）/ 韩敏 / 吴皓</strong></td><td>FY2025</td><td class="num">438万 / 135万 / —</td><td class="num">0 / 0 / 2217万</td><td class="num">2790万 (3人)</td><td>胡正国2025.07退休（FY24现金914万）；吴皓获授22万股H股（<a href="https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?type=web&code=SH603259" target="_blank" rel="noopener noreferrer">东方财富F10</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="6">8. 药明生物（02269.HK · 市值 1439亿）</td></tr>
+          <tr><td><strong>李革 Ge Li</strong>（董事会主席、非执董）</td><td>FY22–FY25</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>不在药明生物领薪（<a href="https://basic.10jqka.com.cn/HK2269/manager.html" target="_blank" rel="noopener noreferrer">同花顺F10</a>）</td></tr>
+          <tr><td><strong>陈智胜</strong>（执行董事、CEO）</td><td>FY2025</td><td class="num">1639万</td><td class="num">6286万</td><td class="num">7925万</td><td>FY24 9570万 / FY23 9691万 / FY22 7867万 / FY21 5079万（<a href="https://cdn.wuxibiologics.com/en/wp-content/uploads/2026042900764.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>周伟昌</strong>（原执董/CTO，2025.06退休）</td><td>FY2025</td><td class="num">175万</td><td class="num">2042万</td><td class="num">2217万</td><td>FY24 3565万 / FY23 3289万 / FY22 2498万（<a href="https://cdn.wuxibiologics.com/en/wp-content/uploads/2026042900764.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+          <tr><td><strong>顾雪君</strong>（执行董事、CTO）</td><td>FY2025</td><td class="num">531万</td><td class="num">946万</td><td class="num">1476万</td><td>2025.06起任执行董事（<a href="https://cdn.wuxibiologics.com/en/wp-content/uploads/2026042900764.pdf" target="_blank" rel="noopener noreferrer">2025年报</a>）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Raw Insider Sales Table (All RMB, no decimals, no commas) -->
+  <section class="sec">
+    <h2>原始数据二：8家公司核心管理层过去10年（或上市以来）减持明细（人民币）</h2>
+    <p>所有港股与美股减持金额均已按今日（2026 年 11 月 27 日）汇率统一换算为人民币，遵循万级取整（xxx万）、亿级取整（xxx亿）、无千分位。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>减持主体 / 高管</th>
+            <th>交易日期 / 区间</th>
+            <th class="num">减持股数</th>
+            <th class="num">减持金额（人民币）</th>
+            <th>方式、性质与来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group-row"><td colspan="5">1. 百利天恒（2023-01-06 上市至今 · 核心管理层累计减持：0）</td></tr>
+          <tr><td><strong>朱义、张苏娅、王潇潇、朱海等全体董监高</strong></td><td>2023-01 ～ 2026-11</td><td class="num">0股</td><td class="num">0</td><td>个人零减持；朱义2024-07-22反增持5万股（828万）并承诺不减持延至2027年7月（<a href="https://stockmc.xueqiu.com/202610/688506_20261030_1X38.pdf" target="_blank" rel="noopener noreferrer">承诺公告</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">2. 亚盛医药（2019-10-28 上市至今 · 已核实公开主动减持：0）</td></tr>
+          <tr><td><strong>杨大俊、王少萌、郭明、翟一帆一致行动人</strong></td><td>2019-10 ～ 2026-11</td><td class="num">0股</td><td class="num">0</td><td>三次配售均为先旧后新公司融资非个人套现（<a href="https://www.sec.gov/Archives/edgar/data/2023311/000121390026100763/ea030579601ex99-1.htm" target="_blank" rel="noopener noreferrer">2026中报</a>）；杨大俊2022-10-28曾增持1万股（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20221101E00398" target="_blank" rel="noopener noreferrer">Form 3A</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">3. 百济神州（SEC Form 4 近 24 个月 2025.02–2026.11 已核实合计：31亿，1 ADS = 13 普通股）</td></tr>
+          <tr><td><strong>欧雷强 John V. Oyler</strong>（CEO）</td><td>2025-03 ～ 2026-08</td><td class="num">90万ADS</td><td class="num">18亿</td><td>主体为Rule 10b5-1计划及6月RSU纳税预扣；2016–2024原BGNE期另有历史减持（<a href="https://www.marketbeat.com/stocks/NASDAQ/ONC/insider-trades/" target="_blank" rel="noopener noreferrer">MarketBeat</a>、<a href="https://www.stocktitan.net/sec-filings/ONC/form-4-be-one-medicines-ltd-insider-trading-activity-99356871aeaf.html" target="_blank" rel="noopener noreferrer">SEC Form 4</a>）</td></tr>
+          <tr><td><strong>王晓东 Xiaodong Wang</strong>（联合创始人）</td><td>2025-02 ～ 2026-11</td><td class="num">31万ADS</td><td class="num">6亿</td><td>Rule 10b5-1及期权行权卖出（<a href="https://www.secform4.com/insider-trading/1662982.htm" target="_blank" rel="noopener noreferrer">SecForm4</a>）</td></tr>
+          <tr><td><strong>吴晓滨 Xiaobin Wu</strong>（总裁、COO）</td><td>2025-02 ～ 2026-11</td><td class="num">28万ADS</td><td class="num">5亿</td><td>去重后统计，主要为10b5-1计划卖出（<a href="https://www.insidertrades.com/beigene-ltd-stock-1/" target="_blank" rel="noopener noreferrer">InsiderTrades</a>）</td></tr>
+          <tr><td><strong>Chan Henry Lee</strong>（总法律顾问）</td><td>2025-02 ～ 2026-11</td><td class="num">5万ADS</td><td class="num">1亿</td><td>10b5-1计划及归属卖出（<a href="https://www.marketbeat.com/stocks/NASDAQ/ONC/insider-trades/" target="_blank" rel="noopener noreferrer">MarketBeat</a>）</td></tr>
+          <tr><td><strong>汪来 Lai Wang</strong>（全球研发负责人）</td><td>2025-02 ～ 2026-11</td><td class="num">2万ADS</td><td class="num">4513万</td><td>10b5-1计划及归属卖出（<a href="https://www.marketbeat.com/stocks/NASDAQ/ONC/insider-trades/" target="_blank" rel="noopener noreferrer">MarketBeat</a>）</td></tr>
+          <tr><td><strong>Aaron Rosenberg</strong>（现任CFO）</td><td>2025-02 ～ 2026-11</td><td class="num">2978 ADS</td><td class="num">580万</td><td>仅3笔RSU归属小额卖出（<a href="https://www.marketbeat.com/stocks/NASDAQ/ONC/insider-trades/" target="_blank" rel="noopener noreferrer">MarketBeat</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">4. 信达生物（2018-10-31 上市至今 · 执行董事累计减持：18亿）</td></tr>
+          <tr><td><strong>俞德超</strong>（董事长、CEO）</td><td>2020-07-27</td><td class="num">900万股</td><td class="num">4亿</td><td>场外现金出售（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20200729E00096" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>俞德超</strong></td><td>2021-01-22 ～ 01-25</td><td class="num">300万股</td><td class="num">3亿</td><td>2笔场内出售（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20210127E00576" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>俞德超</strong></td><td>2023-10-17 ～ 2024-10-02</td><td class="num">466万股</td><td class="num">2亿</td><td>6笔场内出售（含个人实益及家族信托）（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20241004E00005" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>俞德超</strong></td><td>2026-05-11</td><td class="num">135万股</td><td class="num">1亿</td><td>场内出售，公司称用于缴纳行权个税（<a href="https://www.lanjinger.com/d/1778821608828158019" target="_blank" rel="noopener noreferrer">蓝鲸财经</a>）；10笔合计9亿</td></tr>
+          <tr><td><strong>奚浩</strong>（原执行董事/CFO）</td><td>2021-01-21 ～ 2021-07-22</td><td class="num">572万股</td><td class="num">4亿</td><td>2笔场外现金出售（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20210724E00012" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>奚浩</strong></td><td>2024-09-26 ～ 2024-09-27</td><td class="num">100万股</td><td class="num">3869万</td><td>2笔场内出售（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20241002E00532" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>奚浩</strong></td><td>2026-03-27 ～ 2026-07-06</td><td class="num">462万股</td><td class="num">3亿</td><td>4笔场内出售；8笔合计8亿（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20260708E00744" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+          <tr><td><strong>张倩</strong>（执行董事、CCO）</td><td>2024-09-27</td><td class="num">60万股</td><td class="num">2290万</td><td>1笔场内出售（<a href="https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20241002E00534" target="_blank" rel="noopener noreferrer">HKEX Form 3A</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">5. 维立志博（2025-07-25 上市至今 · 含受控平台合计 6309万；仅个人 158万）</td></tr>
+          <tr><td><strong>康小强 / 赖寿鹏</strong>（个人直接持股）</td><td>2025-07 ～ 2026-11</td><td class="num">0股</td><td class="num">0</td><td>康小强延长禁售至2027-01-24，2026-11-23反增持20万股（459万）（<a href="https://i.ifeng.com/c/8v1bi1p2XNi" target="_blank" rel="noopener noreferrer">延期禁售报道</a>）</td></tr>
+          <tr><td><strong>南京礼至</strong>（康小强GP员工持股平台）</td><td>2026-07-31 / 09-15 / 10-20</td><td class="num">119万股</td><td class="num">6151万</td><td>3笔场内出售，系解禁后员工归属变现（<a href="https://www.sohu.com/a/1059756982_122066679" target="_blank" rel="noopener noreferrer">搜狐财经</a>）</td></tr>
+          <tr><td><strong>左鸿刚</strong>（执行董事、CFO）</td><td>2025-07-28 ～ 2025-07-29</td><td class="num">3万股</td><td class="num">158万</td><td>2笔场内卖出；2026年7月及11月反增持17万股（461万）（<a href="https://hk.stockstar.com/RB2026112400035347.shtml" target="_blank" rel="noopener noreferrer">证券之星</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">6. 康方生物（2020-04-24 上市至今 · 4 位执行董事去重累计减持：11亿）</td></tr>
+          <tr><td><strong>夏瑜</strong>（董事长、CEO）</td><td>2023-11-29 ～ 2025-09-01</td><td class="num">567万股</td><td class="num">4亿</td><td>5笔（含23-11家族信托200万股、24-11至12场内217万股、25-09配售150万股）（<a href="https://finance.sina.com.cn/roll/2025-08-28/doc-infnpinf5070476.shtml" target="_blank" rel="noopener noreferrer">配售报道</a>）</td></tr>
+          <tr><td><strong>李百勇</strong>（执行董事、CSO）</td><td>2023-11-29 / 24-11-29 / 25-09-01</td><td class="num">550万股</td><td class="num">4亿</td><td>3笔（100万股、300万股、150万股）（<a href="https://finance.sina.com.cn/roll/2025-08-28/doc-infnpinf5070476.shtml" target="_blank" rel="noopener noreferrer">配售报道</a>）</td></tr>
+          <tr><td><strong>王忠民</strong>（执行董事、SVP）</td><td>2023-10-30 ～ 2024-11-29</td><td class="num">404万股</td><td class="num">2亿</td><td>6笔（2023年5笔204万股 + 2024-11-29场内200万股）</td></tr>
+          <tr><td><strong>张鹏</strong>（执行董事、SVP）</td><td>2024-11-29</td><td class="num">100万股</td><td class="num">6081万</td><td>仅1笔场内出售；夏羽、王秉中无减持；2026年全年无减持（<a href="https://www.moomoo.com/hans/news/post/71369808" target="_blank" rel="noopener noreferrer">Moomoo公告</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">7. 药明康德（2018-05-08 上市至今 · 实控人阵营 4 轮集中减持累计：173亿）</td></tr>
+          <tr><td><strong>实控人控制主体及一致行动人</strong>（第1轮）</td><td>2022-07-27 ～ 2022-08-12</td><td class="num">2321万股</td><td class="num">22亿</td><td>A股集中竞价减持（<a href="https://finance.sina.com.cn/stock/s/2025-03-23/doc-ineqtfvu8060648.shtml" target="_blank" rel="noopener noreferrer">新浪财经</a>）</td></tr>
+          <tr><td><strong>实控人控制主体及一致行动人</strong>（第2轮）</td><td>2022-12 ～ 2023-01</td><td class="num">6499万股</td><td class="num">55亿</td><td>A股集中竞价及大宗交易（<a href="https://www.cls.cn/detail/1195658" target="_blank" rel="noopener noreferrer">财联社</a>）</td></tr>
+          <tr><td><strong>实控人控制主体及一致行动人</strong>（第3轮）</td><td>2023-04-17 ～ 2023-10-20</td><td class="num">5841万股</td><td class="num">43亿</td><td>A股集中竞价及大宗交易（<a href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603259&id=9579645" target="_blank" rel="noopener noreferrer">临2023-063结果公告</a>）</td></tr>
+          <tr><td><strong>李革、张朝晖、刘晓钟18家实控主体</strong>（第4轮）</td><td>2025-11-20 ～ 2026-01-05</td><td class="num">5968万股</td><td class="num">53亿</td><td>占总股本2%（<a href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603259&id=11901474" target="_blank" rel="noopener noreferrer">临2026-001结果公告</a>）</td></tr>
+
+          <tr class="group-row"><td colspan="5">8. 药明生物（2017-06-13 上市至今 · 实控人平台 + 执行高管累计减持：729亿）</td></tr>
+          <tr><td><strong>Biologics Holdings（李革控股平台）</strong>（第1–13次）</td><td>2017-12-14 ～ 2023-01-16</td><td class="num">13次大宗配售</td><td class="num">658亿</td><td>累计配售773亿港元（<a href="https://www.cls.cn/detail/1243288" target="_blank" rel="noopener noreferrer">财联社统计</a>、<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2023/0117/2023011700041.pdf" target="_blank" rel="noopener noreferrer">HKEX公告</a>）</td></tr>
+          <tr><td><strong>Biologics Holdings</strong>（第14次）</td><td>2025-06-14</td><td class="num">8294万股</td><td class="num">19亿</td><td>大宗配售（<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0616/2025061600017.pdf" target="_blank" rel="noopener noreferrer">HKEX公告</a>）</td></tr>
+          <tr><td><strong>Biologics Holdings</strong>（第15次）</td><td>2026-01-15</td><td class="num">2亿股</td><td class="num">49亿</td><td>配售15000万股后持股降至8.49%不再为主要股东（<a href="https://news.rthk.hk/rthk/ch/component/k2/1840108-20260116.htm" target="_blank" rel="noopener noreferrer">香港电台RTHK</a>）</td></tr>
+          <tr><td><strong>陈智胜</strong>（执行董事、CEO）</td><td>2021-06-24 / 2023-11-17</td><td class="num">232万股</td><td class="num">3亿</td><td>2021-06出售220万股（3亿）；2023-11出售12万股（514万）（<a href="https://hk.usmartglobal.com/zh-hk/news-detail/6815161148791439404" target="_blank" rel="noopener noreferrer">uSMART/DI</a>）</td></tr>
+          <tr><td><strong>周伟昌</strong>（原执行董事、CTO）</td><td>2023-11-17</td><td class="num">4万股</td><td class="num">154万</td><td>与陈智胜同日代扣税窗口售股（<a href="https://www.caiwennews.com/article/660969.shtml" target="_blank" rel="noopener noreferrer">财闻网</a>）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <blockquote class="pull-quote">不做归一化看绝对激励，百济神州与药明康德最慷慨；加上历史减持做市值归一化，百利天恒与亚盛医药的长期利益绑定最紧。</blockquote>
+
+  <!-- Sources -->
+  <section class="sec">
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042805171.pdf" target="_blank" rel="noopener noreferrer">信达生物（01801.HK）2025年年度报告（HKEXnews）</a></li>
+      <li><a href="https://www.futunn.com/hk/stock/01801-HK" target="_blank" rel="noopener noreferrer">信达生物 2026-11-26 收盘价与总股本（富途牛牛）</a></li>
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042906227_c.pdf" target="_blank" rel="noopener noreferrer">康方生物（09926.HK）2025年年度报告（HKEXnews）</a></li>
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0526/2025052600081.pdf" target="_blank" rel="noopener noreferrer">康方生物 2025 年 5 月授出购股权及受限制股份单位公告（HKEXnews）</a></li>
+      <li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2024/0605/2024060502297_c.pdf" target="_blank" rel="noopener noreferrer">康方生物修订 2021 年 RSU 计划及购股权计划公告（HKEXnews）</a></li>
+      <li><a href="http://basic.10jqka.com.cn/HK6855/manager.html" target="_blank" rel="noopener noreferrer">亚盛医药（06855.HK）高管薪酬与履历（同花顺F10）</a></li>
+      <li><a href="https://news.futunn.com/post/1005792183" target="_blank" rel="noopener noreferrer">亚盛医药 2026-11-26 收盘价（富途资讯）</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/1651308/000110465926049655/tm261479-4_def14a.htm" target="_blank" rel="noopener noreferrer">BeOne Medicines (百济神州) 2026 Proxy Statement DEF 14A (SEC EDGAR)</a></li>
+      <li><a href="https://www.marketbeat.com/stocks/NASDAQ/ONC/insider-trades/" target="_blank" rel="noopener noreferrer">BeOne Medicines (ONC) Insider Trading Records (MarketBeat)</a></li>
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042403304.pdf" target="_blank" rel="noopener noreferrer">维立志博-B（09887.HK）2025年年度报告（HKEXnews）</a></li>
+      <li><a href="https://cdn.wuxibiologics.com/en/wp-content/uploads/2026042900764.pdf" target="_blank" rel="noopener noreferrer">药明生物（02269.HK）2025年年度报告</a></li>
+      <li><a href="https://www.cls.cn/detail/1243288" target="_blank" rel="noopener noreferrer">药明生物 Biologics Holdings 历次配售统计（财联社）</a></li>
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901113.pdf" target="_blank" rel="noopener noreferrer">药明康德 2025 年 H 股奖励信托计划授予公告（HKEXnews）</a></li>
+      <li><a href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603259&id=9579645" target="_blank" rel="noopener noreferrer">药明康德股东减持股份结果公告 临2023-063（新浪财经）</a></li>
+      <li><a href="http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603259&id=11901474" target="_blank" rel="noopener noreferrer">药明康德股东减持股份结果公告 临2026-001（新浪财经）</a></li>
+      <li><a href="https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?type=web&code=SH688506" target="_blank" rel="noopener noreferrer">百利天恒（688506.SH）高管薪酬与持股变动（东方财富F10）</a></li>
+      <li><a href="https://cj.sina.cn/articles/view/8018195504/1ddebf430001017a52" target="_blank" rel="noopener noreferrer">百利天恒 2026 年 8 月港股招股书朱义/朱海股份支付披露（星岛/新浪财经）</a></li>
+      <li><a href="https://stockmc.xueqiu.com/202610/688506_20261030_1X38.pdf" target="_blank" rel="noopener noreferrer">百利天恒控股股东朱义自愿承诺不减持公告 2026-084（上交所/雪球）</a></li>
+    </ol>
+  </section>
+
+</div>
+</body>
+</html>

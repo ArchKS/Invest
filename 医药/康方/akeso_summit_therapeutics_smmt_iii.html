@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>康方生物（Akeso）及 Summit Therapeutics（SMMT）海内外 III 期临床试验全景统计</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Utilitarian / Deep Research · answer-first compact hero · hero -> SVG distribution -> SVG catalyst timeline -> 3 open tables (Overseas MRCT / China Oncology / China Non-Oncology) -> boundary & methodology notes -> Sources · IBM Plex Sans + Noto Sans SC + IBM Plex Mono · crisp white #FFFFFF + deep slate #0F172A + teal #0F766E / cobalt #1D4ED8 · 0px radius · single numeral emphasis strip · horizontal stacked bar + catalyst milestone SVG */
+:root {
+  --paper: #FFFFFF;
+  --ink: #0F172A;
+  --ink2: #1E293B;
+  --mute: #475569;
+  --hair: #CBD5E1;
+  --accent: #0F766E;
+  --accent-text: #115E59;
+  --accent-2: #1D4ED8;
+  --accent-2-text: #1E40AF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%;
+  padding: 56px clamp(20px, 5vw, 80px) 84px;
+}
+
+a {
+  color: var(--accent-2-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: var(--accent-text);
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 3.6vw, 48px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-wrap: balance;
+  max-width: 28ch;
+}
+
+.deck {
+  margin: 0 0 36px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink2);
+  max-width: 72ch;
+}
+
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  padding: 24px 0 28px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--hair);
+  margin-bottom: 56px;
+}
+
+.kpi-item {
+  min-width: 0;
+}
+
+.kpi-num {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(32px, 3.4vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.kpi-num.accent {
+  color: var(--accent-text);
+}
+
+.kpi-num.accent2 {
+  color: var(--accent-2-text);
+}
+
+.kpi-label {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.kpi-sub {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.sec {
+  margin-top: 64px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  padding-top: 20px;
+  border-top: 1px solid var(--hair);
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.measure {
+  max-width: 72ch;
+  margin: 0 0 24px;
+  color: var(--ink2);
+  font-size: 16px;
+}
+
+figure {
+  margin: 28px 0 36px;
+  padding: 0;
+  width: 100%;
+}
+
+.fig-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--mute);
+  line-height: 1.5;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  min-width: 1080px;
+}
+
+thead th {
+  font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 10px 10px 10px 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 11px 10px 11px 0;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+  color: var(--ink2);
+}
+
+.trial-name {
+  font-weight: 700;
+  color: var(--ink);
+  display: block;
+}
+
+.code-id {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--mute);
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.date-cell {
+  font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.date-note {
+  font-family: 'IBM Plex Sans', 'Noto Sans SC', sans-serif;
+  font-size: 12px;
+  color: var(--mute);
+  display: block;
+  margin-top: 3px;
+  white-space: normal;
+  min-width: 120px;
+}
+
+.status-approved {
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.status-watch {
+  color: var(--accent-2-text);
+  font-weight: 600;
+}
+
+.status-muted {
+  color: var(--mute);
+  font-weight: 500;
+}
+
+.src-links a {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin-top: 20px;
+}
+
+.two-col ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: var(--ink2);
+  font-size: 15px;
+}
+
+.two-col li {
+  margin-bottom: 10px;
+}
+
+.sources-list {
+  margin: 16px 0 0;
+  padding-left: 22px;
+  font-size: 14px;
+  color: var(--ink2);
+  columns: 2;
+  column-gap: 36px;
+}
+
+.sources-list li {
+  margin-bottom: 8px;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .kpi-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+  .sources-list {
+    columns: 1;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>康方生物及 SMMT 海内外已布局 44 项 III 期临床，2026 Q4 起迎来全球读出窗口</h1>
+    <p class="deck">截至 2026 年 11 月 27 日，康方生物（09926.HK）与海外合作方 Summit Therapeutics（NASDAQ: SMMT）及协作组累计开展 44 项严格 III 期（含 II/III 期注册性）临床试验，涵盖 10 项海外国际多中心（MRCT）与 34 项中国国内研究（另含 1 项支持伊努西单抗 HeFH 获批的关键注册研究 AK102-201）。下文严格区分 ClinicalTrials.gov / CDE 登记日期与公司公告披露的实际入组及事件触发读出时间。</p>
+  </header>
+
+  <section class="kpi-strip" aria-label="核心统计指标">
+    <div class="kpi-item">
+      <div class="kpi-num">44 项</div>
+      <div class="kpi-label">海内外 III 期临床总计</div>
+      <div class="kpi-sub">含 II/III 期注册研究，已跨药去重</div>
+    </div>
+    <div class="kpi-item">
+      <div class="kpi-num accent2">10 项</div>
+      <div class="kpi-label">海外 / 国际多中心（MRCT）</div>
+      <div class="kpi-sub">SMMT 6 项 · 协作组 2 项 · 康方自研 2 项</div>
+    </div>
+    <div class="kpi-item">
+      <div class="kpi-num">34 项</div>
+      <div class="kpi-label">中国国内单区域 III 期</div>
+      <div class="kpi-sub">肿瘤 25 项 · 自免与代谢 9 项</div>
+    </div>
+    <div class="kpi-item">
+      <div class="kpi-num accent">13 项</div>
+      <div class="kpi-label">已获批或已达主终点阳性</div>
+      <div class="kpi-sub">另 1 项已终止（AK105-301）</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>依沃西与卡度尼利撑起近七成 III 期体量，海外布局集中于双抗出海</h2>
+    <p class="measure">按核心药物去重统计（联合用药如 AK112+AK117 归入依沃西单抗、AK104+AK109 归入卡度尼利单抗，避免重复计数），两款核心双抗合计占全部 III 期试验的 68.2%（30/44）。海外 MRCT 中，依沃西单抗占据 8 项（Summit 主导 6 项 + 欧美协作组 2 项），卡度尼利单抗于 2026 年 9 月由康方自主启动首个全球 III 期（COMPASSION-37），派安普利单抗（AK105-304）则已凭全球 MRCT 获美国 FDA 批准。</p>
+
+    <figure>
+      <div class="fig-title">依沃西单抗以 18 项 III 期居首，海外 MRCT 占比达 44%</div>
+      <svg viewBox="0 0 700 320" width="100%" role="img" aria-label="各产品线海内外III期临床数量分布条形图">
+        <defs>
+          <style>
+            .ax { font-family: 'IBM Plex Mono', monospace; font-size: 13px; fill: #475569; }
+            .lbl { font-family: 'IBM Plex Sans', 'Noto Sans SC', sans-serif; font-size: 14px; font-weight: 600; fill: #0F172A; }
+            .val { font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace; font-size: 13px; font-weight: 600; fill: #0F172A; }
+            .leg { font-family: 'IBM Plex Sans', 'Noto Sans SC', sans-serif; font-size: 13px; fill: #1E293B; }
+          </style>
+        </defs>
+        <!-- Legend -->
+        <rect x="210" y="10" width="14" height="14" fill="#1D4ED8"/>
+        <text x="230" y="22" class="leg">海外 / 国际多中心（MRCT，共 10 项）</text>
+        <rect x="465" y="10" width="14" height="14" fill="#0F766E"/>
+        <text x="485" y="22" class="leg">中国国内（共 34 项）</text>
+
+        <!-- Vertical Gridlines: x=210 (0) to x=570 (18), 20px per trial -->
+        <line x1="210" y1="44" x2="210" y2="278" stroke="#0F172A" stroke-width="1"/>
+        <line x1="310" y1="44" x2="310" y2="278" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="410" y1="44" x2="410" y2="278" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="510" y1="44" x2="510" y2="278" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="570" y1="44" x2="570" y2="278" stroke="#CBD5E1" stroke-width="1"/>
+
+        <!-- X-axis ticks -->
+        <text x="210" y="298" text-anchor="middle" class="ax">0</text>
+        <text x="310" y="298" text-anchor="middle" class="ax">5</text>
+        <text x="410" y="298" text-anchor="middle" class="ax">10</text>
+        <text x="510" y="298" text-anchor="middle" class="ax">15</text>
+        <text x="570" y="298" text-anchor="middle" class="ax">18</text>
+        <text x="390" y="316" text-anchor="middle" class="ax">III 期临床试验数量（项）</text>
+
+        <!-- Row 1: AK112 (8 overseas + 10 China = 18) -->
+        <text x="198" y="80" text-anchor="end" class="lbl">AK112 依沃西单抗</text>
+        <rect x="210" y="60" width="160" height="28" fill="#1D4ED8"/>
+        <rect x="370" y="60" width="200" height="28" fill="#0F766E"/>
+        <text x="580" y="80" class="val">18（海外8 + 国内10）</text>
+
+        <!-- Row 2: AK104 (1 overseas + 11 China = 12) -->
+        <text x="198" y="136" text-anchor="end" class="lbl">AK104 卡度尼利单抗</text>
+        <rect x="210" y="116" width="20" height="28" fill="#1D4ED8"/>
+        <rect x="230" y="116" width="220" height="28" fill="#0F766E"/>
+        <text x="460" y="136" class="val">12（海外1 + 国内11）</text>
+
+        <!-- Row 3: AK105 (1 overseas + 4 China = 5) -->
+        <text x="198" y="192" text-anchor="end" class="lbl">AK105 派安普利单抗</text>
+        <rect x="210" y="172" width="20" height="28" fill="#1D4ED8"/>
+        <rect x="230" y="172" width="80" height="28" fill="#0F766E"/>
+        <text x="320" y="192" class="val">5（海外1 + 国内4）</text>
+
+        <!-- Row 4: Non-oncology (0 overseas + 9 China = 9) -->
+        <text x="198" y="248" text-anchor="end" class="lbl">非肿瘤（AK102/101/111/120）</text>
+        <rect x="210" y="228" width="180" height="28" fill="#0F766E"/>
+        <text x="400" y="248" class="val">9（全国内，另含1项II期注册）</text>
+      </svg>
+      <figcaption>统计口径：截至 2026 年 11 月 27 日已登记或官宣启动的 III 期（含 II/III 期）临床，AK112 含 3 项联用 AK117 试验，AK104 含 1 项联用 AK109 试验；来源：ClinicalTrials.gov、EMA EU CTIS、Summit Therapeutics 及康方生物港交所公告。</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec">
+    <h2>2026 Q4 至 2028 年待读出核心催化：HARMONi-3 领衔海外读出潮</h2>
+    <p class="measure">在 HARMONi 于 2026 年 11 月 15 日收到 FDA 完整回复函（CRL）后，市场与监管焦点全面转向入组已全部完成的 1L NSCLC 全球头对头研究 HARMONi-3。根据 Summit 2026 Q3 季报，HARMONi-3 鳞癌队列（N=600）PFS 主分析事件预计 2026 Q4 触发，非鳞癌队列（N=1,000）PFS 主分析与鳞癌独立 OS 期中分析预计 2027 H1 触发；国内方面，AK112 在 1L TNBC、1L HNSCC、1L mCRC、1L mPDAC 与 2L IO 耐药 NSCLC 的多项 III 期预计于 2026 年底至 2027 年中密集抵达登记主终点完成窗口。</p>
+
+    <figure>
+      <div class="fig-title">HARMONi-3 双队列与 5 项国内 AK112 III 期密集落于 2026 Q4–2027 H1 窗口</div>
+      <svg viewBox="0 0 720 430" width="100%" role="img" aria-label="2026 Q4至2028年底核心待读出III期临床预估时间轴">
+        <defs>
+          <style>
+            .t-ax { font-family: 'IBM Plex Mono', monospace; font-size: 13px; fill: #475569; }
+            .t-lbl { font-family: 'IBM Plex Sans', 'Noto Sans SC', sans-serif; font-size: 13px; font-weight: 600; fill: #0F172A; }
+            .t-val { font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace; font-size: 12px; fill: #1E293B; }
+          </style>
+        </defs>
+        <!-- Legend -->
+        <circle cx="225" cy="16" r="6" fill="#1D4ED8"/>
+        <text x="238" y="21" class="t-lbl">海外 MRCT（官方事件预测 / CT.gov PCD）</text>
+        <circle cx="505" cy="16" r="6" fill="#0F766E"/>
+        <text x="518" y="21" class="t-lbl">中国国内（CT.gov PCD）</text>
+
+        <!-- X scale: 2026-10 (x=220) to 2029-01 (x=640) -> 27 months = 420px (15.55px/mo) -->
+        <!-- Vertical gridlines: 2026-10=220, 2027-01=267, 2027-07=360, 2028-01=453, 2028-07=547, 2029-01=640 -->
+        <line x1="220" y1="38" x2="220" y2="384" stroke="#0F172A" stroke-width="1"/>
+        <line x1="267" y1="38" x2="267" y2="384" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="360" y1="38" x2="360" y2="384" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="453" y1="38" x2="453" y2="384" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="547" y1="38" x2="547" y2="384" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="640" y1="38" x2="640" y2="384" stroke="#CBD5E1" stroke-width="1"/>
+
+        <text x="220" y="404" text-anchor="middle" class="t-ax">2026 Q4</text>
+        <text x="267" y="404" text-anchor="middle" class="t-ax">2027-01</text>
+        <text x="360" y="404" text-anchor="middle" class="t-ax">2027-07</text>
+        <text x="453" y="404" text-anchor="middle" class="t-ax">2028-01</text>
+        <text x="547" y="404" text-anchor="middle" class="t-ax">2028-07</text>
+        <text x="640" y="404" text-anchor="middle" class="t-ax">2029-01</text>
+
+        <!-- 8 rows, spacing ~42px -->
+        <!-- 1. HARMONi-3 鳞癌 PFS (2026 Q4 -> x=245) -->
+        <text x="208" y="64" text-anchor="end" class="t-lbl">HARMONi-3 鳞癌 (1L NSCLC)</text>
+        <line x1="220" y1="59" x2="248" y2="59" stroke="#1D4ED8" stroke-width="2.5"/>
+        <circle cx="248" cy="59" r="6" fill="#1D4ED8"/>
+        <text x="260" y="64" class="t-val">2026 Q4（PFS主分析，官方预计）</text>
+
+        <!-- 2. HARMONi-BC1 (2026-12 -> x=251) -->
+        <text x="208" y="106" text-anchor="end" class="t-lbl">HARMONi-BC1 (1L TNBC)</text>
+        <line x1="220" y1="101" x2="251" y2="101" stroke="#0F766E" stroke-width="2.5"/>
+        <circle cx="251" cy="101" r="6" fill="#0F766E"/>
+        <text x="263" y="106" class="t-val">2026-12（登记PCD）</text>
+
+        <!-- 3. HARMONi-HN1 & GI6 (2027-01 -> x=267) -->
+        <text x="208" y="148" text-anchor="end" class="t-lbl">HARMONi-HN1 &amp; GI6 (HNSCC/mCRC)</text>
+        <line x1="220" y1="143" x2="267" y2="143" stroke="#0F766E" stroke-width="2.5"/>
+        <circle cx="267" cy="143" r="6" fill="#0F766E"/>
+        <text x="279" y="148" class="t-val">2027-01（登记PCD）</text>
+
+        <!-- 4. HARMONi-3 非鳞癌 PFS / 鳞癌 OS (2027 H1 -> x=320) -->
+        <text x="208" y="190" text-anchor="end" class="t-lbl">HARMONi-3 非鳞癌 &amp; 鳞癌OS期中</text>
+        <line x1="220" y1="185" x2="320" y2="185" stroke="#1D4ED8" stroke-width="2.5"/>
+        <circle cx="320" cy="185" r="6" fill="#1D4ED8"/>
+        <text x="332" y="190" class="t-val">2027 H1（官方预计事件触发）</text>
+
+        <!-- 5. HARMONi-GI2 & 8A (2027-05 -> x=329) -->
+        <text x="208" y="232" text-anchor="end" class="t-lbl">HARMONi-GI2 &amp; 8A (PDAC/2L NSCLC)</text>
+        <line x1="220" y1="227" x2="329" y2="227" stroke="#0F766E" stroke-width="2.5"/>
+        <circle cx="329" cy="227" r="6" fill="#0F766E"/>
+        <text x="341" y="232" class="t-val">2027-05（登记PCD）</text>
+
+        <!-- 6. AK120-302 (2027-07 -> x=360) -->
+        <text x="208" y="274" text-anchor="end" class="t-lbl">AK120-302 (青少年AD)</text>
+        <line x1="220" y1="269" x2="360" y2="269" stroke="#0F766E" stroke-width="2.5"/>
+        <circle cx="360" cy="269" r="6" fill="#0F766E"/>
+        <text x="372" y="274" class="t-val">2027-07（登记PCD）</text>
+
+        <!-- 7. HARMONi-7 & GI3 (2028-04/05 -> x=508) -->
+        <text x="208" y="316" text-anchor="end" class="t-lbl">HARMONi-7 &amp; GI3 (NSCLC/mCRC)</text>
+        <line x1="220" y1="311" x2="508" y2="311" stroke="#1D4ED8" stroke-width="2.5"/>
+        <circle cx="500" cy="311" r="6" fill="#1D4ED8"/>
+        <circle cx="516" cy="311" r="6" fill="#1D4ED8"/>
+        <text x="528" y="316" class="t-val">2028-04 / 05（登记PCD）</text>
+
+        <!-- 8. ECOG-ACRIN EA2251 (2028-12 -> x=625) -->
+        <text x="208" y="358" text-anchor="end" class="t-lbl">EA2251 (美国1L BTC)</text>
+        <line x1="220" y1="353" x2="625" y2="353" stroke="#1D4ED8" stroke-width="2.5"/>
+        <circle cx="625" cy="353" r="6" fill="#1D4ED8"/>
+        <text x="530" y="344" class="t-val">2028-12（登记PCD）</text>
+      </svg>
+      <figcaption>说明：ClinicalTrials.gov Primary Completion Date（PCD）多锚定最晚主要终点（如最终 OS）的数据收集截止日；实际事件驱动的 PFS 或期中 OS 顶线读出通常早于登记 PCD。来源：Summit Therapeutics 2026 Q3 季报、ClinicalTrials.gov。</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec">
+    <h2>表 1：海外及国际多中心（MRCT）III 期临床全览（共 10 项）</h2>
+    <p class="measure">下表汇总截至 2026 年 11 月全部海外及国际多中心 III 期（含 II/III 期）临床，包括 Summit Therapeutics 申办 6 项、欧美肿瘤协作组申办 2 项（GORTEC ILLUMINE、ECOG-ACRIN EA2251），以及康方生物自主主导的 2 项全球 MRCT（卡度尼利 COMPASSION-37、派安普利 AK105-304）。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>药物 / 试验代号与登记号</th>
+            <th>申办方与区域</th>
+            <th>适应症、方案与样本量</th>
+            <th>开始时间</th>
+            <th>入组开始（FPI）</th>
+            <th>入组完成（LPI）/ 状态</th>
+            <th>预估 / 实际数据读出</th>
+            <th>预估实验完成</th>
+            <th>最新进展与来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi</span><span class="code-id">NCT06396065 / AK112-301</span></td>
+            <td>Summit（合作康方）<br>全球 MRCT（欧美74中心+中国）</td>
+            <td>3代 EGFR-TKI 经治 EGFRm 非鳞 NSCLC<br>AK112+培美+卡铂 vs 安慰剂+化疗<br>实际 ITT N=438（CT.gov 420）</td>
+            <td class="date-cell">2023-05-04<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2023-05<span class="date-note">欧美入组（中国 2022-01）</span></td>
+            <td class="date-cell">2024-10-03<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2025-04-12；主分析 2025-05-30；WCLC 2026 更新 OS 2026-09-15</span></td>
+            <td class="date-cell">2026-12-31<span class="date-note">CT.gov Est.</span></td>
+            <td>PFS 阳性，主分析 OS HR=0.79 (p=0.057)；<strong>2026-11-15 FDA 签发 CRL</strong><div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06396065" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx" target="_blank" rel="noopener noreferrer">CRL公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-3</span><span class="code-id">NCT05899608 / SMT112-3003</span></td>
+            <td>Summit（含中国中心）<br>全球 MRCT（260 中心）</td>
+            <td>1L IV期 NSCLC（不限 PD-L1）<br>AK112+化疗 vs 帕博利珠+化疗<br>N=1,600（独立拆分：鳞癌600 + 非鳞癌1,000）</td>
+            <td class="date-cell">2023-10-26<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2023 Q4<span class="date-note">官方首例给药</span></td>
+            <td class="date-cell">2026-07-23前<span class="date-note">双队列均已完成；Active, not recruiting</span></td>
+            <td class="date-cell">2026 Q4 / 2027 H1<span class="date-note">官方预计：鳞癌PFS 2026 Q4，非鳞癌PFS及鳞癌OS期中 2027 H1；CT.gov PCD 2028-12-31</span></td>
+            <td class="date-cell">2029-12-31<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-watch">入组完成待读出</span>；最临近全球一线核心催化<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05899608" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx" target="_blank" rel="noopener noreferrer">Q3季报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-7</span><span class="code-id">NCT06767514 / SMT112-3007</span></td>
+            <td>Summit（含中国中心）<br>全球 MRCT（292 中心）</td>
+            <td>1L IV期 PD-L1≥50% NSCLC<br>AK112 单药 vs 帕博利珠单药<br>N=780（双主要终点 OS &amp; PFS）</td>
+            <td class="date-cell">2025-02-27<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2025 年初<span class="date-note">美国启动入组</span></td>
+            <td class="date-cell">预计 2027 年<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2028-04<span class="date-note">CT.gov PCD（官方读出未公开）</span></td>
+            <td class="date-cell">2029-06<span class="date-note">CT.gov Est.</span></td>
+            <td>全球持续入组中（国内同类 HARMONi-2 已达 OS 阳性）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06767514" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx" target="_blank" rel="noopener noreferrer">Q3季报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-GI3</span><span class="code-id">NCT07228832 / SMT112-3005</span></td>
+            <td>Summit（含中国中心）<br>全球 MRCT（243 中心）</td>
+            <td>1L 转移性结直肠癌（mCRC，非 MSI-H/BRAF V600E）<br>AK112+mFOLFOX6 vs 贝伐珠+mFOLFOX6<br>N=900（由 600 扩增）</td>
+            <td class="date-cell">2025-11-18<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2025 Q4<span class="date-note">官方披露启动</span></td>
+            <td class="date-cell">预计 2027 Q3<span class="date-note">Recruiting（入组快于预期）</span></td>
+            <td class="date-cell">2028-05-31<span class="date-note">CT.gov PCD（官方读出未公开）</span></td>
+            <td class="date-cell">2029-11-30<span class="date-note">CT.gov Est.</span></td>
+            <td>全球加速招募中，目标样本量扩增至 900 例<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT07228832" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2025/Summit-Therapeutics-Announces-Expansion-of-Ivonescimab-Global-Phase-III-Development-Program-with-HARMONi-GI3-Study-in-1L-Colorectal-Cancer/default.aspx" target="_blank" rel="noopener noreferrer">启动公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-GU1</span><span class="code-id">NCT07815665 / II-III期</span></td>
+            <td>Summit（康方推进中国）<br>全球 MRCT</td>
+            <td>1L 不可切除/转移性尿路上皮癌（la/mUC）<br>AK112+恩福妥单抗(EV) vs 帕博利珠+EV<br>N=800（II 期定 RP3D，III 期 PFS &amp; OS）</td>
+            <td class="date-cell">2026-09-10<span class="date-note">CT.gov 镜像</span></td>
+            <td class="date-cell">2026 Q4<span class="date-note">II 期已启动入组</span></td>
+            <td class="date-cell">未公开<span class="date-note">Recruiting（II 期阶段）</span></td>
+            <td class="date-cell">2030-10-31<span class="date-note">CT.gov 镜像 PCD</span></td>
+            <td class="date-cell">2030-12-31<span class="date-note">CT.gov 镜像 Est.</span></td>
+            <td>依沃西首个全球泌尿肿瘤及联合 ADC 注册性研究<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT07815665" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Further-Expands-Ivonescimab-Global-Development-Program-with-Phase-IIIII-HARMONi-GU1-Study-in-1L-Bladder-Cancer/default.aspx" target="_blank" rel="noopener noreferrer">启动公告</a><a href="https://www.allclinicaltrials.com/study/NCT07815665" target="_blank" rel="noopener noreferrer">镜像核验</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-10</span><span class="code-id">EU CTIS 2026-526300-67-00</span></td>
+            <td>Summit（含中国中心）<br>全球 MRCT（欧盟已批）</td>
+            <td>不可切除 III 期 NSCLC 同步放化疗后巩固<br>AK112 单药 vs 度伐利尤单抗<br>EU CTIS 计划 N=830（主要终点 IRRC-PFS）</td>
+            <td class="date-cell">2026-11-18<span class="date-note">官宣（CTIS 获批 11-06）</span></td>
+            <td class="date-cell">预计 2026 Q4<span class="date-note">EU CTIS 预计 2026-12-01</span></td>
+            <td class="date-cell">未公开<span class="date-note">待招募（中心激活中）</span></td>
+            <td class="date-cell">未公开<span class="date-note">尚未登记 CT.gov</span></td>
+            <td class="date-cell">2030-06-01<span class="date-note">EU CTIS 预计</span></td>
+            <td>2026-11-18 刚官宣启动，前移至 III 期根治性放化疗巩固<div class="src-links"><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Further-Expands-Ivonescimab-Global-Development-Program-with-Phase-III-HARMONi-10-Study-in-Unresectable-Stage-III-Non-Small-Cell-Lung-Cancer/default.aspx" target="_blank" rel="noopener noreferrer">启动公告</a><a href="https://euclinicaltrials.eu/ctis-public/view/2026-526300-67-00" target="_blank" rel="noopener noreferrer">EU CTIS</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112+AK117 · ILLUMINE</span><span class="code-id">NCT07264075 / GORTEC 2024-04</span></td>
+            <td>GORTEC（康方中国申办、合作 Summit）<br>欧洲多国 + 中国</td>
+            <td>1L PD-L1 阳性（CPS≥1）R/M HNSCC<br>三臂：AK112 vs AK112+AK117 vs 帕博利珠<br>N=780（主要终点 OS）</td>
+            <td class="date-cell">2026-05-05<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2026 Q2<span class="date-note">官方披露启动入组</span></td>
+            <td class="date-cell">未公开<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2030-05<span class="date-note">CT.gov PCD</span></td>
+            <td class="date-cell">2030-05<span class="date-note">CT.gov Est.</span></td>
+            <td>2026 Q2 启动入组，AK112+AK117 首个欧洲多中心 III 期<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT07264075" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx" target="_blank" rel="noopener noreferrer">Q3季报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · EA2251</span><span class="code-id">NCT07765433 / II-III期</span></td>
+            <td>ECOG-ACRIN / NCI（合作 Summit）<br>美国多中心</td>
+            <td>1L 不可切除/转移性胆道癌（BTC）<br>AK112+吉西他滨+顺铂 vs 度伐利尤/帕博利珠+化疗<br>N=336（主要终点 OS）</td>
+            <td class="date-cell">2027-01-11<span class="date-note">CT.gov Est.（10-21官宣）</span></td>
+            <td class="date-cell">预计 2026 Q4<span class="date-note">中心激活中</span></td>
+            <td class="date-cell">未公开<span class="date-note">Not yet recruiting</span></td>
+            <td class="date-cell">2028-12-31<span class="date-note">CT.gov PCD</span></td>
+            <td class="date-cell">2029-12-31<span class="date-note">CT.gov Est.</span></td>
+            <td>国内同类 HARMONi-GI1 已于 ESMO 2026 获 OS 阳性<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT07765433" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-and-ECOG-ACRIN-Cancer-Research-Group-Enter-into-Phase-II--III-Clinical-Trial-Collaboration-to-Evaluate-Ivonescimab-in-First-Line-Biliary-Tract-Cancer/default.aspx" target="_blank" rel="noopener noreferrer">合作公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-37</span><span class="code-id">NCT07700979 / AK104-311</span></td>
+            <td>康方生物自主主导<br>全球 MRCT（美、欧、中 25+ 中心）</td>
+            <td>1L HER2 阴性不可切除/转移性 G/GEJ 腺癌<br>AK104+CAPOX vs CAPOX ± 纳武利尤单抗<br>N=900（主要终点 ITT OS）</td>
+            <td class="date-cell">2026-09-24<span class="date-note">CT.gov / Veeva</span></td>
+            <td class="date-cell">2026-09<span class="date-note">2026-09-27 官宣 FPI</span></td>
+            <td class="date-cell">未公开<span class="date-note">Enrolling</span></td>
+            <td class="date-cell">未公开<span class="date-note">镜像 End date 2029-08-18</span></td>
+            <td class="date-cell">2029-08-18<span class="date-note">Veeva 镜像 Est.</span></td>
+            <td>康方全程自主主导的首个全球 III 期临床，2026-09 首例入组<div class="src-links"><a href="https://ctv.veeva.com/study/phase-3-study-of-cadonilimab-combined-with-chemotherapy-vs-chemotherapy-in-combination-with-or-witho" target="_blank" rel="noopener noreferrer">Veeva</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-enrolled-in-global-phase-iii-trial-of-cadonilimab-versus-nivolumab-in-first-line-gastric-cancer-302891043.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK105 · AK105-304</span><span class="code-id">NCT04974398</span></td>
+            <td>康方生物<br>全球 MRCT（中、美、澳、巴、加 56 中心）</td>
+            <td>1L 复发/转移性鼻咽癌（R/M NPC）<br>派安普利+吉西他滨+顺铂/卡铂 vs 安慰剂+化疗<br>登记实际 N=296（论文分析 N=291）</td>
+            <td class="date-cell">2021-08-16<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2021-08<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">已完成<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2026-02-23；AACR 2025 公布 PFS HR=0.45</span></td>
+            <td class="date-cell">2026-12-23<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">中美均已获批</span>（2025 年 4 月获 FDA 批准）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT04974398" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0425/2025042500144_c.pdf" target="_blank" rel="noopener noreferrer">FDA获批公告</a></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>表 2：中国国内肿瘤管线 III 期临床全览（共 25 项）</h2>
+    <p class="measure">康方生物在中国国内独立主导的肿瘤 III 期共 25 项，涵盖依沃西单抗（AK112）10 项、卡度尼利单抗（AK104）11 项（含联合普络西单抗 AK109 的 COMPLUS-5）及派安普利单抗（AK105）4 项。截至 2026 年 11 月，依沃西国内已读出的 4 项 III 期全部取得 PFS 与 OS 双阳性；卡度尼利已有 2 项 III 期获批上市并拓展至胃癌、食管癌及结肠癌围手术期。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>药物 / 试验代号与登记号</th>
+            <th>适应症、方案与样本量</th>
+            <th>开始时间</th>
+            <th>入组开始（FPI）</th>
+            <th>入组完成（LPI）/ 状态</th>
+            <th>预估 / 实际数据读出</th>
+            <th>预估实验完成</th>
+            <th>最新进展与来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- AK112 China (10) -->
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-A</span><span class="code-id">NCT05184712 / AK112-301</span></td>
+            <td>EGFR-TKI 经治非鳞 NSCLC<br>AK112+化疗 vs 安慰剂+化疗 · 实际 N=322</td>
+            <td class="date-cell">2022-01<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2022-01-30<span class="date-note">官方首例给药</span></td>
+            <td class="date-cell">2022-11-04<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2023-03；PFS 2023/ASCO24；OS 2025-08 (HR=0.74)</span></td>
+            <td class="date-cell">2026-09<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2024-05，已进医保）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05184712" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13175990/" target="_blank" rel="noopener noreferrer">PMC综述</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-2</span><span class="code-id">NCT05499390 / AK112-303</span></td>
+            <td>1L PD-L1+（TPS≥1%）NSCLC<br>AK112 单药 vs 帕博利珠单药 · 实际 N=398</td>
+            <td class="date-cell">2022-11-09<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2022-11<span class="date-note">与启动同步</span></td>
+            <td class="date-cell">2023-08-29<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2024-01-29；PFS 2024-05；OS 期中 2026-09-03 (HR=0.73)</span></td>
+            <td class="date-cell">2026-12-31<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2025-04，已进医保）；OS 阳性<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05499390" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.phirda.com/artilce_43703.html?module=trackingCodeGenerator" target="_blank" rel="noopener noreferrer">OS读出</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-6</span><span class="code-id">NCT05840016 / AK112-306</span></td>
+            <td>1L 鳞状 NSCLC<br>AK112+化疗 vs 替雷利珠+化疗 · 实际 N=532</td>
+            <td class="date-cell">2023-08-17<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2023-08-18<span class="date-note">官方首例给药</span></td>
+            <td class="date-cell">2025-02-05<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2025-02-28；PFS 2025-04；OS 期中 ASCO 2026 (HR=0.66)</span></td>
+            <td class="date-cell">2026-12-31<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2026-08-12）；PFS/OS 双阳性<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05840016" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.biospace.com/press-releases/akeso-announces-the-completion-of-patient-enrollment-in-the-phase-iii-clinical-trial-harmoni-6-comparing-ivonescimab-and-tislelizumab-for-first-line-treatment-of-sq-nsclc" target="_blank" rel="noopener noreferrer">LPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-GI1</span><span class="code-id">NCT06591520 / CTR20243164</span></td>
+            <td>1L 不可切除/转移性胆道癌（BTC）<br>AK112+化疗 vs 度伐利尤+化疗 · 实际 N=682</td>
+            <td class="date-cell">2024-10-20<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2024-10-20<span class="date-note">首例入组</span></td>
+            <td class="date-cell">2025-09-02<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">实际 OS 2026-08-25 阳性；ESMO 2026 (HR=0.75)</span></td>
+            <td class="date-cell">2027-12<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">OS 阳性，sNDA 已受理</span>（2026-11-16/17）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06591520" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-nmpa-acceptance-of-snda-for-ivonescimab-in-combination-with-chemotherapy-for-first-line-biliary-tract-cancer-302941344.html" target="_blank" rel="noopener noreferrer">sNDA受理</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112+AK117 · HARMONi-HN1</span><span class="code-id">NCT06601335 / AK117-302</span></td>
+            <td>1L PD-L1+（CPS≥1）R/M HNSCC<br>AK112+AK117 vs 安慰剂+帕博利珠 · N=510</td>
+            <td class="date-cell">2024-10-30<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2024-10-30<span class="date-note">官方首例入组</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2027-01<span class="date-note">CT.gov PCD（Est.）</span></td>
+            <td class="date-cell">2027-10-31<span class="date-note">CT.gov Est.</span></td>
+            <td>国内招募中（全球首个 CD47+双抗实体瘤 III 期）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06601335" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-enrollment-in-phase-3-trial-of-ivonescimab-combined-with-ligufalimab-cd47-for-first-line-treatment-of-head-and-neck-squamous-cell-carcinoma-hnscc-compared-to-pembrolizumab-302291622.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-BC1</span><span class="code-id">NCT06767527 / CTR20250033</span></td>
+            <td>1L 不可切除/转移性三阴性乳腺癌（TNBC）<br>AK112+白蛋白紫杉醇 vs 安慰剂+化疗 · N 未公开</td>
+            <td class="date-cell">2025-01<span class="date-note">CT.gov Start</span></td>
+            <td class="date-cell">2025-02-22<span class="date-note">官方首例入组</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2026-12-01<span class="date-note">第三方抓取登记 PCD</span></td>
+            <td class="date-cell">未公开</td>
+            <td>国内招募中；2025-10 获 CDE 突破性治疗认定<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06767527" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.onclive.com/view/china-s-center-for-drug-evaluation-grants-breakthrough-therapy-designation-to-ivonescimab-in-tnbc" target="_blank" rel="noopener noreferrer">BTD报道</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-GI6</span><span class="code-id">NCT06951503 / AK112-312</span></td>
+            <td>1L 转移性结直肠癌（mCRC，MSS/pMMR）<br>AK112+化疗 vs 贝伐珠+化疗 · N 未公开</td>
+            <td class="date-cell">2025-05<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2025-07-15<span class="date-note">官方首例入组</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2027-01<span class="date-note">CT.gov PCD（Est.）</span></td>
+            <td class="date-cell">2029-01<span class="date-note">CT.gov Est.</span></td>
+            <td>国内招募中<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06951503" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-enrolled-in-the-phase-iii-trialak112-312harmoni-gi6of-ivonescimab-for-first-line-treatment-of-advanced-metastatic-colorectal-cancer-302506248.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112+AK117 · HARMONi-GI2</span><span class="code-id">NCT06953999 / CTR20251413</span></td>
+            <td>1L 转移性胰腺导管腺癌（mPDAC）<br>三臂：AK112+化疗±AK117 vs 安慰剂+化疗 · N=999</td>
+            <td class="date-cell">2025-06-11<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2025-07-23<span class="date-note">官方首例入组</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2027-05-14<span class="date-note">CT.gov PCD（Est.）</span></td>
+            <td class="date-cell">2028-05-14<span class="date-note">CT.gov Est.</span></td>
+            <td>国内招募中<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06953999" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-enrollment-in-phase-iii-trial-of-ivonescimab-for-pancreatic-cancer-302512598.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-8A</span><span class="code-id">NCT06928389 / AK112-305</span></td>
+            <td>2L IO 耐药晚期 NSCLC<br>AK112+多西他赛 vs 安慰剂+多西他赛 · N=536</td>
+            <td class="date-cell">2025-07-08<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2025-07-30<span class="date-note">官方首例给药</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">2027-05<span class="date-note">CT.gov PCD（Est.）</span></td>
+            <td class="date-cell">2030-06<span class="date-note">CT.gov Est.</span></td>
+            <td>国内招募中（已获 CDE 突破性治疗认定）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06928389" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/akeso-announces-completion-of-first-dosing-in-phase-iii-clinical-trial-of-ivonescimab-pd-1vegf-combination--therapy-for-immunotherapy-resistant-nsclc-302518092.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK112 · HARMONi-9</span><span class="code-id">NCT07010263 / AK112-311</span></td>
+            <td>局限期小细胞肺癌（LS-SCLC）放化疗后巩固<br>AK112 单药 vs 安慰剂 · N=480</td>
+            <td class="date-cell">2025 年<span class="date-note">登记启动</span></td>
+            <td class="date-cell">2025-08-10<span class="date-note">官方首例给药</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td>国内招募中<div class="src-links"><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-dosed-in-phase-iii-trial-of-ivonescimab-as-consolidation-therapy-for-limited-stage-sclc-after-definitive-radiotherapy-302526152.html" target="_blank" rel="noopener noreferrer">FPI公告</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13175990/" target="_blank" rel="noopener noreferrer">PMC综述</a></div></td>
+          </tr>
+
+          <!-- AK104 China (11) -->
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-15</span><span class="code-id">NCT05008783 / AK104-302</span></td>
+            <td>1L HER2 阴性晚期 G/GEJ 腺癌<br>AK104+XELOX vs 安慰剂+XELOX · 实际 N=610</td>
+            <td class="date-cell">2021-09-17<span class="date-note">文献登记起始</span></td>
+            <td class="date-cell">2021-09<span class="date-note">首例随机</span></td>
+            <td class="date-cell">2023-08-18前<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">2024-04 期中；ESMO 2025 最终 OS HR=0.61</span></td>
+            <td class="date-cell">2025-04-14<span class="date-note">登记完成</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2024-09，已进医保）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05008783" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12399411/" target="_blank" rel="noopener noreferrer">PMC论文</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-16</span><span class="code-id">NCT04982237 / AK104-303</span></td>
+            <td>1L 持续/复发/转移性宫颈癌<br>AK104+含铂化疗±贝伐珠 vs 安慰剂 · 实际 N=445</td>
+            <td class="date-cell">2021-08-27<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2021-09-11<span class="date-note">Lancet 披露</span></td>
+            <td class="date-cell">2022-06-23<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2025-12-30；IGCS 2024 / Lancet 公布双阳性</span></td>
+            <td class="date-cell">2025-12-30<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2025-05，已进医保）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT04982237" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://pubmed.ncbi.nlm.nih.gov/39426385/" target="_blank" rel="noopener noreferrer">Lancet</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-18</span><span class="code-id">NCT05235516 / AK104-305</span></td>
+            <td>局部晚期宫颈癌（LACC，IIIA–IVA 期）<br>AK104+同步放化疗(CCRT) vs 安慰剂+CCRT · N=636</td>
+            <td class="date-cell">2022-06-21<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2022-06<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">已完成入组<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">2026-05<span class="date-note">CT.gov PCD（主终点尚未官宣读出）</span></td>
+            <td class="date-cell">2029-05<span class="date-note">CT.gov Est.</span></td>
+            <td>入组已停止、随访中（SGO 2025 披露 34 例阶段数据）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05235516" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10407549/" target="_blank" rel="noopener noreferrer">方案文献</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-22</span><span class="code-id">NCT05489289 / AK104-306</span></td>
+            <td>高复发风险肝细胞癌（HCC）术后辅助<br>AK104 单药 vs 安慰剂 · N≈570</td>
+            <td class="date-cell">2023-01<span class="date-note">CT.gov 镜像</span></td>
+            <td class="date-cell">2023-01<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">2025-03<span class="date-note">2025-03-05 官宣完成</span></td>
+            <td class="date-cell">2026-01<span class="date-note">CT.gov 早期 PCD（事件驱动随访中，未读出）</span></td>
+            <td class="date-cell">未公开</td>
+            <td><span class="status-watch">入组已完成，随访待读出</span><div class="src-links"><a href="https://www.prnewswire.com/news-releases/akeso-announces-completion-of-patient-enrollment-in-the-phase-iii-clinical-trial-of-cadonilimab-for-adjuvant-treatment-of-high-risk-recurrent-hepatocellular-carcinoma-302393889.html" target="_blank" rel="noopener noreferrer">LPI公告</a><a href="https://www.stellatrials.com/trials/NCT05489289" target="_blank" rel="noopener noreferrer">镜像页</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-28</span><span class="code-id">NCT05990127 / AK104-307</span></td>
+            <td>1L PD-L1 阴性（TPS&lt;1%）NSCLC<br>AK104+化疗 vs 替雷利珠+化疗 · N=642（II/III期）</td>
+            <td class="date-cell">2023-11-14<span class="date-note">Veeva 镜像</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未完成<span class="date-note">2026 中报：入组中</span></td>
+            <td class="date-cell">未公开<span class="date-note">镜像早期预估已过期</span></td>
+            <td class="date-cell">未公开</td>
+            <td>中国入组中（2026 中报确认）<div class="src-links"><a href="https://ctv.veeva.com/study/a-study-of-ak104-tislelizumab-with-chemotherapy-as-first-line-treatment-in-pd-l1-tps-1-non-small" target="_blank" rel="noopener noreferrer">Veeva</a><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">2026中报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104+AK109 · COMPLUS-5</span><span class="code-id">NCT06341335 / CTR20241225</span></td>
+            <td>2L IO 耐药 HER2 阴性 G/GEJ 腺癌<br>AK104+普络西(AK109)+紫杉醇 vs 安慰剂+紫杉醇 · N=506</td>
+            <td class="date-cell">2024-06-19<span class="date-note">CT.gov / CDE</span></td>
+            <td class="date-cell">2024-07-31<span class="date-note">官宣 FPI（CDE 06-19）</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting（2026 中报）</span></td>
+            <td class="date-cell">未公开<span class="date-note">镜像早期预估 2026-11</span></td>
+            <td class="date-cell">2027-07-31<span class="date-note">CenterWatch Est.</span></td>
+            <td>中国入组中（双抗联用 VEGFR2 单抗 III 期）<div class="src-links"><a href="https://trial.medpath.com/clinical-trial/a10c39e0ec06745b/ctr20241225-ak109-ak104-paclitaxel-gastric-adenocarcinoma" target="_blank" rel="noopener noreferrer">MedPath</a><a href="https://www.centerwatch.com/clinical-trials/listings/NCT06341335/a-study-of-ak104-placebo-plus-ak109placebo-and-paclitaxel-in-gastric-or-gastroesophageal-junction-adenocarcinoma" target="_blank" rel="noopener noreferrer">CenterWatch</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-29</span><span class="code-id">NCT06371157 / AK104-308</span></td>
+            <td>不可治愈/非转移性中晚期 HCC<br>三臂：AK104±仑伐替尼+TACE vs 安慰剂+TACE · N=469</td>
+            <td class="date-cell">2024-08-02<span class="date-note">Veeva 镜像</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未完成<span class="date-note">2026 中报：入组中</span></td>
+            <td class="date-cell">未公开<span class="date-note">镜像早期预估已过期</span></td>
+            <td class="date-cell">未公开</td>
+            <td>中国入组中（2026 中报列为 II/III 期）<div class="src-links"><a href="https://ctv.veeva.com/study/a-study-of-ak104-lenvatinib-in-combination-with-transarterial-chemoembolization-tace-versus-tace-i" target="_blank" rel="noopener noreferrer">Veeva</a><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">2026中报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-30</span><span class="code-id">NCT06617416 / AK104-309</span></td>
+            <td>不可切除 III 期 NSCLC 放化疗后未进展巩固<br>AK104 vs 舒格利单抗 · N=560（II/III期）</td>
+            <td class="date-cell">2024-11-12<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2024-11<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">未完成<span class="date-note">Recruiting（2026 中报）</span></td>
+            <td class="date-cell">2026-10-28<span class="date-note">CT.gov PCD（尚未读出）</span></td>
+            <td class="date-cell">2028-12-30<span class="date-note">CT.gov Est.</span></td>
+            <td>中国入组中<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06617416" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">2026中报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-33</span><span class="code-id">NCT07023315 / AK104-310</span></td>
+            <td>可切除局晚 G/GEJ 腺癌围手术期<br>AK104+SOX vs 安慰剂+SOX · N=760</td>
+            <td class="date-cell">2025-08-14<span class="date-note">Veeva 镜像</span></td>
+            <td class="date-cell">2025-08<span class="date-note">2025-08-19 官宣 FPI</span></td>
+            <td class="date-cell">未完成<span class="date-note">Enrolling</span></td>
+            <td class="date-cell">未公开<span class="date-note">镜像 End date 2029-07-01</span></td>
+            <td class="date-cell">2029-07-01<span class="date-note">Veeva 镜像 Est.</span></td>
+            <td>中国入组中<div class="src-links"><a href="https://ctv.veeva.com/study/a-phase-iii-clinical-study-of-cadonilimab-plus-sox-as-perioperative-treatment-for-patients-with-rese" target="_blank" rel="noopener noreferrer">Veeva</a><a href="https://www.prnewswire.com/news-releases/first-patient-dosed-in-pivotal-phase-iii-trial-of-cadonilimab-pd-1ctla-4-for-perioperative-treatment-of-resectable-gastric-cancer-302534437.html" target="_blank" rel="noopener noreferrer">FPI公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-38</span><span class="code-id">NCT/CTR 未公开（II/III期）</span></td>
+            <td>可切除食管鳞癌（ESCC）围手术期<br>AK104+化疗（对照及 N 未公开）</td>
+            <td class="date-cell">2026 H1<span class="date-note">2026 中报启动</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未完成<span class="date-note">2026 中报：已启动</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td>2026 年上半年启动<div class="src-links"><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">2026中报</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK104 · COMPASSION-40</span><span class="code-id">AK104-313 / NCT 未公开</span></td>
+            <td>可切除 MSI-H/dMMR 结肠癌围手术期<br>AK104 单药（对照及 N 未公开）</td>
+            <td class="date-cell">2026 H1<span class="date-note">2026 中报启动</span></td>
+            <td class="date-cell">2026-10<span class="date-note">2026-10-10 官宣 FPI</span></td>
+            <td class="date-cell">未完成<span class="date-note">入组中</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td>2026-10 首例给药，卡度尼利第 13 项注册临床<div class="src-links"><a href="https://www.prnewswire.com/news-releases/first-patient-dosed-in-phase-iii-perioperative-study-of-cadonilimab-pd-1ctla-4-in-colon-cancer-302904988.html" target="_blank" rel="noopener noreferrer">FPI公告</a><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">2026中报</a></div></td>
+          </tr>
+
+          <!-- AK105 China (4) -->
+          <tr>
+            <td><span class="trial-name">AK105 · AK105-302</span><span class="code-id">NCT03866993</span></td>
+            <td>1L 鳞状 NSCLC（康方/正大天晴）<br>派安普利+紫杉醇+卡铂 vs 安慰剂+化疗 · 实际 N=350</td>
+            <td class="date-cell">2018-12-20<span class="date-note">文献入组起始</span></td>
+            <td class="date-cell">2018-12-20<span class="date-note">Lancet RM 披露</span></td>
+            <td class="date-cell">2020-10-10<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">PFS DCO 2022-06-01 (HR=0.43)；2024 见刊</span></td>
+            <td class="date-cell">已完成</td>
+            <td><span class="status-approved">NMPA 已获批</span>（2023-01）<div class="src-links"><a href="https://pubmed.ncbi.nlm.nih.gov/38309287/" target="_blank" rel="noopener noreferrer">PubMed</a><a href="https://www.jiemian.com/article/8755410.html" target="_blank" rel="noopener noreferrer">获批报道</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK105 · APOLLO</span><span class="code-id">NCT04344158 / CTR20200879</span></td>
+            <td>1L 不可切除 HCC（正大天晴申办，合作康方）<br>派安普利+安罗替尼 vs 索拉非尼 · 实际 N=649</td>
+            <td class="date-cell">2020-08-11<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2020-08<span class="date-note">与启动同步</span></td>
+            <td class="date-cell">已完成入组<span class="date-note">Active, not recruiting</span></td>
+            <td class="date-cell">已读出<span class="date-note">2024-08 达 PFS/OS 双终点；Lancet Oncol 2025；PCD 2026-12</span></td>
+            <td class="date-cell">2026-12<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2025-12-25，第 5 项适应症）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT04344158" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0828/2024082800340_c.pdf" target="_blank" rel="noopener noreferrer">港交所公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK105 · AK105-303</span><span class="code-id">NCT05244642</span></td>
+            <td>R/R 经典霍奇金淋巴瘤（cHL）确证性 III 期<br>派安普利单药 vs 研究者选择化疗 · N=60</td>
+            <td class="date-cell">2022-02-15<span class="date-note">CT.gov Est.</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开<span class="date-note">Unknown status</span></td>
+            <td class="date-cell">2025-12-30<span class="date-note">CT.gov 早期 PCD（未公开读出）</span></td>
+            <td class="date-cell">2026-03-30<span class="date-note">CT.gov Est.</span></td>
+            <td><span class="status-muted">长期未更新</span>（2022-02 后无更新记录）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05244642" target="_blank" rel="noopener noreferrer">CT.gov</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK105 · AK105-301</span><span class="code-id">NCT03866980</span></td>
+            <td>1L 转移性非鳞状 NSCLC（康方/正大天晴）<br>3 臂：AK105+化疗 vs 安慰剂+化疗 vs AK105+安罗替尼 · 实际 N=164</td>
+            <td class="date-cell">2018-11-27<span class="date-note">Veeva / CT.gov</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">提前终止<span class="date-note">Terminated</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">2023-06-30<span class="date-note">终止记录</span></td>
+            <td><span class="status-muted">已终止</span>（Terminated）<div class="src-links"><a href="https://ctv.veeva.com/study/a-study-of-anti-pd-1-ak105-in-patients-with-metastatic-nonsquamous-non-small-cell-lung-cancer" target="_blank" rel="noopener noreferrer">Veeva</a></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>表 3：中国国内非肿瘤（自免与代谢）管线 III 期临床全览（9 项 III 期 + 1 项关键注册研究）</h2>
+    <p class="measure">康方生物非肿瘤 III 期临床全部位于中国国内，尚无海外 MRCT。截至 2026 年 11 月，伊努西单抗（AK102）、依若奇单抗（AK101）与古莫奇单抗（AK111，强直性脊柱炎适应症于 2026-11-16 最新获批）均已实现商业化落地，曼多奇单抗（AK120）成人特应性皮炎 NDA 正处于 NMPA 审评中，青少年特应性皮炎 III 期（AK120-302）在招。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>药物 / 试验代号与登记号</th>
+            <th>适应症、方案与样本量</th>
+            <th>开始时间</th>
+            <th>入组开始（FPI）</th>
+            <th>入组完成（LPI）/ 状态</th>
+            <th>预估 / 实际数据读出</th>
+            <th>预估 / 实际完成</th>
+            <th>最新进展与来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="trial-name">AK102 伊努西 · AK102-301</span><span class="code-id">NCT05255094 / CTR20212466</span></td>
+            <td>原发性高胆固醇血症（含 HeFH）及混合型高脂血症<br>AK102 150mg Q2W / 450mg Q4W vs 安慰剂 · 实际 N=464</td>
+            <td class="date-cell">2021-11-03<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2021-11<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">2021-12-22<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2022-06-22；2022-11-01 官宣阳性</span></td>
+            <td class="date-cell">2022-06-22<span class="date-note">CT.gov Actual</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2024-09，已进医保）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT05255094" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://pubmed.ncbi.nlm.nih.gov/39111557/" target="_blank" rel="noopener noreferrer">PubMed</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK102 伊努西 · AK102-302</span><span class="code-id">NCT05260411 / CTR20213363</span></td>
+            <td>原发性高胆固醇血症及混合型高脂血症（Q6W 方案）<br>AK102 450mg/600mg Q6W vs 安慰剂 · N 未公开</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">2023-06-01 NDA 受理公告确认达标</span></td>
+            <td class="date-cell">已完成</td>
+            <td><span class="status-approved">支持 2024-09 获批</span><div class="src-links"><a href="https://www.prnewswire.com/news-releases/nmpa-accepted-akesos-ebronucimab-pcsk9-marketing-application-in-two-cardiovascular-indications-301840864.html" target="_blank" rel="noopener noreferrer">NDA公告</a><a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2024.2443538" target="_blank" rel="noopener noreferrer">mAbs综述</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK102 伊努西 · AK102-303</span><span class="code-id">NCT05255458 / CTR20212815</span></td>
+            <td>原发性高胆固醇血症及混合型高脂血症（52 周长期）<br>AK102 450mg Q4W vs 安慰剂 · 实际 N=122</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">2023-06-01 NDA 受理公告披露 52 周维持</span></td>
+            <td class="date-cell">已完成</td>
+            <td><span class="status-approved">支持 2024-09 获批</span><div class="src-links"><a href="https://www.tandfonline.com/doi/full/10.1080/19420862.2024.2443538" target="_blank" rel="noopener noreferrer">mAbs综述</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK102 伊努西 · AK102-201*</span><span class="code-id">NCT04173793 / CTR20191935</span></td>
+            <td>杂合子型家族性高胆固醇血症（HeFH，*关键注册 II 期）<br>AK102 150mg Q2W / 300-450mg Q4W vs 安慰剂 · N=109</td>
+            <td class="date-cell">2019-11-18<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2019-11<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2022-09-26；2023-06-01 披露达标</span></td>
+            <td class="date-cell">2022-09-26<span class="date-note">CT.gov Actual</span></td>
+            <td><span class="status-approved">支持 HeFH 获批</span>（2024-09；未计入 44 项严格 III 期）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT04173793" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.prnewswire.com/news-releases/nmpa-accepted-akesos-ebronucimab-pcsk9-marketing-application-in-two-cardiovascular-indications-301840864.html" target="_blank" rel="noopener noreferrer">NDA公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK101 依若奇 · AK101-302</span><span class="code-id">NCT05120297</span></td>
+            <td>成人中重度斑块状银屑病（16 周双盲）<br>AK101 135mg SC vs 安慰剂 · 实际 N=452</td>
+            <td class="date-cell">2021-11<span class="date-note">官方年报披露</span></td>
+            <td class="date-cell">2021-11<span class="date-note">启动入组</span></td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">2023-07 达标；EADV 2023 公布 PASI75 79.4%</span></td>
+            <td class="date-cell">已完成</td>
+            <td><span class="status-approved">NMPA 已获批</span>（2025-04-15，已进医保）<div class="src-links"><a href="https://www.centerwatch.com/clinical-trials/listings/NCT05120297/a-phase-3-study-of-efficacy-and-safety-of-ak101-in-subjects-with-psoriasis" target="_blank" rel="noopener noreferrer">CenterWatch</a><a href="https://www.biospace.com/press-releases/akesos-ebdarokimab-il-12-il-23-dual-targeted-monoclonal-antibody-approved-in-china-for-moderate-to-severe-plaque-psoriasis" target="_blank" rel="noopener noreferrer">获批公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK101 依若奇 · AK101-303</span><span class="code-id">NCT05509361</span></td>
+            <td>成人中重度斑块状银屑病（52 周开放标签长期）<br>AK101 135mg Q12W 单臂 · 实际 N=950</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">2024-10-02 EADV 2024 公布 52 周数据</span></td>
+            <td class="date-cell">已完成</td>
+            <td><span class="status-approved">支持 2025-04 获批</span><div class="src-links"><a href="https://www.biospace.com/press-releases/akesos-ebdarokimab-il-12-il-23-dual-targeted-monoclonal-antibody-approved-in-china-for-moderate-to-severe-plaque-psoriasis" target="_blank" rel="noopener noreferrer">获批公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK111 古莫奇 · AK111-301</span><span class="code-id">NCT06066125</span></td>
+            <td>成人中重度斑块状银屑病（56 周）<br>AK111 150mg/300mg Q4W vs 安慰剂 · 实际 N=351</td>
+            <td class="date-cell">2023-03<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2023-03<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">2023-08<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2024-08；2023-12 达 12 周终点；2024-10 公布 52 周</span></td>
+            <td class="date-cell">2024-08<span class="date-note">CT.gov Actual</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2026-06-11，首个适应症）<div class="src-links"><a href="https://www.trialticker.com/clinical-trials/NCT06066125/a-study-to-evaluate-the-efficacy-and-safety-of-ak111-in-subjects-with-moderate-to-severe-plaque-psoriasis" target="_blank" rel="noopener noreferrer">TrialTicker</a><a href="https://www.biospace.com/press-releases/akesos-gumokimab-ak111-anti-il-17-approved-by-nmpa-for-moderate-to-severe-plaque-psoriasis-bolstering-its-autoimmune-disease-portfolio" target="_blank" rel="noopener noreferrer">获批公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK111 古莫奇 · AK111-303</span><span class="code-id">NCT06378697</span></td>
+            <td>成人活动性强直性脊柱炎（AS，61 周）<br>AK111 150mg Q4W vs 安慰剂 · 实际 N=510</td>
+            <td class="date-cell">2023-11-22<span class="date-note">CT.gov Actual</span></td>
+            <td class="date-cell">2023-11<span class="date-note">以 Start 参考</span></td>
+            <td class="date-cell">已完成<span class="date-note">Completed</span></td>
+            <td class="date-cell">已读出<span class="date-note">PCD 2025-02-19；2025-08-25 官宣 ASAS20/40 达标</span></td>
+            <td class="date-cell">2025-11-07<span class="date-note">CT.gov Actual</span></td>
+            <td><span class="status-approved">NMPA 已获批</span>（2026-11-16，第二适应症）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06378697" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.biospace.com/press-releases/akesos-gumokimab-il-17a-receives-nmpa-approval-for-active-ankylosing-spondylitis" target="_blank" rel="noopener noreferrer">获批公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK120 曼多奇 · AK120-301</span><span class="code-id">NCT06383468 / CTR20241231</span></td>
+            <td>成人中重度特应性皮炎（AD，58 周）<br>AK120 300mg Q2W vs 安慰剂 · 实际 N=420</td>
+            <td class="date-cell">2024-04-11<span class="date-note">CDE 首次公示</span></td>
+            <td class="date-cell">2024-06-17<span class="date-note">CDE 首例入组</span></td>
+            <td class="date-cell">已完成<span class="date-note">CDE：已完成</span></td>
+            <td class="date-cell">已读出<span class="date-note">2025-08-25 官宣达主终点；CDE 摘要 2026-02-02</span></td>
+            <td class="date-cell">2026-01-12<span class="date-note">CDE 完成日</span></td>
+            <td><span class="status-watch">NMPA NDA 审评中</span>（2026-02-25 受理）<div class="src-links"><a href="https://www.wuxuwang.com/linchuang/4eb7c0f4-f7eb-11ee-91cf-0a7966a5a76e" target="_blank" rel="noopener noreferrer">CDE登记</a><a href="https://www.prnewswire.com/news-releases/akeso-reports-phase-3-trials-show-positive-results-gumokimab-il-17-for-ankylosing-spondylitis-and-manfidokimab-il-4r-for-atopic-dermatitis-achieve-primary-endpoints-302537397.html" target="_blank" rel="noopener noreferrer">读出公告</a></div></td>
+          </tr>
+          <tr>
+            <td><span class="trial-name">AK120 曼多奇 · AK120-302</span><span class="code-id">NCT06767540 / CTR20244937</span></td>
+            <td>青少年中重度特应性皮炎（12至&lt;18岁）<br>AK120 300mg Q2W/Q3W vs 安慰剂 · N=198</td>
+            <td class="date-cell">2025-01-23<span class="date-note">CT.gov Est.</span></td>
+            <td class="date-cell">未公开</td>
+            <td class="date-cell">未完成<span class="date-note">CDE：Recruiting</span></td>
+            <td class="date-cell">2027-07-10<span class="date-note">CT.gov PCD（Est.）</span></td>
+            <td class="date-cell">2027-07-10<span class="date-note">CT.gov Est.</span></td>
+            <td>国内招募中（2025 年启动）<div class="src-links"><a href="https://clinicaltrials.gov/study/NCT06767540" target="_blank" rel="noopener noreferrer">CT.gov</a><a href="https://www.trialticker.com/clinical-trials/NCT06767540/a-clinical-study-of-ak120-in-adolescents-with-moderate-to-severe-atopic-dermatitis" target="_blank" rel="noopener noreferrer">镜像页</a></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>统计口径、排除项与未入 III 期管线核实</h2>
+    <div class="two-col">
+      <div>
+        <h3>已核实尚未进入 III 期的关注管线</h3>
+        <ul>
+          <li><strong>AK112 + Datroway（TROP2 ADC）1L TNBC</strong>：Summit 于 2026 年 10 月宣布与阿斯利康/第一三共合作拟启动全球 III 期，但截至 2026-11-27 尚未公开试验代号及登记号，暂未计入 44 项（<a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx" target="_blank" rel="noopener noreferrer">Summit Q3 2026</a>）。</li>
+          <li><strong>AK117（莱法利单抗）血液瘤</strong>：HR-MDS（<a href="https://trial.medpath.com/clinical-trial/3a5a16aa1892f686/ctr20240085-ak117-azacitidine-higher-risk-mds-phase-2" target="_blank" rel="noopener noreferrer">CTR20240085</a>）与 AML（<a href="https://library.ehaweb.org/eha/2026/eha-2026/4206685/huafeng.wang.a.phase.ii.randomized.study.of.ak117.versus.placebo.in.html" target="_blank" rel="noopener noreferrer">AK117-206</a>）均仍处 II 期；AK117 已启动的 3 项 III 期均为联合 AK112 的实体瘤研究，已归入 AK112 统计。</li>
+          <li><strong>AK112 其他探索瘤种与自研 ADC</strong>：围手术期 NSCLC（AK112-205）、1L HCC（AK112-209）、ES-SCLC（NCT05116007）、1L 子宫内膜癌、1L ccRCC（AK112-216）及联合 AK138D1 / AK146D1 均处于 Ib/II 期。</li>
+          <li><strong>AK104 注册性 II 期与 IIT</strong>：全球 MRCT 2L HCC（<a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-dose-in-global-registrational-trial-of-cadonilimab-pd-1ctla-4-for-pd-1-treatment-resistant-hepatocellular-carcinoma-302555984.html" target="_blank" rel="noopener noreferrer">COMPASSION-36 / NCT06984718</a>，N=120）与已获批 2L+ 宫颈癌（COMPASSION-03）均为关键注册性 II 期；COMPASSION-13/26 亦为 II 期；鼻咽癌 <a href="https://clinicaltrials.gov/study/NCT05587374" target="_blank" rel="noopener noreferrer">NCT05587374</a> 为研究者发起 III 期（IIT），均未计入公司申办 III 期。</li>
+          <li><strong>非肿瘤早期管线</strong>：IL-4Rα/ST2 双抗 <strong>AK139</strong> 处于 7 项 II 期临床阶段；阿尔茨海默病双抗 <strong>AK152</strong>（2025-11 获 IND）、<strong>AK135</strong> 与 <strong>AK115</strong> 均处于早期临床。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>时间字段口径与数据核验说明</h3>
+        <ul>
+          <li><strong>开始时间 vs. FPI</strong>：表内“开始时间”优先采用 ClinicalTrials.gov 的 Actual/Estimated Study Start Date 或 CDE 首次公示日；“入组开始（FPI）”采用公司官方新闻稿或发表论文披露的首例入组/给药日。</li>
+          <li><strong>预估数据读出 vs. PCD</strong>：ClinicalTrials.gov 的 Primary Completion Date（PCD）往往对应最晚主要终点（尤其是最终 OS），而肿瘤 III 期顶线读出多为事件驱动的 PFS 或期中 OS（如 HARMONi-3 登记 PCD 为 2028-12-31，而官方预计鳞癌 PFS 事件于 2026 Q4 触发）。</li>
+          <li><strong>登记更新滞后</strong>：部分国内试验（如 COMPASSION-22、28、29 及 AK120-302）在 ClinicalTrials.gov 的状态或日期更新滞后于港交所中报与 CDE 平台，表中已按最新财报与 CDE 状态进行标注纠偏。</li>
+          <li><strong>跨药去重规则</strong>：3 项 AK112+AK117 III 期（HARMONi-HN1、HARMONi-GI2、ILLUMINE）归入 AK112；1 项 AK104+AK109 III 期（COMPLUS-5）归入 AK104，确保 44 项总计零重复。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Sources</h2>
+    <ol class="sources-list">
+      <li><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx" target="_blank" rel="noopener noreferrer">Summit Therapeutics Q3 2026 Financial Results &amp; Operational Progress (2026-11-04)</a></li>
+      <li><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Provides-Update-Regarding-Ivonescimab-Biologics-License-Application/default.aspx" target="_blank" rel="noopener noreferrer">Summit Therapeutics Update Regarding Ivonescimab BLA / FDA CRL (2026-11-15)</a></li>
+      <li><a href="https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Further-Expands-Ivonescimab-Global-Development-Program-with-Phase-III-HARMONi-10-Study-in-Unresectable-Stage-III-Non-Small-Cell-Lung-Cancer/default.aspx" target="_blank" rel="noopener noreferrer">Summit Therapeutics HARMONi-10 Global Phase III Announcement (2026-11-18)</a></li>
+      <li><a href="https://euclinicaltrials.eu/ctis-public/view/2026-526300-67-00" target="_blank" rel="noopener noreferrer">EMA EU Clinical Trials Information System — HARMONi-10 (2026-526300-67-00)</a></li>
+      <li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0930/2026093001179_c.pdf" target="_blank" rel="noopener noreferrer">康方生物（09926.HK）2026 年中期报告（港交所公告）</a></li>
+      <li><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0326/2026032602886.pdf" target="_blank" rel="noopener noreferrer">康方生物（09926.HK）2025 年全年业绩公告（港交所公告）</a></li>
+      <li><a href="https://ea-cdn.eurolandir.com/press-releases-attachments./4197464/HKEX-EPS_20261026_12382418_0.PDF" target="_blank" rel="noopener noreferrer">康方生物 2026 年 10 月 ESMO HARMONi-GI1 港交所公告</a></li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13175990/" target="_blank" rel="noopener noreferrer">Antibody Therapeutics — Ivonescimab Clinical Development Review (PMC13175990)</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/akeso-announces-first-patient-enrolled-in-global-phase-iii-trial-of-cadonilimab-versus-nivolumab-in-first-line-gastric-cancer-302891043.html" target="_blank" rel="noopener noreferrer">Akeso PR Newswire — COMPASSION-37 Global Phase III FPI (2026-09-27)</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/first-patient-dosed-in-phase-iii-perioperative-study-of-cadonilimab-pd-1ctla-4-in-colon-cancer-302904988.html" target="_blank" rel="noopener noreferrer">Akeso PR Newswire — COMPASSION-40 Perioperative Colon Cancer FPI (2026-10-10)</a></li>
+      <li><a href="https://www.biospace.com/press-releases/akesos-gumokimab-il-17a-receives-nmpa-approval-for-active-ankylosing-spondylitis" target="_blank" rel="noopener noreferrer">BioSpace — Akeso Gumokimab (AK111) NMPA Approval for Ankylosing Spondylitis (2026-11-16)</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/akeso-reports-phase-3-trials-show-positive-results-gumokimab-il-17-for-ankylosing-spondylitis-and-manfidokimab-il-4r-for-atopic-dermatitis-achieve-primary-endpoints-302537397.html" target="_blank" rel="noopener noreferrer">Akeso PR Newswire — AK111-303 &amp; AK120-301 Phase III Positive Readouts (2025-08-25)</a></li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
